@@ -1,0 +1,7 @@
+salesforce.SBQQ__FavoriteProduct__c a0L3H000000RtPgUAK {
+  SBQQ__Favorite__c = salesforce.SBQQ__Favorite__c.instance.a0N3H0000011xvdUAA
+  SBQQ__Quantity__c = 23
+  SBQQ__RequiredBy__c = salesforce.SBQQ__FavoriteProduct__c.instance.a0L3H000000RtPhUAK
+  Name = "Fav"
+  _alias = "Fav1 Fav"
+}
