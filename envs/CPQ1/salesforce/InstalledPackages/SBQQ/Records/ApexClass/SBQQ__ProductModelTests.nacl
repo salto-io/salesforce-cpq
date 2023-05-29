@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ProductModelTests {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ProductModelTests"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

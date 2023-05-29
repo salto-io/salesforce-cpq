@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ObjectManager {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ObjectManager"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

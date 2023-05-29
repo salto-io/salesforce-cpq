@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__Localization__c {
+  fullName = "SBQQ__Localization__c"
+  customObject = true
+  motif = "Custom76: Keys"
+  _parent = [
+    salesforce.SBQQ__Localization__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

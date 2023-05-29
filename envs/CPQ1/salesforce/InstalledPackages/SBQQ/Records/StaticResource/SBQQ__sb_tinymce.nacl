@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__sb_tinymce {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  description = "Tiny MCE (custom build)"
+  fullName = "SBQQ__sb_tinymce"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sb_tinymce.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

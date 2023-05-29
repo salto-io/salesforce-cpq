@@ -1,0 +1,50 @@
+salesforce.FieldSet SBQQ__QuoteLineConsumptionSchedule__c_SBQQ__CompactLayout {
+  fullName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__CompactLayout"
+  description = "Used on hover of a rate to display information about the Quote Line Consumption Schedule"
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__Description__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__BillingTerm__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__BillingTermUnit__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__Type__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__RatingMethod__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__UnitOfMeasure__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLineConsumptionSchedule__c.field.SBQQ__MatchingAttribute__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Compact Layout"
+  _parent = [
+    salesforce.SBQQ__QuoteLineConsumptionSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

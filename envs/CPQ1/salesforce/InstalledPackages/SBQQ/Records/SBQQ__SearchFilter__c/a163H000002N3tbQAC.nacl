@@ -1,0 +1,14 @@
+salesforce.SBQQ__SearchFilter__c a163H000002N3tbQAC {
+  SBQQ__DisplayOrder__c = 10
+  SBQQ__FilterSourceField__c = "TestValueApiName"
+  SBQQ__FilterSourceObject__c = "Test Source Object"
+  SBQQ__FilterValue__c = "Test Search Filter"
+  SBQQ__HiddenSourceField__c = "Primary"
+  SBQQ__HiddenSourceObject__c = salesforce.SBQQ__Quote__c
+  SBQQ__Hidden__c = false
+  SBQQ__Operator__c = "ends with"
+  SBQQ__TargetField__c = "Product Code"
+  SBQQ__TargetObject__c = salesforce.SBQQ__Subscription__c
+  Name = "TestSearchFilter3"
+  _alias = "TestSearchFilter3"
+}

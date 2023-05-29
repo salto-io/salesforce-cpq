@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__SelectUpgradeProducts {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "SelectUpgradeProducts"
+  fullName = "SBQQ__SelectUpgradeProducts"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__SelectUpgradeProducts.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

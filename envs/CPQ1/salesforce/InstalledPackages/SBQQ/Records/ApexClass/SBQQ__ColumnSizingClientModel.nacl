@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ColumnSizingClientModel {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ColumnSizingClientModel"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

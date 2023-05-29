@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__PriceRule__c {
+  fullName = "SBQQ__PriceRule__c"
+  customObject = true
+  description = "Tab for managing price rules."
+  motif = "Custom41: Stack of Cash"
+  _parent = [
+    salesforce.SBQQ__PriceRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

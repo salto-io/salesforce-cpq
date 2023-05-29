@@ -1,0 +1,27 @@
+salesforce.WebLink SBQQ__QuoteDocument__c_SBQQ__View {
+  fullName = "SBQQ__QuoteDocument__c.SBQQ__View"
+  availability = "online"
+  displayType = "button"
+  hasMenubar = false
+  hasScrollbars = false
+  hasToolbar = false
+  height = 0
+  isResizable = false
+  linkType = "page"
+  masterLabel = "View"
+  openType = "newWindow"
+  page = salesforce.ApexPage.instance.SBQQ__ViewDocument
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  width = 800
+  _parent = [
+    salesforce.SBQQ__QuoteDocument__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__sb_labels {
+  apiVersion = 57
+  description = "All translated labels for UI"
+  label = "labels"
+  fullName = "SBQQ__sb_labels"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

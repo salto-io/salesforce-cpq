@@ -1,0 +1,115 @@
+type salesforce.SBQQ__PricingGuidance__c {
+  salesforce.TextArea SBQQ__Description__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__Description__c"
+    deprecated = false
+    description = "Description for this pricing guidance."
+    externalId = false
+    inlineHelpText = "Description for this pricing guidance."
+    label = "Description"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__Explanation__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__Explanation__c"
+    deprecated = false
+    description = "Provide sales reps with an explanation of this pricing guidance and recommendations for discounts to provide. They can view this explanation with the pricing guidance in the quote line editor."
+    externalId = false
+    inlineHelpText = "Provide sales reps with an explanation of this pricing guidance and recommendations for discounts to provide. They can view this explanation with the pricing guidance in the quote line editor."
+    label = "Explanation"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__IncludePriorPurchases__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__IncludePriorPurchases__c"
+    defaultValue = true
+    deprecated = false
+    description = "When setting the pricing guidance tier for a quote line, include product quantities that were sold earlier"
+    externalId = false
+    inlineHelpText = "When setting the pricing guidance tier for a quote line, include product quantities that were sold earlier"
+    label = "Include Prior Purchases"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__IsActive__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__IsActive__c"
+    defaultValue = false
+    deprecated = false
+    description = "Enable this pricing guidance for use on associated product. Inactive pricing guidance won't appear in the quote line editor."
+    externalId = false
+    inlineHelpText = "Enable this pricing guidance for use on associated product."
+    label = "Active"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Html SBQQ__Summary__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__Summary__c"
+    deprecated = false
+    description = "The parameters provided to create this pricing guidance."
+    externalId = false
+    inlineHelpText = "The parameters provided to create this pricing guidance."
+    label = "Summary"
+    length = 32768
+    trackHistory = false
+    trackTrending = false
+    visibleLines = 25
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__Type__c"
+    deprecated = false
+    description = "Range: The guidance discounts using only the pricing guidance tier that applies to the quote line quantity."
+    externalId = false
+    inlineHelpText = "Range: The guidance discounts using only the pricing guidance tier that applies to the quote line quantity."
+    label = "Type"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Range"
+        default = true
+        label = "Range"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Unit__c {
+    apiName = "SBQQ__PricingGuidance__c.SBQQ__Unit__c"
+    deprecated = false
+    description = "Choose the type of discount that this pricing guidance applies to the quote line."
+    externalId = false
+    inlineHelpText = "Choose the type of discount that this pricing guidance applies to the quote line."
+    label = "Unit"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Percent"
+        default = false
+        label = "Percent"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

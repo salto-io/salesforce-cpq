@@ -1,0 +1,23 @@
+salesforce.GlobalValueSet SBQQ__PriceModel {
+  fullName = "SBQQ__PriceModel"
+  customValue = [
+    {
+      fullName = "Flat Fee"
+      default = false
+      label = "Flat Fee"
+    },
+    {
+      fullName = "Per Unit"
+      default = false
+      label = "Per Unit"
+    },
+  ]
+  description = "The price model that determines how prices are calculated."
+  masterLabel = "Price Model"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

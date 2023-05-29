@@ -1,0 +1,94 @@
+salesforce.Layout SBQQ__FieldSetMetadata__c_SBQQ__FieldSet_Metadata_Layout@uuuubuuss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.SBQQ__ObjectType__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.SBQQ__FieldSet__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.SBQQ__Default__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__FieldSetMetadata__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ColumnMetadata__c.field.SBQQ__FieldSetMetadata__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SBQQ__FieldSetMetadata__c-SBQQ__FieldSet Metadata Layout"
+  _parent = [
+    salesforce.SBQQ__FieldSetMetadata__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

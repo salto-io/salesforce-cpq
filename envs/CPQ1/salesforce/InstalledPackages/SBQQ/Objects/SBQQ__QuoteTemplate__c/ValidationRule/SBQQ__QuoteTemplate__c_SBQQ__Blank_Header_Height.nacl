@@ -1,0 +1,18 @@
+salesforce.ValidationRule SBQQ__QuoteTemplate__c_SBQQ__Blank_Header_Height {
+  fullName = "SBQQ__QuoteTemplate__c.SBQQ__Blank_Header_Height"
+  active = true
+  description = "Checks if Header Height is blank if Page Number Position is set to 'Header'."
+  errorConditionFormula = '''
+IF(AND(ISPICKVAL(SBQQ__PageNumberPosition__c, "Header"),
+            ISBLANK(SBQQ__HeaderHeight__c)), true, null)
+'''
+  errorMessage = "Header Height can not be blank if Page Number Position is set to Header."
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__datePicker {
+  apiVersion = 57
+  description = "Renders HTML DOM for standard date picker."
+  label = "Date Picker"
+  fullName = "SBQQ__datePicker"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

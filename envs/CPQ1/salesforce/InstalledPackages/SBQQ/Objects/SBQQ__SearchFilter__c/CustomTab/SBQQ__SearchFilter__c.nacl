@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__SearchFilter__c {
+  fullName = "SBQQ__SearchFilter__c"
+  customObject = true
+  description = "Tab for managing search filters."
+  motif = "Custom64: Compass"
+  _parent = [
+    salesforce.SBQQ__SearchFilter__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

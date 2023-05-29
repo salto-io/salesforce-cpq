@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__SearchFilter__c_SBQQ__Require_hidden_object_for_hidden_field {
+  fullName = "SBQQ__SearchFilter__c.SBQQ__Require_hidden_object_for_hidden_field"
+  active = true
+  description = "Require hidden source object is selected when hidden source field is not blank."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__HiddenSourceObject__c, ''),NOT(ISPICKVAL(SBQQ__HiddenSourceField__c, '')))"
+  errorMessage = "You must select Hidden Source Object when Hidden Source Field is selected."
+  _parent = [
+    salesforce.SBQQ__SearchFilter__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

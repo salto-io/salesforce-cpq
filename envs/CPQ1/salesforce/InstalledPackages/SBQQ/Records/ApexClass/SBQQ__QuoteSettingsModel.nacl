@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__QuoteSettingsModel {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__QuoteSettingsModel"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

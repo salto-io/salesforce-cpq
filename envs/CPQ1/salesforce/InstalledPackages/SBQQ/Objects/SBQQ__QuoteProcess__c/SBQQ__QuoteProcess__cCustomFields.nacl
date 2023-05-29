@@ -1,0 +1,132 @@
+type salesforce.SBQQ__QuoteProcess__c {
+  salesforce.Checkbox SBQQ__Default__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__Default__c"
+    defaultValue = false
+    deprecated = false
+    description = "Marks this quote process as default."
+    externalId = false
+    inlineHelpText = "Select the checkbox to default the quote process selector to this process in Line Editor. This only applies when quote process selector is rendered as a picklist."
+    label = "Default"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__GuidedOnly__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__GuidedOnly__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that controls whether quotes covered by this process force guided product selection or allow for ad-hoc filtering."
+    externalId = false
+    inlineHelpText = "Select the checkbox if you want quotes covered by this process forced into guided product selection; otherwise, this defaults to ad-hoc filtering."
+    label = "Guided Only"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__ProductAutoSelected__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductAutoSelected__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that determines if product is auto selected if it's the only one returned by a search."
+    externalId = false
+    inlineHelpText = "Select the checkbox to determine whether the product is auto selected if it's the only one returned by a search."
+    label = "Auto Select Product?"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__ProductConfigurationInitializer__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductConfigurationInitializer__c"
+    deprecated = false
+    description = "Custom Visualforce page that will be invoked on every configurable product to initialize the options."
+    externalId = false
+    inlineHelpText = "Custom Visualforce page that will be invoked on every configurable product to initialize the options."
+    label = "Product Configuration Initializer"
+    length = 200
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__ProductSearchExecutor__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductSearchExecutor__c"
+    deprecated = false
+    description = "Name of VisualForce page that performs custom product search."
+    externalId = false
+    inlineHelpText = "VisualForce page that performs custom product search."
+    label = "Product Search Executor"
+    length = 200
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__SortOrder__c {
+    apiName = "SBQQ__QuoteProcess__c.SBQQ__SortOrder__c"
+    deprecated = false
+    description = "Determines display order of quote processes in Line Editor (pick list rendering only)."
+    externalId = false
+    inlineHelpText = "Specify the sequential number that determines the quote process's display order."
+    label = "Sort Order"
+    precision = 5
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Subscription_License_Type__c {
+    apiName = "SBQQ__QuoteProcess__c.Subscription_License_Type__c"
+    externalId = false
+    label = "Subscription License Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Pre Paid"
+        default = false
+        label = "Pre Paid"
+      },
+      {
+        fullName = "Pay as you go"
+        default = false
+        label = "Pay as you go"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type_of_License__c {
+    apiName = "SBQQ__QuoteProcess__c.Type_of_License__c"
+    externalId = false
+    label = "Type of License"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Perpetual"
+        default = false
+        label = "Perpetual"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

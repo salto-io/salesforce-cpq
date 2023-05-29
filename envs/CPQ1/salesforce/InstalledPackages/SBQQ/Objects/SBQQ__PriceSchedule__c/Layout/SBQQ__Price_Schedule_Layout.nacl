@@ -1,0 +1,149 @@
+salesforce.Layout SBQQ__PriceSchedule__c_SBQQ__Price_Schedule_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceSchedule__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__PriceType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__DiscountUnit__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__Account__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__Pricebook__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Snapshot Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__Order__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__TermDiscount__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__OrderProduct__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__OriginalDiscountSchedule__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceSchedule__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceSchedule__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__Number__c",
+        "SBQQ__LowerBound__c",
+        "SBQQ__UpperBound__c",
+        "SBQQ__VolumnDiscount__c",
+        "SBQQ__TermDiscount__c",
+        "SBQQ__Price__c",
+        "SBQQ__PriceModel__c",
+        "SBQQ__DiscountPercentage__c",
+        "SBQQ__DiscountAmount__c",
+      ]
+      relatedList = salesforce.SBQQ__PriceTier__c.field.SBQQ__PriceSchedule__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000Vi7U9"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__PriceSchedule__c-SBQQ__Price Schedule Layout"
+  _parent = [
+    salesforce.SBQQ__PriceSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

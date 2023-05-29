@@ -1,0 +1,121 @@
+salesforce.Layout SBQQ__SubscriptionConsumptionSchedule__c_SBQQ__Subscription_Consumption_Schedule_Layout@uuuubuusss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__UnitOfMeasure__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__RatingMethod__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__ConsumptionSchedule__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__Category__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__Subscription__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__Description__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__BillingTerm__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.SBQQ__BillingTermUnit__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SubscriptionConsumptionSchedule__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__SubscriptionConsumptionSchedule__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5C000000Sg4R"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__SubscriptionConsumptionSchedule__c-SBQQ__Subscription Consumption Schedule Layout"
+  _parent = [
+    salesforce.SBQQ__SubscriptionConsumptionSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

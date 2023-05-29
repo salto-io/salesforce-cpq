@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__documentHeader {
+  apiVersion = 57
+  description = "Renders quote document header using content section specified in the template."
+  label = "Document Header"
+  fullName = "SBQQ__documentHeader"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

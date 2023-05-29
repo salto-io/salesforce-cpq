@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteTermEditor {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "QuoteTermEditor"
+  fullName = "SBQQ__QuoteTermEditor"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteTermEditor.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

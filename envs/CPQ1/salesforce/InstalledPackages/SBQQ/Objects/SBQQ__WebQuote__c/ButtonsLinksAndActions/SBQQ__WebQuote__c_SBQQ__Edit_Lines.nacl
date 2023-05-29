@@ -1,0 +1,18 @@
+salesforce.WebLink SBQQ__WebQuote__c_SBQQ__Edit_Lines {
+  fullName = "SBQQ__WebQuote__c.SBQQ__Edit_Lines"
+  availability = "online"
+  displayType = "button"
+  linkType = "page"
+  masterLabel = "Edit Lines"
+  openType = "replace"
+  page = salesforce.ApexPage.instance.SBQQ__EditWebQuoteLines
+  protected = false
+  _parent = [
+    salesforce.SBQQ__WebQuote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

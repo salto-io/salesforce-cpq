@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBQUA0 {
+  SBQQ__Action__c = "Optional: All"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "optionalAllBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 909
+  SBQQ__EventHandlerName__c = "updateLineOptional"
+  SBQQ__Label__c = "Optional: All"
+  SBQQ__Location__c = "Quote"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Optional: All - Quote"
+  _alias = "Optional: All - Quote"
+}
