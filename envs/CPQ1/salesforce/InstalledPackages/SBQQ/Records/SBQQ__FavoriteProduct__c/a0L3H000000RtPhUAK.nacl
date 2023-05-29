@@ -1,0 +1,5 @@
+salesforce.SBQQ__FavoriteProduct__c a0L3H000000RtPhUAK {
+  SBQQ__Favorite__c = salesforce.SBQQ__Favorite__c.instance.a0N3H0000011xvdUAA
+  Name = "lala1"
+  _alias = "Fav1 lala1"
+}
