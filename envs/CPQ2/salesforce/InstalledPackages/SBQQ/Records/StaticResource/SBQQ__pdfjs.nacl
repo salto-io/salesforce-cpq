@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__pdfjs {
+  cacheControl = "Public"
+  contentType = "application/zip"
+  fullName = "SBQQ__pdfjs"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__pdfjs.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.ListView LocationTrustMeasure_AllLocationTrustMeasures {
+  fullName = "LocationTrustMeasure.AllLocationTrustMeasures"
+  filterScope = "Everything"
+  label = "All Location Trust Measures"
+  _parent = [
+    salesforce.LocationTrustMeasure,
+  ]
+}

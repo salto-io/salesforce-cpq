@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__duelingListBox {
+  apiVersion = 57
+  label = "duelingListBox"
+  fullName = "SBQQ__duelingListBox"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

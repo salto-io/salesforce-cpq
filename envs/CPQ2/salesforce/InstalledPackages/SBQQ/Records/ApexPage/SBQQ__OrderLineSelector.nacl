@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__OrderLineSelector {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "OrderLineSelector"
+  fullName = "SBQQ__OrderLineSelector"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__OrderLineSelector.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

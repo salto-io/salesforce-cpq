@@ -1,0 +1,13 @@
+salesforce.ListView SBQQ__PriceSchedule__c_SBQQ__All1 {
+  fullName = "SBQQ__PriceSchedule__c.SBQQ__All1"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__PriceSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

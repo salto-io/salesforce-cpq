@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__NewDiscountSchedule {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "NewDiscountSchedule"
+  fullName = "SBQQ__NewDiscountSchedule"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__NewDiscountSchedule.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

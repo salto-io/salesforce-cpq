@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__PriceCondition__c_SBQQ__Tested_field_or_variable {
+  fullName = "SBQQ__PriceCondition__c.SBQQ__Tested_field_or_variable"
+  active = true
+  description = "Require either tested field or variable."
+  errorConditionFormula = "AND(ISBLANK(TEXT(SBQQ__Field__c)),ISBLANK(SBQQ__TestedVariable__c),ISBLANK(SBQQ__TestedFormula__c))"
+  errorMessage = "You must specify either field or tested variable."
+  _parent = [
+    salesforce.SBQQ__PriceCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

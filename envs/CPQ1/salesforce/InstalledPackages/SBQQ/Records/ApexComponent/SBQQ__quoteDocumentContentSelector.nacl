@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__quoteDocumentContentSelector {
+  apiVersion = 57
+  description = "This is a generic template for Visualforce Component.  With this template, you may adjust the default elements and values and add new elements and values."
+  label = "Quote Document Content Selector"
+  fullName = "SBQQ__quoteDocumentContentSelector"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

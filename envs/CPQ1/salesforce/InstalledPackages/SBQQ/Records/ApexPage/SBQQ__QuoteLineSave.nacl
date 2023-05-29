@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteLineSave {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "QuoteLineSave"
+  fullName = "SBQQ__QuoteLineSave"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteLineSave.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

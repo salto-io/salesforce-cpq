@@ -1,0 +1,6 @@
+salesforce.WebToXSettings {
+  fullName = "WebToX"
+  shouldHideRecordInfoInEmail = "false"
+  webToCaseSpamFilter = "false"
+  webToLeadSpamFilter = "false"
+}

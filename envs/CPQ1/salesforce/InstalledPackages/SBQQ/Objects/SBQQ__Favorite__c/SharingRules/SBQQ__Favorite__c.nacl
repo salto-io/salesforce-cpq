@@ -1,0 +1,11 @@
+salesforce.SharingRules SBQQ__Favorite__c {
+  fullName = "SBQQ__Favorite__c"
+  _parent = [
+    salesforce.SBQQ__Favorite__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

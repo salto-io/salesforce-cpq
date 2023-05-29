@@ -1,0 +1,11 @@
+salesforce.EACSettings {
+  fullName = "EAC"
+  autoPopulateGoogleMeetLinks = "false"
+  enableActivityAnalyticsPref = "false"
+  enableEACForEveryonePref = false
+  enableInboxActivitySharing = false
+  enableInsightsInTimeline = true
+  enableInsightsInTimelineEacStd = false
+  provisionProductivityFeatures = false
+  syncInternalEvents = "false"
+}

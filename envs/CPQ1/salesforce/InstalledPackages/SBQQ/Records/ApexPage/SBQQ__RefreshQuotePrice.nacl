@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__RefreshQuotePrice {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "RefreshQuotePrice"
+  fullName = "SBQQ__RefreshQuotePrice"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__RefreshQuotePrice.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

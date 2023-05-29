@@ -1,0 +1,13 @@
+salesforce.GlobalValueSet NewPicklistValue {
+  fullName = "NewPicklistValue"
+  customValue = [
+    {
+      fullName = "Lala2"
+      default = false
+      label = "Lala2"
+    },
+  ]
+  description = "lala"
+  masterLabel = "NewPicklistValue"
+  sorted = false
+}

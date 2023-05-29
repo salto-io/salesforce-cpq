@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__NewQuoteRelatedContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "NewQuoteRelatedContent"
+  fullName = "SBQQ__NewQuoteRelatedContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__NewQuoteRelatedContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

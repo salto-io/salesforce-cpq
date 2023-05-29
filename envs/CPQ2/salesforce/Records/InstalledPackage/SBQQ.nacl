@@ -1,0 +1,4 @@
+salesforce.InstalledPackage SBQQ {
+  versionNumber = "244.1"
+  fullName = "SBQQ"
+}

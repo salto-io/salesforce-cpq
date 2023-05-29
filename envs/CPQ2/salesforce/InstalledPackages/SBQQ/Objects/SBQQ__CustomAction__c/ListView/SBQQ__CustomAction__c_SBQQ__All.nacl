@@ -1,0 +1,23 @@
+salesforce.ListView SBQQ__CustomAction__c_SBQQ__All {
+  fullName = "SBQQ__CustomAction__c.SBQQ__All"
+  columns = [
+    "SBQQ__Active__c",
+    "SBQQ__DisplayOrder__c",
+    "NAME",
+    "SBQQ__Type__c",
+    "SBQQ__Label__c",
+    "SBQQ__ParentCustomAction__c",
+    "SBQQ__Location__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  language = "en_US"
+  _parent = [
+    salesforce.SBQQ__CustomAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

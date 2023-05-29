@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_CallNoAnswer@zcdu {
+  available = true
+  description = "Call No Answer follow up"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Called, But No Answer"
+  relatedEntityType = "Lead"
+  style = "none"
+  subject = "Just Missed You"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_CallNoAnswer"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_CallNoAnswer/Sample_CallNoAnswer.email")
+}

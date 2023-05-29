@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__CloneWithRelated {
+  fullName = "SBQQ__Quote__c.SBQQ__CloneWithRelated"
+  availability = "online"
+  description = "Launches the Quote Lines preview page that allows users to clone the quote and line items or cancel the process."
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__CloneLineItems?id={!SBQQ__Quote__c.Id}"
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

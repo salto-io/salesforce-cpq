@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__TemplateContent__c_SBQQ__Translate {
+  fullName = "SBQQ__TemplateContent__c.SBQQ__Translate"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "Translate"
+  openType = "noSidebar"
+  protected = false
+  url = "/apex/SBQQ__Translations?targetObject=TemplateContent&targetId={!SBQQ__TemplateContent__c.Id}&supportUserDefined=true&supportStandard=false"
+  _parent = [
+    salesforce.SBQQ__TemplateContent__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

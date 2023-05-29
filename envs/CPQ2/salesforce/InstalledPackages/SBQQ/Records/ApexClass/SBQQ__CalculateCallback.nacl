@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__CalculateCallback {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__CalculateCallback"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__CalculateCallback.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

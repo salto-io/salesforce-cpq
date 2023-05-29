@@ -1,0 +1,29 @@
+type salesforce.ReportCustomDetailFormula {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string calculatedFormula {
+  }
+  string dataType {
+  }
+  string description {
+  }
+  string developerName {
+  }
+  string label {
+  }
+  number scale {
+  }
+  metadataType = "ReportCustomDetailFormula"
+}

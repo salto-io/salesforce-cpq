@@ -1,0 +1,4 @@
+salesforce.EinsteinAgentSettings {
+  fullName = "EinsteinAgent"
+  einsteinAgentRecommendations = "false"
+}

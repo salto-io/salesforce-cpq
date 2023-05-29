@@ -1,0 +1,100 @@
+salesforce.Layout SBQQ__FavoriteProduct__c_SBQQ__Favorite_Product_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.SBQQ__Quantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.SBQQ__RequiredBy__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.SBQQ__ProductOption__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.SBQQ__Favorite__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__FavoriteProduct__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000RxIxu"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__FavoriteProduct__c-SBQQ__Favorite Product Layout"
+  _parent = [
+    salesforce.SBQQ__FavoriteProduct__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

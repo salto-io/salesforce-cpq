@@ -1,0 +1,158 @@
+type salesforce.SBQQ__CustomActionCondition__c {
+  salesforce.MasterDetail SBQQ__CustomAction__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__CustomAction__c"
+    deprecated = false
+    description = "Custom Action that is running this Condition."
+    externalId = false
+    inlineHelpText = "Custom Action that is running this Condition."
+    label = "Custom Action"
+    referenceTo = [
+      salesforce.SBQQ__CustomAction__c,
+    ]
+    relationshipLabel = "Custom Action Conditions"
+    relationshipName = "Custom_Action_Conditions"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Field__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__Field__c"
+    deprecated = false
+    description = "Field on Quote Line or Product Option object that is evaluated by this condition."
+    externalId = false
+    inlineHelpText = "Choose a field on the target object."
+    label = "Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FilterValue__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__FilterValue__c"
+    deprecated = false
+    description = "Value to evaluate against."
+    externalId = false
+    inlineHelpText = "Enter the value you want to match in the field you selected using the operator chosen."
+    label = "Filter Value"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "The operator that is applied when comparing the Field with the Value."
+    externalId = false
+    inlineHelpText = "Select the operator to apply when comparing the Field with the Value."
+    label = "Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCheckbox SBQQ__ParentActionIsActive__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__ParentActionIsActive__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__CustomAction__r.SBQQ__Active__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "ParentConditionIsActive"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist SBQQ__TargetObject__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__TargetObject__c"
+    deprecated = false
+    description = "Object against which the condition is evaluated."
+    externalId = false
+    inlineHelpText = "Object against which the condition is evaluated."
+    label = "Target Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = false
+        label = "Quote"
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

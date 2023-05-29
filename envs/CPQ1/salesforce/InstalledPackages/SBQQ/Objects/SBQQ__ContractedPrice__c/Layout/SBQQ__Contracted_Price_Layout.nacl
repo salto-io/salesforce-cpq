@@ -1,0 +1,158 @@
+salesforce.Layout SBQQ__ContractedPrice__c_SBQQ__Contracted_Price_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ContractedPrice__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Account__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Price__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__EffectiveDate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Contract__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Discount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__DiscountSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__ExpirationDate__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Description"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Description__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__FilterField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Operator__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__FilterValue__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ContractedPrice__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ContractedPrice__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000001X4WB"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ContractedPrice__c-SBQQ__Contracted Price Layout"
+  _parent = [
+    salesforce.SBQQ__ContractedPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

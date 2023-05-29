@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__ConfigureProductsUI {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  description = "JavaScript UI Library backing Configure Products page."
+  fullName = "SBQQ__ConfigureProductsUI"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__ConfigureProductsUI.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

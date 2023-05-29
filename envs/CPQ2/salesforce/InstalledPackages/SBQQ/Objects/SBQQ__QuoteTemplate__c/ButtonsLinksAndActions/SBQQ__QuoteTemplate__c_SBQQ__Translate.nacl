@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__QuoteTemplate__c_SBQQ__Translate {
+  fullName = "SBQQ__QuoteTemplate__c.SBQQ__Translate"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Translate"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__Translations?targetObject=QuoteTemplate&targetId={!SBQQ__QuoteTemplate__c.Id}&supportUserDefined=false&supportStandard=true"
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

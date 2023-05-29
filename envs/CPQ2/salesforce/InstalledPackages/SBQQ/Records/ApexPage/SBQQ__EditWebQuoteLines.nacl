@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__EditWebQuoteLines {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "EditWebQuoteLines"
+  fullName = "SBQQ__EditWebQuoteLines"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EditWebQuoteLines.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

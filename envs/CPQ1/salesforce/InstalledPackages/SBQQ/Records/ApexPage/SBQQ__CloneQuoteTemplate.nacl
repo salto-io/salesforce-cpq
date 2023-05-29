@@ -1,0 +1,14 @@
+salesforce.ApexPage SBQQ__CloneQuoteTemplate {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  description = "Overrides standard Clone action to inject Clone Template Related page into \"after save\" URL."
+  label = "Clone Quote Template"
+  fullName = "SBQQ__CloneQuoteTemplate"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CloneQuoteTemplate.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,23 @@
+salesforce.GlobalValueSet SBQQ__OrderProductStatus {
+  fullName = "SBQQ__OrderProductStatus"
+  customValue = [
+    {
+      fullName = "Draft"
+      default = true
+      label = "Draft"
+    },
+    {
+      fullName = "Activated"
+      default = false
+      label = "Activated"
+    },
+  ]
+  description = "Order Product Statuses"
+  masterLabel = "Order Product Status"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

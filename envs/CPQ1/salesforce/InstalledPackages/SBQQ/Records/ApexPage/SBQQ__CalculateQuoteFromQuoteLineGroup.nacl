@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CalculateQuoteFromQuoteLineGroup {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = true
+  label = "CalculateQuoteFromQuoteLineGroup"
+  fullName = "SBQQ__CalculateQuoteFromQuoteLineGroup"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CalculateQuoteFromQuoteLineGroup.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

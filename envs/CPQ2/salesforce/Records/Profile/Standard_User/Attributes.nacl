@@ -1,0 +1,5 @@
+salesforce.Profile Standard {
+  fullName = "Standard"
+  custom = false
+  userLicense = "Salesforce"
+}

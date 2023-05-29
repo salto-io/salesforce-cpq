@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ErrorCondition__c_SBQQ__Tested_attr_required_if_global_field {
+  fullName = "SBQQ__ErrorCondition__c.SBQQ__Tested_attr_required_if_global_field"
+  active = true
+  description = "Tested Attribute required since the Tested Field is a global Configuration Attribute field."
+  errorConditionFormula = "IF(TEXT(SBQQ__TestedObject__c) == 'Configuration Attributes' && CONTAINS(TEXT(SBQQ__TestedField__c), '.') && SBQQ__TestedAttribute__c == '', true, false)"
+  errorMessage = "Tested Attribute required since the Tested Field is a global Configuration Attribute field."
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

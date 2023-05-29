@@ -1,0 +1,47 @@
+type salesforce.SBQQ__InstallProcessorLog__c {
+  salesforce.Text SBQQ__MethodName__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__MethodName__c"
+    deprecated = false
+    description = "Name of the method run within the Install Script"
+    externalId = false
+    inlineHelpText = "Name of the method run within the Install Script"
+    label = "Method Name"
+    length = 100
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime SBQQ__Time__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__Time__c"
+    deprecated = false
+    description = "Timestamp for running the method"
+    externalId = false
+    inlineHelpText = "Timestamp for running the method"
+    label = "Time"
+    _required = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__Version__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__Version__c"
+    deprecated = false
+    description = "Package version at the time of running the method"
+    externalId = false
+    inlineHelpText = "Package version at the time of running the method"
+    label = "Version"
+    length = 10
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

@@ -1,0 +1,5 @@
+salesforce.Profile Chatter_Free_User@s {
+  fullName = "Chatter Free User"
+  custom = false
+  userLicense = "Chatter Free"
+}

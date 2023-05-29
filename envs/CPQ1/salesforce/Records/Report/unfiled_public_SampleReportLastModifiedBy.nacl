@@ -1,0 +1,50 @@
+salesforce.Report unfiled_public_SampleReportLastModifiedBy@zcd {
+  columns = [
+    {
+      field = "SHORT_NAME"
+    },
+    {
+      field = "LONG_NAME"
+    },
+    {
+      field = "CREATED"
+    },
+    {
+      field = "FOLDER"
+    },
+    {
+      field = "CREATEDDATE"
+    },
+    {
+      field = "LASTMODIFIEDDATE"
+    },
+    {
+      field = "LASTRUNDATE"
+    },
+  ]
+  description = "Who is tweaking custom reports?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "LASTMODIFIED"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Last Modified By"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "ReportList"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "LASTMODIFIEDDATE"
+    interval = "INTERVAL_LAST30"
+  }
+  fullName = "unfiled$public/SampleReportLastModifiedBy"
+}

@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__ConfigurationAttribute__c {
+  fullName = "SBQQ__ConfigurationAttribute__c"
+  customObject = true
+  motif = "Custom19: Wrench"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

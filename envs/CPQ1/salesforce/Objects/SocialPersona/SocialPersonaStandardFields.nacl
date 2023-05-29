@@ -1,0 +1,509 @@
+type salesforce.SocialPersona {
+  salesforce.Checkbox AreWeFollowing {
+    apiName = "SocialPersona.AreWeFollowing"
+    defaultValue = false
+    label = "Are we following"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text AuthorLabels {
+    apiName = "SocialPersona.AuthorLabels"
+    length = 255
+    label = "Author Labels"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea Bio {
+    apiName = "SocialPersona.Bio"
+    length = 32000
+    label = "Bio"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text ExternalId {
+    apiName = "SocialPersona.ExternalId"
+    length = 255
+    label = "Social Persona Provider External Id"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Url ExternalPictureURL {
+    apiName = "SocialPersona.ExternalPictureURL"
+    label = "Provider External Picture URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Followers {
+    apiName = "SocialPersona.Followers"
+    label = "Followers"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number Following {
+    apiName = "SocialPersona.Following"
+    label = "Following"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number InfluencerScore {
+    apiName = "SocialPersona.InfluencerScore"
+    label = "Influencer Score"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Checkbox IsBlacklisted {
+    apiName = "SocialPersona.IsBlacklisted"
+    defaultValue = false
+    label = "Blocklisted"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsFollowingUs {
+    apiName = "SocialPersona.IsFollowingUs"
+    defaultValue = false
+    label = "Is following us"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsVerified {
+    apiName = "SocialPersona.IsVerified"
+    defaultValue = false
+    label = "Verified"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown Klout {
+    apiName = "SocialPersona.Klout"
+    _hidden_value = true
+  }
+  salesforce.Number ListedCount {
+    apiName = "SocialPersona.ListedCount"
+    label = "Listed Count"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Text MediaProvider {
+    apiName = "SocialPersona.MediaProvider"
+    length = 255
+    label = "Social Studio Media Provider"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text MediaType {
+    apiName = "SocialPersona.MediaType"
+    length = 255
+    label = "Social Studio Media Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "SocialPersona.Name"
+    length = 255
+    _required = true
+    label = "Social Handle"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number NumberOfFriends {
+    apiName = "SocialPersona.NumberOfFriends"
+    label = "Number Of Friends"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number NumberOfTweets {
+    apiName = "SocialPersona.NumberOfTweets"
+    label = "Number Of Tweets"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.MasterDetail ParentId {
+    apiName = "SocialPersona.ParentId"
+    relationshipName = "Parent"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Contact,
+      salesforce.Lead,
+      salesforce.SocialPost,
+    ]
+    _required = true
+    label = "Parent ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ProfileType {
+    apiName = "SocialPersona.ProfileType"
+    valueSet = [
+      {
+        fullName = "PERSON"
+        isActive = true
+        label = "Person"
+        default = false
+      },
+      {
+        fullName = "PAGE"
+        isActive = true
+        label = "Page"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Profile Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url ProfileUrl {
+    apiName = "SocialPersona.ProfileUrl"
+    label = "Profile URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Provider {
+    apiName = "SocialPersona.Provider"
+    valueSet = [
+      {
+        fullName = "Twitter"
+        isActive = true
+        label = "Twitter"
+        default = false
+      },
+      {
+        fullName = "Facebook"
+        isActive = true
+        label = "Facebook"
+        default = false
+      },
+      {
+        fullName = "LinkedIn"
+        isActive = true
+        label = "LinkedIn"
+        default = false
+      },
+      {
+        fullName = "YouTube"
+        isActive = true
+        label = "YouTube"
+        default = false
+      },
+      {
+        fullName = "Klout"
+        isActive = true
+        label = "Klout"
+        default = false
+      },
+      {
+        fullName = "Rypple"
+        isActive = true
+        label = "Rypple"
+        default = false
+      },
+      {
+        fullName = "GooglePlus"
+        isActive = true
+        label = "Google+"
+        default = false
+      },
+      {
+        fullName = "SinaWeibo"
+        isActive = true
+        label = "Sina Weibo"
+        default = false
+      },
+      {
+        fullName = "WeChat"
+        isActive = true
+        label = "WeChat"
+        default = false
+      },
+      {
+        fullName = "Line"
+        isActive = true
+        label = "Line"
+        default = false
+      },
+      {
+        fullName = "WhatsApp"
+        isActive = true
+        label = "WhatsApp"
+        default = false
+      },
+      {
+        fullName = "Pinterest"
+        isActive = true
+        label = "Pinterest"
+        default = false
+      },
+      {
+        fullName = "Instagram"
+        isActive = true
+        label = "Instagram"
+        default = false
+      },
+      {
+        fullName = "vKontakte"
+        isActive = true
+        label = "vKontakte"
+        default = false
+      },
+      {
+        fullName = "Azure"
+        isActive = true
+        label = "Azure"
+        default = false
+      },
+      {
+        fullName = "Skype"
+        isActive = true
+        label = "Skype"
+        default = false
+      },
+      {
+        fullName = "Telegram"
+        isActive = true
+        label = "Telegram"
+        default = false
+      },
+      {
+        fullName = "Snapchat"
+        isActive = true
+        label = "Snapchat"
+        default = false
+      },
+      {
+        fullName = "Messenger"
+        isActive = true
+        label = "Messenger"
+        default = false
+      },
+      {
+        fullName = "Kik"
+        isActive = true
+        label = "Kik"
+        default = false
+      },
+      {
+        fullName = "KakaoTalk"
+        isActive = true
+        label = "KakaoTalk"
+        default = false
+      },
+      {
+        fullName = "QQ"
+        isActive = true
+        label = "QQ"
+        default = false
+      },
+      {
+        fullName = "SMS"
+        isActive = true
+        label = "SMS"
+        default = false
+      },
+      {
+        fullName = "Spark"
+        isActive = true
+        label = "Spark"
+        default = false
+      },
+      {
+        fullName = "InstagramBusiness"
+        isActive = true
+        label = "InstagramBusiness"
+        default = false
+      },
+      {
+        fullName = "GoogleRtc"
+        isActive = true
+        label = "GoogleRTC"
+        default = false
+      },
+      {
+        fullName = "Other"
+        isActive = true
+        label = "Other Media Type"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Social Network"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text R6SourceId {
+    apiName = "SocialPersona.R6SourceId"
+    length = 255
+    label = "Social Studio Source Id"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text RealName {
+    apiName = "SocialPersona.RealName"
+    length = 255
+    label = "Real Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SourceApp {
+    apiName = "SocialPersona.SourceApp"
+    length = 255
+    label = "Source App"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text TopicType {
+    apiName = "SocialPersona.TopicType"
+    length = 255
+    label = "Topic Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Unknown UserId {
+    apiName = "SocialPersona.UserId"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "SocialPersona.Id"
+    label = "Social Persona ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SocialPersona.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SocialPersona.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SocialPersona.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SocialPersona.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SocialPersona.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SocialPersona.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDefault {
+    apiName = "SocialPersona.IsDefault"
+    defaultValue = false
+    label = "Default"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text AvatarUrl {
+    apiName = "SocialPersona.AvatarUrl"
+    length = 1024
+    label = "Avatar URL"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+}

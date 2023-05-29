@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__OrderSave {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "OrderSave"
+  fullName = "SBQQ__OrderSave"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__OrderSave.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

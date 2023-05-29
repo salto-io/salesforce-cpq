@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__InfiniteScroll {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  description = "Angular Directive that optimizes data rendering"
+  fullName = "SBQQ__InfiniteScroll"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__InfiniteScroll.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

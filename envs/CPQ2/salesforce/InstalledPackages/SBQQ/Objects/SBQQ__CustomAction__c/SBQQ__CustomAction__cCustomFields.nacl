@@ -1,0 +1,2158 @@
+type salesforce.SBQQ__CustomAction__c {
+  salesforce.Picklist SBQQ__Action__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Action__c"
+    deprecated = false
+    description = "Action that this custom action performs."
+    externalId = false
+    inlineHelpText = "Action that this custom action performs."
+    label = "Action"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Add Products"
+        default = false
+        label = "Add Products"
+      },
+      {
+        fullName = "Add Favorites"
+        default = false
+        label = "Add Favorites"
+      },
+      {
+        fullName = "Upgrade Assets"
+        default = false
+        label = "Upgrade Assets"
+      },
+      {
+        fullName = "Renew Subscriptions"
+        default = false
+        label = "Renew Subscriptions"
+      },
+      {
+        fullName = "Save"
+        default = false
+        label = "Save"
+      },
+      {
+        fullName = "Quick Save"
+        default = false
+        label = "Quick Save"
+      },
+      {
+        fullName = "Cancel"
+        default = false
+        label = "Cancel"
+      },
+      {
+        fullName = "Calculate"
+        default = false
+        label = "Calculate"
+      },
+      {
+        fullName = "Delete Lines"
+        default = false
+        label = "Delete Lines"
+      },
+      {
+        fullName = "Add Group"
+        default = false
+        label = "Add Group"
+      },
+      {
+        fullName = "Ungroup"
+        default = false
+        label = "Ungroup"
+      },
+      {
+        fullName = "Add Solution Group"
+        default = false
+        label = "Add Solution Group"
+      },
+      {
+        fullName = "Reset Discounts"
+        default = false
+        label = "Reset Discounts"
+      },
+      {
+        fullName = "Optional: All"
+        default = false
+        label = "Optional: All"
+      },
+      {
+        fullName = "Optional: None"
+        default = false
+        label = "Optional: None"
+      },
+      {
+        fullName = "Clone Group"
+        default = false
+        label = "Clone Group"
+      },
+      {
+        fullName = "Delete Group"
+        default = false
+        label = "Delete Group"
+      },
+      {
+        fullName = "Add To Favorites"
+        default = false
+        label = "Add To Favorites"
+      },
+      {
+        fullName = "Remove From Favorites"
+        default = false
+        label = "Remove From Favorites"
+      },
+      {
+        fullName = "Delete Line"
+        default = false
+        label = "Delete Line"
+      },
+      {
+        fullName = "Clone Line"
+        default = false
+        label = "Clone Line"
+      },
+      {
+        fullName = "Reconfigure Line"
+        default = false
+        label = "Reconfigure Line"
+      },
+      {
+        fullName = "Desegment Line"
+        default = false
+        label = "Desegment Line"
+      },
+      {
+        fullName = "Resegment Line"
+        default = false
+        label = "Resegment Line"
+      },
+      {
+        fullName = "View Discount Schedule"
+        default = false
+        label = "View Discount Schedule"
+      },
+      {
+        fullName = "View Consumption Schedule"
+        default = false
+        label = "View Consumption Schedule"
+      },
+      {
+        fullName = "Launch External"
+        default = false
+        label = "Launch External"
+      },
+      {
+        fullName = "Apply Edit Rules"
+        default = false
+        label = "Apply Edit Rules"
+      },
+      {
+        fullName = "Clone with Related"
+        default = false
+        label = "Clone with Related"
+      },
+      {
+        fullName = "Create Order"
+        default = false
+        label = "Create Order"
+      },
+      {
+        fullName = "Edit Lines"
+        default = false
+        label = "Edit Lines"
+      },
+      {
+        fullName = "Generate Document"
+        default = false
+        label = "Generate Document"
+      },
+      {
+        fullName = "Import Lines"
+        default = false
+        label = "Import Lines"
+      },
+      {
+        fullName = "Modify Quote Terms"
+        default = false
+        label = "Modify Quote Terms"
+      },
+      {
+        fullName = "Include Document"
+        default = false
+        label = "Include Document"
+      },
+      {
+        fullName = "Preview Document"
+        default = false
+        label = "Preview Document"
+      },
+      {
+        fullName = "Refresh Prices"
+        default = false
+        label = "Refresh Prices"
+      },
+      {
+        fullName = "Amend Assets"
+        default = false
+        label = "Amend Assets"
+      },
+      {
+        fullName = "Renew Assets"
+        default = false
+        label = "Renew Assets"
+      },
+      {
+        fullName = "Amend"
+        default = false
+        label = "Amend"
+      },
+      {
+        fullName = "Renew Contracts"
+        default = false
+        label = "Renew Contracts"
+      },
+      {
+        fullName = "Amend Contract"
+        default = false
+        label = "Amend Contract"
+      },
+      {
+        fullName = "Edit Order Products"
+        default = false
+        label = "Edit Order Products"
+      },
+      {
+        fullName = "View"
+        default = false
+        label = "View"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Save and Navigate"
+        default = false
+        label = "Save and Navigate"
+      },
+      {
+        fullName = "View Pricing Guidance"
+        default = false
+        label = "View Pricing Guidance"
+      },
+    ]
+    sorted = false
+    restricted = false
+    fieldDependency = {
+      controllingField = "SBQQ__Location__c"
+      valueSettings = [
+        {
+          valueName = "View"
+          controllingFieldValue = [
+            "Quote Document Panel",
+          ]
+        },
+        {
+          valueName = "Email"
+          controllingFieldValue = [
+            "Quote Document Panel",
+          ]
+        },
+        {
+          valueName = "Save"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Quick Save"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Cancel"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Calculate"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Delete Lines"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Add Group"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Ungroup"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Add Solution Group"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Reset Discounts"
+          controllingFieldValue = [
+            "Quote",
+            "Group",
+          ]
+        },
+        {
+          valueName = "Optional: All"
+          controllingFieldValue = [
+            "Quote",
+            "Group",
+          ]
+        },
+        {
+          valueName = "Optional: None"
+          controllingFieldValue = [
+            "Quote",
+            "Group",
+          ]
+        },
+        {
+          valueName = "Save and Navigate"
+          controllingFieldValue = [
+            "Quote",
+          ]
+        },
+        {
+          valueName = "Add Products"
+          controllingFieldValue = [
+            "Quote/Group",
+          ]
+        },
+        {
+          valueName = "Add Favorites"
+          controllingFieldValue = [
+            "Quote/Group",
+          ]
+        },
+        {
+          valueName = "Upgrade Assets"
+          controllingFieldValue = [
+            "Quote/Group",
+          ]
+        },
+        {
+          valueName = "Renew Subscriptions"
+          controllingFieldValue = [
+            "Quote/Group",
+          ]
+        },
+        {
+          valueName = "Clone Group"
+          controllingFieldValue = [
+            "Group",
+          ]
+        },
+        {
+          valueName = "Delete Group"
+          controllingFieldValue = [
+            "Group",
+          ]
+        },
+        {
+          valueName = "Add To Favorites"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Remove From Favorites"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Delete Line"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Clone Line"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Reconfigure Line"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Desegment Line"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Resegment Line"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "View Discount Schedule"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "View Consumption Schedule"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "View Pricing Guidance"
+          controllingFieldValue = [
+            "Line",
+          ]
+        },
+        {
+          valueName = "Launch External"
+          controllingFieldValue = [
+            "Configurator",
+          ]
+        },
+        {
+          valueName = "Apply Edit Rules"
+          controllingFieldValue = [
+            "Configurator",
+          ]
+        },
+        {
+          valueName = "Clone with Related"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Create Order"
+          controllingFieldValue = [
+            "Quote Panel",
+            "Opportunity Panel",
+          ]
+        },
+        {
+          valueName = "Edit Lines"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Generate Document"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Import Lines"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Modify Quote Terms"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Include Document"
+          controllingFieldValue = [
+            "Quote Panel",
+            "Opportunity Panel",
+          ]
+        },
+        {
+          valueName = "Preview Document"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Refresh Prices"
+          controllingFieldValue = [
+            "Quote Panel",
+          ]
+        },
+        {
+          valueName = "Amend Assets"
+          controllingFieldValue = [
+            "Account Panel",
+          ]
+        },
+        {
+          valueName = "Renew Assets"
+          controllingFieldValue = [
+            "Account Panel",
+          ]
+        },
+        {
+          valueName = "Amend"
+          controllingFieldValue = [
+            "Contract Panel",
+          ]
+        },
+        {
+          valueName = "Renew Contracts"
+          controllingFieldValue = [
+            "Contract Panel",
+          ]
+        },
+        {
+          valueName = "Amend Contract"
+          controllingFieldValue = [
+            "Opportunity Panel",
+          ]
+        },
+        {
+          valueName = "Edit Order Products"
+          controllingFieldValue = [
+            "Order Panel",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that determines whether this action is used."
+    externalId = false
+    inlineHelpText = "Select the checkbox to make this action available for use."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__BrandButton__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__BrandButton__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates this Custom Action is a Brand Button. Affects styling of un-nested Actions only."
+    externalId = false
+    inlineHelpText = "Indicates this Custom Action is a Brand Button. Affects styling of un-nested Actions only."
+    label = "Brand Button"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__Class__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Class__c"
+    deprecated = false
+    description = "Css class of the custom action for easy identification on HTML."
+    externalId = false
+    inlineHelpText = "Css class of the custom action for easy identification on HTML."
+    label = "Class"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ConditionsMet__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__ConditionsMet__c"
+    deprecated = false
+    description = "Choose the behavior for your conditions: All is AND; Any is OR."
+    externalId = false
+    inlineHelpText = "Choose the behavior for your conditions: All is AND; Any is OR."
+    label = "Conditions Met"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "All"
+        default = true
+        label = "All"
+      },
+      {
+        fullName = "Any"
+        default = false
+        label = "Any"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Default__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Default__c"
+    defaultValue = false
+    deprecated = false
+    description = "Sets action to be the default overriding action."
+    externalId = false
+    inlineHelpText = "Select checkbox to set action as the default overriding action."
+    label = "Default"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__Description__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Description__c"
+    deprecated = false
+    description = "Description of the Custom Action which will appear when users hover over the button."
+    externalId = false
+    inlineHelpText = "Enter the value for what you want to appear when a user hovers over the Custom Action button."
+    label = "Description"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__DisplayOrder__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__DisplayOrder__c"
+    deprecated = false
+    description = "The order in which this action display in the UI."
+    externalId = false
+    inlineHelpText = "The order in which this action display in the UI."
+    label = "Display Order"
+    precision = 3
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__EventHandlerName__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__EventHandlerName__c"
+    deprecated = false
+    description = "Method name for the click handler of this custom action."
+    externalId = false
+    inlineHelpText = "Method name for the click handler of this custom action."
+    label = "Event Handler Name"
+    length = 150
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__IconClass__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__IconClass__c"
+    deprecated = false
+    description = "CSS class name for the icon of this custom action."
+    externalId = false
+    inlineHelpText = "CSS class name for the icon of this custom action."
+    label = "Icon Class"
+    length = 100
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Icon__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Icon__c"
+    deprecated = false
+    description = "Icon for this custom action"
+    externalId = false
+    inlineHelpText = "Icon for this custom action"
+    label = "Icon"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "3dots"
+        default = false
+        label = "3dots"
+      },
+      {
+        fullName = "add"
+        default = false
+        label = "add"
+      },
+      {
+        fullName = "adduser"
+        default = false
+        label = "adduser"
+      },
+      {
+        fullName = "align-justify"
+        default = false
+        label = "align-justify"
+      },
+      {
+        fullName = "approval"
+        default = false
+        label = "approval"
+      },
+      {
+        fullName = "apps"
+        default = false
+        label = "apps"
+      },
+      {
+        fullName = "arrowdown"
+        default = false
+        label = "arrowdown"
+      },
+      {
+        fullName = "arrowup"
+        default = false
+        label = "arrowup"
+      },
+      {
+        fullName = "attach"
+        default = false
+        label = "attach"
+      },
+      {
+        fullName = "attention"
+        default = false
+        label = "attention"
+      },
+      {
+        fullName = "attention-circled"
+        default = false
+        label = "attention-circled"
+      },
+      {
+        fullName = "back"
+        default = false
+        label = "back"
+      },
+      {
+        fullName = "ban"
+        default = false
+        label = "ban"
+      },
+      {
+        fullName = "bold"
+        default = false
+        label = "bold"
+      },
+      {
+        fullName = "builder"
+        default = false
+        label = "builder"
+      },
+      {
+        fullName = "calendar"
+        default = false
+        label = "calendar"
+      },
+      {
+        fullName = "cancel"
+        default = false
+        label = "cancel"
+      },
+      {
+        fullName = "cancel-circled"
+        default = false
+        label = "cancel-circled"
+      },
+      {
+        fullName = "ccw"
+        default = false
+        label = "ccw"
+      },
+      {
+        fullName = "center_align_text"
+        default = false
+        label = "center_align_text"
+      },
+      {
+        fullName = "chart"
+        default = false
+        label = "chart"
+      },
+      {
+        fullName = "chat"
+        default = false
+        label = "chat"
+      },
+      {
+        fullName = "check"
+        default = false
+        label = "check"
+      },
+      {
+        fullName = "chevrondown"
+        default = false
+        label = "chevrondown"
+      },
+      {
+        fullName = "chevronleft"
+        default = false
+        label = "chevronleft"
+      },
+      {
+        fullName = "chevronright"
+        default = false
+        label = "chevronright"
+      },
+      {
+        fullName = "chevronup"
+        default = false
+        label = "chevronup"
+      },
+      {
+        fullName = "circle-empty"
+        default = false
+        label = "circle-empty"
+      },
+      {
+        fullName = "clear"
+        default = false
+        label = "clear"
+      },
+      {
+        fullName = "clock"
+        default = false
+        label = "clock"
+      },
+      {
+        fullName = "close"
+        default = false
+        label = "close"
+      },
+      {
+        fullName = "cog"
+        default = false
+        label = "cog"
+      },
+      {
+        fullName = "comments"
+        default = false
+        label = "comments"
+      },
+      {
+        fullName = "compass"
+        default = false
+        label = "compass"
+      },
+      {
+        fullName = "contact"
+        default = false
+        label = "contact"
+      },
+      {
+        fullName = "contract"
+        default = false
+        label = "contract"
+      },
+      {
+        fullName = "contract-1"
+        default = false
+        label = "contract-1"
+      },
+      {
+        fullName = "copy"
+        default = false
+        label = "copy"
+      },
+      {
+        fullName = "custom_apps"
+        default = false
+        label = "custom_apps"
+      },
+      {
+        fullName = "custom93"
+        default = false
+        label = "custom93"
+      },
+      {
+        fullName = "cut"
+        default = false
+        label = "cut"
+      },
+      {
+        fullName = "cw"
+        default = false
+        label = "cw"
+      },
+      {
+        fullName = "dashboard"
+        default = false
+        label = "dashboard"
+      },
+      {
+        fullName = "dayview"
+        default = false
+        label = "dayview"
+      },
+      {
+        fullName = "delete"
+        default = false
+        label = "delete"
+      },
+      {
+        fullName = "discountscheduleicons-02"
+        default = false
+        label = "discountscheduleicons-02"
+      },
+      {
+        fullName = "docs"
+        default = false
+        label = "docs"
+      },
+      {
+        fullName = "document"
+        default = false
+        label = "document"
+      },
+      {
+        fullName = "dot-circled"
+        default = false
+        label = "dot-circled"
+      },
+      {
+        fullName = "down"
+        default = false
+        label = "down"
+      },
+      {
+        fullName = "down-dir"
+        default = false
+        label = "down-dir"
+      },
+      {
+        fullName = "download"
+        default = false
+        label = "download"
+      },
+      {
+        fullName = "drafts"
+        default = false
+        label = "drafts"
+      },
+      {
+        fullName = "edit"
+        default = false
+        label = "edit"
+      },
+      {
+        fullName = "email"
+        default = false
+        label = "email"
+      },
+      {
+        fullName = "email-1"
+        default = false
+        label = "email-1"
+      },
+      {
+        fullName = "error"
+        default = false
+        label = "error"
+      },
+      {
+        fullName = "event"
+        default = false
+        label = "event"
+      },
+      {
+        fullName = "event-1"
+        default = false
+        label = "event-1"
+      },
+      {
+        fullName = "exchange"
+        default = false
+        label = "exchange"
+      },
+      {
+        fullName = "expand"
+        default = false
+        label = "expand"
+      },
+      {
+        fullName = "fast-backward"
+        default = false
+        label = "fast-backward"
+      },
+      {
+        fullName = "fast-forward"
+        default = false
+        label = "fast-forward"
+      },
+      {
+        fullName = "favorite"
+        default = false
+        label = "favorite"
+      },
+      {
+        fullName = "feed"
+        default = false
+        label = "feed"
+      },
+      {
+        fullName = "feedback"
+        default = false
+        label = "feedback"
+      },
+      {
+        fullName = "file"
+        default = false
+        label = "file"
+      },
+      {
+        fullName = "filter"
+        default = false
+        label = "filter"
+      },
+      {
+        fullName = "filterlist"
+        default = false
+        label = "filterlist"
+      },
+      {
+        fullName = "forward"
+        default = false
+        label = "forward"
+      },
+      {
+        fullName = "frozen"
+        default = false
+        label = "frozen"
+      },
+      {
+        fullName = "gdoc"
+        default = false
+        label = "gdoc"
+      },
+      {
+        fullName = "groups"
+        default = false
+        label = "groups"
+      },
+      {
+        fullName = "help"
+        default = false
+        label = "help"
+      },
+      {
+        fullName = "help-circled"
+        default = false
+        label = "help-circled"
+      },
+      {
+        fullName = "home"
+        default = false
+        label = "home"
+      },
+      {
+        fullName = "image"
+        default = false
+        label = "image"
+      },
+      {
+        fullName = "info"
+        default = false
+        label = "info"
+      },
+      {
+        fullName = "info-circled"
+        default = false
+        label = "info-circled"
+      },
+      {
+        fullName = "insert_tag_field"
+        default = false
+        label = "insert_tag_field"
+      },
+      {
+        fullName = "insert_template"
+        default = false
+        label = "insert_template"
+      },
+      {
+        fullName = "italic"
+        default = false
+        label = "italic"
+      },
+      {
+        fullName = "justify_text"
+        default = false
+        label = "justify_text"
+      },
+      {
+        fullName = "layout"
+        default = false
+        label = "layout"
+      },
+      {
+        fullName = "left"
+        default = false
+        label = "left"
+      },
+      {
+        fullName = "left_align_text"
+        default = false
+        label = "left_align_text"
+      },
+      {
+        fullName = "left-dir"
+        default = false
+        label = "left-dir"
+      },
+      {
+        fullName = "level-down"
+        default = false
+        label = "level-down"
+      },
+      {
+        fullName = "like"
+        default = false
+        label = "like"
+      },
+      {
+        fullName = "link"
+        default = false
+        label = "link"
+      },
+      {
+        fullName = "list"
+        default = false
+        label = "list"
+      },
+      {
+        fullName = "lock"
+        default = false
+        label = "lock"
+      },
+      {
+        fullName = "magicwand"
+        default = false
+        label = "magicwand"
+      },
+      {
+        fullName = "move"
+        default = false
+        label = "move"
+      },
+      {
+        fullName = "new"
+        default = false
+        label = "new"
+      },
+      {
+        fullName = "new_window"
+        default = false
+        label = "new_window"
+      },
+      {
+        fullName = "notebook"
+        default = false
+        label = "notebook"
+      },
+      {
+        fullName = "notification"
+        default = false
+        label = "notification"
+      },
+      {
+        fullName = "ok"
+        default = false
+        label = "ok"
+      },
+      {
+        fullName = "open"
+        default = false
+        label = "open"
+      },
+      {
+        fullName = "open_folder"
+        default = false
+        label = "open_folder"
+      },
+      {
+        fullName = "opened_folder"
+        default = false
+        label = "opened_folder"
+      },
+      {
+        fullName = "opportunity"
+        default = false
+        label = "opportunity"
+      },
+      {
+        fullName = "page"
+        default = false
+        label = "page"
+      },
+      {
+        fullName = "paired-lines"
+        default = false
+        label = "paired-lines"
+      },
+      {
+        fullName = "paste"
+        default = false
+        label = "paste"
+      },
+      {
+        fullName = "pdf"
+        default = false
+        label = "pdf"
+      },
+      {
+        fullName = "pencil"
+        default = false
+        label = "pencil"
+      },
+      {
+        fullName = "people"
+        default = false
+        label = "people"
+      },
+      {
+        fullName = "photo"
+        default = false
+        label = "photo"
+      },
+      {
+        fullName = "plus"
+        default = false
+        label = "plus"
+      },
+      {
+        fullName = "post"
+        default = false
+        label = "post"
+      },
+      {
+        fullName = "preview"
+        default = false
+        label = "preview"
+      },
+      {
+        fullName = "pricebook"
+        default = false
+        label = "pricebook"
+      },
+      {
+        fullName = "priority"
+        default = false
+        label = "priority"
+      },
+      {
+        fullName = "product"
+        default = false
+        label = "product"
+      },
+      {
+        fullName = "question_feed"
+        default = false
+        label = "question_feed"
+      },
+      {
+        fullName = "quotes"
+        default = false
+        label = "quotes"
+      },
+      {
+        fullName = "recent"
+        default = false
+        label = "recent"
+      },
+      {
+        fullName = "record"
+        default = false
+        label = "record"
+      },
+      {
+        fullName = "refresh"
+        default = false
+        label = "refresh"
+      },
+      {
+        fullName = "related_list"
+        default = false
+        label = "related_list"
+      },
+      {
+        fullName = "remove_link"
+        default = false
+        label = "remove_link"
+      },
+      {
+        fullName = "replace"
+        default = false
+        label = "replace"
+      },
+      {
+        fullName = "reply"
+        default = false
+        label = "reply"
+      },
+      {
+        fullName = "report"
+        default = false
+        label = "report"
+      },
+      {
+        fullName = "richtextbulletedlist"
+        default = false
+        label = "richtextbulletedlist"
+      },
+      {
+        fullName = "richtextindent"
+        default = false
+        label = "richtextindent"
+      },
+      {
+        fullName = "richtextnumberedlist"
+        default = false
+        label = "richtextnumberedlist"
+      },
+      {
+        fullName = "richtextoutdent"
+        default = false
+        label = "richtextoutdent"
+      },
+      {
+        fullName = "right"
+        default = false
+        label = "right"
+      },
+      {
+        fullName = "right_align_text"
+        default = false
+        label = "right_align_text"
+      },
+      {
+        fullName = "right-dir"
+        default = false
+        label = "right-dir"
+      },
+      {
+        fullName = "rows"
+        default = false
+        label = "rows"
+      },
+      {
+        fullName = "search"
+        default = false
+        label = "search"
+      },
+      {
+        fullName = "separator"
+        default = false
+        label = "separator"
+      },
+      {
+        fullName = "settings"
+        default = false
+        label = "settings"
+      },
+      {
+        fullName = "share"
+        default = false
+        label = "share"
+      },
+      {
+        fullName = "side_list"
+        default = false
+        label = "side_list"
+      },
+      {
+        fullName = "snippet"
+        default = false
+        label = "snippet"
+      },
+      {
+        fullName = "socialshare"
+        default = false
+        label = "socialshare"
+      },
+      {
+        fullName = "sort"
+        default = false
+        label = "sort"
+      },
+      {
+        fullName = "sort-name-down"
+        default = false
+        label = "sort-name-down"
+      },
+      {
+        fullName = "sort-name-up"
+        default = false
+        label = "sort-name-up"
+      },
+      {
+        fullName = "spinner"
+        default = false
+        label = "spinner"
+      },
+      {
+        fullName = "standard_objects"
+        default = false
+        label = "standard_objects"
+      },
+      {
+        fullName = "star"
+        default = false
+        label = "star"
+      },
+      {
+        fullName = "star-empty"
+        default = false
+        label = "star-empty"
+      },
+      {
+        fullName = "success"
+        default = false
+        label = "success"
+      },
+      {
+        fullName = "summary"
+        default = false
+        label = "summary"
+      },
+      {
+        fullName = "summarydetail"
+        default = false
+        label = "summarydetail"
+      },
+      {
+        fullName = "table"
+        default = false
+        label = "table"
+      },
+      {
+        fullName = "task"
+        default = false
+        label = "task"
+      },
+      {
+        fullName = "th"
+        default = false
+        label = "th"
+      },
+      {
+        fullName = "thanks"
+        default = false
+        label = "thanks"
+      },
+      {
+        fullName = "th-large"
+        default = false
+        label = "th-large"
+      },
+      {
+        fullName = "th-list"
+        default = false
+        label = "th-list"
+      },
+      {
+        fullName = "tile_card_list"
+        default = false
+        label = "tile_card_list"
+      },
+      {
+        fullName = "today"
+        default = false
+        label = "today"
+      },
+      {
+        fullName = "to-end"
+        default = false
+        label = "to-end"
+      },
+      {
+        fullName = "to-start"
+        default = false
+        label = "to-start"
+      },
+      {
+        fullName = "trending"
+        default = false
+        label = "trending"
+      },
+      {
+        fullName = "underline"
+        default = false
+        label = "underline"
+      },
+      {
+        fullName = "undo"
+        default = false
+        label = "undo"
+      },
+      {
+        fullName = "unlock"
+        default = false
+        label = "unlock"
+      },
+      {
+        fullName = "up"
+        default = false
+        label = "up"
+      },
+      {
+        fullName = "up-dir"
+        default = false
+        label = "up-dir"
+      },
+      {
+        fullName = "upload"
+        default = false
+        label = "upload"
+      },
+      {
+        fullName = "user"
+        default = false
+        label = "user"
+      },
+      {
+        fullName = "warning"
+        default = false
+        label = "warning"
+      },
+      {
+        fullName = "zoomin"
+        default = false
+        label = "zoomin"
+      },
+      {
+        fullName = "zoomout"
+        default = false
+        label = "zoomout"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Label__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Label__c"
+    deprecated = false
+    description = "Label displayed for this action in the UI."
+    externalId = false
+    inlineHelpText = "Label displayed for this action in the UI."
+    label = "Label"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Add Products"
+        default = true
+        label = "Add Products"
+      },
+      {
+        fullName = "Add Favorites"
+        default = false
+        label = "Add Favorites"
+      },
+      {
+        fullName = "Renew Subscriptions"
+        default = false
+        label = "Renew Subscriptions"
+      },
+      {
+        fullName = "Upgrade Assets"
+        default = false
+        label = "Upgrade Assets"
+      },
+      {
+        fullName = "Save"
+        default = false
+        label = "Save"
+      },
+      {
+        fullName = "Quick Save"
+        default = false
+        label = "Quick Save"
+      },
+      {
+        fullName = "Cancel"
+        default = false
+        label = "Cancel"
+      },
+      {
+        fullName = "Reset Discounts"
+        default = false
+        label = "Reset Discounts"
+      },
+      {
+        fullName = "Optional: All"
+        default = false
+        label = "Optional: All"
+      },
+      {
+        fullName = "Optional: None"
+        default = false
+        label = "Optional: None"
+      },
+      {
+        fullName = "Calculate"
+        default = false
+        label = "Calculate"
+      },
+      {
+        fullName = "Delete Lines"
+        default = false
+        label = "Delete Lines"
+      },
+      {
+        fullName = "Add Group"
+        default = false
+        label = "Add Group"
+      },
+      {
+        fullName = "Ungroup"
+        default = false
+        label = "Ungroup"
+      },
+      {
+        fullName = "Add Solution Group"
+        default = false
+        label = "Add Solution Group"
+      },
+      {
+        fullName = "Clone Group"
+        default = false
+        label = "Clone Group"
+      },
+      {
+        fullName = "Delete Group"
+        default = false
+        label = "Delete Group"
+      },
+      {
+        fullName = "Add To Favorites"
+        default = false
+        label = "Add To Favorites"
+      },
+      {
+        fullName = "Remove From Favorites"
+        default = false
+        label = "Remove From Favorites"
+      },
+      {
+        fullName = "Delete Line"
+        default = false
+        label = "Delete Line"
+      },
+      {
+        fullName = "Clone Line"
+        default = false
+        label = "Clone Line"
+      },
+      {
+        fullName = "Reconfigure Line"
+        default = false
+        label = "Reconfigure Line"
+      },
+      {
+        fullName = "Desegment Line"
+        default = false
+        label = "Desegment Line"
+      },
+      {
+        fullName = "Resegment Line"
+        default = false
+        label = "Resegment Line"
+      },
+      {
+        fullName = "View Discount Schedule"
+        default = false
+        label = "View Discount Schedule"
+      },
+      {
+        fullName = "Launch External"
+        default = false
+        label = "Launch External"
+      },
+      {
+        fullName = "Edit Lines"
+        default = false
+        label = "Edit Lines"
+      },
+      {
+        fullName = "Preview Document"
+        default = false
+        label = "Preview Document"
+      },
+      {
+        fullName = "Generate Document"
+        default = false
+        label = "Generate Document"
+      },
+      {
+        fullName = "Include Document"
+        default = false
+        label = "Include Document"
+      },
+      {
+        fullName = "Modify Quote Terms"
+        default = false
+        label = "Modify Quote Terms"
+      },
+      {
+        fullName = "Clone with Related"
+        default = false
+        label = "Clone with Related"
+      },
+      {
+        fullName = "Create Order"
+        default = false
+        label = "Create Order"
+      },
+      {
+        fullName = "Import Lines"
+        default = false
+        label = "Import Lines"
+      },
+      {
+        fullName = "Refresh Prices"
+        default = false
+        label = "Refresh Prices"
+      },
+      {
+        fullName = "Amend"
+        default = false
+        label = "Amend"
+      },
+      {
+        fullName = "Amend Contract"
+        default = false
+        label = "Amend Contract"
+      },
+      {
+        fullName = "Amend Assets"
+        default = false
+        label = "Amend Assets"
+      },
+      {
+        fullName = "Renew Contracts"
+        default = false
+        label = "Renew Contracts"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "View"
+        default = false
+        label = "View"
+      },
+      {
+        fullName = "Edit Order Products"
+        default = false
+        label = "Edit Order Products"
+      },
+      {
+        fullName = "View Consumption Schedule"
+        default = false
+        label = "View Consumption Schedule"
+      },
+      {
+        fullName = "Pricing Guidance"
+        default = false
+        label = "Pricing Guidance"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Location__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Location__c"
+    deprecated = false
+    description = "Location of this action on the page."
+    externalId = false
+    inlineHelpText = "Location of this action on the page."
+    label = "Location"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = true
+        label = "Quote"
+      },
+      {
+        fullName = "Quote/Group"
+        default = false
+        label = "Quote/Group"
+      },
+      {
+        fullName = "Group"
+        default = false
+        label = "Group"
+      },
+      {
+        fullName = "Line"
+        default = false
+        label = "Line"
+      },
+      {
+        fullName = "Configurator"
+        default = false
+        label = "Configurator"
+      },
+      {
+        fullName = "Quote Panel"
+        default = false
+        label = "Quote Panel"
+      },
+      {
+        fullName = "Account Panel"
+        default = false
+        label = "Account Panel"
+      },
+      {
+        fullName = "Contract Panel"
+        default = false
+        label = "Contract Panel"
+      },
+      {
+        fullName = "Opportunity Panel"
+        default = false
+        label = "Opportunity Panel"
+      },
+      {
+        fullName = "Order Panel"
+        default = false
+        label = "Order Panel"
+      },
+      {
+        fullName = "Quote Document Panel"
+        default = false
+        label = "Quote Document Panel"
+      },
+    ]
+    sorted = false
+    restricted = false
+    fieldDependency = {
+      controllingField = "SBQQ__Page__c"
+      valueSettings = [
+        {
+          valueName = "Configurator"
+          controllingFieldValue = [
+            "Product Configurator",
+          ]
+        },
+        {
+          valueName = "Quote"
+          controllingFieldValue = [
+            "Quote Line Editor",
+          ]
+        },
+        {
+          valueName = "Quote/Group"
+          controllingFieldValue = [
+            "Quote Line Editor",
+          ]
+        },
+        {
+          valueName = "Group"
+          controllingFieldValue = [
+            "Quote Line Editor",
+          ]
+        },
+        {
+          valueName = "Line"
+          controllingFieldValue = [
+            "Quote Line Editor",
+          ]
+        },
+        {
+          valueName = "Quote Panel"
+          controllingFieldValue = [
+            "Quote Detail",
+          ]
+        },
+        {
+          valueName = "Account Panel"
+          controllingFieldValue = [
+            "Account Detail",
+          ]
+        },
+        {
+          valueName = "Contract Panel"
+          controllingFieldValue = [
+            "Contract Detail",
+          ]
+        },
+        {
+          valueName = "Opportunity Panel"
+          controllingFieldValue = [
+            "Opportunity Detail",
+          ]
+        },
+        {
+          valueName = "Order Panel"
+          controllingFieldValue = [
+            "Order Detail",
+          ]
+        },
+        {
+          valueName = "Quote Document Panel"
+          controllingFieldValue = [
+            "Quote Document Detail",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__PageHandlerName__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__PageHandlerName__c"
+    deprecated = false
+    description = "Page name for this custom action."
+    externalId = false
+    inlineHelpText = "Page name for this custom action."
+    label = "Page Handler Name"
+    length = 150
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Page__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Page__c"
+    deprecated = false
+    description = "The page of which to add the custom action."
+    externalId = false
+    inlineHelpText = "The page of which to add the custom action."
+    label = "Page"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Configurator"
+        default = false
+        label = "Product Configurator"
+      },
+      {
+        fullName = "Quote Line Editor"
+        default = true
+        label = "Quote Line Editor"
+      },
+      {
+        fullName = "Quote Detail"
+        default = false
+        label = "Quote Detail"
+      },
+      {
+        fullName = "Account Detail"
+        default = false
+        label = "Account Detail"
+      },
+      {
+        fullName = "Contract Detail"
+        default = false
+        label = "Contract Detail"
+      },
+      {
+        fullName = "Opportunity Detail"
+        default = false
+        label = "Opportunity Detail"
+      },
+      {
+        fullName = "Order Detail"
+        default = false
+        label = "Order Detail"
+      },
+      {
+        fullName = "Quote Document Detail"
+        default = false
+        label = "Quote Document Detail"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ParentCustomAction__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__ParentCustomAction__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Reference to the parent custom action that this action is grouped under."
+    externalId = false
+    inlineHelpText = "Reference to the parent custom action that this action is grouped under."
+    label = "Parent Custom Action"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__CustomAction__c.SBQQ__Type__c"
+          operation = "equals"
+          value = "Menu"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__CustomAction__c,
+    ]
+    relationshipLabel = "Custom Actions"
+    relationshipName = "Custom_Actions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__ReturnURL__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__ReturnURL__c"
+    deprecated = false
+    description = "URL to return to after successful execution. Not applicable to all actions."
+    externalId = false
+    inlineHelpText = "URL to return to after successful execution. Not applicable to all actions."
+    label = "Return URL"
+    length = 2000
+    trackTrending = false
+    visibleLines = 2
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__TargetObject__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__TargetObject__c"
+    deprecated = false
+    description = "Object targeted by this action."
+    externalId = false
+    inlineHelpText = "Object targeted by this action."
+    label = "Target Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+      {
+        fullName = "Asset"
+        default = false
+        label = "Asset"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+      {
+        fullName = "Favorite"
+        default = false
+        label = "Favorite"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__Type__c"
+    deprecated = false
+    description = "UI element that this custom action is rendered as."
+    externalId = false
+    inlineHelpText = "UI element that this custom action is rendered as."
+    label = "Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Button"
+        default = false
+        label = "Button"
+      },
+      {
+        fullName = "Menu"
+        default = false
+        label = "Menu"
+      },
+      {
+        fullName = "Separator"
+        default = false
+        label = "Separator"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__URLTarget__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__URLTarget__c"
+    deprecated = false
+    description = "Method of navigating to the URL."
+    externalId = false
+    inlineHelpText = "Method of navigating to the URL."
+    label = "URL Target"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Popup"
+        default = false
+        label = "Popup"
+      },
+      {
+        fullName = "Replace Page"
+        default = false
+        label = "Replace Page"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__URL__c {
+    apiName = "SBQQ__CustomAction__c.SBQQ__URL__c"
+    deprecated = false
+    description = "URL to visit 'URL' is selected as the Target Object."
+    externalId = false
+    inlineHelpText = "Specify URL to navigate to. You have access to Line, Group, and Quote record fields dependent on selected location. Examples: http://www.salesforce.com, http://www.yoursite.com/{!Id}, or /{!SBQQ__Quote__c.Name}/{!SBQQ__YourCustomVar__c}"
+    label = "URL"
+    length = 2000
+    trackTrending = false
+    visibleLines = 2
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

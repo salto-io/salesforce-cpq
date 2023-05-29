@@ -1,0 +1,31 @@
+type salesforce.ContentAssetLink {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean isManagingWorkspace {
+  }
+  string name {
+  }
+  string access {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "COLLABORATOR",
+        "INFERRED",
+        "VIEWER",
+      ]
+    }
+  }
+  metadataType = "ContentAssetLink"
+}

@@ -1,0 +1,77 @@
+salesforce.Report unfiled_public_SampleReportofOpportunities@zcd {
+  columns = [
+    {
+      field = "FULL_NAME"
+    },
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      field = "TYPE"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      field = "AMOUNT"
+    },
+    {
+      field = "CLOSE_DATE"
+    },
+    {
+      field = "NEXT_STEP"
+    },
+    {
+      field = "STAGE_NAME"
+    },
+    {
+      field = "PROBABILITY"
+    },
+    {
+      field = "FISCAL_QUARTER"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "ROLLUP_DESCRIPTION"
+    },
+    {
+      field = "ACCOUNT_NAME"
+    },
+  ]
+  description = "How many opportunities are being added to Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Opportunities"
+  params = [
+    {
+      name = "open"
+      value = "all"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.Opportunity
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CLOSE_DATE"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/SampleReportofOpportunities"
+}

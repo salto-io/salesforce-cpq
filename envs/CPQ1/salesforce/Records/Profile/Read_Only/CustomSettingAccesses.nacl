@@ -1,0 +1,8 @@
+salesforce.Profile Read_Only@s {
+  customSettingAccesses = {
+    SBQQ__FieldMetadata__c = {
+      enabled = true
+      name = "SBQQ__FieldMetadata__c"
+    }
+  }
+}

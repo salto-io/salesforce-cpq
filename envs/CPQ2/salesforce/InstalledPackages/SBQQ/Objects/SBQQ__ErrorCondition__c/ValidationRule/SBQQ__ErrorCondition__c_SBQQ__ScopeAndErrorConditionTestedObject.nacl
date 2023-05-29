@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ErrorCondition__c_SBQQ__ScopeAndErrorConditionTestedObject {
+  fullName = "SBQQ__ErrorCondition__c.SBQQ__ScopeAndErrorConditionTestedObject"
+  active = true
+  description = "Validation for the combination of Product Scope and Tested Object."
+  errorConditionFormula = "OR(AND(ISPICKVAL(SBQQ__Rule__r.SBQQ__Scope__c,\"Quote\"),OR(ISPICKVAL(SBQQ__TestedObject__c, \"Product Option\"),ISPICKVAL(SBQQ__TestedObject__c, \"Configuration Attributes\"))),AND(ISPICKVAL(SBQQ__Rule__r.SBQQ__Scope__c,\"Product\"),ISPICKVAL(SBQQ__TestedObject__c, \"Quote Line\")))"
+  errorMessage = "This combination of ProductRule.Scope and ErrorCondition.TestedObject is not valid."
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

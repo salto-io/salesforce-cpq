@@ -1,0 +1,98 @@
+type salesforce.SBQQ__SubscribedAsset__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the subscribed asset record is active."
+    externalId = false
+    inlineHelpText = "Indicates whether the subscribed asset record is active."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__AssetRootId__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__AssetRootId__c"
+    deprecated = false
+    description = "The ID of the subscription or asset at the root of the bundle that contains the related asset"
+    externalId = false
+    formula = "IF(NOT(ISBLANK(SBQQ__Asset__r.SBQQ__RevisedAsset__r.SBQQ__RootId__c)), SBQQ__Asset__r.SBQQ__RevisedAsset__r.SBQQ__RootId__c, IF(NOT(ISBLANK(SBQQ__Asset__r.SBQQ__RootId__c)), SBQQ__Asset__r.SBQQ__RootId__c, null))"
+    inlineHelpText = "The ID of the subscription or asset at the root of the bundle that contains the related asset"
+    label = "Asset Root Id"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__Asset__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__Asset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Asset being covered by a subscription."
+    externalId = false
+    inlineHelpText = "Asset being covered by a subscription."
+    label = "Asset"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__ContractId__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__ContractId__c"
+    deprecated = false
+    description = "Identifies the contract for the subscription."
+    externalId = false
+    formula = "SBQQ__Subscription__r.SBQQ__Contract__c"
+    inlineHelpText = "Identifies the contract for the subscription."
+    label = "Contract Id"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail SBQQ__Subscription__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__Subscription__c"
+    deprecated = false
+    description = "Subscription that covers the asset."
+    externalId = false
+    inlineHelpText = "Subscription that covers the asset."
+    label = "Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Subscribed Assets"
+    relationshipName = "SubscribedAssets"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.FormulaDate SBQQ__UsageEndDate__c {
+    apiName = "SBQQ__SubscribedAsset__c.SBQQ__UsageEndDate__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__Asset__r.UsageEndDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Asset Usage End Date"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,70 @@
+type salesforce.Profile {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "Map<salesforce.ProfileApplicationVisibility>" applicationVisibilities {
+  }
+  "Map<List<salesforce.ProfileCategoryGroupVisibility>>" categoryGroupVisibilities {
+  }
+  "Map<salesforce.ProfileApexClassAccess>" classAccesses {
+  }
+  boolean custom {
+  }
+  "Map<salesforce.ProfileCustomMetadataTypeAccess>" customMetadataTypeAccesses {
+  }
+  "Map<salesforce.ProfileCustomPermissions>" customPermissions {
+  }
+  "Map<salesforce.ProfileCustomSettingAccess>" customSettingAccesses {
+  }
+  string description {
+  }
+  "Map<salesforce.ProfileExternalDataSourceAccess>" externalDataSourceAccesses {
+  }
+  "Map<Map<salesforce.FieldPermissionEnum>>" fieldPermissions {
+  }
+  "Map<salesforce.ProfileFlowAccess>" flowAccesses {
+  }
+  serviceid fullName {
+  }
+  "Map<List<salesforce.ProfileLayoutAssignment>>" layoutAssignments {
+  }
+  salesforce.LoginFlow loginFlows {
+  }
+  salesforce.ProfileLoginHours loginHours {
+  }
+  salesforce.ProfileLoginIpRange loginIpRanges {
+  }
+  "Map<salesforce.ProfileObjectPermissions>" objectPermissions {
+  }
+  "Map<salesforce.ProfileApexPageAccess>" pageAccesses {
+  }
+  salesforce.ProfileActionOverride profileActionOverrides {
+  }
+  "Map<Map<salesforce.ProfileRecordTypeVisibility>>" recordTypeVisibilities {
+  }
+  string userLicense {
+    foreignKeyDomain = [
+      "UserLicense",
+    ]
+  }
+  "Map<salesforce.ProfileUserPermission>" userPermissions {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "profile"
+  dirName = "profiles"
+  metadataType = "Profile"
+}

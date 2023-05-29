@@ -1,0 +1,21 @@
+type salesforce.ReportBucketFieldValue {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.ReportBucketFieldSourceValue>" sourceValues {
+  }
+  string value {
+  }
+  metadataType = "ReportBucketFieldValue"
+}

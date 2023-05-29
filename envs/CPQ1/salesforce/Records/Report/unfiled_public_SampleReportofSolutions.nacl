@@ -1,0 +1,53 @@
+salesforce.Report unfiled_public_SampleReportofSolutions@zcd {
+  columns = [
+    {
+      field = "ISSUE"
+    },
+    {
+      field = "SOLUTION_NUMBER"
+    },
+    {
+      field = "SOLUTION_NOTE"
+    },
+    {
+      field = "OWNER"
+    },
+    {
+      field = "EXTERNAL"
+    },
+    {
+      field = "STATUS"
+    },
+    {
+      field = "TIMES_USED"
+    },
+    {
+      field = "LAST_UPDATE"
+    },
+  ]
+  description = "How many solutions have been added to Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Solutions"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "SolutionList"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofSolutions"
+}

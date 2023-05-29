@@ -1,0 +1,26 @@
+salesforce.WebLink User_SBQQ__Select_Theme {
+  fullName = "User.SBQQ__Select_Theme"
+  availability = "online"
+  displayType = "link"
+  hasMenubar = false
+  hasScrollbars = true
+  hasToolbar = false
+  height = 600
+  isResizable = true
+  linkType = "page"
+  masterLabel = "Select Theme"
+  openType = "newWindow"
+  page = salesforce.ApexPage.instance.SBQQ__ThemeLookup
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  _parent = [
+    salesforce.User,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBWUA0 {
+  SBQQ__Action__c = "Reset Discounts"
+  SBQQ__Active__c = false
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "resetDiscBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 908
+  SBQQ__EventHandlerName__c = "onResetDiscounts"
+  SBQQ__Label__c = "Reset Discounts"
+  SBQQ__Location__c = "Quote"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Reset Discounts - Quote"
+  _alias = "Reset Discounts - Quote"
+}

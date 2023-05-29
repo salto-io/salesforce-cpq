@@ -1,0 +1,20 @@
+salesforce.WebLink Account_SBQQ__Renew_Assets {
+  fullName = "Account.SBQQ__Renew_Assets"
+  availability = "online"
+  description = "It is used to renew assets from an account when Global Settings - Renewal Model is set to Asset Based."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Renew Assets"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__AssetSelector
+  protected = false
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

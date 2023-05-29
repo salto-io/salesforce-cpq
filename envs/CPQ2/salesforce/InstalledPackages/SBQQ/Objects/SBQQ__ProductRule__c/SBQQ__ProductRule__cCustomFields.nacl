@@ -1,0 +1,288 @@
+type salesforce.SBQQ__ProductRule__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that indicates whether this rule is active or inactive."
+    externalId = false
+    inlineHelpText = "Indicates whether this rule is active or inactive."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__AdvancedCondition__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__AdvancedCondition__c"
+    deprecated = false
+    description = "Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125)."
+    externalId = false
+    inlineHelpText = "Can only be entered if the Conditions Met is Custom. Enter a combination of the Error Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125)."
+    label = "Advanced Condition"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ConditionsMet__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__ConditionsMet__c"
+    deprecated = false
+    description = "Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR."
+    externalId = false
+    inlineHelpText = "Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR."
+    label = "Conditions Met"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "All"
+        default = false
+        label = "All"
+      },
+      {
+        fullName = "Any"
+        default = false
+        label = "Any"
+      },
+      {
+        fullName = "Custom"
+        default = false
+        label = "Custom"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__ErrorMessage__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__ErrorMessage__c"
+    deprecated = false
+    description = "Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules."
+    externalId = false
+    inlineHelpText = "Enter a message to displayed when rule is activated.  An error message will be displayed when a Validations is fired.  A warning message will be displayed when an Alert is fired. Does not apply to Filter rules."
+    label = "Message"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__EvaluationEvent__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__EvaluationEvent__c"
+    deprecated = false
+    description = "Event that causes this rule to be evaluated."
+    externalId = false
+    inlineHelpText = "Specify when this rule should be evaluated."
+    label = "Evaluation Event"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Load"
+        default = false
+        label = "Load"
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Edit"
+      },
+      {
+        fullName = "Save"
+        default = false
+        label = "Save"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__EvaluationOrder__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__EvaluationOrder__c"
+    deprecated = false
+    description = "Order in which this price rule is evaluated."
+    externalId = false
+    inlineHelpText = "Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they \"win\" in case of conflict."
+    label = "Evaluation Order"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupMessageField__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__LookupMessageField__c"
+    deprecated = false
+    description = "Field on Lookup Object corresponding to Product Rule Message. Field must be text."
+    externalId = false
+    inlineHelpText = "Field on Lookup Object corresponding to Product Rule Message. Field must be text."
+    label = "Lookup Message Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "SBQQ__Message__c"
+        default = false
+        label = "SBQQ__Message__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupObject__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__LookupObject__c"
+    deprecated = false
+    description = "API Name of the Custom Object that stores the lookup data."
+    externalId = false
+    inlineHelpText = "API Name of the Custom Object that stores the lookup data."
+    label = "Lookup Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = salesforce.SBQQ__LookupData__c
+        default = false
+        label = "SBQQ__LookupData__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupProductField__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__LookupProductField__c"
+    deprecated = false
+    description = "Field on Lookup Object corresponding to Product Action Product Lookup. Field must be a lookup to the Product object."
+    externalId = false
+    inlineHelpText = "Field on Lookup Object corresponding to Product Action Product Lookup. Field must be a lookup to the Product object."
+    label = "Lookup Product Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "SBQQ__Product__c"
+        default = false
+        label = "SBQQ__Product__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupRequiredField__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__LookupRequiredField__c"
+    deprecated = false
+    description = "Field on Lookup Object corresponding to Product Action Required checkbox. Field must be checkbox."
+    externalId = false
+    inlineHelpText = "Field on Lookup Object corresponding to Product Action Required checkbox. Field must be checkbox."
+    label = "Lookup Required Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "SBQQ__Required__c"
+        default = false
+        label = "SBQQ__Required__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupTypeField__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__LookupTypeField__c"
+    deprecated = false
+    description = "Field on Lookup Object corresponding to Product Action Type picklist. Field must be a Picklist or Text."
+    externalId = false
+    inlineHelpText = "Field on Lookup Object corresponding to Product Action Type picklist. Field must be a Picklist or Text."
+    label = "Lookup Type Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "SBQQ__Type__c"
+        default = false
+        label = "SBQQ__Type__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Scope__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__Scope__c"
+    deprecated = false
+    description = "Scopes the rule to the entire quote or specific product."
+    externalId = false
+    inlineHelpText = "Applies the rule to the entire quote or specific product."
+    label = "Scope"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = true
+        label = "Quote"
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__ProductRule__c.SBQQ__Type__c"
+    deprecated = false
+    description = "Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles."
+    externalId = false
+    inlineHelpText = "Type of rule. Validation displays error messages. Selection causes products to be added or suggested. Alert displays a warning, but requires no rectification. Filter refines option lookup results for Dynamic Bundles."
+    label = "Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Validation"
+        default = false
+        label = "Validation"
+      },
+      {
+        fullName = "Selection"
+        default = false
+        label = "Selection"
+      },
+      {
+        fullName = "Alert"
+        default = false
+        label = "Alert"
+      },
+      {
+        fullName = "Filter"
+        default = false
+        label = "Filter"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

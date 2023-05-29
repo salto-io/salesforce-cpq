@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ConfigurationAttribute__c_SBQQ__Product_is_required_if_not_global {
+  fullName = "SBQQ__ConfigurationAttribute__c.SBQQ__Product_is_required_if_not_global"
+  active = false
+  description = "Product is required (not implemented; override existing validation rule behavior for existing orgs"
+  errorConditionFormula = "false"
+  errorMessage = "Product is required."
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

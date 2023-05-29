@@ -1,0 +1,56 @@
+salesforce.Profile Identity_User@s {
+  flowAccesses = {
+    Another_CPQ_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Another_CPQ_Flow
+    }
+    CPQ_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.CPQ_Flow
+    }
+    Change_Set_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Change_Set_Flow
+    }
+    Dan_Another_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Dan_Another_Flow
+    }
+    Dan_Auto_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Dan_Auto_Flow
+    }
+    Dan_New_Record_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Dan_New_Record_Flow
+    }
+    Dan_Record_Triggered_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Dan_Record_Triggered_Flow
+    }
+    Deploy_from_Change_Set = {
+      enabled = false
+      flow = salesforce.Flow.instance.Deploy_from_Change_Set
+    }
+    Deploy_from_Salto = {
+      enabled = false
+      flow = salesforce.Flow.instance.Deploy_from_Salto
+    }
+    Salto_Flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.Salto_Flow
+    }
+    Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account = {
+      enabled = false
+      flow = salesforce.Flow.instance.Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account
+    }
+    Save_account_s_domain_name_used_to_avoid_duplicates = {
+      enabled = false
+      flow = salesforce.Flow.instance.Save_account_s_domain_name_used_to_avoid_duplicates
+    }
+    The_ultimate_flow = {
+      enabled = false
+      flow = salesforce.Flow.instance.The_ultimate_flow
+    }
+  }
+}

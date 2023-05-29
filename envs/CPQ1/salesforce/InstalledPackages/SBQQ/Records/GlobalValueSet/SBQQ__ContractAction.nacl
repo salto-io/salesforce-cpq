@@ -1,0 +1,43 @@
+salesforce.GlobalValueSet SBQQ__ContractAction {
+  fullName = "SBQQ__ContractAction"
+  customValue = [
+    {
+      fullName = "New"
+      default = false
+      label = "New"
+    },
+    {
+      fullName = "Quantity Increase"
+      default = false
+      label = "Quantity Increase"
+    },
+    {
+      fullName = "Quantity Decrease"
+      default = false
+      label = "Quantity Decrease"
+    },
+    {
+      fullName = "Product Swap"
+      default = false
+      label = "Product Swap"
+    },
+    {
+      fullName = "Renew"
+      default = false
+      label = "Renew"
+    },
+    {
+      fullName = "Cancel"
+      default = false
+      label = "Cancel"
+    },
+  ]
+  description = "Contract actions"
+  masterLabel = "Contract Action"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

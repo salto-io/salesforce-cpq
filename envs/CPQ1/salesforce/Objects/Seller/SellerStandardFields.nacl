@@ -1,0 +1,130 @@
+type salesforce.Seller {
+  salesforce.Unknown ActiveFromDate {
+    apiName = "Seller.ActiveFromDate"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown ActiveToDate {
+    apiName = "Seller.ActiveToDate"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Seller.Name"
+    trackHistory = false
+    length = 255
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Seller.OwnerId"
+    trackHistory = false
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PartyId {
+    apiName = "Seller.PartyId"
+    trackHistory = false
+    relationshipName = "Party"
+    referenceTo = [
+      salesforce.Individual,
+    ]
+    label = "Individual ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown SalesAmount {
+    apiName = "Seller.SalesAmount"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown SellerTier {
+    apiName = "Seller.SellerTier"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown SellerType {
+    apiName = "Seller.SellerType"
+    trackHistory = false
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "Seller.Id"
+    label = "Seller ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Seller.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Seller.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Seller.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Seller.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Seller.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Seller.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

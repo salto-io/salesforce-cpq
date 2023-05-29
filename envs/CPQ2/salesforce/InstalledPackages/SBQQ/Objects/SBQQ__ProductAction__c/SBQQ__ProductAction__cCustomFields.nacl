@@ -1,0 +1,300 @@
+type salesforce.SBQQ__ProductAction__c {
+  salesforce.Picklist SBQQ__FilterField__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__FilterField__c"
+    deprecated = false
+    description = "The field that is updated when the rule is triggered."
+    externalId = false
+    inlineHelpText = "Choose the field to update when the rule is triggered."
+    label = "Filter Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+      {
+        fullName = "Product Family"
+        default = false
+        label = "Product Family"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FilterValue__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__FilterValue__c"
+    deprecated = false
+    description = "The value that will be updated in the chosen Filter Field."
+    externalId = false
+    inlineHelpText = "Enter the value to be updated in the chosen Filter Field."
+    label = "Filter Value"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "The operator that determines how the Filter Field will be applied to the Filter Value."
+    externalId = false
+    inlineHelpText = "Choose the operator that determines how the Filter Field will apply to the Filter Value."
+    label = "Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__ParentRuleIsActive__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__Rule__r.SBQQ__Active__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "ParentRuleIsActive"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The product that is automatically selected on the quote."
+    externalId = false
+    inlineHelpText = "Choose the product to be automatically selected on the quote. Note: The product rule Type must be set to \"Selection\"."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Product Actions"
+    relationshipName = "ProductActions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Required__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__Required__c"
+    defaultValue = false
+    deprecated = false
+    description = "Determines whether the product in the Product Lookup field will be selected on the quote."
+    externalId = false
+    inlineHelpText = "Select if you want the product in the Product Lookup field to be selected on the quote."
+    label = "Required"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__Rule__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__Rule__c"
+    deprecated = false
+    description = "Rule that runs this product action."
+    externalId = false
+    inlineHelpText = "Rule that runs this product action."
+    label = "Rule"
+    referenceTo = [
+      salesforce.SBQQ__ProductRule__c,
+    ]
+    relationshipLabel = "Actions"
+    relationshipName = "Actions"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__Type__c"
+    deprecated = false
+    description = "Type of action."
+    externalId = false
+    inlineHelpText = "Specify the type of action."
+    label = "Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Add"
+        default = false
+        label = "Add"
+      },
+      {
+        fullName = "Remove"
+        default = false
+        label = "Remove"
+      },
+      {
+        fullName = "Enable"
+        default = false
+        label = "Enable"
+      },
+      {
+        fullName = "Disable"
+        default = false
+        label = "Disable"
+      },
+      {
+        fullName = "Enable & Add"
+        default = false
+        label = "Enable & Add"
+      },
+      {
+        fullName = "Disable & Remove"
+        default = false
+        label = "Disable & Remove"
+      },
+      {
+        fullName = "Show"
+        default = false
+        label = "Show"
+      },
+      {
+        fullName = "Hide"
+        default = false
+        label = "Hide"
+      },
+      {
+        fullName = "Show & Add"
+        default = false
+        label = "Show & Add"
+      },
+      {
+        fullName = "Hide & Remove"
+        default = false
+        label = "Hide & Remove"
+      },
+      {
+        fullName = "Default Filter"
+        default = false
+        label = "Default Filter"
+      },
+      {
+        fullName = "Optional Filter"
+        default = false
+        label = "Optional Filter"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ValueAttribute__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__ValueAttribute__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Used to identify the specific attribute if the Value Field is a global Configuration Attribute field."
+    externalId = false
+    inlineHelpText = "Used to identify the specific attribute if the Value Field is a global Configuration Attribute field."
+    label = "Value Attribute"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "$Source.SBQQ__ValueField__c"
+          operation = "equals"
+          valueField = "SBQQ__ProductAttribute__c.SBQQ__Attribute__r.SBQQ__TargetField__c"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductAttribute__c,
+    ]
+    relationshipLabel = "Product Actions"
+    relationshipName = "ProductActions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ValueField__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__ValueField__c"
+    deprecated = false
+    description = "This field will be used instead of the Filter Value when compared with the Filter Field."
+    externalId = false
+    inlineHelpText = "Compares the Filter Field with this field instead of the Filter Value."
+    label = "Value Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ValueObject__c {
+    apiName = "SBQQ__ProductAction__c.SBQQ__ValueObject__c"
+    deprecated = false
+    description = "The Salesforce Object that holds the Value Field,"
+    externalId = false
+    inlineHelpText = "Select the Salesforce Object where the Value Field is defined."
+    label = "Value Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = false
+        label = "Quote"
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+      {
+        fullName = "Configuration Attributes"
+        default = false
+        label = "Configuration Attributes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

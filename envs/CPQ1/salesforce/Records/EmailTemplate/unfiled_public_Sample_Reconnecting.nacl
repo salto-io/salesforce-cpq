@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_Reconnecting@zcdu {
+  available = true
+  description = "Not taking no for an answer"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Reconnecting"
+  relatedEntityType = "Lead"
+  style = "none"
+  subject = "Timing is everything"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_Reconnecting"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_Reconnecting/Sample_Reconnecting.email")
+}

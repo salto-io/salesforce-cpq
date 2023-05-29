@@ -1,0 +1,69 @@
+salesforce.Report unfiled_public_SampleReportofOpenTasks@zcd {
+  columns = [
+    {
+      field = "SUBJECT"
+    },
+    {
+      field = "DUE_DATE"
+    },
+    {
+      field = "PRIORITY"
+    },
+    {
+      field = "TASK"
+    },
+    {
+      field = "ACCOUNT"
+    },
+    {
+      field = "CONTACT"
+    },
+    {
+      field = "LEAD"
+    },
+    {
+      field = "OPPORTUNITY"
+    },
+  ]
+  description = "How many open tasks do each of my users have?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "STATUS"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "ASSIGNED"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Open Tasks"
+  params = [
+    {
+      name = "closed"
+      value = "open"
+    },
+    {
+      name = "type"
+      value = "te"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.Activity
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "DUE_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofOpenTasks"
+}

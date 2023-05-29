@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle SBQQ__cpqltng {
+  apiVersion = 56
+  description = "DESCRIPTION"
+  fullName = "SBQQ__cpqltng"
+  type = "Application"
+  markup = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

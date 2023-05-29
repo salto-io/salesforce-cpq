@@ -1,0 +1,21 @@
+salesforce.ListView SBQQ__ProcessInput__c_SBQQ__All {
+  fullName = "SBQQ__ProcessInput__c.SBQQ__All"
+  columns = [
+    "SBQQ__DisplayOrder__c",
+    "SBQQ__Active__c",
+    "NAME",
+    "SBQQ__InputField__c",
+    "SBQQ__ProductField__c",
+    "SBQQ__Operator__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__ProcessInput__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

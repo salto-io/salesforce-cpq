@@ -1,0 +1,145 @@
+type salesforce.SBQQ__AttributeValue__c {
+  salesforce.Lookup SBQQ__Asset__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__Asset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Asset"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__Attribute__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__Attribute__c"
+    deprecated = false
+    externalId = false
+    label = "Attribute"
+    referenceTo = [
+      salesforce.SBQQ__ProductAttribute__c,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__FavoriteProduct__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__FavoriteProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Favorite Product"
+    referenceTo = [
+      salesforce.SBQQ__FavoriteProduct__c,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__OrderItem__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__OrderItem__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Order Product"
+    referenceTo = [
+      salesforce.OrderItem,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__QuoteLine__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__QuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Subscription__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__Subscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Attribute Values"
+    relationshipName = "AttributeValues"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime SBQQ__ValueDateTime__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__ValueDateTime__c"
+    deprecated = false
+    externalId = false
+    label = "Value (Date Time)"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__ValueDate__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__ValueDate__c"
+    deprecated = false
+    externalId = false
+    label = "Value (Date)"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__ValueNumber__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__ValueNumber__c"
+    deprecated = false
+    externalId = false
+    label = "Value (Number)"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__Value__c {
+    apiName = "SBQQ__AttributeValue__c.SBQQ__Value__c"
+    deprecated = false
+    externalId = false
+    label = "Value (Text)"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

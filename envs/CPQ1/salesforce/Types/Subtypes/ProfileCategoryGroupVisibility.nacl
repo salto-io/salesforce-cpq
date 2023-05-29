@@ -1,0 +1,22 @@
+type salesforce.ProfileCategoryGroupVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string dataCategories {
+  }
+  string dataCategoryGroup {
+    _required = true
+  }
+  metadataType = "ProfileCategoryGroupVisibility"
+}

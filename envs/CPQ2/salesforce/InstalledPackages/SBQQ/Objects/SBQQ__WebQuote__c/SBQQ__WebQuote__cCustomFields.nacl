@@ -1,0 +1,1045 @@
+type salesforce.SBQQ__WebQuote__c {
+  salesforce.Lookup SBQQ__Account__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Account__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Customer account. Defaulted on create from the opportunity."
+    externalId = false
+    inlineHelpText = "Customer account for this quote. Defaults to the account for the opportunity when creating a quote."
+    label = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    relationshipLabel = "Quotes"
+    relationshipName = "WebQuotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCurrency SBQQ__AdditionalDiscountAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__AdditionalDiscountAmount__c"
+    deprecated = false
+    description = "Amount of additional discount on this quote."
+    externalId = false
+    formula = "SBQQ__RegularAmount__c - SBQQ__CustomerAmount__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Amount additionally discounted on this quote manually."
+    label = "Addl. Disc. Amount"
+    precision = 18
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaPercent SBQQ__AverageCustomerDiscount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__AverageCustomerDiscount__c"
+    deprecated = false
+    description = "Average customer discount (in percent) for this quote."
+    externalId = false
+    formula = "IF(SBQQ__ListAmount__c = 0, 0, ((SBQQ__ListAmount__c - SBQQ__CustomerAmount__c) / SBQQ__ListAmount__c))"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Average customer discount (in percent) for this quote."
+    label = "Avg. Customer Disc. (%)"
+    precision = 18
+    scale = 1
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaPercent SBQQ__AveragePartnerDiscount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__AveragePartnerDiscount__c"
+    deprecated = false
+    description = "Average partner discount (in percent) for this quote."
+    externalId = false
+    formula = "IF(SBQQ__CustomerAmount__c = 0, 0, (SBQQ__CustomerAmount__c -  SBQQ__NetAmount__c) / SBQQ__CustomerAmount__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Average partner discount (in percent) for this quote."
+    label = "Avg. Partner Disc. (%)"
+    precision = 18
+    scale = 1
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number SBQQ__BatchQuantity__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BatchQuantity__c"
+    deprecated = false
+    description = "For products sold in batches quantity in each batch. Defaulted from the product record."
+    externalId = false
+    inlineHelpText = "Indicates quantity in each batch if products are sold in batches."
+    label = "Batch Quantity"
+    precision = 5
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__BillingCity__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingCity__c"
+    deprecated = false
+    description = "City of the Bill To address for this quote."
+    externalId = false
+    inlineHelpText = "City of the Bill To address for this quote."
+    label = "Bill To City"
+    length = 40
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__BillingCountry__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingCountry__c"
+    deprecated = false
+    description = "Country of the Bill To address for this quote."
+    externalId = false
+    inlineHelpText = "Country of the Bill To address for this quote."
+    label = "Bill To Country"
+    length = 80
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__BillingName__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingName__c"
+    deprecated = false
+    description = "Name for the Bill To address."
+    externalId = false
+    inlineHelpText = "Name for the Bill To address."
+    label = "Bill To Name"
+    length = 255
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__BillingPostalCode__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingPostalCode__c"
+    deprecated = false
+    description = "Postal Code of the Bill To address for this quote."
+    externalId = false
+    inlineHelpText = "Postal Code of the Bill To address for this quote."
+    label = "Bill To Postal Code"
+    length = 20
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__BillingState__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingState__c"
+    deprecated = false
+    description = "State/Province of the Bill To address for this quote."
+    externalId = false
+    inlineHelpText = "State/Province of the Bill To address for this quote."
+    label = "Bill To State"
+    length = 80
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__BillingStreet__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__BillingStreet__c"
+    deprecated = false
+    description = "Street portion of the billing address for this quote."
+    externalId = false
+    inlineHelpText = "Street portion of the billing address for this quote."
+    label = "Bill To Street"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary SBQQ__CustomerAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__CustomerAmount__c"
+    deprecated = false
+    description = "Roll up summary of the Customer Amount."
+    externalId = false
+    inlineHelpText = "Roll up summary of the Customer Amount."
+    label = "Customer Amount"
+    summarizedField = "SBQQ__WebQuoteLine__c.SBQQ__CustomerTotal__c"
+    summaryFilterItems = [
+      {
+        field = "SBQQ__WebQuoteLine__c.SBQQ__Optional__c"
+        operation = "equals"
+        value = "False"
+      },
+    ]
+    summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Percent SBQQ__CustomerDiscount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__CustomerDiscount__c"
+    deprecated = false
+    description = "Additional discount extended to customer."
+    externalId = false
+    inlineHelpText = "Additional discount extended to the customer on this quote. You'll be able to override this value at individual line item level. Any line items that don't have additional discount explicitly specified will default to this value."
+    label = "Additional  Disc. (%)"
+    precision = 5
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaNumber SBQQ__DaysQuoteOpen__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__DaysQuoteOpen__c"
+    deprecated = false
+    description = "Number of days the quote has been open."
+    externalId = false
+    formula = "if(OR(ISPICKVAL( SBQQ__Status__c ,\"Draft\" ),ISPICKVAL( SBQQ__Status__c ,\"In Review\"),ISPICKVAL( SBQQ__Status__c , \"Approved\"), ISPICKVAL( SBQQ__Status__c , \"Presented\")),Round(NOW() - CreatedDate,0) ,null)"
+    inlineHelpText = "Number of days the quote has been open."
+    label = "Days Quote Open"
+    precision = 18
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__DefaultTemplate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__DefaultTemplate__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Template that should be used with this quote. Salesforce CPQ will use this value to default template selection on \"Generate Document\" screen."
+    externalId = false
+    inlineHelpText = "Template that should be used with this quote. Salesforce CPQ will use this value to default template selection on \"Generate Document\" screen."
+    label = "Default Template"
+    referenceTo = [
+      salesforce.SBQQ__QuoteTemplate__c,
+    ]
+    relationshipLabel = "Quotes"
+    relationshipName = "WebQuotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DeliveryMethod__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__DeliveryMethod__c"
+    deprecated = false
+    description = "Method used to deliver products in this quote."
+    externalId = false
+    inlineHelpText = "Method used to deliver products in this quote."
+    label = "Delivery Method"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Download"
+        default = false
+        label = "Download"
+      },
+      {
+        fullName = "Ship"
+        default = false
+        label = "Ship"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__DistributorDiscount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__DistributorDiscount__c"
+    deprecated = false
+    description = "Distributor discount that applies to this quote unless overridden on line item level."
+    externalId = false
+    inlineHelpText = "Distributor discount that applies to this quote unless overridden on line item level."
+    label = "Distributor Discount"
+    precision = 5
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__DocumentId__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__DocumentId__c"
+    deprecated = false
+    description = "ID of the Document record which contains the generated document."
+    externalId = false
+    inlineHelpText = "ID of the Document record which contains the generated document."
+    label = "Document Id"
+    length = 18
+    trackHistory = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__EmailTemplateId__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__EmailTemplateId__c"
+    deprecated = false
+    description = "ID of email template that will be pre-populated when documents generated from this quote are emailed."
+    externalId = false
+    inlineHelpText = "If you have a specific email template to use for documents generated and emailed from this quote, enter the email template ID here."
+    label = "Email Template Id"
+    length = 18
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Date SBQQ__EndDate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__EndDate__c"
+    deprecated = false
+    description = "End date for subscriptions in this group."
+    externalId = false
+    inlineHelpText = "End date for subscriptions in this group."
+    label = "End Date"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__ExpirationDate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ExpirationDate__c"
+    deprecated = false
+    description = "Date after which the Quote is no longer valid."
+    externalId = false
+    inlineHelpText = "Date after which the Quote is no longer valid."
+    label = "Expires On"
+    trackHistory = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__FirstSegmentTermEndDate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__FirstSegmentTermEndDate__c"
+    deprecated = false
+    description = "Used with multi-segment Products to prorate first segment."
+    externalId = false
+    inlineHelpText = "Used with multi-segment Products to prorate first segment."
+    label = "First Segment Term End Date"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__Introduction__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Introduction__c"
+    deprecated = false
+    description = "Introduction that can be printed on the generated PDF document."
+    externalId = false
+    inlineHelpText = "Introduction that can be printed on the generated PDF document."
+    label = "Introduction"
+    length = 2000
+    trackHistory = true
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary SBQQ__LineItemCount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__LineItemCount__c"
+    deprecated = false
+    description = "Number of line items in this quote."
+    externalId = false
+    inlineHelpText = "Number of line items in this quote."
+    label = "Line Item Count"
+    summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
+    summaryOperation = "count"
+    trackHistory = false
+    trackTrending = false
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary SBQQ__ListAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ListAmount__c"
+    deprecated = false
+    description = "Total List Amount of each non-optional line item in this quote."
+    externalId = false
+    inlineHelpText = "Total List Amount of each non-optional line item in this quote."
+    label = "List Amount"
+    summarizedField = "SBQQ__WebQuoteLine__c.SBQQ__ListTotal__c"
+    summaryFilterItems = [
+      {
+        field = "SBQQ__WebQuoteLine__c.SBQQ__Optional__c"
+        operation = "equals"
+        value = "False"
+      },
+    ]
+    summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Percent SBQQ__MarkupRate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__MarkupRate__c"
+    deprecated = false
+    description = "Default markup rate applied to line items on this quote."
+    externalId = false
+    inlineHelpText = "Default markup rate applied to line items on this quote. You'll be able to override this value on group and line item level."
+    label = "Markup (%)"
+    precision = 8
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__MasterContract__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__MasterContract__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Master contract with which subscription products in this quote are to be co-terminated."
+    externalId = false
+    inlineHelpText = "Master contract with which subscription products in this quote are to be co-terminated."
+    label = "Master Contract"
+    referenceTo = [
+      salesforce.Contract,
+    ]
+    relationshipLabel = "Co-Terminated Quotes"
+    relationshipName = "CoTerminatedWebQuotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary SBQQ__NetAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__NetAmount__c"
+    deprecated = false
+    description = "Total Net Amount of each non-optional line item in this quote."
+    externalId = false
+    inlineHelpText = "Total Net Amount of each non-optional line item in this quote."
+    label = "Net Amount"
+    summarizedField = "SBQQ__WebQuoteLine__c.SBQQ__NetTotal__c"
+    summaryFilterItems = [
+      {
+        field = "SBQQ__WebQuoteLine__c.SBQQ__Optional__c"
+        operation = "equals"
+        value = "False"
+      },
+    ]
+    summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SBQQ__Notes__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Notes__c"
+    deprecated = false
+    description = "Notes printed on the generated PDF document."
+    externalId = false
+    inlineHelpText = "Notes printed on the generated PDF document."
+    label = "Notes"
+    length = 2000
+    trackHistory = true
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Opportunity__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Opportunity__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Opportunity being quoted."
+    externalId = false
+    inlineHelpText = "Opportunity being quoted."
+    label = "Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    relationshipLabel = "Quotes"
+    relationshipName = "WebQuotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__OriginalQuote__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__OriginalQuote__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "If the quote is an Amend Re-Quote this field points to the original quote."
+    externalId = false
+    inlineHelpText = "If this Quote record represents an Amend Re-Quote, use this field to link back to the original quote."
+    label = "Original Quote"
+    referenceTo = [
+      salesforce.SBQQ__Quote__c,
+    ]
+    relationshipLabel = "WebAmend: Re-Quotes"
+    relationshipName = "WebChangeOrders"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__PartnerDiscount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__PartnerDiscount__c"
+    deprecated = false
+    description = "Discount extended to partner on this opportunity."
+    externalId = false
+    inlineHelpText = "Discount extended to partner on this opportunity."
+    label = "Partner Discount"
+    precision = 5
+    scale = 2
+    trackHistory = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__PaymentTerms__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__PaymentTerms__c"
+    deprecated = false
+    description = "Terms that govern payment of the items in this quote."
+    externalId = false
+    inlineHelpText = "Terms that govern payment of the items in this quote."
+    label = "Payment Terms"
+    trackHistory = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Due on receipt"
+        default = false
+        label = "Due on receipt"
+      },
+      {
+        fullName = "Net 15"
+        default = false
+        label = "Net 15"
+      },
+      {
+        fullName = "Net 30"
+        default = true
+        label = "Net 30"
+      },
+      {
+        fullName = "Net 45"
+        default = false
+        label = "Net 45"
+      },
+      {
+        fullName = "Net 60"
+        default = false
+        label = "Net 60"
+      },
+      {
+        fullName = "Net 90"
+        default = false
+        label = "Net 90"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__PriceBook__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__PriceBook__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The Price Book associated with this web quote."
+    externalId = false
+    inlineHelpText = "The Price Book associated with this web quote."
+    label = "Price Book"
+    referenceTo = [
+      salesforce.Pricebook2,
+    ]
+    relationshipLabel = "Web Quotes"
+    relationshipName = "Web_Quotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__PricebookId__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__PricebookId__c"
+    deprecated = false
+    description = "ID of the pricebook that should be used for this quote if opportunity is null."
+    externalId = false
+    inlineHelpText = "If this quote is not tied to an opportunity with a price book, this stores the price book ID for the quote."
+    label = "Pricebook Id"
+    length = 18
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__PrimaryContact__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__PrimaryContact__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Primary contact for the quote. This person's name will appear on the generated quote document."
+    externalId = false
+    inlineHelpText = "Primary contact for the quote. This person's name will appear on the generated quote document."
+    label = "Primary Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Quotes"
+    relationshipName = "WebQuotes"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__QuoteProcessId__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__QuoteProcessId__c"
+    deprecated = false
+    description = "ID of the quote process to use with this quote. This field is meant to be populated by a workflow rule."
+    externalId = false
+    inlineHelpText = "Guided selling process ID to use with this quote, if any."
+    label = "Quote Process Id"
+    length = 18
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__QuoteTemplateId__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__QuoteTemplateId__c"
+    deprecated = false
+    description = "ID of quote template that must be used when generating documents from this quote."
+    externalId = false
+    inlineHelpText = "Stores a quote template ID if one is specified to use when generating quote PDF documents."
+    label = "Quote Template Id"
+    length = 18
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Summary SBQQ__RegularAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__RegularAmount__c"
+    deprecated = false
+    description = "Roll up of regular amounts of quote products."
+    externalId = false
+    inlineHelpText = "Total amount of non-optional line times before additional discounts are applied."
+    label = "Regular Amount"
+    summarizedField = "SBQQ__WebQuoteLine__c.SBQQ__RegularTotal__c"
+    summaryFilterItems = [
+      {
+        field = "SBQQ__WebQuoteLine__c.SBQQ__Optional__c"
+        operation = "equals"
+        value = "False"
+      },
+    ]
+    summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__SalesRep__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__SalesRep__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Sales rep responsible for this quote if different from the user who owns the Quote record."
+    externalId = false
+    inlineHelpText = "Sales rep responsible for this quote if different from the user who owns the Quote record."
+    label = "Sales Rep"
+    referenceTo = [
+      salesforce.User,
+    ]
+    relationshipName = "WebQuotes"
+    trackHistory = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__SelfServiced__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__SelfServiced__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this web quote is self service."
+    externalId = false
+    inlineHelpText = "Indicates whether this web quote is self service."
+    label = "Self Serviced"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__ShippingCity__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingCity__c"
+    deprecated = false
+    description = "City on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "City on the Ship To address for this quote."
+    label = "Ship To City"
+    length = 40
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__ShippingCountry__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingCountry__c"
+    deprecated = false
+    description = "Country on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "Country on the Ship To address for this quote."
+    label = "Ship To Country"
+    length = 80
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__ShippingName__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingName__c"
+    deprecated = false
+    description = "Name on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "Name on the Ship To address for this quote."
+    label = "Ship To Name"
+    length = 255
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__ShippingPostalCode__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingPostalCode__c"
+    deprecated = false
+    description = "Postal Code on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "Postal Code on the Ship To address for this quote."
+    label = "Ship To Postal Code"
+    length = 20
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__ShippingState__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingState__c"
+    deprecated = false
+    description = "State/Province on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "State/Province on the Ship To address for this quote."
+    label = "Ship To State"
+    length = 80
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__ShippingStreet__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__ShippingStreet__c"
+    deprecated = false
+    description = "Street on the Ship To address for this quote."
+    externalId = false
+    inlineHelpText = "Street on the Ship To address for this quote."
+    label = "Ship To Street"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__SignatureStatus__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__SignatureStatus__c"
+    deprecated = false
+    description = "Status of electronic signature."
+    externalId = false
+    inlineHelpText = "Status of electronic signature."
+    label = "Signature Status"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      },
+      {
+        fullName = "Sent"
+        default = false
+        label = "Sent"
+      },
+      {
+        fullName = "Signed"
+        default = false
+        label = "Signed"
+      },
+      {
+        fullName = "Expired"
+        default = false
+        label = "Expired"
+      },
+      {
+        fullName = "Revoked"
+        default = false
+        label = "Revoked"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__StartDate__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__StartDate__c"
+    deprecated = false
+    description = "Start date for subscriptions in this quote."
+    externalId = false
+    inlineHelpText = "Start date for subscriptions in this quote."
+    label = "Start Date"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Status__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Status__c"
+    deprecated = false
+    description = "Status indicating where quote is in its lifecycle."
+    externalId = false
+    inlineHelpText = "Status indicating where quote is in its lifecycle."
+    label = "Status"
+    trackHistory = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Draft"
+        default = true
+        label = "Draft"
+      },
+      {
+        fullName = "In Review"
+        default = false
+        label = "In Review"
+      },
+      {
+        fullName = "Approved"
+        default = false
+        label = "Approved"
+      },
+      {
+        fullName = "Denied"
+        default = false
+        label = "Denied"
+      },
+      {
+        fullName = "Presented"
+        default = false
+        label = "Presented"
+      },
+      {
+        fullName = "Accepted"
+        default = false
+        label = "Accepted"
+      },
+      {
+        fullName = "Rejected"
+        default = false
+        label = "Rejected"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__SubscriptionTerm__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__SubscriptionTerm__c"
+    deprecated = false
+    description = "Subscription term used to prorate eligible products."
+    externalId = false
+    inlineHelpText = "Subscription term used to prorate eligible products."
+    label = "Subscription Term"
+    precision = 5
+    scale = 0
+    trackHistory = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__TargetCustomerAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__TargetCustomerAmount__c"
+    deprecated = false
+    description = "Customer amount to be targeted in calculating additional discounts."
+    externalId = false
+    inlineHelpText = "Enter desired customer amount to automatically calculate additional discount on discountable line items."
+    label = "Target Customer Amount"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCurrency SBQQ__TotalCustomerDiscountAmount__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__TotalCustomerDiscountAmount__c"
+    deprecated = false
+    description = "Total amount of customer discount. This includes any contracted, volume, compound rate and additional discounts."
+    externalId = false
+    formula = "SBQQ__ListAmount__c - SBQQ__CustomerAmount__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Total amount of customer discount. This includes any contracted, volume, compound rate and additional discounts."
+    label = "Total Customer Disc. Amount"
+    precision = 18
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__Type__c"
+    deprecated = false
+    description = "Type of quote."
+    externalId = false
+    inlineHelpText = "Type of quote."
+    label = "Type"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = true
+        label = "Quote"
+      },
+      {
+        fullName = "Renewal"
+        default = false
+        label = "Renewal"
+      },
+      {
+        fullName = "Amendment"
+        default = false
+        label = "Amendment"
+      },
+      {
+        fullName = "Re-Quote"
+        default = false
+        label = "Re-Quote"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__WatermarkShown__c {
+    apiName = "SBQQ__WebQuote__c.SBQQ__WatermarkShown__c"
+    defaultValue = false
+    deprecated = false
+    description = "To display watermark in the Quote Document if checkbox is selected."
+    externalId = false
+    inlineHelpText = "Select the checkbox to display watermark in the Quote Document."
+    label = "Watermark Shown"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

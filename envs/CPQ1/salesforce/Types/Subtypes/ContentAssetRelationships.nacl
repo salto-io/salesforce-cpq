@@ -1,0 +1,27 @@
+type salesforce.ContentAssetRelationships {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.ContentAssetLink emailTemplate {
+  }
+  salesforce.ContentAssetLink insightsApplication {
+  }
+  salesforce.ContentAssetLink network {
+  }
+  salesforce.ContentAssetLink organization {
+  }
+  salesforce.ContentAssetLink workspace {
+  }
+  metadataType = "ContentAssetRelationships"
+}

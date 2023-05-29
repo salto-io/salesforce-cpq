@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000Dbf0UAC {
+  SBQQ__Action__c = "View Discount Schedule"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "viewDSBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 997
+  SBQQ__EventHandlerName__c = "showDSModal"
+  SBQQ__Label__c = "View Discount Schedule"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "View Discount Schedule"
+  _alias = "View Discount Schedule"
+}

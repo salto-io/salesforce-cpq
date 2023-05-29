@@ -1,0 +1,3 @@
+salesforce.GlobalValueSetTranslation BillingFrequency_de@b {
+  fullName = "BillingFrequency-de"
+}

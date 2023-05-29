@@ -1,0 +1,55 @@
+salesforce.Layout SBQQ__RecordJob__c_SBQQ__Record_Job_Layout@uuuubuuss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RecordJob__c.field.Name
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RecordJob__c.field.SBQQ__RecordId__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RecordJob__c.field.SBQQ__JobId__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RecordJob__c.field.SBQQ__IsRead__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SBQQ__RecordJob__c-SBQQ__Record Job Layout"
+  _parent = [
+    salesforce.SBQQ__RecordJob__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,184 @@
+salesforce.Profile ContractManager {
+  userPermissions = {
+    ActivateContract = {
+      enabled = true
+      name = "ActivateContract"
+    }
+    ActivateOrder = {
+      enabled = true
+      name = "ActivateOrder"
+    }
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ApproveContract = {
+      enabled = true
+      name = "ApproveContract"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    ConvertLeads = {
+      enabled = true
+      name = "ConvertLeads"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditActivatedOrders = {
+      enabled = true
+      name = "EditActivatedOrders"
+    }
+    EditEvent = {
+      enabled = true
+      name = "EditEvent"
+    }
+    EditOppLineItemUnitPrice = {
+      enabled = true
+      name = "EditOppLineItemUnitPrice"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    ExportReport = {
+      enabled = true
+      name = "ExportReport"
+    }
+    ImportPersonal = {
+      enabled = true
+      name = "ImportPersonal"
+    }
+    LightningConsoleAllowedForUser = {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ListEmailSend = {
+      enabled = true
+      name = "ListEmailSend"
+    }
+    MassInlineEdit = {
+      enabled = true
+      name = "MassInlineEdit"
+    }
+    OverrideForecasts = {
+      enabled = true
+      name = "OverrideForecasts"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    SendSitRequests = {
+      enabled = true
+      name = "SendSitRequests"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    SubscribeToLightningReports = {
+      enabled = true
+      name = "SubscribeToLightningReports"
+    }
+    TransactionalEmailSend = {
+      enabled = true
+      name = "TransactionalEmailSend"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+}

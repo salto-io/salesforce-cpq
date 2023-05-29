@@ -1,0 +1,565 @@
+type salesforce.FeedItem {
+  serviceid Id {
+    apiName = "FeedItem.Id"
+    label = "Feed Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup ParentId {
+    apiName = "FeedItem.ParentId"
+    relationshipName = "Parent"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Asset,
+      salesforce.AssetRelationship,
+      salesforce.AuthorizationFormText,
+      salesforce.Campaign,
+      salesforce.Case,
+      salesforce.CollaborationGroup,
+      salesforce.CommSubscription,
+      salesforce.CommSubscriptionChannelType,
+      salesforce.CommSubscriptionConsent,
+      salesforce.CommSubscriptionTiming,
+      salesforce.ConsumptionSchedule,
+      salesforce.Contact,
+      "ContentDocument",
+      salesforce.Contract,
+      "Dashboard",
+      "DashboardComponent",
+      salesforce.EngagementChannelType,
+      salesforce.Event,
+      salesforce.Image,
+      salesforce.Lead,
+      salesforce.Location,
+      salesforce.Opportunity,
+      salesforce.Order,
+      salesforce.OrderItem,
+      salesforce.PartyConsent,
+      salesforce.Product2,
+      salesforce.ProfileSkill,
+      salesforce.ProfileSkillEndorsement,
+      salesforce.ProfileSkillUser,
+      salesforce.Quote,
+      salesforce.Report,
+      salesforce.SBQQ__AttributeSet__c,
+      salesforce.SBQQ__AttributeValue__c,
+      salesforce.SBQQ__BlockPrice__c,
+      salesforce.SBQQ__ColumnMetadata__c,
+      salesforce.SBQQ__ConfigurationAttribute__c,
+      salesforce.SBQQ__ConfigurationRule__c,
+      salesforce.SBQQ__ContractedPrice__c,
+      salesforce.SBQQ__Cost__c,
+      salesforce.SBQQ__CustomActionCondition__c,
+      salesforce.SBQQ__CustomAction__c,
+      salesforce.SBQQ__CustomScript__c,
+      salesforce.SBQQ__Dimension__c,
+      salesforce.SBQQ__DiscountCategory__c,
+      salesforce.SBQQ__DiscountSchedule__c,
+      salesforce.SBQQ__DiscountTier__c,
+      salesforce.SBQQ__ErrorCondition__c,
+      salesforce.SBQQ__FavoriteProduct__c,
+      salesforce.SBQQ__FavoriteShare__c,
+      salesforce.SBQQ__Favorite__c,
+      salesforce.SBQQ__FieldMetadata__c,
+      salesforce.SBQQ__FieldSetMetadata__c,
+      salesforce.SBQQ__ImportColumn__c,
+      salesforce.SBQQ__ImportFormat__c,
+      salesforce.SBQQ__InstallProcessorLog__c,
+      salesforce.SBQQ__LineColumn__c,
+      salesforce.SBQQ__Localization__c,
+      salesforce.SBQQ__LookupData__c,
+      salesforce.SBQQ__LookupQuery__c,
+      salesforce.SBQQ__OptionConstraint__c,
+      salesforce.SBQQ__OrderItemConsumptionRate__c,
+      salesforce.SBQQ__OrderItemConsumptionSchedule__c,
+      salesforce.SBQQ__PriceAction__c,
+      salesforce.SBQQ__PriceCondition__c,
+      salesforce.SBQQ__PriceRule__c,
+      salesforce.SBQQ__PriceSchedule__c,
+      salesforce.SBQQ__PriceTier__c,
+      salesforce.SBQQ__PricingGuidanceTier__c,
+      salesforce.SBQQ__PricingGuidance__c,
+      salesforce.SBQQ__ProcessInputCondition__c,
+      salesforce.SBQQ__ProcessInputValue__c,
+      salesforce.SBQQ__ProcessInput__c,
+      salesforce.SBQQ__ProductAction__c,
+      salesforce.SBQQ__ProductAttributeSet__c,
+      salesforce.SBQQ__ProductAttribute__c,
+      salesforce.SBQQ__ProductFeature__c,
+      salesforce.SBQQ__ProductOption__c,
+      salesforce.SBQQ__ProductRule__c,
+      salesforce.SBQQ__QuoteDocument__c,
+      salesforce.SBQQ__QuoteLineConsumptionRate__c,
+      salesforce.SBQQ__QuoteLineConsumptionSchedule__c,
+      salesforce.SBQQ__QuoteLineGroup__c,
+      salesforce.SBQQ__QuoteLinePricingGuidance__c,
+      salesforce.SBQQ__QuoteLine__c,
+      salesforce.SBQQ__QuoteProcess__c,
+      salesforce.SBQQ__QuoteTemplate__c,
+      salesforce.SBQQ__QuoteTerm__c,
+      salesforce.SBQQ__Quote__c,
+      salesforce.SBQQ__RecordJob__c,
+      salesforce.SBQQ__RelatedContent__c,
+      salesforce.SBQQ__SearchFilter__c,
+      salesforce.SBQQ__SearchIndex__c,
+      salesforce.SBQQ__SolutionGroup__c,
+      salesforce.SBQQ__SubscribedAsset__c,
+      salesforce.SBQQ__SubscribedQuoteLine__c,
+      salesforce.SBQQ__SubscriptionConsumptionRate__c,
+      salesforce.SBQQ__SubscriptionConsumptionSchedule__c,
+      salesforce.SBQQ__Subscription__c,
+      salesforce.SBQQ__SummaryVariable__c,
+      salesforce.SBQQ__TaxExemptionCertificate__c,
+      salesforce.SBQQ__TemplateContent__c,
+      salesforce.SBQQ__TemplateSection__c,
+      salesforce.SBQQ__TermCondition__c,
+      salesforce.SBQQ__Theme__c,
+      salesforce.SBQQ__TimingLog__c,
+      salesforce.SBQQ__UpgradeSource__c,
+      salesforce.SBQQ__WebQuoteLine__c,
+      salesforce.SBQQ__WebQuote__c,
+      "SalesforceContract",
+      "SalesforceInvoice",
+      "SalesforceQuote",
+      salesforce.SaltoData__c,
+      salesforce.Site,
+      salesforce.SocialPost,
+      salesforce.Solution,
+      salesforce.Task,
+      salesforce.Topic,
+      salesforce.User,
+      salesforce.WorkBadgeDefinition,
+      salesforce.Yariv__c,
+    ]
+    _required = true
+    label = "Parent ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "FeedItem.Type"
+    valueSet = [
+      {
+        fullName = "TrackedChange"
+        isActive = true
+        label = "Tracked Change"
+        default = false
+      },
+      {
+        fullName = "UserStatus"
+        isActive = true
+        label = "User Status"
+        default = false
+      },
+      {
+        fullName = "TextPost"
+        isActive = true
+        label = "Text Post"
+        default = false
+      },
+      {
+        fullName = "AdvancedTextPost"
+        isActive = true
+        label = "Advanced Text Post"
+        default = false
+      },
+      {
+        fullName = "LinkPost"
+        isActive = true
+        label = "Link Post"
+        default = false
+      },
+      {
+        fullName = "ContentPost"
+        isActive = true
+        label = "Content Post"
+        default = false
+      },
+      {
+        fullName = "PollPost"
+        isActive = true
+        label = "Poll"
+        default = false
+      },
+      {
+        fullName = "RypplePost"
+        isActive = true
+        label = "WDC Thanks"
+        default = false
+      },
+      {
+        fullName = "ProfileSkillPost"
+        isActive = true
+        label = "Profile Skill Post"
+        default = false
+      },
+      {
+        fullName = "DashboardComponentSnapshot"
+        isActive = true
+        label = "Dashboard Component Snapshot"
+        default = false
+      },
+      {
+        fullName = "ApprovalPost"
+        isActive = true
+        label = "Approval Post"
+        default = false
+      },
+      {
+        fullName = "CaseCommentPost"
+        isActive = true
+        label = "Case Comment Feed"
+        default = false
+      },
+      {
+        fullName = "ReplyPost"
+        isActive = true
+        label = "Reply Post"
+        default = false
+      },
+      {
+        fullName = "EmailMessageEvent"
+        isActive = true
+        label = "Email Message Feed"
+        default = false
+      },
+      {
+        fullName = "CallLogPost"
+        isActive = true
+        label = "Call Log Feed"
+        default = false
+      },
+      {
+        fullName = "ChangeStatusPost"
+        isActive = true
+        label = "Change Status Feed"
+        default = false
+      },
+      {
+        fullName = "AttachArticleEvent"
+        isActive = true
+        label = "Attached Article"
+        default = false
+      },
+      {
+        fullName = "MilestoneEvent"
+        isActive = true
+        label = "Milestone Event"
+        default = false
+      },
+      {
+        fullName = "ActivityEvent"
+        isActive = true
+        label = "Activity Change"
+        default = false
+      },
+      {
+        fullName = "ChatTranscriptPost"
+        isActive = true
+        label = "Chat Transcript Post"
+        default = false
+      },
+      {
+        fullName = "CollaborationGroupCreated"
+        isActive = true
+        label = "Collaboration Group Created"
+        default = false
+      },
+      {
+        fullName = "CollaborationGroupUnarchived"
+        isActive = true
+        label = "Collaboration Group Reactivated"
+        default = false
+      },
+      {
+        fullName = "SocialPost"
+        isActive = true
+        label = "Social Post"
+        default = false
+      },
+      {
+        fullName = "QuestionPost"
+        isActive = true
+        label = "Question Post"
+        default = false
+      },
+      {
+        fullName = "FacebookPost"
+        isActive = true
+        label = "Facebook Post"
+        default = false
+      },
+      {
+        fullName = "BasicTemplateFeedItem"
+        isActive = true
+        label = "Basic Template Post"
+        default = false
+      },
+      {
+        fullName = "CreateRecordEvent"
+        isActive = true
+        label = "Created Record"
+        default = false
+      },
+      {
+        fullName = "CanvasPost"
+        isActive = true
+        label = "Canvas"
+        default = false
+      },
+      {
+        fullName = "AnnouncementPost"
+        isActive = true
+        label = "a"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Feed Item Type"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "FeedItem.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "FeedItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "FeedItem.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "FeedItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "FeedItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number Revision {
+    apiName = "FeedItem.Revision"
+    label = "Revision"
+    precision = 9
+    createable = true
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup LastEditById {
+    apiName = "FeedItem.LastEditById"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Edit By ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.DateTime LastEditDate {
+    apiName = "FeedItem.LastEditDate"
+    label = "Last Edit Date"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Number CommentCount {
+    apiName = "FeedItem.CommentCount"
+    _required = true
+    label = "Comment Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number LikeCount {
+    apiName = "FeedItem.LikeCount"
+    _required = true
+    label = "Like Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "FeedItem.Title"
+    length = 255
+    label = "Title"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.LongTextArea Body {
+    apiName = "FeedItem.Body"
+    length = 10000
+    label = "Body"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url LinkUrl {
+    apiName = "FeedItem.LinkUrl"
+    label = "Link Url"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox IsRichText {
+    apiName = "FeedItem.IsRichText"
+    defaultValue = false
+    label = "Is Rich Text"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "FeedItem.RelatedRecordId"
+    referenceTo = [
+      salesforce.ContentVersion,
+      salesforce.ProfileSkillUser,
+      salesforce.WorkThanks,
+    ]
+    label = "Related Record ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup InsertedById {
+    apiName = "FeedItem.InsertedById"
+    relationshipName = "InsertedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    _required = true
+    label = "InsertedBy ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup BestCommentId {
+    apiName = "FeedItem.BestCommentId"
+    relationshipName = "BestComment"
+    referenceTo = [
+      "FeedComment",
+    ]
+    label = "Best Comment ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasContent {
+    apiName = "FeedItem.HasContent"
+    defaultValue = false
+    label = "Has Content"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasLink {
+    apiName = "FeedItem.HasLink"
+    defaultValue = false
+    label = "Has Link"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasFeedEntity {
+    apiName = "FeedItem.HasFeedEntity"
+    defaultValue = false
+    label = "Has Feed Entity Attachment"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox HasVerifiedComment {
+    apiName = "FeedItem.HasVerifiedComment"
+    defaultValue = false
+    label = "Has Verified Comment"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "FeedItem.IsClosed"
+    defaultValue = false
+    label = "Is Closed"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "FeedItem.Status"
+    valueSet = [
+      {
+        fullName = "Published"
+        isActive = true
+        label = "Published"
+        default = false
+      },
+      {
+        fullName = "PendingReview"
+        isActive = true
+        label = "PendingReview"
+        default = false
+      },
+      {
+        fullName = "Draft"
+        isActive = true
+        label = "Draft"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Status"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

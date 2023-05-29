@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__Quote__c {
+  fullName = "SBQQ__Quote__c"
+  customObject = true
+  description = "Tab to manage sales quotes."
+  motif = "Custom93: Shopping Cart"
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

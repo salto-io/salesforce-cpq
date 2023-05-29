@@ -1,0 +1,76 @@
+type salesforce.SBQQ__ImportFormat__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__ImportFormat__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "When activated, the input format becomes available for use."
+    externalId = false
+    inlineHelpText = "Select the checkbox to make the input format available for use."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__ImportFormatName__c {
+    apiName = "SBQQ__ImportFormat__c.SBQQ__ImportFormatName__c"
+    deprecated = false
+    description = "A meaningful name that describes the input format."
+    externalId = false
+    inlineHelpText = "Enter a meaningful name that describes the input format."
+    label = "Import Format Name"
+    length = 255
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__TargetObject__c {
+    apiName = "SBQQ__ImportFormat__c.SBQQ__TargetObject__c"
+    deprecated = false
+    description = "Target Object to be imported."
+    externalId = false
+    inlineHelpText = "Target Object to be imported."
+    label = "Target Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote Line"
+        default = true
+        label = "Quote Line"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Summary SBQQ__UniqueKeyCount__c {
+    apiName = "SBQQ__ImportFormat__c.SBQQ__UniqueKeyCount__c"
+    deprecated = false
+    description = "A count of the unique Keys within the Import Format."
+    externalId = false
+    inlineHelpText = "A count of the unique Keys within the Import Format."
+    label = "# Unique Key"
+    summaryFilterItems = [
+      {
+        field = "SBQQ__ImportColumn__c.SBQQ__Key__c"
+        operation = "equals"
+        value = "True"
+      },
+    ]
+    summaryForeignKey = "SBQQ__ImportColumn__c.SBQQ__ImportFormat__c"
+    summaryOperation = "count"
+    trackTrending = false
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

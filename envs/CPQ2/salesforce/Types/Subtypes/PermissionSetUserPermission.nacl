@@ -1,0 +1,22 @@
+type salesforce.PermissionSetUserPermission {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean enabled {
+  }
+  string name {
+    _required = true
+  }
+  metadataType = "PermissionSetUserPermission"
+}

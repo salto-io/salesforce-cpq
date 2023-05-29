@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__AsyncQuoteLoadExtension {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__AsyncQuoteLoadExtension"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

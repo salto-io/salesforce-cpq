@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__dialog {
+  cacheControl = "Public"
+  contentType = "application/zip"
+  description = "Native dialog replacement"
+  fullName = "SBQQ__dialog"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__dialog.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__ImportColumn__c_SBQQ__Column_index_must_start_from_1 {
+  fullName = "SBQQ__ImportColumn__c.SBQQ__Column_index_must_start_from_1"
+  active = true
+  description = "Column Index must start from 1."
+  errorConditionFormula = "If ( SBQQ__ColumnIndex__c <= 0, true, false)"
+  errorDisplayField = salesforce.SBQQ__ImportColumn__c.field.SBQQ__ColumnIndex__c
+  errorMessage = "Column Index must start from 1."
+  _parent = [
+    salesforce.SBQQ__ImportColumn__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

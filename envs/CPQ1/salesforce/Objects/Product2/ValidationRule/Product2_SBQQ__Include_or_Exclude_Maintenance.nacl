@@ -1,0 +1,15 @@
+salesforce.ValidationRule Product2_SBQQ__Include_or_Exclude_Maintenance {
+  fullName = "Product2.SBQQ__Include_or_Exclude_Maintenance"
+  active = true
+  description = "Validates that either Includes In Maintenance or Excludes From Maintenance checkbox is checked but not both."
+  errorConditionFormula = "AND(SBQQ__IncludeInMaintenance__c,SBQQ__ExcludeFromMaintenance__c)"
+  errorMessage = "You must check either Include In Maintenance or Exclude From Maintenance checkbox."
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

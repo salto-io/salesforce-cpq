@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__TermCondition__c_SBQQ__Field_or_Variable {
+  fullName = "SBQQ__TermCondition__c.SBQQ__Field_or_Variable"
+  active = true
+  description = "Validates that either field or summary variable is selected."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__TestedField__c, ''),ISBLANK(SBQQ__TestedVariable__c))"
+  errorMessage = "You must select either field or variable to test."
+  _parent = [
+    salesforce.SBQQ__TermCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

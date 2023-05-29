@@ -1,0 +1,125 @@
+salesforce.Layout SBQQ__ErrorCondition__c_SBQQ__Error_Condition_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__Rule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedObject__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedAttribute__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedVariable__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Filter Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__Operator__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__FilterType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__FilterValue__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__FilterVariable__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ErrorCondition__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ErrorCondition__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000000JsY2"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ErrorCondition__c-SBQQ__Error Condition Layout"
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

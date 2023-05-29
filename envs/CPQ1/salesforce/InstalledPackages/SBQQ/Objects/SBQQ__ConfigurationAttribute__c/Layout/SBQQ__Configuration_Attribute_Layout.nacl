@@ -1,0 +1,124 @@
+salesforce.Layout SBQQ__ConfigurationAttribute__c_SBQQ__Configuration_Attribute_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__TargetField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Required__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__AutoSelect__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__DefaultObject__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__DefaultField__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__DisplayOrder__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__ColumnOrder__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Position__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Feature__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__AppliedImmediately__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000002yD56"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ConfigurationAttribute__c-SBQQ__Configuration Attribute Layout"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

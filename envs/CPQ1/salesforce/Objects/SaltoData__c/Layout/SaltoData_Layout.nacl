@@ -1,0 +1,107 @@
+salesforce.Layout SaltoData__c_SaltoData_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SaltoData__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Is_Open_Source__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Subscription_level__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Total_usd_Paid_Ever__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Total_usd_Last_12m__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Expiration_date__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Subscription_Tier__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.GB_in_use__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Logins_last_30d__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Last_login__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SaltoData__c.field.Adapters_In_Use__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SaltoData__c.field.Account__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SaltoData__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SaltoData__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SaltoData__c-SaltoData Layout"
+  _parent = [
+    salesforce.SaltoData__c,
+  ]
+}

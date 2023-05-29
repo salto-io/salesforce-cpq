@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__lineItemGroups {
+  apiVersion = 57
+  description = "Generates XSL-FO tree for the section that contains (potentially) grouped line items."
+  label = "Line Item Groups"
+  fullName = "SBQQ__lineItemGroups"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,23 @@
+salesforce.Profile Read_Only@s {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = salesforce.RecordType.instance.Idea_InternalIdeasIdeaRecordType
+        visible = false
+      }
+    }
+    SBQQ__ConfigurationAttribute__c = {
+      SBQQ__Configuration_Attribute = {
+        default = false
+        recordType = salesforce.RecordType.instance.SBQQ__ConfigurationAttribute__c_SBQQ__Configuration_Attribute
+        visible = false
+      }
+      SBQQ__Global_Attribute = {
+        default = false
+        recordType = salesforce.RecordType.instance.SBQQ__ConfigurationAttribute__c_SBQQ__Global_Attribute
+        visible = false
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+salesforce.Report unfiled_public_Opportunity_Amount_by_Stage_Sample@zcduuuu {
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        aggregate = "Sum"
+        axisBinding = "y"
+        column = "AMOUNT"
+      },
+    ]
+    chartType = "Funnel"
+    enableHoverLabels = true
+    expandOthers = true
+    groupingColumn = "STAGE_NAME"
+    legendPosition = "Right"
+    location = "CHART_TOP"
+    showAxisLabels = true
+    showPercentage = false
+    showTotal = false
+    showValues = true
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    title = "Opportunity Amount by Stage"
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      field = "TYPE"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "CLOSE_DATE"
+    },
+    {
+      field = "NEXT_STEP"
+    },
+    {
+      field = "PROBABILITY"
+    },
+    {
+      field = "FISCAL_QUARTER"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "FULL_NAME"
+    },
+    {
+      field = "ROLLUP_DESCRIPTION"
+    },
+    {
+      field = "ACCOUNT_NAME"
+    },
+  ]
+  description = "This report is used to power the embedded chart on the Accounts page.  Any changes made here will be reflected in that chart."
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "STAGE_NAME"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Opportunity Amount by Stage (Sample)"
+  params = [
+    {
+      name = "open"
+      value = "all"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.Opportunity
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CLOSE_DATE"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/Opportunity_Amount_by_Stage_Sample"
+}

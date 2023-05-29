@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_MeetOnsite@zcdu {
+  available = true
+  description = "Meet at the customer's office next week"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Meet Onsite at Your Office"
+  relatedEntityType = "Account"
+  style = "none"
+  subject = "Meet at your office next week?"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_MeetOnsite"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_MeetOnsite/Sample_MeetOnsite.email")
+}

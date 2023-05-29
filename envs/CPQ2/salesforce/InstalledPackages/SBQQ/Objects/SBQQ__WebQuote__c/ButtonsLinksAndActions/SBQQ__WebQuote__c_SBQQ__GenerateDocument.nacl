@@ -1,0 +1,18 @@
+salesforce.WebLink SBQQ__WebQuote__c_SBQQ__GenerateDocument {
+  fullName = "SBQQ__WebQuote__c.SBQQ__GenerateDocument"
+  availability = "online"
+  displayType = "button"
+  linkType = "page"
+  masterLabel = "Generate Document"
+  openType = "replace"
+  page = salesforce.ApexPage.instance.SBQQ__GenerateWebDocument
+  protected = false
+  _parent = [
+    salesforce.SBQQ__WebQuote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

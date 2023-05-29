@@ -1,0 +1,24 @@
+salesforce.ListView SBQQ__Quote__c_SBQQ__All {
+  fullName = "SBQQ__Quote__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Opportunity2__c",
+    "SBQQ__Type__c",
+    "SBQQ__Primary__c",
+    "SBQQ__LineItemsGrouped__c",
+    "SBQQ__NetAmount__c",
+    "SBQQ__Status__c",
+    "SBQQ__ExpirationDate__c",
+    "UPDATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductFeature__c a0p3H0000001n6sQAA {
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.01t4J000001gctOQAQ
+  SBQQ__MinOptionCount__c = 1
+  SBQQ__Number__c = 1
+  Name = "fff"
+  _alias = "K2F55100120 K2-V5 1 K-Block  of 1x1920GB  and 1x480GB fff"
+}

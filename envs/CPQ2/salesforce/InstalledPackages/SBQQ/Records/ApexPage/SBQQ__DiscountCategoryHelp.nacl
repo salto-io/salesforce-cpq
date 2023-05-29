@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__DiscountCategoryHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "DiscountCategoryHelp"
+  fullName = "SBQQ__DiscountCategoryHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__DiscountCategoryHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

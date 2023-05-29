@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__CustomAction__c_SBQQ__Non_empty_URL_for_Save_and_Navigate {
+  fullName = "SBQQ__CustomAction__c.SBQQ__Non_empty_URL_for_Save_and_Navigate"
+  active = true
+  description = "Non-empty URL for Save and Navigate Custom Action."
+  errorConditionFormula = "AND (ISPICKVAL(SBQQ__Action__c, \"Save and Navigate\"), ISBLANK( SBQQ__URL__c ))"
+  errorDisplayField = salesforce.SBQQ__CustomAction__c.field.SBQQ__URL__c
+  errorMessage = "URL can't be empty for Custom Action \"Save and Navigate\""
+  _parent = [
+    salesforce.SBQQ__CustomAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,7 @@
+salesforce.EventSettings {
+  fullName = "Event"
+  enableDeleteMonitoringData = false
+  enableDynamicStreamingChannel = false
+  enableEventLogGeneration = "false"
+  enableStreamingApi = true
+}

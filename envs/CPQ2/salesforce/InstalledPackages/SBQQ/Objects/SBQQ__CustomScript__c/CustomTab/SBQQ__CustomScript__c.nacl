@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__CustomScript__c {
+  fullName = "SBQQ__CustomScript__c"
+  customObject = true
+  motif = "Custom38: Camera"
+  _parent = [
+    salesforce.SBQQ__CustomScript__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

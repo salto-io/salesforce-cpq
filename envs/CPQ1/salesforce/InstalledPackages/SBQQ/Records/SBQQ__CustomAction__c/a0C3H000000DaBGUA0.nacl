@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBGUA0 {
+  SBQQ__Action__c = "Add Products"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "addProductsBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 900
+  SBQQ__EventHandlerName__c = "onAddProducts"
+  SBQQ__Label__c = "Add Products"
+  SBQQ__Location__c = "Quote/Group"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Menu"
+  Name = "Add Products"
+  _alias = "Add Products"
+}

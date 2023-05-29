@@ -1,0 +1,68 @@
+salesforce.Flow The_ultimate_flow {
+  fullName = "The_ultimate_flow"
+  apiVersion = 53
+  decisions = [
+    {
+      name = "My_decision"
+      label = "My decision"
+      locationX = 210
+      locationY = 351
+      defaultConnectorLabel = "Default Outcome"
+      rules = [
+        {
+          name = "check"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "$Record.My_broken_picklist__c"
+              operator = "EqualTo"
+              rightValue = {
+                stringValue = "Value1"
+              }
+            },
+          ]
+          label = "check"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "The ultimate flow {!$Flow.CurrentDateTime}"
+  label = "The ultimate flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "FREE_FORM_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "My_decision"
+    }
+    object = salesforce.Account
+    recordTriggerType = "Create"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Active"
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account.field.My_broken_picklist__c
+    },
+  ]
+}

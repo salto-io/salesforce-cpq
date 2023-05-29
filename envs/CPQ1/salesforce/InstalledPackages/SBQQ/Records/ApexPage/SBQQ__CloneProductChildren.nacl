@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CloneProductChildren {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "CloneProductChildren"
+  fullName = "SBQQ__CloneProductChildren"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CloneProductChildren.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

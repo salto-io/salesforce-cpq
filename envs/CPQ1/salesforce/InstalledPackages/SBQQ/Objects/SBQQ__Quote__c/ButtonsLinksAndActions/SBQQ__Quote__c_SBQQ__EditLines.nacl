@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__EditLines {
+  fullName = "SBQQ__Quote__c.SBQQ__EditLines"
+  availability = "online"
+  description = "Opens the page that edits quote line items."
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Edit Lines"
+  openType = "noSidebar"
+  page = salesforce.ApexPage.instance.SBQQ__sb
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

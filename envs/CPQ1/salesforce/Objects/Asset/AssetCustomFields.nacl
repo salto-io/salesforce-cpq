@@ -1,0 +1,1148 @@
+type salesforce.Asset {
+  salesforce.Currency SBQQ__AdditionalDiscountAmount__c {
+    apiName = "Asset.SBQQ__AdditionalDiscountAmount__c"
+    deprecated = false
+    description = "Additional Discount for this Asset, if expressed as an amount"
+    externalId = false
+    inlineHelpText = "Additional Discount for this Asset, if expressed as an amount"
+    label = "Additional Disc. (Amt)"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__BillingFrequency__c {
+    apiName = "Asset.SBQQ__BillingFrequency__c"
+    deprecated = false
+    description = "Defines the billing frequency."
+    externalId = false
+    inlineHelpText = "Defines the billing frequency."
+    label = "Billing Frequency"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingFrequency
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__BillingType__c {
+    apiName = "Asset.SBQQ__BillingType__c"
+    deprecated = false
+    description = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    externalId = false
+    inlineHelpText = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    label = "Billing Type"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Bundle__c {
+    apiName = "Asset.SBQQ__Bundle__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this line item represents a package; meaning, it includes other line items in this quote."
+    externalId = false
+    inlineHelpText = "Indicates whether this line item represents a package; meaning, it includes other line items in this quote."
+    label = "Package"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__BundledQuantity__c {
+    apiName = "Asset.SBQQ__BundledQuantity__c"
+    deprecated = false
+    description = "For items with calculated quantities this field hold the original (user entered) quantity."
+    externalId = false
+    inlineHelpText = "For items with calculated quantities this field holds the original quantity entered by the user."
+    label = "Original Quantity"
+    precision = 12
+    scale = 2
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Bundled__c {
+    apiName = "Asset.SBQQ__Bundled__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items are zero price and do not allow price or quantity to be edited."
+    externalId = false
+    inlineHelpText = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited."
+    label = "Bundled"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ChargeType__c {
+    apiName = "Asset.SBQQ__ChargeType__c"
+    deprecated = false
+    description = "The type of the product charge.  This is a system field that is derived from the associated product."
+    externalId = false
+    inlineHelpText = "The type of the product charge.  This is a system field that is derived from the associated product."
+    label = "Charge Type"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__ChargeType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__CombineKey__c {
+    apiName = "Asset.SBQQ__CombineKey__c"
+    deprecated = false
+    externalId = true
+    label = "Combine Key"
+    length = 18
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ComponentDiscountedByPackage__c {
+    apiName = "Asset.SBQQ__ComponentDiscountedByPackage__c"
+    defaultValue = false
+    deprecated = false
+    description = "Fixes additional discount for this component to the parent package discount."
+    externalId = false
+    inlineHelpText = "Fixes additional discount for this component to the parent package discount."
+    label = "Component Discounted By Package"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.FormulaText SBQQ__CreditProductId__c {
+    apiName = "Asset.SBQQ__CreditProductId__c"
+    deprecated = false
+    description = "ID of upgrade credit product for this asset."
+    externalId = false
+    formula = "Product2.SBQQ__UpgradeCredit__c"
+    label = "Credit Product Id"
+    trackHistory = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__CurrentSubscription__c {
+    apiName = "Asset.SBQQ__CurrentSubscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Subscription that currently covers this asset. This field is only populated if one and only one subscription covers this asset. Renewals will overwrite with new subscription."
+    externalId = false
+    inlineHelpText = "Subscription that currently covers this asset. Automatically populated if one and only one subscription covers this asset. Renewals will overwrite with new subscription."
+    label = "Current Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Covered Assets"
+    relationshipName = "CoveredAssets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.FormulaText SBQQ__Dimension__c {
+    apiName = "Asset.SBQQ__Dimension__c"
+    deprecated = false
+    description = "Name of the Price Dimension that originated this Asset"
+    externalId = false
+    formula = "SBQQ__QuoteLine__r.SBQQ__Dimension__r.Name"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Name of the Price Dimension that originated this Asset"
+    label = "Price Dimension Name"
+    trackHistory = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__DiscountScheduleType__c {
+    apiName = "Asset.SBQQ__DiscountScheduleType__c"
+    deprecated = false
+    description = "Discount schedule type. Must be a stored value because it's used in formula fields that are rolled up."
+    externalId = false
+    inlineHelpText = "Discount schedule type. Copied from Type field in associated discount schedule."
+    label = "Discount Schedule Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Range"
+        default = false
+        label = "Range"
+      },
+      {
+        fullName = "Slab"
+        default = false
+        label = "Slab"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__DiscountSchedule__c {
+    apiName = "Asset.SBQQ__DiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Specify discounts in terms of % or Amt to be discounted off the product's price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price & resulting total is stored in the Regular Price"
+    externalId = false
+    inlineHelpText = "Specify discounts in terms of % or Amt to be discounted off the product's price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price & resulting total is stored in the Regular Price"
+    label = "Discount Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__Discount__c {
+    apiName = "Asset.SBQQ__Discount__c"
+    deprecated = false
+    description = "Additional Discount for this Asset, if expressed as a percentage"
+    externalId = false
+    inlineHelpText = "Additional Discount for this Asset, if expressed as a percentage"
+    label = "Additional Disc. (%)"
+    precision = 11
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__DistributorDiscount__c {
+    apiName = "Asset.SBQQ__DistributorDiscount__c"
+    deprecated = false
+    description = "Discount to be taken on top of the Partner Discount."
+    externalId = false
+    inlineHelpText = "Discount to be taken on top of the Partner Discount."
+    label = "Distributor Discount"
+    precision = 5
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__DynamicOptionId__c {
+    apiName = "Asset.SBQQ__DynamicOptionId__c"
+    deprecated = false
+    description = "Contains feature id and product id to identify the feature and optional SKU associated with this line."
+    externalId = false
+    inlineHelpText = "Identifies feature and dynamic option for this line."
+    label = "Dynamic Option ID"
+    length = 40
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__FromServiceCloud__c {
+    apiName = "Asset.SBQQ__FromServiceCloud__c"
+    defaultValue = false
+    deprecated = false
+    description = "Determines whether Service Cloud was enabled when this Asset was created."
+    externalId = false
+    inlineHelpText = "Determines whether Service Cloud was enabled when this Asset was created."
+    label = "From Service Cloud"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__LatestQuoteLine__c {
+    apiName = "Asset.SBQQ__LatestQuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Latest Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Assets (Latest Quote Line)"
+    relationshipName = "Assets1"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__ListPrice__c {
+    apiName = "Asset.SBQQ__ListPrice__c"
+    deprecated = false
+    description = "List price for this Asset product."
+    externalId = false
+    inlineHelpText = "List price for this Asset product."
+    label = "List Price"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__MarkupAmount__c {
+    apiName = "Asset.SBQQ__MarkupAmount__c"
+    deprecated = false
+    description = "Markup for this Asset, if expressed as an amount"
+    externalId = false
+    inlineHelpText = "Markup for this Asset, if expressed as an amount"
+    label = "Markup (Amt)"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__MarkupRate__c {
+    apiName = "Asset.SBQQ__MarkupRate__c"
+    deprecated = false
+    description = "Markup for this Asset, if expressed as a percentage"
+    externalId = false
+    inlineHelpText = "Markup for this Asset, if expressed as a percentage"
+    label = "Markup (%)"
+    precision = 8
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__Number__c {
+    apiName = "Asset.SBQQ__Number__c"
+    deprecated = false
+    description = "Number indicating this line's position within its group or quote."
+    externalId = false
+    inlineHelpText = "Number indicating this line's position within its group or quote."
+    label = "Number"
+    precision = 5
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__OptionDiscountAmount__c {
+    apiName = "Asset.SBQQ__OptionDiscountAmount__c"
+    deprecated = false
+    description = "Discount extended on this product because it's part of a package."
+    externalId = false
+    inlineHelpText = "Discount extended on this product because it's part of a package."
+    label = "Option Discount (Amt)"
+    precision = 12
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__OptionDiscount__c {
+    apiName = "Asset.SBQQ__OptionDiscount__c"
+    deprecated = false
+    description = "If this line is for an optional SKU, this field captures any discount given to the package and extended to the option."
+    externalId = false
+    inlineHelpText = "If this line is for an optional SKU, this field captures any discount given to the package and extended to the option."
+    label = "Option Discount (%)"
+    precision = 5
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__OptionLevel__c {
+    apiName = "Asset.SBQQ__OptionLevel__c"
+    deprecated = false
+    description = "Indicates nest level of this option (only applies to lines that are generated from options)."
+    externalId = false
+    inlineHelpText = "Indicates nest level of this option (only applies to lines that are generated from options)."
+    label = "Option Level"
+    precision = 5
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__OptionType__c {
+    apiName = "Asset.SBQQ__OptionType__c"
+    deprecated = false
+    description = "Indicates the Option Type, which is copied from related Product Option. Determines how quantity is calculated."
+    externalId = false
+    inlineHelpText = "Indicates the Option Type, which is copied from related Product Option. Determines how quantity is calculated."
+    label = "Option Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Component"
+        default = false
+        label = "Component"
+      },
+      {
+        fullName = "Accessory"
+        default = false
+        label = "Accessory"
+      },
+      {
+        fullName = "Related Product"
+        default = false
+        label = "Related Product"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__OrderProduct__c {
+    apiName = "Asset.SBQQ__OrderProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Order Product"
+    referenceTo = [
+      salesforce.OrderItem,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__OriginalUnitCost__c {
+    apiName = "Asset.SBQQ__OriginalUnitCost__c"
+    deprecated = false
+    description = "Original unit cost of the Asset at the time of purchase before Cost Schedules were applied."
+    externalId = false
+    inlineHelpText = "Original unit cost of the Asset at the time of purchase before Cost Schedules were applied."
+    label = "Original Unit Cost"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__PackageProductCode__c {
+    apiName = "Asset.SBQQ__PackageProductCode__c"
+    deprecated = false
+    description = "Product code for the package generated by appending codes of selected components according to specified pattern."
+    externalId = false
+    inlineHelpText = "A code listing each of this package's components based on their component codes."
+    label = "Package Product Code"
+    length = 255
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Html SBQQ__PackageProductDescription__c {
+    apiName = "Asset.SBQQ__PackageProductDescription__c"
+    deprecated = false
+    description = "Product Description for the package generated by appending descriptions of selected components according to specified pattern."
+    externalId = false
+    inlineHelpText = "A description of each component in this package."
+    label = "Package Product Description"
+    length = 32000
+    trackHistory = false
+    visibleLines = 25
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__PartnerDiscount__c {
+    apiName = "Asset.SBQQ__PartnerDiscount__c"
+    deprecated = false
+    description = "Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price."
+    externalId = false
+    inlineHelpText = "Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price."
+    label = "Partner Discount"
+    precision = 5
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__PriceDimension__c {
+    apiName = "Asset.SBQQ__PriceDimension__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Price Dimension"
+    referenceTo = [
+      salesforce.SBQQ__Dimension__c,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__PricingMethod__c {
+    apiName = "Asset.SBQQ__PricingMethod__c"
+    deprecated = false
+    description = "Determines how the price for this line item is set. \"List\" = calculated by subtracting discount from list price. \"Cost\"  = calculated by adding markup to cost."
+    externalId = false
+    inlineHelpText = "Indicates how the price for this line item is calculated. \"List\" = subtracting discount from list price. \"Cost\" = adding markup to cost."
+    label = "Pricing Method"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "List"
+        default = true
+        label = "List"
+      },
+      {
+        fullName = "Cost"
+        default = false
+        label = "Cost"
+      },
+      {
+        fullName = "Block"
+        default = false
+        label = "Block"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+      {
+        fullName = "Custom"
+        default = false
+        label = "Custom"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__ProductOption__c {
+    apiName = "Asset.SBQQ__ProductOption__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product option that generated this line (if any)."
+    externalId = false
+    inlineHelpText = "Product option that generated this line (if any)."
+    label = "Product Option"
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__QuoteLine__c {
+    apiName = "Asset.SBQQ__QuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Quote line that generated this asset."
+    externalId = false
+    label = "Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__RegularPrice__c {
+    apiName = "Asset.SBQQ__RegularPrice__c"
+    deprecated = false
+    description = "Regular Price for this Asset."
+    externalId = false
+    inlineHelpText = "Regular Price for this Asset."
+    label = "Regular Price"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__RenewalUpliftRate__c {
+    apiName = "Asset.SBQQ__RenewalUpliftRate__c"
+    deprecated = false
+    description = "Rate of renewal price increases."
+    externalId = false
+    label = "Renewal Uplift (%)"
+    precision = 11
+    scale = 3
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RequiredByAsset__c {
+    apiName = "Asset.SBQQ__RequiredByAsset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The parent Asset. If populated, this Asset is a child in a bundle."
+    label = "Required By Asset"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Assets (Required By Asset)"
+    relationshipName = "ChildAssets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__RequiredById__c {
+    apiName = "Asset.SBQQ__RequiredById__c"
+    deprecated = false
+    description = "The Id of the parent record that requires this record."
+    externalId = false
+    inlineHelpText = "The Id of the parent record that requires this record."
+    label = "Required By Id"
+    length = 18
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RequiredByProduct__c {
+    apiName = "Asset.SBQQ__RequiredByProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Parent Product of this Asset."
+    externalId = false
+    inlineHelpText = "Parent Product of this Asset."
+    label = "Parent Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Child Assets"
+    relationshipName = "ChildAssets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RequiredBySubscription__c {
+    apiName = "Asset.SBQQ__RequiredBySubscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The parent Subscription. If populated, this Asset is a child in a bundle."
+    label = "Required By Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Assets (Required By Subscription)"
+    relationshipName = "ChildAssets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RevisedAsset__c {
+    apiName = "Asset.SBQQ__RevisedAsset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Revised Asset"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Revised Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RootAsset__c {
+    apiName = "Asset.SBQQ__RootAsset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Ultimate bundle parent of this Asset"
+    externalId = false
+    inlineHelpText = "Ultimate bundle parent of this Asset"
+    label = "Root Asset (CPQ)"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Assets (RootAsset)"
+    relationshipName = "Assets1"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__RootId__c {
+    apiName = "Asset.SBQQ__RootId__c"
+    deprecated = false
+    description = "The ID of the subscription or asset at the root of the bundle that contains this asset"
+    externalId = true
+    inlineHelpText = "The ID of the subscription or asset at the root of the bundle that contains this asset"
+    label = "Root Id"
+    length = 18
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__SegmentIndex__c {
+    apiName = "Asset.SBQQ__SegmentIndex__c"
+    deprecated = false
+    description = "For multi-segmented Products, Index representing this Quote Line's position in the segment table."
+    externalId = false
+    inlineHelpText = "For multi-segmented Products, Index representing this Quote Line's position in the segment table."
+    label = "Segment Index"
+    precision = 2
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__SegmentKey__c {
+    apiName = "Asset.SBQQ__SegmentKey__c"
+    deprecated = false
+    externalId = false
+    label = "Segment Key"
+    length = 30
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__SegmentLabel__c {
+    apiName = "Asset.SBQQ__SegmentLabel__c"
+    deprecated = false
+    description = "For multi-segmented Products, this is the Column header label (e.g. \"Year 1\") associated with this line."
+    externalId = false
+    inlineHelpText = "For multi-segmented Products, this is the Column header label (e.g. \"Year 1\") associated with this line."
+    label = "Segment Label"
+    length = 25
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Date SBQQ__SubscriptionEndDate__c {
+    apiName = "Asset.SBQQ__SubscriptionEndDate__c"
+    deprecated = false
+    externalId = false
+    label = "Subscription End Date"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__SubscriptionQuoteLine__c {
+    apiName = "Asset.SBQQ__SubscriptionQuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Subscription Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Assets (Quote Line)"
+    relationshipName = "Asset"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Date SBQQ__SubscriptionStartDate__c {
+    apiName = "Asset.SBQQ__SubscriptionStartDate__c"
+    deprecated = false
+    externalId = false
+    label = "Subscription Start Date"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__Subscription__c {
+    apiName = "Asset.SBQQ__Subscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Subscribed Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Assets"
+    relationshipName = "Assets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__TermDiscountSchedule__c {
+    apiName = "Asset.SBQQ__TermDiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Schedule for discounts based on subscription term. This is useful when you want to show a breakdown of payments in separate groups, for different terms, yet you want to discount reflected for the entire duration of the subscription. Leave Term Discount Level blank if you want discount schedules applied based on the term of each line item."
+    externalId = false
+    inlineHelpText = "Schedule for discounts based on subscription term. Setting this to \"Group\" applies the discount rate for the group term, while setting it to \"Quote\" applies the discount rate for the entire quote term, regardless of the different terms in your groups."
+    label = "Term Discount Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Assets (Term Discouned)"
+    relationshipName = "TermDiscountedAssets"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Currency SBQQ__UnitCost__c {
+    apiName = "Asset.SBQQ__UnitCost__c"
+    deprecated = false
+    description = "Unit Cost for this Asset."
+    externalId = false
+    inlineHelpText = "Unit Cost for this Asset."
+    label = "Unit Cost"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__VirtualAsset__c {
+    apiName = "Asset.SBQQ__VirtualAsset__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Virtual Asset"
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    relationshipLabel = "Assets (Virtual Asset)"
+    relationshipName = "VirtualAsset"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+}

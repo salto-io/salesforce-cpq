@@ -1,0 +1,47 @@
+salesforce.FieldSet SBQQ__Subscription__c_SBQQ__SubscriptionSearchFilters {
+  fullName = "SBQQ__Subscription__c.SBQQ__SubscriptionSearchFilters"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__ContractNumber__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.CreatedDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__Product__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Fields used as filters in Subscription Lookup page."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__Contract__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__EndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Subscription Search Filters"
+  _parent = [
+    salesforce.SBQQ__Subscription__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

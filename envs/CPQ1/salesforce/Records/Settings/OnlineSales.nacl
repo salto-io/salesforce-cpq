@@ -1,0 +1,4 @@
+salesforce.OnlineSalesSettings {
+  fullName = "OnlineSales"
+  enableSubscriptionAppEnrolled = "true"
+}

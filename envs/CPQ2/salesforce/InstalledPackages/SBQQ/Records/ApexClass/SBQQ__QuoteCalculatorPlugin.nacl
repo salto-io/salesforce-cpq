@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__QuoteCalculatorPlugin {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__QuoteCalculatorPlugin"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__QuoteCalculatorPlugin.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}
