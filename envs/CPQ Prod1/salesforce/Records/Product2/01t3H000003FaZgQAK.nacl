@@ -37,5 +37,5 @@ salesforce.Product2 "01t3H000003FaZgQAK" {
   SBQQ__Taxable__c = false
   Subscription_License_Type__c = "Pre Paid"
   _alias = "Stkbrd None StarTech Keyboard"
-  Description = "New description"
+  Description = "Pay as you go Keyboard"
 }
