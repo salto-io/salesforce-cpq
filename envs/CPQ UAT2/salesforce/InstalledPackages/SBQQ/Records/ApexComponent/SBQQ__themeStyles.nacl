@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__themeStyles {
+  apiVersion = 37
+  label = "themeStyles"
+  fullName = "SBQQ__themeStyles"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

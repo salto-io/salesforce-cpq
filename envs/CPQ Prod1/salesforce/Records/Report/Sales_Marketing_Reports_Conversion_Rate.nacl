@@ -1,0 +1,87 @@
+salesforce.Report Sales_Marketing_Reports_Conversion_Rate@uudu {
+  aggregates = [
+    {
+      calculatedFormula = "CONVERTED:SUM / RowCount"
+      datatype = "percent"
+      developerName = "FORMULA1"
+      isActive = true
+      isCrossBlock = false
+      masterLabel = "Conversion Rate"
+      scale = 0
+    },
+  ]
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        axisBinding = "y"
+        column = "FORMULA1"
+      },
+    ]
+    chartType = "Line"
+    enableHoverLabels = false
+    expandOthers = true
+    groupingColumn = "CREATED_DATE"
+    location = "CHART_TOP"
+    showAxisLabels = true
+    showPercentage = false
+    showTotal = false
+    showValues = false
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      field = "LEAD_ID"
+    },
+    {
+      field = "STATUS"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "CLOSE_DATE"
+    },
+    {
+      field = "CONVERTED"
+    },
+  ]
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Conversion Rate"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "OpportunityLead"
+  scope = "org"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CURPREV1"
+  }
+  fullName = "Sales_Marketing_Reports/Conversion_Rate"
+}

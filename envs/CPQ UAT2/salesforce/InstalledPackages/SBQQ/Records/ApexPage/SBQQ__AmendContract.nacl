@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__AmendContract {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "AmendContract"
+  fullName = "SBQQ__AmendContract"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__AmendContract.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

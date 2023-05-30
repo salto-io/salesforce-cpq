@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__status {
+  apiVersion = 57
+  description = "This is a generic template for Visualforce Component.  With this template, you may adjust the default elements and values and add new elements and values."
+  label = "status"
+  fullName = "SBQQ__status"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

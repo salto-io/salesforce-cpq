@@ -1,0 +1,28 @@
+salesforce.GlobalValueSet SBQQ__ChargeType {
+  fullName = "SBQQ__ChargeType"
+  customValue = [
+    {
+      fullName = "One-Time"
+      default = false
+      label = "One-Time"
+    },
+    {
+      fullName = "Recurring"
+      default = false
+      label = "Recurring"
+    },
+    {
+      fullName = "Usage"
+      default = false
+      label = "Usage"
+    },
+  ]
+  description = "The type of the product charge."
+  masterLabel = "Charge Type"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,111 @@
+type salesforce.ReportChart {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string backgroundColor1 {
+  }
+  string backgroundColor2 {
+  }
+  string backgroundFadeDir {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Diagonal",
+        "LeftToRight",
+        "TopToBottom",
+      ]
+    }
+  }
+  "List<salesforce.ChartSummary>" chartSummaries {
+  }
+  boolean enableHoverLabels {
+  }
+  boolean expandOthers {
+  }
+  string groupingColumn {
+  }
+  string legendPosition {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bottom",
+        "OnChart",
+        "Right",
+      ]
+    }
+  }
+  string secondaryGroupingColumn {
+  }
+  boolean showAxisLabels {
+  }
+  boolean showPercentage {
+  }
+  boolean showTotal {
+  }
+  boolean showValues {
+  }
+  number summaryAxisManualRangeEnd {
+  }
+  number summaryAxisManualRangeStart {
+  }
+  string summaryAxisRange {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Auto",
+        "Manual",
+      ]
+    }
+  }
+  string textColor {
+  }
+  number textSize {
+  }
+  string title {
+  }
+  string titleColor {
+  }
+  number titleSize {
+  }
+  string chartType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Donut",
+        "Funnel",
+        "HorizontalBar",
+        "HorizontalBarGrouped",
+        "HorizontalBarStacked",
+        "HorizontalBarStackedTo100",
+        "Line",
+        "LineCumulative",
+        "LineCumulativeGrouped",
+        "LineGrouped",
+        "None",
+        "Pie",
+        "Plugin",
+        "Scatter",
+        "ScatterGrouped",
+        "VerticalColumn",
+        "VerticalColumnGrouped",
+        "VerticalColumnGroupedLine",
+        "VerticalColumnLine",
+        "VerticalColumnStacked",
+        "VerticalColumnStackedLine",
+        "VerticalColumnStackedTo100",
+      ]
+    }
+  }
+  metadataType = "ReportChart"
+}

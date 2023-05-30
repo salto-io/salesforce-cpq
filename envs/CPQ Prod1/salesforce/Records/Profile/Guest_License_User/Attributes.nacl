@@ -1,0 +1,5 @@
+salesforce.Profile Guest_License_User@s {
+  fullName = "Guest License User"
+  custom = false
+  userLicense = "Guest User License"
+}

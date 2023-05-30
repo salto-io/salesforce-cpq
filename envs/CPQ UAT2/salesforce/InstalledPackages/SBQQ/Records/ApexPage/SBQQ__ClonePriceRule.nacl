@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ClonePriceRule {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "ClonePriceRule"
+  fullName = "SBQQ__ClonePriceRule"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ClonePriceRule.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

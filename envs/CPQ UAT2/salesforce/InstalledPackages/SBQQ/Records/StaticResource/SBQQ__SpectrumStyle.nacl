@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__SpectrumStyle {
+  cacheControl = "Private"
+  contentType = "text/css"
+  description = "Stylesheet for the Spectrum Color Picker"
+  fullName = "SBQQ__SpectrumStyle"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__SpectrumStyle.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

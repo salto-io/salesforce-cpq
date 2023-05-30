@@ -1,0 +1,8 @@
+salesforce.Profile Minimum_Access___Salesforce@ssbs {
+  customPermissions = {
+    SBQQ__HideGlobalHeader = {
+      enabled = true
+      name = "SBQQ__HideGlobalHeader"
+    }
+  }
+}

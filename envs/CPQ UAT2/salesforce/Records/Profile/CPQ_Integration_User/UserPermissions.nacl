@@ -1,0 +1,24 @@
+salesforce.Profile CPQ_Integration_User@s {
+  userPermissions = {
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ApiUserOnly = {
+      enabled = true
+      name = "ApiUserOnly"
+    }
+    PasswordNeverExpires = {
+      enabled = true
+      name = "PasswordNeverExpires"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+  }
+}

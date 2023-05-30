@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__ColumnMetadata__c {
+  fullName = "SBQQ__ColumnMetadata__c"
+  customObject = true
+  motif = "Custom100: TV Widescreen"
+  _parent = [
+    salesforce.SBQQ__ColumnMetadata__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.Profile SolutionManager {
+  customPermissions = {
+    SBQQ__HideGlobalHeader = {
+      enabled = true
+      name = "SBQQ__HideGlobalHeader"
+    }
+  }
+}

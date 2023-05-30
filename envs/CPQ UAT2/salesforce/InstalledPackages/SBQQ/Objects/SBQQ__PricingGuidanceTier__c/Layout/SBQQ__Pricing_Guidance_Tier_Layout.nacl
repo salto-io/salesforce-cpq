@@ -1,0 +1,104 @@
+salesforce.Layout SBQQ__PricingGuidanceTier__c_SBQQ__Pricing_Guidance_Tier_Layout@uuuubuusss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__LowerBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__UpperBound__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__PricingGuidance__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__TargetDiscount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__NormDiscount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.SBQQ__FloorDiscount__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PricingGuidanceTier__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0v000000bliy"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__PricingGuidanceTier__c-SBQQ__Pricing Guidance Tier Layout"
+  _parent = [
+    salesforce.SBQQ__PricingGuidanceTier__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,69 @@
+salesforce.Layout SBQQ__ConfigurationAttribute__c_SBQQ__Global_Attribute_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__TargetField__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__AttributeSet__c",
+        "SBQQ__Sequence__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__Attribute__c
+      sortField = "NAME"
+      sortOrder = "Asc"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000002yDDg"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ConfigurationAttribute__c-SBQQ__Global Attribute Layout"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

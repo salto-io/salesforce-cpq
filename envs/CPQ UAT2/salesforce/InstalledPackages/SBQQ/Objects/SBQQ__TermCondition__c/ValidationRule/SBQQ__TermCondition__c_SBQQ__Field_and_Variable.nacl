@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__TermCondition__c_SBQQ__Field_and_Variable {
+  fullName = "SBQQ__TermCondition__c.SBQQ__Field_and_Variable"
+  active = true
+  description = "Validates that either field or summary variable is selected, but not both."
+  errorConditionFormula = "AND(NOT(ISPICKVAL(SBQQ__TestedField__c, '')),NOT(ISBLANK(SBQQ__TestedVariable__c)))"
+  errorMessage = "You may not select both field and variable to test. Create separate conditions to test against field and variable."
+  _parent = [
+    salesforce.SBQQ__TermCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

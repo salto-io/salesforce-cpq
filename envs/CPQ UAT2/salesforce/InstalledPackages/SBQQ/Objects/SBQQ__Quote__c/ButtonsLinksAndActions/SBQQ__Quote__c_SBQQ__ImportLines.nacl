@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__ImportLines {
+  fullName = "SBQQ__Quote__c.SBQQ__ImportLines"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Import Lines"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__ImportLines
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

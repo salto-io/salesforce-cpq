@@ -1,0 +1,25 @@
+type salesforce.ReportTypeColumn {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean checkedByDefault {
+  }
+  string displayNameOverride {
+  }
+  string field {
+  }
+  string table {
+  }
+  metadataType = "ReportTypeColumn"
+}

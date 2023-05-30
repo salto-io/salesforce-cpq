@@ -1,0 +1,133 @@
+salesforce.Layout SBQQ__PriceCondition__c_SBQQ__Price_Condition_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceCondition__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__Rule__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__Object__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__TestedVariable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__TestedFormula__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Filter Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__Operator__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__FilterType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__Value__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__FilterVariable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceCondition__c.field.SBQQ__FilterFormula__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceCondition__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceCondition__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000000JsY6"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__PriceCondition__c-SBQQ__Price Condition Layout"
+  _parent = [
+    salesforce.SBQQ__PriceCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

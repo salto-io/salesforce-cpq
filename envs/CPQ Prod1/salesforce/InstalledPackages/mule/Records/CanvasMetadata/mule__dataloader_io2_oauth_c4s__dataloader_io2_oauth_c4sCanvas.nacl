@@ -1,0 +1,13 @@
+salesforce.CanvasMetadata mule__dataloader_io2_oauth_c4s__dataloader_io2_oauth_c4sCanvas {
+  fullName = "mule__dataloader_io2_oauth_c4s__dataloader_io2_oauth_c4sCanvas"
+  module = "dataloader_io2_oauth_c4s"
+  accessMethod = "Get"
+  canvasUrl = "https://dataloader.io/static/canvas"
+  locationOptions = "VF"
+  samlInitiationMethod = "None"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.mule
+    },
+  ]
+}

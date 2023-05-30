@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__OrderTriggerControl {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__OrderTriggerControl"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

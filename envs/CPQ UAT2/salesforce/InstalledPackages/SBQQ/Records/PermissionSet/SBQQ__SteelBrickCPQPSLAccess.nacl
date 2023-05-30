@@ -1,0 +1,11 @@
+salesforce.PermissionSet SBQQ__SteelBrickCPQPSLAccess {
+  fullName = "SBQQ__SteelBrickCPQPSLAccess"
+  description = "This permission set grants users permissions to the core Salesforce CPQ objects."
+  hasActivationRequired = true
+  label = "Salesforce CPQ PSL Access"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

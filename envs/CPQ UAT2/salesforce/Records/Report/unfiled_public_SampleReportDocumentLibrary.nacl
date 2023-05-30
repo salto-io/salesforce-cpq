@@ -1,0 +1,48 @@
+salesforce.Report unfiled_public_SampleReportDocumentLibrary@zcd {
+  columns = [
+    {
+      field = "DOC_NAME"
+    },
+    {
+      field = "DOC_TYPE"
+    },
+    {
+      field = "DOC_LENGTH"
+    },
+    {
+      field = "DOC_INTERNAL"
+    },
+    {
+      field = "DOC_AUTHOR"
+    },
+    {
+      field = "DOC_DESC"
+    },
+  ]
+  description = "What documents are in the document library?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "FOLDER_NAME"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Document Library"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "DocumentList"
+  scope = "user"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "DOC_CREATED"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportDocumentLibrary"
+}

@@ -1,0 +1,6 @@
+salesforce.ApexClass MyPieceOfCode {
+  apiVersion = 53
+  status = "Active"
+  fullName = "MyPieceOfCode"
+  content = file("salesforce/Records/ApexClass/MyPieceOfCode.cls")
+}

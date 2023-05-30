@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ConfigureProducts {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ConfigureProducts"
+  fullName = "SBQQ__ConfigureProducts"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ConfigureProducts.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

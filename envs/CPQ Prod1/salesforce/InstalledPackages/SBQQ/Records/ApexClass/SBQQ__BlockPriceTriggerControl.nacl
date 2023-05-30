@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__BlockPriceTriggerControl {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__BlockPriceTriggerControl"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

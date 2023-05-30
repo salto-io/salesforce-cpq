@@ -1,0 +1,56 @@
+salesforce.Flow Another_CPQ_Flow {
+  fullName = "Another_CPQ_Flow"
+  apiVersion = 56
+  environments = "Default"
+  interviewLabel = "Another CPQ Flow {!$Flow.CurrentDateTime}"
+  label = "Another CPQ Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordUpdates = [
+    {
+      name = "update_name"
+      label = "update name"
+      locationX = 176
+      locationY = 311
+      inputAssignments = [
+        {
+          field = "Name"
+          value = {
+            stringValue = "\"flow ran 2\""
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "update_name"
+    }
+    object = salesforce.Account
+    recordTriggerType = "Create"
+    triggerType = "RecordBeforeSave"
+  }
+  status = "Active"
+}

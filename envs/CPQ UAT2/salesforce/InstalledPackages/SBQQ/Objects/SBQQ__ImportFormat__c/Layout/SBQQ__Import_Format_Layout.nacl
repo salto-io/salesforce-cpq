@@ -1,0 +1,109 @@
+salesforce.Layout SBQQ__ImportFormat__c_SBQQ__Import_Format_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ImportFormat__c.field.SBQQ__ImportFormatName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ImportFormat__c.field.SBQQ__Active__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportFormat__c.field.Name
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportFormat__c.field.SBQQ__UniqueKeyCount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ImportFormat__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportFormat__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportFormat__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__ColumnIndex__c",
+        "SBQQ__FieldName__c",
+        "SBQQ__Key__c",
+      ]
+      relatedList = salesforce.SBQQ__ImportColumn__c.field.SBQQ__ImportFormat__c
+      sortField = "SBQQ__ColumnIndex__c"
+      sortOrder = "Asc"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000001OZrq"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ImportFormat__c-SBQQ__Import Format Layout"
+  _parent = [
+    salesforce.SBQQ__ImportFormat__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

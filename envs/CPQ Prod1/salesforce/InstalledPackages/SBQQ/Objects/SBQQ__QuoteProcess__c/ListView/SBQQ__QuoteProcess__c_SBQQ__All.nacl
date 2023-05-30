@@ -1,0 +1,21 @@
+salesforce.ListView SBQQ__QuoteProcess__c_SBQQ__All {
+  fullName = "SBQQ__QuoteProcess__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__SortOrder__c",
+    "SBQQ__Default__c",
+    "SBQQ__ProductAutoSelected__c",
+    "SBQQ__GuidedOnly__c",
+    "UPDATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__QuoteProcess__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

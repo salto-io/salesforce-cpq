@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ServiceReader {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ServiceReader"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

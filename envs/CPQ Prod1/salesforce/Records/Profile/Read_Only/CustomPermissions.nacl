@@ -1,0 +1,8 @@
+salesforce.Profile Read_Only@s {
+  customPermissions = {
+    SBQQ__HideGlobalHeader = {
+      enabled = true
+      name = "SBQQ__HideGlobalHeader"
+    }
+  }
+}

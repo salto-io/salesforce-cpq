@@ -1,0 +1,23 @@
+salesforce.GlobalValueSet SBQQ__BillingType {
+  fullName = "SBQQ__BillingType"
+  customValue = [
+    {
+      fullName = "Advance"
+      default = false
+      label = "Advance"
+    },
+    {
+      fullName = "Arrears"
+      default = false
+      label = "Arrears"
+    },
+  ]
+  description = "Billing type"
+  masterLabel = "Billing Type"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

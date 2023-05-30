@@ -1,0 +1,10 @@
+type salesforce.FieldPermissionEnum is string {
+  _restriction = {
+    values = [
+      "ReadOnly",
+      "ReadWrite",
+      "NoAccess",
+    ]
+    enforce_value = true
+  }
+}

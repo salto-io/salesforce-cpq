@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__ProductConfiguratorUI {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  fullName = "SBQQ__ProductConfiguratorUI"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__ProductConfiguratorUI.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,45 @@
+salesforce.FieldSet SBQQ__DiscountTier__c_SBQQ__DiscountScheduleModal {
+  fullName = "SBQQ__DiscountTier__c.SBQQ__DiscountScheduleModal"
+  description = "Fields displayed on Discount Schedule Modal."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.SBQQ__Number__c
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.SBQQ__LowerBound__c
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.SBQQ__UpperBound__c
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.SBQQ__Discount__c
+      isFieldManaged = true
+      isRequired = true
+    },
+    {
+      field = salesforce.SBQQ__DiscountTier__c.field.SBQQ__DiscountAmount__c
+      isFieldManaged = true
+      isRequired = true
+    },
+  ]
+  label = "Discount Schedule Modal"
+  _parent = [
+    salesforce.SBQQ__DiscountTier__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

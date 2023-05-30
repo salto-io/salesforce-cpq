@@ -1,0 +1,5 @@
+salesforce.Profile Read_Only@s {
+  fullName = "Read Only"
+  custom = true
+  userLicense = "Salesforce"
+}

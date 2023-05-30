@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__PreviewDocument {
+  fullName = "SBQQ__Quote__c.SBQQ__PreviewDocument"
+  availability = "online"
+  description = "Displays the page that allows to generate a preview of quote document. No Save or Save & Email buttons."
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Preview Document"
+  openType = "noSidebar"
+  page = salesforce.ApexPage.instance.SBQQ__PreviewDocument
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

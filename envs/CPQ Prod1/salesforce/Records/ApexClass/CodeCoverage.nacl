@@ -1,0 +1,6 @@
+salesforce.ApexClass CodeCoverage {
+  apiVersion = 56
+  status = "Active"
+  fullName = "CodeCoverage"
+  content = file("salesforce/Records/ApexClass/CodeCoverage.cls")
+}

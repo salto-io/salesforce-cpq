@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__discountScheduleTable {
+  apiVersion = 57
+  label = "discSchedTable"
+  fullName = "SBQQ__discountScheduleTable"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

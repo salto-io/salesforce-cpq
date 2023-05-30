@@ -1,0 +1,130 @@
+salesforce.Layout SBQQ__QuoteProcess__c_SBQQ__Quote_Process_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteProcess__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__Default__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__ProductAutoSelected__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__GuidedOnly__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.Subscription_License_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.Type_of_License__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__ProductConfigurationInitializer__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__ProductSearchExecutor__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteProcess__c.field.SBQQ__SortOrder__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteProcess__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteProcess__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ProcessInput__c.field.SBQQ__QuoteProcess__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__QuoteLineGroup__c.field.SBQQ__QuoteProcess__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj00000018JNB"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__QuoteProcess__c-SBQQ__Quote Process Layout"
+  _parent = [
+    salesforce.SBQQ__QuoteProcess__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

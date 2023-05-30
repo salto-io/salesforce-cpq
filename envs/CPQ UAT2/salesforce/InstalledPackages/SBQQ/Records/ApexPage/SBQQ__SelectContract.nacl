@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__SelectContract {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "SelectContract"
+  fullName = "SBQQ__SelectContract"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__SelectContract.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

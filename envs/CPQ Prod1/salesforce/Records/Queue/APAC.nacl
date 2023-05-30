@@ -1,0 +1,13 @@
+salesforce.Queue APAC {
+  fullName = "APAC"
+  doesSendEmailToMembers = true
+  name = "APAC"
+  queueMembers = {
+    users = {
+      user = "hadas.birin+prod@salto.io"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+}

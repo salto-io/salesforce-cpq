@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__QuoteLine__c_SBQQ__Invalid_Subscription_Term {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__Invalid_Subscription_Term"
+  active = true
+  description = "Validates that subscription term is positive"
+  errorConditionFormula = "IF( AND( NOT(ISNULL(SBQQ__SubscriptionTerm__c)), SBQQ__SubscriptionTerm__c <= 0), TRUE, null)"
+  errorMessage = "The subscription term must be a positive number."
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

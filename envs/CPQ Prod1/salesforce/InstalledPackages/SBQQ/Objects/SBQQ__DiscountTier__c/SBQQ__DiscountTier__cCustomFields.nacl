@@ -1,0 +1,116 @@
+type salesforce.SBQQ__DiscountTier__c {
+  salesforce.Currency SBQQ__DiscountAmount__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__DiscountAmount__c"
+    deprecated = false
+    description = "Discount amount applied when quantity falls in this tier."
+    externalId = false
+    inlineHelpText = "Discount amount applied when quantity falls in this tier."
+    label = "Discount ({0})"
+    precision = 14
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__Discount__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__Discount__c"
+    deprecated = false
+    description = "Discount percentage applied when quantity falls in this tier."
+    externalId = false
+    inlineHelpText = "Discount percentage applied when quantity falls in this tier."
+    label = "Discount (%)"
+    precision = 14
+    scale = 10
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__LowerBound__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__LowerBound__c"
+    deprecated = false
+    description = "Lower bound of the quantity range for this tier"
+    externalId = false
+    inlineHelpText = "Lower bound of the quantity range for this tier."
+    label = "Lower Bound"
+    precision = 12
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Number__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__Number__c"
+    deprecated = false
+    description = "Number indicating this tier's position within the schedule."
+    externalId = false
+    inlineHelpText = "Number indicating this tier's position within the schedule."
+    label = "Number"
+    precision = 5
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__Price__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__Price__c"
+    deprecated = false
+    description = "The actual price of this discount tier. This field will be populated when a new set of discount schedules are created for a new Order record."
+    externalId = false
+    inlineHelpText = "The actual price of this discount tier. This field will be populated when a new set of discount schedules are created for a new Order record."
+    label = "Price"
+    precision = 18
+    scale = 7
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__Schedule__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__Schedule__c"
+    deprecated = false
+    description = "Discount Schedule to which this tier belongs."
+    externalId = false
+    inlineHelpText = "Discount Schedule to which this tier belongs."
+    label = "Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Discount Tiers"
+    relationshipName = "DiscountTiers"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackHistory = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__UpperBound__c {
+    apiName = "SBQQ__DiscountTier__c.SBQQ__UpperBound__c"
+    deprecated = false
+    description = "Upper bound of the quantity range for this tier."
+    externalId = false
+    inlineHelpText = "Upper bound of the quantity range for this tier."
+    label = "Upper Bound"
+    precision = 12
+    scale = 0
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__GenerateDocument {
+  fullName = "SBQQ__Quote__c.SBQQ__GenerateDocument"
+  availability = "online"
+  description = "Opens the page that starts document generation."
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Generate Document"
+  openType = "noSidebar"
+  page = salesforce.ApexPage.instance.SBQQ__GenerateDocument
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.PermissionSetGroup SBQQ__CPQIntegrationUserPermSetGroup {
+  fullName = "SBQQ__CPQIntegrationUserPermSetGroup"
+  description = "Permission set group that contains the Salesforce CPQ admin permission set, the C2C integration permission set, and other permission sets required to make a callout to Heroku services."
+  hasActivationRequired = true
+  label = "CPQIntegrationUserPermSetGroup"
+  status = "Updated"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

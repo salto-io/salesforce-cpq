@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__QuoteLine__c_SBQQ__Markup_percent_or_amount {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__Markup_percent_or_amount"
+  active = true
+  description = "Validates markup is specified as a percentage or absolute amount but not both."
+  errorConditionFormula = "AND(NOT(ISBLANK(SBQQ__MarkupRate__c)), NOT(ISBLANK(SBQQ__MarkupAmount__c)),NOT(SBQQ__Incomplete__c))"
+  errorMessage = "You may not specify markup as both percentage and absolute amount."
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

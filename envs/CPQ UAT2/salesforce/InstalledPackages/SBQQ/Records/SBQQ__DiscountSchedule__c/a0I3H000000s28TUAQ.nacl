@@ -1,0 +1,13 @@
+salesforce.SBQQ__DiscountSchedule__c a0I3H000000s28TUAQ {
+  SBQQ__CrossOrders__c = false
+  SBQQ__CrossProducts__c = false
+  SBQQ__DiscountUnit__c = "Percent1"
+  SBQQ__IncludeBundledProducts__c = false
+  SBQQ__PriceScale__c = 2
+  SBQQ__QuoteLineQuantityField__c = "Quantity"
+  SBQQ__Type__c = "Range"
+  SBQQ__UsePriceForAmount__c = false
+  SBQQ__UserDefined__c = false
+  Name = "Schedule1"
+  _alias = "Schedule1"
+}

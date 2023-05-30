@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__ColumnMetadata__c_SBQQ__ValidateMinimumPixelSize {
+  fullName = "SBQQ__ColumnMetadata__c.SBQQ__ValidateMinimumPixelSize"
+  active = true
+  description = "Restrict any size that is less than 67 pixels."
+  errorConditionFormula = "(SBQQ__FieldColumnSize__c < 67)"
+  errorDisplayField = salesforce.SBQQ__ColumnMetadata__c.field.SBQQ__FieldColumnSize__c
+  errorMessage = "Field Column Size cannot be less than 67."
+  _parent = [
+    salesforce.SBQQ__ColumnMetadata__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

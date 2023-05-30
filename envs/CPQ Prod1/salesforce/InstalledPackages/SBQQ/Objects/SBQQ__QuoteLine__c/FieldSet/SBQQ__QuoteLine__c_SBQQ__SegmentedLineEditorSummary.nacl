@@ -1,0 +1,42 @@
+salesforce.FieldSet SBQQ__QuoteLine__c_SBQQ__SegmentedLineEditorSummary {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__SegmentedLineEditorSummary"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Description__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Optional__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProductFamily__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Quote Line fields to display in the summary line for segmented products (read-only)."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Segmented Line Editor Summary"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

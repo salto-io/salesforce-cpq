@@ -1,0 +1,13 @@
+salesforce.ListView SBQQ__AttributeSet__c_SBQQ__All {
+  fullName = "SBQQ__AttributeSet__c.SBQQ__All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__AttributeSet__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

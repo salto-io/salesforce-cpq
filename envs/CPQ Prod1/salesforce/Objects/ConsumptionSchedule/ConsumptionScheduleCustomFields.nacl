@@ -1,0 +1,27 @@
+type salesforce.ConsumptionSchedule {
+  salesforce.Picklist SBQQ__Category__c {
+    apiName = "ConsumptionSchedule.SBQQ__Category__c"
+    deprecated = false
+    externalId = false
+    label = "Category"
+    _required = true
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Rates"
+        default = true
+        label = "Rates"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+}

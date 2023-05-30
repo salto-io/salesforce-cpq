@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle SBQQ__QLEDiagnosticToolApp {
+  apiVersion = 57
+  description = "Container for QLE Diagnostic Tool"
+  fullName = "SBQQ__QLEDiagnosticToolApp"
+  type = "Application"
+  markup = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

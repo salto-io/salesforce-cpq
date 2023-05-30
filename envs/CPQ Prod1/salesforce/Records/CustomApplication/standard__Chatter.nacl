@@ -1,0 +1,13 @@
+salesforce.CustomApplication standard__Chatter {
+  fullName = "standard__Chatter"
+  defaultLandingTab = "standard-Chatter"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-File",
+    salesforce.CustomTab.instance.Yariv__c,
+    salesforce.CustomTab.instance.SBQQ__BlockPrice__c,
+  ]
+}

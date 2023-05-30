@@ -1,0 +1,26 @@
+type salesforce.ProfileRecordTypeVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean default {
+  }
+  boolean personAccountDefault {
+  }
+  string recordType {
+    _required = true
+  }
+  boolean visible {
+  }
+  metadataType = "ProfileRecordTypeVisibility"
+}

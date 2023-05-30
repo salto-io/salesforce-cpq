@@ -1,0 +1,18 @@
+salesforce.ValidationRule SBQQ__QuoteTemplate__c_SBQQ__Blank_Footer_Height {
+  fullName = "SBQQ__QuoteTemplate__c.SBQQ__Blank_Footer_Height"
+  active = true
+  description = "Checks if Footer Height is blank if Page Number Position is set to 'Footer'."
+  errorConditionFormula = '''
+IF(AND(ISPICKVAL(SBQQ__PageNumberPosition__c, "Footer"),
+            ISBLANK(SBQQ__FooterHeight__c)), true, null)
+'''
+  errorMessage = "Footer Height can not be blank if Page Number Position is set to Footer."
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

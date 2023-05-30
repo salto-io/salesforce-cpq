@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteTermsContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "QuoteTermsContent"
+  fullName = "SBQQ__QuoteTermsContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteTermsContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

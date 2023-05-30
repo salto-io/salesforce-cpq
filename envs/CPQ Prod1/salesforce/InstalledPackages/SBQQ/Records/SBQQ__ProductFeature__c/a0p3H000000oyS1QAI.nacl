@@ -1,0 +1,7 @@
+salesforce.SBQQ__ProductFeature__c a0p3H000000oyS1QAI {
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.01t3H000003FaRjQAK
+  SBQQ__MinOptionCount__c = 1
+  SBQQ__Number__c = 1
+  Name = "E-Port"
+  _alias = "None Laptop with Drive E-Port"
+}

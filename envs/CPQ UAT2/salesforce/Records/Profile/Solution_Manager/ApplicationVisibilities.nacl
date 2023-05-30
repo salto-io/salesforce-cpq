@@ -1,0 +1,104 @@
+salesforce.Profile SolutionManager {
+  applicationVisibilities = {
+    Lead_Generation = {
+      application = salesforce.CustomApplication.instance.Lead_Generation
+      default = false
+      visible = true
+    }
+    Relationship_Management = {
+      application = salesforce.CustomApplication.instance.Relationship_Management
+      default = false
+      visible = true
+    }
+    SBQQ__QuoteQuickly = {
+      application = salesforce.CustomApplication.instance.SBQQ__QuoteQuickly
+      default = false
+      visible = true
+    }
+    Sales_Leadership = {
+      application = salesforce.CustomApplication.instance.Sales_Leadership
+      default = false
+      visible = true
+    }
+    Sales_Operations = {
+      application = salesforce.CustomApplication.instance.Sales_Operations
+      default = false
+      visible = true
+    }
+    standard__AllTabSet = {
+      application = salesforce.CustomApplication.instance.standard__AllTabSet
+      default = false
+      visible = true
+    }
+    standard__AppLauncher = {
+      application = salesforce.CustomApplication.instance.standard__AppLauncher
+      default = false
+      visible = true
+    }
+    standard__Chatter = {
+      application = salesforce.CustomApplication.instance.standard__Chatter
+      default = false
+      visible = true
+    }
+    standard__Community = {
+      application = salesforce.CustomApplication.instance.standard__Community
+      default = false
+      visible = true
+    }
+    standard__LightningBolt = {
+      application = salesforce.CustomApplication.instance.standard__LightningBolt
+      default = false
+      visible = true
+    }
+    standard__LightningSales = {
+      application = salesforce.CustomApplication.instance.standard__LightningSales
+      default = false
+      visible = true
+    }
+    standard__LightningSalesConsole = {
+      application = salesforce.CustomApplication.instance.standard__LightningSalesConsole
+      default = false
+      visible = true
+    }
+    standard__LightningService = {
+      application = salesforce.CustomApplication.instance.standard__LightningService
+      default = false
+      visible = true
+    }
+    standard__Marketing = {
+      application = salesforce.CustomApplication.instance.standard__Marketing
+      default = false
+      visible = true
+    }
+    standard__OnlineSales = {
+      application = salesforce.CustomApplication.instance.standard__OnlineSales
+      default = false
+      visible = true
+    }
+    standard__Platform = {
+      application = salesforce.CustomApplication.instance.standard__Platform
+      default = false
+      visible = false
+    }
+    standard__Sales = {
+      application = salesforce.CustomApplication.instance.standard__Sales
+      default = true
+      visible = true
+    }
+    standard__SalesforceCMS = {
+      application = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      default = false
+      visible = false
+    }
+    standard__Service = {
+      application = salesforce.CustomApplication.instance.standard__Service
+      default = false
+      visible = true
+    }
+    standard__ServiceConsole = {
+      application = salesforce.CustomApplication.instance.standard__ServiceConsole
+      default = false
+      visible = false
+    }
+  }
+}

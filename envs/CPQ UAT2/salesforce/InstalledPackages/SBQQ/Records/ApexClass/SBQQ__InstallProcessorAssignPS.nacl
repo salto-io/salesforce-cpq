@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__InstallProcessorAssignPS {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SBQQ__InstallProcessorAssignPS"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

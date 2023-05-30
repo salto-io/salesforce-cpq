@@ -1,0 +1,16 @@
+salesforce.CustomPageWebLink SBQQ__ConfigureQuoteQuickly {
+  fullName = "SBQQ__ConfigureQuoteQuickly"
+  availability = "online"
+  description = "Link to the setup page that configures Salesforce CPQ."
+  displayType = "link"
+  linkType = "page"
+  masterLabel = "Configure Salesforce CPQ"
+  openType = "replace"
+  page = "SBQQ__EditSettings"
+  protected = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

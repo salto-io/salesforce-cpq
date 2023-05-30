@@ -1,0 +1,20 @@
+salesforce.ValidationRule SBQQ__ProductRule__c_SBQQ__FilterTypeScope {
+  fullName = "SBQQ__ProductRule__c.SBQQ__FilterTypeScope"
+  active = true
+  description = "Validation for Filter type Product Rules not having a value of 'Product' in the Scope field."
+  errorConditionFormula = '''
+AND( 
+ISPICKVAL(SBQQ__Type__c, "Filter"),
+NOT(ISPICKVAL(SBQQ__Scope__c, "Product"))
+)
+'''
+  errorMessage = "The Scope field must point to 'Product' for Filter type Product Rules."
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

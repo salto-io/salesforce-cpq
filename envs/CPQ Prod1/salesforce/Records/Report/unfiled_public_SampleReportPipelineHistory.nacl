@@ -1,0 +1,85 @@
+salesforce.Report unfiled_public_SampleReportPipelineHistory@zcd {
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        aggregate = "Sum"
+        axisBinding = "y"
+        column = "TAMOUNT"
+      },
+    ]
+    chartType = "VerticalColumnStacked"
+    enableHoverLabels = false
+    expandOthers = true
+    groupingColumn = "INTERVAL_DATE"
+    legendPosition = "Right"
+    location = "CHART_BOTTOM"
+    secondaryGroupingColumn = "TSTAGE"
+    showAxisLabels = false
+    showPercentage = false
+    showTotal = false
+    showValues = false
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "ALIAS"
+    },
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      field = "AMOUNT"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "TAMOUNT"
+    },
+  ]
+  description = "What did the pipeline look like as of..."
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "TSTAGE"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "INTERVAL_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Pipeline History"
+  params = [
+    {
+      name = "open"
+      value = "all"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+  ]
+  reportType = "OpportunityTrend"
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "INTERVAL_DATE"
+    interval = "INTERVAL_CURPREV1"
+  }
+  fullName = "unfiled$public/SampleReportPipelineHistory"
+}

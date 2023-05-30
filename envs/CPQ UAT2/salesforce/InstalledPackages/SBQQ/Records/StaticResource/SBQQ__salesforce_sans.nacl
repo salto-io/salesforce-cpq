@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__salesforce_sans {
+  cacheControl = "Public"
+  contentType = "application/zip"
+  fullName = "SBQQ__salesforce_sans"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__salesforce_sans.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

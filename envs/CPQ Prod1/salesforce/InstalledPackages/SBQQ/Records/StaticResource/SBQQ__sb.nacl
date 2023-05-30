@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__sb {
+  cacheControl = "Private"
+  contentType = "text/css"
+  fullName = "SBQQ__sb"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sb.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

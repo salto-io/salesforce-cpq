@@ -1,0 +1,14 @@
+salesforce.SBQQ__ConfigurationAttribute__c a073H000003FGVdQAO {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__ApplyToProductOptions__c = false
+  SBQQ__AutoSelect__c = false
+  SBQQ__ColumnOrder__c = "1"
+  SBQQ__DisplayOrder__c = 4
+  SBQQ__Hidden__c = false
+  SBQQ__Position__c = "Top"
+  SBQQ__Product__c = salesforce.Product2.instance.01t3H000003Ff4zQAC
+  SBQQ__Required__c = false
+  SBQQ__TargetField__c = "Unit Price"
+  Name = "Attribute in target 2"
+  _alias = "Attribute in target 2"
+}

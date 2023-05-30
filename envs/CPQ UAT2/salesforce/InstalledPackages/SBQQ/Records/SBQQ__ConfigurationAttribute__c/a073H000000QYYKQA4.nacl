@@ -1,0 +1,15 @@
+salesforce.SBQQ__ConfigurationAttribute__c a073H000000QYYKQA4 {
+  SBQQ__AppliedImmediately__c = false
+  SBQQ__ApplyToProductOptions__c = false
+  SBQQ__AutoSelect__c = false
+  SBQQ__ColumnOrder__c = "1"
+  SBQQ__DisplayOrder__c = 2
+  SBQQ__Feature__c = salesforce.SBQQ__ProductFeature__c.instance.a0p3H0000001nEmQAI
+  SBQQ__Hidden__c = false
+  SBQQ__Position__c = "Top"
+  SBQQ__Product__c = salesforce.Product2.instance.01t3H000001DVGgQAO
+  SBQQ__Required__c = false
+  SBQQ__TargetField__c = "Unit Price"
+  Name = "attr123"
+  _alias = "attr123"
+}

@@ -1,0 +1,30 @@
+salesforce.FieldSet SBQQ__Favorite__c_SBQQ__FavoritesManager {
+  fullName = "SBQQ__Favorite__c.SBQQ__FavoritesManager"
+  description = "Favorites Manager"
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__Favorite__c.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Favorite__c.field.SBQQ__Description__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Favorite__c.field.SBQQ__OwnerName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "FavoritesManager"
+  _parent = [
+    salesforce.SBQQ__Favorite__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

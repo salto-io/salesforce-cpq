@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBeUAK {
+  SBQQ__Action__c = "View Pricing Guidance"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "viewPricingGuidanceBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 999
+  SBQQ__EventHandlerName__c = "onViewPricingGuidance"
+  SBQQ__Label__c = "View Pricing Guidance"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "View Pricing Guidance"
+  _alias = "View Pricing Guidance"
+}

@@ -1,0 +1,167 @@
+type salesforce.SBQQ__TermCondition__c {
+  salesforce.Number SBQQ__Index__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__Index__c"
+    deprecated = false
+    description = "Assign an unique number to this Condition to reference it in the Quote Term's Advanced Condition."
+    externalId = false
+    inlineHelpText = "Assign an unique number to this Condition to reference it in the Quote Term's Advanced Condition."
+    label = "Index"
+    precision = 6
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "The operator for this field."
+    externalId = false
+    inlineHelpText = "Choose the operator for the field."
+    label = "Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__QuoteTerm__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__QuoteTerm__c"
+    deprecated = false
+    description = "Parent term for this term."
+    externalId = false
+    inlineHelpText = "Parent term for this term."
+    label = "Quote Term"
+    referenceTo = [
+      salesforce.SBQQ__QuoteTerm__c,
+    ]
+    relationshipLabel = "Term Conditions"
+    relationshipName = "UseConditions"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__TestedField__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__TestedField__c"
+    deprecated = false
+    description = "Field on quote object used for testing this condition."
+    externalId = false
+    inlineHelpText = "Field on quote object used for testing this condition."
+    label = "Tested Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "List Amount"
+        default = false
+        label = "List Amount"
+      },
+      {
+        fullName = "Regular Amount"
+        default = false
+        label = "Regular Amount"
+      },
+      {
+        fullName = "Customer Amount"
+        default = false
+        label = "Customer Amount"
+      },
+      {
+        fullName = "Net Amount"
+        default = false
+        label = "Net Amount"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__TestedVariable__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__TestedVariable__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Summary variable used in testing this condition."
+    externalId = false
+    inlineHelpText = "Summary variable used in testing this condition."
+    label = "Tested Variable"
+    referenceTo = [
+      salesforce.SBQQ__SummaryVariable__c,
+    ]
+    relationshipLabel = "Term Conditions"
+    relationshipName = "TermConditions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__Value__c {
+    apiName = "SBQQ__TermCondition__c.SBQQ__Value__c"
+    deprecated = false
+    description = "Value to test against."
+    externalId = false
+    inlineHelpText = "Value to test against."
+    label = "Value"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

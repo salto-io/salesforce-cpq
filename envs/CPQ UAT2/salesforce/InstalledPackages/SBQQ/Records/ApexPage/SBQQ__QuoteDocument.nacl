@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteDocument {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "QuoteDocument"
+  fullName = "SBQQ__QuoteDocument"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteDocument.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,22 @@
+type salesforce.NewObj__c {
+  salesforce.AutoNumber AutoN__c {
+    apiName = "NewObj__c.AutoN__c"
+    externalId = false
+    label = "AutoN"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox NewCheck__c {
+    apiName = "NewObj__c.NewCheck__c"
+    defaultValue = false
+    externalId = false
+    label = "NewCheck"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

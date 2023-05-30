@@ -1,0 +1,9 @@
+salesforce.SBQQ__DiscountTier__c a0J3H0000038Il0UAE {
+  SBQQ__Discount__c = 2
+  SBQQ__LowerBound__c = 1
+  SBQQ__Number__c = 1
+  SBQQ__Schedule__c = salesforce.SBQQ__DiscountSchedule__c.instance.a0I3H000003KAMPUA4
+  SBQQ__UpperBound__c = 23
+  Name = "Base"
+  _alias = "Keyboard Schedule Base"
+}

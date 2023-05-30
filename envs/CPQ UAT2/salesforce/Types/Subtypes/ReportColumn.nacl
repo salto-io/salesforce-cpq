@@ -1,0 +1,37 @@
+type salesforce.ReportColumn {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<string>" aggregateTypes {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Average",
+        "Maximum",
+        "Median",
+        "Minimum",
+        "None",
+        "Sum",
+        "Unique",
+      ]
+    }
+  }
+  string field {
+  }
+  boolean reverseColors {
+  }
+  boolean showChanges {
+  }
+  metadataType = "ReportColumn"
+}

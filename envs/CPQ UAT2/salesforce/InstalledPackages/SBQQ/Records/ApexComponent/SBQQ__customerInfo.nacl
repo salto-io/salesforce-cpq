@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__customerInfo {
+  apiVersion = 57
+  description = "Generates XSL-FO tree for the section with customer information."
+  label = "Customer Info"
+  fullName = "SBQQ__customerInfo"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

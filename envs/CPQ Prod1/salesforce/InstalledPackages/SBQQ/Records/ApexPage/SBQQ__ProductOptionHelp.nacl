@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ProductOptionHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ProductOptionHelp"
+  fullName = "SBQQ__ProductOptionHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ProductOptionHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

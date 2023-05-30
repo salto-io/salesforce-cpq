@@ -1,0 +1,23 @@
+salesforce.GlobalValueSet SBQQ__SubscriptionPricing {
+  fullName = "SBQQ__SubscriptionPricing"
+  customValue = [
+    {
+      fullName = "Fixed Price"
+      default = false
+      label = "Fixed Price"
+    },
+    {
+      fullName = "Percent Of Total"
+      default = false
+      label = "Percent Of Total"
+    },
+  ]
+  description = "Subscription pricing options"
+  masterLabel = "Subscription Pricing"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

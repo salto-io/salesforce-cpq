@@ -1,0 +1,13 @@
+salesforce.SBQQ__TemplateSection__c a1H3H000000HBmzUAG {
+  SBQQ__BottomMargin__c = 0
+  SBQQ__ColumnHeaderHidden__c = false
+  SBQQ__ConditionalPrintField__c = "Primary"
+  SBQQ__DisplayOrder__c = 1
+  SBQQ__KeepTogether__c = "Auto"
+  SBQQ__KeepWithNext__c = "Auto"
+  SBQQ__QuoteTotalsPrinted__c = false
+  SBQQ__Template__c = salesforce.SBQQ__QuoteTemplate__c.instance.a0z3H0000002AsHQAU
+  SBQQ__TopMargin__c = 4
+  Name = "Main"
+  _alias = "DemoTemplate Main"
+}

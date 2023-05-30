@@ -1,0 +1,168 @@
+salesforce.ReportType SBQQ__Opportunities_with_Quotes_with_Quote_Lines {
+  baseObject = "Opportunity"
+  category = "opportunities"
+  deployed = true
+  description = "Opportunities with Quotes with Quote Lines"
+  join = {
+    join = {
+      outerJoin = false
+      relationship = "SBQQ__LineItems__r"
+    }
+    outerJoin = false
+    relationship = "SBQQ__WebQuotes__r"
+  }
+  label = "Opportunities with Quotes with Quote Lines"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "Account"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.Amount
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.IsClosed
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.CloseDate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.CreatedDate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.Description
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.ExpectedRevenue
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.ForecastCategoryName
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.HasOpportunityLineItem
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.LastActivityDate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.LastModifiedDate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.LastStageChangeDate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.LeadSource
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.NextStep
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.Id
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = true
+          field = salesforce.Opportunity.field.Name
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "Owner"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "Campaign"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "PrimaryPartnerAccount"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.IsPrivate
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.Probability
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.TotalOpportunityQuantity
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.StageName
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = "StageSortOrder"
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.Type
+          table = "Opportunity"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.Opportunity.field.IsWon
+          table = "Opportunity"
+        },
+      ]
+      masterLabel = "Opportunities"
+    },
+  ]
+  fullName = "SBQQ__Opportunities_with_Quotes_with_Quote_Lines"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

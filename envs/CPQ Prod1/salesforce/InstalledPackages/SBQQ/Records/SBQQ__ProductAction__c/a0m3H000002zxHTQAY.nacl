@@ -1,0 +1,10 @@
+salesforce.SBQQ__ProductAction__c a0m3H000002zxHTQAY {
+  SBQQ__FilterField__c = "Product Code"
+  SBQQ__FilterValue__c = "SLTO-1"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Product__c = salesforce.Product2.instance.01t3H000003FvIqQAK
+  SBQQ__Required__c = false
+  SBQQ__Rule__c = salesforce.SBQQ__ProductRule__c.instance.a0r3H000002vcirQAA
+  SBQQ__Type__c = "Add"
+  _alias = "Salto1 must come with Salto2 PA-0000005"
+}

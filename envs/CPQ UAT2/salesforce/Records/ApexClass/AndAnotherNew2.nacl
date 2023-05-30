@@ -1,0 +1,6 @@
+salesforce.ApexClass AndAnotherNew2 {
+  apiVersion = 54
+  status = "Active"
+  fullName = "AndAnotherNew2"
+  content = file("salesforce/Records/ApexClass/AndAnotherNew2.cls")
+}

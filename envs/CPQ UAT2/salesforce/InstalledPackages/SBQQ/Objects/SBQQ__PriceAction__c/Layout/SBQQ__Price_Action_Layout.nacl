@@ -1,0 +1,129 @@
+salesforce.Layout SBQQ__PriceAction__c_SBQQ__Price_Action_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceAction__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__TargetObject__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__Value__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__Formula__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__Rule__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Price Action Sources"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__ValueField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__SourceLookupField__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceAction__c.field.SBQQ__SourceVariable__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceAction__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceAction__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YQ1Rr"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__PriceAction__c-SBQQ__Price Action Layout"
+  _parent = [
+    salesforce.SBQQ__PriceAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

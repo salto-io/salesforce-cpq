@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ProcessInputValuesHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ProcessInputValuesHelp"
+  fullName = "SBQQ__ProcessInputValuesHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ProcessInputValuesHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

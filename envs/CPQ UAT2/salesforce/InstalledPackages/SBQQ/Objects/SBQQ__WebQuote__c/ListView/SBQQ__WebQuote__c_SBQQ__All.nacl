@@ -1,0 +1,22 @@
+salesforce.ListView SBQQ__WebQuote__c_SBQQ__All {
+  fullName = "SBQQ__WebQuote__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Account__c",
+    "SBQQ__SalesRep__c",
+    "SBQQ__Status__c",
+    "SBQQ__ExpirationDate__c",
+    "SBQQ__ListAmount__c",
+    "SBQQ__NetAmount__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__WebQuote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

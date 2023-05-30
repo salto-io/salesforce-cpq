@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_NewAccountManager@zcdu {
+  available = true
+  description = "Introducing yourself as the new Account Manager"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: New Account Manager"
+  relatedEntityType = "Account"
+  style = "none"
+  subject = "New account manager"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_NewAccountManager"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_NewAccountManager/Sample_NewAccountManager.email")
+}

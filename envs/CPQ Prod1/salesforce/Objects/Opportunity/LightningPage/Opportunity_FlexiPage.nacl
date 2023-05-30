@@ -1,0 +1,94 @@
+salesforce.LightningPage Opportunity_FlexiPage {
+  fullName = "Opportunity_FlexiPage"
+  flexiPageRegions = [
+    {
+      name = "header"
+      type = "Region"
+    },
+    {
+      name = "subheader"
+      type = "Region"
+    },
+    {
+      name = "Facet-78d3305e-20f6-4415-8b4f-bd7f25bc6920"
+      type = "Facet"
+    },
+    {
+      name = "Facet-82890615-2b4d-449a-8552-cbd0494ad564"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "Facet-78d3305e-20f6-4415-8b4f-bd7f25bc6920"
+              },
+            ]
+            componentName = "flexipage:column"
+            identifier = "flexipage_column"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "Facet-82890615-2b4d-449a-8552-cbd0494ad564"
+              },
+            ]
+            componentName = "flexipage:column"
+            identifier = "flexipage_column2"
+          }
+        },
+      ]
+      name = "Facet-5972bb5b-80b4-44d0-8a2d-feeb411bc248"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "columns"
+                value = "Facet-5972bb5b-80b4-44d0-8a2d-feeb411bc248"
+              },
+              {
+                name = "horizontalAlignment"
+                value = "false"
+              },
+              {
+                name = "label"
+                value = "Section"
+              },
+            ]
+            componentName = "flexipage:fieldSection"
+            identifier = "flexipage_fieldSection"
+          }
+        },
+      ]
+      name = "sidebar"
+      type = "Region"
+    },
+    {
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Opportunity FlexiPage"
+  sobjectType = "Opportunity"
+  template = {
+    name = "flexipage:recordHomeWithSubheaderLeftSidebarTemplateDesktop"
+    properties = {
+      name = "enablePageActionConfig"
+      value = "false"
+    }
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

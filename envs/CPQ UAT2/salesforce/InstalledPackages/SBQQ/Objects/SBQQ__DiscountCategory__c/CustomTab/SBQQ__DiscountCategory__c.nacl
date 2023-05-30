@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__DiscountCategory__c {
+  fullName = "SBQQ__DiscountCategory__c"
+  customObject = true
+  description = "Tab for managing Discount Categories."
+  motif = "Custom40: Credit card"
+  _parent = [
+    salesforce.SBQQ__DiscountCategory__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

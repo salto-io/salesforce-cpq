@@ -1,0 +1,296 @@
+type salesforce.SBQQ__PriceCondition__c {
+  salesforce.Picklist SBQQ__Field__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Field__c"
+    deprecated = false
+    description = "Field on Quote Line or Product Option object that is evaluated by this condition."
+    externalId = false
+    inlineHelpText = "Choose a field on the target object."
+    label = "Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__FilterFormula__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__FilterFormula__c"
+    deprecated = false
+    description = "You can construct a formula using many of Salesforce's available operators and functions. Refer to Salesforce CPQ documentation for the full list. You can also add in information from the quote or the target object field (i.e., SBQQ__QuoteLine__c.SBQQ__ListPrice__c)."
+    externalId = false
+    inlineHelpText = "Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator."
+    label = "Filter Formula"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__FilterType__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__FilterType__c"
+    deprecated = false
+    description = "Type of filtering used in this condition."
+    externalId = false
+    inlineHelpText = "Choose Variable to evaluate this condition against a Summary Variable; otherwise, choose Value."
+    label = "Filter Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Value"
+        default = false
+        label = "Value"
+      },
+      {
+        fullName = "Variable"
+        default = false
+        label = "Variable"
+      },
+      {
+        fullName = "Formula"
+        default = false
+        label = "Formula"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__FilterVariable__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__FilterVariable__c"
+    deleteConstraint = "Restrict"
+    deprecated = false
+    description = "Summary variable that filters this condition."
+    externalId = false
+    inlineHelpText = "Select the Summary Variable you want this condition to use as a filter."
+    label = "Filter Variable"
+    referenceTo = [
+      salesforce.SBQQ__SummaryVariable__c,
+    ]
+    relationshipLabel = "Filtered Price Conditions"
+    relationshipName = "FilteredPriceConditions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Index__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Index__c"
+    deprecated = false
+    description = "Assign an unique number to this Condition to reference it in the Price Rule's Advanced Condition."
+    externalId = false
+    inlineHelpText = "Assign an unique number to this Condition to reference it in the Price Rule's Advanced Condition."
+    label = "Index"
+    precision = 6
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Object__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Object__c"
+    deprecated = false
+    description = "Object against which the condition is evaluated."
+    externalId = false
+    inlineHelpText = "Object against which the condition is evaluated."
+    label = "Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = false
+        label = "Quote"
+      },
+      {
+        fullName = "Quote Line"
+        default = false
+        label = "Quote Line"
+      },
+      {
+        fullName = "Product Option"
+        default = false
+        label = "Product Option"
+      },
+      {
+        fullName = "Summary Variable"
+        default = false
+        label = "Summary Variable"
+      },
+      {
+        fullName = "Configuration Attribute"
+        default = false
+        label = "Configuration Attribute"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "The operator that is applied when comparing the Field with the Value."
+    externalId = false
+    inlineHelpText = "Select the operator to apply when comparing the Field with the Value."
+    label = "Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__ParentRuleIsActive__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__Rule__r.SBQQ__Active__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "ParentRuleIsActive"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaCheckbox SBQQ__RuleTargetsCalculator__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__RuleTargetsCalculator__c"
+    deprecated = false
+    externalId = false
+    formula = "ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Calculator') || ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Quote Line')"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "RuleTargetsCalculator"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail SBQQ__Rule__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Rule__c"
+    deprecated = false
+    description = "Price rule running this condition."
+    externalId = false
+    inlineHelpText = "Price rule running this condition."
+    label = "Price Rule"
+    referenceTo = [
+      salesforce.SBQQ__PriceRule__c,
+    ]
+    relationshipLabel = "Price Conditions"
+    relationshipName = "PriceConditions"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__TestedFormula__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__TestedFormula__c"
+    deprecated = false
+    description = "You can construct a formula using many of Salesforce's available operators and functions. Refer to Salesforce CPQ documentation for the full list. You can also add in information from the quote or the target object field (i.e., SBQQ__QuoteLine__c.SBQQ__ListPrice__c)."
+    externalId = false
+    inlineHelpText = "Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator."
+    label = "Tested Formula"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__TestedVariable__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__TestedVariable__c"
+    deleteConstraint = "Restrict"
+    deprecated = false
+    description = "Summary variable tested when evaluating this price condition."
+    externalId = false
+    inlineHelpText = "Summary variable tested by this price condition."
+    label = "Tested Variable"
+    referenceTo = [
+      salesforce.SBQQ__SummaryVariable__c,
+    ]
+    relationshipLabel = "Price Conditions (Tested Variable)"
+    relationshipName = "TestedPriceConditions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__Value__c {
+    apiName = "SBQQ__PriceCondition__c.SBQQ__Value__c"
+    deprecated = false
+    description = "Value to evaluate against."
+    externalId = false
+    inlineHelpText = "Enter the value you want to match in the field you selected using the operator chosen."
+    label = "Filter Value"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

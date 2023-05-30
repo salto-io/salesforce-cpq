@@ -1,0 +1,68 @@
+salesforce.Report Sales_Marketing_Reports_Hot_Leads_w_o_Activity_96_Hours@uuduuuuuu {
+  columns = [
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "COMPANY"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "STREET"
+    },
+    {
+      field = "EMAIL"
+    },
+  ]
+  filter = {
+    criteriaItems = [
+      {
+        column = "LAST_ACTIVITY"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "greaterThan"
+        value = "LAST_N_DAYS:4"
+      },
+      {
+        column = "RATING"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "equals"
+        value = "Hot"
+      },
+    ]
+  }
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "OWNER"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Hot Leads w/o Activity >96 Hours"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "LeadList"
+  scope = "org"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "Sales_Marketing_Reports/Hot_Leads_w_o_Activity_96_Hours"
+}

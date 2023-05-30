@@ -1,0 +1,46 @@
+salesforce.StandardValueSet LeadSource {
+  fullName = "LeadSource"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Purchased List"
+      default = false
+      label = "Purchased List"
+    },
+    {
+      fullName = "Partner"
+      default = false
+      label = "Partner"
+    },
+    {
+      fullName = "Advertisement"
+      default = false
+      label = "Advertisement"
+    },
+    {
+      fullName = "Webinar"
+      default = false
+      label = "Webinar"
+    },
+    {
+      fullName = "Other"
+      default = false
+      label = "Other"
+    },
+    {
+      fullName = "Employee Referral"
+      default = false
+      label = "Employee Referral"
+    },
+    {
+      fullName = "Customer Event"
+      default = false
+      label = "Customer Event"
+    },
+    {
+      fullName = "Google AdWords"
+      default = false
+      label = "Google AdWords"
+    },
+  ]
+}

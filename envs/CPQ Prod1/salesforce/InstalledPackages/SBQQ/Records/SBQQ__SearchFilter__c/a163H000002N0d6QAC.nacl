@@ -1,0 +1,13 @@
+salesforce.SBQQ__SearchFilter__c a163H000002N0d6QAC {
+  SBQQ__DisplayOrder__c = 10
+  SBQQ__FilterSourceField__c = "Modified"
+  SBQQ__FilterSourceObject__c = "Test Source Object"
+  SBQQ__HiddenSourceField__c = "Primary"
+  SBQQ__HiddenSourceObject__c = salesforce.SBQQ__Quote__c
+  SBQQ__Hidden__c = false
+  SBQQ__Operator__c = "not equals"
+  SBQQ__TargetField__c = salesforce.Product2.field.Name
+  SBQQ__TargetObject__c = salesforce.Product2
+  Name = "TestSearchFilter2"
+  _alias = "TestSearchFilter2"
+}

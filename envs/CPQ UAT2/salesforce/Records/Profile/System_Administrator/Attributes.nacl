@@ -1,0 +1,9 @@
+salesforce.Profile Admin {
+  fullName = "Admin"
+  custom = false
+  loginIpRanges = {
+    endAddress = "255.255.255.255"
+    startAddress = "0.0.0.0"
+  }
+  userLicense = "Salesforce"
+}

@@ -1,0 +1,21 @@
+type salesforce.ReportFormattingRuleValue {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string backgroundColor {
+  }
+  number rangeUpperBound {
+  }
+  metadataType = "ReportFormattingRuleValue"
+}

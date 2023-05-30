@@ -1,0 +1,13 @@
+salesforce.ListView SBQQ__PriceRule__c_SBQQ__All {
+  fullName = "SBQQ__PriceRule__c.SBQQ__All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__PriceRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,409 @@
+salesforce.Profile Standard {
+  objectPermissions = {
+    AIInsightReason = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AIInsightReason"
+      viewAllRecords = false
+    }
+    AIRecordInsight = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AIRecordInsight"
+      viewAllRecords = false
+    }
+    Account = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Account
+      viewAllRecords = false
+    }
+    Asset = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Asset
+      viewAllRecords = false
+    }
+    AuthorizationForm = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.AuthorizationForm
+      viewAllRecords = false
+    }
+    AuthorizationFormConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.AuthorizationFormConsent
+      viewAllRecords = false
+    }
+    AuthorizationFormDataUse = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.AuthorizationFormDataUse
+      viewAllRecords = false
+    }
+    AuthorizationFormText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.AuthorizationFormText
+      viewAllRecords = false
+    }
+    Campaign = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Campaign
+      viewAllRecords = false
+    }
+    Case = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Case
+      viewAllRecords = false
+    }
+    CommSubscription = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.CommSubscription
+      viewAllRecords = false
+    }
+    CommSubscriptionChannelType = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.CommSubscriptionChannelType
+      viewAllRecords = false
+    }
+    CommSubscriptionConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.CommSubscriptionConsent
+      viewAllRecords = false
+    }
+    CommSubscriptionTiming = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.CommSubscriptionTiming
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Contact
+      viewAllRecords = false
+    }
+    ContactPointAddress = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContactPointAddress
+      viewAllRecords = false
+    }
+    ContactPointConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContactPointConsent
+      viewAllRecords = false
+    }
+    ContactPointEmail = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContactPointEmail
+      viewAllRecords = false
+    }
+    ContactPointPhone = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContactPointPhone
+      viewAllRecords = false
+    }
+    ContactPointTypeConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContactPointTypeConsent
+      viewAllRecords = false
+    }
+    Contract = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Contract
+      viewAllRecords = false
+    }
+    DataUseLegalBasis = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.DataUseLegalBasis
+      viewAllRecords = false
+    }
+    DataUsePurpose = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.DataUsePurpose
+      viewAllRecords = false
+    }
+    Document = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Document"
+      viewAllRecords = false
+    }
+    EngagementChannelType = {
+      allowCreate = false
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.EngagementChannelType
+      viewAllRecords = false
+    }
+    Idea = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Idea
+      viewAllRecords = false
+    }
+    Individual = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Individual
+      viewAllRecords = false
+    }
+    Lead = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Lead
+      viewAllRecords = false
+    }
+    Location = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Location
+      viewAllRecords = false
+    }
+    LocationTrustMeasure = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.LocationTrustMeasure
+      viewAllRecords = false
+    }
+    Macro = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Macro
+      viewAllRecords = false
+    }
+    Opportunity = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Opportunity
+      viewAllRecords = false
+    }
+    Order = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Order
+      viewAllRecords = false
+    }
+    PartyConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.PartyConsent
+      viewAllRecords = false
+    }
+    Pricebook2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Pricebook2
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Product2
+      viewAllRecords = false
+    }
+    ProfileSkill = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProfileSkill
+      viewAllRecords = false
+    }
+    ProfileSkillEndorsement = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProfileSkillEndorsement
+      viewAllRecords = false
+    }
+    ProfileSkillUser = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProfileSkillUser
+      viewAllRecords = false
+    }
+    QuickText = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.QuickText
+      viewAllRecords = false
+    }
+    Quote = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Quote
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SocialPersona
+      viewAllRecords = false
+    }
+    SocialPost = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SocialPost
+      viewAllRecords = false
+    }
+    Solution = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Solution
+      viewAllRecords = false
+    }
+    StreamingChannel = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.StreamingChannel
+      viewAllRecords = false
+    }
+  }
+}

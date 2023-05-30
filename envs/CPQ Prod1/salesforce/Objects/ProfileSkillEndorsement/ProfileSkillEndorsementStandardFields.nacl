@@ -1,0 +1,102 @@
+type salesforce.ProfileSkillEndorsement {
+  salesforce.MasterDetail ProfileSkillUserId {
+    apiName = "ProfileSkillEndorsement.ProfileSkillUserId"
+    trackFeedHistory = false
+    trackHistory = false
+    relationshipName = "ProfileSkillUser"
+    referenceTo = [
+      salesforce.ProfileSkillUser,
+    ]
+    _required = true
+    label = "Skill User ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "ProfileSkillEndorsement.UserId"
+    trackFeedHistory = false
+    trackHistory = false
+    relationshipName = "User"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "User ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ProfileSkillEndorsement.Id"
+    label = "Endorsement ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProfileSkillEndorsement.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ProfileSkillEndorsement.Name"
+    label = "Endorsement Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProfileSkillEndorsement.CreatedDate"
+    label = "Added Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProfileSkillEndorsement.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProfileSkillEndorsement.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProfileSkillEndorsement.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProfileSkillEndorsement.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

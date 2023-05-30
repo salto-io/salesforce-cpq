@@ -1,0 +1,127 @@
+salesforce.FieldSet Asset_SBQQ__SearchResults {
+  fullName = "Asset.SBQQ__SearchResults"
+  availableFields = [
+    {
+      field = salesforce.Asset.field.SBQQ__CreditProductId__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__CurrentSubscription__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__Dimension__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.InstallDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__LatestQuoteLine__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.Price
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.PurchaseDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__QuoteLine__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__RenewalUpliftRate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__RequiredByAsset__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__RequiredBySubscription__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__RevisedAsset__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__SegmentKey__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SerialNumber
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.Status
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__SubscriptionEndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__SubscriptionQuoteLine__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__SubscriptionStartDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.SBQQ__Subscription__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Fields displayed in results table when searching for assets in Asset Lookup page."
+  displayedFields = [
+    {
+      field = salesforce.Asset.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.Description
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Asset.field.Quantity
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Search Results"
+  _parent = [
+    salesforce.Asset,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

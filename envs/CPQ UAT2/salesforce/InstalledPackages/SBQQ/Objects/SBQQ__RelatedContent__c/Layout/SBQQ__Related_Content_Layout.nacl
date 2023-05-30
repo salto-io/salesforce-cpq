@@ -1,0 +1,120 @@
+salesforce.Layout SBQQ__RelatedContent__c_SBQQ__Related_Content_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__RelatedContent__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__ExternalId__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__DocumentName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__QuoteTemplate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__TemplateSection__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__Opportunity__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__DisplayOrder__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__Required__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__RelatedContent__c.field.SBQQ__Quote__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RelatedContent__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__RelatedContent__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00ho0000002Q979"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__RelatedContent__c-SBQQ__Related Content Layout"
+  _parent = [
+    salesforce.SBQQ__RelatedContent__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

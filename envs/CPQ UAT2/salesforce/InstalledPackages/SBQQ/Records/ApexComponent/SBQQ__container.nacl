@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__container {
+  apiVersion = 57
+  description = "Enables conditional rendering of XSL:FO tree. For some reason <apex:outputPanel layout=\"none\"/> produces <span> tag when \"rendered\" attribute is specified, which is illegal in XSL:FO."
+  label = "Container"
+  fullName = "SBQQ__container"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

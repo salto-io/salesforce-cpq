@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__QuoteDocument__c_SBQQ__Email {
+  fullName = "SBQQ__QuoteDocument__c.SBQQ__Email"
+  availability = "online"
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Email"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__EmailDocument
+  protected = false
+  _parent = [
+    salesforce.SBQQ__QuoteDocument__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

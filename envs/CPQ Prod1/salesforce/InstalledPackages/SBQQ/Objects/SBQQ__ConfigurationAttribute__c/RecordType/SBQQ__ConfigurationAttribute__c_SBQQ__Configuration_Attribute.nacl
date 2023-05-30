@@ -1,0 +1,76 @@
+salesforce.RecordType SBQQ__ConfigurationAttribute__c_SBQQ__Configuration_Attribute {
+  fullName = "SBQQ__ConfigurationAttribute__c.SBQQ__Configuration_Attribute"
+  active = true
+  description = "Configuration Attribute associated to a product"
+  label = "Configuration Attribute"
+  picklistValues = [
+    {
+      picklist = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__ColumnOrder__c
+      values = [
+        {
+          fullName = "1"
+          default = true
+        },
+        {
+          fullName = "2"
+          default = false
+        },
+        {
+          fullName = "3"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__DefaultObject__c
+      values = [
+        {
+          fullName = "Quote%5F%5Fc"
+          default = false
+        },
+        {
+          fullName = "QuoteLineGroup%5F%5Fc"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Position__c
+      values = [
+        {
+          fullName = "Bottom"
+          default = false
+        },
+        {
+          fullName = "Top"
+          default = true
+        },
+      ]
+    },
+    {
+      picklist = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__TargetField__c
+      values = [
+        {
+          fullName = "Discount %28%25%29"
+          default = false
+        },
+        {
+          fullName = "Discount %28Amt%29"
+          default = false
+        },
+        {
+          fullName = "Unit Price"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

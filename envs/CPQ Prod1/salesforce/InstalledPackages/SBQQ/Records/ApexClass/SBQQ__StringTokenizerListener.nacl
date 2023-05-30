@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__StringTokenizerListener {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__StringTokenizerListener"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

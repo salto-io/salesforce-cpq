@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ProductRuleHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Product Rule Help"
+  fullName = "SBQQ__ProductRuleHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ProductRuleHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

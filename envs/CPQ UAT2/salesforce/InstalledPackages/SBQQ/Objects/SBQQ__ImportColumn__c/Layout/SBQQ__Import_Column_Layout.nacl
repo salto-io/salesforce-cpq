@@ -1,0 +1,96 @@
+salesforce.Layout SBQQ__ImportColumn__c_SBQQ__Import_Column_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ImportColumn__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ImportColumn__c.field.SBQQ__ColumnIndex__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ImportColumn__c.field.SBQQ__FieldName__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ImportColumn__c.field.SBQQ__ImportFormat__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ImportColumn__c.field.SBQQ__Key__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportColumn__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ImportColumn__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000001OZbH"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ImportColumn__c-SBQQ__Import Column Layout"
+  _parent = [
+    salesforce.SBQQ__ImportColumn__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

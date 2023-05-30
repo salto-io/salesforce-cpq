@@ -1,0 +1,108 @@
+salesforce.Layout SBQQ__LookupData__c_SBQQ__Lookup_Data_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__LookupData__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Category__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Value__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Required__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.SBQQ__Message__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LookupData__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__LookupData__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__LookupData__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000Yvujk"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__LookupData__c-SBQQ__Lookup Data Layout"
+  _parent = [
+    salesforce.SBQQ__LookupData__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

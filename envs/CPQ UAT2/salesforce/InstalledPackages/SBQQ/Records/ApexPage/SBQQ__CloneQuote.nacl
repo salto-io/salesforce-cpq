@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CloneQuote {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "CloneQuote"
+  fullName = "SBQQ__CloneQuote"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CloneQuote.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ErrorCondition__c_SBQQ__FilterCombinationValidation {
+  fullName = "SBQQ__ErrorCondition__c.SBQQ__FilterCombinationValidation"
+  active = true
+  description = "Validation for the combination of Filter Type Variable."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__FilterType__c, \"Variable\"), ISBLANK(SBQQ__FilterVariable__c))"
+  errorMessage = "A Filter Type of 'Variable' must have a Filter Variable."
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

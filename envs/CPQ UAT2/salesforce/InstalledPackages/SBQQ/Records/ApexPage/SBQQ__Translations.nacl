@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__Translations {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Translations"
+  fullName = "SBQQ__Translations"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__Translations.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

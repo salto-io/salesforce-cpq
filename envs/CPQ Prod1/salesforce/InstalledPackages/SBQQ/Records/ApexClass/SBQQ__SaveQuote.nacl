@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__SaveQuote {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__SaveQuote"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

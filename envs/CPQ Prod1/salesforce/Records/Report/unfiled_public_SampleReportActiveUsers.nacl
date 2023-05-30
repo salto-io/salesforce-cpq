@@ -1,0 +1,59 @@
+salesforce.Report unfiled_public_SampleReportActiveUsers@zcd {
+  columns = [
+    {
+      field = "LAST_LOGIN"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "COMPANY_NAME"
+    },
+    {
+      field = "DEPARTMENT"
+    },
+    {
+      field = "DIVISION"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "USERNAME"
+    },
+  ]
+  description = "Who are my active users?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "ACTIVE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Active Users"
+  params = [
+    {
+      name = "active"
+      value = "active"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.User
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "LAST_LOGIN"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "LAST_LOGIN"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportActiveUsers"
+}
