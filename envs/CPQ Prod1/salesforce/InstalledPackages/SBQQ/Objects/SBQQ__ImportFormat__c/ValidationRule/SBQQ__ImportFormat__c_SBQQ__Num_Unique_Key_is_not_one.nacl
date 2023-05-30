@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ImportFormat__c_SBQQ__Num_Unique_Key_is_not_one {
+  fullName = "SBQQ__ImportFormat__c.SBQQ__Num_Unique_Key_is_not_one"
+  active = true
+  description = "More than 1 unique key defined in Import Column."
+  errorConditionFormula = "If(SBQQ__UniqueKeyCount__c > 1, true, false)"
+  errorMessage = "More than 1 unique key defined in Import Column."
+  _parent = [
+    salesforce.SBQQ__ImportFormat__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

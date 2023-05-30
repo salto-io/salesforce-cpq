@@ -1,0 +1,198 @@
+salesforce.Layout SBQQ__Localization__c_SBQQ__Localization_Layout@uuuubuus {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Localization__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__Label__c
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__APIName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__Description__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__Language__c
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__UserDefined__c
+            },
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Supported Objects"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__PriceDimension__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__ProductOption__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__ProductFeature__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__QuoteTemplate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__TemplateContent__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__QuoteTerm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__LineColumn__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Values"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__Text__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__TextArea__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__LongTextArea__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Localization__c.field.SBQQ__RichTextArea__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Localization__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Localization__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000a3PeQ"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__Localization__c-SBQQ__Localization Layout"
+  _parent = [
+    salesforce.SBQQ__Localization__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

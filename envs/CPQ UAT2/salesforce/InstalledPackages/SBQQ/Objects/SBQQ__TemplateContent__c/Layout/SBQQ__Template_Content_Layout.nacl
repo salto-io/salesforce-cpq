@@ -1,0 +1,154 @@
+salesforce.Layout SBQQ__TemplateContent__c_SBQQ__Template_Content_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TemplateContent__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__FontFamily__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__TextColor__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__FontSize__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__CustomSource__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Body"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateContent__c.field.SBQQ__Markup__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TemplateContent__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TemplateContent__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__Template__c",
+        "SBQQ__PageBreak__c",
+        "SBQQ__TopMargin__c",
+        "SBQQ__BottomMargin__c",
+      ]
+      relatedList = salesforce.SBQQ__TemplateSection__c.field.SBQQ__Content__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Default__c",
+        "SBQQ__HeaderHeight__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__HeaderContent__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Default__c",
+        "SBQQ__FooterHeight__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__QuoteTemplate__c.field.SBQQ__FooterContent__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000QylQY"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__TemplateContent__c-SBQQ__Template Content Layout"
+  _parent = [
+    salesforce.SBQQ__TemplateContent__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

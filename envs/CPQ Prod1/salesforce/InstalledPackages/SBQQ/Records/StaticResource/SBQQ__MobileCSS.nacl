@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__MobileCSS {
+  cacheControl = "Private"
+  contentType = "text/css"
+  description = "Stylesheet for the Mobile"
+  fullName = "SBQQ__MobileCSS"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__MobileCSS.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,528 @@
+salesforce.Profile Chatter_Free_User@s {
+  pageAccesses = {
+    SBQQ__AccessError = {
+      apexPage = "SBQQ__AccessError"
+      enabled = false
+    }
+    SBQQ__AddAssets = {
+      apexPage = "SBQQ__AddAssets"
+      enabled = false
+    }
+    SBQQ__AddProducts = {
+      apexPage = "SBQQ__AddProducts"
+      enabled = false
+    }
+    SBQQ__AddProductsGuided = {
+      apexPage = "SBQQ__AddProductsGuided"
+      enabled = false
+    }
+    SBQQ__AddSubscriptions = {
+      apexPage = "SBQQ__AddSubscriptions"
+      enabled = false
+    }
+    SBQQ__AdditionalDocumentHelp = {
+      apexPage = "SBQQ__AdditionalDocumentHelp"
+      enabled = false
+    }
+    SBQQ__AmendContract = {
+      apexPage = "SBQQ__AmendContract"
+      enabled = false
+    }
+    SBQQ__AmendReQuote = {
+      apexPage = "SBQQ__AmendReQuote"
+      enabled = false
+    }
+    SBQQ__AmendmentSave = {
+      apexPage = "SBQQ__AmendmentSave"
+      enabled = false
+    }
+    SBQQ__AssetSelector = {
+      apexPage = "SBQQ__AssetSelector"
+      enabled = false
+    }
+    SBQQ__AssetSelectorAmend = {
+      apexPage = "SBQQ__AssetSelectorAmend"
+      enabled = false
+    }
+    SBQQ__BlockPriceHelp = {
+      apexPage = "SBQQ__BlockPriceHelp"
+      enabled = false
+    }
+    SBQQ__CalculateQuote = {
+      apexPage = "SBQQ__CalculateQuote"
+      enabled = false
+    }
+    SBQQ__CalculateQuoteFromQuoteLine = {
+      apexPage = "SBQQ__CalculateQuoteFromQuoteLine"
+      enabled = false
+    }
+    SBQQ__CalculateQuoteFromQuoteLineGroup = {
+      apexPage = "SBQQ__CalculateQuoteFromQuoteLineGroup"
+      enabled = false
+    }
+    SBQQ__CloneLineItems = {
+      apexPage = "SBQQ__CloneLineItems"
+      enabled = false
+    }
+    SBQQ__ClonePriceRule = {
+      apexPage = "SBQQ__ClonePriceRule"
+      enabled = false
+    }
+    SBQQ__CloneProduct = {
+      apexPage = "SBQQ__CloneProduct"
+      enabled = false
+    }
+    SBQQ__CloneProductChildren = {
+      apexPage = "SBQQ__CloneProductChildren"
+      enabled = false
+    }
+    SBQQ__CloneProductRule = {
+      apexPage = "SBQQ__CloneProductRule"
+      enabled = false
+    }
+    SBQQ__CloneQuote = {
+      apexPage = "SBQQ__CloneQuote"
+      enabled = false
+    }
+    SBQQ__CloneQuoteTemplate = {
+      apexPage = "SBQQ__CloneQuoteTemplate"
+      enabled = false
+    }
+    SBQQ__CloneQuoteTemplateRelated = {
+      apexPage = "SBQQ__CloneQuoteTemplateRelated"
+      enabled = false
+    }
+    SBQQ__ConfigurationAttributeHelp = {
+      apexPage = "SBQQ__ConfigurationAttributeHelp"
+      enabled = false
+    }
+    SBQQ__ConfigurationRuleHelp = {
+      apexPage = "SBQQ__ConfigurationRuleHelp"
+      enabled = false
+    }
+    SBQQ__ConfigureProducts = {
+      apexPage = "SBQQ__ConfigureProducts"
+      enabled = false
+    }
+    SBQQ__ContractSave = {
+      apexPage = "SBQQ__ContractSave"
+      enabled = false
+    }
+    SBQQ__ContractSelector = {
+      apexPage = "SBQQ__ContractSelector"
+      enabled = false
+    }
+    SBQQ__ContractedPriceHelp = {
+      apexPage = "SBQQ__ContractedPriceHelp"
+      enabled = false
+    }
+    SBQQ__CostHelp = {
+      apexPage = "SBQQ__CostHelp"
+      enabled = false
+    }
+    SBQQ__CreateOrder = {
+      apexPage = "SBQQ__CreateOrder"
+      enabled = false
+    }
+    SBQQ__CreateOrderFromQuote = {
+      apexPage = "SBQQ__CreateOrderFromQuote"
+      enabled = false
+    }
+    SBQQ__CustomActionsHelp = {
+      apexPage = "SBQQ__CustomActionsHelp"
+      enabled = false
+    }
+    SBQQ__CustomScriptHelp = {
+      apexPage = "SBQQ__CustomScriptHelp"
+      enabled = false
+    }
+    SBQQ__CustomScriptSave = {
+      apexPage = "SBQQ__CustomScriptSave"
+      enabled = false
+    }
+    SBQQ__DiscountCategoryHelp = {
+      apexPage = "SBQQ__DiscountCategoryHelp"
+      enabled = false
+    }
+    SBQQ__DiscountScheduleHelp = {
+      apexPage = "SBQQ__DiscountScheduleHelp"
+      enabled = false
+    }
+    SBQQ__DiscountTierHelp = {
+      apexPage = "SBQQ__DiscountTierHelp"
+      enabled = false
+    }
+    SBQQ__EditBlockPrices = {
+      apexPage = "SBQQ__EditBlockPrices"
+      enabled = false
+    }
+    SBQQ__EditDiscountTiers = {
+      apexPage = "SBQQ__EditDiscountTiers"
+      enabled = false
+    }
+    SBQQ__EditQuoteLines = {
+      apexPage = "SBQQ__EditQuoteLines"
+      enabled = false
+    }
+    SBQQ__EditRelatedContent = {
+      apexPage = "SBQQ__EditRelatedContent"
+      enabled = false
+    }
+    SBQQ__EditSettings = {
+      apexPage = "SBQQ__EditSettings"
+      enabled = false
+    }
+    SBQQ__EditTemplateContent = {
+      apexPage = "SBQQ__EditTemplateContent"
+      enabled = false
+    }
+    SBQQ__EditWebQuoteLines = {
+      apexPage = "SBQQ__EditWebQuoteLines"
+      enabled = false
+    }
+    SBQQ__EffectiveContractedPrices = {
+      apexPage = "SBQQ__EffectiveContractedPrices"
+      enabled = false
+    }
+    SBQQ__EmailDocument = {
+      apexPage = "SBQQ__EmailDocument"
+      enabled = false
+    }
+    SBQQ__EnhancedQuoteDocument = {
+      apexPage = "SBQQ__EnhancedQuoteDocument"
+      enabled = false
+    }
+    SBQQ__ErrorConditionHelp = {
+      apexPage = "SBQQ__ErrorConditionHelp"
+      enabled = false
+    }
+    SBQQ__FavoritesHelp = {
+      apexPage = "SBQQ__FavoritesHelp"
+      enabled = false
+    }
+    SBQQ__FindAndAmendContract = {
+      apexPage = "SBQQ__FindAndAmendContract"
+      enabled = false
+    }
+    SBQQ__GenerateDocument = {
+      apexPage = "SBQQ__GenerateDocument"
+      enabled = false
+    }
+    SBQQ__GenerateOrder = {
+      apexPage = "SBQQ__GenerateOrder"
+      enabled = false
+    }
+    SBQQ__GenerateWebDocument = {
+      apexPage = "SBQQ__GenerateWebDocument"
+      enabled = false
+    }
+    SBQQ__ImportColumnHelp = {
+      apexPage = "SBQQ__ImportColumnHelp"
+      enabled = false
+    }
+    SBQQ__ImportFormatHelp = {
+      apexPage = "SBQQ__ImportFormatHelp"
+      enabled = false
+    }
+    SBQQ__ImportLines = {
+      apexPage = "SBQQ__ImportLines"
+      enabled = false
+    }
+    SBQQ__InactiveUsersWithPS = {
+      apexPage = "SBQQ__InactiveUsersWithPS"
+      enabled = false
+    }
+    SBQQ__LineColumnHelp = {
+      apexPage = "SBQQ__LineColumnHelp"
+      enabled = false
+    }
+    SBQQ__LineItemsContent = {
+      apexPage = "SBQQ__LineItemsContent"
+      enabled = false
+    }
+    SBQQ__LocalizationHelp = {
+      apexPage = "SBQQ__LocalizationHelp"
+      enabled = false
+    }
+    SBQQ__LookupQueryHelp = {
+      apexPage = "SBQQ__LookupQueryHelp"
+      enabled = false
+    }
+    SBQQ__NewDiscountSchedule = {
+      apexPage = "SBQQ__NewDiscountSchedule"
+      enabled = false
+    }
+    SBQQ__NewOpportunityRelatedContent = {
+      apexPage = "SBQQ__NewOpportunityRelatedContent"
+      enabled = false
+    }
+    SBQQ__NewQuote = {
+      apexPage = "SBQQ__NewQuote"
+      enabled = false
+    }
+    SBQQ__NewQuoteRelatedContent = {
+      apexPage = "SBQQ__NewQuoteRelatedContent"
+      enabled = false
+    }
+    SBQQ__NewTemplateContent = {
+      apexPage = "SBQQ__NewTemplateContent"
+      enabled = false
+    }
+    SBQQ__NewTemplateSectionRelatedContent = {
+      apexPage = "SBQQ__NewTemplateSectionRelatedContent"
+      enabled = false
+    }
+    SBQQ__OAuthRedirect = {
+      apexPage = "SBQQ__OAuthRedirect"
+      enabled = false
+    }
+    SBQQ__OpportunitySave = {
+      apexPage = "SBQQ__OpportunitySave"
+      enabled = false
+    }
+    SBQQ__OptionConstraintHelp = {
+      apexPage = "SBQQ__OptionConstraintHelp"
+      enabled = false
+    }
+    SBQQ__OrderContracting = {
+      apexPage = "SBQQ__OrderContracting"
+      enabled = false
+    }
+    SBQQ__OrderLineSelector = {
+      apexPage = "SBQQ__OrderLineSelector"
+      enabled = false
+    }
+    SBQQ__OrderSave = {
+      apexPage = "SBQQ__OrderSave"
+      enabled = false
+    }
+    SBQQ__PreviewDocument = {
+      apexPage = "SBQQ__PreviewDocument"
+      enabled = false
+    }
+    SBQQ__PriceActionHelp = {
+      apexPage = "SBQQ__PriceActionHelp"
+      enabled = false
+    }
+    SBQQ__PriceConditionHelp = {
+      apexPage = "SBQQ__PriceConditionHelp"
+      enabled = false
+    }
+    SBQQ__PriceDimensionHelp = {
+      apexPage = "SBQQ__PriceDimensionHelp"
+      enabled = false
+    }
+    SBQQ__PriceRuleHelp = {
+      apexPage = "SBQQ__PriceRuleHelp"
+      enabled = false
+    }
+    SBQQ__PriceScheduleHelp = {
+      apexPage = "SBQQ__PriceScheduleHelp"
+      enabled = false
+    }
+    SBQQ__ProcessInputConditionHelp = {
+      apexPage = "SBQQ__ProcessInputConditionHelp"
+      enabled = false
+    }
+    SBQQ__ProcessInputHelp = {
+      apexPage = "SBQQ__ProcessInputHelp"
+      enabled = false
+    }
+    SBQQ__ProcessInputValuesHelp = {
+      apexPage = "SBQQ__ProcessInputValuesHelp"
+      enabled = false
+    }
+    SBQQ__ProductActionHelp = {
+      apexPage = "SBQQ__ProductActionHelp"
+      enabled = false
+    }
+    SBQQ__ProductFeatureHelp = {
+      apexPage = "SBQQ__ProductFeatureHelp"
+      enabled = false
+    }
+    SBQQ__ProductOptionHelp = {
+      apexPage = "SBQQ__ProductOptionHelp"
+      enabled = false
+    }
+    SBQQ__ProductRuleHelp = {
+      apexPage = "SBQQ__ProductRuleHelp"
+      enabled = false
+    }
+    SBQQ__PslUserCsv = {
+      apexPage = "SBQQ__PslUserCsv"
+      enabled = false
+    }
+    SBQQ__QuoteDocument = {
+      apexPage = "SBQQ__QuoteDocument"
+      enabled = false
+    }
+    SBQQ__QuoteDocumentHelp = {
+      apexPage = "SBQQ__QuoteDocumentHelp"
+      enabled = false
+    }
+    SBQQ__QuoteHelp = {
+      apexPage = "SBQQ__QuoteHelp"
+      enabled = false
+    }
+    SBQQ__QuoteLineGroupHelp = {
+      apexPage = "SBQQ__QuoteLineGroupHelp"
+      enabled = false
+    }
+    SBQQ__QuoteLineHelp = {
+      apexPage = "SBQQ__QuoteLineHelp"
+      enabled = false
+    }
+    SBQQ__QuoteLineSave = {
+      apexPage = "SBQQ__QuoteLineSave"
+      enabled = false
+    }
+    SBQQ__QuoteProcessHelp = {
+      apexPage = "SBQQ__QuoteProcessHelp"
+      enabled = false
+    }
+    SBQQ__QuoteSave = {
+      apexPage = "SBQQ__QuoteSave"
+      enabled = false
+    }
+    SBQQ__QuoteTemplateHelp = {
+      apexPage = "SBQQ__QuoteTemplateHelp"
+      enabled = false
+    }
+    SBQQ__QuoteTermEditor = {
+      apexPage = "SBQQ__QuoteTermEditor"
+      enabled = false
+    }
+    SBQQ__QuoteTermHelp = {
+      apexPage = "SBQQ__QuoteTermHelp"
+      enabled = false
+    }
+    SBQQ__QuoteTermsContent = {
+      apexPage = "SBQQ__QuoteTermsContent"
+      enabled = false
+    }
+    SBQQ__RecordJobHelp = {
+      apexPage = "SBQQ__RecordJobHelp"
+      enabled = false
+    }
+    SBQQ__RefreshMultipleQuotePrices = {
+      apexPage = "SBQQ__RefreshMultipleQuotePrices"
+      enabled = false
+    }
+    SBQQ__RefreshMultipleWebQuotePrices = {
+      apexPage = "SBQQ__RefreshMultipleWebQuotePrices"
+      enabled = false
+    }
+    SBQQ__RefreshQuotePrice = {
+      apexPage = "SBQQ__RefreshQuotePrice"
+      enabled = false
+    }
+    SBQQ__RefreshQuotePrices = {
+      apexPage = "SBQQ__RefreshQuotePrices"
+      enabled = false
+    }
+    SBQQ__RefreshWebQuotePrices = {
+      apexPage = "SBQQ__RefreshWebQuotePrices"
+      enabled = false
+    }
+    SBQQ__RenewContracts = {
+      apexPage = "SBQQ__RenewContracts"
+      enabled = false
+    }
+    SBQQ__SearchFilterHelp = {
+      apexPage = "SBQQ__SearchFilterHelp"
+      enabled = false
+    }
+    SBQQ__SelectContract = {
+      apexPage = "SBQQ__SelectContract"
+      enabled = false
+    }
+    SBQQ__SelectContractOpp = {
+      apexPage = "SBQQ__SelectContractOpp"
+      enabled = false
+    }
+    SBQQ__SelectUpgradeProducts = {
+      apexPage = "SBQQ__SelectUpgradeProducts"
+      enabled = false
+    }
+    SBQQ__SelectUpgradedAssets = {
+      apexPage = "SBQQ__SelectUpgradedAssets"
+      enabled = false
+    }
+    SBQQ__SiteCloneQuote = {
+      apexPage = "SBQQ__SiteCloneQuote"
+      enabled = false
+    }
+    SBQQ__SiteConfigureProducts = {
+      apexPage = "SBQQ__SiteConfigureProducts"
+      enabled = false
+    }
+    SBQQ__SolutionGroupHelp = {
+      apexPage = "SBQQ__SolutionGroupHelp"
+      enabled = false
+    }
+    SBQQ__SubscribedAssetHelp = {
+      apexPage = "SBQQ__SubscribedAssetHelp"
+      enabled = false
+    }
+    SBQQ__SubscriptionHelp = {
+      apexPage = "SBQQ__SubscriptionHelp"
+      enabled = false
+    }
+    SBQQ__SummaryVariableHelp = {
+      apexPage = "SBQQ__SummaryVariableHelp"
+      enabled = false
+    }
+    SBQQ__TemplateContentHelp = {
+      apexPage = "SBQQ__TemplateContentHelp"
+      enabled = false
+    }
+    SBQQ__TemplateSectionHelp = {
+      apexPage = "SBQQ__TemplateSectionHelp"
+      enabled = false
+    }
+    SBQQ__TermConditionHelp = {
+      apexPage = "SBQQ__TermConditionHelp"
+      enabled = false
+    }
+    SBQQ__Theme = {
+      apexPage = "SBQQ__Theme"
+      enabled = false
+    }
+    SBQQ__ThemeHelp = {
+      apexPage = "SBQQ__ThemeHelp"
+      enabled = false
+    }
+    SBQQ__ThemeLookup = {
+      apexPage = "SBQQ__ThemeLookup"
+      enabled = false
+    }
+    SBQQ__Translations = {
+      apexPage = "SBQQ__Translations"
+      enabled = false
+    }
+    SBQQ__Upgrade = {
+      apexPage = "SBQQ__Upgrade"
+      enabled = false
+    }
+    SBQQ__UpgradeSourceHelp = {
+      apexPage = "SBQQ__UpgradeSourceHelp"
+      enabled = false
+    }
+    SBQQ__UsersNeedPSL = {
+      apexPage = "SBQQ__UsersNeedPSL"
+      enabled = false
+    }
+    SBQQ__ViewDocument = {
+      apexPage = "SBQQ__ViewDocument"
+      enabled = false
+    }
+    SBQQ__ViewTemplateContent = {
+      apexPage = "SBQQ__ViewTemplateContent"
+      enabled = false
+    }
+    SBQQ__sb = {
+      apexPage = "SBQQ__sb"
+      enabled = false
+    }
+  }
+}

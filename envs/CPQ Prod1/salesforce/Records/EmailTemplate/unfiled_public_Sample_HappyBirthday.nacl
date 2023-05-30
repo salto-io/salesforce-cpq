@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_HappyBirthday@zcdu {
+  available = true
+  description = "Wishing someone a happy birthday"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Happy Birthday"
+  relatedEntityType = "Contact"
+  style = "none"
+  subject = "Happy Birthday!"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_HappyBirthday"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_HappyBirthday/Sample_HappyBirthday.email")
+}

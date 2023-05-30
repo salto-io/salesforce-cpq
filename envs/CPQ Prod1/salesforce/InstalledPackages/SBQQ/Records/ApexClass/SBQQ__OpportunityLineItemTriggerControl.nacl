@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__OpportunityLineItemTriggerControl {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__OpportunityLineItemTriggerControl"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

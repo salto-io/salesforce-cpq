@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceCondition__c a0d3H0000073Bl0QAE {
+  SBQQ__Field__c = "Product Code"
+  SBQQ__FilterType__c = "Value"
+  SBQQ__Object__c = "Quote Line"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.a0e3H000000YJLjQAO
+  SBQQ__Value__c = "K2SWTBUSPNAM"
+  _alias = "Set Pre Paid SW Price 8"
+}

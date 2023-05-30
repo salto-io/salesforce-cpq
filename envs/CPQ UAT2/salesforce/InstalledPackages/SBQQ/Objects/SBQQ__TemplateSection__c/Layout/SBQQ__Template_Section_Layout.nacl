@@ -1,0 +1,220 @@
+salesforce.Layout SBQQ__TemplateSection__c_SBQQ__Template_Section_Layout@uuuubuuss {
+  customButtons = [
+    "SBQQ__IncludeDocument",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TemplateSection__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__TopMargin__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__DisplayOrder__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__ConditionalPrintField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__QuoteTotalsPrinted__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__RollUpField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__ColumnHeaderHidden__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__Template__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__Content__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__BottomMargin__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__SummaryDisplay__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__GroupField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__BorderColor__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Page Breaks"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__PageBreak__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__KeepWithPrevious__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__KeepTogether__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__KeepWithNext__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Filtering Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__FilterField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__FilterValue__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TemplateSection__c.field.SBQQ__FilterOperator__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TemplateSection__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TemplateSection__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__DisplayOrder__c",
+        "SBQQ__FieldName__c",
+        "SBQQ__Alignment__c",
+        "SBQQ__Width__c",
+      ]
+      relatedList = salesforce.SBQQ__LineColumn__c.field.SBQQ__Section__c
+      sortField = "SBQQ__DisplayOrder__c"
+      sortOrder = "Asc"
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__DocumentName__c",
+        "SBQQ__QuoteTemplate__c",
+        "SBQQ__DisplayOrder__c",
+        "SBQQ__Required__c",
+      ]
+      relatedList = salesforce.SBQQ__RelatedContent__c.field.SBQQ__TemplateSection__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000QylQs"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__TemplateSection__c-SBQQ__Template Section Layout"
+  _parent = [
+    salesforce.SBQQ__TemplateSection__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

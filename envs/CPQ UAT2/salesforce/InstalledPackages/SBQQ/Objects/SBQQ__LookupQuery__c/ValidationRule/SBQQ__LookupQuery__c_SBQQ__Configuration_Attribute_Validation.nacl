@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__LookupQuery__c_SBQQ__Configuration_Attribute_Validation {
+  fullName = "SBQQ__LookupQuery__c.SBQQ__Configuration_Attribute_Validation"
+  active = true
+  errorConditionFormula = "ISPICKVAL(SBQQ__MatchType__c, 'Configuration Attribute Value') && ISBLANK(SBQQ__ProductRule__c)"
+  errorDisplayField = salesforce.SBQQ__LookupQuery__c.field.SBQQ__MatchType__c
+  errorMessage = "Testing Configuration Attributes is only supported for Lookup Queries associated with Product Rules."
+  _parent = [
+    salesforce.SBQQ__LookupQuery__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

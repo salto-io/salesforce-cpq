@@ -1,0 +1,21 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__RefreshMultiplePrices {
+  fullName = "SBQQ__Quote__c.SBQQ__RefreshMultiplePrices"
+  availability = "online"
+  description = "Refreshes list prices based on currently selected pricebook on multiple quotes."
+  displayType = "massActionButton"
+  height = 0
+  linkType = "page"
+  masterLabel = "Refresh Prices"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__RefreshQuotePrices
+  protected = false
+  requireRowSelection = true
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

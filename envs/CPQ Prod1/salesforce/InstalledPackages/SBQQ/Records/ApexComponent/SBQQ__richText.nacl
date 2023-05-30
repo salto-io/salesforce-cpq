@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__richText {
+  apiVersion = 57
+  description = "Converts specified text into an XSL-FO tree that preserves format, paragraph and line breaks."
+  label = "Rich Text"
+  fullName = "SBQQ__richText"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

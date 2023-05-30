@@ -1,0 +1,214 @@
+salesforce.Flow Save_account_s_domain_name_used_to_avoid_duplicates {
+  fullName = "Save_account_s_domain_name_used_to_avoid_duplicates"
+  apiVersion = 49
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "formula_myRule_1"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Is website changed?"
+        },
+      ]
+    },
+  ]
+  description = "Save account's domain name (used to avoid duplicates)"
+  formulas = [
+    {
+      processMetadataValues = {
+        name = "originalFormula"
+        value = {
+          stringValue = '''
+IF(BEGINS([Account].Website, "http://www"), SUBSTITUTE([Account].Website, LEFT([Account].Website, FIND(".", [Account].Website)), NULL),
+IF(BEGINS([Account].Website, "https://www"), SUBSTITUTE([Account].Website, LEFT([Account].Website, FIND(".", [Account].Website)), NULL),
+IF(BEGINS([Account].Website, "www."), MID([Account].Website, FIND('www.', [Account].Website, 1)+4, (LEN([Account].Website) - FIND('www.', [Account].Website, 1)+4)),
+IF(BEGINS([Account].Website, "http://"), MID([Account].Website, FIND('http://', [Account].Website, 1)+7, (LEN([Account].Website) - FIND('http://', [Account].Website, 1)+7)),
+IF(BEGINS([Account].Website, "https://"), MID([Account].Website, FIND('https://', [Account].Website, 1)+8, (LEN([Account].Website) - FIND('https://', [Account].Website, 1)+8)), [Account].Website)))))
+'''
+        }
+      }
+      name = "formula_2_myRule_1_A1_4850534820"
+      dataType = "String"
+      expression = '''
+IF(BEGINS({!myVariable_current.Website}, "http://www"), SUBSTITUTE({!myVariable_current.Website}, LEFT({!myVariable_current.Website}, FIND(".", {!myVariable_current.Website})), NULL),
+IF(BEGINS({!myVariable_current.Website}, "https://www"), SUBSTITUTE({!myVariable_current.Website}, LEFT({!myVariable_current.Website}, FIND(".", {!myVariable_current.Website})), NULL),
+IF(BEGINS({!myVariable_current.Website}, "www."), MID({!myVariable_current.Website}, FIND('www.', {!myVariable_current.Website}, 1)+4, (LEN({!myVariable_current.Website}) - FIND('www.', {!myVariable_current.Website}, 1)+4)),
+IF(BEGINS({!myVariable_current.Website}, "http://"), MID({!myVariable_current.Website}, FIND('http://', {!myVariable_current.Website}, 1)+7, (LEN({!myVariable_current.Website}) - FIND('http://', {!myVariable_current.Website}, 1)+7)),
+IF(BEGINS({!myVariable_current.Website}, "https://"), MID({!myVariable_current.Website}, FIND('https://', {!myVariable_current.Website}, 1)+8, (LEN({!myVariable_current.Website}) - FIND('https://', {!myVariable_current.Website}, 1)+8)), {!myVariable_current.Website})))))
+'''
+    },
+    {
+      processMetadataValues = {
+        name = "originalFormula"
+        value = {
+          stringValue = "ISCHANGED([Account].Website) "
+        }
+      }
+      name = "formula_myRule_1"
+      dataType = "Boolean"
+      expression = "ISCHANGED({!myVariable_current.Website})"
+    },
+  ]
+  interviewLabel = "Save_account_s_domain_name_used_to_avoid_duplicates-1_InterviewLabel"
+  label = "Save account's domain name (used to avoid duplicates)"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Account"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onAllChanges"
+      }
+    },
+  ]
+  processType = "Workflow"
+  recordUpdates = [
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "always"
+          }
+        },
+        {
+          name = "extraTypeInfo"
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Account]"
+          }
+        },
+        {
+          name = "referenceTargetField"
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Extract domain name from website"
+      locationX = 100
+      locationY = 200
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Account.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "String"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Domain"
+              }
+            },
+            {
+              name = "leftHandSideReferenceTo"
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Formula"
+              }
+            },
+          ]
+          field = salesforce.Account.field.Domain__c
+          value = {
+            elementReference = "formula_2_myRule_1_A1_4850534820"
+          }
+        },
+      ]
+      object = salesforce.Account
+    },
+  ]
+  startElementReference = "myDecision"
+  status = "Active"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Account
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Account
+    },
+  ]
+}

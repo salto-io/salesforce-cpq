@@ -1,0 +1,73 @@
+salesforce.Report unfiled_public_SampleReportLoginWallofShame@zcd {
+  columns = [
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "PROFILE"
+    },
+    {
+      field = "USERNAME"
+    },
+    {
+      field = "ALIAS"
+    },
+    {
+      field = "LAST_LOGIN"
+    },
+    {
+      field = "LOGIN_DATETIME"
+    },
+    {
+      field = "LOGIN_DATE"
+    },
+  ]
+  description = "Who is not logging in?"
+  filter = {
+    criteriaItems = [
+      {
+        column = "ACTIVE"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "equals"
+        value = "1"
+      },
+      {
+        column = "LAST_LOGIN"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "notEqual"
+        value = "LAST_N_DAYS:7"
+      },
+    ]
+  }
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "ACTIVE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Login Wall of Shame"
+  params = [
+    {
+      name = "active"
+      value = "active"
+    },
+  ]
+  reportType = salesforce.User
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "LAST_LOGIN"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "LAST_LOGIN"
+    interval = "INTERVAL_LAST7"
+  }
+  fullName = "unfiled$public/SampleReportLoginWallofShame"
+}

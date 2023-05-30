@@ -1,0 +1,29 @@
+type salesforce.ProfileTabVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string tab {
+  }
+  string visibility {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DefaultOff",
+        "DefaultOn",
+        "Hidden",
+      ]
+    }
+  }
+  metadataType = "ProfileTabVisibility"
+}

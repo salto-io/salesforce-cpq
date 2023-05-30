@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__bundle {
+  cacheControl = "Public"
+  contentType = "application/javascript"
+  description = "Salesforce CPQ UI"
+  fullName = "SBQQ__bundle"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__bundle.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

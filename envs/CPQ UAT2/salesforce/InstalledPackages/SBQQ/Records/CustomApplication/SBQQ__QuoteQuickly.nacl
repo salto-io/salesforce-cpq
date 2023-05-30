@@ -1,0 +1,31 @@
+salesforce.CustomApplication SBQQ__QuoteQuickly {
+  fullName = "SBQQ__QuoteQuickly"
+  defaultLandingTab = "standard-home"
+  description = "Salesforce CPQ simplifies configuration and ensures pricing and quoting accuracy. Sales reps reduce errors, improve productivity, and close more deals without ever leaving the Sales Cloud."
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  label = "Salesforce CPQ"
+  tabs = [
+    "standard-Account",
+    "standard-Opportunity",
+    salesforce.CustomTab.instance.SBQQ__Quote__c,
+    salesforce.CustomTab.instance.SBQQ__SolutionGroup__c,
+    salesforce.CustomTab.instance.SBQQ__DiscountSchedule__c,
+    salesforce.CustomTab.instance.SBQQ__QuoteTemplate__c,
+    "standard-Product2",
+    salesforce.CustomTab.instance.SBQQ__ProductRule__c,
+    "standard-report",
+    "standard-Dashboard",
+    "standard-Document",
+    salesforce.CustomTab.instance.SBQQ__ImportFormat__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

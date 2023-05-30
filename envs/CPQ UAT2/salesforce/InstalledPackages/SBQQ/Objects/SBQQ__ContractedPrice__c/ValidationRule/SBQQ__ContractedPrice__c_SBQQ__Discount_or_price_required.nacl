@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ContractedPrice__c_SBQQ__Discount_or_price_required {
+  fullName = "SBQQ__ContractedPrice__c.SBQQ__Discount_or_price_required"
+  active = true
+  description = "Requires either Discount, Price, or Discount Schedule be entered."
+  errorConditionFormula = "AND(ISBLANK(SBQQ__Discount__c),ISBLANK(SBQQ__Price__c), ISBLANK(SBQQ__DiscountSchedule__c))"
+  errorMessage = "You must enter either Discount, Price, or Discount Schedule."
+  _parent = [
+    salesforce.SBQQ__ContractedPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

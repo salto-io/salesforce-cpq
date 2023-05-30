@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__IncludeDocument {
+  fullName = "SBQQ__Quote__c.SBQQ__IncludeDocument"
+  availability = "online"
+  description = "Allow users to attach the PDF to the quote."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Include Document"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__NewQuoteRelatedContent
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

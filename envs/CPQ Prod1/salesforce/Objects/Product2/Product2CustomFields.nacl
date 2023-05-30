@@ -1,0 +1,1769 @@
+type salesforce.Product2 {
+  salesforce.Picklist License_Type__c {
+    apiName = "Product2.License_Type__c"
+    externalId = false
+    label = "License Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Perpetual"
+        default = false
+        label = "Perpetual"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+      {
+        fullName = "Subscription2"
+        default = false
+        label = "Subscription2"
+      },
+      {
+        fullName = "NewOne"
+        default = false
+        isActive = false
+        label = "NewOne"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Region__c {
+    apiName = "Product2.Region__c"
+    description = "Product Region"
+    externalId = false
+    label = "Region"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "US"
+        default = false
+        label = "US"
+      },
+      {
+        fullName = "IL"
+        default = false
+        label = "IL"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__AssetAmendmentBehavior__c {
+    apiName = "Product2.SBQQ__AssetAmendmentBehavior__c"
+    deprecated = false
+    description = "Indicates how assets representing this product behave on amendments."
+    externalId = false
+    inlineHelpText = "Select a behavior when amending assets representing this product. By default, asset quantities cannot decrease unless an upgrade is added, and no refund is applied."
+    label = "Asset Amendment Behavior"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Default"
+        default = true
+        label = "Default"
+      },
+      {
+        fullName = "Allow Refund"
+        default = false
+        label = "Allow Refund"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__AssetConversion__c {
+    apiName = "Product2.SBQQ__AssetConversion__c"
+    deprecated = false
+    description = "Determines how this product is converted to asset."
+    externalId = false
+    inlineHelpText = "Indicates how this product is converted to asset."
+    label = "Asset Conversion"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "One per quote line"
+        default = true
+        label = "One per quote line"
+      },
+      {
+        fullName = "One per unit"
+        default = false
+        label = "One per unit"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__BatchQuantity__c {
+    apiName = "Product2.SBQQ__BatchQuantity__c"
+    deprecated = false
+    description = "Quantity in one batch for products sold in batches. Quantity entered in quote line will be divided by this number."
+    externalId = false
+    inlineHelpText = "Non-blank value designates this product is sold in batches. Enter quantity in each batch. Quantity entered in quote will be divided by this value and rounded up to the nearest integer."
+    label = "Batch Quantity"
+    precision = 12
+    scale = 2
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__BillingFrequency__c {
+    apiName = "Product2.SBQQ__BillingFrequency__c"
+    deprecated = false
+    description = "Determines how often this product will be invoiced."
+    externalId = false
+    inlineHelpText = "Determines how often this product will be invoiced."
+    label = "Billing Frequency"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingFrequency
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__BillingType__c {
+    apiName = "Product2.SBQQ__BillingType__c"
+    deprecated = false
+    description = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    externalId = false
+    inlineHelpText = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    label = "Billing Type"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__BlockPricingField__c {
+    apiName = "Product2.SBQQ__BlockPricingField__c"
+    deprecated = false
+    description = "Field used to calculate block pricing."
+    externalId = false
+    inlineHelpText = "Field used to calculate block pricing."
+    label = "Block Pricing Field"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Quantity"
+        default = true
+        label = "Quantity"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ChargeType__c {
+    apiName = "Product2.SBQQ__ChargeType__c"
+    deprecated = false
+    description = "The type of the product charge."
+    externalId = false
+    inlineHelpText = "The type of the product charge."
+    label = "Charge Type"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__ChargeType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Component__c {
+    apiName = "Product2.SBQQ__Component__c"
+    defaultValue = false
+    deprecated = false
+    description = "Marks this product as a component, excluding it from selection in product lookup."
+    externalId = false
+    inlineHelpText = "Marks this product as a component, excluding it from selection in product lookup."
+    label = "Component"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__CompoundDiscountRate__c {
+    apiName = "Product2.SBQQ__CompoundDiscountRate__c"
+    deprecated = false
+    description = "Discount rate compounded by quantity."
+    externalId = false
+    inlineHelpText = "Discount rate compounded by quantity."
+    label = "Compound Discount (%)"
+    precision = 8
+    scale = 3
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ConfigurationEvent__c {
+    apiName = "Product2.SBQQ__ConfigurationEvent__c"
+    deprecated = false
+    description = "Specifies when user is prompted to configure this product."
+    externalId = false
+    inlineHelpText = "Use this to control when Configure Products screen shows up for this product. Choose \"Add\" to limit to initial configuration. Choose \"Edit\" to subsequent configuration."
+    label = "Configuration Event"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+      {
+        fullName = "Add"
+        default = false
+        label = "Add"
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Edit"
+      },
+    ]
+    sorted = false
+    restricted = false
+    fieldDependency = {
+      controllingField = "SBQQ__ConfigurationType__c"
+      valueSettings = [
+        {
+          valueName = "Always"
+          controllingFieldValue = [
+            "Required",
+            "Allowed",
+            "Disabled",
+          ]
+        },
+        {
+          valueName = "Add"
+          controllingFieldValue = [
+            "Allowed",
+          ]
+        },
+        {
+          valueName = "Edit"
+          controllingFieldValue = [
+            "Allowed",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ConfigurationFieldSet__c {
+    apiName = "Product2.SBQQ__ConfigurationFieldSet__c"
+    deprecated = false
+    description = "The API name of the field set that will be used for this product during configuration."
+    externalId = false
+    inlineHelpText = "The API name of the field set that will be used for this product during configuration."
+    label = "Configuration Field Set"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "OptionConfiguration"
+        default = false
+        label = "OptionConfiguration"
+      },
+      {
+        fullName = "AnotherConfig"
+        default = false
+        label = "AnotherConfig"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.LongTextArea SBQQ__ConfigurationFields__c {
+    apiName = "Product2.SBQQ__ConfigurationFields__c"
+    deprecated = false
+    description = "Additional fields collected during configuration of this product. All of these fields must exist on Product Option and Quote Line objects."
+    externalId = false
+    label = "Configuration Fields"
+    length = 10000
+    trackHistory = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__ConfigurationFormTitle__c {
+    apiName = "Product2.SBQQ__ConfigurationFormTitle__c"
+    deprecated = false
+    description = "Title of the configuration form rendered from specified configuration fields."
+    externalId = false
+    inlineHelpText = "Title of the configuration form rendered from specified configuration fields."
+    label = "Configuration Form Title"
+    length = 100
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ConfigurationType__c {
+    apiName = "Product2.SBQQ__ConfigurationType__c"
+    deprecated = false
+    description = "Configuration type of this product: Choose Allowed if the user is allowed to configure the product/bundle, but not required to, Disabled when your bundle automatically selects options, or Required if the product/bundle must be configured."
+    externalId = false
+    inlineHelpText = "Configuration type of this product: Choose Allowed if the user is allowed to configure the product/bundle, but not required to, Disabled when your bundle automatically selects options, or Required if the product/bundle must be configured."
+    label = "Configuration Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Required"
+        default = false
+        label = "Required"
+      },
+      {
+        fullName = "Allowed"
+        default = false
+        label = "Allowed"
+      },
+      {
+        fullName = "Disabled"
+        default = false
+        label = "Disabled"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.LongTextArea SBQQ__ConfigurationValidator__c {
+    apiName = "Product2.SBQQ__ConfigurationValidator__c"
+    deprecated = false
+    description = "JavaScript function used to validate configuration of this product."
+    externalId = false
+    inlineHelpText = "JavaScript function used to validate configuration of this product."
+    label = "Configuration Validator"
+    length = 32000
+    trackHistory = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__ConfiguredCodePattern__c {
+    apiName = "Product2.SBQQ__ConfiguredCodePattern__c"
+    deprecated = false
+    description = "Pattern used to generate product code (SKU) for configured products."
+    externalId = false
+    inlineHelpText = "Pattern used to generate product code (SKU) for configured products."
+    label = "Configured Code Pattern"
+    length = 255
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Html SBQQ__ConfiguredDescriptionPattern__c {
+    apiName = "Product2.SBQQ__ConfiguredDescriptionPattern__c"
+    deprecated = false
+    description = "Pattern used to generate dynamic product description for configured products."
+    externalId = false
+    inlineHelpText = "Pattern used to generate dynamic product description for configured products."
+    label = "Configured Description Pattern"
+    length = 1000
+    trackHistory = false
+    visibleLines = 10
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__CostEditable__c {
+    apiName = "Product2.SBQQ__CostEditable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Controls whether cost for this product may be modified on individual quotes."
+    externalId = false
+    inlineHelpText = "Controls whether cost for this product may be modified on individual quotes."
+    label = "Cost Editable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__CostSchedule__c {
+    apiName = "Product2.SBQQ__CostSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Discount schedule used as a Cost Schedule with this product."
+    externalId = false
+    inlineHelpText = "Discount schedule used as a Cost Schedule with this product."
+    label = "Cost Schedule"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__DiscountSchedule__c.SBQQ__UserDefined__c"
+          operation = "equals"
+          value = "False"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Products (Cost Schedule)"
+    relationshipName = "Products1"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__CustomConfigurationPage__c {
+    apiName = "Product2.SBQQ__CustomConfigurationPage__c"
+    deprecated = false
+    externalId = false
+    label = "Custom Configuration Page"
+    length = 40
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__CustomConfigurationRequired__c {
+    apiName = "Product2.SBQQ__CustomConfigurationRequired__c"
+    defaultValue = false
+    deprecated = false
+    externalId = false
+    label = "Custom Configuration Required"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__CustomerCommunityAvailability__c {
+    apiName = "Product2.SBQQ__CustomerCommunityAvailability__c"
+    deprecated = false
+    description = "Determines availability of this product in Customer Community."
+    externalId = false
+    inlineHelpText = "Select how this product should be available in Customer Communities."
+    label = "Customer Community Availability"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Only when already owned"
+        default = false
+        label = "Only when already owned"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+      {
+        fullName = "Never"
+        default = false
+        label = "Never"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__DefaultPricingTable__c {
+    apiName = "Product2.SBQQ__DefaultPricingTable__c"
+    deprecated = false
+    externalId = false
+    label = "Default Pricing Table"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Segmented"
+        default = false
+        label = "Segmented"
+      },
+      {
+        fullName = "Standard"
+        default = false
+        label = "Standard"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__DefaultQuantity__c {
+    apiName = "Product2.SBQQ__DefaultQuantity__c"
+    defaultValueFormula = "1"
+    deprecated = false
+    description = "Specifies the starting quantity of the product when added."
+    externalId = false
+    inlineHelpText = "Specify the starting quantity of the product when added."
+    label = "Default Quantity"
+    precision = 18
+    scale = 5
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__DescriptionLocked__c {
+    apiName = "Product2.SBQQ__DescriptionLocked__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that indicates this product's description is locked (not editable on the quote)."
+    externalId = false
+    inlineHelpText = "Flag that indicates this product's description is locked (not editable on the quote)."
+    label = "Lock Description"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__DiscountCategory__c {
+    apiName = "Product2.SBQQ__DiscountCategory__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Discount category assigned to this product."
+    externalId = false
+    inlineHelpText = "Specify discount category for this product."
+    label = "Discount Category"
+    referenceTo = [
+      salesforce.SBQQ__DiscountCategory__c,
+    ]
+    relationshipLabel = "Products"
+    relationshipName = "Products"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__DiscountSchedule__c {
+    apiName = "Product2.SBQQ__DiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Discount schedule for use with this product"
+    externalId = false
+    inlineHelpText = "Discount schedule for use with this product"
+    label = "Discount Schedule"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__DiscountSchedule__c.SBQQ__UserDefined__c"
+          operation = "equals"
+          value = "False"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Quantity Discounted Products"
+    relationshipName = "Products"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__DynamicPricingConstraint__c {
+    apiName = "Product2.SBQQ__DynamicPricingConstraint__c"
+    deprecated = false
+    description = "Specifies constraints on dynamically calculated pricing."
+    externalId = false
+    inlineHelpText = "Use to place constraints on dynamically calculated prices."
+    label = "Percent Of Total Constraint"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "List price is minimum"
+        default = false
+        label = "List price is minimum"
+      },
+      {
+        fullName = "List price is maximum"
+        default = false
+        label = "List price is maximum"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__EnableLargeConfiguration__c {
+    apiName = "Product2.SBQQ__EnableLargeConfiguration__c"
+    defaultValue = false
+    deprecated = false
+    description = "Enable large bundle configuration."
+    externalId = false
+    inlineHelpText = "Should be enabled if you experience performance errors during bundle configuration. Bundle will be processed asynchronously."
+    label = "Enable Large Configuration"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ExcludeFromMaintenance__c {
+    apiName = "Product2.SBQQ__ExcludeFromMaintenance__c"
+    defaultValue = false
+    deprecated = false
+    description = "Excludes this product from percent of total maintenance calculations."
+    externalId = false
+    inlineHelpText = "Check to always exclude this product from percent of total calculations (normally non-subscription products are included in percent of total calculations)."
+    label = "Exclude From Percent Of Total"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ExcludeFromOpportunity__c {
+    apiName = "Product2.SBQQ__ExcludeFromOpportunity__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates this product should be excluded from transfer to the Opportunity."
+    externalId = false
+    inlineHelpText = "Indicates this product should not be transferred to the opportunity."
+    label = "Exclude From Opportunity"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ExternallyConfigurable__c {
+    apiName = "Product2.SBQQ__ExternallyConfigurable__c"
+    defaultValue = false
+    deprecated = false
+    description = "When checked, indicates that configuring this Product automatically launches the External Configuration URL, defined in Salesforce CPQ settings."
+    externalId = false
+    inlineHelpText = "When checked, indicates that configuring this Product automatically launches the External Configuration URL, defined in Salesforce CPQ settings."
+    label = "Externally Configurable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__GenerateContractedPrice__c {
+    apiName = "Product2.SBQQ__GenerateContractedPrice__c"
+    deprecated = false
+    description = "Will generate a contracted price based on the adjusted quote line if flagged."
+    externalId = false
+    inlineHelpText = "Will generate a contracted price based on the adjusted quote line if flagged."
+    label = "Generate Contracted Price"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Price"
+        default = false
+        label = "Price"
+      },
+      {
+        fullName = "Discount Schedule"
+        default = false
+        label = "Discount Schedule"
+      },
+      {
+        fullName = "Do Not Generate"
+        default = false
+        label = "Do Not Generate"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__HasConfigurationAttributes__c {
+    apiName = "Product2.SBQQ__HasConfigurationAttributes__c"
+    defaultValue = false
+    deprecated = false
+    description = "Checks to see if Product has Configuration Attributes"
+    externalId = false
+    label = "Has Configuration Attributes"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__HasConsumptionSchedule__c {
+    apiName = "Product2.SBQQ__HasConsumptionSchedule__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates if Product is assigned to at least 1 active Consumption Schedule"
+    externalId = false
+    inlineHelpText = "Indicates if this product has at least one consumption schedule"
+    label = "Has Consumption Schedules"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Hidden__c {
+    apiName = "Product2.SBQQ__Hidden__c"
+    defaultValue = false
+    deprecated = false
+    description = "Excludes this product from appearing on the quote PDF."
+    externalId = false
+    inlineHelpText = "Excludes this product from appearing on the quote PDF."
+    label = "Hidden"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__HidePriceInSearchResults__c {
+    apiName = "Product2.SBQQ__HidePriceInSearchResults__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the product price should be displayed in the Product Search Results."
+    externalId = false
+    inlineHelpText = "Select checkbox to hide this product's price in the Product Search Results."
+    label = "Hide Price in Search Results"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__IncludeInMaintenance__c {
+    apiName = "Product2.SBQQ__IncludeInMaintenance__c"
+    defaultValue = false
+    deprecated = false
+    description = "Includes products in percent of total calculations that are normally excluded (e.g.: subscription products)."
+    externalId = false
+    inlineHelpText = "Check to always include this product in percent of total calculations (normally subscription products are excluded from percent of total calculations)."
+    label = "Include In Percent Of Total"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__NewQuoteGroup__c {
+    apiName = "Product2.SBQQ__NewQuoteGroup__c"
+    defaultValue = false
+    deprecated = false
+    description = "Forces this product to be in its own group on a quote."
+    externalId = false
+    inlineHelpText = "Check to create a new quote group when this product is added (unless the current group is empty)."
+    label = "New Quote Group"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__NonDiscountable__c {
+    apiName = "Product2.SBQQ__NonDiscountable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Marks this product as non discountable."
+    externalId = false
+    inlineHelpText = "Marks this product as not discountable."
+    label = "Non Discountable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__NonPartnerDiscountable__c {
+    apiName = "Product2.SBQQ__NonPartnerDiscountable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Marks this product as non-discountable for partners."
+    externalId = false
+    inlineHelpText = "Check to make this product non-discountable for partners."
+    label = "Non Partner Discountable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__OptionLayout__c {
+    apiName = "Product2.SBQQ__OptionLayout__c"
+    deprecated = false
+    description = "Determines how options are presented to users."
+    externalId = false
+    inlineHelpText = "Determines how options are presented to users."
+    label = "Option Layout"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Sections"
+        default = false
+        label = "Sections"
+      },
+      {
+        fullName = "Tabs"
+        default = false
+        label = "Tabs"
+      },
+      {
+        fullName = "Wizard"
+        default = false
+        label = "Wizard"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__OptionSelectionMethod__c {
+    apiName = "Product2.SBQQ__OptionSelectionMethod__c"
+    deprecated = false
+    description = "Determines how user selects options attached to this product. \"Click\" method presents options with checkboxes next to them. \"Add\" renders a button which brings up a dialog box with available options."
+    externalId = false
+    inlineHelpText = "Determines how user selects options attached to this product. \"Click\" method presents options with checkboxes next to them. \"Add\" renders a button which brings up a dialog box with available options."
+    label = "Option Selection Method"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Click"
+        default = true
+        label = "Click"
+      },
+      {
+        fullName = "Add"
+        default = false
+        label = "Add"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Optional__c {
+    apiName = "Product2.SBQQ__Optional__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this product is optional or not by default. Optional products don't contribute to quote total or get transferred to the opportunity."
+    externalId = false
+    inlineHelpText = "Select if this product is optional by default. Optional products don't contribute to quote total or get transferred to the opportunity."
+    label = "Optional"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__PriceEditable__c {
+    apiName = "Product2.SBQQ__PriceEditable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates this product allows for price to be freely editable when building a quote"
+    externalId = false
+    inlineHelpText = "Indicates this product allows for price to be freely editable when building a quote."
+    label = "Price Editable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__PricingGuidance__c {
+    apiName = "Product2.SBQQ__PricingGuidance__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Pricing guidance for use with this product."
+    externalId = false
+    inlineHelpText = "Pricing guidance for use with this product."
+    label = "Pricing Guidance"
+    referenceTo = [
+      salesforce.SBQQ__PricingGuidance__c,
+    ]
+    relationshipLabel = "Products"
+    relationshipName = "Products"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__PricingMethodEditable__c {
+    apiName = "Product2.SBQQ__PricingMethodEditable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Specifies whether Pricing Method may be changed when this product is added to quote."
+    externalId = false
+    inlineHelpText = "Select if Pricing Method can be changed when this product is added to quote."
+    label = "Pricing Method Editable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__PricingMethod__c {
+    apiName = "Product2.SBQQ__PricingMethod__c"
+    deprecated = false
+    description = "Pricing method that should be applied to this product."
+    externalId = false
+    inlineHelpText = "Pricing method that should be applied to this product."
+    label = "Pricing Method"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "List"
+        default = true
+        label = "List"
+      },
+      {
+        fullName = "Cost"
+        default = false
+        label = "Cost"
+      },
+      {
+        fullName = "Block"
+        default = false
+        label = "Block"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__ProductPictureID__c {
+    apiName = "Product2.SBQQ__ProductPictureID__c"
+    deprecated = false
+    description = "ID of Document or Content record that holds the picture for this product."
+    externalId = false
+    inlineHelpText = "ID of Document or Content record that holds the picture for this product."
+    label = "Product Picture Id"
+    length = 18
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__QuantityEditable__c {
+    apiName = "Product2.SBQQ__QuantityEditable__c"
+    defaultValue = true
+    deprecated = false
+    description = "Flag that determines whether the quantity is editable."
+    externalId = false
+    inlineHelpText = "Allow or prevent changing the quantity for this product."
+    label = "Quantity Editable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__QuantityScale__c {
+    apiName = "Product2.SBQQ__QuantityScale__c"
+    deprecated = false
+    description = "Specifies the number of decimal places used in the Quantity field."
+    externalId = false
+    inlineHelpText = "Specifies the number of decimal places used in the Quantity field."
+    label = "Quantity Scale"
+    precision = 1
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ReconfigurationDisabled__c {
+    apiName = "Product2.SBQQ__ReconfigurationDisabled__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that disables re-configuration of this product."
+    externalId = false
+    inlineHelpText = "When checked this product can only be configured when first added to a quote. If selected, users will not have access to a Configure link on the Edit Lines page after product has been added."
+    label = "Disable Reconfiguration"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__RenewalProduct__c {
+    apiName = "Product2.SBQQ__RenewalProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product that replaces this product on renewal."
+    externalId = false
+    inlineHelpText = "Product that replaces this product on renewal. Use this to quote a different SKU when renewing."
+    label = "Renewal Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Original Products"
+    relationshipName = "OriginalProducts"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__SortOrder__c {
+    apiName = "Product2.SBQQ__SortOrder__c"
+    deprecated = false
+    description = "Determines a default sort order of products in the Product Lookup page, and therefore the order in which they are added to the quote."
+    externalId = false
+    inlineHelpText = "Determines a default sort order of products in the Product Lookup page, and therefore the order in which they are added to the quote."
+    label = "Sort Order"
+    precision = 18
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Html SBQQ__Specifications__c {
+    apiName = "Product2.SBQQ__Specifications__c"
+    deprecated = false
+    description = "Formatted specifications for this product for use in quote templates to produce spec sheets."
+    externalId = false
+    inlineHelpText = "Formatted specifications for this product for use in quote templates to produce spec sheets."
+    label = "Specifications"
+    length = 32000
+    trackHistory = false
+    visibleLines = 25
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__SubscriptionBase__c {
+    apiName = "Product2.SBQQ__SubscriptionBase__c"
+    deprecated = false
+    description = "Determines whether dynamic subscriptions are calculated off List or Net product price."
+    externalId = false
+    inlineHelpText = "Determines whether Percent of Total is calculated off List or Net product prices."
+    label = "Percent Of Total Base"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "List"
+        default = true
+        label = "List"
+      },
+      {
+        fullName = "Regular"
+        default = false
+        label = "Regular"
+      },
+      {
+        fullName = "Customer"
+        default = false
+        label = "Customer"
+      },
+      {
+        fullName = "Net"
+        default = false
+        label = "Net"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__SubscriptionCategory__c {
+    apiName = "Product2.SBQQ__SubscriptionCategory__c"
+    deprecated = false
+    description = "Subscription category for this product. Applies to all products and used to limit percent of total subscriptions to certain products."
+    externalId = false
+    inlineHelpText = "Use this to limit percent of total calculations to certain product categories. For example, software maintenance should only calculate percentage on products with a software maintenance percent of total category."
+    label = "Percent Of Total Category"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Hardware"
+        default = false
+        label = "Hardware"
+      },
+      {
+        fullName = "Software"
+        default = false
+        label = "Software"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__SubscriptionPercent__c {
+    apiName = "Product2.SBQQ__SubscriptionPercent__c"
+    deprecated = false
+    description = "Percent of non-subscription total to be used as the price of this subscription."
+    externalId = false
+    inlineHelpText = "Percent of non-subscription total to be used as the price of this subscription."
+    label = "Percent Of Total (%)"
+    precision = 7
+    scale = 3
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__SubscriptionPricing__c {
+    apiName = "Product2.SBQQ__SubscriptionPricing__c"
+    deprecated = false
+    description = "Type of pricing to use for this subscription. \"None\" means this product is not a subscription."
+    externalId = false
+    inlineHelpText = "Type of pricing to use for this subscription. \"None\" means this product is not a subscription."
+    label = "Subscription Pricing"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Fixed Price"
+        default = false
+        label = "Fixed Price"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__SubscriptionTarget__c {
+    apiName = "Product2.SBQQ__SubscriptionTarget__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Effective product on which maintenance should calculate."
+    externalId = false
+    inlineHelpText = "Use this field to override a product that is included in a percent of total calculation. Point this lookup to a product with a list price you would like to use for the current product’s Percent of Total calculations."
+    label = "Percent Of Total Target"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Subscription Targeting Products"
+    relationshipName = "SubscriptionTargetingProducts"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__SubscriptionTerm__c {
+    apiName = "Product2.SBQQ__SubscriptionTerm__c"
+    deprecated = false
+    description = "Term length of this subscription. Only applicable if the product is a subscription."
+    externalId = false
+    inlineHelpText = "Term length of this subscription. Only applicable if the product is a subscription."
+    label = "Subscription Term"
+    precision = 5
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__SubscriptionType__c {
+    apiName = "Product2.SBQQ__SubscriptionType__c"
+    deprecated = false
+    description = "Renewable Subscriptions will transfer to Renewal Quotes. One-time Subscriptions will not."
+    externalId = false
+    inlineHelpText = "Renewable Subscriptions will transfer to Renewal Quotes. One-time Subscriptions will not."
+    label = "Subscription Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Renewable"
+        default = true
+        label = "Renewable"
+      },
+      {
+        fullName = "One-time"
+        default = false
+        label = "One-time"
+      },
+      {
+        fullName = "Renewable/Evergreen"
+        default = false
+        label = "Renewable/Evergreen"
+      },
+      {
+        fullName = "Evergreen"
+        default = false
+        label = "Evergreen"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__TaxCode__c {
+    apiName = "Product2.SBQQ__TaxCode__c"
+    deprecated = false
+    description = "Specifies the tax code for taxation rules."
+    externalId = false
+    inlineHelpText = "Specifies the tax code for taxation rules."
+    label = "Tax code"
+    length = 255
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__Taxable__c {
+    apiName = "Product2.SBQQ__Taxable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this product is taxable."
+    externalId = false
+    inlineHelpText = "Indicates whether this product is taxable."
+    label = "Taxable"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__TermDiscountLevel__c {
+    apiName = "Product2.SBQQ__TermDiscountLevel__c"
+    deprecated = false
+    description = "Level of subscription term that's used to calculated term discount."
+    externalId = false
+    inlineHelpText = "Specify subscription term level that should be used in calculating term discount. Leave blank to indicate default."
+    label = "Term Discount Level"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Line"
+        default = false
+        label = "Line"
+      },
+      {
+        fullName = "Group"
+        default = false
+        label = "Group"
+      },
+      {
+        fullName = "Quote"
+        default = false
+        label = "Quote"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__TermDiscountSchedule__c {
+    apiName = "Product2.SBQQ__TermDiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Schedule for discounts based on subscription term."
+    externalId = false
+    inlineHelpText = "Schedule for discounts based on subscription term."
+    label = "Term Discount Schedule"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__DiscountSchedule__c.SBQQ__UserDefined__c"
+          operation = "equals"
+          value = "False"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Term Discounted Products"
+    relationshipName = "TermDiscountedProducts"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__UpgradeCredit__c {
+    apiName = "Product2.SBQQ__UpgradeCredit__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Credit product quoted when upgrading this product."
+    externalId = false
+    inlineHelpText = "Use to specify credit when quoting upgrades to this product."
+    label = "Upgrade Credit"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Credited Products"
+    relationshipName = "CreditedProducts"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__UpgradeRatio__c {
+    apiName = "Product2.SBQQ__UpgradeRatio__c"
+    deprecated = false
+    description = "The conversion rate between this upgrade product and its source product."
+    externalId = false
+    inlineHelpText = "The conversion rate between this product's quantity and that of its source product."
+    label = "Upgrade Ratio"
+    precision = 8
+    scale = 3
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__UpgradeSource__c {
+    apiName = "Product2.SBQQ__UpgradeSource__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Specifies the product being upgraded."
+    externalId = false
+    inlineHelpText = "Product being upgraded. Populating this field makes this product an upgrade."
+    label = "Upgrade Source"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Target Upgrades"
+    relationshipName = "TargetUpgrades"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__UpgradeTarget__c {
+    apiName = "Product2.SBQQ__UpgradeTarget__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product being upgraded to."
+    externalId = false
+    inlineHelpText = "Specify the upgraded product. Only applicable if this product is an upgrade as indicated by Upgrade Source field being populated or having related Upgrade Source records."
+    label = "Upgrade Target"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Source Upgrades"
+    relationshipName = "SourceUpgrades"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist Subscription_License_Type__c {
+    apiName = "Product2.Subscription_License_Type__c"
+    externalId = false
+    label = "Subscription License Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Pre Paid"
+        default = false
+        label = "Pre Paid"
+      },
+      {
+        fullName = "Pay as you go"
+        default = false
+        label = "Pay as you go"
+      },
+      {
+        fullName = "Pre-Paid Overage Use"
+        default = false
+        label = "Pre-Paid Overage Use"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

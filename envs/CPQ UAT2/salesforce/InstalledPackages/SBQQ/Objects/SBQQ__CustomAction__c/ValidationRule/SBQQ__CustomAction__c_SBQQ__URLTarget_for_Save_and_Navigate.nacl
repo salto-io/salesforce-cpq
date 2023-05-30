@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__CustomAction__c_SBQQ__URLTarget_for_Save_and_Navigate {
+  fullName = "SBQQ__CustomAction__c.SBQQ__URLTarget_for_Save_and_Navigate"
+  active = true
+  description = "URL target needs to be Replace Page for Custom Action \"Save and Navigate\""
+  errorConditionFormula = "ISPICKVAL(SBQQ__Action__c, \"Save and Navigate\") && NOT( ISPICKVAL( SBQQ__URLTarget__c , \"Replace Page\") )"
+  errorDisplayField = salesforce.SBQQ__CustomAction__c.field.SBQQ__URLTarget__c
+  errorMessage = "URL target needs to be Replace Page for Custom Action \"Save and Navigate\""
+  _parent = [
+    salesforce.SBQQ__CustomAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

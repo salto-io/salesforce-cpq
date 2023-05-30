@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ProductSearchPlugin {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ProductSearchPlugin"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__ProductSearchPlugin.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

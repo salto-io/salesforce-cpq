@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__Upgrade {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Upgrade"
+  fullName = "SBQQ__Upgrade"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__Upgrade.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

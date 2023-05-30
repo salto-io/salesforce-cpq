@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__TemplateContentHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Template Content Help"
+  fullName = "SBQQ__TemplateContentHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__TemplateContentHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

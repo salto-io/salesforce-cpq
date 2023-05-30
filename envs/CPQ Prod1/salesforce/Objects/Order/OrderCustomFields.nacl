@@ -1,0 +1,201 @@
+type salesforce.Order {
+  salesforce.Checkbox SBQQ__Contracted__c {
+    apiName = "Order.SBQQ__Contracted__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates if the order is contracted."
+    externalId = false
+    inlineHelpText = "Indicates if the order is contracted."
+    label = "Contracted"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ContractingMethod__c {
+    apiName = "Order.SBQQ__ContractingMethod__c"
+    deprecated = false
+    description = "\"By Subscription End Date\" creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. \"Single Contract\" creates one Contract containing all Subscriptions, regardless of their End Dates."
+    externalId = false
+    inlineHelpText = "\"By Subscription End Date\" creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. \"Single Contract\" creates one Contract containing all Subscriptions, regardless of their End Dates."
+    label = "Contracting Method"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__ContractingMethod
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Summary SBQQ__OrderBookings__c {
+    apiName = "Order.SBQQ__OrderBookings__c"
+    deprecated = false
+    description = "Total amount of all order product bookings."
+    externalId = false
+    inlineHelpText = "Total amount of all order product bookings."
+    label = "Order Bookings"
+    summarizedField = "OrderItem.SBQQ__OrderProductBookings__c"
+    summaryForeignKey = "OrderItem.OrderId"
+    summaryOperation = "sum"
+    trackHistory = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__PaymentTerm__c {
+    apiName = "Order.SBQQ__PaymentTerm__c"
+    deprecated = false
+    description = "The payment term for this order."
+    externalId = false
+    inlineHelpText = "The payment term for this order."
+    label = "Payment Term"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__PaymentTerm
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__PriceCalcStatusMessage__c {
+    apiName = "Order.SBQQ__PriceCalcStatusMessage__c"
+    deprecated = false
+    description = "The price calculation status message."
+    externalId = false
+    inlineHelpText = "The price calculation status message"
+    label = "Price Calculation Status Message"
+    length = 255
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__PriceCalcStatus__c {
+    apiName = "Order.SBQQ__PriceCalcStatus__c"
+    deprecated = false
+    description = "The order price calculation  job status.  It is set by the system."
+    externalId = false
+    inlineHelpText = "Indicates the order price calculation job status.  It is set by the system."
+    label = "Price Calculation Status"
+    trackHistory = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__JobStatus
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__Quote__c {
+    apiName = "Order.SBQQ__Quote__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The quote where the order is created from."
+    externalId = false
+    inlineHelpText = "The quote where the order is created from."
+    label = "Quote"
+    referenceTo = [
+      salesforce.SBQQ__Quote__c,
+    ]
+    relationshipLabel = "Orders"
+    relationshipName = "Orders"
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number SBQQ__RenewalTerm__c {
+    apiName = "Order.SBQQ__RenewalTerm__c"
+    deprecated = false
+    description = "Specify the term of the renewal. By default, it matches the original contract term."
+    externalId = false
+    inlineHelpText = "Specify the term of the renewal. By default, it matches the original contract term."
+    label = "Renewal Term"
+    precision = 18
+    scale = 0
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Percent SBQQ__RenewalUpliftRate__c {
+    apiName = "Order.SBQQ__RenewalUpliftRate__c"
+    deprecated = false
+    description = "Rate of renewal price increases."
+    externalId = false
+    inlineHelpText = "Rate of renewal price increases."
+    label = "Renewal Uplift (%)"
+    precision = 11
+    scale = 3
+    trackHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Summary SBQQ__TaxAmount__c {
+    apiName = "Order.SBQQ__TaxAmount__c"
+    deprecated = false
+    description = "The estimated tax amount"
+    externalId = false
+    inlineHelpText = "The estimated tax amount"
+    label = "Estimated Tax"
+    summarizedField = "OrderItem.SBQQ__TaxAmount__c"
+    summaryForeignKey = "OrderItem.OrderId"
+    summaryOperation = "sum"
+    trackHistory = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+}

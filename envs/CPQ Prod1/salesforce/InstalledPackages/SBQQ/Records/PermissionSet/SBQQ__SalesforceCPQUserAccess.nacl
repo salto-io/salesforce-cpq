@@ -1,0 +1,46 @@
+salesforce.PermissionSet SBQQ__SalesforceCPQUserAccess {
+  fullName = "SBQQ__SalesforceCPQUserAccess"
+  classAccesses = {
+    SBQQ__OrderCreateController = {
+      apexClass = "SBQQ__OrderCreateController"
+      enabled = true
+    }
+  }
+  description = "Give standard users access to data protected through the setting Perform Enhanced Data Access Checks. Don’t clone this permission set."
+  fieldPermissions = {
+    OrderItem = {
+      SBQQ__SegmentKey__c = "ReadWrite"
+      SBQQ__UpgradedSubscription__c = "ReadWrite"
+    }
+    SBQQ__QuoteLine__c = {
+      SBQQ__HasConsumptionSchedule__c = "ReadOnly"
+    }
+  }
+  hasActivationRequired = false
+  label = "Salesforce CPQ User Access"
+  objectPermissions = {
+    SBQQ__Localization__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__Localization__c
+      viewAllRecords = false
+    }
+    SBQQ__PriceSchedule__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__PriceSchedule__c
+      viewAllRecords = false
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

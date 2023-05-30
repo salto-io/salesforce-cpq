@@ -1,0 +1,56 @@
+salesforce.Flow Dan_Record_Triggered_Flow {
+  fullName = "Dan_Record_Triggered_Flow"
+  apiVersion = 56
+  environments = "Default"
+  interviewLabel = "Dan Record-Triggered Flow {!$Flow.CurrentDateTime}"
+  label = "Dan Record-Triggered Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordUpdates = [
+    {
+      name = "update_name"
+      label = "update name"
+      locationX = 176
+      locationY = 311
+      inputAssignments = [
+        {
+          field = "Name"
+          value = {
+            stringValue = "\"Flow ran here\""
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "update_name"
+    }
+    object = salesforce.Account
+    recordTriggerType = "Create"
+    triggerType = "RecordBeforeSave"
+  }
+  status = "Active"
+}

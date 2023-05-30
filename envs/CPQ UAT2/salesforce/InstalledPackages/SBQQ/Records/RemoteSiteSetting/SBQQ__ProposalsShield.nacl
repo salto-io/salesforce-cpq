@@ -1,0 +1,11 @@
+salesforce.RemoteSiteSetting SBQQ__ProposalsShield {
+  fullName = "SBQQ__ProposalsShield"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://proposals-shield.steelbrick.com"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

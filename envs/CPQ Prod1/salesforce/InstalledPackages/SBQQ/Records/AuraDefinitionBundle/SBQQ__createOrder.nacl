@@ -1,0 +1,14 @@
+salesforce.AuraDefinitionBundle SBQQ__createOrder {
+  apiVersion = 57
+  description = "Create Order button component"
+  fullName = "SBQQ__createOrder"
+  type = "Component"
+  markup = "(hidden)"
+  controllerContent = "(hidden)"
+  helperContent = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,32 @@
+salesforce.GlobalValueSet SBQQ__PaperSize {
+  fullName = "SBQQ__PaperSize"
+  customValue = [
+    {
+      fullName = "Default"
+      default = true
+      label = "Default"
+    },
+    {
+      fullName = "Letter"
+      default = false
+      label = "Letter"
+    },
+    {
+      fullName = "Legal"
+      default = false
+      label = "Legal"
+    },
+    {
+      fullName = "A4"
+      default = false
+      label = "A4"
+    },
+  ]
+  masterLabel = "Paper Size"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

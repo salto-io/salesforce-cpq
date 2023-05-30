@@ -1,0 +1,33 @@
+salesforce.GlobalValueSet SBQQ__SubscriptionType {
+  fullName = "SBQQ__SubscriptionType"
+  customValue = [
+    {
+      fullName = "Renewable"
+      default = false
+      label = "Renewable"
+    },
+    {
+      fullName = "One-time"
+      default = false
+      label = "One-time"
+    },
+    {
+      fullName = "Renewable/Evergreen"
+      default = false
+      label = "Renewable/Evergreen"
+    },
+    {
+      fullName = "Evergreen"
+      default = false
+      label = "Evergreen"
+    },
+  ]
+  description = "Subscription type options"
+  masterLabel = "Subscription Type"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

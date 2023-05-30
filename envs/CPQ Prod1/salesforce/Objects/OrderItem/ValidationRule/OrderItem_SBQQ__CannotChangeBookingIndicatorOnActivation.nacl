@@ -1,0 +1,16 @@
+salesforce.ValidationRule OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation {
+  fullName = "OrderItem.SBQQ__CannotChangeBookingIndicatorOnActivation"
+  active = true
+  description = "Can’t edit the bookings status on an activated order product."
+  errorConditionFormula = "AND(SBQQ__Activated__c, ISCHANGED(SBQQ__BookingsIndicator__c))"
+  errorDisplayField = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+  errorMessage = "Can’t edit the bookings status on an activated order product."
+  _parent = [
+    salesforce.OrderItem,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

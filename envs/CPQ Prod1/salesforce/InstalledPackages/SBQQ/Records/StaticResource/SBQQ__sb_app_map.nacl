@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__sb_app_map {
+  cacheControl = "Public"
+  contentType = "text/javascript"
+  description = "sourcemaps for sb_app_js"
+  fullName = "SBQQ__sb_app_map"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sb_app_map.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

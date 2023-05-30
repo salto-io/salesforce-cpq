@@ -1,0 +1,145 @@
+salesforce.Layout SBQQ__PriceTier__c_SBQQ__Price_Tier_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceTier__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__Number__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__PriceModel__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__PriceSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__OriginalBlockPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__OriginalDiscountTier__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Price Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__LowerBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__UpperBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__DiscountAmount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__DiscountPercentage__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__Price__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__VolumnDiscount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__PriceTier__c.field.SBQQ__TermDiscount__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceTier__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__PriceTier__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000Vi7Vg"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__PriceTier__c-SBQQ__Price Tier Layout"
+  _parent = [
+    salesforce.SBQQ__PriceTier__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

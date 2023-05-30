@@ -1,0 +1,23 @@
+type salesforce.ReportFilter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string booleanFilter {
+  }
+  "List<salesforce.ReportFilterItem>" criteriaItems {
+  }
+  string language {
+  }
+  metadataType = "ReportFilter"
+}

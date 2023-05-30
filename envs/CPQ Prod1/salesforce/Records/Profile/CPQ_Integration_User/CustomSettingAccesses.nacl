@@ -1,0 +1,8 @@
+salesforce.Profile CPQ_Integration_User@s {
+  customSettingAccesses = {
+    SBQQ__FieldMetadata__c = {
+      enabled = true
+      name = "SBQQ__FieldMetadata__c"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__PriceAction__c_SBQQ__Target_Object_Validation {
+  fullName = "SBQQ__PriceAction__c.SBQQ__Target_Object_Validation"
+  active = true
+  description = "Prevents users from creating Price Actions targeting an out-of-scope object."
+  errorConditionFormula = "(ISPICKVAL(SBQQ__TargetObject__c, 'Product Option') && NOT(ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Product Option') || ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Configurator'))) || ((ISPICKVAL(SBQQ__TargetObject__c, 'Quote') || ISPICKVAL(SBQQ__TargetObject__c, 'Quote Line') || ISPICKVAL(SBQQ__TargetObject__c, 'Quote Line Pricing Guidance')) && NOT(ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Quote Line') || ISPICKVAL(SBQQ__Rule__r.SBQQ__TargetObject__c, 'Calculator')))"
+  errorDisplayField = salesforce.SBQQ__PriceAction__c.field.SBQQ__TargetObject__c
+  errorMessage = "Price Action Target Object does not match Evaluation Scope"
+  _parent = [
+    salesforce.SBQQ__PriceAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

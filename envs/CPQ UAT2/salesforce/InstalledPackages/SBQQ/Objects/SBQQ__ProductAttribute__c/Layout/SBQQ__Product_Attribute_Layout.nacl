@@ -1,0 +1,65 @@
+salesforce.Layout SBQQ__ProductAttribute__c_SBQQ__Product_Attribute_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__Attribute__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__TargetField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__AttributeSet__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__Sequence__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000002yD5d"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ProductAttribute__c-SBQQ__Product Attribute Layout"
+  _parent = [
+    salesforce.SBQQ__ProductAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

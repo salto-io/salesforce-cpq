@@ -1,0 +1,7 @@
+salesforce.SBQQ__PriceAction__c a0c3H000000cgX6QAI {
+  SBQQ__Field__c = "Unit Price"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.a0e3H0000009LAWQA2
+  SBQQ__SourceVariable__c = salesforce.SBQQ__SummaryVariable__c.instance.a1E3H000000NX9MUAW
+  SBQQ__TargetObject__c = "Quote"
+  _alias = "NewRule bbb 0"
+}

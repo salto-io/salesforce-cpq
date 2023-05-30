@@ -1,0 +1,19 @@
+salesforce.ListView SBQQ__InstallProcessorLog__c_SBQQ__All {
+  fullName = "SBQQ__InstallProcessorLog__c.SBQQ__All"
+  columns = [
+    "SBQQ__MethodName__c",
+    "SBQQ__Time__c",
+    "SBQQ__Version__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  language = "en_US"
+  _parent = [
+    salesforce.SBQQ__InstallProcessorLog__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

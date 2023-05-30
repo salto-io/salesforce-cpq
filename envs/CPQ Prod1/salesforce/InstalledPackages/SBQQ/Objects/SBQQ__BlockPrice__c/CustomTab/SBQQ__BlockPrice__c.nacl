@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__BlockPrice__c {
+  fullName = "SBQQ__BlockPrice__c"
+  customObject = true
+  description = "temp"
+  motif = "Custom36: Train"
+  _parent = [
+    salesforce.SBQQ__BlockPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

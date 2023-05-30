@@ -1,0 +1,20 @@
+salesforce.ValidationRule SBQQ__ProductRule__c_SBQQ__RequiredEvaluationEvent {
+  fullName = "SBQQ__ProductRule__c.SBQQ__RequiredEvaluationEvent"
+  active = true
+  description = "Validation for required evaluation events if scope is filled in."
+  errorConditionFormula = '''
+AND(
+            ISBLANK(TEXT(SBQQ__EvaluationEvent__c)),
+            OR(ISPICKVAL(SBQQ__Scope__c, "Quote"), ISPICKVAL(SBQQ__Scope__c, "Product"))
+            )
+'''
+  errorMessage = "The Evaluation Event field must be populated with a value."
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

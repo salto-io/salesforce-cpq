@@ -1,0 +1,188 @@
+type salesforce.SBQQ__ConfigurationRule__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this rule should be used in validating configurations."
+    externalId = false
+    inlineHelpText = "Indicates whether this rule should be used in validating configurations."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__AscendingNestedLevel__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__AscendingNestedLevel__c"
+    deprecated = false
+    description = "Include parent bundle configuration with the specified level when evaluating this rule's conditions in the configurator for alert, validation and selection rules."
+    externalId = false
+    inlineHelpText = "Include parent bundle configuration with the specified level when evaluating this rule's conditions in the configurator for alert, validation and selection rules."
+    label = "Parent Bundle Condition Level"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "1"
+        default = false
+        label = "1"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DescendingActionNesting__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__DescendingActionNesting__c"
+    deprecated = false
+    description = "Allow child bundle configurations up to the specified level to be targeted by this rule's actions when executing in the configurator for selection rules only."
+    externalId = false
+    inlineHelpText = "Allow child bundle configurations up to the specified level to be targeted by this rule's actions when executing in the configurator for selection rules only."
+    label = "Child Bundle Action Level"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "1"
+        default = false
+        label = "1"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DescendingNestedLevel__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__DescendingNestedLevel__c"
+    deprecated = false
+    description = "Include child bundle configurations to the specified level when evaluating this rule's conditions in the configurator for alert, validation and selection rules."
+    externalId = false
+    inlineHelpText = "Include child bundle configurations to the specified level when evaluating this rule's conditions in the configurator for alert, validation and selection rules."
+    label = "Child Bundle Condition Level"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "1"
+        default = false
+        label = "1"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ProductFeature__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__ProductFeature__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product feature validated by this rule."
+    externalId = false
+    inlineHelpText = "Select the product feature you want this rule to validate."
+    label = "Product Feature"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "$Source.SBQQ__Product__c"
+          operation = "equals"
+          valueField = "SBQQ__ProductFeature__c.SBQQ__ConfiguredSKU__c"
+        },
+      ]
+      isOptional = true
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductFeature__c,
+    ]
+    relationshipLabel = "Configuration Rules"
+    relationshipName = "Configuration_Rules"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__ProductRule__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__ProductRule__c"
+    deprecated = false
+    description = "The actual rule that defines logic used to validate product configuration."
+    externalId = false
+    inlineHelpText = "Select the product rule that contains the logic to validate your product configurations."
+    label = "Product Rule"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__ProductRule__c.SBQQ__Scope__c"
+          operation = "equals"
+          value = "Product"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductRule__c,
+    ]
+    relationshipLabel = "Configuration Rules"
+    relationshipName = "ConfigurationRules"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Configured product to be validated by this rule."
+    externalId = false
+    inlineHelpText = "Select the configured product you want this rule to validate."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Configuration Rules"
+    relationshipName = "ConfigurationRules"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__RuleEvaluationEvent__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__RuleEvaluationEvent__c"
+    deprecated = false
+    description = "Evaluation event of referenced rule."
+    externalId = false
+    formula = "TEXT(SBQQ__ProductRule__r.SBQQ__EvaluationEvent__c)"
+    inlineHelpText = "Specify when this rule should be evaluated."
+    label = "Rule Evaluation Event"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__RuleType__c {
+    apiName = "SBQQ__ConfigurationRule__c.SBQQ__RuleType__c"
+    deprecated = false
+    description = "Type of referenced rule. Convenience field to avoid querying related rule record."
+    externalId = false
+    formula = "TEXT(SBQQ__ProductRule__r.SBQQ__Type__c)"
+    inlineHelpText = "Type of product rule referenced by this configuration rule."
+    label = "Rule Type"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+}

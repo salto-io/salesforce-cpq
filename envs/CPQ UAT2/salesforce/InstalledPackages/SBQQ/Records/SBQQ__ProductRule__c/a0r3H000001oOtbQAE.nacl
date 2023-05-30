@@ -1,0 +1,9 @@
+salesforce.SBQQ__ProductRule__c a0r3H000001oOtbQAE {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "Save"
+  SBQQ__Scope__c = "Quote"
+  SBQQ__Type__c = "Selection"
+  Name = "Rule's logic"
+  _alias = "Rule's logic"
+}

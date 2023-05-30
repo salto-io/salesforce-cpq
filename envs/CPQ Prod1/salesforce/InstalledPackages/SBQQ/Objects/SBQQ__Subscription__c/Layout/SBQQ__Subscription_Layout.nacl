@@ -1,0 +1,294 @@
+salesforce.Layout SBQQ__Subscription__c_SBQQ__Subscription_Layout@uuuubuus {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Quantity__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__ProductName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__QuoteLine__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Account__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Contract__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__ContractNumber__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__StartDate__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__EndDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SubscriptionType__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Pricing Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__ProrateMultiplier__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Discount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__AdditionalDiscountAmount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__PartnerDiscount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__DistributorDiscount__c
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__MarkupRate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__MarkupAmount__c
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__UnitCost__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__ListPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SpecialPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__CustomerPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RegularPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__NetPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalPrice__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Renewal Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewedDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalUpliftRate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__RevisedSubscription__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Segment Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__Dimension__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SegmentUplift__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SegmentUpliftAmount__c
+            },
+            {
+              emptySpace = true
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SegmentQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SegmentStartDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.SBQQ__SegmentEndDate__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Subscription__c.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Subscription__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__Active__c",
+        "SBQQ__Asset__c",
+        "CREATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__SubscribedAsset__c.field.SBQQ__Subscription__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YQ1SA"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__Subscription__c-SBQQ__Subscription Layout"
+  _parent = [
+    salesforce.SBQQ__Subscription__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

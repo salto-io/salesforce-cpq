@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__QuoteLineEditorUI {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  fullName = "SBQQ__QuoteLineEditorUI"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__QuoteLineEditorUI.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

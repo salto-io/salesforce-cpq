@@ -1,0 +1,36 @@
+salesforce.LightningComponentBundle SBQQ__themePage {
+  fullName = "SBQQ__themePage"
+  lwcResources = {
+    lwcResource = {
+      themePage_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.js"
+      }
+      themePage_html@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.html"
+      }
+      schemaUtils_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/schemaUtils.js"
+      }
+      labels_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/labels.js"
+      }
+      less_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/less.js"
+      }
+      themePage_css@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.css"
+      }
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.RemoteSiteSetting SBQQ__ProposalsJP {
+  fullName = "SBQQ__ProposalsJP"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://proposals-jp.steelbrick.com"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

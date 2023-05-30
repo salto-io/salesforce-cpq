@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__PaginationContainers {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__PaginationContainers"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__PaginationContainers.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

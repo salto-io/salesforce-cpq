@@ -1,0 +1,126 @@
+salesforce.Layout SBQQ__ConfigurationRule__c_SBQQ__Configuration_Rule_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__Active__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__ProductRule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__ProductFeature__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__AscendingNestedLevel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__DescendingNestedLevel__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__DescendingActionNesting__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ConfigurationRule__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YPmDI"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ConfigurationRule__c-SBQQ__Configuration Rule Layout"
+  _parent = [
+    salesforce.SBQQ__ConfigurationRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

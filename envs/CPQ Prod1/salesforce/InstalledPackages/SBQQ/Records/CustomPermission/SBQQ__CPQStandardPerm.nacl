@@ -1,0 +1,11 @@
+salesforce.CustomPermission SBQQ__CPQStandardPerm {
+  fullName = "SBQQ__CPQStandardPerm"
+  description = "Allow users with CPQ PSL to access CPQ key features"
+  isLicensed = false
+  label = "CPQStandardPerm"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

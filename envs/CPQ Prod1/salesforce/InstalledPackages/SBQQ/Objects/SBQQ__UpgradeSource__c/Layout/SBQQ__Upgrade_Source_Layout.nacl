@@ -1,0 +1,96 @@
+salesforce.Layout SBQQ__UpgradeSource__c_SBQQ__Upgrade_Source_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__UpgradeSource__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__UpgradeSource__c.field.SBQQ__UpgradeProduct__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__UpgradeSource__c.field.SBQQ__UpgradeConversionRate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__UpgradeSource__c.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__UpgradeSource__c.field.SBQQ__SourceProduct__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__UpgradeSource__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__UpgradeSource__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000Rj1QG"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__UpgradeSource__c-SBQQ__Upgrade Source Layout"
+  _parent = [
+    salesforce.SBQQ__UpgradeSource__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

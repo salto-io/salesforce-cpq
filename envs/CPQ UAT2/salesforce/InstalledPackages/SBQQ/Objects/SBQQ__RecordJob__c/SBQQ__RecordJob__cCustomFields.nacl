@@ -1,0 +1,100 @@
+type salesforce.SBQQ__RecordJob__c {
+  salesforce.Checkbox SBQQ__IsRead__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__IsRead__c"
+    defaultValue = false
+    deprecated = false
+    description = "If true the user has been alerted of the record job's finished status"
+    externalId = false
+    inlineHelpText = "If checked the user has been alerted of the record job's finished status."
+    label = "Is Read"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__JobDetails__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobDetails__c"
+    deprecated = false
+    description = "The details of the background job performed if no job id was specified."
+    externalId = false
+    inlineHelpText = "The details of the background job performed if no job id was specified."
+    label = "Job Details"
+    length = 4000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__JobId__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobId__c"
+    deprecated = false
+    description = "The Apex Job Id"
+    externalId = false
+    label = "Job Id"
+    length = 90
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__JobStatus__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobStatus__c"
+    deprecated = false
+    description = "The status of the background job performed if no job id was specified."
+    externalId = false
+    inlineHelpText = "The status of the background job performed if no job id was specified."
+    label = "Job Status"
+    length = 40
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__RecordId__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__RecordId__c"
+    caseSensitive = false
+    deprecated = false
+    description = "The unique key for this record, comprised of the parent record Id and the type of job"
+    externalId = false
+    label = "Record Id"
+    length = 80
+    trackTrending = false
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__RedirectUrl__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__RedirectUrl__c"
+    deprecated = false
+    description = "Url to redirect to once the job finishes."
+    externalId = false
+    inlineHelpText = "Url to redirect to once the job finishes."
+    label = "Redirect URL"
+    length = 2000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__Stacktrace__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__Stacktrace__c"
+    deprecated = false
+    description = "The stacktrace for the error that caused the record job to fail."
+    externalId = false
+    inlineHelpText = "The stacktrace of the background job performed if no job id was specified."
+    label = "Stacktrace"
+    length = 4000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

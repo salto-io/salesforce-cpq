@@ -1,0 +1,48 @@
+salesforce.Report unfiled_public_SampleReportofAccounts@zcd {
+  columns = [
+    {
+      field = "USERS.NAME"
+    },
+    {
+      field = "ACCOUNT.NAME"
+    },
+    {
+      field = "TYPE"
+    },
+    {
+      field = "DUE_DATE"
+    },
+    {
+      field = "LAST_UPDATE"
+    },
+    {
+      field = "ADDRESS1_STATE"
+    },
+  ]
+  description = "How many accounts are being added to Salesforce?"
+  format = "Matrix"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Accounts"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "AccountList"
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofAccounts"
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__TreeSet {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__TreeSet"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

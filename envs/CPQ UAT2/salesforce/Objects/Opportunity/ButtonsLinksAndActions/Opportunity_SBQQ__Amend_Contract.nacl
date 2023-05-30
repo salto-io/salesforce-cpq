@@ -1,0 +1,20 @@
+salesforce.WebLink Opportunity_SBQQ__Amend_Contract {
+  fullName = "Opportunity.SBQQ__Amend_Contract"
+  availability = "online"
+  description = "Redirects to a contract selector page to select contracts to amend."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Amend Contract"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__SelectContractOpp
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

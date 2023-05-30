@@ -1,0 +1,153 @@
+type salesforce.FieldRestrictionRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  boolean active {
+  }
+  string classification {
+  }
+  string classificationType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ComplianceCategory",
+        "FieldSet",
+      ]
+    }
+  }
+  string description {
+  }
+  string enforcementType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "D360_Restrict",
+        "FieldRestrict",
+        "Restrict",
+        "Scoping",
+      ]
+    }
+  }
+  string masterLabel {
+  }
+  string recordFilter {
+  }
+  string targetEntity {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Account",
+        "Case",
+        "Contact",
+        "Contract",
+        "Event",
+        "Lead",
+        "Opportunity",
+        "SBQQ__AttributeSet__c",
+        "SBQQ__AttributeValue__c",
+        "SBQQ__BlockPrice__c",
+        "SBQQ__ColumnMetadata__c",
+        "SBQQ__ConfigurationAttribute__c",
+        "SBQQ__ConfigurationRule__c",
+        "SBQQ__ContractedPrice__c",
+        "SBQQ__Cost__c",
+        "SBQQ__CustomActionCondition__c",
+        "SBQQ__CustomAction__c",
+        "SBQQ__CustomScript__c",
+        "SBQQ__Dimension__c",
+        "SBQQ__DiscountCategory__c",
+        "SBQQ__DiscountSchedule__c",
+        "SBQQ__DiscountTier__c",
+        "SBQQ__ErrorCondition__c",
+        "SBQQ__FavoriteProduct__c",
+        "SBQQ__FavoriteShare__c",
+        "SBQQ__Favorite__c",
+        "SBQQ__FieldSetMetadata__c",
+        "SBQQ__ImportColumn__c",
+        "SBQQ__ImportFormat__c",
+        "SBQQ__InstallProcessorLog__c",
+        "SBQQ__LineColumn__c",
+        "SBQQ__Localization__c",
+        "SBQQ__LookupData__c",
+        "SBQQ__LookupQuery__c",
+        "SBQQ__OptionConstraint__c",
+        "SBQQ__OrderItemConsumptionRate__c",
+        "SBQQ__OrderItemConsumptionSchedule__c",
+        "SBQQ__PriceAction__c",
+        "SBQQ__PriceCondition__c",
+        "SBQQ__PriceRule__c",
+        "SBQQ__PriceSchedule__c",
+        "SBQQ__PriceTier__c",
+        "SBQQ__PricingGuidanceTier__c",
+        "SBQQ__PricingGuidance__c",
+        "SBQQ__ProcessInputCondition__c",
+        "SBQQ__ProcessInputValue__c",
+        "SBQQ__ProcessInput__c",
+        "SBQQ__ProductAction__c",
+        "SBQQ__ProductAttributeSet__c",
+        "SBQQ__ProductAttribute__c",
+        "SBQQ__ProductFeature__c",
+        "SBQQ__ProductOption__c",
+        "SBQQ__ProductRule__c",
+        "SBQQ__QuoteDocument__c",
+        "SBQQ__QuoteLineConsumptionRate__c",
+        "SBQQ__QuoteLineConsumptionSchedule__c",
+        "SBQQ__QuoteLineGroup__c",
+        "SBQQ__QuoteLinePricingGuidance__c",
+        "SBQQ__QuoteLine__c",
+        "SBQQ__QuoteProcess__c",
+        "SBQQ__QuoteTemplate__c",
+        "SBQQ__QuoteTerm__c",
+        "SBQQ__Quote__c",
+        "SBQQ__RecordJob__c",
+        "SBQQ__RelatedContent__c",
+        "SBQQ__SearchFilter__c",
+        "SBQQ__SearchIndex__c",
+        "SBQQ__SolutionGroup__c",
+        "SBQQ__SubscribedAsset__c",
+        "SBQQ__SubscribedQuoteLine__c",
+        "SBQQ__SubscriptionConsumptionRate__c",
+        "SBQQ__SubscriptionConsumptionSchedule__c",
+        "SBQQ__Subscription__c",
+        "SBQQ__SummaryVariable__c",
+        "SBQQ__TaxExemptionCertificate__c",
+        "SBQQ__TemplateContent__c",
+        "SBQQ__TemplateSection__c",
+        "SBQQ__TermCondition__c",
+        "SBQQ__Theme__c",
+        "SBQQ__TimingLog__c",
+        "SBQQ__UpgradeSource__c",
+        "SBQQ__WebQuoteLine__c",
+        "SBQQ__WebQuote__c",
+        "SaltoData__c",
+        "Task",
+        "User",
+        "Yariv__c",
+      ]
+    }
+  }
+  string userCriteria {
+  }
+  number version {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "rule"
+  dirName = "fieldRestrictionRules"
+  metadataType = "FieldRestrictionRule"
+}

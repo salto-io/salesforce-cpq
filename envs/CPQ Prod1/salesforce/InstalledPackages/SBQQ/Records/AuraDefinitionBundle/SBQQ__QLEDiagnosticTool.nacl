@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle SBQQ__QLEDiagnosticTool {
+  apiVersion = 57
+  description = "Quote Line Editor Diagnostic Tool"
+  fullName = "SBQQ__QLEDiagnosticTool"
+  type = "Component"
+  controllerContent = "(hidden)"
+  helperContent = "(hidden)"
+  styleContent = "(hidden)"
+  markup = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

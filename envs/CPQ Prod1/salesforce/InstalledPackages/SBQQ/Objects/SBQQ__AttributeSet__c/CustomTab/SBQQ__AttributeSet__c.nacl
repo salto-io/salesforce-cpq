@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__AttributeSet__c {
+  fullName = "SBQQ__AttributeSet__c"
+  customObject = true
+  motif = "Custom42: Treasure chest"
+  _parent = [
+    salesforce.SBQQ__AttributeSet__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

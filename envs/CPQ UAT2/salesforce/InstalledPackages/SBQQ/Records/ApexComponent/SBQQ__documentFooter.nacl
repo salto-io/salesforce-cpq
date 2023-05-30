@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__documentFooter {
+  apiVersion = 57
+  description = "Renders quote document footer using content section specified in the template."
+  label = "Document Footer"
+  fullName = "SBQQ__documentFooter"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

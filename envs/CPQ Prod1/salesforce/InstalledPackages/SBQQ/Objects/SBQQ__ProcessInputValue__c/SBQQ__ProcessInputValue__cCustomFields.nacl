@@ -1,0 +1,68 @@
+type salesforce.SBQQ__ProcessInputValue__c {
+  salesforce.Lookup SBQQ__ProcessInputID__c {
+    apiName = "SBQQ__ProcessInputValue__c.SBQQ__ProcessInputID__c"
+    deleteConstraint = "Restrict"
+    deprecated = false
+    description = "This is the Process Input that the object belongs to."
+    externalId = false
+    inlineHelpText = "Choose the Process Input that the object belongs to."
+    label = "Process Input ID"
+    referenceTo = [
+      salesforce.SBQQ__ProcessInput__c,
+    ]
+    relationshipLabel = "Process Input Values"
+    relationshipName = "Process_Input_Values"
+    _required = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__QuoteId__c {
+    apiName = "SBQQ__ProcessInputValue__c.SBQQ__QuoteId__c"
+    deleteConstraint = "Restrict"
+    deprecated = false
+    description = "The Id of the Quote that this Process Input Value belongs to."
+    externalId = false
+    inlineHelpText = "The Id of the Quote that this Process Input Value belongs to."
+    label = "Quote ID"
+    referenceTo = [
+      salesforce.SBQQ__Quote__c,
+    ]
+    relationshipName = "Process_Input_Values"
+    _required = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__UserID__c {
+    apiName = "SBQQ__ProcessInputValue__c.SBQQ__UserID__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "This Process Input value belongs to the user."
+    externalId = false
+    inlineHelpText = "This Process Input value belongs to the user."
+    label = "UserID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    relationshipName = "Process_Input_Values"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__Value__c {
+    apiName = "SBQQ__ProcessInputValue__c.SBQQ__Value__c"
+    deprecated = false
+    description = "This is the answer to the input process value."
+    externalId = false
+    inlineHelpText = "This is the answer to the input process value."
+    label = "Value"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

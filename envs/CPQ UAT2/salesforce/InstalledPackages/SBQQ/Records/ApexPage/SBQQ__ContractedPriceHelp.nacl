@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ContractedPriceHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ContractedPriceHelp"
+  fullName = "SBQQ__ContractedPriceHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ContractedPriceHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

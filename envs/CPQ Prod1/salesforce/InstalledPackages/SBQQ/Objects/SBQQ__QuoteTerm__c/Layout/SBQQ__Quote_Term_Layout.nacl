@@ -1,0 +1,196 @@
+salesforce.Layout SBQQ__QuoteTerm__c_SBQQ__Quote_Term_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteTerm__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__PrintOrder__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__ParentTerm__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__ConditionsMet__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Active__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Locked__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Quote__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__StandardTerm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__TemplateContent__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteTerm__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteTerm__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Body"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__Body__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__TestedField__c",
+        "SBQQ__TestedVariable__c",
+        "SBQQ__Operator__c",
+        "SBQQ__Value__c",
+      ]
+      relatedList = salesforce.SBQQ__TermCondition__c.field.SBQQ__QuoteTerm__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__PrintOrder__c",
+        "SBQQ__Status__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__ParentTerm__c
+      sortField = "SBQQ__PrintOrder__c"
+      sortOrder = "Asc"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Status__c",
+        "SBQQ__Quote__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__QuoteTerm__c.field.SBQQ__StandardTerm__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YAZx0"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__QuoteTerm__c-SBQQ__Quote Term Layout"
+  _parent = [
+    salesforce.SBQQ__QuoteTerm__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

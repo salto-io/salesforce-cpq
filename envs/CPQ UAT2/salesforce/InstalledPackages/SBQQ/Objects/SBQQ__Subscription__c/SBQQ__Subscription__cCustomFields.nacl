@@ -1,0 +1,1254 @@
+type salesforce.SBQQ__Subscription__c {
+  salesforce.Lookup SBQQ__Account__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Account__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Account that owns this subscription. This relationship is used for volume discount calculations."
+    externalId = false
+    inlineHelpText = "Account that owns this subscription. This relationship is used for volume discount calculations."
+    label = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__AdditionalDiscountAmount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__AdditionalDiscountAmount__c"
+    deprecated = false
+    description = "Additional Discount for this Subscription, if expressed as an amount"
+    externalId = false
+    inlineHelpText = "Additional Discount for this Subscription, if expressed as an amount"
+    label = "Additional Disc. (Amt)"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__BillingFrequency__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__BillingFrequency__c"
+    deprecated = false
+    description = "Defines the billing frequency."
+    externalId = false
+    inlineHelpText = "Defines the billing frequency."
+    label = "Billing Frequency"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingFrequency
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__BillingType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__BillingType__c"
+    deprecated = false
+    description = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    externalId = false
+    inlineHelpText = "The billing type that defines when the billing occurs. Billing in advance lets you bill your customers for products or services before you provide them; Billing in arrears lets you bill your customers after the products or services are provided."
+    label = "Billing Type"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Bundle__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Bundle__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this line item represents a package; meaning, it includes other line items in this quote."
+    externalId = false
+    inlineHelpText = "Indicates whether this line item represents a package; meaning, it includes other line items in this quote."
+    label = "Package"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__BundledQuantity__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__BundledQuantity__c"
+    deprecated = false
+    description = "For items with calculated quantities this field hold the original (user entered) quantity."
+    externalId = false
+    inlineHelpText = "For items with calculated quantities this field holds the original quantity entered by the user."
+    label = "Original Quantity"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Bundled__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Bundled__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items are zero price and do not allow price or quantity to be edited."
+    externalId = false
+    inlineHelpText = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited."
+    label = "Bundled"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ChargeType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ChargeType__c"
+    deprecated = false
+    description = "The type of the product charge.  This is a system field that is derived from the associated product."
+    externalId = false
+    inlineHelpText = "The type of the product charge.  This is a system field that is derived from the associated product."
+    label = "Charge Type"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__ChargeType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__ComponentDiscountedByPackage__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ComponentDiscountedByPackage__c"
+    defaultValue = false
+    deprecated = false
+    description = "Fixes additional discount for this component to the parent package discount."
+    externalId = false
+    inlineHelpText = "Fixes additional discount for this component to the parent package discount."
+    label = "Component Discounted By Package"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ComponentSubscriptionScope__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ComponentSubscriptionScope__c"
+    deprecated = false
+    description = "Subscription scope set at the component level. This field overrides the subscriptions cope copied from the product."
+    externalId = false
+    inlineHelpText = "Percent of Total scope set at the component level. This field overrides the Percent of Total scope copied from the Product Option."
+    label = "Component Percent of Total Scope"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Package"
+        default = false
+        label = "Package"
+      },
+      {
+        fullName = "Components"
+        default = false
+        label = "Components"
+      },
+      {
+        fullName = "Both"
+        default = false
+        label = "Package & Components"
+      },
+      {
+        fullName = "Entire Hierarchy"
+        default = false
+        label = "Entire Hierarchy"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__ContractNumber__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ContractNumber__c"
+    deprecated = false
+    description = "Number of associated contract."
+    externalId = false
+    formula = "SBQQ__Contract__r.ContractNumber"
+    inlineHelpText = "Number of associated contract."
+    label = "Contract #"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__Contract__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Contract__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Contract that governs this subscription."
+    externalId = false
+    inlineHelpText = "Contract that governs this subscription."
+    label = "Contract"
+    referenceTo = [
+      salesforce.Contract,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__CreditProductId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__CreditProductId__c"
+    deprecated = false
+    description = "ID of upgrade credit product for this subscription."
+    externalId = false
+    formula = "SBQQ__Product__r.SBQQ__UpgradeCredit__c"
+    inlineHelpText = "ID of upgrade credit product for this subscription."
+    label = "Credit Product Id"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency SBQQ__CustomerPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__CustomerPrice__c"
+    deprecated = false
+    description = "Price the end user paid for this subscription."
+    externalId = false
+    inlineHelpText = "Price paid for this subscription."
+    label = "Customer Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__DimensionType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__DimensionType__c"
+    deprecated = false
+    externalId = false
+    formula = "TEXT(SBQQ__Dimension__r.SBQQ__Type__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Dimension Type"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__Dimension__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Dimension__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Price Dimension associated with this Subscription"
+    externalId = false
+    inlineHelpText = "Price Dimension associated with this Subscription"
+    label = "Price Dimension"
+    referenceTo = [
+      salesforce.SBQQ__Dimension__c,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DiscountScheduleType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__DiscountScheduleType__c"
+    deprecated = false
+    description = "Discount schedule type. Must be a stored value because it's used in formula fields that are rolled up."
+    externalId = false
+    inlineHelpText = "Discount schedule type. Copied from Type field in associated discount schedule."
+    label = "Discount Schedule Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Range"
+        default = false
+        label = "Range"
+      },
+      {
+        fullName = "Slab"
+        default = false
+        label = "Slab"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__DiscountSchedule__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__DiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Specify discounts in terms of % or Amt to be discounted off the product's price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price & resulting total is stored in the Regular Price"
+    externalId = false
+    inlineHelpText = "Specify discounts in terms of % or Amt to be discounted off the product's price using quantity purchased or term. Set quantity/term ranges in tiers of different discount %. Discount is applied to List Price & resulting total is stored in the Regular Price"
+    label = "Discount Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__Discount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Discount__c"
+    deprecated = false
+    description = "Additional Discount for this Subscription, if expressed as a percentage"
+    externalId = false
+    inlineHelpText = "Additional Discount for this Subscription, if expressed as a percentage"
+    label = "Additional Disc. (%)"
+    precision = 11
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__DistributorDiscount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__DistributorDiscount__c"
+    deprecated = false
+    description = "Discount to be taken on top of the Partner Discount."
+    externalId = false
+    inlineHelpText = "Discount to be taken on top of the Partner Discount."
+    label = "Distributor Discount"
+    precision = 5
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__DynamicOptionId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__DynamicOptionId__c"
+    deprecated = false
+    description = "Contains feature id and product id to identify the feature and optional SKU associated with this line."
+    externalId = false
+    inlineHelpText = "Identifies feature and dynamic option for this line."
+    label = "Dynamic Option ID"
+    length = 40
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.FormulaDate SBQQ__EndDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__EndDate__c"
+    deprecated = false
+    description = "The last date this contract is valid."
+    externalId = false
+    formula = "if ( ISBLANK (SBQQ__SubscriptionEndDate__c), SBQQ__Contract__r.EndDate, SBQQ__SubscriptionEndDate__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "The last date this contract is valid."
+    label = "End Date"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox SBQQ__HasConsumptionSchedule__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__HasConsumptionSchedule__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates if this subscription has at least one consumption schedule"
+    externalId = false
+    inlineHelpText = "Indicates if this subscription has at least one consumption schedule"
+    label = "Has Consumption Schedules"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__ListPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ListPrice__c"
+    deprecated = false
+    description = "List price for this subscription product."
+    externalId = false
+    inlineHelpText = "List price for this subscription product."
+    label = "List Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__MarkupAmount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__MarkupAmount__c"
+    deprecated = false
+    description = "Markup for this Subscription, if expressed as an amount"
+    externalId = false
+    inlineHelpText = "Markup for this Subscription, if expressed as an amount"
+    label = "Markup (Amt)"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__MarkupRate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__MarkupRate__c"
+    deprecated = false
+    description = "Markup for this Subscription, if expressed as a percentage"
+    externalId = false
+    inlineHelpText = "Markup for this Subscription, if expressed as a percentage"
+    label = "Markup (%)"
+    precision = 8
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__NetPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__NetPrice__c"
+    deprecated = false
+    description = "Net price for this subscription."
+    externalId = false
+    inlineHelpText = "Net price for this subscription."
+    label = "Net Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Number__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Number__c"
+    deprecated = false
+    description = "Number indicating this line's position within its group or quote."
+    externalId = false
+    inlineHelpText = "Number indicating this line's position within its group or quote."
+    label = "Number"
+    precision = 5
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__OptionDiscountAmount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OptionDiscountAmount__c"
+    deprecated = false
+    description = "Discount extended on this product because it's part of a package."
+    externalId = false
+    inlineHelpText = "Discount extended on this product because it's part of a package."
+    label = "Option Discount (Amt)"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__OptionDiscount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OptionDiscount__c"
+    deprecated = false
+    description = "If this line is for an optional SKU, this field captures any discount given to the package and extended to the option."
+    externalId = false
+    inlineHelpText = "If this line is for an optional SKU, this field captures any discount given to the package and extended to the option."
+    label = "Option Discount (%)"
+    precision = 5
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__OptionLevel__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OptionLevel__c"
+    deprecated = false
+    description = "Indicates nest level of this option (only applies to lines that are generated from options)."
+    externalId = false
+    inlineHelpText = "Indicates nest level of this option (only applies to lines that are generated from options)."
+    label = "Option Level"
+    precision = 5
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__OptionType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OptionType__c"
+    deprecated = false
+    description = "Indicates the Option Type, which is copied from related Product Option. Determines how quantity is calculated."
+    externalId = false
+    inlineHelpText = "Indicates the Option Type, which is copied from related Product Option. Determines how quantity is calculated."
+    label = "Option Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Component"
+        default = false
+        label = "Component"
+      },
+      {
+        fullName = "Accessory"
+        default = false
+        label = "Accessory"
+      },
+      {
+        fullName = "Related Product"
+        default = false
+        label = "Related Product"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__OrderProduct__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OrderProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The order product where this subscription is originated from."
+    externalId = false
+    inlineHelpText = "The order product where this subscription is generated from."
+    label = "Order Product"
+    referenceTo = [
+      salesforce.OrderItem,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__OriginalQuoteLine__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OriginalQuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Exists for convenience of not having to run relationship queries."
+    externalId = false
+    inlineHelpText = "Original Quote Line of the subscription."
+    label = "Original Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Quote Lines (Derived)"
+    relationshipName = "OriginalQuoteLine"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__OriginalUnitCost__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__OriginalUnitCost__c"
+    deprecated = false
+    description = "Original unit cost of the subscription at the time of purchase before Cost Schedules were applied."
+    externalId = false
+    inlineHelpText = "Original unit cost of the subscription at the time of purchase before Cost Schedules were applied."
+    label = "Original Unit Cost"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__PackageProductCode__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__PackageProductCode__c"
+    deprecated = false
+    description = "Product code for the package generated by appending codes of selected components according to specified pattern."
+    externalId = false
+    inlineHelpText = "A code listing each of this package's components based on their component codes."
+    label = "Package Product Code"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Html SBQQ__PackageProductDescription__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__PackageProductDescription__c"
+    deprecated = false
+    description = "Product Description for the package generated by appending descriptions of selected components according to specified pattern."
+    externalId = false
+    inlineHelpText = "A description of each component in this package."
+    label = "Package Product Description"
+    length = 32000
+    trackTrending = false
+    visibleLines = 25
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__PartnerDiscount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__PartnerDiscount__c"
+    deprecated = false
+    description = "Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price."
+    externalId = false
+    inlineHelpText = "Partner discounts are applied after all automatic and discretionary discounts. The partner discount is taken into account in the Partner Price."
+    label = "Partner Discount"
+    precision = 5
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__PricingMethod__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__PricingMethod__c"
+    deprecated = false
+    description = "Determines how the price for this line item is set. \"List\" = calculated by subtracting discount from list price. \"Cost\"  = calculated by adding markup to cost."
+    externalId = false
+    inlineHelpText = "Indicates how the price for this line item is calculated. \"List\" = subtracting discount from list price. \"Cost\" = adding markup to cost."
+    label = "Pricing Method"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "List"
+        default = true
+        label = "List"
+      },
+      {
+        fullName = "Cost"
+        default = false
+        label = "Cost"
+      },
+      {
+        fullName = "Block"
+        default = false
+        label = "Block"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+      {
+        fullName = "Custom"
+        default = false
+        label = "Custom"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__ProductId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ProductId__c"
+    deprecated = false
+    description = "Convenience field to support integration with Service Cloud."
+    externalId = false
+    formula = "SBQQ__Product__c"
+    inlineHelpText = "Convenience field to support integration with Service Cloud."
+    label = "Product Id"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__ProductName__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ProductName__c"
+    deprecated = false
+    description = "Pulls in the Product Name"
+    externalId = false
+    formula = "SBQQ__Product__r.Name"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "Pulls in the Product Name"
+    label = "Product Name"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__ProductOption__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ProductOption__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product option that generated this line (if any)."
+    externalId = false
+    inlineHelpText = "Product option that generated this line (if any)."
+    label = "Product Option"
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ProductSubscriptionType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ProductSubscriptionType__c"
+    deprecated = false
+    description = "Set the subscription's product subscription type."
+    externalId = false
+    inlineHelpText = "Set the subscription's product subscription type."
+    label = "Product Subscription Type"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product used to sell this subscription."
+    externalId = false
+    inlineHelpText = "Product used to sell this subscription."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__ProrateMultiplier__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__ProrateMultiplier__c"
+    deprecated = false
+    description = "Calculated ratio used to compute prorated price."
+    externalId = false
+    inlineHelpText = "Calculated ratio used to compute prorated price."
+    label = "Prorate Multiplier"
+    precision = 8
+    scale = 4
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Quantity__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__Quantity__c"
+    deprecated = false
+    description = "Quantity of this subscription product purchased by the customer."
+    externalId = false
+    inlineHelpText = "Quantity of this subscription product purchased by the customer."
+    label = "Quantity"
+    precision = 12
+    _required = true
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__QuoteLine__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__QuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Quote line that generated this subscription."
+    externalId = false
+    inlineHelpText = "Quote line that generated this subscription."
+    label = "Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Subscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__RegularPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RegularPrice__c"
+    deprecated = false
+    description = "Regular Price for this Subscription."
+    externalId = false
+    inlineHelpText = "Regular Price for this Subscription."
+    label = "Regular Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__RenewalPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalPrice__c"
+    deprecated = false
+    description = "Define the price of quote lines that appear on the renewal quote when you renew this subscription. This field overrides the result of price calculations from your account’s renewal pricing method. If renewal pricing method is Uplift, uplift will be applied to the Renewal Price."
+    externalId = false
+    inlineHelpText = "Override the default calculated price of this subscription on a renewal quote. If your account's renewal pricing method is Uplift, the uplift applies to this renewal price."
+    label = "Renewal Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__RenewalProductId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalProductId__c"
+    deprecated = false
+    description = "Exists for convenience of not having to run relationship queries."
+    externalId = false
+    formula = "IF(ISBLANK(SBQQ__Product__r.SBQQ__RenewalProduct__c),SBQQ__Product__c,IF(ISPICKVAL(SBQQ__Product__r.SBQQ__RenewalProduct__r.SBQQ__SubscriptionPricing__c, ''), SBQQ__Product__c, SBQQ__Product__r.SBQQ__RenewalProduct__c))"
+    inlineHelpText = "Product ID for the renewal subscription."
+    label = "Renewal Product Id"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__RenewalProductOptionId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalProductOptionId__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__ProductOption__r.SBQQ__RenewalProductOption__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Renewal Product Option ID"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__RenewalProductOptionProductId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalProductOptionProductId__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__ProductOption__r.SBQQ__RenewalProductOption__r.SBQQ__OptionalSKU__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Renewal Product Option Product ID"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__RenewalProductOptionSubscriptionPricing__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalProductOptionSubscriptionPricing__c"
+    deprecated = false
+    externalId = false
+    formula = "TEXT(SBQQ__ProductOption__r.SBQQ__RenewalProductOption__r.SBQQ__OptionalSKU__r.SBQQ__SubscriptionPricing__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Renewal Product Option Sub Pricing"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number SBQQ__RenewalQuantity__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalQuantity__c"
+    deprecated = false
+    description = "Quantity of this subscription product that will be renewed."
+    externalId = false
+    inlineHelpText = "Quantity of this subscription product that will be renewed."
+    label = "Renewal Quantity"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__RenewalUpliftRate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewalUpliftRate__c"
+    deprecated = false
+    description = "Rate of renewal price increases."
+    externalId = false
+    inlineHelpText = "Rate of renewal price increases."
+    label = "Renewal Uplift (%)"
+    precision = 11
+    scale = 3
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__RenewedDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RenewedDate__c"
+    deprecated = false
+    description = "Date this subscription was renewed as determined by date the renewal opportunity was contracted."
+    externalId = false
+    inlineHelpText = "Date this subscription was renewed. Blank means it has not been renewed."
+    label = "Renewed Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__RequiredById__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RequiredById__c"
+    deprecated = false
+    description = "What Id the field is required by."
+    externalId = false
+    inlineHelpText = "What Id the field is required by."
+    label = "Required By Id"
+    length = 18
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__RequiredByProduct__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RequiredByProduct__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Parent Product of this subscription."
+    externalId = false
+    inlineHelpText = "Parent Product of this subscription."
+    label = "Parent Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Child Subscriptions"
+    relationshipName = "ChildSubscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__RevisedSubscription__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RevisedSubscription__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "Lookup the Revised Subscription for this field."
+    label = "Revised Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Subscriptions"
+    relationshipName = "Revisions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__RootId__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__RootId__c"
+    deprecated = false
+    description = "The ID of the subscription or asset at the root of the bundle that contains this subscription"
+    externalId = true
+    inlineHelpText = "The ID of the subscription or asset at the root of the bundle that contains this subscription"
+    label = "Root Id"
+    length = 18
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Date SBQQ__SegmentEndDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentEndDate__c"
+    deprecated = false
+    description = "For MDQ products, the End Date from the original segment's Quote Line."
+    externalId = false
+    inlineHelpText = "For MDQ products, the End Date from the original segment's Quote Line."
+    label = "Segment End Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__SegmentIndex__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentIndex__c"
+    deprecated = false
+    description = "For multi-segmented Products, Index representing this Quote Line's position in the segment table."
+    externalId = false
+    inlineHelpText = "For multi-segmented Products, Index representing this Quote Line's position in the segment table."
+    label = "Segment Index"
+    precision = 2
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__SegmentKey__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentKey__c"
+    deprecated = false
+    externalId = false
+    label = "Segment Key"
+    length = 30
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__SegmentLabel__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentLabel__c"
+    deprecated = false
+    description = "For multi-segmented Products, this is the Column header label (e.g. \"Year 1\") associated with this line."
+    externalId = false
+    inlineHelpText = "For multi-segmented Products, this is the Column header label (e.g. \"Year 1\") associated with this line."
+    label = "Segment Label"
+    length = 25
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__SegmentQuantity__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentQuantity__c"
+    deprecated = false
+    description = "For MDQ Products, the quantity corresponding to the segment's original Quote Line"
+    externalId = false
+    inlineHelpText = "For MDQ Products, the quantity corresponding to the segment's original Quote Line"
+    label = "Segment Quantity"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__SegmentStartDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentStartDate__c"
+    deprecated = false
+    description = "For MDQ products, the Start Date from the original segment's Quote Line."
+    externalId = false
+    inlineHelpText = "For MDQ products, the Start Date from the original segment's Quote Line."
+    label = "Segment Start Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__SegmentUpliftAmount__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentUpliftAmount__c"
+    deprecated = false
+    description = "For MDQ products, the Uplift Amount from the original segment's Quote Line."
+    externalId = false
+    inlineHelpText = "For MDQ products, the Uplift Amount from the original segment's Quote Line."
+    label = "Segment Uplift (Amt)"
+    precision = 12
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__SegmentUplift__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SegmentUplift__c"
+    deprecated = false
+    description = "For MDQ products, the Uplift from the original segment's Quote Line."
+    externalId = false
+    inlineHelpText = "For MDQ products, the Uplift from the original segment's Quote Line."
+    label = "Segment Uplift"
+    precision = 9
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__SpecialPrice__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SpecialPrice__c"
+    deprecated = false
+    description = "Special Price for this Subscription."
+    externalId = false
+    inlineHelpText = "Special Price for this Subscription."
+    label = "Special Price"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaDate SBQQ__StartDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__StartDate__c"
+    deprecated = false
+    description = "The first date this subscription is in effect."
+    externalId = false
+    formula = "if ( ISBLANK (SBQQ__SubscriptionStartDate__c), SBQQ__Contract__r.StartDate, SBQQ__SubscriptionStartDate__c)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    inlineHelpText = "The first date this subscription is in effect."
+    label = "Start Date"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date SBQQ__SubscriptionEndDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionEndDate__c"
+    deprecated = false
+    description = "Matches the quote line end date by default. If blank, it will match the contract end date."
+    externalId = false
+    inlineHelpText = "Matches the quote line end date by default. If blank, it will match the contract end date."
+    label = "Subscription End Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__SubscriptionPricing__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionPricing__c"
+    deprecated = false
+    description = "Method of calculating the subscription price."
+    externalId = false
+    inlineHelpText = "Method of calculating the subscription price."
+    label = "Subscription Pricing"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Fixed Price"
+        default = false
+        label = "Fixed Price"
+      },
+      {
+        fullName = "Percent Of Total"
+        default = false
+        label = "Percent Of Total"
+      },
+    ]
+    sorted = false
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Date SBQQ__SubscriptionStartDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionStartDate__c"
+    deprecated = false
+    description = "Matches the quote line start date by default. If blank, it will match the contract start date."
+    externalId = false
+    inlineHelpText = "Matches the quote line start date by default. If blank, it will match the contract start date."
+    label = "Subscription Start Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__SubscriptionType__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionType__c"
+    deprecated = false
+    description = "Indicates the subscription type to determine contract's pricing."
+    externalId = false
+    inlineHelpText = "Indicates the subscription type to determine contract's pricing."
+    label = "Subscription Type"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
+    restricted = true
+    fieldDependency = {
+      controllingField = "SBQQ__ProductSubscriptionType__c"
+      valueSettings = [
+        {
+          valueName = "Renewable"
+          controllingFieldValue = [
+            "Renewable",
+            "Renewable/Evergreen",
+          ]
+        },
+        {
+          valueName = "One-time"
+          controllingFieldValue = [
+            "One-time",
+          ]
+        },
+        {
+          valueName = "Evergreen"
+          controllingFieldValue = [
+            "Renewable/Evergreen",
+            "Evergreen",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__TermDiscountSchedule__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__TermDiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Schedule for discounts based on subscription term. This is useful when you want to show a breakdown of payments in separate groups, for different terms, yet you want to discount reflected for the entire duration of the subscription. Leave Term Discount Level blank if you want discount schedules applied based on the term of each line item."
+    externalId = false
+    inlineHelpText = "Schedule for discounts based on subscription term. Setting this to \"Group\" applies the discount rate for the group term, while setting it to \"Quote\" applies the discount rate for the entire quote term, regardless of the different terms in your groups."
+    label = "Term Discount Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Subscriptions (Term Discouned)"
+    relationshipName = "TermDiscountedSubscriptions"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__TerminatedDate__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__TerminatedDate__c"
+    deprecated = false
+    description = "Date on which this subscription terminated."
+    externalId = false
+    inlineHelpText = "Date the subscription terminated. Automatically populated when covered asset is upgraded."
+    label = "Terminated Date"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__UnitCost__c {
+    apiName = "SBQQ__Subscription__c.SBQQ__UnitCost__c"
+    deprecated = false
+    description = "Unit Cost for this Subscription."
+    externalId = false
+    inlineHelpText = "Unit Cost for this Subscription."
+    label = "Unit Cost"
+    precision = 14
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

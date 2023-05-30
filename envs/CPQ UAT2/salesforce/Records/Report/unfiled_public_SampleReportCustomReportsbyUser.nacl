@@ -1,0 +1,50 @@
+salesforce.Report unfiled_public_SampleReportCustomReportsbyUser@zcd {
+  columns = [
+    {
+      field = "SHORT_NAME"
+    },
+    {
+      field = "LONG_NAME"
+    },
+    {
+      field = "FOLDER"
+    },
+    {
+      field = "CREATEDDATE"
+    },
+    {
+      field = "LASTMODIFIED"
+    },
+    {
+      field = "LASTMODIFIEDDATE"
+    },
+    {
+      field = "LASTRUNDATE"
+    },
+  ]
+  description = "Who is creating custom reports?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "CREATED"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Custom Reports by User"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "ReportList"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATEDDATE"
+    interval = "INTERVAL_LAST30"
+  }
+  fullName = "unfiled$public/SampleReportCustomReportsbyUser"
+}

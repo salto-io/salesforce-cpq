@@ -1,0 +1,19 @@
+salesforce.WebLink Opportunity_SBQQ__CreateOrder {
+  fullName = "Opportunity.SBQQ__CreateOrder"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Create Order"
+  openType = "noSidebar"
+  page = salesforce.ApexPage.instance.SBQQ__GenerateOrder
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

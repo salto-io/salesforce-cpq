@@ -1,0 +1,44 @@
+type salesforce.ChartSummary {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string aggregate {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Average",
+        "Maximum",
+        "Median",
+        "Minimum",
+        "None",
+        "Sum",
+        "Unique",
+      ]
+    }
+  }
+  string axisBinding {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "r",
+        "x",
+        "y",
+        "y2",
+      ]
+    }
+  }
+  string column {
+  }
+  metadataType = "ChartSummary"
+}

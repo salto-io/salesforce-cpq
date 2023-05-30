@@ -1,0 +1,10 @@
+salesforce.ListView CampaignInfluence_CampaignInfluence {
+  fullName = "CampaignInfluence.CampaignInfluence"
+  filterScope = "Everything"
+  label = "CampaignInfluence"
+  sharedTo = {
+  }
+  _parent = [
+    salesforce.CampaignInfluence,
+  ]
+}

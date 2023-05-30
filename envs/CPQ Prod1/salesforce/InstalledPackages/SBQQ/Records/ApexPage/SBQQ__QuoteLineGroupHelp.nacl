@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteLineGroupHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "QuoteLineGroupHelp"
+  fullName = "SBQQ__QuoteLineGroupHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteLineGroupHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,18 @@
+salesforce.ApexClass SBQQ__ProductConfigurationController {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 244
+      minorNumber = 1
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ProductConfigurationController"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__ProductConfigurationController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

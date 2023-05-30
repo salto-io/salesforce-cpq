@@ -1,0 +1,53 @@
+salesforce.Report Sales_Marketing_Reports_Leads_Created_Current_FQ@uuduuu {
+  columns = [
+    {
+      field = "OWNER"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "COMPANY"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "STREET"
+    },
+    {
+      field = "EMAIL"
+    },
+  ]
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "LEAD_SOURCE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Leads Created Current FQ"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "LeadList"
+  scope = "org"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "Sales_Marketing_Reports/Leads_Created_Current_FQ"
+}

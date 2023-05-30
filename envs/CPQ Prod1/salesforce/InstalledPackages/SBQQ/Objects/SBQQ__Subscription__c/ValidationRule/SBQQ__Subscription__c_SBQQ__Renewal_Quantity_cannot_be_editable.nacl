@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__Subscription__c_SBQQ__Renewal_Quantity_cannot_be_editable {
+  fullName = "SBQQ__Subscription__c.SBQQ__Renewal_Quantity_cannot_be_editable"
+  active = true
+  description = "Renewal Quantity cannot be editable."
+  errorConditionFormula = "if ( (SBQQ__Contract__r.SBQQ__PreserveBundleStructureUponRenewals__c == true && SBQQ__RenewalQuantity__c != SBQQ__Quantity__c && ISCHANGED(SBQQ__RenewalQuantity__c)), true, false)"
+  errorMessage = "Preserve Bundle Structure is checked on Contract, Renewal Quantity cannot be different from Quantity."
+  _parent = [
+    salesforce.SBQQ__Subscription__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

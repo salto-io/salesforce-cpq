@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__UI {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  description = "JavaScript library to aid in construction of dynamic UI."
+  fullName = "SBQQ__UI"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__UI.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

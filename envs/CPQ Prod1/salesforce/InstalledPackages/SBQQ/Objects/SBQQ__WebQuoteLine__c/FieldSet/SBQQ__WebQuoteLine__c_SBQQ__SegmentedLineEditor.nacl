@@ -1,0 +1,202 @@
+salesforce.FieldSet SBQQ__WebQuoteLine__c_SBQQ__SegmentedLineEditor {
+  fullName = "SBQQ__WebQuoteLine__c.SBQQ__SegmentedLineEditor"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__AdditionalQuantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__BatchQuantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__CostEditable__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__CustomerPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__CustomerTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Description__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__DistributorDiscount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__EndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__GrossProfit__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Hidden__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Markup__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Optional__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PackageCost__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PackageListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PackageProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PackageTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PartnerDiscount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PricingMethod__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProratedListPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__RegularPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__RegularTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__StartDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__SubscriptionBase__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__SubscriptionCategory__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__SubscriptionPercent__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__SubscriptionTerm__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Taxable__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__UnitCost__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Quote Line fields to display for segmented Products when clicking into Line Item Detail in the Line Editor"
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Quantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ListPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Uplift__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__AdditionalDiscount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__NetPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__NetTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Segmented Line Editor"
+  _parent = [
+    salesforce.SBQQ__WebQuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

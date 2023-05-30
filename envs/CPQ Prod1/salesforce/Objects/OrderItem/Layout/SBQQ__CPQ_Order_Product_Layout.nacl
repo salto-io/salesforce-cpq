@@ -1,0 +1,333 @@
+salesforce.Layout OrderItem_SBQQ__CPQ_Order_Product_Layout@buusss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.OrderItemNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItem.field.OrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.Product2Id
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.ProductCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__Status__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.ServiceDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.EndDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Price Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.TotalPrice
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.ListPrice
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItem.field.UnitPrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItem.field.Quantity
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Billing Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__BillingType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__ChargeType__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Contracting Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__Activated__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__Contracted__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItem.field.SBQQ__ContractAction__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Quote and Subscription Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+  ]
+  multilineLayoutFields = [
+    "OrderId",
+    "UnitPrice",
+    "Quantity",
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Product2",
+        "SBQQ__OrderedQuantity__c",
+        "SBQQ__QuotedQuantity__c",
+        "UnitPrice",
+        "ListPrice",
+        "TotalPrice",
+        "SBQQ__QuoteLine__c",
+        "SBQQ__SubscriptionTerm__c",
+      ]
+      relatedList = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__Subscription__c.field.SBQQ__OrderProduct__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Description__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__OrderProduct__c
+    },
+    {
+      fields = [
+        "ASSET.NAME",
+        "ASSET.SERIAL_NUMBER",
+        "ASSET.INSTALL_DATE",
+        "ACCOUNT.NAME",
+        "CONTACT.NAME",
+        "PRODUCT2.NAME",
+      ]
+      relatedList = salesforce.Asset.field.SBQQ__OrderProduct__c
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ListPrice",
+        "TotalPrice",
+      ]
+      relatedList = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000V0Hw7"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "OrderItem-SBQQ__CPQ Order Product Layout"
+  _parent = [
+    salesforce.OrderItem,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

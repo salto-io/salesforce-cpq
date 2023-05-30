@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ThemeLookup {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Theme Lookup"
+  fullName = "SBQQ__ThemeLookup"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ThemeLookup.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__QuoteTemplate__c_SBQQ__CloneWithRelated {
+  fullName = "SBQQ__QuoteTemplate__c.SBQQ__CloneWithRelated"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "{!$Site.Prefix}/apex/SBQQ__CloneQuoteTemplateRelated?id={!SBQQ__QuoteTemplate__c.Id}"
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,68 @@
+salesforce.Report unfiled_public_SampleReportofTasksandActivities@zcd {
+  columns = [
+    {
+      field = "ASSIGNED"
+    },
+    {
+      field = "SUBJECT"
+    },
+    {
+      field = "DUE_DATE"
+    },
+    {
+      field = "PRIORITY"
+    },
+    {
+      field = "STATUS"
+    },
+    {
+      field = "TASK"
+    },
+    {
+      field = "ACCOUNT"
+    },
+    {
+      field = "CONTACT"
+    },
+    {
+      field = "LEAD"
+    },
+    {
+      field = "OPPORTUNITY"
+    },
+  ]
+  description = "How many tasks and activies are being added to Salesforce?"
+  format = "Matrix"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Tasks and Activities"
+  params = [
+    {
+      name = "closed"
+      value = "all"
+    },
+    {
+      name = "type"
+      value = "te"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.Activity
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "DUE_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofTasksandActivities"
+}

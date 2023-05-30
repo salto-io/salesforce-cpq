@@ -1,0 +1,3 @@
+salesforce.GlobalValueSetTranslation PaymentTerm_de@b {
+  fullName = "PaymentTerm-de"
+}

@@ -1,0 +1,9 @@
+salesforce.ReportFolder Sales_Marketing_Reports {
+  folderShares = {
+    accessLevel = "Manage"
+    sharedTo = "services-ldws@force.com"
+    sharedToType = "User"
+  }
+  name = "Sales & Marketing Dashboards Reports"
+  fullName = "Sales_Marketing_Reports"
+}

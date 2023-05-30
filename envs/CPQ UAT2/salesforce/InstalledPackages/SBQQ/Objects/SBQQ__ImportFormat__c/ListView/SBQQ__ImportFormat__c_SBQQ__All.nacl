@@ -1,0 +1,20 @@
+salesforce.ListView SBQQ__ImportFormat__c_SBQQ__All {
+  fullName = "SBQQ__ImportFormat__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__ImportFormatName__c",
+    "SBQQ__TargetObject__c",
+    "SBQQ__UniqueKeyCount__c",
+    "SBQQ__Active__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__ImportFormat__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

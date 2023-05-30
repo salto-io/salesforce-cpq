@@ -1,0 +1,11 @@
+salesforce.SBQQ__ProductRule__c a0r3H000001ogu7QAA {
+  SBQQ__Active__c = true
+  SBQQ__ConditionsMet__c = "Any"
+  SBQQ__ErrorMessage__c = "Lookup to new Alert"
+  SBQQ__EvaluationEvent__c = "Always"
+  SBQQ__LookupObject__c = salesforce.NewObj__c
+  SBQQ__Scope__c = "Product"
+  SBQQ__Type__c = "Alert"
+  Name = "RuleWithLookupToNew"
+  _alias = "RuleWithLookupToNew"
+}

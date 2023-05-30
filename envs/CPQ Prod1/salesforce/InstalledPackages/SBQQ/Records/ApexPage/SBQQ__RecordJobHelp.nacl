@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__RecordJobHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "RecordJobHelp"
+  fullName = "SBQQ__RecordJobHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__RecordJobHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

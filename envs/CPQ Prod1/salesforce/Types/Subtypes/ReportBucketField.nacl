@@ -1,0 +1,48 @@
+type salesforce.ReportBucketField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string bucketType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "number",
+        "picklist",
+        "text",
+      ]
+    }
+  }
+  string developerName {
+  }
+  string masterLabel {
+  }
+  string nullTreatment {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "n",
+        "z",
+      ]
+    }
+  }
+  string otherBucketLabel {
+  }
+  string sourceColumnName {
+  }
+  boolean useOther {
+  }
+  "List<salesforce.ReportBucketFieldValue>" values {
+  }
+  metadataType = "ReportBucketField"
+}

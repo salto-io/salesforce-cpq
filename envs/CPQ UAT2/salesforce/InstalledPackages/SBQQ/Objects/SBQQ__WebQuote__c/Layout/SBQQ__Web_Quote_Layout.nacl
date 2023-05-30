@@ -1,0 +1,302 @@
+salesforce.Layout SBQQ__WebQuote__c_SBQQ__Web_Quote_Layout@uuuubuuss {
+  customButtons = [
+    "SBQQ__Edit_Lines",
+    "SBQQ__GenerateDocument",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ExpirationDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__SalesRep__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__PrimaryContact__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__SubscriptionTerm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__DeliveryMethod__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__Opportunity__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__NetAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__CustomerAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__RegularAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ListAmount__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__PaymentTerms__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Discount Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__CustomerDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__AverageCustomerDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__TotalCustomerDiscountAmount__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__PartnerDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__AveragePartnerDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__AdditionalDiscountAmount__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingStreet__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingCity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingState__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingPostalCode__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__BillingCountry__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingStreet__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingCity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingState__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingPostalCode__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__ShippingCountry__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Additional Text"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__Introduction__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__WebQuote__c.field.SBQQ__Notes__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__WebQuote__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__Number__c",
+        "SBQQ__Product__c",
+        "SBQQ__ListPrice__c",
+        "SBQQ__Quantity__c",
+        "SBQQ__CustomerTotal__c",
+        "SBQQ__NetTotal__c",
+      ]
+      relatedList = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Quote__c
+      sortField = "SBQQ__Number__c"
+      sortOrder = "Asc"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000R1GlX"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__WebQuote__c-SBQQ__Web Quote Layout"
+  _parent = [
+    salesforce.SBQQ__WebQuote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

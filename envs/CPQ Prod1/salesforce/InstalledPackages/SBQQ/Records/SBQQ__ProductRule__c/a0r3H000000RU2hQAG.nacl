@@ -1,0 +1,10 @@
+salesforce.SBQQ__ProductRule__c a0r3H000000RU2hQAG {
+  SBQQ__Active__c = false
+  SBQQ__AdvancedCondition__c = "abcdef"
+  SBQQ__ConditionsMet__c = "Any"
+  SBQQ__EvaluationEvent__c = "Load"
+  SBQQ__Scope__c = "Product"
+  SBQQ__Type__c = "Selection"
+  Name = "Product Rule 2"
+  _alias = "Product Rule 2"
+}

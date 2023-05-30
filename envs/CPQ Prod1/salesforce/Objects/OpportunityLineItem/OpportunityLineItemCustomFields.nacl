@@ -1,0 +1,59 @@
+type salesforce.OpportunityLineItem {
+  salesforce.Text SBQQ__ParentID__c {
+    apiName = "OpportunityLineItem.SBQQ__ParentID__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "ID of the opportunity product that came from this product's bundle."
+    label = "Parent ID"
+    length = 18
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__QuoteLine__c {
+    apiName = "OpportunityLineItem.SBQQ__QuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Quote line that generated this Opportunity Product."
+    externalId = false
+    label = "Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Opportunity Product"
+    relationshipName = "OpportunityProducts"
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__SubscriptionType__c {
+    apiName = "OpportunityLineItem.SBQQ__SubscriptionType__c"
+    deprecated = false
+    description = "Indicates the subscription type to determine contract's pricing."
+    externalId = false
+    inlineHelpText = "Indicates the subscription type to determine contract's pricing."
+    label = "Subscription Type"
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+}

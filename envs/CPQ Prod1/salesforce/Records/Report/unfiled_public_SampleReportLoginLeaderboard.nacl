@@ -1,0 +1,70 @@
+salesforce.Report unfiled_public_SampleReportLoginLeaderboard@zcd {
+  columns = [
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "PROFILE"
+    },
+    {
+      field = "ALIAS"
+    },
+    {
+      field = "ACTIVE"
+    },
+    {
+      field = "LAST_LOGIN"
+    },
+    {
+      field = "LOGIN_DATETIME"
+    },
+    {
+      field = "LOGIN_DATE"
+    },
+  ]
+  description = "Who is logging in the most?"
+  filter = {
+    criteriaItems = [
+      {
+        column = "ACTIVE"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "equals"
+        value = "1"
+      },
+    ]
+  }
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "USERNAME"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Login Leaderboard"
+  params = [
+    {
+      name = "active"
+      value = "active"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.User
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "LAST_LOGIN"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "LAST_LOGIN"
+    interval = "INTERVAL_LAST7"
+  }
+  fullName = "unfiled$public/SampleReportLoginLeaderboard"
+}

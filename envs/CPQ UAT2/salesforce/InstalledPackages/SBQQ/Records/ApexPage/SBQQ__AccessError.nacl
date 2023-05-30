@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__AccessError {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "AccessError"
+  fullName = "SBQQ__AccessError"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__AccessError.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

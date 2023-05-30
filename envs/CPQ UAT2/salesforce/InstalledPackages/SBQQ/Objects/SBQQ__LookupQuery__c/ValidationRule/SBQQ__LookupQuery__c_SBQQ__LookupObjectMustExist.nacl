@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__LookupQuery__c_SBQQ__LookupObjectMustExist {
+  fullName = "SBQQ__LookupQuery__c.SBQQ__LookupObjectMustExist"
+  active = true
+  description = "Validation ensuring that Lookup Queries can only be created if there is a Lookup Object."
+  errorConditionFormula = "AND(NOT(ISBLANK(SBQQ__ProductRule__c)), ISBLANK(TEXT(SBQQ__ProductRule__r.SBQQ__LookupObject__c)))"
+  errorMessage = "Associate a lookup object on the product rule before creating a Lookup Query."
+  _parent = [
+    salesforce.SBQQ__LookupQuery__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

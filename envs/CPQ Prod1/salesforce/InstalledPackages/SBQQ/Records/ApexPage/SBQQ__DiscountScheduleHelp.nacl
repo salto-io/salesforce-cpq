@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__DiscountScheduleHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Discount Schedule Help"
+  fullName = "SBQQ__DiscountScheduleHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__DiscountScheduleHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__QuoteTerm__c {
+  fullName = "SBQQ__QuoteTerm__c"
+  customObject = true
+  description = "Tab to manage quote terms."
+  motif = "Custom83: Pencil"
+  _parent = [
+    salesforce.SBQQ__QuoteTerm__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

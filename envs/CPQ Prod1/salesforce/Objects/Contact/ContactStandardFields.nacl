@@ -1,0 +1,337 @@
+type salesforce.Contact {
+  salesforce.Lookup AccountId {
+    apiName = "Contact.AccountId"
+    trackFeedHistory = true
+    relationshipName = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    label = "Account ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown AssistantName {
+    apiName = "Contact.AssistantName"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown AssistantPhone {
+    apiName = "Contact.AssistantPhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Birthdate {
+    apiName = "Contact.Birthdate"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Text Department {
+    apiName = "Contact.Department"
+    trackFeedHistory = false
+    length = 80
+    label = "Department"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Unknown Description {
+    apiName = "Contact.Description"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown DoNotCall {
+    apiName = "Contact.DoNotCall"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Email Email {
+    apiName = "Contact.Email"
+    trackFeedHistory = false
+    label = "Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Phone Fax {
+    apiName = "Contact.Fax"
+    trackFeedHistory = false
+    label = "Business Fax"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown HasOptedOutOfEmail {
+    apiName = "Contact.HasOptedOutOfEmail"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutOfFax {
+    apiName = "Contact.HasOptedOutOfFax"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown HomePhone {
+    apiName = "Contact.HomePhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup IndividualId {
+    apiName = "Contact.IndividualId"
+    trackFeedHistory = false
+    relationshipName = "Individual"
+    referenceTo = [
+      salesforce.Individual,
+    ]
+    label = "Individual ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Jigsaw {
+    apiName = "Contact.Jigsaw"
+    trackFeedHistory = false
+    length = 20
+    label = "Data.com Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime LastCURequestDate {
+    apiName = "Contact.LastCURequestDate"
+    label = "Last Stay-in-Touch Request Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastCUUpdateDate {
+    apiName = "Contact.LastCUUpdateDate"
+    label = "Last Stay-in-Touch Save Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist LeadSource {
+    apiName = "Contact.LeadSource"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Address MailingAddress {
+    apiName = "Contact.MailingAddress"
+    trackFeedHistory = false
+    label = "Mailing Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone MobilePhone {
+    apiName = "Contact.MobilePhone"
+    trackFeedHistory = false
+    label = "Mobile Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Name Name {
+    apiName = "Contact.Name"
+    trackFeedHistory = true
+    _required = true
+    label = "Full Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown OtherAddress {
+    apiName = "Contact.OtherAddress"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown OtherPhone {
+    apiName = "Contact.OtherPhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Contact.OwnerId"
+    trackFeedHistory = true
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Phone Phone {
+    apiName = "Contact.Phone"
+    trackFeedHistory = false
+    label = "Business Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ReportsToId {
+    apiName = "Contact.ReportsToId"
+    trackFeedHistory = false
+    relationshipName = "ReportsTo"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    label = "Reports To ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Title {
+    apiName = "Contact.Title"
+    trackFeedHistory = false
+    length = 128
+    label = "Title"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "Contact.Id"
+    label = "Contact ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Contact.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Contact.MasterRecordId"
+    relationshipName = "MasterRecord"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    label = "Master Record ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Contact.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Contact.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Contact.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Contact.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Contact.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Contact.LastActivityDate"
+    label = "Last Activity"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EmailBouncedReason {
+    apiName = "Contact.EmailBouncedReason"
+    length = 255
+    label = "Email Bounced Reason"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime EmailBouncedDate {
+    apiName = "Contact.EmailBouncedDate"
+    label = "Email Bounced Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsEmailBounced {
+    apiName = "Contact.IsEmailBounced"
+    defaultValue = false
+    label = "Is Email Bounced"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "Contact.PhotoUrl"
+    label = "Photo URL"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text JigsawContactId {
+    apiName = "Contact.JigsawContactId"
+    length = 20
+    label = "Jigsaw Contact ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+}

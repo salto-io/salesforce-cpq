@@ -1,0 +1,153 @@
+salesforce.Layout SBQQ__Dimension__c_SBQQ__Price_Dimension_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Dimension__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__PriceBook__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__QuantityEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__DefaultQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__QuantityScale__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Pricing"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__UnitPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__NonDiscountable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__DiscountSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__TermDiscountSchedule__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__PriceEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__NonPartnerDiscountable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__CostEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__Dimension__c.field.SBQQ__Taxable__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Dimension__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__Dimension__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hj0000002Ou0v"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__Dimension__c-SBQQ__Price Dimension Layout"
+  _parent = [
+    salesforce.SBQQ__Dimension__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

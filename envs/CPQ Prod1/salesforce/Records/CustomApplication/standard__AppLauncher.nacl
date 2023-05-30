@@ -1,0 +1,11 @@
+salesforce.CustomApplication standard__AppLauncher {
+  fullName = "standard__AppLauncher"
+  defaultLandingTab = "standard-AppLauncher"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  tabs = [
+    "standard-AppLauncher",
+    salesforce.CustomTab.instance.SBQQ__BlockPrice__c,
+  ]
+}
