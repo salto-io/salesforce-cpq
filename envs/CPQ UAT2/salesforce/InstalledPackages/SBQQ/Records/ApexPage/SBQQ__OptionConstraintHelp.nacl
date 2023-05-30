@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__OptionConstraintHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "OptionConstraintHelp"
+  fullName = "SBQQ__OptionConstraintHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__OptionConstraintHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

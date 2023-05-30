@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__IRestClient {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__IRestClient"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__RecordInfo {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__RecordInfo"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

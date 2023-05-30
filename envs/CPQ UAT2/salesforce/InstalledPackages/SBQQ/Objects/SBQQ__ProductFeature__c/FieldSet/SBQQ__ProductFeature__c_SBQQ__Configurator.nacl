@@ -1,0 +1,20 @@
+salesforce.FieldSet SBQQ__ProductFeature__c_SBQQ__Configurator {
+  fullName = "SBQQ__ProductFeature__c.SBQQ__Configurator"
+  description = "Determines fields presented to user inside each feature in the Configurator."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__ProductFeature__c.field.SBQQ__OptionSelectionMethod__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Configurator"
+  _parent = [
+    salesforce.SBQQ__ProductFeature__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

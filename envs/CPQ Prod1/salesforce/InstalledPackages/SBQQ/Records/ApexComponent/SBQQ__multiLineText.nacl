@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__multiLineText {
+  apiVersion = 57
+  description = "Converts specified text into an XSL-FO tree that preserves paragraph and line breaks."
+  label = "Multi-Line text"
+  fullName = "SBQQ__multiLineText"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,47 @@
+type salesforce.ReportAggregate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string acrossGroupingContext {
+  }
+  string calculatedFormula {
+  }
+  string description {
+  }
+  string developerName {
+  }
+  string downGroupingContext {
+  }
+  boolean isActive {
+  }
+  boolean isCrossBlock {
+  }
+  string masterLabel {
+  }
+  string reportType {
+  }
+  number scale {
+  }
+  string datatype {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "currency",
+        "number",
+        "percent",
+      ]
+    }
+  }
+  metadataType = "ReportAggregate"
+}

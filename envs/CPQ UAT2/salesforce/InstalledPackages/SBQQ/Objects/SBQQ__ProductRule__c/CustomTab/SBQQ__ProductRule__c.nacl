@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__ProductRule__c {
+  fullName = "SBQQ__ProductRule__c"
+  customObject = true
+  description = "Tab for managing product rules."
+  motif = "Custom90: Scales"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

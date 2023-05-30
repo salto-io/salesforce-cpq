@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ProcessInputConditionHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ProcessInputConditionHelp"
+  fullName = "SBQQ__ProcessInputConditionHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ProcessInputConditionHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

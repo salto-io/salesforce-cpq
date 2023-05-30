@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__QuoteProcess__c {
+  fullName = "SBQQ__QuoteProcess__c"
+  customObject = true
+  description = "Tab for managing quote processes."
+  motif = "Custom67: Gears"
+  _parent = [
+    salesforce.SBQQ__QuoteProcess__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

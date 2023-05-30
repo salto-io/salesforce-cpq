@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DbeyUAC {
+  SBQQ__Action__c = "Desegment Line"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "desegmentBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 995
+  SBQQ__EventHandlerName__c = "onDesegmentLine"
+  SBQQ__Label__c = "Desegment Line"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Desegment Line"
+  _alias = "Desegment Line"
+}

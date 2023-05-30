@@ -1,0 +1,93 @@
+salesforce.Layout SBQQ__TermCondition__c_SBQQ__Term_Condition_Layout@uuuubuuss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TermCondition__c.field.SBQQ__QuoteTerm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TermCondition__c.field.SBQQ__TestedField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TermCondition__c.field.SBQQ__TestedVariable__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TermCondition__c.field.SBQQ__Operator__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TermCondition__c.field.SBQQ__Value__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TermCondition__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TermCondition__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000RZtep"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__TermCondition__c-SBQQ__Term Condition Layout"
+  _parent = [
+    salesforce.SBQQ__TermCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

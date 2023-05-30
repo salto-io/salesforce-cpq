@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__QuoteLineGroup__c_SBQQ__CalculateQuoteFromQuoteLineGroup {
+  fullName = "SBQQ__QuoteLineGroup__c.SBQQ__CalculateQuoteFromQuoteLineGroup"
+  availability = "online"
+  description = "Calculates and saves the quote."
+  displayType = "button"
+  linkType = "page"
+  masterLabel = "Calculate Quote"
+  openType = "replace"
+  page = salesforce.ApexPage.instance.SBQQ__CalculateQuoteFromQuoteLineGroup
+  protected = false
+  _parent = [
+    salesforce.SBQQ__QuoteLineGroup__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,322 @@
+salesforce.Layout Order_SBQQ__CPQ_Order_Layout@buuss {
+  customButtons = [
+    "SBQQ__EditOrderProducts",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "OrderContracting"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              height = 22
+              page = "SBQQ__OrderContracting"
+              showLabel = false
+              showScrollbars = false
+              width = "100%"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Order Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.OrderNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Order.field.AccountId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Order.field.Status
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Order.field.EffectiveDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.EndDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.TotalAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.ActivatedDate
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.ActivatedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.Type
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Contract Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.SBQQ__Contracted__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.SBQQ__ContractingMethod__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Quote and Opportunity"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.SBQQ__Quote__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.OpportunityId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Shipping and Billing Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.BillingAddress
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.ShippingAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Order.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Order.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Additional Information"
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      excludeButtons = [
+        "EditAllProduct",
+      ]
+      fields = [
+        "Product2",
+        "ProductCode",
+        "SBQQ__QuotedListPrice__c",
+        "UnitPrice",
+        "TotalPrice",
+        "SBQQ__OrderedQuantity__c",
+        "SBQQ__QuotedQuantity__c",
+        "SBQQ__QuoteLine__c",
+        "SBQQ__RevisedOrderProduct__c",
+        "SBQQ__ContractAction__c",
+      ]
+      relatedList = "RelatedOrderItemList"
+    },
+    {
+      customButtons = [
+        "SBQQ__RenewContracts",
+      ]
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "CONTRACT.CONTRACT_NUMBER",
+        "CONTRACT.NAME",
+        "SALES.ACCOUNT.NAME",
+        "CONTRACT.STATUS",
+        "CONTRACT.START_DATE",
+        "CONTRACT.END_DATE",
+        "CONTRACT_TERM",
+      ]
+      relatedList = salesforce.Contract.field.SBQQ__Order__c
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__Product__c",
+        "SBQQ__OrderProduct__c",
+        "SBQQ__DiscountUnit__c",
+        "SBQQ__OriginalDiscountSchedule__c",
+        "SBQQ__AggregationScope__c",
+        "SBQQ__CrossOrders__c",
+        "SBQQ__CrossProducts__c",
+      ]
+      relatedList = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__Order__c
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000V0Hw6"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Order-SBQQ__CPQ Order Layout"
+  _parent = [
+    salesforce.Order,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

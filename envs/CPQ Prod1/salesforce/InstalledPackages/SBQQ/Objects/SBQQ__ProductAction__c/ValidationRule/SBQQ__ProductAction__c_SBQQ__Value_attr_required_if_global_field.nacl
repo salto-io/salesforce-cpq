@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProductAction__c_SBQQ__Value_attr_required_if_global_field {
+  fullName = "SBQQ__ProductAction__c.SBQQ__Value_attr_required_if_global_field"
+  active = true
+  description = "Value Attribute required since the Value Field is a global Configuration Attribute field."
+  errorConditionFormula = "IF(TEXT(SBQQ__ValueObject__c) == 'Configuration Attributes' && CONTAINS(TEXT(SBQQ__ValueField__c), '.') && SBQQ__ValueAttribute__c == '', true, false)"
+  errorMessage = "Value Attribute required since the Value Field is a global Configuration Attribute field."
+  _parent = [
+    salesforce.SBQQ__ProductAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

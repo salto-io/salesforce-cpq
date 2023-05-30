@@ -1,0 +1,16 @@
+salesforce.ValidationRule OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType {
+  fullName = "OrderItem.SBQQ__RecurringChargeTypeMustHaveBillingType"
+  active = true
+  description = "When Charge Type is Recurring, a Billing Type must be selected."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__ChargeType__c, 'Recurring'), ISPICKVAL(SBQQ__BillingType__c, ''))"
+  errorDisplayField = salesforce.OrderItem.field.SBQQ__BillingType__c
+  errorMessage = "When Charge Type is Recurring, a Billing Type must be selected."
+  _parent = [
+    salesforce.OrderItem,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

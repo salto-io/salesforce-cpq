@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__ProductRule__c_SBQQ__CloneWithRelatedClassic {
+  fullName = "SBQQ__ProductRule__c.SBQQ__CloneWithRelatedClassic"
+  availability = "online"
+  description = "Clones this product rule with related child records."
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "{!URLFOR($Action.SBQQ__ProductRule__c.Clone, SBQQ__ProductRule__c.Id, [retURL=$Site.Prefix & '/' & SBQQ__ProductRule__c.Id,saveURL=$Site.Prefix & '/apex/SBQQ__CloneProductRule?id=' & SBQQ__ProductRule__c.Id])}"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

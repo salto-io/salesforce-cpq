@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__JSQC {
+  cacheControl = "Public"
+  contentType = "text/javascript"
+  fullName = "SBQQ__JSQC"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__JSQC.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

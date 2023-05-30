@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ContractedPrice__c_SBQQ__Filter_requires_operators {
+  fullName = "SBQQ__ContractedPrice__c.SBQQ__Filter_requires_operators"
+  active = true
+  description = "Operator must be entered when filter is specified."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__Operator__c,''),NOT(ISPICKVAL(SBQQ__FilterField__c,'')))"
+  errorMessage = "Operator is required when Filter Field is specified."
+  _parent = [
+    salesforce.SBQQ__ContractedPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

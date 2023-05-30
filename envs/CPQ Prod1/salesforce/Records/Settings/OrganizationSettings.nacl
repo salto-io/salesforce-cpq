@@ -1,0 +1,42 @@
+salesforce.Organization {
+  Id = "00D3H0000008mEjUAI"
+  Name = "Salto"
+  Address = {
+    country = "IL"
+    countryCode = "IL"
+  }
+  PrimaryContact = "Yariv Brosh"
+  DefaultLocaleSidKey = "en_IE_EURO"
+  TimeZoneSidKey = "Europe/Dublin"
+  LanguageLocaleKey = "en_US"
+  ReceivesInfoEmails = false
+  ReceivesAdminInfoEmails = true
+  PreferencesRequireOpportunityProducts = false
+  PreferencesConsentManagementEnabled = true
+  PreferencesAutoSelectIndividualOnMerge = false
+  PreferencesLightningLoginEnabled = true
+  PreferencesOnlyLLPermUserAllowed = false
+  FiscalYearStartMonth = 1
+  UsesStartDateAsFiscalYearName = false
+  DefaultAccountAccess = "Edit"
+  DefaultContactAccess = "ControlledByParent"
+  DefaultOpportunityAccess = "Read"
+  DefaultLeadAccess = "ReadEditTransfer"
+  DefaultCaseAccess = "ReadEditTransfer"
+  DefaultCalendarAccess = "HideDetailsInsert"
+  DefaultPricebookAccess = "ReadSelect"
+  DefaultCampaignAccess = "All"
+  SystemModstamp = "2022-08-27T05:52:22.000+0000"
+  UiSkin = "Theme3"
+  SignupCountryIsoCode = "IL"
+  OrganizationType = "Enterprise Edition"
+  InstanceName = "CS122"
+  IsSandbox = true
+  MonthlyPageViewsUsed = 0
+  MonthlyPageViewsEntitlement = 500000
+  IsReadOnly = false
+  CreatedDate = "2019-04-17T15:07:33.000+0000"
+  CreatedById = "0054J000000sDrHQAU"
+  LastModifiedDate = "2020-09-09T11:59:30.000+0000"
+  LastModifiedById = "0054J000000sDrHQAU"
+}

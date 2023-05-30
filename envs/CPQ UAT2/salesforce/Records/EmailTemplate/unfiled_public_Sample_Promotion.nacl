@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_Promotion@zcdu {
+  available = true
+  description = "Reaching out to someone after they have been promoted about the opportunity to do business with them"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Congratulations On Your Promotion"
+  relatedEntityType = "Contact"
+  style = "none"
+  subject = "Congratulations on your promotion!"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_Promotion"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_Promotion/Sample_Promotion.email")
+}

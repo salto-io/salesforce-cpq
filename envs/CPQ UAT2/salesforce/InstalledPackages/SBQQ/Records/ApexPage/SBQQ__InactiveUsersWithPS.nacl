@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__InactiveUsersWithPS {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "InactiveUsersWithPS"
+  fullName = "SBQQ__InactiveUsersWithPS"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__InactiveUsersWithPS.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

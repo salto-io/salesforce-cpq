@@ -1,0 +1,13 @@
+salesforce.CustomTab SBQQ__FieldSetMetadata__c {
+  fullName = "SBQQ__FieldSetMetadata__c"
+  customObject = true
+  motif = "Custom73: Highway Sign"
+  _parent = [
+    salesforce.SBQQ__FieldSetMetadata__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

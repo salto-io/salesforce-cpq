@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProductOption__c_SBQQ__Apply_Immediately_Context_Validation {
+  fullName = "SBQQ__ProductOption__c.SBQQ__Apply_Immediately_Context_Validation"
+  active = true
+  description = "The 'Apply Immediately' field must be checked before providing an 'Apply Immediately Context'. Otherwise, please change the 'Apply Immediately Context' field to ‘None'."
+  errorConditionFormula = "AND(TEXT(SBQQ__AppliedImmediatelyContext__c) != null, SBQQ__AppliedImmediately__c == false)"
+  errorMessage = "The 'Apply Immediately' field must be checked before providing an 'Apply Immediately Context'. Otherwise, please change the 'Apply Immediately Context' field to ‘None'."
+  _parent = [
+    salesforce.SBQQ__ProductOption__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

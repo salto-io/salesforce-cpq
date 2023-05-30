@@ -1,0 +1,16 @@
+type salesforce.SBQQ__DiscountCategory__c {
+  salesforce.Percent SBQQ__MaxDiscountRate__c {
+    apiName = "SBQQ__DiscountCategory__c.SBQQ__MaxDiscountRate__c"
+    deprecated = false
+    description = "Maximum allowable discount for this product category."
+    externalId = false
+    inlineHelpText = "Enter the maximum allowable discount for this product category."
+    label = "Max Discount (%)"
+    precision = 6
+    scale = 2
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,111 @@
+salesforce.Report Sales_Marketing_Reports_Closed_Won_This_Q_by_Owner@uuduuuuu {
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        aggregate = "Sum"
+        axisBinding = "y"
+        column = "AMOUNT"
+      },
+    ]
+    chartType = "HorizontalBarStacked"
+    enableHoverLabels = false
+    expandOthers = true
+    groupingColumn = "FULL_NAME"
+    legendPosition = "Right"
+    location = "CHART_TOP"
+    secondaryGroupingColumn = "LEAD_SOURCE"
+    showAxisLabels = true
+    showPercentage = false
+    showTotal = false
+    showValues = false
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "CLOSE_DATE"
+    },
+    {
+      field = "NEXT_STEP"
+    },
+    {
+      field = "STAGE_NAME"
+    },
+    {
+      field = "PROBABILITY"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "ROLLUP_DESCRIPTION"
+    },
+    {
+      field = "ACCOUNT_NAME"
+    },
+  ]
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "FISCAL_QUARTER"
+      sortOrder = "Asc"
+    },
+    {
+      dateGranularity = "Day"
+      field = "FULL_NAME"
+      sortOrder = "Asc"
+    },
+    {
+      dateGranularity = "Day"
+      field = "LEAD_SOURCE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Closed Won This Q by Owner"
+  params = [
+    {
+      name = "open"
+      value = "closedwon"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = salesforce.Opportunity
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "AMOUNT"
+  sortOrder = "Asc"
+  timeFrameFilter = {
+    dateColumn = "CLOSE_DATE"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "Sales_Marketing_Reports/Closed_Won_This_Q_by_Owner"
+}

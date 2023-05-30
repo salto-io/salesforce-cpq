@@ -1,0 +1,13 @@
+salesforce.Queue NA {
+  fullName = "NA"
+  doesSendEmailToMembers = true
+  name = "NA"
+  queueMembers = {
+    users = {
+      user = "hadas.birin+prod@salto.io"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+}

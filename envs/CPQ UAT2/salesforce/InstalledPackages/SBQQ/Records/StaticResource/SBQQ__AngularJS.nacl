@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__AngularJS {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  description = "AngularJS framework."
+  fullName = "SBQQ__AngularJS"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__AngularJS.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

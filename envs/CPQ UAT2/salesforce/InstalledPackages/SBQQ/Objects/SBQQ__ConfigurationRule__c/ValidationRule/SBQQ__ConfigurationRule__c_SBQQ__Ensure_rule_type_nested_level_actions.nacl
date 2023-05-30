@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ConfigurationRule__c_SBQQ__Ensure_rule_type_nested_level_actions {
+  fullName = "SBQQ__ConfigurationRule__c.SBQQ__Ensure_rule_type_nested_level_actions"
+  active = true
+  description = "Ensures the related Product Rule is of type Selection when specifying an action level."
+  errorConditionFormula = "(TEXT(SBQQ__ProductRule__r.SBQQ__Type__c) != null && TEXT(SBQQ__ProductRule__r.SBQQ__Type__c) != 'Selection') && (TEXT(SBQQ__DescendingActionNesting__c) != null)"
+  errorMessage = "Action Level only supported for Selection product rules."
+  _parent = [
+    salesforce.SBQQ__ConfigurationRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

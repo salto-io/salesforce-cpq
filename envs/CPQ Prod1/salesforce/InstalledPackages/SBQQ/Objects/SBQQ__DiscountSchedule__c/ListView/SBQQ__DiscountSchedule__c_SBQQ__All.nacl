@@ -1,0 +1,20 @@
+salesforce.ListView SBQQ__DiscountSchedule__c_SBQQ__All {
+  fullName = "SBQQ__DiscountSchedule__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Type__c",
+    "SBQQ__Description__c",
+    "CREATEDBY_USER",
+    "UPDATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__DiscountSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

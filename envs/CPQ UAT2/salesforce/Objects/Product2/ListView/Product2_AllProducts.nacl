@@ -1,0 +1,15 @@
+salesforce.ListView Product2_AllProducts {
+  fullName = "Product2.AllProducts"
+  columns = [
+    "PRODUCT2.NAME",
+    "PRODUCT2.CUSTOMER_PRODUCT_ID",
+    "PRODUCT2.DESCRIPTION",
+    "PRODUCT2.FAMILY",
+    "Salto_ExternalId__c",
+  ]
+  filterScope = "Everything"
+  label = "All Products"
+  _parent = [
+    salesforce.Product2,
+  ]
+}

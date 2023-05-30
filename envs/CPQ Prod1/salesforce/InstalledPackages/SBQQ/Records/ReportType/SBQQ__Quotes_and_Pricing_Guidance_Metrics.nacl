@@ -1,0 +1,1215 @@
+salesforce.ReportType SBQQ__Quotes_and_Pricing_Guidance_Metrics {
+  baseObject = "SBQQ__Quote__c"
+  category = "quotes"
+  deployed = true
+  description = "Compare quotes and quote lines that view and use pricing guidance to quotes and quote lines without pricing guidance."
+  join = {
+    join = {
+      outerJoin = true
+      relationship = "SBQQ__QuoteLinePricingGuidance__r"
+    }
+    outerJoin = true
+    relationship = "SBQQ__LineItems__r"
+  }
+  label = "Quotes and Pricing Guidance Metrics"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = true
+          field = "SBQQ__ProductName__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__Discount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__TotalDiscountAmount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__Target__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__Norm__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__Floor__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__Guidance__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__GuidanceUsed__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = true
+          field = "SBQQ__IsViewed__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = true
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Status__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = true
+          field = salesforce.SBQQ__Quote__c.field.Name
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__AdditionalDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__AdditionalDiscountAmount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__AdditionalQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__AllowAssetRefund__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__BatchQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__BillingFrequency__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__BillingType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__BlockPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Bundled__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__CarryoverLine__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ChargeType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentCost__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentDiscountedByPackage__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentListTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentSubscriptionScope__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentUpliftedByPackage__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ComponentVisibility__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__CompoundDiscountRate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ConfigurationRequired__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ContractedPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Cost__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__CostEditable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          displayNameOverride = "Quote Line Last Modified By"
+          field = "LastModifiedBy"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = true
+          displayNameOverride = "Quote Line Created By"
+          field = "CreatedBy"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedDate"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__CustomerTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__CustomerPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DefaultSubscriptionTerm__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Description__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DiscountSchedule__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DiscountScheduleType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DiscountTier__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DistributorDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__DynamicOptionId__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__EffectiveEndDate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__EffectiveQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__EffectiveStartDate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__EffectiveSubscriptionTerm__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__EndDate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Existing__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Favorite__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__GenerateContractedPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__GrossProfit__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Group__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__HasConsumptionSchedule__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Hidden__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Incomplete__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedDate"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "Name"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ListTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ListPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Markup__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__MarkupRate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__MarkupAmount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__MaximumPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__MinimumPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__NetTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__NetPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__NonDiscountable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__NonPartnerDiscountable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Number__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Optional__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OptionDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OptionDiscountAmount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OptionLevel__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OptionType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OriginalPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__BundledQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OriginalQuoteLineId__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__OriginalUnitCost__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Bundle__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PackageCost__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PackageListTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PackageProductCode__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PackageProductDescription__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PackageTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PartnerDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PartnerTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PartnerPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionPercent__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionBase__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionCategory__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionScope__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionTargetPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PreviousSegmentPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PreviousSegmentUplift__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PricebookEntryId__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Dimension__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PriceEditable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PricingMethod__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PricingMethodEditable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__PriorQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Product__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProductCode__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProductFamily__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProductOption__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProductSubscriptionType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProratedListPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProratedPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__ProrateMultiplier__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Quantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "Id"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__RegularTotal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__RegularPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Renewal__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__RenewedAsset__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__RenewedSubscription__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__RequiredBy__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SegmentIndex__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SegmentKey__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SegmentLabel__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Source__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SpecialPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SpecialPriceDescription__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SpecialPriceType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__StartDate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscribedAssetIds__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionPricing__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionTerm__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__SubscriptionType__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Taxable__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__TaxCode__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__TermDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__TermDiscountSchedule__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__TermDiscountTier__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__TotalDiscountRate__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UnitCost__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UnproratedNetPrice__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UpgradedAsset__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UpgradedQuantity__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UpgradedSubscription__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Uplift__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__UpliftAmount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__VolumeDiscount__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r"
+        },
+      ]
+      masterLabel = "Quote Lines"
+    },
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedDate"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Explanation__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedDate"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "Name"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "SBQQ__Quote__c"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+        {
+          checkedByDefault = false
+          field = "Id"
+          table = "SBQQ__Quote__c.SBQQ__LineItems__r.SBQQ__QuoteLinePricingGuidance__r"
+        },
+      ]
+      masterLabel = "Quote Line Pricing Guidance"
+    },
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Account__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__CustomerDiscount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__AdditionalDiscountAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__AverageCustomerDiscount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__AveragePartnerDiscount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingFrequency__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingCity__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingCountry__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingName__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingPostalCode__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingState__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__BillingStreet__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ContractingMethod__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.CreatedDate
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__CustomerAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__DaysQuoteOpen__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__DefaultTemplate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__DeliveryMethod__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Distributor__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__DistributorDiscount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__DocumentStatus__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__EmailTemplateId__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__EndDate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ExpirationDate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__FirstSegmentTermEndDate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__GenerateContractedPrice__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__LineItemsGrouped__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Introduction__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Key__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.LastActivityDate
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__LastCalculatedOn__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.LastModifiedDate
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__LastSavedOn__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__LineItemCount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ListAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__MarkupRate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__MasterContract__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__MasterEvergreenContract__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__NetAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Notes__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Opportunity2__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__OrderBy__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__OrderByQuoteLineGroup__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Ordered__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__OrderGroupID__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__OriginalQuote__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = "Owner"
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PaperSize__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Partner__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PartnerDiscount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PaymentTerms__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PriceBook__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PricebookId__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Primary__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__PrimaryContact__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__LineItemsPrinted__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.Id
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__QuoteLanguage__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__QuoteProcessId__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__QuoteTemplateId__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__RegularAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__RenewalTerm__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__RenewalUpliftRate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__SalesRep__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingCity__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingCountry__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingName__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingPostalCode__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingState__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__ShippingStreet__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Source__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__StartDate__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__SubscriptionTerm__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__TargetCustomerAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__TotalCustomerDiscountAmount__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Type__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Uncalculated__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__Unopened__c
+          table = "SBQQ__Quote__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.SBQQ__Quote__c.field.SBQQ__WatermarkShown__c
+          table = "SBQQ__Quote__c"
+        },
+      ]
+      masterLabel = "Quotes"
+    },
+  ]
+  fullName = "SBQQ__Quotes_and_Pricing_Guidance_Metrics"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

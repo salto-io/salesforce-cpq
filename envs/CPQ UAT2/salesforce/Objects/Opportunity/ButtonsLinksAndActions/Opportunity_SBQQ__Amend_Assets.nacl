@@ -1,0 +1,19 @@
+salesforce.WebLink Opportunity_SBQQ__Amend_Assets {
+  fullName = "Opportunity.SBQQ__Amend_Assets"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Amend Assets"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__AssetSelector?accountId={!Opportunity.AccountId}&oppId={!Opportunity.Id}"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__QueueableJobChecker {
+  cacheControl = "Public"
+  contentType = "application/javascript"
+  description = "Checks the status of queueable jobs"
+  fullName = "SBQQ__QueueableJobChecker"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__QueueableJobChecker.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

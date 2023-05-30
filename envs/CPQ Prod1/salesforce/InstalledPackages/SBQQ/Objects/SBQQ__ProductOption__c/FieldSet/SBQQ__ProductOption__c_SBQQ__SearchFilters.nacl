@@ -1,0 +1,30 @@
+salesforce.FieldSet SBQQ__ProductOption__c_SBQQ__SearchFilters {
+  fullName = "SBQQ__ProductOption__c.SBQQ__SearchFilters"
+  description = "This field set is used in the search filter panel of the Product Configurator."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Feature__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "SearchFilters"
+  _parent = [
+    salesforce.SBQQ__ProductOption__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

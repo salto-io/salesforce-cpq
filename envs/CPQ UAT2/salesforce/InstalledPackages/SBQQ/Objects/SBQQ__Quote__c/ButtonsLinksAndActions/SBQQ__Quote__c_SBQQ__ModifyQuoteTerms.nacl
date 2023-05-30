@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__ModifyQuoteTerms {
+  fullName = "SBQQ__Quote__c.SBQQ__ModifyQuoteTerms"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Modify Quote Terms"
+  openType = "noSidebar"
+  page = salesforce.ApexPage.instance.SBQQ__QuoteTermEditor
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

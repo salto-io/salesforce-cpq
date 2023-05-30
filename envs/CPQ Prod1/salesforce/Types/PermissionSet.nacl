@@ -1,0 +1,63 @@
+type salesforce.PermissionSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "Map<salesforce.PermissionSetApplicationVisibility>" applicationVisibilities {
+  }
+  "Map<salesforce.PermissionSetApexClassAccess>" classAccesses {
+  }
+  "Map<salesforce.PermissionSetCustomMetadataTypeAccess>" customMetadataTypeAccesses {
+  }
+  "Map<salesforce.PermissionSetCustomPermissions>" customPermissions {
+  }
+  "Map<salesforce.PermissionSetCustomSettingAccesses>" customSettingAccesses {
+  }
+  string description {
+  }
+  "Map<salesforce.PermissionSetExternalDataSourceAccess>" externalDataSourceAccesses {
+  }
+  "Map<Map<salesforce.FieldPermissionEnum>>" fieldPermissions {
+  }
+  "Map<salesforce.PermissionSetFlowAccess>" flowAccesses {
+  }
+  serviceid fullName {
+  }
+  boolean hasActivationRequired {
+  }
+  string label {
+  }
+  string license {
+    foreignKeyDomain = [
+      "PermissionSetLicense",
+      "UserLicense",
+    ]
+  }
+  "Map<salesforce.PermissionSetObjectPermissions>" objectPermissions {
+  }
+  "Map<salesforce.PermissionSetApexPageAccess>" pageAccesses {
+  }
+  "Map<Map<salesforce.PermissionSetRecordTypeVisibility>>" recordTypeVisibilities {
+  }
+  "List<salesforce.PermissionSetTabSetting>" tabSettings {
+  }
+  "Map<salesforce.PermissionSetUserPermission>" userPermissions {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "permissionset"
+  dirName = "permissionsets"
+  metadataType = "PermissionSet"
+}

@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__quoteLineActions {
+  apiVersion = 57
+  label = "quoteLineActions"
+  fullName = "SBQQ__quoteLineActions"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ProductConfigurationSitesController {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ProductConfigurationSitesController"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,9 @@
+salesforce.ListView Lead_APAC_Lead {
+  fullName = "Lead.APAC_Lead"
+  filterScope = "Queue"
+  label = "APAC"
+  queue = salesforce.Queue.instance.APAC
+  _parent = [
+    salesforce.Lead,
+  ]
+}

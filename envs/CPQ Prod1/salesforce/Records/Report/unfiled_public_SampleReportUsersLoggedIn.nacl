@@ -1,0 +1,58 @@
+salesforce.Report unfiled_public_SampleReportUsersLoggedIn@zcd {
+  columns = [
+    {
+      field = "LAST_LOGIN"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "COMPANY_NAME"
+    },
+    {
+      field = "DEPARTMENT"
+    },
+    {
+      field = "DIVISION"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "ACTIVE"
+    },
+  ]
+  description = "Which of my users are logging?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "USERNAME"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Users Logged In"
+  params = [
+    {
+      name = "active"
+      value = "active"
+    },
+  ]
+  reportType = salesforce.User
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "LAST_LOGIN"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "LAST_LOGIN"
+    interval = "INTERVAL_LAST7"
+  }
+  fullName = "unfiled$public/SampleReportUsersLoggedIn"
+}

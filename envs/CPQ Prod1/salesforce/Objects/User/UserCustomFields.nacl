@@ -1,0 +1,156 @@
+type salesforce.User {
+  salesforce.Picklist Region__c {
+    apiName = "User.Region__c"
+    description = "User Region"
+    externalId = false
+    label = "Region"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "US"
+        default = false
+        label = "US"
+      },
+      {
+        fullName = "IL"
+        default = false
+        label = "IL"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DefaultProductLookupTab__c {
+    apiName = "User.SBQQ__DefaultProductLookupTab__c"
+    deprecated = false
+    description = "Default tab for this user in Product Lookup page."
+    externalId = false
+    inlineHelpText = "Customize default tab in Product Lookup page."
+    label = "Default Product Lookup Tab"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Guided Selling"
+        default = true
+        label = "Guided Selling"
+      },
+      {
+        fullName = "Search Filters"
+        default = false
+        label = "Search Filters"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__DiagnosticToolEnabled__c {
+    apiName = "User.SBQQ__DiagnosticToolEnabled__c"
+    defaultValue = false
+    deprecated = false
+    description = "Enable to run pricing diagnostics during a Quote Line Editor Calculate."
+    externalId = false
+    inlineHelpText = "Use to enable CPQ Diagnostic Tool, only available if org setting is enabled. Contact support to enable this capability."
+    label = "Enable Diagnostic Tool"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__OutputFormatChangeAllowed__c {
+    apiName = "User.SBQQ__OutputFormatChangeAllowed__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that indicates whether this user is allowed to change output format of quote documents."
+    externalId = false
+    inlineHelpText = "Check to allow this user to change output format of quote documents."
+    label = "Allow Output Format Change"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ProductSortPreference__c {
+    apiName = "User.SBQQ__ProductSortPreference__c"
+    deprecated = false
+    description = "Product sort preference for this user. Currently only Chatter Follows are supported."
+    externalId = false
+    inlineHelpText = "Select \"Followed\" to display products you follow in Chatter before others when adding to quote."
+    label = "Product Sort Preference"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Followed"
+        default = false
+        label = "Followed"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__ResetProductLookup__c {
+    apiName = "User.SBQQ__ResetProductLookup__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that determines whether Product Lookup data (guided selling questions, search filters and search results) are cleared after user selects desired products."
+    externalId = false
+    inlineHelpText = "Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept."
+    label = "Reset Product Lookup"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Text SBQQ__Theme__c {
+    apiName = "User.SBQQ__Theme__c"
+    deprecated = false
+    description = "Field that will be set by Select Theme custom link, once one is selected."
+    externalId = false
+    label = "Theme"
+    length = 18
+    trackFeedHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+}

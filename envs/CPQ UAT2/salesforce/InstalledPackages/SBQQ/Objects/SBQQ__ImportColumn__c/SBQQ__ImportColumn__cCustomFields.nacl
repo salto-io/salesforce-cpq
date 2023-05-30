@@ -1,0 +1,97 @@
+type salesforce.SBQQ__ImportColumn__c {
+  salesforce.Number SBQQ__ColumnIndex__c {
+    apiName = "SBQQ__ImportColumn__c.SBQQ__ColumnIndex__c"
+    deprecated = false
+    description = "A numeric index value that represents the location of the column. Column index must start from 1."
+    externalId = false
+    inlineHelpText = "Enter a numeric index value that represents the location of the column. Column index must start from 1."
+    label = "Column Index"
+    precision = 5
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__FieldName__c {
+    apiName = "SBQQ__ImportColumn__c.SBQQ__FieldName__c"
+    deprecated = false
+    description = "This is the API Name."
+    externalId = false
+    inlineHelpText = "Enter the API Name."
+    label = "Field Name"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Discount (%)"
+        default = false
+        label = "Discount (%)"
+      },
+      {
+        fullName = "Discount (Amt)"
+        default = false
+        label = "Discount (Amt)"
+      },
+      {
+        fullName = "Partner Discount"
+        default = false
+        label = "Partner Discount"
+      },
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+      {
+        fullName = "Quantity"
+        default = false
+        label = "Quantity"
+      },
+      {
+        fullName = "List Price"
+        default = false
+        label = "List Price"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__ImportFormat__c {
+    apiName = "SBQQ__ImportColumn__c.SBQQ__ImportFormat__c"
+    deprecated = false
+    description = "The format in which your records are being imported."
+    externalId = false
+    inlineHelpText = "Select the format in which your records will be imported."
+    label = "Import Format"
+    referenceTo = [
+      salesforce.SBQQ__ImportFormat__c,
+    ]
+    relationshipLabel = "Import Columns"
+    relationshipName = "ImportColumns"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Key__c {
+    apiName = "SBQQ__ImportColumn__c.SBQQ__Key__c"
+    defaultValue = false
+    deprecated = false
+    description = "This column represents a unique key column."
+    externalId = false
+    inlineHelpText = "Select if this column should be a unique key column."
+    label = "Key"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

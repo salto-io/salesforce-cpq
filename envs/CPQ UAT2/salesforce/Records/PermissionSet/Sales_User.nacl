@@ -1,0 +1,11 @@
+salesforce.PermissionSet Sales_User {
+  fullName = "Sales_User"
+  hasActivationRequired = false
+  label = "Sales User"
+  userPermissions = {
+    CampaignInfluence2 = {
+      enabled = true
+      name = "CampaignInfluence2"
+    }
+  }
+}

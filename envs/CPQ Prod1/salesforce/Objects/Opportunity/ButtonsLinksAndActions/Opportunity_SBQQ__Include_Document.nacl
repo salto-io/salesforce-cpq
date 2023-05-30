@@ -1,0 +1,20 @@
+salesforce.WebLink Opportunity_SBQQ__Include_Document {
+  fullName = "Opportunity.SBQQ__Include_Document"
+  availability = "online"
+  description = "Allow users to attach the PDF to the opportunity"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Include Document"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__NewOpportunityRelatedContent
+  protected = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

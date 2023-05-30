@@ -1,0 +1,3 @@
+salesforce.GlobalValueSetTranslation PriceType_pt_BR@bu {
+  fullName = "PriceType-pt_BR"
+}

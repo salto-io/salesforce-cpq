@@ -1,0 +1,185 @@
+salesforce.Layout SBQQ__CustomAction__c_SBQQ__Custom_Action_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__CustomAction__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__DisplayOrder__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__ParentCustomAction__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Active__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Default__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__BrandButton__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__URLTarget__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__URL__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Layout"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Page__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Location__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Action__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Icon__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Label__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__CustomAction__c.field.SBQQ__Description__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__CustomAction__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__CustomAction__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__DisplayOrder__c",
+        "SBQQ__TargetObject__c",
+        "SBQQ__TargetField__c",
+        "SBQQ__Operator__c",
+        "SBQQ__FilterValue__c",
+        "SBQQ__Hidden__c",
+      ]
+      relatedList = salesforce.SBQQ__SearchFilter__c.field.SBQQ__Action__c
+      sortField = "SBQQ__DisplayOrder__c"
+      sortOrder = "Asc"
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__TargetObject__c",
+        "SBQQ__Field__c",
+        "SBQQ__Operator__c",
+        "SBQQ__FilterValue__c",
+      ]
+      relatedList = salesforce.SBQQ__CustomActionCondition__c.field.SBQQ__CustomAction__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__CustomAction__c.field.SBQQ__ParentCustomAction__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YDrFs"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__CustomAction__c-SBQQ__Custom Action Layout"
+  _parent = [
+    salesforce.SBQQ__CustomAction__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

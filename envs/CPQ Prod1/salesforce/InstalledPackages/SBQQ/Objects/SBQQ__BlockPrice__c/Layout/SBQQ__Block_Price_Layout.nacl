@@ -1,0 +1,162 @@
+salesforce.Layout SBQQ__BlockPrice__c_SBQQ__Block_Price_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__BlockPrice__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__LowerBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__UpperBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__Price__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__PriceBook2__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Snapshot Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__OriginalBlockPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__EffectiveDate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__OrderProduct__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__BlockPrice__c.field.SBQQ__QuoteLine__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__BlockPrice__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__BlockPrice__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Product__c",
+        "SBQQ__QuoteLine__c",
+        "SBQQ__OrderProduct__c",
+        "SBQQ__LowerBound__c",
+        "SBQQ__UpperBound__c",
+        "SBQQ__Price__c",
+        "SBQQ__PriceBook2__c",
+      ]
+      relatedList = salesforce.SBQQ__BlockPrice__c.field.SBQQ__OriginalBlockPrice__c
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ListPrice",
+        "TotalPrice",
+      ]
+      relatedList = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000V0Hv9"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__BlockPrice__c-SBQQ__Block Price Layout"
+  _parent = [
+    salesforce.SBQQ__BlockPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,203 @@
+salesforce.Layout Product2_Product_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Product2.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.ProductCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Subscription_License_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.License_Type__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Family
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Salto_ExternalId__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 0
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 1
+      },
+      {
+        actionName = "Clone"
+        actionType = "StandardButton"
+        sortOrder = 2
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedStandardPriceList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__Dimension__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Description__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__PriceRule__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "ConsumptionSchedule",
+      ]
+      relatedList = "ProductConsumptionSchedules"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ProductAction__c.field.SBQQ__Product__c
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ProductFeature__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ProductOption__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      relatedList = "RelatedPricebookEntryList"
+    },
+    {
+      relatedList = "RelatedContentNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h4J000001Pc2Z"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Product2-Product Layout"
+  _parent = [
+    salesforce.Product2,
+  ]
+}

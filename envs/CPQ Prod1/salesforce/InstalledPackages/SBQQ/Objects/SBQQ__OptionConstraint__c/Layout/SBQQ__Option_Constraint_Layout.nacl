@@ -1,0 +1,102 @@
+salesforce.Layout SBQQ__OptionConstraint__c_SBQQ__Option_Constraint_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__OptionConstraint__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__ConstrainedOption__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__ConstrainingOption__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__CheckPriorPurchases__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__Active__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__ConfiguredSKU__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__OptionConstraintGroup__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__OptionConstraint__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__OptionConstraint__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SBQQ__OptionConstraint__c-SBQQ__Option Constraint Layout"
+  _parent = [
+    salesforce.SBQQ__OptionConstraint__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

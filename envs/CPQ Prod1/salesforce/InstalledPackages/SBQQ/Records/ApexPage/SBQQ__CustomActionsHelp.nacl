@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CustomActionsHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "CustomActionsHelp"
+  fullName = "SBQQ__CustomActionsHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CustomActionsHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

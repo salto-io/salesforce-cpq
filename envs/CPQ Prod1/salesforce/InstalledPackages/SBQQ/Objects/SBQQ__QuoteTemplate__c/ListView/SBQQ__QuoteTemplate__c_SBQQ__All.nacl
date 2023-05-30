@@ -1,0 +1,19 @@
+salesforce.ListView SBQQ__QuoteTemplate__c_SBQQ__All {
+  fullName = "SBQQ__QuoteTemplate__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Default__c",
+    "SBQQ__PageOrientation__c",
+    "CREATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

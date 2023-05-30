@@ -1,0 +1,31 @@
+salesforce.ListView SBQQ__Localization__c_SBQQ__All {
+  fullName = "SBQQ__Localization__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Language__c",
+    "SBQQ__Label__c",
+    "SBQQ__APIName__c",
+    "SBQQ__QuoteTemplate__c",
+    "SBQQ__LineColumn__c",
+    "SBQQ__Product__c",
+    "SBQQ__ProductOption__c",
+    "SBQQ__ProductFeature__c",
+    "SBQQ__QuoteTerm__c",
+    "SBQQ__Text__c",
+    "SBQQ__TextArea__c",
+    "SBQQ__LongTextArea__c",
+    "SBQQ__RichTextArea__c",
+    "SBQQ__UserDefined__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  language = "en_US"
+  _parent = [
+    salesforce.SBQQ__Localization__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

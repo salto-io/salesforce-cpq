@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__BlockPrice__c_SBQQ__EditAll {
+  fullName = "SBQQ__BlockPrice__c.SBQQ__EditAll"
+  availability = "online"
+  displayType = "massActionButton"
+  height = 600
+  linkType = "page"
+  masterLabel = "Edit All"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__EditBlockPrices
+  protected = false
+  requireRowSelection = false
+  _parent = [
+    salesforce.SBQQ__BlockPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

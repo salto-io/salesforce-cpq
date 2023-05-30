@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__NewTemplateSectionRelatedContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "NewTemplateSectionRelatedContent"
+  fullName = "SBQQ__NewTemplateSectionRelatedContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__NewTemplateSectionRelatedContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

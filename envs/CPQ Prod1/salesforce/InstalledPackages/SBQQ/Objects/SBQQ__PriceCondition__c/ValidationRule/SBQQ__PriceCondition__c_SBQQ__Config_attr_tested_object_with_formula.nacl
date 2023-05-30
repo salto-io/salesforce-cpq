@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__PriceCondition__c_SBQQ__Config_attr_tested_object_with_formula {
+  fullName = "SBQQ__PriceCondition__c.SBQQ__Config_attr_tested_object_with_formula"
+  active = true
+  description = "Configuration Attribute as a tested object can’t be evaluated against a formula."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__Object__c, \"Configuration Attribute\"), (ISPICKVAL(SBQQ__FilterType__c, \"Formula\")))"
+  errorMessage = "Configuration Attribute as a tested object can’t be evaluated against a formula."
+  _parent = [
+    salesforce.SBQQ__PriceCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

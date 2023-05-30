@@ -1,0 +1,80 @@
+salesforce.Layout SBQQ__AttributeSet__c_SBQQ__Attribute_Set_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__AttributeSet__c.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__AttributeSet__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Attribute__c",
+        "SBQQ__TargetField__c",
+        "SBQQ__Sequence__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductAttribute__c.field.SBQQ__AttributeSet__c
+      sortField = "SBQQ__Sequence__c"
+      sortOrder = "Asc"
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__ProductName__c",
+        "SBQQ__ProductOptionName__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductAttributeSet__c.field.SBQQ__AttributeSet__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000002yDGG"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__AttributeSet__c-SBQQ__Attribute Set Layout"
+  _parent = [
+    salesforce.SBQQ__AttributeSet__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

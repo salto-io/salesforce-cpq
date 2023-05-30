@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__TemplateSection__c_SBQQ__IncludeDocument {
+  fullName = "SBQQ__TemplateSection__c.SBQQ__IncludeDocument"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Include Document"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__NewTemplateSectionRelatedContent
+  protected = false
+  _parent = [
+    salesforce.SBQQ__TemplateSection__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,166 @@
+salesforce.Profile Chatter_External_User@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Account
+      viewAllRecords = false
+    }
+    Asset = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Asset
+      viewAllRecords = false
+    }
+    Campaign = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Campaign
+      viewAllRecords = false
+    }
+    Case = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Case
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Contact
+      viewAllRecords = false
+    }
+    Contract = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Contract
+      viewAllRecords = false
+    }
+    Document = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = "Document"
+      viewAllRecords = false
+    }
+    Idea = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Idea
+      viewAllRecords = false
+    }
+    Lead = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Lead
+      viewAllRecords = false
+    }
+    Opportunity = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Opportunity
+      viewAllRecords = false
+    }
+    Order = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Order
+      viewAllRecords = false
+    }
+    Pricebook2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Pricebook2
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Product2
+      viewAllRecords = false
+    }
+    PushTopic = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = "PushTopic"
+      viewAllRecords = false
+    }
+    Quote = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Quote
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.SocialPersona
+      viewAllRecords = false
+    }
+    SocialPost = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.SocialPost
+      viewAllRecords = false
+    }
+    Solution = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = salesforce.Solution
+      viewAllRecords = false
+    }
+  }
+}

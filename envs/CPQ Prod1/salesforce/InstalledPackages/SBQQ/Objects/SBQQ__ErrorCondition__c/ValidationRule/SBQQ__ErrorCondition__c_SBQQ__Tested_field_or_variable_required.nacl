@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ErrorCondition__c_SBQQ__Tested_field_or_variable_required {
+  fullName = "SBQQ__ErrorCondition__c.SBQQ__Tested_field_or_variable_required"
+  active = true
+  description = "Requires that either Tested Variable or Tested Field be specified."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__TestedField__c,\"\"),ISBLANK(SBQQ__TestedVariable__c))"
+  errorMessage = "You must specify either Tested Field or Tested Variable."
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

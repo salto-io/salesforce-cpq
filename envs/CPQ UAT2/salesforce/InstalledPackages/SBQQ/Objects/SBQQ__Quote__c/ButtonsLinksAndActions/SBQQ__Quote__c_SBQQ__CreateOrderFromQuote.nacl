@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__CreateOrderFromQuote {
+  fullName = "SBQQ__Quote__c.SBQQ__CreateOrderFromQuote"
+  availability = "online"
+  description = "Create a new order from a quote."
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Create Order"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__CreateOrderFromQuote
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

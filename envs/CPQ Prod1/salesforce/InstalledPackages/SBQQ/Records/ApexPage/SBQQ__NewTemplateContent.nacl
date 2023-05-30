@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__NewTemplateContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "NewTemplateContent"
+  fullName = "SBQQ__NewTemplateContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__NewTemplateContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

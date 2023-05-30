@@ -1,0 +1,17 @@
+salesforce.ListView SBQQ__DiscountCategory__c_SBQQ__All {
+  fullName = "SBQQ__DiscountCategory__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "UPDATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__DiscountCategory__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_DealClosed@zcdu {
+  available = true
+  description = "Thank you note to customer"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Deal Closed"
+  relatedEntityType = "Opportunity"
+  style = "none"
+  subject = "Thank You!"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_DealClosed"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_DealClosed/Sample_DealClosed.email")
+}

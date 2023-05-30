@@ -1,0 +1,12 @@
+salesforce.EmailTemplate unfiled_public_ContactFollowUpSAMPLE@zcd {
+  available = true
+  description = "Follow up on meeting"
+  encodingKey = "ISO-8859-1"
+  name = "Contact: Follow Up (SAMPLE)"
+  style = "none"
+  subject = "Following up on our discussion today"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/ContactFollowUpSAMPLE"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/ContactFollowUpSAMPLE/ContactFollowUpSAMPLE.email")
+}

@@ -1,0 +1,87 @@
+type salesforce.SBQQ__TimingLog__c {
+  salesforce.Text SBQQ__Element__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Element__c"
+    deprecated = false
+    description = "Element name"
+    externalId = false
+    label = "Element"
+    length = 80
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__Finish__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Finish__c"
+    deprecated = false
+    description = "Finishing CPU time"
+    externalId = false
+    label = "Finish"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__Log__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Log__c"
+    deprecated = false
+    description = "Log entry"
+    externalId = false
+    inlineHelpText = "Log entry"
+    label = "Log"
+    length = 32768
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Start__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Start__c"
+    deprecated = false
+    description = "Starting CPU time"
+    externalId = false
+    inlineHelpText = "Starting CPU time"
+    label = "Start"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Total__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Total__c"
+    deprecated = false
+    description = "Total CPU time consumed."
+    externalId = false
+    label = "Total CPU Time"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__URL__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__URL__c"
+    deprecated = false
+    description = "Target of the request"
+    externalId = false
+    label = "URL"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

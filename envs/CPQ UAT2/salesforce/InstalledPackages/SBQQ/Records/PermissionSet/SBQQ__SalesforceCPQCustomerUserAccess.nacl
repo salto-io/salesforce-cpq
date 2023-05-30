@@ -1,0 +1,102 @@
+salesforce.PermissionSet SBQQ__SalesforceCPQCustomerUserAccess {
+  fullName = "SBQQ__SalesforceCPQCustomerUserAccess"
+  description = "Give customer users access to data protected through the setting Perform Enhanced Data Access Checks. Don’t clone this permission set."
+  fieldPermissions = {
+    OrderItem = {
+      SBQQ__Activated__c = "ReadWrite"
+      SBQQ__Asset__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__BlockPrice__c = "ReadWrite"
+      SBQQ__BookingsIndicator__c = "ReadWrite"
+      SBQQ__BundleRoot__c = "ReadOnly"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__ContractAction__c = "ReadWrite"
+      SBQQ__Contract__c = "ReadWrite"
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__DefaultSubscriptionTerm__c = "ReadWrite"
+      SBQQ__DimensionType__c = "ReadOnly"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__OrderProductBookings__c = "ReadOnly"
+      SBQQ__OrderedQuantity__c = "ReadWrite"
+      SBQQ__PriceDimension__c = "ReadWrite"
+      SBQQ__PriceSchedule__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductSubscriptionType__c = "ReadOnly"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__QuotedListPrice__c = "ReadOnly"
+      SBQQ__QuotedQuantity__c = "ReadWrite"
+      SBQQ__RequiredBy__c = "ReadWrite"
+      SBQQ__RevisedOrderProduct__c = "ReadWrite"
+      SBQQ__SegmentIndex__c = "ReadWrite"
+      SBQQ__SegmentKey__c = "ReadOnly"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__SubscriptionType__c = "ReadOnly"
+      SBQQ__Subscription__c = "ReadWrite"
+      SBQQ__TaxAmount__c = "ReadOnly"
+      SBQQ__TaxCode__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__TerminatedDate__c = "ReadWrite"
+      SBQQ__UnproratedNetPrice__c = "ReadWrite"
+      SBQQ__UpgradedSubscription__c = "ReadWrite"
+    }
+    SBQQ__QuoteLine__c = {
+      SBQQ__AllowAssetRefund__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadOnly"
+      SBQQ__BillingType__c = "ReadOnly"
+      SBQQ__CarryoverLine__c = "ReadOnly"
+      SBQQ__ChargeType__c = "ReadOnly"
+      SBQQ__EffectiveSubscriptionTerm__c = "ReadOnly"
+      SBQQ__HasConsumptionSchedule__c = "ReadOnly"
+      SBQQ__TaxCode__c = "ReadOnly"
+      SBQQ__UpgradedQuantity__c = "ReadOnly"
+    }
+    Order = {
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__OrderBookings__c = "ReadOnly"
+      SBQQ__PaymentTerm__c = "ReadWrite"
+      SBQQ__PriceCalcStatusMessage__c = "ReadWrite"
+      SBQQ__PriceCalcStatus__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__RenewalTerm__c = "ReadOnly"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__TaxAmount__c = "ReadOnly"
+    }
+    SBQQ__Quote__c = {
+      SBQQ__OrderByQuoteLineGroup__c = "ReadOnly"
+      SBQQ__OrderBy__c = "ReadOnly"
+    }
+  }
+  hasActivationRequired = false
+  label = "Salesforce CPQ Customer User Access"
+  objectPermissions = {
+    SBQQ__Localization__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__Localization__c
+      viewAllRecords = false
+    }
+    SBQQ__PriceSchedule__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__PriceSchedule__c
+      viewAllRecords = false
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

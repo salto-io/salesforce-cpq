@@ -1,0 +1,12 @@
+salesforce.EmailTemplate unfiled_public_SUPPORTCaseResponsewithSolutionSAMPLE@zcd {
+  available = true
+  description = "Standard template for responses to customer inquiries."
+  encodingKey = "ISO-8859-1"
+  name = "SUPPORT: Case Response with Solution (SAMPLE)"
+  style = "none"
+  subject = "Case {!Case.CaseNumber}:  {!Case.Subject}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE/SUPPORTCaseResponsewithSolutionSAMPLE.email")
+}

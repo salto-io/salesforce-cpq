@@ -1,0 +1,133 @@
+type salesforce.CampaignInfluence {
+  salesforce.Lookup CampaignId {
+    apiName = "CampaignInfluence.CampaignId"
+    relationshipName = "Campaign"
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    _required = true
+    label = "Campaign ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "CampaignInfluence.ContactId"
+    relationshipName = "Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    label = "Contact ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Percent Influence {
+    apiName = "CampaignInfluence.Influence"
+    label = "Influence (%)"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Lookup ModelId {
+    apiName = "CampaignInfluence.ModelId"
+    relationshipName = "Model"
+    referenceTo = [
+      salesforce.CampaignInfluenceModel,
+    ]
+    _required = true
+    label = "Campaign Influence Model ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "CampaignInfluence.OpportunityId"
+    relationshipName = "Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    _required = true
+    label = "Opportunity ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Currency RevenueShare {
+    apiName = "CampaignInfluence.RevenueShare"
+    label = "Revenue Share"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "CampaignInfluence.Id"
+    label = "Campaign Influence ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CampaignInfluence.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CampaignInfluence.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CampaignInfluence.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CampaignInfluence.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CampaignInfluence.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CampaignInfluence.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

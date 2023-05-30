@@ -1,0 +1,42 @@
+salesforce.GlobalValueSet SBQQ__PaymentTerm {
+  fullName = "SBQQ__PaymentTerm"
+  customValue = [
+    {
+      fullName = "Due on receipt"
+      default = false
+      label = "Due on receipt"
+    },
+    {
+      fullName = "Net 15"
+      default = false
+      label = "Net 15"
+    },
+    {
+      fullName = "Net 30"
+      default = true
+      label = "Net 30"
+    },
+    {
+      fullName = "Net 45"
+      default = false
+      label = "Net 45"
+    },
+    {
+      fullName = "Net 60"
+      default = false
+      label = "Net 60"
+    },
+    {
+      fullName = "Net 90"
+      default = false
+      label = "Net 90"
+    },
+  ]
+  masterLabel = "Payment Term"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}
