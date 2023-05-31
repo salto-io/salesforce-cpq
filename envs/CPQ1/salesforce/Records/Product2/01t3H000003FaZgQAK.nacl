@@ -1,7 +1,7 @@
 salesforce.Product2 "01t3H000003FaZgQAK" {
   Family = "None"
   IsActive = true
-  License_Type__c = "Subscription"
+  License_Type__c = "Perpetual"
   Name = "StarTech Keyboard"
   ProductCode = "Stkbrd"
   
@@ -35,7 +35,7 @@ salesforce.Product2 "01t3H000003FaZgQAK" {
   SBQQ__SubscriptionBase__c = "List"
   SBQQ__SubscriptionType__c = "Renewable"
   SBQQ__Taxable__c = false
-  Subscription_License_Type__c = "Pre Paid"
+  Subscription_License_Type__c = "Pre-Paid Overage Use"
   _alias = "Stkbrd None StarTech Keyboard"
-  Description = "Pay as you go Keyboard"
+  Description = "The best keyboard we have"
 }

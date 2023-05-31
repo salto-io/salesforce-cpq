@@ -1,0 +1,11 @@
+salesforce.SBQQ__PriceRule__c a0e3H0000021yl1QAA {
+  SBQQ__Active__c = true
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "On Calculate"
+  SBQQ__EvaluationOrder__c = 1
+  SBQQ__LookupObject__c = salesforce.SBQQ__LookupData__c
+  SBQQ__Product__c = salesforce.Product2.instance.01t3H000003FaZgQAK
+  SBQQ__TargetObject__c = "Configurator"
+  Name = "Set default price"
+  _alias = "Set default price"
+}
