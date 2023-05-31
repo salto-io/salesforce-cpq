@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceCondition__c a0d3H000008rWjcQAE {
+  SBQQ__Field__c = "Product Code"
+  SBQQ__FilterType__c = "Value"
+  SBQQ__Object__c = "Product Option"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.a0e3H0000021yl1QAA
+  SBQQ__Value__c = "VIP"
+  _alias = "Set default price 11"
+}
