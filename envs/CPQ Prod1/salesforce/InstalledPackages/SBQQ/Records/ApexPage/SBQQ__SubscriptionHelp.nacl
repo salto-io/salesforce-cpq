@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__SubscriptionHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Subscription Help"
+  fullName = "SBQQ__SubscriptionHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__SubscriptionHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

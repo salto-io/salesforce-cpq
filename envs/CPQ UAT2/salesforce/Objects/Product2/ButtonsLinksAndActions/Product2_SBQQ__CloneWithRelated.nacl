@@ -1,0 +1,20 @@
+salesforce.WebLink Product2_SBQQ__CloneWithRelated {
+  fullName = "Product2.SBQQ__CloneWithRelated"
+  availability = "online"
+  description = "Inserts a copy of current record with related child records, then opens the new record for further modifications.  Required for Lightning Desktop."
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__CloneProductChildren?id={!Product2.Id}"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

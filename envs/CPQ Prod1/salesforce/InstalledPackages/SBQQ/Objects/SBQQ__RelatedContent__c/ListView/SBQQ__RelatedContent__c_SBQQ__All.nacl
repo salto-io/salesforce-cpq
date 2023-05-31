@@ -1,0 +1,23 @@
+salesforce.ListView SBQQ__RelatedContent__c_SBQQ__All {
+  fullName = "SBQQ__RelatedContent__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__DisplayOrder__c",
+    "SBQQ__DocumentName__c",
+    "SBQQ__ExternalId__c",
+    "SBQQ__Product__c",
+    "SBQQ__Quote__c",
+    "SBQQ__QuoteTemplate__c",
+    "SBQQ__Required__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__RelatedContent__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

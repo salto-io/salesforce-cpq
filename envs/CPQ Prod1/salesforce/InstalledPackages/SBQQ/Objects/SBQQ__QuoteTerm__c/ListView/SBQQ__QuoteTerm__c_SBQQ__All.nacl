@@ -1,0 +1,21 @@
+salesforce.ListView SBQQ__QuoteTerm__c_SBQQ__All {
+  fullName = "SBQQ__QuoteTerm__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__PrintOrder__c",
+    "SBQQ__Active__c",
+    "SBQQ__Status__c",
+    "SBQQ__Type__c",
+    "SBQQ__Body__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__QuoteTerm__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

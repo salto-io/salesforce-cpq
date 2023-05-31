@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__PriceSchedule__c_SBQQ__EditTiers {
+  fullName = "SBQQ__PriceSchedule__c.SBQQ__EditTiers"
+  availability = "online"
+  description = "Launches the page that edits multiple tiers at once."
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Edit Tiers"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__EditDiscountTiers
+  protected = false
+  _parent = [
+    salesforce.SBQQ__PriceSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

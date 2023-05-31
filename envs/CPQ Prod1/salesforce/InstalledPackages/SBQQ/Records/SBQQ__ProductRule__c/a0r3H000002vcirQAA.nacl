@@ -1,0 +1,15 @@
+salesforce.SBQQ__ProductRule__c a0r3H000002vcirQAA {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__ErrorMessage__c = "Test product rule"
+  SBQQ__EvaluationEvent__c = "Save"
+  SBQQ__EvaluationOrder__c = 1
+  SBQQ__LookupObject__c = salesforce.SBQQ__LookupData__c
+  SBQQ__LookupProductField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Product__c
+  SBQQ__LookupRequiredField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Required__c
+  SBQQ__LookupTypeField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Type__c
+  SBQQ__Scope__c = "Quote"
+  SBQQ__Type__c = "Selection"
+  Name = "Salto1 must come with Salto2"
+  _alias = "Salto1 must come with Salto2"
+}

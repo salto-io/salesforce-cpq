@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__UpgradeSource__c_SBQQ__Conversion_Rate_Must_Fit_Ratio_Format {
+  fullName = "SBQQ__UpgradeSource__c.SBQQ__Conversion_Rate_Must_Fit_Ratio_Format"
+  active = true
+  description = "Guarantee that the Upgrade Conversion Rate is in the form of a ratio."
+  errorConditionFormula = "NOT(REGEX(BLANKVALUE(SBQQ__UpgradeConversionRate__c, \"1:1\"), \"[1-9][\\\\d]*:[1-9][\\\\d]*\"))"
+  errorMessage = "Conversion Rate must be represented as a ratio of the format \"Upgrade Source:Upgrade Product\"."
+  _parent = [
+    salesforce.SBQQ__UpgradeSource__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

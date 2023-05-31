@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__Spectrum {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  description = "Spectrum color picker JQuery UI Plugin."
+  fullName = "SBQQ__Spectrum"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__Spectrum.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

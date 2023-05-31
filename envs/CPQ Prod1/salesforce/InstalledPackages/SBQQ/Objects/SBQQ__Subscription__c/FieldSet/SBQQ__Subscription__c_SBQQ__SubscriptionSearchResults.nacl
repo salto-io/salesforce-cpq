@@ -1,0 +1,67 @@
+salesforce.FieldSet SBQQ__Subscription__c_SBQQ__SubscriptionSearchResults {
+  fullName = "SBQQ__Subscription__c.SBQQ__SubscriptionSearchResults"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__Contract__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__Product__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__Quantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalProductId__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalUpliftRate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Fields displayed in search results in Subscription Lookup page."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__ContractNumber__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__RenewalQuantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__StartDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__Subscription__c.field.SBQQ__EndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Subscription Search Results"
+  _parent = [
+    salesforce.SBQQ__Subscription__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

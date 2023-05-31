@@ -1,0 +1,18 @@
+salesforce.ListView SBQQ__ConfigurationAttribute__c_SBQQ__All {
+  fullName = "SBQQ__ConfigurationAttribute__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__TargetField__c",
+    "RECORDTYPE",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

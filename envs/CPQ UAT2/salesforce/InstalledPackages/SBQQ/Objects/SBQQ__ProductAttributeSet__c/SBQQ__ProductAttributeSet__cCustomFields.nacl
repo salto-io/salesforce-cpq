@@ -1,0 +1,91 @@
+type salesforce.SBQQ__ProductAttributeSet__c {
+  salesforce.Lookup SBQQ__AttributeSet__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__AttributeSet__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Attribute Sets"
+    referenceTo = [
+      salesforce.SBQQ__AttributeSet__c,
+    ]
+    relationshipName = "Attribute_Sets"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__ConfiguredSKU__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ConfiguredSKU__c"
+    deprecated = false
+    externalId = false
+    formula = "CASESAFEID(SBQQ__ProductOption__r.SBQQ__ConfiguredSKU__r.Id)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Configured SKU"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__ProductName__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductName__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__ProductOption__r.SBQQ__ConfiguredSKU__r.Name"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Parent Product Name"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaText SBQQ__ProductOptionName__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductOptionName__c"
+    deprecated = false
+    externalId = false
+    formula = "SBQQ__ProductOption__r.SBQQ__OptionalSKU__r.Name"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Product Option Name"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup SBQQ__ProductOption__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductOption__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Product Option"
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    relationshipName = "Product_Option"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__Sequence__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__Sequence__c"
+    deprecated = false
+    externalId = false
+    label = "Sequence"
+    precision = 18
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

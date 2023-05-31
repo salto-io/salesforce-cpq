@@ -1,0 +1,19 @@
+salesforce.WebLink Product2_SBQQ__Translate {
+  fullName = "Product2.SBQQ__Translate"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Translate"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__Translations?targetObject=Product&targetId={!Product2.Id}&supportUserDefined=false&supportStandard=true"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

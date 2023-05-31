@@ -1,0 +1,73 @@
+salesforce.Report Sales_Marketing_Reports_Leads_Converted_All_Time@uuduuu {
+  columns = [
+    {
+      field = "LEAD_OWNER"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "COMPANY_ACCT"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "LAST_UPDATE"
+    },
+    {
+      field = "CONVERTED_DATE"
+    },
+    {
+      field = "OPP_OWNER"
+    },
+    {
+      field = "OPP_NAME"
+    },
+    {
+      field = "OPP_ACCT_NAME"
+    },
+    {
+      field = "CLOSE_DATE"
+    },
+  ]
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "LEAD_SOURCE"
+      sortOrder = "Asc"
+    },
+    {
+      dateGranularity = "Day"
+      field = "STATUS"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Leads Converted All Time"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "OpportunityLead"
+  scope = "org"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CONVERTED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "Sales_Marketing_Reports/Leads_Converted_All_Time"
+}

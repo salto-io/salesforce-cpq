@@ -1,0 +1,64 @@
+salesforce.Report unfiled_public_SampleReportsLeadsbyStatus@zcd {
+  columns = [
+    {
+      field = "OWNER"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "COMPANY"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "STREET"
+    },
+    {
+      field = "EMAIL"
+    },
+  ]
+  description = "What is the status of leads created this quarter?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "STATUS"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Reports: Leads by Status"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "LeadList"
+  scope = "org"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CURNEXT1"
+  }
+  fullName = "unfiled$public/SampleReportsLeadsbyStatus"
+}

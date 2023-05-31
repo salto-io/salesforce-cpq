@@ -1,0 +1,8 @@
+salesforce.Profile Standard {
+  customSettingAccesses = {
+    SBQQ__FieldMetadata__c = {
+      enabled = true
+      name = "SBQQ__FieldMetadata__c"
+    }
+  }
+}

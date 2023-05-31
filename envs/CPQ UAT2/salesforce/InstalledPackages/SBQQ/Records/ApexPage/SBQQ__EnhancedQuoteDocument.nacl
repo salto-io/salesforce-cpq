@@ -1,0 +1,14 @@
+salesforce.ApexPage SBQQ__EnhancedQuoteDocument {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  description = "Enhanced version of QuoteDocument page that renders XSL:FO tree using HTML or XSL:FO sections of content."
+  label = "EnhancedQuoteDocument"
+  fullName = "SBQQ__EnhancedQuoteDocument"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EnhancedQuoteDocument.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

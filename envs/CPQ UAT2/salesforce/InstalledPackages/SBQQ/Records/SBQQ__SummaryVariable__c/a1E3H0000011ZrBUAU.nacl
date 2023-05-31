@@ -1,0 +1,10 @@
+salesforce.SBQQ__SummaryVariable__c a1E3H0000011ZrBUAU {
+  SBQQ__AggregateField__c = "Quantity"
+  SBQQ__AggregateFunction__c = "Count"
+  SBQQ__CompositeOperator__c = "Add"
+  SBQQ__ConstraintField__c = "Type"
+  SBQQ__Scope__c = "Quote"
+  SBQQ__TargetObject__c = "Product Option"
+  Name = "Var1"
+  _alias = "Var1"
+}

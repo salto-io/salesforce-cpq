@@ -1,0 +1,126 @@
+salesforce.Layout ConsumptionSchedule_SBQQ__CPQ_Consumption_Schedule_Layout@buusss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ConsumptionSchedule.field.UnitOfMeasure
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.RatingMethod
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.SBQQ__Category__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ConsumptionSchedule.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ConsumptionSchedule.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.BillingTerm
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ConsumptionSchedule.field.BillingTermUnit
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ConsumptionSchedule.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ConsumptionSchedule.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "LowerBound",
+        "UpperBound",
+        "Price",
+        "PricingMethod",
+        "ProcessingOrder",
+      ]
+      relatedList = "ConsumptionRates"
+    },
+    {
+      fields = [
+        "Product",
+      ]
+      relatedList = "ProductConsumptionSchedules"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hR0000000VQrG"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "ConsumptionSchedule-SBQQ__CPQ Consumption Schedule Layout"
+  _parent = [
+    salesforce.ConsumptionSchedule,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

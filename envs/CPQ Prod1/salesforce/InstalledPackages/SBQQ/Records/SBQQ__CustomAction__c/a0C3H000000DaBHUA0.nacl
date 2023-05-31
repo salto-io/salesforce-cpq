@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBHUA0 {
+  SBQQ__Action__c = "Add To Favorites"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "addToFavBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 990
+  SBQQ__EventHandlerName__c = "onAddToFavorites"
+  SBQQ__Label__c = "Add To Favorites"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Add To Favorites"
+  _alias = "Add To Favorites"
+}

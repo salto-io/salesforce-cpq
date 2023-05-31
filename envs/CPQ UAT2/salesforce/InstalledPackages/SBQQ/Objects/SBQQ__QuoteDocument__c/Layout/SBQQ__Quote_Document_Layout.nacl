@@ -1,0 +1,153 @@
+salesforce.Layout SBQQ__QuoteDocument__c_SBQQ__Quote_Document_Layout@uuuubuuss {
+  customButtons = [
+    "SBQQ__View",
+    "SBQQ__Email",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteDocument__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__Quote__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__Version__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__ListAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__ElectronicSignature__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__Opportunity__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__Template__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__OutputFormat__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__NetAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__SignatureStatus__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__ViewRecordId__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__DocumentId__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000QbmaB"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__QuoteDocument__c-SBQQ__Quote Document Layout"
+  _parent = [
+    salesforce.SBQQ__QuoteDocument__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

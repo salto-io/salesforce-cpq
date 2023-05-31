@@ -1,0 +1,142 @@
+type salesforce.SBQQ__ProcessInputCondition__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__ProcessInputCondition__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that indicates whether this rule is active or inactive."
+    externalId = false
+    inlineHelpText = "Flag that indicates whether this rule is active or inactive."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__MasterProcessInput__c {
+    apiName = "SBQQ__ProcessInputCondition__c.SBQQ__MasterProcessInput__c"
+    deleteConstraint = "Restrict"
+    deprecated = false
+    description = "Values of this process input will determine the visibility of the current input."
+    externalId = false
+    inlineHelpText = "Values of this process input will determine the visibility of the current input."
+    label = "Master Process Input"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "$Source.SBQQ__ProcessInput__c"
+          operation = "equals"
+          valueField = "$Source.SBQQ__ProcessInput__c"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProcessInput__c,
+    ]
+    relationshipLabel = "Process Inputs Regulated"
+    relationshipName = "DependentInputs"
+    _required = true
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__ProcessInputCondition__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "The operator being used when comparing process input values."
+    externalId = false
+    inlineHelpText = "Select the operator to use when comparing process input values."
+    label = "Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__ProcessInput__c {
+    apiName = "SBQQ__ProcessInputCondition__c.SBQQ__ProcessInput__c"
+    deprecated = false
+    description = "Process input that owns the condition."
+    externalId = false
+    inlineHelpText = "Process input that owns the condition."
+    label = "Process Input"
+    referenceTo = [
+      salesforce.SBQQ__ProcessInput__c,
+    ]
+    relationshipLabel = "Process Input Conditions"
+    relationshipName = "ProcessInputCondition"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text SBQQ__Value__c {
+    apiName = "SBQQ__ProcessInputCondition__c.SBQQ__Value__c"
+    deprecated = false
+    description = "The value used to compare to the controlling process input."
+    externalId = false
+    inlineHelpText = "The value used to compare to the controlling process input."
+    label = "Value"
+    length = 255
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

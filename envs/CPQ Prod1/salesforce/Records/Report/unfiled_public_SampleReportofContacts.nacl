@@ -1,0 +1,75 @@
+salesforce.Report unfiled_public_SampleReportofContacts@zcd {
+  columns = [
+    {
+      field = "SALUTATION"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "ADDRESS2_STREET"
+    },
+    {
+      field = "ADDRESS2_CITY"
+    },
+    {
+      field = "ADDRESS2_STATE"
+    },
+    {
+      field = "ADDRESS2_ZIP"
+    },
+    {
+      field = "ADDRESS2_COUNTRY"
+    },
+    {
+      field = "PHONE1"
+    },
+    {
+      field = "PHONE3"
+    },
+    {
+      field = "PHONE2"
+    },
+    {
+      field = "EMAIL"
+    },
+    {
+      field = "OWNER_FULL_NAME"
+    },
+    {
+      field = "ACCOUNT.NAME"
+    },
+  ]
+  description = "How many contacts do we have in Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Contacts"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "ContactList"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofContacts"
+}

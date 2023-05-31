@@ -1,0 +1,62 @@
+salesforce.Report unfiled_public_SampleReportOpenCasesByPriority@zcd {
+  columns = [
+    {
+      field = "AGE"
+    },
+    {
+      field = "OWNER"
+    },
+    {
+      field = "SUBJECT"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "OPEN"
+    },
+    {
+      field = "CLOSED"
+    },
+    {
+      field = "ACCOUNT.NAME"
+    },
+  ]
+  description = "How many open support cases do we have by priority?"
+  filter = {
+    criteriaItems = [
+      {
+        column = "OPEN"
+        columnToColumn = false
+        isUnlocked = false
+        operator = "equals"
+        value = "1"
+      },
+    ]
+  }
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "PRIORITY"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Open Cases By Priority"
+  params = [
+    {
+      name = "units"
+      value = "h"
+    },
+  ]
+  reportType = "CaseList"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATEONLY"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/SampleReportOpenCasesByPriority"
+}

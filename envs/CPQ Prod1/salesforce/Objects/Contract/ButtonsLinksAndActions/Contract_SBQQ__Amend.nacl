@@ -1,0 +1,20 @@
+salesforce.WebLink Contract_SBQQ__Amend {
+  fullName = "Contract.SBQQ__Amend"
+  availability = "online"
+  description = "Amend Contract directs to Amend Contract Page"
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Amend"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__AmendContract
+  protected = false
+  _parent = [
+    salesforce.Contract,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

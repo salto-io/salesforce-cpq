@@ -1,0 +1,15 @@
+salesforce.SBQQ__ProductRule__c a0r3H000001ogtsQAA {
+  SBQQ__Active__c = true
+  SBQQ__ConditionsMet__c = "Any"
+  SBQQ__ErrorMessage__c = "A rule message"
+  SBQQ__EvaluationEvent__c = "Save"
+  SBQQ__LookupMessageField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Message__c
+  SBQQ__LookupObject__c = salesforce.SBQQ__LookupData__c
+  SBQQ__LookupProductField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Product__c
+  SBQQ__LookupRequiredField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Required__c
+  SBQQ__LookupTypeField__c = salesforce.SBQQ__LookupData__c.field.SBQQ__Type__c
+  SBQQ__Scope__c = "Product"
+  SBQQ__Type__c = "Alert"
+  Name = "RuleWithLookup"
+  _alias = "RuleWithLookup"
+}

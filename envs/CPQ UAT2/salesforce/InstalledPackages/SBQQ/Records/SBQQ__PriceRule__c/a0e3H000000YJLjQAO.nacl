@@ -1,0 +1,8 @@
+salesforce.SBQQ__PriceRule__c a0e3H000000YJLjQAO {
+  SBQQ__Active__c = true
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "On Calculate"
+  SBQQ__TargetObject__c = "Calculator"
+  Name = "Set Pre Paid SW Price"
+  _alias = "Set Pre Paid SW Price"
+}

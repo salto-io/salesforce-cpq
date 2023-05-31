@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CustomScriptHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "CustomScriptHelp"
+  fullName = "SBQQ__CustomScriptHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CustomScriptHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,21 @@
+salesforce.ListView SBQQ__TimingLog__c_SBQQ__All {
+  fullName = "SBQQ__TimingLog__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Element__c",
+    "SBQQ__Start__c",
+    "SBQQ__Finish__c",
+    "SBQQ__Total__c",
+    "SBQQ__Log__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__TimingLog__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

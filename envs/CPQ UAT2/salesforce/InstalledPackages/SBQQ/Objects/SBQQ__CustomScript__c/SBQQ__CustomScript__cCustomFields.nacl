@@ -1,0 +1,99 @@
+type salesforce.SBQQ__CustomScript__c {
+  salesforce.LongTextArea SBQQ__Code__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__Code__c"
+    deprecated = false
+    description = "Script code"
+    externalId = false
+    inlineHelpText = "Code that can be executed by an outside resource."
+    label = "Code"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  "List<salesforce.Text>" SBQQ__ConsumptionRateFields__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__ConsumptionRateFields__c"
+    deprecated = false
+    description = "Fields on the ConsumptionRate object referenced by this plugin"
+    externalId = false
+    inlineHelpText = "API names of consumption rate fields referenced by this plugin. Enter as many as 10 fields, one field on each line.."
+    label = "Consumption Rate Fields"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  "List<salesforce.Text>" SBQQ__ConsumptionScheduleFields__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__ConsumptionScheduleFields__c"
+    deprecated = false
+    description = "Fields on the ConsumptionSchedule object referenced by this plugin"
+    externalId = false
+    inlineHelpText = "API names of consumption schedule fields referenced by this plugin. Enter as many as 10 fields, one field on each line."
+    label = "Consumption Schedule Fields"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  "List<salesforce.Text>" SBQQ__GroupFields__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__GroupFields__c"
+    deprecated = false
+    description = "Fields on the QuoteLineGroup__c object referenced by this plugin"
+    externalId = false
+    inlineHelpText = "Enter the API names of any Quote Line Group fields referenced by this plugin, one per line."
+    label = "Quote Line Group Fields"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  "List<salesforce.Text>" SBQQ__QuoteFields__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__QuoteFields__c"
+    deprecated = false
+    description = "Fields on the Quote__c object referenced by this plugin"
+    externalId = false
+    inlineHelpText = "Enter the API names of any Quote fields referenced by this plugin, one per line."
+    label = "Quote Fields"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  "List<salesforce.Text>" SBQQ__QuoteLineFields__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__QuoteLineFields__c"
+    deprecated = false
+    description = "QuoteLine__c fields referenced by the plugin"
+    externalId = false
+    inlineHelpText = "Enter the API names of all Quote Line fields referenced by this plugin, one per line."
+    label = "Quote Line Fields"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__TranspiledCode__c {
+    apiName = "SBQQ__CustomScript__c.SBQQ__TranspiledCode__c"
+    deprecated = false
+    description = "Script Code transpiled to ES5"
+    externalId = false
+    label = "Transpiled Code"
+    length = 131072
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

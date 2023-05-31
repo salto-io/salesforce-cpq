@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__PreviewDocument {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Preview Document"
+  fullName = "SBQQ__PreviewDocument"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__PreviewDocument.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

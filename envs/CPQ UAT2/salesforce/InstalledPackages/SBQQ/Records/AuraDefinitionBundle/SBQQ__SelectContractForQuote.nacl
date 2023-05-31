@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle SBQQ__SelectContractForQuote {
+  apiVersion = 40
+  description = "SelectContractForQuote"
+  fullName = "SBQQ__SelectContractForQuote"
+  type = "Component"
+  markup = "(hidden)"
+  controllerContent = "(hidden)"
+  helperContent = "(hidden)"
+  designContent = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

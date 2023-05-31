@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ImportLines {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "ImportLines"
+  fullName = "SBQQ__ImportLines"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ImportLines.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

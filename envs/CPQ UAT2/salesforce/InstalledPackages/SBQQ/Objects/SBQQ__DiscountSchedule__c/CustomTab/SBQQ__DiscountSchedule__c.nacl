@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__DiscountSchedule__c {
+  fullName = "SBQQ__DiscountSchedule__c"
+  customObject = true
+  description = "Tab to manage discount schedules."
+  motif = "Custom70: Handsaw"
+  _parent = [
+    salesforce.SBQQ__DiscountSchedule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

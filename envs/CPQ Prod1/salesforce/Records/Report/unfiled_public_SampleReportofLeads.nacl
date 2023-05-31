@@ -1,0 +1,57 @@
+salesforce.Report unfiled_public_SampleReportofLeads@zcd {
+  columns = [
+    {
+      field = "OWNER"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "COMPANY"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "STREET"
+    },
+    {
+      field = "EMAIL"
+    },
+  ]
+  description = "How many leads have we added to Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Leads"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "LeadList"
+  scope = "org"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofLeads"
+}

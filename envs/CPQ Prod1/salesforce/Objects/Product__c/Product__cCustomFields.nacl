@@ -1,0 +1,15 @@
+type salesforce.Product__c {
+  salesforce.Text ProductCode__c {
+    apiName = "Product__c.ProductCode__c"
+    description = "tamtamir's Product Cdoe"
+    externalId = false
+    label = "Product Code"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass NewApex {
+  apiVersion = 54
+  status = "Active"
+  fullName = "NewApex"
+  content = file("salesforce/Records/ApexClass/NewApex.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

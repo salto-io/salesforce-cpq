@@ -1,0 +1,43 @@
+type salesforce.ReportColorRange {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string aggregate {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Average",
+        "Maximum",
+        "Median",
+        "Minimum",
+        "None",
+        "Sum",
+        "Unique",
+      ]
+    }
+  }
+  string columnName {
+  }
+  number highBreakpoint {
+  }
+  string highColor {
+  }
+  number lowBreakpoint {
+  }
+  string lowColor {
+  }
+  string midColor {
+  }
+  metadataType = "ReportColorRange"
+}

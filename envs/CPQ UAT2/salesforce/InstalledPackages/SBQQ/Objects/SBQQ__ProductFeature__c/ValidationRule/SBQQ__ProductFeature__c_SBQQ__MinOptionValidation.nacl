@@ -1,0 +1,16 @@
+salesforce.ValidationRule SBQQ__ProductFeature__c_SBQQ__MinOptionValidation {
+  fullName = "SBQQ__ProductFeature__c.SBQQ__MinOptionValidation"
+  active = true
+  description = "Min Options cannot be negative."
+  errorConditionFormula = "AND(ISNEW(),SBQQ__MinOptionCount__c < 0)"
+  errorDisplayField = salesforce.SBQQ__ProductFeature__c.field.SBQQ__MinOptionCount__c
+  errorMessage = "Min Options cannot be negative."
+  _parent = [
+    salesforce.SBQQ__ProductFeature__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

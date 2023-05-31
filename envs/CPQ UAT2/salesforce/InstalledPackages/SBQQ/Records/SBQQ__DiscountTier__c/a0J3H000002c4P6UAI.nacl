@@ -1,0 +1,8 @@
+salesforce.SBQQ__DiscountTier__c a0J3H000002c4P6UAI {
+  SBQQ__LowerBound__c = 0
+  SBQQ__Number__c = 1
+  SBQQ__Schedule__c = salesforce.SBQQ__DiscountSchedule__c.instance.a0I3H000000s28TUAQ
+  SBQQ__UpperBound__c = 10
+  Name = "TestTier"
+  _alias = "Schedule1 TestTier"
+}

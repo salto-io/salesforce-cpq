@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__SummaryVariable__c {
+  fullName = "SBQQ__SummaryVariable__c"
+  customObject = true
+  description = "Tab for managing summary variables."
+  motif = "Custom79: Measuring Tape"
+  _parent = [
+    salesforce.SBQQ__SummaryVariable__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

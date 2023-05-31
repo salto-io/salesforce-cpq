@@ -1,0 +1,13 @@
+salesforce.Queue Other {
+  fullName = "Other"
+  doesSendEmailToMembers = false
+  name = "Other"
+  queueMembers = {
+    users = {
+      user = "hadas.birin+prod@salto.io"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+}

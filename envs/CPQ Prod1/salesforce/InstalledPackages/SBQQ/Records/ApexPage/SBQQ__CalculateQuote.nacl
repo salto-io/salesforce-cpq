@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__CalculateQuote {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = true
+  label = "CalculateAndSave"
+  fullName = "SBQQ__CalculateQuote"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CalculateQuote.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

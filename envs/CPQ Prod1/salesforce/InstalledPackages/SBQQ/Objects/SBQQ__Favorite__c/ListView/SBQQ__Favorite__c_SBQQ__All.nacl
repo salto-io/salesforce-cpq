@@ -1,0 +1,13 @@
+salesforce.ListView SBQQ__Favorite__c_SBQQ__All {
+  fullName = "SBQQ__Favorite__c.SBQQ__All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__Favorite__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

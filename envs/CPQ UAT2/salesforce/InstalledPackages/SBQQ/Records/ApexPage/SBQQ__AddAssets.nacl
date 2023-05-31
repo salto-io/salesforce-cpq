@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__AddAssets {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "AddAssets"
+  fullName = "SBQQ__AddAssets"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__AddAssets.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

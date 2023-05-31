@@ -1,0 +1,4281 @@
+salesforce.PermissionSet SBQQ__SteelBrickCPQSessionBasedAdmin {
+  fullName = "SBQQ__SteelBrickCPQSessionBasedAdmin"
+  classAccesses = {
+    SBQQ__APIable = {
+      apexClass = "SBQQ__APIable"
+      enabled = true
+    }
+    SBQQ__AbstractDAO = {
+      apexClass = "SBQQ__AbstractDAO"
+      enabled = true
+    }
+    SBQQ__AbstractDAOTest = {
+      apexClass = "SBQQ__AbstractDAOTest"
+      enabled = true
+    }
+    SBQQ__AbstractPriceRuleEvaluator = {
+      apexClass = "SBQQ__AbstractPriceRuleEvaluator"
+      enabled = true
+    }
+    SBQQ__AbstractProductRuleValidator = {
+      apexClass = "SBQQ__AbstractProductRuleValidator"
+      enabled = true
+    }
+    SBQQ__AbstractSearchModel = {
+      apexClass = "SBQQ__AbstractSearchModel"
+      enabled = true
+    }
+    SBQQ__AccountDAO = {
+      apexClass = "SBQQ__AccountDAO"
+      enabled = true
+    }
+    SBQQ__AccountExtController = {
+      apexClass = "SBQQ__AccountExtController"
+      enabled = true
+    }
+    SBQQ__AccountExtControllerTests = {
+      apexClass = "SBQQ__AccountExtControllerTests"
+      enabled = true
+    }
+    SBQQ__AccountService = {
+      apexClass = "SBQQ__AccountService"
+      enabled = true
+    }
+    SBQQ__AccountServiceTests = {
+      apexClass = "SBQQ__AccountServiceTests"
+      enabled = true
+    }
+    SBQQ__AccountVO = {
+      apexClass = "SBQQ__AccountVO"
+      enabled = true
+    }
+    SBQQ__AccountVOTests = {
+      apexClass = "SBQQ__AccountVOTests"
+      enabled = true
+    }
+    SBQQ__AdditionalDocumentsAfterTests = {
+      apexClass = "SBQQ__AdditionalDocumentsAfterTests"
+      enabled = true
+    }
+    SBQQ__AliasedMetaDataUtils = {
+      apexClass = "SBQQ__AliasedMetaDataUtils"
+      enabled = true
+    }
+    SBQQ__AmendContractController = {
+      apexClass = "SBQQ__AmendContractController"
+      enabled = true
+    }
+    SBQQ__AmendContractControllerTest = {
+      apexClass = "SBQQ__AmendContractControllerTest"
+      enabled = true
+    }
+    SBQQ__AssetAndSubscriptionServiceProvider = {
+      apexClass = "SBQQ__AssetAndSubscriptionServiceProvider"
+      enabled = true
+    }
+    SBQQ__AssetDAO = {
+      apexClass = "SBQQ__AssetDAO"
+      enabled = true
+    }
+    SBQQ__AssetDAOTest = {
+      apexClass = "SBQQ__AssetDAOTest"
+      enabled = true
+    }
+    SBQQ__AssetLookupController = {
+      apexClass = "SBQQ__AssetLookupController"
+      enabled = true
+    }
+    SBQQ__AssetLookupControllerTests = {
+      apexClass = "SBQQ__AssetLookupControllerTests"
+      enabled = true
+    }
+    SBQQ__AssetSearchModel = {
+      apexClass = "SBQQ__AssetSearchModel"
+      enabled = true
+    }
+    SBQQ__AssetService = {
+      apexClass = "SBQQ__AssetService"
+      enabled = true
+    }
+    SBQQ__AssetServiceTests = {
+      apexClass = "SBQQ__AssetServiceTests"
+      enabled = true
+    }
+    SBQQ__AssetVO = {
+      apexClass = "SBQQ__AssetVO"
+      enabled = true
+    }
+    SBQQ__AttributeItem = {
+      apexClass = "SBQQ__AttributeItem"
+      enabled = true
+    }
+    SBQQ__AttributeItemTests = {
+      apexClass = "SBQQ__AttributeItemTests"
+      enabled = true
+    }
+    SBQQ__AttributeSetDAO = {
+      apexClass = "SBQQ__AttributeSetDAO"
+      enabled = true
+    }
+    SBQQ__AttributeSetService = {
+      apexClass = "SBQQ__AttributeSetService"
+      enabled = true
+    }
+    SBQQ__AttributeSetServiceTests = {
+      apexClass = "SBQQ__AttributeSetServiceTests"
+      enabled = true
+    }
+    SBQQ__BillingPlugin = {
+      apexClass = "SBQQ__BillingPlugin"
+      enabled = true
+    }
+    SBQQ__BinaryTree = {
+      apexClass = "SBQQ__BinaryTree"
+      enabled = true
+    }
+    SBQQ__BinaryTreeTest = {
+      apexClass = "SBQQ__BinaryTreeTest"
+      enabled = true
+    }
+    SBQQ__BlockPriceEditorController = {
+      apexClass = "SBQQ__BlockPriceEditorController"
+      enabled = true
+    }
+    SBQQ__BlockPriceEditorControllerTests = {
+      apexClass = "SBQQ__BlockPriceEditorControllerTests"
+      enabled = true
+    }
+    SBQQ__BlockPriceListModel = {
+      apexClass = "SBQQ__BlockPriceListModel"
+      enabled = true
+    }
+    SBQQ__BlockPriceListModelTests = {
+      apexClass = "SBQQ__BlockPriceListModelTests"
+      enabled = true
+    }
+    SBQQ__BlockPriceTriggerControl = {
+      apexClass = "SBQQ__BlockPriceTriggerControl"
+      enabled = true
+    }
+    SBQQ__CSVFieldsParser = {
+      apexClass = "SBQQ__CSVFieldsParser"
+      enabled = true
+    }
+    SBQQ__CSVLinesParser = {
+      apexClass = "SBQQ__CSVLinesParser"
+      enabled = true
+    }
+    SBQQ__CSVParser = {
+      apexClass = "SBQQ__CSVParser"
+      enabled = true
+    }
+    SBQQ__CSVParserTests = {
+      apexClass = "SBQQ__CSVParserTests"
+      enabled = true
+    }
+    SBQQ__CalculateCallback = {
+      apexClass = "SBQQ__CalculateCallback"
+      enabled = true
+    }
+    SBQQ__CalculateCallbackAdapter = {
+      apexClass = "SBQQ__CalculateCallbackAdapter"
+      enabled = true
+    }
+    SBQQ__CalculateCallbackAdapterTests = {
+      apexClass = "SBQQ__CalculateCallbackAdapterTests"
+      enabled = true
+    }
+    SBQQ__CalculatorServiceFactory = {
+      apexClass = "SBQQ__CalculatorServiceFactory"
+      enabled = true
+    }
+    SBQQ__CollectionUtils = {
+      apexClass = "SBQQ__CollectionUtils"
+      enabled = true
+    }
+    SBQQ__CollectionUtilsTests = {
+      apexClass = "SBQQ__CollectionUtilsTests"
+      enabled = true
+    }
+    SBQQ__Comparator = {
+      apexClass = "SBQQ__Comparator"
+      enabled = true
+    }
+    SBQQ__ConfigAttribute = {
+      apexClass = "SBQQ__ConfigAttribute"
+      enabled = true
+    }
+    SBQQ__ConfigurationAttributeMapper = {
+      apexClass = "SBQQ__ConfigurationAttributeMapper"
+      enabled = true
+    }
+    SBQQ__ConfigurationAttributeTests = {
+      apexClass = "SBQQ__ConfigurationAttributeTests"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleAlert = {
+      apexClass = "SBQQ__ConfigurationRuleAlert"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleDAO = {
+      apexClass = "SBQQ__ConfigurationRuleDAO"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleExecutor = {
+      apexClass = "SBQQ__ConfigurationRuleExecutor"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleExecutorTests = {
+      apexClass = "SBQQ__ConfigurationRuleExecutorTests"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleValidator = {
+      apexClass = "SBQQ__ConfigurationRuleValidator"
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleValidatorTests = {
+      apexClass = "SBQQ__ConfigurationRuleValidatorTests"
+      enabled = true
+    }
+    SBQQ__ConfigurationRules = {
+      apexClass = "SBQQ__ConfigurationRules"
+      enabled = true
+    }
+    SBQQ__ConfigurationSummaryController = {
+      apexClass = "SBQQ__ConfigurationSummaryController"
+      enabled = true
+    }
+    SBQQ__ConfigurationSummaryControllerTests = {
+      apexClass = "SBQQ__ConfigurationSummaryControllerTests"
+      enabled = true
+    }
+    SBQQ__ConfiguratorSearchModel = {
+      apexClass = "SBQQ__ConfiguratorSearchModel"
+      enabled = true
+    }
+    SBQQ__ConsumptionClientModel = {
+      apexClass = "SBQQ__ConsumptionClientModel"
+      enabled = true
+    }
+    SBQQ__ConsumptionJunction = {
+      apexClass = "SBQQ__ConsumptionJunction"
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionFactory = {
+      apexClass = "SBQQ__ConsumptionJunctionFactory"
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionUtil = {
+      apexClass = "SBQQ__ConsumptionJunctionUtil"
+      enabled = true
+    }
+    SBQQ__ConsumptionRateDAO = {
+      apexClass = "SBQQ__ConsumptionRateDAO"
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleDAO = {
+      apexClass = "SBQQ__ConsumptionScheduleDAO"
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleTrigger = {
+      apexClass = "SBQQ__ConsumptionScheduleTrigger"
+      enabled = true
+    }
+    SBQQ__ConsumptionService = {
+      apexClass = "SBQQ__ConsumptionService"
+      enabled = true
+    }
+    SBQQ__ConsumptionServiceProvider = {
+      apexClass = "SBQQ__ConsumptionServiceProvider"
+      enabled = true
+    }
+    SBQQ__ContractDAO = {
+      apexClass = "SBQQ__ContractDAO"
+      enabled = true
+    }
+    SBQQ__ContractExtController = {
+      apexClass = "SBQQ__ContractExtController"
+      enabled = true
+    }
+    SBQQ__ContractExtControllerTests = {
+      apexClass = "SBQQ__ContractExtControllerTests"
+      enabled = true
+    }
+    SBQQ__ContractSelectorController = {
+      apexClass = "SBQQ__ContractSelectorController"
+      enabled = true
+    }
+    SBQQ__ContractSelectorControllerTests = {
+      apexClass = "SBQQ__ContractSelectorControllerTests"
+      enabled = true
+    }
+    SBQQ__ContractService = {
+      apexClass = "SBQQ__ContractService"
+      enabled = true
+    }
+    SBQQ__ContractServiceTests = {
+      apexClass = "SBQQ__ContractServiceTests"
+      enabled = true
+    }
+    SBQQ__ContractVO = {
+      apexClass = "SBQQ__ContractVO"
+      enabled = true
+    }
+    SBQQ__ContractedPriceDAO = {
+      apexClass = "SBQQ__ContractedPriceDAO"
+      enabled = true
+    }
+    SBQQ__ContractedPriceDAOTest = {
+      apexClass = "SBQQ__ContractedPriceDAOTest"
+      enabled = true
+    }
+    SBQQ__ContractedPriceModel = {
+      apexClass = "SBQQ__ContractedPriceModel"
+      enabled = true
+    }
+    SBQQ__ContractedPriceService = {
+      apexClass = "SBQQ__ContractedPriceService"
+      enabled = true
+    }
+    SBQQ__ContractedPriceServiceTests = {
+      apexClass = "SBQQ__ContractedPriceServiceTests"
+      enabled = true
+    }
+    SBQQ__CustomActionConditionTrigger = {
+      apexClass = "SBQQ__CustomActionConditionTrigger"
+      enabled = true
+    }
+    SBQQ__CustomActionDAO = {
+      apexClass = "SBQQ__CustomActionDAO"
+      enabled = true
+    }
+    SBQQ__CustomActionDAOTests = {
+      apexClass = "SBQQ__CustomActionDAOTests"
+      enabled = true
+    }
+    SBQQ__CustomActionTriggerTests = {
+      apexClass = "SBQQ__CustomActionTriggerTests"
+      enabled = true
+    }
+    SBQQ__CustomLookupController = {
+      apexClass = "SBQQ__CustomLookupController"
+      enabled = true
+    }
+    SBQQ__CustomLookupControllerTests = {
+      apexClass = "SBQQ__CustomLookupControllerTests"
+      enabled = true
+    }
+    SBQQ__DAOFactory = {
+      apexClass = "SBQQ__DAOFactory"
+      enabled = true
+    }
+    SBQQ__DateRange = {
+      apexClass = "SBQQ__DateRange"
+      enabled = true
+    }
+    SBQQ__DefaultDatabase = {
+      apexClass = "SBQQ__DefaultDatabase"
+      enabled = true
+    }
+    SBQQ__DefaultElectronicSignaturePlugin = {
+      apexClass = "SBQQ__DefaultElectronicSignaturePlugin"
+      enabled = true
+    }
+    SBQQ__DefaultFieldSetService = {
+      apexClass = "SBQQ__DefaultFieldSetService"
+      enabled = true
+    }
+    SBQQ__DefaultPageSecurityPlugin = {
+      apexClass = "SBQQ__DefaultPageSecurityPlugin"
+      enabled = true
+    }
+    SBQQ__DimensionDAO = {
+      apexClass = "SBQQ__DimensionDAO"
+      enabled = true
+    }
+    SBQQ__DimensionDAOTest = {
+      apexClass = "SBQQ__DimensionDAOTest"
+      enabled = true
+    }
+    SBQQ__DimensionService = {
+      apexClass = "SBQQ__DimensionService"
+      enabled = true
+    }
+    SBQQ__DimensionServiceTests = {
+      apexClass = "SBQQ__DimensionServiceTests"
+      enabled = true
+    }
+    SBQQ__DirectionalTree = {
+      apexClass = "SBQQ__DirectionalTree"
+      enabled = true
+    }
+    SBQQ__DiscountAndAccountCallout = {
+      apexClass = "SBQQ__DiscountAndAccountCallout"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleDAO = {
+      apexClass = "SBQQ__DiscountScheduleDAO"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExtController = {
+      apexClass = "SBQQ__DiscountScheduleExtController"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExtControllerTests = {
+      apexClass = "SBQQ__DiscountScheduleExtControllerTests"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleModel = {
+      apexClass = "SBQQ__DiscountScheduleModel"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleModelTests = {
+      apexClass = "SBQQ__DiscountScheduleModelTests"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleService = {
+      apexClass = "SBQQ__DiscountScheduleService"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleServiceProvider = {
+      apexClass = "SBQQ__DiscountScheduleServiceProvider"
+      enabled = true
+    }
+    SBQQ__DiscountScheduleTrigger = {
+      apexClass = "SBQQ__DiscountScheduleTrigger"
+      enabled = true
+    }
+    SBQQ__DiscountTierEditorController = {
+      apexClass = "SBQQ__DiscountTierEditorController"
+      enabled = true
+    }
+    SBQQ__DiscountTierEditorControllerTests = {
+      apexClass = "SBQQ__DiscountTierEditorControllerTests"
+      enabled = true
+    }
+    SBQQ__DiscountTierListModel = {
+      apexClass = "SBQQ__DiscountTierListModel"
+      enabled = true
+    }
+    SBQQ__DiscountTierTriggerControl = {
+      apexClass = "SBQQ__DiscountTierTriggerControl"
+      enabled = true
+    }
+    SBQQ__DocumentGenerator = {
+      apexClass = "SBQQ__DocumentGenerator"
+      enabled = true
+    }
+    SBQQ__DocumentGeneratorController = {
+      apexClass = "SBQQ__DocumentGeneratorController"
+      enabled = true
+    }
+    SBQQ__DocumentGeneratorControllerTests = {
+      apexClass = "SBQQ__DocumentGeneratorControllerTests"
+      enabled = true
+    }
+    SBQQ__DocumentSegment = {
+      apexClass = "SBQQ__DocumentSegment"
+      enabled = true
+    }
+    SBQQ__DocumentStorePlugin = {
+      apexClass = "SBQQ__DocumentStorePlugin"
+      enabled = true
+    }
+    SBQQ__ElectronicDocumentProcessor = {
+      apexClass = "SBQQ__ElectronicDocumentProcessor"
+      enabled = true
+    }
+    SBQQ__ElectronicDocumentProcessorTests = {
+      apexClass = "SBQQ__ElectronicDocumentProcessorTests"
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin = {
+      apexClass = "SBQQ__ElectronicSignaturePlugin"
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin2 = {
+      apexClass = "SBQQ__ElectronicSignaturePlugin2"
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin3 = {
+      apexClass = "SBQQ__ElectronicSignaturePlugin3"
+      enabled = true
+    }
+    SBQQ__ErrorConditionDependencyGenerator = {
+      apexClass = "SBQQ__ErrorConditionDependencyGenerator"
+      enabled = true
+    }
+    SBQQ__ErrorConditionDependencyServiceProvider = {
+      apexClass = "SBQQ__ErrorConditionDependencyServiceProvider"
+      enabled = true
+    }
+    SBQQ__ErrorConditionTrigger = {
+      apexClass = "SBQQ__ErrorConditionTrigger"
+      enabled = true
+    }
+    SBQQ__FavoriteDAO = {
+      apexClass = "SBQQ__FavoriteDAO"
+      enabled = true
+    }
+    SBQQ__FavoriteSearchModel = {
+      apexClass = "SBQQ__FavoriteSearchModel"
+      enabled = true
+    }
+    SBQQ__FavoriteService = {
+      apexClass = "SBQQ__FavoriteService"
+      enabled = true
+    }
+    SBQQ__FavoriteServiceTests = {
+      apexClass = "SBQQ__FavoriteServiceTests"
+      enabled = true
+    }
+    SBQQ__FavoriteVO = {
+      apexClass = "SBQQ__FavoriteVO"
+      enabled = true
+    }
+    SBQQ__FavoritesManagerController = {
+      apexClass = "SBQQ__FavoritesManagerController"
+      enabled = true
+    }
+    SBQQ__FavoritesManagerControllerTests = {
+      apexClass = "SBQQ__FavoritesManagerControllerTests"
+      enabled = true
+    }
+    SBQQ__FieldDescriptor = {
+      apexClass = "SBQQ__FieldDescriptor"
+      enabled = true
+    }
+    SBQQ__FieldDescriptorTests = {
+      apexClass = "SBQQ__FieldDescriptorTests"
+      enabled = true
+    }
+    SBQQ__FieldSetService = {
+      apexClass = "SBQQ__FieldSetService"
+      enabled = true
+    }
+    SBQQ__FieldSetServiceProvider = {
+      apexClass = "SBQQ__FieldSetServiceProvider"
+      enabled = true
+    }
+    SBQQ__FormulaFieldUtils = {
+      apexClass = "SBQQ__FormulaFieldUtils"
+      enabled = true
+    }
+    SBQQ__FormulaFieldUtilsTests = {
+      apexClass = "SBQQ__FormulaFieldUtilsTests"
+      enabled = true
+    }
+    SBQQ__HttpRequestAsserter = {
+      apexClass = "SBQQ__HttpRequestAsserter"
+      enabled = true
+    }
+    SBQQ__ICalculateCallback = {
+      apexClass = "SBQQ__ICalculateCallback"
+      enabled = true
+    }
+    SBQQ__ICalculatorService = {
+      apexClass = "SBQQ__ICalculatorService"
+      enabled = true
+    }
+    SBQQ__IQuoteCalculator = {
+      apexClass = "SBQQ__IQuoteCalculator"
+      enabled = true
+    }
+    SBQQ__IQuoteSaver = {
+      apexClass = "SBQQ__IQuoteSaver"
+      enabled = true
+    }
+    SBQQ__IRestClient = {
+      apexClass = "SBQQ__IRestClient"
+      enabled = true
+    }
+    SBQQ__ImportColumnDAO = {
+      apexClass = "SBQQ__ImportColumnDAO"
+      enabled = true
+    }
+    SBQQ__ImportColumnVO = {
+      apexClass = "SBQQ__ImportColumnVO"
+      enabled = true
+    }
+    SBQQ__ImportFormatDAO = {
+      apexClass = "SBQQ__ImportFormatDAO"
+      enabled = true
+    }
+    SBQQ__ImportFormatVO = {
+      apexClass = "SBQQ__ImportFormatVO"
+      enabled = true
+    }
+    SBQQ__ImportLinesController = {
+      apexClass = "SBQQ__ImportLinesController"
+      enabled = true
+    }
+    SBQQ__ImportLinesControllerTests = {
+      apexClass = "SBQQ__ImportLinesControllerTests"
+      enabled = true
+    }
+    SBQQ__ImportLinesHandler = {
+      apexClass = "SBQQ__ImportLinesHandler"
+      enabled = true
+    }
+    SBQQ__ImportLinesHandlerTests = {
+      apexClass = "SBQQ__ImportLinesHandlerTests"
+      enabled = true
+    }
+    SBQQ__InstallProcessor = {
+      apexClass = "SBQQ__InstallProcessor"
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchLocalizationIndex = {
+      apexClass = "SBQQ__InstallProcessorBatchLocalizationIndex"
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOpportunity2 = {
+      apexClass = "SBQQ__InstallProcessorBatchOpportunity2"
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchQuantityEditable = {
+      apexClass = "SBQQ__InstallProcessorBatchQuantityEditable"
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchRegularPrice = {
+      apexClass = "SBQQ__InstallProcessorBatchRegularPrice"
+      enabled = true
+    }
+    SBQQ__InstallProcessorLogDAO = {
+      apexClass = "SBQQ__InstallProcessorLogDAO"
+      enabled = true
+    }
+    SBQQ__InstallProcessorTests = {
+      apexClass = "SBQQ__InstallProcessorTests"
+      enabled = true
+    }
+    SBQQ__JSAGClient = {
+      apexClass = "SBQQ__JSAGClient"
+      enabled = true
+    }
+    SBQQ__JSAGClientTests = {
+      apexClass = "SBQQ__JSAGClientTests"
+      enabled = true
+    }
+    SBQQ__JSAGSerializer = {
+      apexClass = "SBQQ__JSAGSerializer"
+      enabled = true
+    }
+    SBQQ__JSONTests = {
+      apexClass = "SBQQ__JSONTests"
+      enabled = true
+    }
+    SBQQ__JSONUtils = {
+      apexClass = "SBQQ__JSONUtils"
+      enabled = true
+    }
+    SBQQ__JSQCClient = {
+      apexClass = "SBQQ__JSQCClient"
+      enabled = true
+    }
+    SBQQ__JSQCClientTests = {
+      apexClass = "SBQQ__JSQCClientTests"
+      enabled = true
+    }
+    SBQQ__JSQCCustomerLogService = {
+      apexClass = "SBQQ__JSQCCustomerLogService"
+      enabled = true
+    }
+    SBQQ__JSQCLookupFieldServiceProvider = {
+      apexClass = "SBQQ__JSQCLookupFieldServiceProvider"
+      enabled = true
+    }
+    SBQQ__JSQCModel = {
+      apexClass = "SBQQ__JSQCModel"
+      enabled = true
+    }
+    SBQQ__JSQCModelService = {
+      apexClass = "SBQQ__JSQCModelService"
+      enabled = true
+    }
+    SBQQ__JSQCQuoteSerializer = {
+      apexClass = "SBQQ__JSQCQuoteSerializer"
+      enabled = true
+    }
+    SBQQ__JSQCSerializer = {
+      apexClass = "SBQQ__JSQCSerializer"
+      enabled = true
+    }
+    SBQQ__JSQCSettingsSerializer = {
+      apexClass = "SBQQ__JSQCSettingsSerializer"
+      enabled = true
+    }
+    SBQQ__JSRGClient = {
+      apexClass = "SBQQ__JSRGClient"
+      enabled = true
+    }
+    SBQQ__JobRecorder = {
+      apexClass = "SBQQ__JobRecorder"
+      enabled = true
+    }
+    SBQQ__LineEditorLookupCallout = {
+      apexClass = "SBQQ__LineEditorLookupCallout"
+      enabled = true
+    }
+    SBQQ__LineItemsComponentController = {
+      apexClass = "SBQQ__LineItemsComponentController"
+      enabled = true
+    }
+    SBQQ__LineItemsComponentControllerTests = {
+      apexClass = "SBQQ__LineItemsComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__ListModel = {
+      apexClass = "SBQQ__ListModel"
+      enabled = true
+    }
+    SBQQ__ListModelTests = {
+      apexClass = "SBQQ__ListModelTests"
+      enabled = true
+    }
+    SBQQ__LocalizationController = {
+      apexClass = "SBQQ__LocalizationController"
+      enabled = true
+    }
+    SBQQ__LocalizationControllerTests = {
+      apexClass = "SBQQ__LocalizationControllerTests"
+      enabled = true
+    }
+    SBQQ__LocalizationDAO = {
+      apexClass = "SBQQ__LocalizationDAO"
+      enabled = true
+    }
+    SBQQ__LocalizationFactory = {
+      apexClass = "SBQQ__LocalizationFactory"
+      enabled = true
+    }
+    SBQQ__LocalizationIndexSearcher = {
+      apexClass = "SBQQ__LocalizationIndexSearcher"
+      enabled = true
+    }
+    SBQQ__LocalizationIndexTests = {
+      apexClass = "SBQQ__LocalizationIndexTests"
+      enabled = true
+    }
+    SBQQ__LocalizationVO = {
+      apexClass = "SBQQ__LocalizationVO"
+      enabled = true
+    }
+    SBQQ__LocalizationVOTests = {
+      apexClass = "SBQQ__LocalizationVOTests"
+      enabled = true
+    }
+    SBQQ__LookupQueryTrigger = {
+      apexClass = "SBQQ__LookupQueryTrigger"
+      enabled = true
+    }
+    SBQQ__LookupTableCallout = {
+      apexClass = "SBQQ__LookupTableCallout"
+      enabled = true
+    }
+    SBQQ__LookupTableCalloutTests = {
+      apexClass = "SBQQ__LookupTableCalloutTests"
+      enabled = true
+    }
+    SBQQ__MappingUtils = {
+      apexClass = "SBQQ__MappingUtils"
+      enabled = true
+    }
+    SBQQ__MappingUtilsTests = {
+      apexClass = "SBQQ__MappingUtilsTests"
+      enabled = true
+    }
+    SBQQ__MassQuoteDocumentSender = {
+      apexClass = "SBQQ__MassQuoteDocumentSender"
+      enabled = true
+    }
+    SBQQ__MassQuoteDocumentSenderTests = {
+      apexClass = "SBQQ__MassQuoteDocumentSenderTests"
+      enabled = true
+    }
+    SBQQ__MergeFieldProcessor = {
+      apexClass = "SBQQ__MergeFieldProcessor"
+      enabled = true
+    }
+    SBQQ__MergeFieldProcessorTests = {
+      apexClass = "SBQQ__MergeFieldProcessorTests"
+      enabled = true
+    }
+    SBQQ__MetaDataUtils = {
+      apexClass = "SBQQ__MetaDataUtils"
+      enabled = true
+    }
+    SBQQ__MetaDataUtilsTests = {
+      apexClass = "SBQQ__MetaDataUtilsTests"
+      enabled = true
+    }
+    SBQQ__MockFieldSetService = {
+      apexClass = "SBQQ__MockFieldSetService"
+      enabled = true
+    }
+    SBQQ__MultiLineTextComponentController = {
+      apexClass = "SBQQ__MultiLineTextComponentController"
+      enabled = true
+    }
+    SBQQ__MultiLineTextComponentControllerTests = {
+      apexClass = "SBQQ__MultiLineTextComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__OAuthClient = {
+      apexClass = "SBQQ__OAuthClient"
+      enabled = true
+    }
+    SBQQ__OAuthClientTests = {
+      apexClass = "SBQQ__OAuthClientTests"
+      enabled = true
+    }
+    SBQQ__OAuthExtension = {
+      apexClass = "SBQQ__OAuthExtension"
+      enabled = true
+    }
+    SBQQ__OAuthService = {
+      apexClass = "SBQQ__OAuthService"
+      enabled = true
+    }
+    SBQQ__OAuthSettings = {
+      apexClass = "SBQQ__OAuthSettings"
+      enabled = true
+    }
+    SBQQ__ObjectDescriptor = {
+      apexClass = "SBQQ__ObjectDescriptor"
+      enabled = true
+    }
+    SBQQ__ObjectDescriptorTests = {
+      apexClass = "SBQQ__ObjectDescriptorTests"
+      enabled = true
+    }
+    SBQQ__Operators = {
+      apexClass = "SBQQ__Operators"
+      enabled = true
+    }
+    SBQQ__OperatorsTests = {
+      apexClass = "SBQQ__OperatorsTests"
+      enabled = true
+    }
+    SBQQ__OpportunityLineItemDAO = {
+      apexClass = "SBQQ__OpportunityLineItemDAO"
+      enabled = true
+    }
+    SBQQ__OpportunityLineItemDAOTest = {
+      apexClass = "SBQQ__OpportunityLineItemDAOTest"
+      enabled = true
+    }
+    SBQQ__OpportunityService = {
+      apexClass = "SBQQ__OpportunityService"
+      enabled = true
+    }
+    SBQQ__OpportunityServiceTests = {
+      apexClass = "SBQQ__OpportunityServiceTests"
+      enabled = true
+    }
+    SBQQ__OptionConstraintTests = {
+      apexClass = "SBQQ__OptionConstraintTests"
+      enabled = true
+    }
+    SBQQ__OrderController = {
+      apexClass = "SBQQ__OrderController"
+      enabled = true
+    }
+    SBQQ__OrderControllerTest = {
+      apexClass = "SBQQ__OrderControllerTest"
+      enabled = true
+    }
+    SBQQ__OrderCreateController = {
+      apexClass = "SBQQ__OrderCreateController"
+      enabled = true
+    }
+    SBQQ__OrderDAO = {
+      apexClass = "SBQQ__OrderDAO"
+      enabled = true
+    }
+    SBQQ__OrderProductDAO = {
+      apexClass = "SBQQ__OrderProductDAO"
+      enabled = true
+    }
+    SBQQ__OrderTestBase = {
+      apexClass = "SBQQ__OrderTestBase"
+      enabled = true
+    }
+    SBQQ__PageSecurityPlugin = {
+      apexClass = "SBQQ__PageSecurityPlugin"
+      enabled = true
+    }
+    SBQQ__PageSecurityPlugin2 = {
+      apexClass = "SBQQ__PageSecurityPlugin2"
+      enabled = true
+    }
+    SBQQ__PaginationContainers = {
+      apexClass = "SBQQ__PaginationContainers"
+      enabled = true
+    }
+    SBQQ__PartnerCloneService = {
+      apexClass = "SBQQ__PartnerCloneService"
+      enabled = true
+    }
+    SBQQ__PermissionSetsProcessor = {
+      apexClass = "SBQQ__PermissionSetsProcessor"
+      enabled = true
+    }
+    SBQQ__PermissionSetsService = {
+      apexClass = "SBQQ__PermissionSetsService"
+      enabled = true
+    }
+    SBQQ__PermissionUtil = {
+      apexClass = "SBQQ__PermissionUtil"
+      enabled = true
+    }
+    SBQQ__PicklistValuesOptionModel = {
+      apexClass = "SBQQ__PicklistValuesOptionModel"
+      enabled = true
+    }
+    SBQQ__PicklistValuesOptionModelTests = {
+      apexClass = "SBQQ__PicklistValuesOptionModelTests"
+      enabled = true
+    }
+    SBQQ__PluginManager = {
+      apexClass = "SBQQ__PluginManager"
+      enabled = true
+    }
+    SBQQ__PluginManagerTests = {
+      apexClass = "SBQQ__PluginManagerTests"
+      enabled = true
+    }
+    SBQQ__PrepopulateQuoteService = {
+      apexClass = "SBQQ__PrepopulateQuoteService"
+      enabled = true
+    }
+    SBQQ__PriceActionBeforeTriggerTests = {
+      apexClass = "SBQQ__PriceActionBeforeTriggerTests"
+      enabled = true
+    }
+    SBQQ__PriceActionTrigger = {
+      apexClass = "SBQQ__PriceActionTrigger"
+      enabled = true
+    }
+    SBQQ__PriceConditionTrigger = {
+      apexClass = "SBQQ__PriceConditionTrigger"
+      enabled = true
+    }
+    SBQQ__PriceRuleDAO = {
+      apexClass = "SBQQ__PriceRuleDAO"
+      enabled = true
+    }
+    SBQQ__PriceRuleDAOTests = {
+      apexClass = "SBQQ__PriceRuleDAOTests"
+      enabled = true
+    }
+    SBQQ__PriceRuleServiceProvider = {
+      apexClass = "SBQQ__PriceRuleServiceProvider"
+      enabled = true
+    }
+    SBQQ__PriceRuleTrigger = {
+      apexClass = "SBQQ__PriceRuleTrigger"
+      enabled = true
+    }
+    SBQQ__PricebookEntryDAO = {
+      apexClass = "SBQQ__PricebookEntryDAO"
+      enabled = true
+    }
+    SBQQ__PricebookEntryDAOTests = {
+      apexClass = "SBQQ__PricebookEntryDAOTests"
+      enabled = true
+    }
+    SBQQ__PricingGuidanceDAO = {
+      apexClass = "SBQQ__PricingGuidanceDAO"
+      enabled = true
+    }
+    SBQQ__PricingGuidanceModel = {
+      apexClass = "SBQQ__PricingGuidanceModel"
+      enabled = true
+    }
+    SBQQ__PricingGuidanceService = {
+      apexClass = "SBQQ__PricingGuidanceService"
+      enabled = true
+    }
+    SBQQ__PricingGuidanceServiceProvider = {
+      apexClass = "SBQQ__PricingGuidanceServiceProvider"
+      enabled = true
+    }
+    SBQQ__PricingGuidanceTierModel = {
+      apexClass = "SBQQ__PricingGuidanceTierModel"
+      enabled = true
+    }
+    SBQQ__ProcessInputInitializer = {
+      apexClass = "SBQQ__ProcessInputInitializer"
+      enabled = true
+    }
+    SBQQ__ProcessInputTriggerTests = {
+      apexClass = "SBQQ__ProcessInputTriggerTests"
+      enabled = true
+    }
+    SBQQ__ProcessInputValueDAO = {
+      apexClass = "SBQQ__ProcessInputValueDAO"
+      enabled = true
+    }
+    SBQQ__ProductActionTrigger = {
+      apexClass = "SBQQ__ProductActionTrigger"
+      enabled = true
+    }
+    SBQQ__ProductAttributeDAO = {
+      apexClass = "SBQQ__ProductAttributeDAO"
+      enabled = true
+    }
+    SBQQ__ProductAttributeDAOTests = {
+      apexClass = "SBQQ__ProductAttributeDAOTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationController = {
+      apexClass = "SBQQ__ProductConfigurationController"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationControllerTests = {
+      apexClass = "SBQQ__ProductConfigurationControllerTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationInitializer = {
+      apexClass = "SBQQ__ProductConfigurationInitializer"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationInitializerTests = {
+      apexClass = "SBQQ__ProductConfigurationInitializerTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationServiceTests = {
+      apexClass = "SBQQ__ProductConfigurationServiceTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationSitesController = {
+      apexClass = "SBQQ__ProductConfigurationSitesController"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationSitesControllerTests = {
+      apexClass = "SBQQ__ProductConfigurationSitesControllerTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationVO = {
+      apexClass = "SBQQ__ProductConfigurationVO"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationVOTests = {
+      apexClass = "SBQQ__ProductConfigurationVOTests"
+      enabled = true
+    }
+    SBQQ__ProductConfigurationValidator = {
+      apexClass = "SBQQ__ProductConfigurationValidator"
+      enabled = true
+    }
+    SBQQ__ProductDAO = {
+      apexClass = "SBQQ__ProductDAO"
+      enabled = true
+    }
+    SBQQ__ProductDAOTests = {
+      apexClass = "SBQQ__ProductDAOTests"
+      enabled = true
+    }
+    SBQQ__ProductExtController = {
+      apexClass = "SBQQ__ProductExtController"
+      enabled = true
+    }
+    SBQQ__ProductExtControllerTests = {
+      apexClass = "SBQQ__ProductExtControllerTests"
+      enabled = true
+    }
+    SBQQ__ProductFactory = {
+      apexClass = "SBQQ__ProductFactory"
+      enabled = true
+    }
+    SBQQ__ProductLookupController = {
+      apexClass = "SBQQ__ProductLookupController"
+      enabled = true
+    }
+    SBQQ__ProductLookupControllerTests = {
+      apexClass = "SBQQ__ProductLookupControllerTests"
+      enabled = true
+    }
+    SBQQ__ProductModel = {
+      apexClass = "SBQQ__ProductModel"
+      enabled = true
+    }
+    SBQQ__ProductModelTests = {
+      apexClass = "SBQQ__ProductModelTests"
+      enabled = true
+    }
+    SBQQ__ProductOptionDAO = {
+      apexClass = "SBQQ__ProductOptionDAO"
+      enabled = true
+    }
+    SBQQ__ProductOptionPriceRuleEvaluator = {
+      apexClass = "SBQQ__ProductOptionPriceRuleEvaluator"
+      enabled = true
+    }
+    SBQQ__ProductOptionPriceRuleEvaluatorTests = {
+      apexClass = "SBQQ__ProductOptionPriceRuleEvaluatorTests"
+      enabled = true
+    }
+    SBQQ__ProductOptionServiceProvider = {
+      apexClass = "SBQQ__ProductOptionServiceProvider"
+      enabled = true
+    }
+    SBQQ__ProductOptionTree = {
+      apexClass = "SBQQ__ProductOptionTree"
+      enabled = true
+    }
+    SBQQ__ProductRecommendationPlugin = {
+      apexClass = "SBQQ__ProductRecommendationPlugin"
+      enabled = true
+    }
+    SBQQ__ProductRuleAlert = {
+      apexClass = "SBQQ__ProductRuleAlert"
+      enabled = true
+    }
+    SBQQ__ProductRuleDAO = {
+      apexClass = "SBQQ__ProductRuleDAO"
+      enabled = true
+    }
+    SBQQ__ProductRuleExecutor = {
+      apexClass = "SBQQ__ProductRuleExecutor"
+      enabled = true
+    }
+    SBQQ__ProductRuleExecutorTests = {
+      apexClass = "SBQQ__ProductRuleExecutorTests"
+      enabled = true
+    }
+    SBQQ__ProductRuleServiceProvider = {
+      apexClass = "SBQQ__ProductRuleServiceProvider"
+      enabled = true
+    }
+    SBQQ__ProductRuleTrigger = {
+      apexClass = "SBQQ__ProductRuleTrigger"
+      enabled = true
+    }
+    SBQQ__ProductRuleVaidatorTests = {
+      apexClass = "SBQQ__ProductRuleVaidatorTests"
+      enabled = true
+    }
+    SBQQ__ProductRuleValidator = {
+      apexClass = "SBQQ__ProductRuleValidator"
+      enabled = true
+    }
+    SBQQ__ProductSearchExecutor = {
+      apexClass = "SBQQ__ProductSearchExecutor"
+      enabled = true
+    }
+    SBQQ__ProductSearchExecutorTests = {
+      apexClass = "SBQQ__ProductSearchExecutorTests"
+      enabled = true
+    }
+    SBQQ__ProductSearchModel = {
+      apexClass = "SBQQ__ProductSearchModel"
+      enabled = true
+    }
+    SBQQ__ProductSearchPlugin = {
+      apexClass = "SBQQ__ProductSearchPlugin"
+      enabled = true
+    }
+    SBQQ__ProductSelectionModel = {
+      apexClass = "SBQQ__ProductSelectionModel"
+      enabled = true
+    }
+    SBQQ__ProductSelectionModelTests = {
+      apexClass = "SBQQ__ProductSelectionModelTests"
+      enabled = true
+    }
+    SBQQ__ProductService = {
+      apexClass = "SBQQ__ProductService"
+      enabled = true
+    }
+    SBQQ__ProductServiceProvider = {
+      apexClass = "SBQQ__ProductServiceProvider"
+      enabled = true
+    }
+    SBQQ__ProductServiceTests = {
+      apexClass = "SBQQ__ProductServiceTests"
+      enabled = true
+    }
+    SBQQ__ProductServices = {
+      apexClass = "SBQQ__ProductServices"
+      enabled = true
+    }
+    SBQQ__ProductTrigger = {
+      apexClass = "SBQQ__ProductTrigger"
+      enabled = true
+    }
+    SBQQ__ProductUpgradeController = {
+      apexClass = "SBQQ__ProductUpgradeController"
+      enabled = true
+    }
+    SBQQ__ProductUpgradeControllerTests = {
+      apexClass = "SBQQ__ProductUpgradeControllerTests"
+      enabled = true
+    }
+    SBQQ__ProductVO = {
+      apexClass = "SBQQ__ProductVO"
+      enabled = true
+    }
+    SBQQ__ProductVOTests = {
+      apexClass = "SBQQ__ProductVOTests"
+      enabled = true
+    }
+    SBQQ__ProposalGenerator = {
+      apexClass = "SBQQ__ProposalGenerator"
+      enabled = true
+    }
+    SBQQ__ProposalGeneratorTests = {
+      apexClass = "SBQQ__ProposalGeneratorTests"
+      enabled = true
+    }
+    SBQQ__QueryBuilder = {
+      apexClass = "SBQQ__QueryBuilder"
+      enabled = true
+    }
+    SBQQ__QueryBuilderTests = {
+      apexClass = "SBQQ__QueryBuilderTests"
+      enabled = true
+    }
+    SBQQ__Queryable = {
+      apexClass = "SBQQ__Queryable"
+      enabled = true
+    }
+    SBQQ__QueueableAmendmentService = {
+      apexClass = "SBQQ__QueueableAmendmentService"
+      enabled = true
+    }
+    SBQQ__QueueableCalculatorService = {
+      apexClass = "SBQQ__QueueableCalculatorService"
+      enabled = true
+    }
+    SBQQ__QueueableCalculatorServiceTests = {
+      apexClass = "SBQQ__QueueableCalculatorServiceTests"
+      enabled = true
+    }
+    SBQQ__QueueableJobCheckerExt = {
+      apexClass = "SBQQ__QueueableJobCheckerExt"
+      enabled = true
+    }
+    SBQQ__QuoteCalculator = {
+      apexClass = "SBQQ__QuoteCalculator"
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorFactory = {
+      apexClass = "SBQQ__QuoteCalculatorFactory"
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorFactoryTests = {
+      apexClass = "SBQQ__QuoteCalculatorFactoryTests"
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorPlugin = {
+      apexClass = "SBQQ__QuoteCalculatorPlugin"
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorPlugin2 = {
+      apexClass = "SBQQ__QuoteCalculatorPlugin2"
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorTests = {
+      apexClass = "SBQQ__QuoteCalculatorTests"
+      enabled = true
+    }
+    SBQQ__QuoteDAO = {
+      apexClass = "SBQQ__QuoteDAO"
+      enabled = true
+    }
+    SBQQ__QuoteDAOFactory = {
+      apexClass = "SBQQ__QuoteDAOFactory"
+      enabled = true
+    }
+    SBQQ__QuoteDataProcessor = {
+      apexClass = "SBQQ__QuoteDataProcessor"
+      enabled = true
+    }
+    SBQQ__QuoteDataProcessorTests = {
+      apexClass = "SBQQ__QuoteDataProcessorTests"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentAPI = {
+      apexClass = "SBQQ__QuoteDocumentAPI"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentController = {
+      apexClass = "SBQQ__QuoteDocumentController"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentControllerTests = {
+      apexClass = "SBQQ__QuoteDocumentControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentMarkupGenerator = {
+      apexClass = "SBQQ__QuoteDocumentMarkupGenerator"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentModel = {
+      apexClass = "SBQQ__QuoteDocumentModel"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentService = {
+      apexClass = "SBQQ__QuoteDocumentService"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentTriggerTests = {
+      apexClass = "SBQQ__QuoteDocumentTriggerTests"
+      enabled = true
+    }
+    SBQQ__QuoteDocumentUtils = {
+      apexClass = "SBQQ__QuoteDocumentUtils"
+      enabled = true
+    }
+    SBQQ__QuoteEditorController = {
+      apexClass = "SBQQ__QuoteEditorController"
+      enabled = true
+    }
+    SBQQ__QuoteEditorControllerTests = {
+      apexClass = "SBQQ__QuoteEditorControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteEditorModel = {
+      apexClass = "SBQQ__QuoteEditorModel"
+      enabled = true
+    }
+    SBQQ__QuoteExtController = {
+      apexClass = "SBQQ__QuoteExtController"
+      enabled = true
+    }
+    SBQQ__QuoteExtControllerTests = {
+      apexClass = "SBQQ__QuoteExtControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteExtSitesController = {
+      apexClass = "SBQQ__QuoteExtSitesController"
+      enabled = true
+    }
+    SBQQ__QuoteExtSitesControllerTests = {
+      apexClass = "SBQQ__QuoteExtSitesControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteLineDAO = {
+      apexClass = "SBQQ__QuoteLineDAO"
+      enabled = true
+    }
+    SBQQ__QuoteLineDAOFactory = {
+      apexClass = "SBQQ__QuoteLineDAOFactory"
+      enabled = true
+    }
+    SBQQ__QuoteLineDAOTest = {
+      apexClass = "SBQQ__QuoteLineDAOTest"
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorController = {
+      apexClass = "SBQQ__QuoteLineEditorController"
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorControllerTests = {
+      apexClass = "SBQQ__QuoteLineEditorControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAO = {
+      apexClass = "SBQQ__QuoteLineGroupDAO"
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAOFactory = {
+      apexClass = "SBQQ__QuoteLineGroupDAOFactory"
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAOTests = {
+      apexClass = "SBQQ__QuoteLineGroupDAOTests"
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupVO = {
+      apexClass = "SBQQ__QuoteLineGroupVO"
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupVOTests = {
+      apexClass = "SBQQ__QuoteLineGroupVOTests"
+      enabled = true
+    }
+    SBQQ__QuoteLinePriceRuleEvaluator = {
+      apexClass = "SBQQ__QuoteLinePriceRuleEvaluator"
+      enabled = true
+    }
+    SBQQ__QuoteLinePriceRuleEvaluatorTests = {
+      apexClass = "SBQQ__QuoteLinePriceRuleEvaluatorTests"
+      enabled = true
+    }
+    SBQQ__QuoteLinePricingGuidanceDAO = {
+      apexClass = "SBQQ__QuoteLinePricingGuidanceDAO"
+      enabled = true
+    }
+    SBQQ__QuoteLinePricingGuidanceVO = {
+      apexClass = "SBQQ__QuoteLinePricingGuidanceVO"
+      enabled = true
+    }
+    SBQQ__QuoteLineUBPDataProcessorTests = {
+      apexClass = "SBQQ__QuoteLineUBPDataProcessorTests"
+      enabled = true
+    }
+    SBQQ__QuoteLineVO = {
+      apexClass = "SBQQ__QuoteLineVO"
+      enabled = true
+    }
+    SBQQ__QuoteModel = {
+      apexClass = "SBQQ__QuoteModel"
+      enabled = true
+    }
+    SBQQ__QuoteModelTests = {
+      apexClass = "SBQQ__QuoteModelTests"
+      enabled = true
+    }
+    SBQQ__QuoteOpportunitySynchronizer = {
+      apexClass = "SBQQ__QuoteOpportunitySynchronizer"
+      enabled = true
+    }
+    SBQQ__QuotePriceHandler = {
+      apexClass = "SBQQ__QuotePriceHandler"
+      enabled = true
+    }
+    SBQQ__QuotePriceRefreshBatch = {
+      apexClass = "SBQQ__QuotePriceRefreshBatch"
+      enabled = true
+    }
+    SBQQ__QuoteProcessInitializer = {
+      apexClass = "SBQQ__QuoteProcessInitializer"
+      enabled = true
+    }
+    SBQQ__QuoteProcessVO = {
+      apexClass = "SBQQ__QuoteProcessVO"
+      enabled = true
+    }
+    SBQQ__QuoteProcessor = {
+      apexClass = "SBQQ__QuoteProcessor"
+      enabled = true
+    }
+    SBQQ__QuoteProcessorTests = {
+      apexClass = "SBQQ__QuoteProcessorTests"
+      enabled = true
+    }
+    SBQQ__QuoteRelatedContentController = {
+      apexClass = "SBQQ__QuoteRelatedContentController"
+      enabled = true
+    }
+    SBQQ__QuoteRelatedContentControllerTests = {
+      apexClass = "SBQQ__QuoteRelatedContentControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteRestEndpoint = {
+      apexClass = "SBQQ__QuoteRestEndpoint"
+      enabled = true
+    }
+    SBQQ__QuoteRestEndpointTests = {
+      apexClass = "SBQQ__QuoteRestEndpointTests"
+      enabled = true
+    }
+    SBQQ__QuoteRuleApplicator = {
+      apexClass = "SBQQ__QuoteRuleApplicator"
+      enabled = true
+    }
+    SBQQ__QuoteService = {
+      apexClass = "SBQQ__QuoteService"
+      enabled = true
+    }
+    SBQQ__QuoteServiceTests = {
+      apexClass = "SBQQ__QuoteServiceTests"
+      enabled = true
+    }
+    SBQQ__QuoteSettingsModel = {
+      apexClass = "SBQQ__QuoteSettingsModel"
+      enabled = true
+    }
+    SBQQ__QuoteSortUtils = {
+      apexClass = "SBQQ__QuoteSortUtils"
+      enabled = true
+    }
+    SBQQ__QuoteTemplateDAO = {
+      apexClass = "SBQQ__QuoteTemplateDAO"
+      enabled = true
+    }
+    SBQQ__QuoteTemplateDAOTest = {
+      apexClass = "SBQQ__QuoteTemplateDAOTest"
+      enabled = true
+    }
+    SBQQ__QuoteTemplateExtController = {
+      apexClass = "SBQQ__QuoteTemplateExtController"
+      enabled = true
+    }
+    SBQQ__QuoteTemplateExtControllerTests = {
+      apexClass = "SBQQ__QuoteTemplateExtControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteTermAPI = {
+      apexClass = "SBQQ__QuoteTermAPI"
+      enabled = true
+    }
+    SBQQ__QuoteTermAPITests = {
+      apexClass = "SBQQ__QuoteTermAPITests"
+      enabled = true
+    }
+    SBQQ__QuoteTermDAO = {
+      apexClass = "SBQQ__QuoteTermDAO"
+      enabled = true
+    }
+    SBQQ__QuoteTermDAOTests = {
+      apexClass = "SBQQ__QuoteTermDAOTests"
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorService = {
+      apexClass = "SBQQ__QuoteTermEditorService"
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorServiceProvider = {
+      apexClass = "SBQQ__QuoteTermEditorServiceProvider"
+      enabled = true
+    }
+    SBQQ__QuoteTermEvaluator = {
+      apexClass = "SBQQ__QuoteTermEvaluator"
+      enabled = true
+    }
+    SBQQ__QuoteTermService = {
+      apexClass = "SBQQ__QuoteTermService"
+      enabled = true
+    }
+    SBQQ__QuoteTermServiceTests = {
+      apexClass = "SBQQ__QuoteTermServiceTests"
+      enabled = true
+    }
+    SBQQ__QuoteTermTriggerTest = {
+      apexClass = "SBQQ__QuoteTermTriggerTest"
+      enabled = true
+    }
+    SBQQ__QuoteTermVO = {
+      apexClass = "SBQQ__QuoteTermVO"
+      enabled = true
+    }
+    SBQQ__QuoteTermVOTests = {
+      apexClass = "SBQQ__QuoteTermVOTests"
+      enabled = true
+    }
+    SBQQ__QuoteTermsComponentController = {
+      apexClass = "SBQQ__QuoteTermsComponentController"
+      enabled = true
+    }
+    SBQQ__QuoteTermsComponentControllerTests = {
+      apexClass = "SBQQ__QuoteTermsComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__QuoteTestsBase = {
+      apexClass = "SBQQ__QuoteTestsBase"
+      enabled = true
+    }
+    SBQQ__QuoteTriggerControl = {
+      apexClass = "SBQQ__QuoteTriggerControl"
+      enabled = true
+    }
+    SBQQ__QuoteTriggerTests = {
+      apexClass = "SBQQ__QuoteTriggerTests"
+      enabled = true
+    }
+    SBQQ__QuoteUtils = {
+      apexClass = "SBQQ__QuoteUtils"
+      enabled = true
+    }
+    SBQQ__QuoteUtilsTests = {
+      apexClass = "SBQQ__QuoteUtilsTests"
+      enabled = true
+    }
+    SBQQ__QuoteVO = {
+      apexClass = "SBQQ__QuoteVO"
+      enabled = true
+    }
+    SBQQ__Range = {
+      apexClass = "SBQQ__Range"
+      enabled = true
+    }
+    SBQQ__RangeTests = {
+      apexClass = "SBQQ__RangeTests"
+      enabled = true
+    }
+    SBQQ__RecordJobService = {
+      apexClass = "SBQQ__RecordJobService"
+      enabled = true
+    }
+    SBQQ__RefreshQuotePricesController = {
+      apexClass = "SBQQ__RefreshQuotePricesController"
+      enabled = true
+    }
+    SBQQ__RefreshQuotePricesControllerTests = {
+      apexClass = "SBQQ__RefreshQuotePricesControllerTests"
+      enabled = true
+    }
+    SBQQ__RelatedContentController = {
+      apexClass = "SBQQ__RelatedContentController"
+      enabled = true
+    }
+    SBQQ__RelatedContentControllerTests = {
+      apexClass = "SBQQ__RelatedContentControllerTests"
+      enabled = true
+    }
+    SBQQ__RelatedContentVO = {
+      apexClass = "SBQQ__RelatedContentVO"
+      enabled = true
+    }
+    SBQQ__RelatedRecordCloner = {
+      apexClass = "SBQQ__RelatedRecordCloner"
+      enabled = true
+    }
+    SBQQ__RenewContractsController = {
+      apexClass = "SBQQ__RenewContractsController"
+      enabled = true
+    }
+    SBQQ__RenewContractsControllerTests = {
+      apexClass = "SBQQ__RenewContractsControllerTests"
+      enabled = true
+    }
+    SBQQ__RenewalAPI = {
+      apexClass = "SBQQ__RenewalAPI"
+      enabled = true
+    }
+    SBQQ__RenewalQuoteGenerator = {
+      apexClass = "SBQQ__RenewalQuoteGenerator"
+      enabled = true
+    }
+    SBQQ__RestClient = {
+      apexClass = "SBQQ__RestClient"
+      enabled = true
+    }
+    SBQQ__RestClientSettings = {
+      apexClass = "SBQQ__RestClientSettings"
+      enabled = true
+    }
+    SBQQ__RestClientTests = {
+      apexClass = "SBQQ__RestClientTests"
+      enabled = true
+    }
+    SBQQ__RichTextComponentController = {
+      apexClass = "SBQQ__RichTextComponentController"
+      enabled = true
+    }
+    SBQQ__RichTextComponentControllerTests = {
+      apexClass = "SBQQ__RichTextComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__RichTextToFOConverter = {
+      apexClass = "SBQQ__RichTextToFOConverter"
+      enabled = true
+    }
+    SBQQ__RichTextToFOConverterTests = {
+      apexClass = "SBQQ__RichTextToFOConverterTests"
+      enabled = true
+    }
+    SBQQ__RuleAPI = {
+      apexClass = "SBQQ__RuleAPI"
+      enabled = true
+    }
+    SBQQ__RuleAPITests = {
+      apexClass = "SBQQ__RuleAPITests"
+      enabled = true
+    }
+    SBQQ__RuleActionListener = {
+      apexClass = "SBQQ__RuleActionListener"
+      enabled = true
+    }
+    SBQQ__RuleListener = {
+      apexClass = "SBQQ__RuleListener"
+      enabled = true
+    }
+    SBQQ__RuleProcessorSupport = {
+      apexClass = "SBQQ__RuleProcessorSupport"
+      enabled = true
+    }
+    SBQQ__RuleSummaryUtil = {
+      apexClass = "SBQQ__RuleSummaryUtil"
+      enabled = true
+    }
+    SBQQ__SObjectListModel = {
+      apexClass = "SBQQ__SObjectListModel"
+      enabled = true
+    }
+    SBQQ__SObjectListModelTests = {
+      apexClass = "SBQQ__SObjectListModelTests"
+      enabled = true
+    }
+    SBQQ__SObjectListOptionModel = {
+      apexClass = "SBQQ__SObjectListOptionModel"
+      enabled = true
+    }
+    SBQQ__SObjectListOptionModelTests = {
+      apexClass = "SBQQ__SObjectListOptionModelTests"
+      enabled = true
+    }
+    SBQQ__SObjectUtils = {
+      apexClass = "SBQQ__SObjectUtils"
+      enabled = true
+    }
+    SBQQ__SObjectUtilsTests = {
+      apexClass = "SBQQ__SObjectUtilsTests"
+      enabled = true
+    }
+    SBQQ__SaveCalculatedQuoteCallback = {
+      apexClass = "SBQQ__SaveCalculatedQuoteCallback"
+      enabled = true
+    }
+    SBQQ__SaveQuote = {
+      apexClass = "SBQQ__SaveQuote"
+      enabled = true
+    }
+    SBQQ__SearchFilter = {
+      apexClass = "SBQQ__SearchFilter"
+      enabled = true
+    }
+    SBQQ__SearchFilterDAO = {
+      apexClass = "SBQQ__SearchFilterDAO"
+      enabled = true
+    }
+    SBQQ__SearchFilterDAOTest = {
+      apexClass = "SBQQ__SearchFilterDAOTest"
+      enabled = true
+    }
+    SBQQ__SearchFilterInitializer = {
+      apexClass = "SBQQ__SearchFilterInitializer"
+      enabled = true
+    }
+    SBQQ__SearchFilterInitializerTests = {
+      apexClass = "SBQQ__SearchFilterInitializerTests"
+      enabled = true
+    }
+    SBQQ__SearchIndexDAO = {
+      apexClass = "SBQQ__SearchIndexDAO"
+      enabled = true
+    }
+    SBQQ__SectionComponentController = {
+      apexClass = "SBQQ__SectionComponentController"
+      enabled = true
+    }
+    SBQQ__SectionComponentControllerTests = {
+      apexClass = "SBQQ__SectionComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__SecurityUtils = {
+      apexClass = "SBQQ__SecurityUtils"
+      enabled = true
+    }
+    SBQQ__SecurityUtilsTests = {
+      apexClass = "SBQQ__SecurityUtilsTests"
+      enabled = true
+    }
+    SBQQ__SelectOptionModel = {
+      apexClass = "SBQQ__SelectOptionModel"
+      enabled = true
+    }
+    SBQQ__ServiceCloud = {
+      apexClass = "SBQQ__ServiceCloud"
+      enabled = true
+    }
+    SBQQ__ServiceLoader = {
+      apexClass = "SBQQ__ServiceLoader"
+      enabled = true
+    }
+    SBQQ__ServiceReader = {
+      apexClass = "SBQQ__ServiceReader"
+      enabled = true
+    }
+    SBQQ__ServiceRouter = {
+      apexClass = "SBQQ__ServiceRouter"
+      enabled = true
+    }
+    SBQQ__ServiceSaver = {
+      apexClass = "SBQQ__ServiceSaver"
+      enabled = true
+    }
+    SBQQ__SettingsEditorController = {
+      apexClass = "SBQQ__SettingsEditorController"
+      enabled = true
+    }
+    SBQQ__SettingsEditorControllerTests = {
+      apexClass = "SBQQ__SettingsEditorControllerTests"
+      enabled = true
+    }
+    SBQQ__SettingsExtension = {
+      apexClass = "SBQQ__SettingsExtension"
+      enabled = true
+    }
+    SBQQ__SettingsHolder = {
+      apexClass = "SBQQ__SettingsHolder"
+      enabled = true
+    }
+    SBQQ__SettingsVO = {
+      apexClass = "SBQQ__SettingsVO"
+      enabled = true
+    }
+    SBQQ__SimpleServiceProvider = {
+      apexClass = "SBQQ__SimpleServiceProvider"
+      enabled = true
+    }
+    SBQQ__SolutionGroupModel = {
+      apexClass = "SBQQ__SolutionGroupModel"
+      enabled = true
+    }
+    SBQQ__SolutionGroupModelTests = {
+      apexClass = "SBQQ__SolutionGroupModelTests"
+      enabled = true
+    }
+    SBQQ__StringTokenizer = {
+      apexClass = "SBQQ__StringTokenizer"
+      enabled = true
+    }
+    SBQQ__StringTokenizerListener = {
+      apexClass = "SBQQ__StringTokenizerListener"
+      enabled = true
+    }
+    SBQQ__StringUtils = {
+      apexClass = "SBQQ__StringUtils"
+      enabled = true
+    }
+    SBQQ__StringUtilsTests = {
+      apexClass = "SBQQ__StringUtilsTests"
+      enabled = true
+    }
+    SBQQ__SubscribedAssetService = {
+      apexClass = "SBQQ__SubscribedAssetService"
+      enabled = true
+    }
+    SBQQ__SubscribedAssetVO = {
+      apexClass = "SBQQ__SubscribedAssetVO"
+      enabled = true
+    }
+    SBQQ__SubscriptionDAO = {
+      apexClass = "SBQQ__SubscriptionDAO"
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupController = {
+      apexClass = "SBQQ__SubscriptionLookupController"
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupControllerTests = {
+      apexClass = "SBQQ__SubscriptionLookupControllerTests"
+      enabled = true
+    }
+    SBQQ__SubscriptionSearchModel = {
+      apexClass = "SBQQ__SubscriptionSearchModel"
+      enabled = true
+    }
+    SBQQ__SubscriptionService = {
+      apexClass = "SBQQ__SubscriptionService"
+      enabled = true
+    }
+    SBQQ__SubscriptionServiceTests = {
+      apexClass = "SBQQ__SubscriptionServiceTests"
+      enabled = true
+    }
+    SBQQ__SubscriptionVO = {
+      apexClass = "SBQQ__SubscriptionVO"
+      enabled = true
+    }
+    SBQQ__SummaryRowComponentController = {
+      apexClass = "SBQQ__SummaryRowComponentController"
+      enabled = true
+    }
+    SBQQ__SummaryRowComponentControllerTests = {
+      apexClass = "SBQQ__SummaryRowComponentControllerTests"
+      enabled = true
+    }
+    SBQQ__SummaryVariableCalculator = {
+      apexClass = "SBQQ__SummaryVariableCalculator"
+      enabled = true
+    }
+    SBQQ__SummaryVariableCalculatorTests = {
+      apexClass = "SBQQ__SummaryVariableCalculatorTests"
+      enabled = true
+    }
+    SBQQ__SummaryVariableDAO = {
+      apexClass = "SBQQ__SummaryVariableDAO"
+      enabled = true
+    }
+    SBQQ__SummaryVariableServiceProvider = {
+      apexClass = "SBQQ__SummaryVariableServiceProvider"
+      enabled = true
+    }
+    SBQQ__SummaryVariableTrigger = {
+      apexClass = "SBQQ__SummaryVariableTrigger"
+      enabled = true
+    }
+    SBQQ__SynchronousProductServices = {
+      apexClass = "SBQQ__SynchronousProductServices"
+      enabled = true
+    }
+    SBQQ__TemplateContentExtController = {
+      apexClass = "SBQQ__TemplateContentExtController"
+      enabled = true
+    }
+    SBQQ__TemplateContentExtControllerTests = {
+      apexClass = "SBQQ__TemplateContentExtControllerTests"
+      enabled = true
+    }
+    SBQQ__TemplateSectionVO = {
+      apexClass = "SBQQ__TemplateSectionVO"
+      enabled = true
+    }
+    SBQQ__TemplateSectionVOFactory = {
+      apexClass = "SBQQ__TemplateSectionVOFactory"
+      enabled = true
+    }
+    SBQQ__TemplateVO = {
+      apexClass = "SBQQ__TemplateVO"
+      enabled = true
+    }
+    SBQQ__TemplateVOFactory = {
+      apexClass = "SBQQ__TemplateVOFactory"
+      enabled = true
+    }
+    SBQQ__TestCalloutMock = {
+      apexClass = "SBQQ__TestCalloutMock"
+      enabled = true
+    }
+    SBQQ__TestRestClient = {
+      apexClass = "SBQQ__TestRestClient"
+      enabled = true
+    }
+    SBQQ__ThemeLookupController = {
+      apexClass = "SBQQ__ThemeLookupController"
+      enabled = true
+    }
+    SBQQ__ThemeSettingsController = {
+      apexClass = "SBQQ__ThemeSettingsController"
+      enabled = true
+    }
+    SBQQ__ThemeSettingsControllerTests = {
+      apexClass = "SBQQ__ThemeSettingsControllerTests"
+      enabled = true
+    }
+    SBQQ__TimingStack = {
+      apexClass = "SBQQ__TimingStack"
+      enabled = true
+    }
+    SBQQ__TimingStackTests = {
+      apexClass = "SBQQ__TimingStackTests"
+      enabled = true
+    }
+    SBQQ__TransportDigest = {
+      apexClass = "SBQQ__TransportDigest"
+      enabled = true
+    }
+    SBQQ__TransportDigestTests = {
+      apexClass = "SBQQ__TransportDigestTests"
+      enabled = true
+    }
+    SBQQ__Tree = {
+      apexClass = "SBQQ__Tree"
+      enabled = true
+    }
+    SBQQ__TreeSet = {
+      apexClass = "SBQQ__TreeSet"
+      enabled = true
+    }
+    SBQQ__TriggerControl = {
+      apexClass = "SBQQ__TriggerControl"
+      enabled = true
+    }
+    SBQQ__TriggerControlTests = {
+      apexClass = "SBQQ__TriggerControlTests"
+      enabled = true
+    }
+    SBQQ__UpgradeController = {
+      apexClass = "SBQQ__UpgradeController"
+      enabled = true
+    }
+    SBQQ__UploadRelatedContentController = {
+      apexClass = "SBQQ__UploadRelatedContentController"
+      enabled = true
+    }
+    SBQQ__UploadRelatedContentControllerTests = {
+      apexClass = "SBQQ__UploadRelatedContentControllerTests"
+      enabled = true
+    }
+    SBQQ__Utils = {
+      apexClass = "SBQQ__Utils"
+      enabled = true
+    }
+    SBQQ__UtilsTests = {
+      apexClass = "SBQQ__UtilsTests"
+      enabled = true
+    }
+    SBQQ__ValidationException = {
+      apexClass = "SBQQ__ValidationException"
+      enabled = true
+    }
+    SBQQ__Versionable = {
+      apexClass = "SBQQ__Versionable"
+      enabled = true
+    }
+  }
+  description = "Session-based admin user permissions across all Salesforce CPQ objects."
+  fieldPermissions = {
+    SBQQ__FavoriteProduct__c = {
+      SBQQ__ConfigurationAttributes__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__DynamicOptionId__c = "ReadWrite"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__Quantity__c = "ReadWrite"
+      SBQQ__RequiredBy__c = "ReadWrite"
+    }
+    SBQQ__Dimension__c = {
+      SBQQ__CostEditable__c = "ReadWrite"
+      SBQQ__DefaultQuantity__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__NonDiscountable__c = "ReadWrite"
+      SBQQ__NonPartnerDiscountable__c = "ReadWrite"
+      SBQQ__PriceBook__c = "ReadWrite"
+      SBQQ__PriceEditable__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuantityEditable__c = "ReadWrite"
+      SBQQ__QuantityScale__c = "ReadWrite"
+      SBQQ__Taxable__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__UnitPrice__c = "ReadWrite"
+    }
+    OrderItem = {
+      SBQQ__Activated__c = "ReadWrite"
+      SBQQ__Asset__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__BlockPrice__c = "ReadWrite"
+      SBQQ__BookingsIndicator__c = "ReadWrite"
+      SBQQ__BundleRoot__c = "ReadOnly"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__ContractAction__c = "ReadWrite"
+      SBQQ__Contract__c = "ReadWrite"
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__DefaultSubscriptionTerm__c = "ReadWrite"
+      SBQQ__DimensionType__c = "ReadOnly"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__OrderProductBookings__c = "ReadOnly"
+      SBQQ__OrderedQuantity__c = "ReadWrite"
+      SBQQ__PriceDimension__c = "ReadWrite"
+      SBQQ__PriceSchedule__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductSubscriptionType__c = "ReadWrite"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__QuotedListPrice__c = "ReadOnly"
+      SBQQ__QuotedQuantity__c = "ReadWrite"
+      SBQQ__RequiredBy__c = "ReadWrite"
+      SBQQ__RevisedOrderProduct__c = "ReadWrite"
+      SBQQ__SegmentIndex__c = "ReadWrite"
+      SBQQ__SegmentKey__c = "ReadWrite"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__SubscriptionType__c = "ReadWrite"
+      SBQQ__Subscription__c = "ReadWrite"
+      SBQQ__TaxAmount__c = "ReadOnly"
+      SBQQ__TaxCode__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__TerminatedDate__c = "ReadWrite"
+      SBQQ__UnproratedNetPrice__c = "ReadWrite"
+      SBQQ__UpgradedSubscription__c = "ReadWrite"
+    }
+    SBQQ__ErrorCondition__c = {
+      SBQQ__FilterType__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__FilterVariable__c = "ReadWrite"
+      SBQQ__Index__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ParentRuleIsActive__c = "ReadWrite"
+      SBQQ__RuleTargetsQuote__c = "ReadWrite"
+      SBQQ__TestedAttribute__c = "ReadWrite"
+      SBQQ__TestedField__c = "ReadWrite"
+      SBQQ__TestedObject__c = "ReadWrite"
+      SBQQ__TestedVariable__c = "ReadWrite"
+    }
+    SBQQ__ConfigurationRule__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AscendingNestedLevel__c = "ReadWrite"
+      SBQQ__DescendingActionNesting__c = "ReadWrite"
+      SBQQ__DescendingNestedLevel__c = "ReadWrite"
+      SBQQ__ProductFeature__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__RuleEvaluationEvent__c = "ReadOnly"
+      SBQQ__RuleType__c = "ReadOnly"
+    }
+    SBQQ__QuoteTemplate__c = {
+      SBQQ__AllPackageProductsShown__c = "ReadWrite"
+      SBQQ__BillToTitle__c = "ReadWrite"
+      SBQQ__BorderColor__c = "ReadWrite"
+      SBQQ__BundledProductsShown__c = "ReadWrite"
+      SBQQ__CompanyCity__c = "ReadWrite"
+      SBQQ__CompanyCountry__c = "ReadWrite"
+      SBQQ__CompanyEmail__c = "ReadWrite"
+      SBQQ__CompanyFax__c = "ReadWrite"
+      SBQQ__CompanyName__c = "ReadWrite"
+      SBQQ__CompanyPhone__c = "ReadWrite"
+      SBQQ__CompanyPostalCode__c = "ReadWrite"
+      SBQQ__CompanySlogan__c = "ReadWrite"
+      SBQQ__CompanyState__c = "ReadWrite"
+      SBQQ__CompanyStreet__c = "ReadWrite"
+      SBQQ__ComponentProductsHidden__c = "ReadWrite"
+      SBQQ__CustomerDiscountField__c = "ReadWrite"
+      SBQQ__CustomerDiscountLabel__c = "ReadWrite"
+      SBQQ__CustomerDiscountShown__c = "ReadWrite"
+      SBQQ__Default__c = "ReadWrite"
+      SBQQ__DeploymentStatus__c = "ReadWrite"
+      SBQQ__DiscountScheduleShown__c = "ReadWrite"
+      SBQQ__ExcludeHeaderFooter__c = "ReadWrite"
+      SBQQ__ExcludedPages__c = "ReadWrite"
+      SBQQ__FontFamily__c = "ReadWrite"
+      SBQQ__FontSize__c = "ReadWrite"
+      SBQQ__FooterContent__c = "ReadWrite"
+      SBQQ__FooterHeight__c = "ReadWrite"
+      SBQQ__GeneratorName__c = "ReadWrite"
+      SBQQ__GrandTotalPrefix__c = "ReadWrite"
+      SBQQ__GroupField__c = "ReadWrite"
+      SBQQ__GroupFontFamily__c = "ReadWrite"
+      SBQQ__GroupFontSize__c = "ReadWrite"
+      SBQQ__GroupFontStyle__c = "ReadWrite"
+      SBQQ__GroupGap__c = "ReadWrite"
+      SBQQ__GroupShadingColor__c = "ReadWrite"
+      SBQQ__GroupTextAlignment__c = "ReadWrite"
+      SBQQ__GroupTextColor__c = "ReadWrite"
+      SBQQ__HeaderContent__c = "ReadWrite"
+      SBQQ__HeaderHeight__c = "ReadWrite"
+      SBQQ__HideGroupSubtotals__c = "ReadWrite"
+      SBQQ__IntroductionTitle__c = "ReadWrite"
+      SBQQ__LineNumbering__c = "ReadWrite"
+      SBQQ__LineSortField__c = "ReadWrite"
+      SBQQ__LogoDocumentId__c = "ReadWrite"
+      SBQQ__NotesTitle__c = "ReadWrite"
+      SBQQ__PageHeight__c = "ReadWrite"
+      SBQQ__PageNumberAlignment__c = "ReadWrite"
+      SBQQ__PageNumberPosition__c = "ReadWrite"
+      SBQQ__PageNumberText__c = "ReadWrite"
+      SBQQ__PageOrientation__c = "ReadWrite"
+      SBQQ__PageWidth__c = "ReadWrite"
+      SBQQ__PartnerDiscountLabel__c = "ReadWrite"
+      SBQQ__PartnerDiscountShown__c = "ReadWrite"
+      SBQQ__RenewedProductsShown__c = "ReadWrite"
+      SBQQ__RollUpField__c = "ReadWrite"
+      SBQQ__ShadingColor__c = "ReadWrite"
+      SBQQ__ShipToTitle__c = "ReadWrite"
+      SBQQ__SubGroupField__c = "ReadWrite"
+      SBQQ__SubtotalField__c = "ReadWrite"
+      SBQQ__SubtotalLabel__c = "ReadWrite"
+      SBQQ__TermBodyIndent__c = "ReadWrite"
+      SBQQ__TermsConditionsTitle__c = "ReadWrite"
+      SBQQ__TermsConditions__c = "ReadWrite"
+      SBQQ__TermsNumbered__c = "ReadWrite"
+      SBQQ__TextColor__c = "ReadWrite"
+      SBQQ__TotalField__c = "ReadWrite"
+      SBQQ__TotalLabel__c = "ReadWrite"
+      SBQQ__TotalsHidden__c = "ReadWrite"
+      SBQQ__WatermarkId__c = "ReadWrite"
+    }
+    SBQQ__PriceCondition__c = {
+      SBQQ__Field__c = "ReadWrite"
+      SBQQ__FilterFormula__c = "ReadWrite"
+      SBQQ__FilterType__c = "ReadWrite"
+      SBQQ__FilterVariable__c = "ReadWrite"
+      SBQQ__Index__c = "ReadWrite"
+      SBQQ__Object__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ParentRuleIsActive__c = "ReadWrite"
+      SBQQ__RuleTargetsCalculator__c = "ReadWrite"
+      SBQQ__TestedFormula__c = "ReadWrite"
+      SBQQ__TestedVariable__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    SBQQ__QuoteLineConsumptionSchedule__c = {
+      SBQQ__ConsumptionSchedule__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__MatchingAttribute__c = "ReadWrite"
+      SBQQ__UnitOfMeasure__c = "ReadWrite"
+    }
+    SBQQ__ProductAction__c = {
+      SBQQ__FilterField__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ParentRuleIsActive__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__ValueAttribute__c = "ReadWrite"
+      SBQQ__ValueField__c = "ReadWrite"
+      SBQQ__ValueObject__c = "ReadWrite"
+    }
+    SBQQ__TaxExemptionCertificate__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__CertificateNumber__c = "ReadWrite"
+      SBQQ__Country__c = "ReadWrite"
+      SBQQ__County__c = "ReadWrite"
+      SBQQ__DateIssued__c = "ReadWrite"
+      SBQQ__Default__c = "ReadWrite"
+      SBQQ__ExpirationDate__c = "ReadWrite"
+      SBQQ__Notes__c = "ReadWrite"
+      SBQQ__State__c = "ReadWrite"
+      SBQQ__StreetAddress_2__c = "ReadWrite"
+      SBQQ__StreetAddress__c = "ReadWrite"
+    }
+    SBQQ__PriceSchedule__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AggregationScope__c = "ReadWrite"
+      SBQQ__ConstraintField__c = "ReadWrite"
+      SBQQ__CrossOrders__c = "ReadWrite"
+      SBQQ__CrossProducts__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__DiscountUnit__c = "ReadWrite"
+      SBQQ__ExcludedPricebookIds__c = "ReadWrite"
+      SBQQ__IncludeBundledProducts__c = "ReadWrite"
+      SBQQ__OrderProduct__c = "ReadWrite"
+      SBQQ__Order__c = "ReadWrite"
+      SBQQ__OriginalDiscountSchedule__c = "ReadWrite"
+      SBQQ__OverrideBehavior__c = "ReadWrite"
+      SBQQ__PriceScale__c = "ReadWrite"
+      SBQQ__PriceType__c = "ReadWrite"
+      SBQQ__Pricebook__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuoteLineQuantityField__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__UsePriceForAmount__c = "ReadWrite"
+      SBQQ__UserDefined__c = "ReadWrite"
+    }
+    User = {
+      SBQQ__DefaultProductLookupTab__c = "ReadWrite"
+      SBQQ__DiagnosticToolEnabled__c = "ReadWrite"
+      SBQQ__OutputFormatChangeAllowed__c = "ReadWrite"
+      SBQQ__ProductSortPreference__c = "ReadWrite"
+      SBQQ__ResetProductLookup__c = "ReadWrite"
+      SBQQ__Theme__c = "ReadWrite"
+    }
+    SBQQ__TemplateContent__c = {
+      SBQQ__CustomSource__c = "ReadWrite"
+      SBQQ__FontFamily__c = "ReadWrite"
+      SBQQ__FontSize__c = "ReadWrite"
+      SBQQ__Markup__c = "ReadWrite"
+      SBQQ__RawMarkup__c = "ReadWrite"
+      SBQQ__TableStyle__c = "ReadWrite"
+      SBQQ__TextColor__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+    }
+    SBQQ__SearchFilter__c = {
+      SBQQ__Action__c = "ReadWrite"
+      SBQQ__FilterSourceField__c = "ReadWrite"
+      SBQQ__FilterSourceObject__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__HiddenSourceField__c = "ReadWrite"
+      SBQQ__HiddenSourceObject__c = "ReadWrite"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__TargetField__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+    }
+    SBQQ__SubscribedAsset__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AssetRootId__c = "ReadWrite"
+      SBQQ__Asset__c = "ReadWrite"
+      SBQQ__ContractId__c = "ReadOnly"
+      SBQQ__UsageEndDate__c = "ReadOnly"
+    }
+    SBQQ__ProcessInputValue__c = {
+      SBQQ__UserID__c = "ReadOnly"
+      SBQQ__Value__c = "ReadOnly"
+    }
+    SBQQ__Quote__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AdditionalDiscountAmount__c = "ReadOnly"
+      SBQQ__AverageCustomerDiscount__c = "ReadOnly"
+      SBQQ__AveragePartnerDiscount__c = "ReadOnly"
+      SBQQ__BillingCity__c = "ReadWrite"
+      SBQQ__BillingCountry__c = "ReadWrite"
+      SBQQ__BillingName__c = "ReadWrite"
+      SBQQ__BillingPostalCode__c = "ReadWrite"
+      SBQQ__BillingState__c = "ReadWrite"
+      SBQQ__BillingStreet__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__CustomerAmount__c = "ReadOnly"
+      SBQQ__CustomerDiscount__c = "ReadWrite"
+      SBQQ__DaysQuoteOpen__c = "ReadOnly"
+      SBQQ__DefaultTemplate__c = "ReadWrite"
+      SBQQ__DeliveryMethod__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__Distributor__c = "ReadWrite"
+      SBQQ__DocumentStatus__c = "ReadOnly"
+      SBQQ__EmailTemplateId__c = "ReadWrite"
+      SBQQ__EndDate__c = "ReadWrite"
+      SBQQ__ExpirationDate__c = "ReadWrite"
+      SBQQ__FirstSegmentTermEndDate__c = "ReadWrite"
+      SBQQ__GenerateContractedPrice__c = "ReadWrite"
+      SBQQ__Introduction__c = "ReadWrite"
+      SBQQ__Key__c = "ReadWrite"
+      SBQQ__LastCalculatedOn__c = "ReadOnly"
+      SBQQ__LastSavedOn__c = "ReadOnly"
+      SBQQ__LineItemCount__c = "ReadOnly"
+      SBQQ__LineItemsGrouped__c = "ReadWrite"
+      SBQQ__LineItemsPrinted__c = "ReadWrite"
+      SBQQ__ListAmount__c = "ReadOnly"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__MasterContract__c = "ReadWrite"
+      SBQQ__MasterEvergreenContract__c = "ReadWrite"
+      SBQQ__NetAmount__c = "ReadOnly"
+      SBQQ__Notes__c = "ReadWrite"
+      SBQQ__Opportunity2__c = "ReadWrite"
+      SBQQ__OrderByQuoteLineGroup__c = "ReadWrite"
+      SBQQ__OrderBy__c = "ReadWrite"
+      SBQQ__OrderGroupID__c = "ReadWrite"
+      SBQQ__Ordered__c = "ReadWrite"
+      SBQQ__OriginalQuote__c = "ReadWrite"
+      SBQQ__PaperSize__c = "ReadWrite"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__Partner__c = "ReadWrite"
+      SBQQ__PaymentTerms__c = "ReadWrite"
+      SBQQ__PriceBook__c = "ReadWrite"
+      SBQQ__PricebookId__c = "ReadWrite"
+      SBQQ__PrimaryContact__c = "ReadWrite"
+      SBQQ__Primary__c = "ReadWrite"
+      SBQQ__ProrationDayOfMonth__c = "ReadWrite"
+      SBQQ__QuoteLanguage__c = "ReadWrite"
+      SBQQ__QuoteProcessId__c = "ReadWrite"
+      SBQQ__QuoteTemplateId__c = "ReadWrite"
+      SBQQ__RegularAmount__c = "ReadOnly"
+      SBQQ__RenewalTerm__c = "ReadWrite"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__SalesRep__c = "ReadWrite"
+      SBQQ__ShippingCity__c = "ReadWrite"
+      SBQQ__ShippingCountry__c = "ReadWrite"
+      SBQQ__ShippingName__c = "ReadWrite"
+      SBQQ__ShippingPostalCode__c = "ReadWrite"
+      SBQQ__ShippingState__c = "ReadWrite"
+      SBQQ__ShippingStreet__c = "ReadWrite"
+      SBQQ__Source__c = "ReadWrite"
+      SBQQ__StartDate__c = "ReadWrite"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__TargetCustomerAmount__c = "ReadWrite"
+      SBQQ__TotalCustomerDiscountAmount__c = "ReadOnly"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__Uncalculated__c = "ReadOnly"
+      SBQQ__WatermarkShown__c = "ReadWrite"
+    }
+    SBQQ__DiscountSchedule__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AggregationScope__c = "ReadWrite"
+      SBQQ__ConstraintField__c = "ReadWrite"
+      SBQQ__CrossOrders__c = "ReadWrite"
+      SBQQ__CrossProducts__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__DiscountUnit__c = "ReadWrite"
+      SBQQ__ExcludedPricebookIds__c = "ReadWrite"
+      SBQQ__IncludeBundledProducts__c = "ReadWrite"
+      SBQQ__OriginalDiscountSchedule__c = "ReadWrite"
+      SBQQ__OverrideBehavior__c = "ReadWrite"
+      SBQQ__PriceScale__c = "ReadWrite"
+      SBQQ__Pricebook__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuoteLineQuantityField__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__UsePriceForAmount__c = "ReadOnly"
+      SBQQ__UserDefined__c = "ReadOnly"
+    }
+    SBQQ__ProcessInputCondition__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+    }
+    SBQQ__DiscountTier__c = {
+      SBQQ__DiscountAmount__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__LowerBound__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+    Product2 = {
+      SBQQ__AssetAmendmentBehavior__c = "ReadWrite"
+      SBQQ__AssetConversion__c = "ReadWrite"
+      SBQQ__BatchQuantity__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__BlockPricingField__c = "ReadWrite"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__Component__c = "ReadWrite"
+      SBQQ__CompoundDiscountRate__c = "ReadWrite"
+      SBQQ__ConfigurationEvent__c = "ReadWrite"
+      SBQQ__ConfigurationFieldSet__c = "ReadWrite"
+      SBQQ__ConfigurationFields__c = "ReadWrite"
+      SBQQ__ConfigurationFormTitle__c = "ReadWrite"
+      SBQQ__ConfigurationType__c = "ReadWrite"
+      SBQQ__ConfigurationValidator__c = "ReadWrite"
+      SBQQ__ConfiguredCodePattern__c = "ReadWrite"
+      SBQQ__ConfiguredDescriptionPattern__c = "ReadWrite"
+      SBQQ__CostEditable__c = "ReadWrite"
+      SBQQ__CostSchedule__c = "ReadWrite"
+      SBQQ__CustomConfigurationPage__c = "ReadWrite"
+      SBQQ__CustomConfigurationRequired__c = "ReadWrite"
+      SBQQ__DefaultPricingTable__c = "ReadWrite"
+      SBQQ__DefaultQuantity__c = "ReadWrite"
+      SBQQ__DescriptionLocked__c = "ReadWrite"
+      SBQQ__DiscountCategory__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__DynamicPricingConstraint__c = "ReadWrite"
+      SBQQ__EnableLargeConfiguration__c = "ReadWrite"
+      SBQQ__ExcludeFromMaintenance__c = "ReadWrite"
+      SBQQ__ExcludeFromOpportunity__c = "ReadWrite"
+      SBQQ__ExternallyConfigurable__c = "ReadWrite"
+      SBQQ__GenerateContractedPrice__c = "ReadWrite"
+      SBQQ__HasConfigurationAttributes__c = "ReadOnly"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__HidePriceInSearchResults__c = "ReadWrite"
+      SBQQ__IncludeInMaintenance__c = "ReadWrite"
+      SBQQ__NewQuoteGroup__c = "ReadWrite"
+      SBQQ__NonDiscountable__c = "ReadWrite"
+      SBQQ__NonPartnerDiscountable__c = "ReadWrite"
+      SBQQ__OptionLayout__c = "ReadWrite"
+      SBQQ__OptionSelectionMethod__c = "ReadWrite"
+      SBQQ__Optional__c = "ReadWrite"
+      SBQQ__PriceEditable__c = "ReadWrite"
+      SBQQ__PricingGuidance__c = "ReadWrite"
+      SBQQ__PricingMethodEditable__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductPictureID__c = "ReadWrite"
+      SBQQ__QuantityEditable__c = "ReadWrite"
+      SBQQ__QuantityScale__c = "ReadWrite"
+      SBQQ__ReconfigurationDisabled__c = "ReadWrite"
+      SBQQ__RenewalProduct__c = "ReadWrite"
+      SBQQ__SortOrder__c = "ReadWrite"
+      SBQQ__Specifications__c = "ReadWrite"
+      SBQQ__SubscriptionBase__c = "ReadWrite"
+      SBQQ__SubscriptionCategory__c = "ReadWrite"
+      SBQQ__SubscriptionPercent__c = "ReadWrite"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionTarget__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__SubscriptionType__c = "ReadWrite"
+      SBQQ__TaxCode__c = "ReadWrite"
+      SBQQ__Taxable__c = "ReadWrite"
+      SBQQ__TermDiscountLevel__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__UpgradeCredit__c = "ReadWrite"
+      SBQQ__UpgradeSource__c = "ReadWrite"
+      SBQQ__UpgradeTarget__c = "ReadWrite"
+    }
+    SBQQ__Theme__c = {
+      SBQQ__AccentIconDisabledFontColor__c = "ReadWrite"
+      SBQQ__AccentIconFontColor__c = "ReadWrite"
+      SBQQ__AccentIconHoverFontColor__c = "ReadWrite"
+      SBQQ__BadgeBackgroundColor__c = "ReadWrite"
+      SBQQ__BadgeBorderColor__c = "ReadWrite"
+      SBQQ__BadgeBorderStyle__c = "ReadWrite"
+      SBQQ__BadgeBorderWidth__c = "ReadWrite"
+      SBQQ__BadgeFontColor__c = "ReadWrite"
+      SBQQ__BadgeFontFamily__c = "ReadWrite"
+      SBQQ__BadgeFontSize__c = "ReadWrite"
+      SBQQ__BrandButtonBorderColor__c = "ReadWrite"
+      SBQQ__BrandButtonDisabledFontColor__c = "ReadWrite"
+      SBQQ__BrandButtonFontFamily__c = "ReadWrite"
+      SBQQ__BrandButtonHoverFontColor__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderBgColor__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderColor__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderFontFamily__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderFontSize__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderFontStyle__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderFontWeight__c = "ReadWrite"
+      SBQQ__BundleLayoutHeaderTextDecoration__c = "ReadWrite"
+      SBQQ__CheckboxBackgroundColorChecked__c = "ReadWrite"
+      SBQQ__CheckboxBackgroundColorUnchecked__c = "ReadWrite"
+      SBQQ__CheckboxBorderColor__c = "ReadWrite"
+      SBQQ__CheckboxBorderRadius__c = "ReadWrite"
+      SBQQ__CheckboxBorderStyle__c = "ReadWrite"
+      SBQQ__CheckboxBorderWidth__c = "ReadWrite"
+      SBQQ__CheckboxCheckMarkColor__c = "ReadWrite"
+      SBQQ__CheckboxSize__c = "ReadWrite"
+      SBQQ__CompiledCSS__c = "ReadOnly"
+      SBQQ__ComponentRowFontColor__c = "ReadWrite"
+      SBQQ__ComponentRowFontStyle__c = "ReadWrite"
+      SBQQ__ComponentRowFontWeight__c = "ReadWrite"
+      SBQQ__ComponentRowTextDecoration__c = "ReadWrite"
+      SBQQ__ConfigurationAttributeLabelColor__c = "ReadWrite"
+      SBQQ__ConfiguratorCustomActionBorderColor__c = "ReadWrite"
+      SBQQ__ConfiguratorCustomActionColor__c = "ReadWrite"
+      SBQQ__ConfiguratorCustomActionFontColor__c = "ReadWrite"
+      SBQQ__ConfiguratorCustomActionHoverColor__c = "ReadWrite"
+      SBQQ__ConfiguratorCustomActionHoverFontColor__c = "ReadWrite"
+      SBQQ__DetailColor__c = "ReadWrite"
+      SBQQ__DialogBackgroundColor__c = "ReadWrite"
+      SBQQ__DialogBorderRadius__c = "ReadWrite"
+      SBQQ__DialogCloseColor__c = "ReadWrite"
+      SBQQ__DialogFontFamily__c = "ReadWrite"
+      SBQQ__DialogFooterBorderColor__c = "ReadWrite"
+      SBQQ__DialogFooterBorderStyle__c = "ReadWrite"
+      SBQQ__DialogFooterBorderWidth__c = "ReadWrite"
+      SBQQ__DialogFooterColor__c = "ReadWrite"
+      SBQQ__DialogHeaderBorderColor__c = "ReadWrite"
+      SBQQ__DialogHeaderBorderStyle__c = "ReadWrite"
+      SBQQ__DialogHeaderBorderWidth__c = "ReadWrite"
+      SBQQ__DialogHeaderPaddingBottom__c = "ReadWrite"
+      SBQQ__DialogHeaderPaddingLeft__c = "ReadWrite"
+      SBQQ__DialogHeaderPaddingRight__c = "ReadWrite"
+      SBQQ__DialogHeaderPaddingTop__c = "ReadWrite"
+      SBQQ__DialogMaskColor__c = "ReadWrite"
+      SBQQ__FeatureInstructionsColor__c = "ReadWrite"
+      SBQQ__FeatureInstructionsFontFamily__c = "ReadWrite"
+      SBQQ__FeatureInstructionsFontSize__c = "ReadWrite"
+      SBQQ__FeatureInstructionsFontStyle__c = "ReadWrite"
+      SBQQ__FeatureInstructionsFontWeight__c = "ReadWrite"
+      SBQQ__FeatureInstructionsPaddingBottom__c = "ReadWrite"
+      SBQQ__FeatureInstructionsPaddingLeft__c = "ReadWrite"
+      SBQQ__FeatureInstructionsPaddingRight__c = "ReadWrite"
+      SBQQ__FeatureInstructionsPaddingTop__c = "ReadWrite"
+      SBQQ__FeatureInstructionsTextDecoration__c = "ReadWrite"
+      SBQQ__FieldEditableIconColor__c = "ReadWrite"
+      SBQQ__FieldEditedColor__c = "ReadWrite"
+      SBQQ__FilterDrawerFontColor__c = "ReadWrite"
+      SBQQ__GeneralBorderColor__c = "ReadWrite"
+      SBQQ__GeneralColor__c = "ReadWrite"
+      SBQQ__GeneralFontColor__c = "ReadWrite"
+      SBQQ__GeneralFontFamily__c = "ReadWrite"
+      SBQQ__GroupBorderColor__c = "ReadWrite"
+      SBQQ__GroupBorderWidth__c = "ReadWrite"
+      SBQQ__GroupButtonBorderColor__c = "ReadWrite"
+      SBQQ__GroupButtonColor__c = "ReadWrite"
+      SBQQ__GroupButtonDisabledFontColor__c = "ReadWrite"
+      SBQQ__GroupButtonFontColor__c = "ReadWrite"
+      SBQQ__GroupButtonHoverColor__c = "ReadWrite"
+      SBQQ__GroupButtonHoverFontColor__c = "ReadWrite"
+      SBQQ__GroupHeaderBackgroundColor__c = "ReadWrite"
+      SBQQ__GroupHeaderBorderBottomColor__c = "ReadWrite"
+      SBQQ__GroupHeaderBorderBottomWidth__c = "ReadWrite"
+      SBQQ__GroupHeaderFontColor__c = "ReadWrite"
+      SBQQ__GroupHeaderFontFamily__c = "ReadWrite"
+      SBQQ__GroupHeaderFontSize__c = "ReadWrite"
+      SBQQ__GroupHeaderFontStyle__c = "ReadWrite"
+      SBQQ__GroupHeaderFontWeight__c = "ReadWrite"
+      SBQQ__GroupHeaderTextDecoration__c = "ReadWrite"
+      SBQQ__HeaderBorderColor__c = "ReadWrite"
+      SBQQ__HeaderBorderStyle__c = "ReadWrite"
+      SBQQ__HeaderBorderWidth__c = "ReadWrite"
+      SBQQ__HeaderColor__c = "ReadWrite"
+      SBQQ__HeaderFontColor__c = "ReadWrite"
+      SBQQ__HeaderFontFamily__c = "ReadWrite"
+      SBQQ__HeaderFontSize__c = "ReadWrite"
+      SBQQ__HeaderFontStyle__c = "ReadWrite"
+      SBQQ__HeaderFontWeight__c = "ReadWrite"
+      SBQQ__HeaderIconColor__c = "ReadWrite"
+      SBQQ__HeaderIconFontSize__c = "ReadWrite"
+      SBQQ__HeaderMinHeight__c = "ReadWrite"
+      SBQQ__HeaderPaddingBottom__c = "ReadWrite"
+      SBQQ__HeaderPaddingLeft__c = "ReadWrite"
+      SBQQ__HeaderPaddingRight__c = "ReadWrite"
+      SBQQ__HeaderPaddingTop__c = "ReadWrite"
+      SBQQ__HeaderSecondaryFontColor__c = "ReadWrite"
+      SBQQ__HeaderSecondaryFontFamily__c = "ReadWrite"
+      SBQQ__HeaderSecondaryFontSize__c = "ReadWrite"
+      SBQQ__HeaderSecondaryFontStyle__c = "ReadWrite"
+      SBQQ__HeaderSecondaryFontWeight__c = "ReadWrite"
+      SBQQ__HeaderSecondaryTextDecoration__c = "ReadWrite"
+      SBQQ__HeaderTextDecoration__c = "ReadWrite"
+      SBQQ__HideIcons__c = "ReadWrite"
+      SBQQ__HyperlinkActiveColor__c = "ReadWrite"
+      SBQQ__HyperlinkColor__c = "ReadWrite"
+      SBQQ__HyperlinkDisabledColor__c = "ReadWrite"
+      SBQQ__HyperlinkHoverColor__c = "ReadWrite"
+      SBQQ__IconDisabledColor__c = "ReadWrite"
+      SBQQ__IconFontColor__c = "ReadWrite"
+      SBQQ__IconHoverColor__c = "ReadWrite"
+      SBQQ__IconMobileCopyBackgroundColor__c = "ReadWrite"
+      SBQQ__IconMobileDeleteBackgroundColor__c = "ReadWrite"
+      SBQQ__IconMobileLineActionColor__c = "ReadWrite"
+      SBQQ__IconMobileStarBackgroundColor__c = "ReadWrite"
+      SBQQ__IconMobileStarFillColor__c = "ReadWrite"
+      SBQQ__IconMobileWandBackgroundColor__c = "ReadWrite"
+      SBQQ__IconPageLoadingColor__c = "ReadWrite"
+      SBQQ__InputOutlineColor__c = "ReadWrite"
+      SBQQ__InputOutlineWidth__c = "ReadWrite"
+      SBQQ__LoadingMaskColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerFontColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerHeaderColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerHeaderFontColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerRowColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerRowHoverColor__c = "ReadWrite"
+      SBQQ__NavigationDrawerRowSelectedColor__c = "ReadWrite"
+      SBQQ__ParentLineRowFontColor__c = "ReadWrite"
+      SBQQ__ParentLineRowFontStyle__c = "ReadWrite"
+      SBQQ__ParentLineRowFontWeight__c = "ReadWrite"
+      SBQQ__ParentLineRowTextDecoration__c = "ReadWrite"
+      SBQQ__PrimaryButtonColor__c = "ReadWrite"
+      SBQQ__PrimaryButtonFontColor__c = "ReadWrite"
+      SBQQ__PrimaryButtonHoverColor__c = "ReadWrite"
+      SBQQ__RadioButtonColorChecked__c = "ReadWrite"
+      SBQQ__RadioButtonColorUnchecked__c = "ReadWrite"
+      SBQQ__SecondaryFontColor__c = "ReadWrite"
+      SBQQ__SecondaryHeaderColor__c = "ReadWrite"
+      SBQQ__SelectBackgroundColor__c = "ReadWrite"
+      SBQQ__SelectBorderColor__c = "ReadWrite"
+      SBQQ__SelectBorderRadius__c = "ReadWrite"
+      SBQQ__SelectBorderStyle__c = "ReadWrite"
+      SBQQ__SelectBorderWidth__c = "ReadWrite"
+      SBQQ__SelectContractHideSkipActionOnAddOn__c = "ReadWrite"
+      SBQQ__SelectContractHideSkipActionOnAmend__c = "ReadWrite"
+      SBQQ__SelectHeight__c = "ReadWrite"
+      SBQQ__SelectPaddingBottom__c = "ReadWrite"
+      SBQQ__SelectPaddingLeft__c = "ReadWrite"
+      SBQQ__SelectPaddingRight__c = "ReadWrite"
+      SBQQ__SelectPaddingTop__c = "ReadWrite"
+      SBQQ__StandaloneProductRowFontColor__c = "ReadWrite"
+      SBQQ__StandaloneProductRowFontStyle__c = "ReadWrite"
+      SBQQ__StandaloneProductRowFontWeight__c = "ReadWrite"
+      SBQQ__StandaloneProductRowTextDecoration__c = "ReadWrite"
+      SBQQ__StandardButtonBorderRadius__c = "ReadWrite"
+      SBQQ__StandardButtonDisabledBackgroundColor__c = "ReadWrite"
+      SBQQ__StandardButtonFontFamily__c = "ReadWrite"
+      SBQQ__StandardButtonFontSize__c = "ReadWrite"
+      SBQQ__StandardButtonFontWeight__c = "ReadWrite"
+      SBQQ__StandardButtonPaddingBottom__c = "ReadWrite"
+      SBQQ__StandardButtonPaddingLeft__c = "ReadWrite"
+      SBQQ__StandardButtonPaddingRight__c = "ReadWrite"
+      SBQQ__StandardButtonPaddingTop__c = "ReadWrite"
+      SBQQ__TabColor__c = "ReadWrite"
+      SBQQ__TabFontFamily__c = "ReadWrite"
+      SBQQ__TabHoverColor__c = "ReadWrite"
+      SBQQ__TabSelectedColor__c = "ReadWrite"
+      SBQQ__TableCellPaddingBottom__c = "ReadWrite"
+      SBQQ__TableCellPaddingLeft__c = "ReadWrite"
+      SBQQ__TableCellPaddingRight__c = "ReadWrite"
+      SBQQ__TableCellPaddingTop__c = "ReadWrite"
+      SBQQ__TableGroupedRowBackgroundColor__c = "ReadOnly"
+      SBQQ__TableGroupedRowBorderBottomColor__c = "ReadWrite"
+      SBQQ__TableGroupedRowBorderBottomStyle__c = "ReadOnly"
+      SBQQ__TableGroupedRowBorderBottomWidth__c = "ReadOnly"
+      SBQQ__TableGroupedRowLineHeight__c = "ReadWrite"
+      SBQQ__TableGroupedRowPaddingBottom__c = "ReadWrite"
+      SBQQ__TableGroupedRowPaddingTop__c = "ReadWrite"
+      SBQQ__TableHeaderBackgroundColor__c = "ReadWrite"
+      SBQQ__TableHeaderBorderBottomColor__c = "ReadWrite"
+      SBQQ__TableHeaderBorderBottomStyle__c = "ReadWrite"
+      SBQQ__TableHeaderBorderBottomWidth__c = "ReadWrite"
+      SBQQ__TableHeaderCellHeight__c = "ReadWrite"
+      SBQQ__TableHeaderFontColor__c = "ReadWrite"
+      SBQQ__TableHeaderFontFamily__c = "ReadWrite"
+      SBQQ__TableHeaderFontSize__c = "ReadWrite"
+      SBQQ__TableHeaderFontStyle__c = "ReadWrite"
+      SBQQ__TableHeaderFontWeight__c = "ReadWrite"
+      SBQQ__TableHeaderTextDecoration__c = "ReadWrite"
+      SBQQ__TableRowBackgroundColor__c = "ReadWrite"
+      SBQQ__TableRowBorderBottomColor__c = "ReadWrite"
+      SBQQ__TableRowBorderBottomStyle__c = "ReadWrite"
+      SBQQ__TableRowBorderBottomWidth__c = "ReadWrite"
+      SBQQ__TableRowFontColor__c = "ReadWrite"
+      SBQQ__TableRowFontFamily__c = "ReadWrite"
+      SBQQ__TableRowFontSize__c = "ReadWrite"
+      SBQQ__TableRowFontStyle__c = "ReadWrite"
+      SBQQ__TableRowFontWeight__c = "ReadWrite"
+      SBQQ__TableRowHoverColor__c = "ReadWrite"
+      SBQQ__TableRowLineHeight__c = "ReadWrite"
+      SBQQ__TableRowPaddingBottom__c = "ReadWrite"
+      SBQQ__TableRowPaddingTop__c = "ReadWrite"
+      SBQQ__TableRowTextDecoration__c = "ReadWrite"
+      SBQQ__TextboxBackgroundColor__c = "ReadWrite"
+      SBQQ__TextboxBorderColor__c = "ReadWrite"
+      SBQQ__TextboxBorderRadius__c = "ReadWrite"
+      SBQQ__TextboxBorderStyle__c = "ReadWrite"
+      SBQQ__TextboxBorderWidth__c = "ReadWrite"
+      SBQQ__TextboxHeight__c = "ReadWrite"
+      SBQQ__TextboxPaddingBottom__c = "ReadWrite"
+      SBQQ__TextboxPaddingLeft__c = "ReadWrite"
+      SBQQ__TextboxPaddingRight__c = "ReadWrite"
+      SBQQ__TextboxPaddingTop__c = "ReadWrite"
+      SBQQ__UI2DocumentId__c = "ReadOnly"
+    }
+    SBQQ__UpgradeSource__c = {
+      SBQQ__SourceProduct__c = "ReadWrite"
+      SBQQ__UpgradeConversionRate__c = "ReadWrite"
+      SBQQ__UpgradeProduct__c = "ReadWrite"
+    }
+    SBQQ__RelatedContent__c = {
+      SBQQ__DisplayOrder__c = "ReadWrite"
+      SBQQ__DocumentName__c = "ReadOnly"
+      SBQQ__Opportunity__c = "ReadOnly"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuoteTemplate__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+    }
+    SBQQ__WebQuoteLine__c = {
+      SBQQ__AdditionalDiscountAmount__c = "ReadWrite"
+      SBQQ__AdditionalDiscount__c = "ReadOnly"
+      SBQQ__AdditionalQuantity__c = "ReadWrite"
+      SBQQ__BatchQuantity__c = "ReadWrite"
+      SBQQ__BlockPrice__c = "ReadWrite"
+      SBQQ__Bundle__c = "ReadWrite"
+      SBQQ__BundledQuantity__c = "ReadWrite"
+      SBQQ__Bundled__c = "ReadWrite"
+      SBQQ__ComponentCost__c = "ReadWrite"
+      SBQQ__ComponentDiscountedByPackage__c = "ReadWrite"
+      SBQQ__ComponentListTotal__c = "ReadWrite"
+      SBQQ__ComponentSubscriptionScope__c = "ReadWrite"
+      SBQQ__ComponentTotal__c = "ReadWrite"
+      SBQQ__ComponentUpliftedByPackage__c = "ReadWrite"
+      SBQQ__ComponentVisibility__c = "ReadOnly"
+      SBQQ__CompoundDiscountRate__c = "ReadWrite"
+      SBQQ__ConfigurationRequired__c = "ReadWrite"
+      SBQQ__ContractedPrice__c = "ReadWrite"
+      SBQQ__CostEditable__c = "ReadWrite"
+      SBQQ__Cost__c = "ReadWrite"
+      SBQQ__CustomerPrice__c = "ReadWrite"
+      SBQQ__CustomerTotal__c = "ReadOnly"
+      SBQQ__DefaultSubscriptionTerm__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__Dimension__c = "ReadWrite"
+      SBQQ__DiscountScheduleType__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__DiscountTier__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__EffectiveEndDate__c = "ReadOnly"
+      SBQQ__EffectiveQuantity__c = "ReadOnly"
+      SBQQ__EffectiveStartDate__c = "ReadOnly"
+      SBQQ__EndDate__c = "ReadWrite"
+      SBQQ__Existing__c = "ReadWrite"
+      SBQQ__GrossProfit__c = "ReadOnly"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__Incomplete__c = "ReadWrite"
+      SBQQ__ListPrice__c = "ReadWrite"
+      SBQQ__ListTotal__c = "ReadOnly"
+      SBQQ__MarkupAmount__c = "ReadWrite"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__Markup__c = "ReadOnly"
+      SBQQ__MaximumPrice__c = "ReadWrite"
+      SBQQ__MinimumPrice__c = "ReadWrite"
+      SBQQ__NetPrice__c = "ReadWrite"
+      SBQQ__NetTotal__c = "ReadOnly"
+      SBQQ__NonDiscountable__c = "ReadWrite"
+      SBQQ__NonPartnerDiscountable__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__OptionDiscountAmount__c = "ReadWrite"
+      SBQQ__OptionDiscount__c = "ReadWrite"
+      SBQQ__OptionLevel__c = "ReadWrite"
+      SBQQ__OptionType__c = "ReadWrite"
+      SBQQ__Optional__c = "ReadWrite"
+      SBQQ__PackageCost__c = "ReadOnly"
+      SBQQ__PackageListTotal__c = "ReadOnly"
+      SBQQ__PackageProductCode__c = "ReadWrite"
+      SBQQ__PackageTotal__c = "ReadOnly"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__PartnerPrice__c = "ReadWrite"
+      SBQQ__PartnerTotal__c = "ReadOnly"
+      SBQQ__PriceEditable__c = "ReadWrite"
+      SBQQ__PricingMethodEditable__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__PriorQuantity__c = "ReadWrite"
+      SBQQ__ProductCode__c = "ReadOnly"
+      SBQQ__ProductFamily__c = "ReadOnly"
+      SBQQ__ProductName__c = "ReadOnly"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__ProratedListPrice__c = "ReadWrite"
+      SBQQ__ProratedPrice__c = "ReadWrite"
+      SBQQ__Quantity__c = "ReadWrite"
+      SBQQ__RegularPrice__c = "ReadWrite"
+      SBQQ__RegularTotal__c = "ReadOnly"
+      SBQQ__Renewal__c = "ReadWrite"
+      SBQQ__RenewedAsset__c = "ReadWrite"
+      SBQQ__RenewedSubscription__c = "ReadWrite"
+      SBQQ__RequiredBy__c = "ReadWrite"
+      SBQQ__SegmentIndex__c = "ReadOnly"
+      SBQQ__SegmentKey__c = "ReadOnly"
+      SBQQ__SegmentLabel__c = "ReadOnly"
+      SBQQ__Source__c = "ReadWrite"
+      SBQQ__SpecialPriceDescription__c = "ReadWrite"
+      SBQQ__SpecialPriceType__c = "ReadWrite"
+      SBQQ__SpecialPrice__c = "ReadWrite"
+      SBQQ__StartDate__c = "ReadWrite"
+      SBQQ__SubscribedAssetIds__c = "ReadWrite"
+      SBQQ__SubscriptionBase__c = "ReadWrite"
+      SBQQ__SubscriptionCategory__c = "ReadWrite"
+      SBQQ__SubscriptionPercent__c = "ReadWrite"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionScope__c = "ReadWrite"
+      SBQQ__SubscriptionTargetPrice__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__Taxable__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__TermDiscountTier__c = "ReadWrite"
+      SBQQ__TermDiscount__c = "ReadWrite"
+      SBQQ__TotalDiscountAmount__c = "ReadOnly"
+      SBQQ__UnitCost__c = "ReadWrite"
+      SBQQ__UpgradedAsset__c = "ReadWrite"
+      SBQQ__UpgradedSubscription__c = "ReadWrite"
+      SBQQ__UpliftAmount__c = "ReadOnly"
+      SBQQ__Uplift__c = "ReadWrite"
+      SBQQ__VolumeDiscount__c = "ReadWrite"
+    }
+    SBQQ__Localization__c = {
+      SBQQ__APIName__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__Label__c = "ReadWrite"
+      SBQQ__Language__c = "ReadWrite"
+      SBQQ__LineColumn__c = "ReadWrite"
+      SBQQ__LongTextArea__c = "ReadWrite"
+      SBQQ__PriceDimension__c = "ReadWrite"
+      SBQQ__ProductFeature__c = "ReadWrite"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuoteTemplate__c = "ReadWrite"
+      SBQQ__QuoteTerm__c = "ReadWrite"
+      SBQQ__RichTextArea__c = "ReadWrite"
+      SBQQ__TemplateContent__c = "ReadWrite"
+      SBQQ__TextArea__c = "ReadWrite"
+      SBQQ__Text__c = "ReadWrite"
+      SBQQ__UserDefined__c = "ReadWrite"
+    }
+    SBQQ__ProductAttributeSet__c = {
+      SBQQ__AttributeSet__c = "ReadWrite"
+      SBQQ__ConfiguredSKU__c = "ReadWrite"
+      SBQQ__ProductName__c = "ReadWrite"
+      SBQQ__ProductOptionName__c = "ReadWrite"
+      SBQQ__ProductOption__c = "ReadWrite"
+    }
+    SBQQ__ProductFeature__c = {
+      SBQQ__Category__c = "ReadWrite"
+      SBQQ__ConfigurationFieldSet__c = "ReadWrite"
+      SBQQ__ConfiguredSKU__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__DynamicProductFilterFieldSet__c = "ReadWrite"
+      SBQQ__DynamicProductLookupFieldSet__c = "ReadWrite"
+      SBQQ__MaxOptionCount__c = "ReadWrite"
+      SBQQ__OptionSelectionMethod__c = "ReadWrite"
+    }
+    SBQQ__PriceRule__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AdvancedCondition__c = "ReadWrite"
+      SBQQ__ConditionsMet__c = "ReadWrite"
+      SBQQ__ConfiguratorEvaluationEvent__c = "ReadWrite"
+      SBQQ__EvaluationEvent__c = "ReadWrite"
+      SBQQ__EvaluationOrder__c = "ReadWrite"
+      SBQQ__LookupObject__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+    }
+    SBQQ__ColumnMetadata__c = {
+      SBQQ__ColumnValidation__c = "ReadOnly"
+    }
+    SBQQ__Subscription__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AdditionalDiscountAmount__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__Bundle__c = "ReadWrite"
+      SBQQ__BundledQuantity__c = "ReadWrite"
+      SBQQ__Bundled__c = "ReadWrite"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__ComponentDiscountedByPackage__c = "ReadWrite"
+      SBQQ__ComponentSubscriptionScope__c = "ReadWrite"
+      SBQQ__ContractNumber__c = "ReadOnly"
+      SBQQ__Contract__c = "ReadWrite"
+      SBQQ__CreditProductId__c = "ReadOnly"
+      SBQQ__CustomerPrice__c = "ReadWrite"
+      SBQQ__DimensionType__c = "ReadOnly"
+      SBQQ__Dimension__c = "ReadOnly"
+      SBQQ__DiscountScheduleType__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__DynamicOptionId__c = "ReadWrite"
+      SBQQ__EndDate__c = "ReadOnly"
+      SBQQ__HasConsumptionSchedule__c = "ReadWrite"
+      SBQQ__ListPrice__c = "ReadWrite"
+      SBQQ__MarkupAmount__c = "ReadWrite"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__NetPrice__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__OptionDiscountAmount__c = "ReadWrite"
+      SBQQ__OptionDiscount__c = "ReadWrite"
+      SBQQ__OptionLevel__c = "ReadWrite"
+      SBQQ__OptionType__c = "ReadWrite"
+      SBQQ__OrderProduct__c = "ReadWrite"
+      SBQQ__OriginalQuoteLine__c = "ReadOnly"
+      SBQQ__OriginalUnitCost__c = "ReadOnly"
+      SBQQ__PackageProductCode__c = "ReadWrite"
+      SBQQ__PackageProductDescription__c = "ReadWrite"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductId__c = "ReadOnly"
+      SBQQ__ProductName__c = "ReadOnly"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__ProductSubscriptionType__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__RegularPrice__c = "ReadWrite"
+      SBQQ__RenewalPrice__c = "ReadWrite"
+      SBQQ__RenewalProductId__c = "ReadOnly"
+      SBQQ__RenewalProductOptionId__c = "ReadOnly"
+      SBQQ__RenewalProductOptionProductId__c = "ReadOnly"
+      SBQQ__RenewalProductOptionSubscriptionPricing__c = "ReadOnly"
+      SBQQ__RenewalQuantity__c = "ReadWrite"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__RenewedDate__c = "ReadWrite"
+      SBQQ__RequiredById__c = "ReadWrite"
+      SBQQ__RequiredByProduct__c = "ReadWrite"
+      SBQQ__RevisedSubscription__c = "ReadWrite"
+      SBQQ__RootId__c = "ReadWrite"
+      SBQQ__SegmentEndDate__c = "ReadOnly"
+      SBQQ__SegmentIndex__c = "ReadWrite"
+      SBQQ__SegmentKey__c = "ReadOnly"
+      SBQQ__SegmentLabel__c = "ReadWrite"
+      SBQQ__SegmentQuantity__c = "ReadOnly"
+      SBQQ__SegmentStartDate__c = "ReadOnly"
+      SBQQ__SegmentUpliftAmount__c = "ReadOnly"
+      SBQQ__SegmentUplift__c = "ReadOnly"
+      SBQQ__SpecialPrice__c = "ReadWrite"
+      SBQQ__StartDate__c = "ReadOnly"
+      SBQQ__SubscriptionEndDate__c = "ReadOnly"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionStartDate__c = "ReadOnly"
+      SBQQ__SubscriptionType__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__TerminatedDate__c = "ReadWrite"
+      SBQQ__UnitCost__c = "ReadWrite"
+    }
+    SBQQ__QuoteDocument__c = {
+      SBQQ__AttachmentId__c = "ReadWrite"
+      SBQQ__CustomerAmount__c = "ReadWrite"
+      SBQQ__DocumentId__c = "ReadWrite"
+      SBQQ__ElectronicSignature__c = "ReadWrite"
+      SBQQ__Key__c = "ReadWrite"
+      SBQQ__ListAmount__c = "ReadWrite"
+      SBQQ__NetAmount__c = "ReadWrite"
+      SBQQ__Opportunity__c = "ReadWrite"
+      SBQQ__OutputFormat__c = "ReadWrite"
+      SBQQ__PrimaryContactId__c = "ReadOnly"
+      SBQQ__QuoteTemplate__c = "ReadOnly"
+      SBQQ__SignatureStatus__c = "ReadWrite"
+      SBQQ__Template__c = "ReadWrite"
+      SBQQ__ViewRecordId__c = "ReadOnly"
+    }
+    SBQQ__QuoteLineConsumptionRate__c = {
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__OriginalPrice__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+    SBQQ__TimingLog__c = {
+      SBQQ__Element__c = "ReadWrite"
+      SBQQ__Finish__c = "ReadWrite"
+      SBQQ__Log__c = "ReadWrite"
+      SBQQ__Start__c = "ReadWrite"
+      SBQQ__Total__c = "ReadWrite"
+      SBQQ__URL__c = "ReadWrite"
+    }
+    SBQQ__SearchIndex__c = {
+      SBQQ__Localization__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    SBQQ__ProductOption__c = {
+      SBQQ__AppliedImmediatelyContext__c = "ReadWrite"
+      SBQQ__AppliedImmediately__c = "ReadWrite"
+      SBQQ__Bundled__c = "ReadWrite"
+      SBQQ__ComponentCodePosition__c = "ReadWrite"
+      SBQQ__ComponentCode__c = "ReadWrite"
+      SBQQ__ComponentDescriptionPosition__c = "ReadWrite"
+      SBQQ__ComponentDescription__c = "ReadWrite"
+      SBQQ__ConfiguredSKU__c = "ReadWrite"
+      SBQQ__DefaultPricingTable__c = "ReadWrite"
+      SBQQ__DiscountAmount__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__DiscountedByPackage__c = "ReadWrite"
+      SBQQ__ExistingQuantity__c = "ReadWrite"
+      SBQQ__Feature__c = "ReadWrite"
+      SBQQ__MaxQuantity__c = "ReadWrite"
+      SBQQ__MinQuantity__c = "ReadWrite"
+      SBQQ__OptionalSKU__c = "ReadWrite"
+      SBQQ__PriceEditable__c = "ReadOnly"
+      SBQQ__ProductCode__c = "ReadOnly"
+      SBQQ__ProductConfigurationType__c = "ReadOnly"
+      SBQQ__ProductDescription__c = "ReadOnly"
+      SBQQ__ProductFamily__c = "ReadOnly"
+      SBQQ__ProductName__c = "ReadOnly"
+      SBQQ__ProductQuantityScale__c = "ReadOnly"
+      SBQQ__ProductSubscriptionPricing__c = "ReadOnly"
+      SBQQ__QuantityEditable__c = "ReadWrite"
+      SBQQ__Quantity__c = "ReadWrite"
+      SBQQ__QuoteLineVisibility__c = "ReadWrite"
+      SBQQ__RenewalProductOption__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+      SBQQ__Selected__c = "ReadWrite"
+      SBQQ__SubscriptionScope__c = "ReadWrite"
+      SBQQ__System__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__UnitPrice__c = "ReadWrite"
+      SBQQ__UpliftedByPackage__c = "ReadWrite"
+    }
+    SBQQ__QuoteProcess__c = {
+      SBQQ__Default__c = "ReadWrite"
+      SBQQ__GuidedOnly__c = "ReadWrite"
+      SBQQ__ProductAutoSelected__c = "ReadWrite"
+      SBQQ__ProductConfigurationInitializer__c = "ReadWrite"
+      SBQQ__ProductSearchExecutor__c = "ReadWrite"
+      SBQQ__SortOrder__c = "ReadWrite"
+    }
+    SBQQ__FavoriteShare__c = {
+      SBQQ__User__c = "ReadWrite"
+    }
+    SBQQ__SubscriptionConsumptionSchedule__c = {
+      SBQQ__ConsumptionSchedule__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__MatchingAttribute__c = "ReadWrite"
+      SBQQ__UnitOfMeasure__c = "ReadWrite"
+    }
+    Order = {
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__OrderBookings__c = "ReadOnly"
+      SBQQ__PaymentTerm__c = "ReadWrite"
+      SBQQ__PriceCalcStatusMessage__c = "ReadWrite"
+      SBQQ__PriceCalcStatus__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__RenewalTerm__c = "ReadOnly"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__TaxAmount__c = "ReadOnly"
+    }
+    SBQQ__SubscriptionConsumptionRate__c = {
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+    SBQQ__Cost__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+    }
+    SBQQ__QuoteLine__c = {
+      SBQQ__AdditionalDiscountAmount__c = "ReadWrite"
+      SBQQ__AdditionalDiscount__c = "ReadOnly"
+      SBQQ__AdditionalQuantity__c = "ReadWrite"
+      SBQQ__AllowAssetRefund__c = "ReadWrite"
+      SBQQ__BatchQuantity__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__BlockPrice__c = "ReadWrite"
+      SBQQ__Bundle__c = "ReadWrite"
+      SBQQ__BundledQuantity__c = "ReadWrite"
+      SBQQ__Bundled__c = "ReadWrite"
+      SBQQ__CarryoverLine__c = "ReadWrite"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__ComponentCost__c = "ReadWrite"
+      SBQQ__ComponentDiscountedByPackage__c = "ReadWrite"
+      SBQQ__ComponentListTotal__c = "ReadWrite"
+      SBQQ__ComponentSubscriptionScope__c = "ReadWrite"
+      SBQQ__ComponentTotal__c = "ReadWrite"
+      SBQQ__ComponentUpliftedByPackage__c = "ReadWrite"
+      SBQQ__ComponentVisibility__c = "ReadOnly"
+      SBQQ__CompoundDiscountRate__c = "ReadWrite"
+      SBQQ__ConfigurationRequired__c = "ReadWrite"
+      SBQQ__ContractedPrice__c = "ReadWrite"
+      SBQQ__CostEditable__c = "ReadWrite"
+      SBQQ__Cost__c = "ReadWrite"
+      SBQQ__CustomerPrice__c = "ReadWrite"
+      SBQQ__CustomerTotal__c = "ReadOnly"
+      SBQQ__DefaultSubscriptionTerm__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__Dimension__c = "ReadOnly"
+      SBQQ__DiscountScheduleType__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__DiscountTier__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__DynamicOptionId__c = "ReadOnly"
+      SBQQ__EarliestValidAmendmentStartDate__c = "ReadOnly"
+      SBQQ__EffectiveEndDate__c = "ReadOnly"
+      SBQQ__EffectiveQuantity__c = "ReadOnly"
+      SBQQ__EffectiveStartDate__c = "ReadOnly"
+      SBQQ__EffectiveSubscriptionTerm__c = "ReadOnly"
+      SBQQ__EndDate__c = "ReadWrite"
+      SBQQ__Existing__c = "ReadWrite"
+      SBQQ__Favorite__c = "ReadWrite"
+      SBQQ__GenerateContractedPrice__c = "ReadWrite"
+      SBQQ__GrossProfit__c = "ReadOnly"
+      SBQQ__Group__c = "ReadWrite"
+      SBQQ__Guidance__c = "ReadWrite"
+      SBQQ__HasConsumptionSchedule__c = "ReadOnly"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__Incomplete__c = "ReadWrite"
+      SBQQ__ListPrice__c = "ReadWrite"
+      SBQQ__ListTotal__c = "ReadOnly"
+      SBQQ__MarkupAmount__c = "ReadWrite"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__Markup__c = "ReadOnly"
+      SBQQ__MaximumPrice__c = "ReadWrite"
+      SBQQ__MinimumPrice__c = "ReadWrite"
+      SBQQ__NetPrice__c = "ReadWrite"
+      SBQQ__NetTotal__c = "ReadOnly"
+      SBQQ__NonDiscountable__c = "ReadWrite"
+      SBQQ__NonPartnerDiscountable__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__OptionDiscountAmount__c = "ReadWrite"
+      SBQQ__OptionDiscount__c = "ReadWrite"
+      SBQQ__OptionLevel__c = "ReadWrite"
+      SBQQ__OptionType__c = "ReadWrite"
+      SBQQ__Optional__c = "ReadWrite"
+      SBQQ__OriginalPrice__c = "ReadWrite"
+      SBQQ__OriginalQuoteLineId__c = "ReadOnly"
+      SBQQ__OriginalUnitCost__c = "ReadWrite"
+      SBQQ__PackageCost__c = "ReadOnly"
+      SBQQ__PackageListTotal__c = "ReadOnly"
+      SBQQ__PackageProductCode__c = "ReadWrite"
+      SBQQ__PackageProductDescription__c = "ReadWrite"
+      SBQQ__PackageTotal__c = "ReadOnly"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__PartnerPrice__c = "ReadWrite"
+      SBQQ__PartnerTotal__c = "ReadOnly"
+      SBQQ__PreviousSegmentPrice__c = "ReadWrite"
+      SBQQ__PreviousSegmentUplift__c = "ReadWrite"
+      SBQQ__PriceEditable__c = "ReadWrite"
+      SBQQ__PricebookEntryId__c = "ReadOnly"
+      SBQQ__PricingMethodEditable__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__PriorQuantity__c = "ReadWrite"
+      SBQQ__ProductCode__c = "ReadOnly"
+      SBQQ__ProductFamily__c = "ReadOnly"
+      SBQQ__ProductName__c = "ReadOnly"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__ProductSubscriptionType__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__ProratedListPrice__c = "ReadWrite"
+      SBQQ__ProratedPrice__c = "ReadWrite"
+      SBQQ__Quantity__c = "ReadWrite"
+      SBQQ__RegularPrice__c = "ReadWrite"
+      SBQQ__RegularTotal__c = "ReadOnly"
+      SBQQ__Renewal__c = "ReadWrite"
+      SBQQ__RenewedAsset__c = "ReadWrite"
+      SBQQ__RenewedSubscription__c = "ReadWrite"
+      SBQQ__RequiredBy__c = "ReadWrite"
+      SBQQ__SegmentIndex__c = "ReadOnly"
+      SBQQ__SegmentKey__c = "ReadOnly"
+      SBQQ__SegmentLabel__c = "ReadOnly"
+      SBQQ__Source__c = "ReadWrite"
+      SBQQ__SpecialPriceDescription__c = "ReadWrite"
+      SBQQ__SpecialPriceType__c = "ReadWrite"
+      SBQQ__SpecialPrice__c = "ReadWrite"
+      SBQQ__StartDate__c = "ReadWrite"
+      SBQQ__SubscribedAssetIds__c = "ReadWrite"
+      SBQQ__SubscriptionBase__c = "ReadWrite"
+      SBQQ__SubscriptionCategory__c = "ReadWrite"
+      SBQQ__SubscriptionPercent__c = "ReadWrite"
+      SBQQ__SubscriptionPricing__c = "ReadWrite"
+      SBQQ__SubscriptionScope__c = "ReadWrite"
+      SBQQ__SubscriptionTargetPrice__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__SubscriptionType__c = "ReadWrite"
+      SBQQ__TaxCode__c = "ReadWrite"
+      SBQQ__Taxable__c = "ReadWrite"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__TermDiscountTier__c = "ReadWrite"
+      SBQQ__TermDiscount__c = "ReadWrite"
+      SBQQ__TotalDiscountAmount__c = "ReadOnly"
+      SBQQ__TotalDiscountRate__c = "ReadOnly"
+      SBQQ__UnitCost__c = "ReadWrite"
+      SBQQ__UnproratedNetPrice__c = "ReadWrite"
+      SBQQ__UpgradedAsset__c = "ReadWrite"
+      SBQQ__UpgradedQuantity__c = "ReadWrite"
+      SBQQ__UpgradedSubscription__c = "ReadWrite"
+      SBQQ__UpliftAmount__c = "ReadOnly"
+      SBQQ__Uplift__c = "ReadWrite"
+      SBQQ__VolumeDiscount__c = "ReadWrite"
+    }
+    SBQQ__SummaryVariable__c = {
+      SBQQ__AggregateField__c = "ReadWrite"
+      SBQQ__AggregateFunction__c = "ReadWrite"
+      SBQQ__CombineWith__c = "ReadWrite"
+      SBQQ__CompositeOperator__c = "ReadWrite"
+      SBQQ__ConstraintField__c = "ReadWrite"
+      SBQQ__FilterField__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__Scope__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+      SBQQ__ValueElement__c = "ReadWrite"
+    }
+    SBQQ__PricingGuidance__c = {
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__Explanation__c = "ReadWrite"
+      SBQQ__IncludePriorPurchases__c = "ReadWrite"
+      SBQQ__IsActive__c = "ReadWrite"
+      SBQQ__Summary__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__Unit__c = "ReadWrite"
+    }
+    SBQQ__QuoteLineGroup__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AdditionalDiscountRate__c = "ReadWrite"
+      SBQQ__CustomerTotal__c = "ReadOnly"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__EndDate__c = "ReadWrite"
+      SBQQ__Favorite__c = "ReadWrite"
+      SBQQ__ListTotal__c = "ReadWrite"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__NetTotal__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__Optional__c = "ReadWrite"
+      SBQQ__QuoteProcess__c = "ReadWrite"
+      SBQQ__SeparateContract__c = "ReadWrite"
+      SBQQ__SolutionGroup__c = "ReadWrite"
+      SBQQ__Source__c = "ReadWrite"
+      SBQQ__StartDate__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__TargetCustomerAmount__c = "ReadWrite"
+    }
+    SBQQ__CustomActionCondition__c = {
+      SBQQ__Field__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ParentActionIsActive__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+    }
+    SBQQ__ProcessInput__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__BinaryChoice__c = "ReadWrite"
+      SBQQ__ConditionsMet__c = "ReadWrite"
+      SBQQ__DefaultField__c = "ReadWrite"
+      SBQQ__InputField__c = "ReadWrite"
+      SBQQ__IntegerInput__c = "ReadWrite"
+      SBQQ__Label__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ProcessInputCondition__c = "ReadWrite"
+      SBQQ__ProductField__c = "ReadWrite"
+    }
+    SBQQ__BlockPrice__c = {
+      SBQQ__LowerBound__c = "ReadWrite"
+      SBQQ__OrderProduct__c = "ReadWrite"
+      SBQQ__OriginalBlockPrice__c = "ReadWrite"
+      SBQQ__PriceBook2__c = "ReadWrite"
+      SBQQ__Price__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+    SBQQ__OrderItemConsumptionSchedule__c = {
+      SBQQ__ConsumptionSchedule__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__MatchingAttribute__c = "ReadWrite"
+      SBQQ__OrderItem__c = "ReadWrite"
+      SBQQ__UnitOfMeasure__c = "ReadWrite"
+    }
+    SBQQ__TermCondition__c = {
+      SBQQ__Index__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__TestedField__c = "ReadWrite"
+      SBQQ__TestedVariable__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    SBQQ__SolutionGroup__c = {
+      SBQQ__Description__c = "ReadWrite"
+    }
+    OpportunityLineItem = {
+      SBQQ__ParentID__c = "ReadOnly"
+      SBQQ__QuoteLine__c = "ReadOnly"
+      SBQQ__SubscriptionType__c = "ReadWrite"
+    }
+    SBQQ__CustomAction__c = {
+      SBQQ__Action__c = "ReadWrite"
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__BrandButton__c = "ReadWrite"
+      SBQQ__Class__c = "ReadWrite"
+      SBQQ__ConditionsMet__c = "ReadWrite"
+      SBQQ__Default__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__EventHandlerName__c = "ReadWrite"
+      SBQQ__IconClass__c = "ReadWrite"
+      SBQQ__Icon__c = "ReadWrite"
+      SBQQ__Label__c = "ReadWrite"
+      SBQQ__Location__c = "ReadWrite"
+      SBQQ__PageHandlerName__c = "ReadWrite"
+      SBQQ__Page__c = "ReadWrite"
+      SBQQ__ParentCustomAction__c = "ReadWrite"
+      SBQQ__ReturnURL__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__URLTarget__c = "ReadWrite"
+      SBQQ__URL__c = "ReadWrite"
+    }
+    SBQQ__Favorite__c = {
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__OwnerName__c = "ReadOnly"
+    }
+    SBQQ__TemplateSection__c = {
+      SBQQ__BorderColor__c = "ReadWrite"
+      SBQQ__ColumnHeaderHidden__c = "ReadWrite"
+      SBQQ__ConditionalPrintField__c = "ReadWrite"
+      SBQQ__Content__c = "ReadWrite"
+      SBQQ__DisplayOrder__c = "ReadWrite"
+      SBQQ__FilterField__c = "ReadWrite"
+      SBQQ__FilterOperator__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__GroupField__c = "ReadWrite"
+      SBQQ__KeepTogether__c = "ReadWrite"
+      SBQQ__KeepWithNext__c = "ReadWrite"
+      SBQQ__KeepWithPrevious__c = "ReadWrite"
+      SBQQ__PageBreak__c = "ReadWrite"
+      SBQQ__QuoteTotalsPrinted__c = "ReadWrite"
+      SBQQ__RollUpField__c = "ReadWrite"
+      SBQQ__SummaryDisplay__c = "ReadWrite"
+    }
+    SBQQ__AttributeValue__c = {
+      SBQQ__Asset__c = "ReadWrite"
+      SBQQ__FavoriteProduct__c = "ReadWrite"
+      SBQQ__OrderItem__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__Subscription__c = "ReadWrite"
+      SBQQ__ValueDateTime__c = "ReadWrite"
+      SBQQ__ValueDate__c = "ReadWrite"
+      SBQQ__ValueNumber__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    SBQQ__ContractedPrice__c = {
+      SBQQ__Contract__c = "ReadWrite"
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__EffectiveDate__c = "ReadWrite"
+      SBQQ__ExpirationDate__c = "ReadWrite"
+      SBQQ__FilterField__c = "ReadWrite"
+      SBQQ__FilterValue__c = "ReadWrite"
+      SBQQ__NonDiscountable__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__OriginalQuoteLine__c = "ReadWrite"
+      SBQQ__Price__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+    }
+    Contract = {
+      SBQQ__ActiveContract__c = "ReadWrite"
+      SBQQ__AmendmentOpportunityRecordTypeId__c = "ReadWrite"
+      SBQQ__AmendmentOpportunityStage__c = "ReadWrite"
+      SBQQ__AmendmentOwner__c = "ReadWrite"
+      SBQQ__AmendmentPricebookId__c = "ReadWrite"
+      SBQQ__AmendmentRenewalBehavior__c = "ReadWrite"
+      SBQQ__AmendmentStartDate__c = "ReadWrite"
+      SBQQ__DefaultRenewalContactRoles__c = "ReadOnly"
+      SBQQ__DefaultRenewalPartners__c = "ReadOnly"
+      SBQQ__DisableAmendmentCoTerm__c = "ReadWrite"
+      SBQQ__Evergreen__c = "ReadWrite"
+      SBQQ__ExpirationDate__c = "ReadWrite"
+      SBQQ__MDQRenewalBehavior__c = "ReadWrite"
+      SBQQ__MasterContract__c = "ReadWrite"
+      SBQQ__OpportunityPricebookId__c = "ReadWrite"
+      SBQQ__Opportunity__c = "ReadWrite"
+      SBQQ__PreserveBundleStructureUponRenewals__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__RenewalForecast__c = "ReadWrite"
+      SBQQ__RenewalOpportunityRecordTypeId__c = "ReadWrite"
+      SBQQ__RenewalOpportunityStage__c = "ReadWrite"
+      SBQQ__RenewalOpportunity__c = "ReadWrite"
+      SBQQ__RenewalOwner__c = "ReadWrite"
+      SBQQ__RenewalPricebookId__c = "ReadWrite"
+      SBQQ__RenewalQuoted__c = "ReadWrite"
+      SBQQ__RenewalTerm__c = "ReadWrite"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__SubscriptionQuantitiesCombined__c = "ReadWrite"
+    }
+    Opportunity = {
+      SBQQ__AmendedContract__c = "ReadOnly"
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__CreateContractedPrices__c = "ReadWrite"
+      SBQQ__OrderGroupID__c = "ReadWrite"
+      SBQQ__Ordered__c = "ReadWrite"
+      SBQQ__PrimaryQuote__c = "ReadWrite"
+      SBQQ__QuotePricebookId__c = "ReadWrite"
+      SBQQ__Renewal__c = "ReadWrite"
+      SBQQ__RenewedContract__c = "ReadWrite"
+    }
+    SBQQ__ImportFormat__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+      SBQQ__UniqueKeyCount__c = "ReadOnly"
+    }
+    SBQQ__FieldSetMetadata__c = {
+      SBQQ__Default__c = "ReadWrite"
+      SBQQ__FieldSetValidation__c = "ReadOnly"
+    }
+    SBQQ__PriceTier__c = {
+      SBQQ__DiscountAmount__c = "ReadWrite"
+      SBQQ__DiscountPercentage__c = "ReadWrite"
+      SBQQ__LowerBound__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__OriginalBlockPrice__c = "ReadWrite"
+      SBQQ__OriginalDiscountTier__c = "ReadWrite"
+      SBQQ__PriceModel__c = "ReadWrite"
+      SBQQ__Price__c = "ReadWrite"
+      SBQQ__TermDiscount__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+      SBQQ__VolumnDiscount__c = "ReadWrite"
+    }
+    SBQQ__QuoteTerm__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AdvancedCondition__c = "ReadWrite"
+      SBQQ__Body__c = "ReadWrite"
+      SBQQ__ConditionsMet__c = "ReadWrite"
+      SBQQ__Locked__c = "ReadWrite"
+      SBQQ__ParentTerm__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__StandardTerm__c = "ReadWrite"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__TemplateContent__c = "ReadWrite"
+      SBQQ__Type__c = "ReadOnly"
+    }
+    SBQQ__ProductAttribute__c = {
+      SBQQ__AppliedImmediately__c = "ReadWrite"
+      SBQQ__ApplyToProductOptions__c = "ReadWrite"
+      SBQQ__AttributeSet__c = "ReadWrite"
+      SBQQ__AutoSelect__c = "ReadWrite"
+      SBQQ__HiddenValues__c = "ReadWrite"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+      SBQQ__Sequence__c = "ReadWrite"
+      SBQQ__ShownValues__c = "ReadWrite"
+    }
+    SBQQ__DiscountCategory__c = {
+      SBQQ__MaxDiscountRate__c = "ReadWrite"
+    }
+    SBQQ__CustomScript__c = {
+      SBQQ__Code__c = "ReadWrite"
+      SBQQ__ConsumptionRateFields__c = "ReadWrite"
+      SBQQ__ConsumptionScheduleFields__c = "ReadWrite"
+      SBQQ__GroupFields__c = "ReadWrite"
+      SBQQ__QuoteFields__c = "ReadWrite"
+      SBQQ__QuoteLineFields__c = "ReadWrite"
+      SBQQ__TranspiledCode__c = "ReadWrite"
+    }
+    SBQQ__LookupQuery__c = {
+      SBQQ__LookupField__c = "ReadWrite"
+      SBQQ__MatchType__c = "ReadWrite"
+      SBQQ__Operator__c = "ReadWrite"
+      SBQQ__ParentRuleIsActive__c = "ReadWrite"
+      SBQQ__PriceRule2__c = "ReadWrite"
+      SBQQ__ProductRule__c = "ReadWrite"
+      SBQQ__RuleLookupObject__c = "ReadWrite"
+      SBQQ__RuleTargetsCalculator__c = "ReadWrite"
+      SBQQ__TestedConfigurationAttribute__c = "ReadOnly"
+      SBQQ__TestedField__c = "ReadWrite"
+      SBQQ__TestedObject__c = "ReadWrite"
+      SBQQ__TestedValue__c = "ReadWrite"
+    }
+    SBQQ__LookupData__c = {
+      SBQQ__Category__c = "ReadWrite"
+      SBQQ__Message__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    Account = {
+      SBQQ__AssetQuantitiesCombined__c = "ReadWrite"
+      SBQQ__CoTermedContractsCombined__c = "ReadWrite"
+      SBQQ__CoTerminationEvent__c = "ReadWrite"
+      SBQQ__ContractCoTermination__c = "ReadWrite"
+      SBQQ__DefaultOpportunity__c = "ReadWrite"
+      SBQQ__IgnoreParentContractedPrices__c = "ReadWrite"
+      SBQQ__PreserveBundle__c = "ReadWrite"
+      SBQQ__PriceHoldEnd__c = "ReadWrite"
+      SBQQ__RenewalModel__c = "ReadWrite"
+      SBQQ__RenewalPricingMethod__c = "ReadWrite"
+      SBQQ__TaxExempt__c = "ReadOnly"
+    }
+    SBQQ__OptionConstraint__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__CheckPriorPurchases__c = "ReadWrite"
+      SBQQ__ConfiguredSKU__c = "ReadWrite"
+      SBQQ__ConstrainingOption__c = "ReadWrite"
+      SBQQ__OptionConstraintGroup__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+    }
+    SBQQ__WebQuote__c = {
+      SBQQ__Account__c = "ReadWrite"
+      SBQQ__AdditionalDiscountAmount__c = "ReadOnly"
+      SBQQ__AverageCustomerDiscount__c = "ReadOnly"
+      SBQQ__AveragePartnerDiscount__c = "ReadOnly"
+      SBQQ__BatchQuantity__c = "ReadWrite"
+      SBQQ__BillingCity__c = "ReadWrite"
+      SBQQ__BillingCountry__c = "ReadWrite"
+      SBQQ__BillingName__c = "ReadWrite"
+      SBQQ__BillingPostalCode__c = "ReadWrite"
+      SBQQ__BillingState__c = "ReadWrite"
+      SBQQ__BillingStreet__c = "ReadWrite"
+      SBQQ__CustomerAmount__c = "ReadOnly"
+      SBQQ__CustomerDiscount__c = "ReadWrite"
+      SBQQ__DaysQuoteOpen__c = "ReadOnly"
+      SBQQ__DefaultTemplate__c = "ReadWrite"
+      SBQQ__DeliveryMethod__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__DocumentId__c = "ReadOnly"
+      SBQQ__EmailTemplateId__c = "ReadWrite"
+      SBQQ__EndDate__c = "ReadWrite"
+      SBQQ__ExpirationDate__c = "ReadWrite"
+      SBQQ__FirstSegmentTermEndDate__c = "ReadWrite"
+      SBQQ__Introduction__c = "ReadWrite"
+      SBQQ__LineItemCount__c = "ReadOnly"
+      SBQQ__ListAmount__c = "ReadOnly"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__MasterContract__c = "ReadWrite"
+      SBQQ__NetAmount__c = "ReadOnly"
+      SBQQ__Notes__c = "ReadWrite"
+      SBQQ__Opportunity__c = "ReadWrite"
+      SBQQ__OriginalQuote__c = "ReadWrite"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__PaymentTerms__c = "ReadWrite"
+      SBQQ__PriceBook__c = "ReadWrite"
+      SBQQ__PricebookId__c = "ReadWrite"
+      SBQQ__PrimaryContact__c = "ReadWrite"
+      SBQQ__QuoteProcessId__c = "ReadWrite"
+      SBQQ__QuoteTemplateId__c = "ReadWrite"
+      SBQQ__RegularAmount__c = "ReadOnly"
+      SBQQ__SalesRep__c = "ReadWrite"
+      SBQQ__SelfServiced__c = "ReadWrite"
+      SBQQ__ShippingCity__c = "ReadWrite"
+      SBQQ__ShippingCountry__c = "ReadWrite"
+      SBQQ__ShippingName__c = "ReadWrite"
+      SBQQ__ShippingPostalCode__c = "ReadWrite"
+      SBQQ__ShippingState__c = "ReadWrite"
+      SBQQ__ShippingStreet__c = "ReadWrite"
+      SBQQ__SignatureStatus__c = "ReadOnly"
+      SBQQ__StartDate__c = "ReadWrite"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__SubscriptionTerm__c = "ReadWrite"
+      SBQQ__TargetCustomerAmount__c = "ReadWrite"
+      SBQQ__TotalCustomerDiscountAmount__c = "ReadOnly"
+      SBQQ__Type__c = "ReadWrite"
+      SBQQ__WatermarkShown__c = "ReadWrite"
+    }
+    SBQQ__PriceAction__c = {
+      SBQQ__Field__c = "ReadWrite"
+      SBQQ__Formula__c = "ReadWrite"
+      SBQQ__Order__c = "ReadWrite"
+      SBQQ__ParentRuleIsActive__c = "ReadWrite"
+      SBQQ__RuleLookupObject__c = "ReadWrite"
+      SBQQ__RuleTargetsCalculator__c = "ReadWrite"
+      SBQQ__SourceLookupField__c = "ReadWrite"
+      SBQQ__SourceVariable__c = "ReadWrite"
+      SBQQ__TargetObject__c = "ReadWrite"
+      SBQQ__ValueField__c = "ReadWrite"
+      SBQQ__Value__c = "ReadWrite"
+    }
+    SBQQ__ProductRule__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AdvancedCondition__c = "ReadWrite"
+      SBQQ__ConditionsMet__c = "ReadWrite"
+      SBQQ__ErrorMessage__c = "ReadWrite"
+      SBQQ__EvaluationEvent__c = "ReadWrite"
+      SBQQ__EvaluationOrder__c = "ReadWrite"
+      SBQQ__LookupMessageField__c = "ReadWrite"
+      SBQQ__LookupObject__c = "ReadWrite"
+      SBQQ__LookupProductField__c = "ReadWrite"
+      SBQQ__LookupRequiredField__c = "ReadWrite"
+      SBQQ__LookupTypeField__c = "ReadWrite"
+      SBQQ__Scope__c = "ReadWrite"
+      SBQQ__Type__c = "ReadWrite"
+    }
+    SBQQ__ConfigurationAttribute__c = {
+      SBQQ__AppliedImmediately__c = "ReadWrite"
+      SBQQ__ApplyToProductOptions__c = "ReadWrite"
+      SBQQ__AutoSelect__c = "ReadWrite"
+      SBQQ__ColumnOrder__c = "ReadWrite"
+      SBQQ__DefaultField__c = "ReadWrite"
+      SBQQ__DefaultObject__c = "ReadWrite"
+      SBQQ__Feature__c = "ReadWrite"
+      SBQQ__Global__c = "ReadOnly"
+      SBQQ__HiddenValues__c = "ReadWrite"
+      SBQQ__Hidden__c = "ReadWrite"
+      SBQQ__Position__c = "ReadWrite"
+      SBQQ__Product__c = "ReadWrite"
+      SBQQ__Required__c = "ReadWrite"
+      SBQQ__ShownValues__c = "ReadWrite"
+      SBQQ__TargetField__c = "ReadWrite"
+    }
+    SBQQ__QuoteLinePricingGuidance__c = {
+      SBQQ__Explanation__c = "ReadWrite"
+      SBQQ__Floor__c = "ReadWrite"
+      SBQQ__GuidanceUsed__c = "ReadOnly"
+      SBQQ__IsViewed__c = "ReadWrite"
+      SBQQ__Norm__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__Target__c = "ReadWrite"
+    }
+    SBQQ__PricingGuidanceTier__c = {
+      SBQQ__FloorDiscount__c = "ReadWrite"
+      SBQQ__LowerBound__c = "ReadWrite"
+      SBQQ__NormDiscount__c = "ReadWrite"
+      SBQQ__TargetDiscount__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+    SBQQ__RecordJob__c = {
+      SBQQ__IsRead__c = "ReadOnly"
+      SBQQ__JobDetails__c = "ReadOnly"
+      SBQQ__JobId__c = "ReadOnly"
+      SBQQ__JobStatus__c = "ReadOnly"
+      SBQQ__RecordId__c = "ReadOnly"
+      SBQQ__RedirectUrl__c = "ReadOnly"
+      SBQQ__Stacktrace__c = "ReadOnly"
+    }
+    SBQQ__LineColumn__c = {
+      SBQQ__Alignment__c = "ReadWrite"
+      SBQQ__BottomMargin__c = "ReadWrite"
+      SBQQ__ColumnHeadingField__c = "ReadWrite"
+      SBQQ__ConditionalPrintField__c = "ReadWrite"
+      SBQQ__DynamicNumberScale__c = "ReadWrite"
+      SBQQ__FontFamily__c = "ReadWrite"
+      SBQQ__FontSize__c = "ReadWrite"
+      SBQQ__FontWeight__c = "ReadWrite"
+      SBQQ__HeadingTextColor__c = "ReadWrite"
+      SBQQ__HideOnComponents__c = "ReadWrite"
+      SBQQ__LeftMargin__c = "ReadWrite"
+      SBQQ__RightMargin__c = "ReadWrite"
+      SBQQ__RollUp__c = "ReadWrite"
+      SBQQ__Section__c = "ReadWrite"
+      SBQQ__SeparateLine__c = "ReadWrite"
+      SBQQ__SubGroupSummaryLabel__c = "ReadWrite"
+      SBQQ__SummaryFontWeight__c = "ReadWrite"
+      SBQQ__SummaryFunction__c = "ReadWrite"
+      SBQQ__SummaryLabel__c = "ReadWrite"
+      SBQQ__SummaryLevel__c = "ReadWrite"
+      SBQQ__SummaryShadingColor__c = "ReadWrite"
+      SBQQ__SummaryTextColor__c = "ReadWrite"
+      SBQQ__TextColor__c = "ReadWrite"
+      SBQQ__TopMargin__c = "ReadWrite"
+      SBQQ__WidthDiscardedWhenHidden__c = "ReadWrite"
+    }
+    SBQQ__ImportColumn__c = {
+      SBQQ__FieldName__c = "ReadWrite"
+      SBQQ__Key__c = "ReadWrite"
+    }
+    SBQQ__SubscribedQuoteLine__c = {
+      SBQQ__Active__c = "ReadWrite"
+      SBQQ__AssetQuoteLineQuantity__c = "ReadWrite"
+      SBQQ__AssetQuoteLine__c = "ReadWrite"
+      SBQQ__Quote__c = "ReadWrite"
+      SBQQ__SubscriptionBasePrice__c = "ReadWrite"
+      SBQQ__SubscriptionNetTotal__c = "ReadWrite"
+      SBQQ__SubscriptionQuoteLine__c = "ReadWrite"
+    }
+    Asset = {
+      SBQQ__AdditionalDiscountAmount__c = "ReadWrite"
+      SBQQ__BillingFrequency__c = "ReadWrite"
+      SBQQ__BillingType__c = "ReadWrite"
+      SBQQ__Bundle__c = "ReadWrite"
+      SBQQ__BundledQuantity__c = "ReadWrite"
+      SBQQ__Bundled__c = "ReadWrite"
+      SBQQ__ChargeType__c = "ReadWrite"
+      SBQQ__CombineKey__c = "ReadWrite"
+      SBQQ__ComponentDiscountedByPackage__c = "ReadWrite"
+      SBQQ__CreditProductId__c = "ReadOnly"
+      SBQQ__CurrentSubscription__c = "ReadWrite"
+      SBQQ__Dimension__c = "ReadOnly"
+      SBQQ__DiscountScheduleType__c = "ReadWrite"
+      SBQQ__DiscountSchedule__c = "ReadWrite"
+      SBQQ__Discount__c = "ReadWrite"
+      SBQQ__DistributorDiscount__c = "ReadWrite"
+      SBQQ__DynamicOptionId__c = "ReadWrite"
+      SBQQ__FromServiceCloud__c = "ReadWrite"
+      SBQQ__LatestQuoteLine__c = "ReadOnly"
+      SBQQ__ListPrice__c = "ReadWrite"
+      SBQQ__MarkupAmount__c = "ReadWrite"
+      SBQQ__MarkupRate__c = "ReadWrite"
+      SBQQ__Number__c = "ReadWrite"
+      SBQQ__OptionDiscountAmount__c = "ReadWrite"
+      SBQQ__OptionDiscount__c = "ReadWrite"
+      SBQQ__OptionLevel__c = "ReadWrite"
+      SBQQ__OptionType__c = "ReadWrite"
+      SBQQ__OrderProduct__c = "ReadWrite"
+      SBQQ__OriginalUnitCost__c = "ReadWrite"
+      SBQQ__PackageProductCode__c = "ReadWrite"
+      SBQQ__PackageProductDescription__c = "ReadWrite"
+      SBQQ__PartnerDiscount__c = "ReadWrite"
+      SBQQ__PriceDimension__c = "ReadWrite"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductOption__c = "ReadWrite"
+      SBQQ__QuoteLine__c = "ReadWrite"
+      SBQQ__RegularPrice__c = "ReadWrite"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+      SBQQ__RequiredByAsset__c = "ReadWrite"
+      SBQQ__RequiredById__c = "ReadWrite"
+      SBQQ__RequiredByProduct__c = "ReadWrite"
+      SBQQ__RequiredBySubscription__c = "ReadWrite"
+      SBQQ__RevisedAsset__c = "ReadOnly"
+      SBQQ__RootAsset__c = "ReadOnly"
+      SBQQ__RootId__c = "ReadWrite"
+      SBQQ__SegmentIndex__c = "ReadWrite"
+      SBQQ__SegmentKey__c = "ReadOnly"
+      SBQQ__SegmentLabel__c = "ReadWrite"
+      SBQQ__SubscriptionEndDate__c = "ReadOnly"
+      SBQQ__SubscriptionQuoteLine__c = "ReadOnly"
+      SBQQ__SubscriptionStartDate__c = "ReadOnly"
+      SBQQ__Subscription__c = "ReadOnly"
+      SBQQ__TermDiscountSchedule__c = "ReadWrite"
+      SBQQ__UnitCost__c = "ReadWrite"
+      SBQQ__VirtualAsset__c = "ReadOnly"
+    }
+    SBQQ__OrderItemConsumptionRate__c = {
+      SBQQ__Description__c = "ReadWrite"
+      SBQQ__UpperBound__c = "ReadWrite"
+    }
+  }
+  hasActivationRequired = true
+  label = "Salesforce CPQ Admin (Session-Based)"
+  objectPermissions = {
+    SBQQ__AttributeValue__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__AttributeValue__c
+      viewAllRecords = true
+    }
+    SBQQ__BlockPrice__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__BlockPrice__c
+      viewAllRecords = true
+    }
+    SBQQ__ColumnMetadata__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ColumnMetadata__c
+      viewAllRecords = true
+    }
+    SBQQ__ConfigurationAttribute__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ConfigurationAttribute__c
+      viewAllRecords = true
+    }
+    SBQQ__ConfigurationRule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__ConfigurationRule__c
+      viewAllRecords = false
+    }
+    SBQQ__Cost__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__Cost__c
+      viewAllRecords = true
+    }
+    SBQQ__CustomActionCondition__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__CustomActionCondition__c
+      viewAllRecords = true
+    }
+    SBQQ__CustomAction__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__CustomAction__c
+      viewAllRecords = true
+    }
+    SBQQ__CustomScript__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__CustomScript__c
+      viewAllRecords = true
+    }
+    SBQQ__Dimension__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Dimension__c
+      viewAllRecords = true
+    }
+    SBQQ__DiscountCategory__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__DiscountCategory__c
+      viewAllRecords = true
+    }
+    SBQQ__DiscountSchedule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__DiscountSchedule__c
+      viewAllRecords = true
+    }
+    SBQQ__DiscountTier__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__DiscountTier__c
+      viewAllRecords = true
+    }
+    SBQQ__ErrorCondition__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ErrorCondition__c
+      viewAllRecords = true
+    }
+    SBQQ__FavoriteProduct__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__FavoriteProduct__c
+      viewAllRecords = true
+    }
+    SBQQ__FavoriteShare__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__FavoriteShare__c
+      viewAllRecords = true
+    }
+    SBQQ__Favorite__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Favorite__c
+      viewAllRecords = true
+    }
+    SBQQ__FieldSetMetadata__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__FieldSetMetadata__c
+      viewAllRecords = true
+    }
+    SBQQ__ImportColumn__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ImportColumn__c
+      viewAllRecords = true
+    }
+    SBQQ__ImportFormat__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ImportFormat__c
+      viewAllRecords = true
+    }
+    SBQQ__InstallProcessorLog__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__InstallProcessorLog__c
+      viewAllRecords = true
+    }
+    SBQQ__LineColumn__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__LineColumn__c
+      viewAllRecords = true
+    }
+    SBQQ__Localization__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Localization__c
+      viewAllRecords = true
+    }
+    SBQQ__LookupData__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__LookupData__c
+      viewAllRecords = true
+    }
+    SBQQ__LookupQuery__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__LookupQuery__c
+      viewAllRecords = true
+    }
+    SBQQ__OptionConstraint__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__OptionConstraint__c
+      viewAllRecords = true
+    }
+    SBQQ__PriceAction__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__PriceAction__c
+      viewAllRecords = true
+    }
+    SBQQ__PriceCondition__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__PriceCondition__c
+      viewAllRecords = true
+    }
+    SBQQ__PriceRule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__PriceRule__c
+      viewAllRecords = true
+    }
+    SBQQ__PricingGuidanceTier__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__PricingGuidanceTier__c
+      viewAllRecords = true
+    }
+    SBQQ__PricingGuidance__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__PricingGuidance__c
+      viewAllRecords = true
+    }
+    SBQQ__ProcessInputCondition__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProcessInputCondition__c
+      viewAllRecords = true
+    }
+    SBQQ__ProcessInputValue__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProcessInputValue__c
+      viewAllRecords = true
+    }
+    SBQQ__ProcessInput__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProcessInput__c
+      viewAllRecords = true
+    }
+    SBQQ__ProductAction__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProductAction__c
+      viewAllRecords = true
+    }
+    SBQQ__ProductAttribute__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProductAttribute__c
+      viewAllRecords = true
+    }
+    SBQQ__ProductFeature__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProductFeature__c
+      viewAllRecords = true
+    }
+    SBQQ__ProductOption__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProductOption__c
+      viewAllRecords = true
+    }
+    SBQQ__ProductRule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__ProductRule__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteDocument__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteDocument__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteLineGroup__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteLineGroup__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteLinePricingGuidance__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteLinePricingGuidance__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteLine__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteLine__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteProcess__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteProcess__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteTemplate__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteTemplate__c
+      viewAllRecords = true
+    }
+    SBQQ__QuoteTerm__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__QuoteTerm__c
+      viewAllRecords = true
+    }
+    SBQQ__Quote__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Quote__c
+      viewAllRecords = true
+    }
+    SBQQ__RecordJob__c = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__RecordJob__c
+      viewAllRecords = false
+    }
+    SBQQ__RelatedContent__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__RelatedContent__c
+      viewAllRecords = true
+    }
+    SBQQ__SearchFilter__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__SearchFilter__c
+      viewAllRecords = true
+    }
+    SBQQ__SolutionGroup__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__SolutionGroup__c
+      viewAllRecords = true
+    }
+    SBQQ__SubscribedAsset__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__SubscribedAsset__c
+      viewAllRecords = true
+    }
+    SBQQ__Subscription__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Subscription__c
+      viewAllRecords = true
+    }
+    SBQQ__SummaryVariable__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__SummaryVariable__c
+      viewAllRecords = true
+    }
+    SBQQ__TemplateContent__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__TemplateContent__c
+      viewAllRecords = true
+    }
+    SBQQ__TemplateSection__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__TemplateSection__c
+      viewAllRecords = true
+    }
+    SBQQ__TermCondition__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__TermCondition__c
+      viewAllRecords = true
+    }
+    SBQQ__Theme__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__Theme__c
+      viewAllRecords = true
+    }
+    SBQQ__UpgradeSource__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__UpgradeSource__c
+      viewAllRecords = true
+    }
+    SBQQ__WebQuoteLine__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__WebQuoteLine__c
+      viewAllRecords = true
+    }
+    SBQQ__WebQuote__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SBQQ__WebQuote__c
+      viewAllRecords = true
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

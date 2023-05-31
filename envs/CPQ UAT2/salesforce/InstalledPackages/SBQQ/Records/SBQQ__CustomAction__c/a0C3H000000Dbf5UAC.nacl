@@ -1,0 +1,14 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000Dbf5UAC {
+  SBQQ__Action__c = "Apply Edit Rules"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 901
+  SBQQ__Label__c = "Apply Rules"
+  SBQQ__Location__c = "Configurator"
+  SBQQ__Page__c = "Product Configurator"
+  SBQQ__Type__c = "Button"
+  Name = "Apply Edit Rules"
+  _alias = "Apply Edit Rules"
+}

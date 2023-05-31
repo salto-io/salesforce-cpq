@@ -1,0 +1,116 @@
+type salesforce.Report {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.ReportAggregate>" aggregates {
+  }
+  "List<salesforce.Report>" block {
+  }
+  salesforce.ReportBlockInfo blockInfo {
+  }
+  "List<salesforce.ReportBucketField>" buckets {
+  }
+  salesforce.ReportChart chart {
+  }
+  salesforce.ReportColorRange colorRanges {
+  }
+  "List<salesforce.ReportColumn>" columns {
+  }
+  salesforce.ReportCrossFilter crossFilters {
+  }
+  string currency {
+  }
+  salesforce.ReportCustomDetailFormula customDetailFormulas {
+  }
+  salesforce.ReportDataCategoryFilter dataCategoryFilters {
+  }
+  string description {
+  }
+  string division {
+  }
+  salesforce.ReportFilter filter {
+  }
+  string folderName {
+  }
+  string format {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Matrix",
+        "MultiBlock",
+        "Summary",
+        "Tabular",
+      ]
+    }
+  }
+  salesforce.ReportFormattingRule formattingRules {
+  }
+  serviceid fullName {
+  }
+  "List<salesforce.ReportGrouping>" groupingsAcross {
+  }
+  "List<salesforce.ReportGrouping>" groupingsDown {
+  }
+  salesforce.ReportHistoricalSelector historicalSelector {
+  }
+  string name {
+  }
+  number numSubscriptions {
+  }
+  "List<salesforce.ReportParam>" params {
+  }
+  string reportType {
+  }
+  string reportTypeApiName {
+  }
+  string roleHierarchyFilter {
+  }
+  number rowLimit {
+  }
+  string scope {
+  }
+  boolean showCurrentDate {
+  }
+  boolean showDetails {
+  }
+  boolean showGrandTotal {
+  }
+  boolean showSubTotals {
+  }
+  string sortColumn {
+  }
+  string territoryHierarchyFilter {
+  }
+  salesforce.ReportTimeFrameFilter timeFrameFilter {
+  }
+  string userFilter {
+  }
+  string sortOrder {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Asc",
+        "Desc",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  folderType = "ReportFolder"
+  suffix = "report"
+  dirName = "reports"
+  metadataType = "Report"
+}

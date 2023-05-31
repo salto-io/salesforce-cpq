@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__DatepickerLocales {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  description = "jQuery Datepicker Locale files"
+  fullName = "SBQQ__DatepickerLocales"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__DatepickerLocales.zip")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

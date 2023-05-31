@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__PermissionUtil {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__PermissionUtil"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

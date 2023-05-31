@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProductOption__c_SBQQ__Cannot_Bundle_Evergreen_Renewable_SKUs {
+  fullName = "SBQQ__ProductOption__c.SBQQ__Cannot_Bundle_Evergreen_Renewable_SKUs"
+  active = true
+  description = "The Evergreen and Renewable bundle cannot coexist in a bundle"
+  errorConditionFormula = "AND(OR(AND(ISPICKVAL( SBQQ__ConfiguredSKU__r.SBQQ__SubscriptionType__c , 'Evergreen'), ISPICKVAL( SBQQ__OptionalSKU__r.SBQQ__SubscriptionType__c ,'Renewable')),AND(ISPICKVAL( SBQQ__ConfiguredSKU__r.SBQQ__SubscriptionType__c , 'Renewable'),ISPICKVAL( SBQQ__OptionalSKU__r.SBQQ__SubscriptionType__c ,'Evergreen'))))"
+  errorMessage = "Can’t include evergreen and renewable products in the same bundle."
+  _parent = [
+    salesforce.SBQQ__ProductOption__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

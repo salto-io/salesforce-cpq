@@ -1,0 +1,25 @@
+salesforce.ListView SBQQ__ConfigurationAttribute__c_SBQQ__GlobalAttributes {
+  fullName = "SBQQ__ConfigurationAttribute__c.SBQQ__GlobalAttributes"
+  columns = [
+    "NAME",
+    "SBQQ__TargetField__c",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "RECORDTYPE"
+      operation = "equals"
+      value = "SBQQ__ConfigurationAttribute__c.SBQQ__Global_Attribute"
+    },
+  ]
+  label = "Global Attributes"
+  language = "en_US"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

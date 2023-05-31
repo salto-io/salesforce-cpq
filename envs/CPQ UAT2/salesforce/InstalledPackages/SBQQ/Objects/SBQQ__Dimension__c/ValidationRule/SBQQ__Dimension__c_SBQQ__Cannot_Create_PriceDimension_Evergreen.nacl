@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__Dimension__c_SBQQ__Cannot_Create_PriceDimension_Evergreen {
+  fullName = "SBQQ__Dimension__c.SBQQ__Cannot_Create_PriceDimension_Evergreen"
+  active = true
+  description = "Cannot create price dimension for evergreen or renewable/evergreen subscription type"
+  errorConditionFormula = "OR(ISPICKVAL( SBQQ__Product__r.SBQQ__SubscriptionType__c , 'Evergreen'),  ISPICKVAL( SBQQ__Product__r.SBQQ__SubscriptionType__c , 'Renewable/Evergreen'))"
+  errorMessage = "Can’t create MDQ price dimensions for evergreen or renewable/evergreen products."
+  _parent = [
+    salesforce.SBQQ__Dimension__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

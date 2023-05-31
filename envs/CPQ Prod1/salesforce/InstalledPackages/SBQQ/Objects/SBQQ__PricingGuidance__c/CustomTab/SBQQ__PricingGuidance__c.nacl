@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__PricingGuidance__c {
+  fullName = "SBQQ__PricingGuidance__c"
+  customObject = true
+  description = "Tab for pricing guidance."
+  motif = "Custom70: Handsaw"
+  _parent = [
+    salesforce.SBQQ__PricingGuidance__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

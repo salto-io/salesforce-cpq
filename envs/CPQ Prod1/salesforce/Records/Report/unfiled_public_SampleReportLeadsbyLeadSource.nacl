@@ -1,0 +1,48 @@
+salesforce.Report unfiled_public_SampleReportLeadsbyLeadSource@zcd {
+  columns = [
+    {
+      field = "OWNER"
+    },
+    {
+      field = "FIRST_NAME"
+    },
+    {
+      field = "LAST_NAME"
+    },
+    {
+      field = "TITLE"
+    },
+    {
+      field = "COMPANY"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "STREET"
+    },
+    {
+      field = "EMAIL"
+    },
+  ]
+  description = "How many leads has each lead source generated for me?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "LEAD_SOURCE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Leads by Lead Source"
+  reportType = "LeadList"
+  scope = "org"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CURNEXT1"
+  }
+  fullName = "unfiled$public/SampleReportLeadsbyLeadSource"
+}

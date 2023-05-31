@@ -1,0 +1,14 @@
+type salesforce.ForecastingCustomData {
+  salesforce.Lookup CompositeKeyId {
+    apiName = "ForecastingCustomData.CompositeKeyId"
+    _hidden_value = true
+  }
+  salesforce.Unknown Name {
+    apiName = "ForecastingCustomData.Name"
+    _hidden_value = true
+  }
+  salesforce.Picklist ProductFamily {
+    apiName = "ForecastingCustomData.ProductFamily"
+    _hidden_value = true
+  }
+}

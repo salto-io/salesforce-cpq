@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__QuoteLine__c_SBQQ__Additional_discount_percent_or_amount {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__Additional_discount_percent_or_amount"
+  active = true
+  description = "Validates additional discount is specified as a percentage or absolute amount but not both."
+  errorConditionFormula = "AND(NOT(ISBLANK(SBQQ__Discount__c)), NOT(ISBLANK(SBQQ__AdditionalDiscountAmount__c)),NOT(SBQQ__Incomplete__c))"
+  errorMessage = "You may not specify additional discount as both percentage and absolute amount."
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

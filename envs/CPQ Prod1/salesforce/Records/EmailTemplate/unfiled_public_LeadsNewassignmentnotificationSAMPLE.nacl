@@ -1,0 +1,12 @@
+salesforce.EmailTemplate unfiled_public_LeadsNewassignmentnotificationSAMPLE@zcd {
+  available = true
+  description = "Internal notification to lead owner when new lead is assigned."
+  encodingKey = "ISO-8859-1"
+  name = "Leads:  New assignment notification (SAMPLE)"
+  style = "none"
+  subject = "New lead assigned to you:  {!Lead.Name} from {!Lead.Company}"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/LeadsNewassignmentnotificationSAMPLE"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/LeadsNewassignmentnotificationSAMPLE/LeadsNewassignmentnotificationSAMPLE.email")
+}

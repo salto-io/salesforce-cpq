@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteProcessHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Quote Process Help"
+  fullName = "SBQQ__QuoteProcessHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteProcessHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

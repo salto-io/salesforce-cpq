@@ -1,0 +1,186 @@
+type salesforce.WorkBadgeDefinition {
+  salesforce.LongTextArea Description {
+    apiName = "WorkBadgeDefinition.Description"
+    trackFeedHistory = false
+    trackHistory = false
+    length = 4000
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number GivenBadgeCount {
+    apiName = "WorkBadgeDefinition.GivenBadgeCount"
+    label = "Given Badge Count"
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url ImageUrl {
+    apiName = "WorkBadgeDefinition.ImageUrl"
+    trackFeedHistory = false
+    trackHistory = false
+    _required = true
+    label = "Image URL"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "WorkBadgeDefinition.IsActive"
+    trackFeedHistory = false
+    trackHistory = false
+    defaultValue = false
+    label = "Active"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsCompanyWide {
+    apiName = "WorkBadgeDefinition.IsCompanyWide"
+    trackFeedHistory = false
+    trackHistory = false
+    defaultValue = false
+    label = "Company Badge"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsLimitPerUser {
+    apiName = "WorkBadgeDefinition.IsLimitPerUser"
+    trackFeedHistory = false
+    trackHistory = false
+    defaultValue = false
+    label = "Limit Per User"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number LimitNumber {
+    apiName = "WorkBadgeDefinition.LimitNumber"
+    trackFeedHistory = false
+    trackHistory = false
+    label = "Limit Number"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Date LimitStartDate {
+    apiName = "WorkBadgeDefinition.LimitStartDate"
+    trackFeedHistory = false
+    trackHistory = false
+    label = "Limit Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "WorkBadgeDefinition.Name"
+    trackFeedHistory = true
+    trackHistory = false
+    length = 255
+    _required = true
+    label = "Badge Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WorkBadgeDefinition.OwnerId"
+    trackFeedHistory = false
+    trackHistory = false
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "WorkBadgeDefinition.Id"
+    label = "Badge ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkBadgeDefinition.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkBadgeDefinition.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkBadgeDefinition.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkBadgeDefinition.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkBadgeDefinition.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkBadgeDefinition.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRewardBadge {
+    apiName = "WorkBadgeDefinition.IsRewardBadge"
+    defaultValue = false
+    label = "Reward Badge"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

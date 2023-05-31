@@ -1,0 +1,195 @@
+type salesforce.SBQQ__SubscriptionConsumptionSchedule__c {
+  salesforce.Picklist SBQQ__BillingTermUnit__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__BillingTermUnit__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The unit used with the billing term to determine the billing frequency."
+    label = "Billing Term Unit"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Month"
+        default = false
+        label = "Month"
+      },
+      {
+        fullName = "Year"
+        default = false
+        label = "Year"
+      },
+      {
+        fullName = "Quarter"
+        default = false
+        label = "Quarter"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__BillingTerm__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__BillingTerm__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The number used with the billing term unit to determine the billing frequency."
+    label = "Billing Term"
+    precision = 9
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Category__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__Category__c"
+    deprecated = false
+    externalId = false
+    label = "Category"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Rates"
+        default = false
+        label = "Rates"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ConsumptionSchedule__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__ConsumptionSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "Consumption Schedule"
+    referenceTo = [
+      salesforce.ConsumptionSchedule,
+    ]
+    relationshipLabel = "Subscription Consumption Schedules"
+    relationshipName = "SubscriptionConsumptionSchedules"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__Description__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__Description__c"
+    deprecated = false
+    externalId = false
+    label = "Description"
+    length = 32000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__MatchingAttribute__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__MatchingAttribute__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "Usage is matched with a consumption schedule if the records share the same Matching Attribute value."
+    label = "Matching Attribute"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__RatingMethod__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__RatingMethod__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "Choose a specific use case to rate usage against this schedule. This is a controlling picklist for the Type field."
+    label = "Rating Method"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Tier"
+        default = false
+        label = "Tier"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__Subscription__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__Subscription__c"
+    deprecated = false
+    externalId = false
+    label = "Subscription"
+    referenceTo = [
+      salesforce.SBQQ__Subscription__c,
+    ]
+    relationshipLabel = "Subscription Consumption Schedules"
+    relationshipName = "Subscriptions"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__Type__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "Range: The schedule prices only using the tier that applies to the usage quantity. Slab: Usage within a given bound receives pricing equal to its tier's value"
+    label = "Type"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Range"
+        default = false
+        label = "Range"
+      },
+      {
+        fullName = "Slab"
+        default = false
+        label = "Slab"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__UnitOfMeasure__c {
+    apiName = "SBQQ__SubscriptionConsumptionSchedule__c.SBQQ__UnitOfMeasure__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "Usage quantities and rates apply to this unit of measurement."
+    label = "Unit of Measure"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "None"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

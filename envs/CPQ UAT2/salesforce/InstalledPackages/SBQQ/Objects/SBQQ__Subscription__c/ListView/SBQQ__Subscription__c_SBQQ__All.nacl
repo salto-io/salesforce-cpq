@@ -1,0 +1,22 @@
+salesforce.ListView SBQQ__Subscription__c_SBQQ__All {
+  fullName = "SBQQ__Subscription__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__ContractNumber__c",
+    "SBQQ__QuoteLine__c",
+    "SBQQ__Product__c",
+    "SBQQ__SubscriptionStartDate__c",
+    "SBQQ__StartDate__c",
+    "SBQQ__EndDate__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__Subscription__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

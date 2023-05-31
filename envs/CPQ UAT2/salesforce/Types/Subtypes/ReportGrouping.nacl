@@ -1,0 +1,73 @@
+type salesforce.ReportGrouping {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string aggregateType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Average",
+        "Maximum",
+        "Median",
+        "Minimum",
+        "RowCount",
+        "Sum",
+        "Unique",
+      ]
+    }
+  }
+  string dateGranularity {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Day",
+        "DayInMonth",
+        "FiscalPeriod",
+        "FiscalQuarter",
+        "FiscalWeek",
+        "FiscalYear",
+        "Month",
+        "MonthInYear",
+        "None",
+        "Quarter",
+        "Week",
+        "Year",
+      ]
+    }
+  }
+  string field {
+  }
+  string sortByName {
+  }
+  string sortType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Aggregate",
+        "Column",
+        "CustomSummaryFormula",
+      ]
+    }
+  }
+  string sortOrder {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Asc",
+        "Desc",
+      ]
+    }
+  }
+  metadataType = "ReportGrouping"
+}

@@ -1,0 +1,18 @@
+salesforce.ApexClass SBQQ__PricingGuidanceServiceProvider {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 244
+      minorNumber = 1
+      namespace = "SBQQ"
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__PricingGuidanceServiceProvider"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__PricingGuidanceServiceProvider.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

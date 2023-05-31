@@ -1,0 +1,14 @@
+salesforce.SBQQ__DiscountSchedule__c a0I3H000003KAMPUA4 {
+  SBQQ__CrossOrders__c = false
+  SBQQ__CrossProducts__c = false
+  SBQQ__DiscountUnit__c = "Percent"
+  SBQQ__IncludeBundledProducts__c = false
+  SBQQ__PriceScale__c = 2
+  SBQQ__Product__c = salesforce.Product2.instance.01t3H000003FaZgQAK
+  SBQQ__QuoteLineQuantityField__c = "Quantity"
+  SBQQ__Type__c = "Range"
+  SBQQ__UsePriceForAmount__c = false
+  SBQQ__UserDefined__c = false
+  Name = "Keyboard Schedule"
+  _alias = "Keyboard Schedule"
+}

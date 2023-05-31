@@ -1,0 +1,554 @@
+salesforce.Layout Product2_SBQQ__CPQ_Product_Layout@buuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Product2.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.ProductCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__Hidden__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SortOrder__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__Component__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__Optional__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__BlockPricingField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__Specifications__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ConfiguredDescriptionPattern__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Subscription_License_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.License_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Region__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Family
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ExcludeFromOpportunity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__HidePriceInSearchResults__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__AssetAmendmentBehavior__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__AssetConversion__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__QuantityEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__DefaultQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__QuantityScale__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__DescriptionLocked__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Salesforce CPQ Configuration"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ConfigurationType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ConfigurationEvent__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ReconfigurationDisabled__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__OptionLayout__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__OptionSelectionMethod__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ConfiguredCodePattern__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__CustomerCommunityAvailability__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Pricing"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__PricingMethod__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__PricingMethodEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__NonDiscountable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__CompoundDiscountRate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__IncludeInMaintenance__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__TermDiscountSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__DiscountSchedule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__DynamicPricingConstraint__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__CostEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__PriceEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__NonPartnerDiscountable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__BatchQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__ExcludeFromMaintenance__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__TermDiscountLevel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__DiscountCategory__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__PricingGuidance__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Subscriptions"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionPricing__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionTerm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionBase__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionType__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionPercent__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionCategory__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__SubscriptionTarget__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Upgrades"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__UpgradeSource__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__UpgradeTarget__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__UpgradeCredit__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Renewals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.SBQQ__RenewalProduct__c
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Fields"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      customButtons = [
+        "SBQQ__EditAll",
+      ]
+      fields = [
+        "NAME",
+        "SBQQ__PriceBook2__c",
+        "SBQQ__LowerBound__c",
+        "SBQQ__UpperBound__c",
+        "SBQQ__Price__c",
+      ]
+      relatedList = salesforce.SBQQ__BlockPrice__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Active__c",
+        "SBQQ__UnitCost__c",
+      ]
+      relatedList = salesforce.SBQQ__Cost__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__Dimension__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__MaxOptionCount__c",
+        "SBQQ__MinOptionCount__c",
+        "SBQQ__Number__c",
+        "SBQQ__DiscountSchedule__c",
+        "SBQQ__Category__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductFeature__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Number__c",
+        "SBQQ__Bundled__c",
+        "SBQQ__AppliedImmediately__c",
+        "SBQQ__ComponentCode__c",
+        "SBQQ__ComponentCodePosition__c",
+        "SBQQ__ConfiguredSKU__c",
+        "SBQQ__Feature__c",
+        "SBQQ__MinQuantity__c",
+        "SBQQ__MaxQuantity__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductOption__c.field.SBQQ__OptionalSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Number__c",
+        "SBQQ__OptionalSKU__c",
+        "SBQQ__Feature__c",
+        "SBQQ__Type__c",
+        "SBQQ__Bundled__c",
+        "SBQQ__ComponentCode__c",
+        "SBQQ__MinQuantity__c",
+        "SBQQ__MaxQuantity__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductOption__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Active__c",
+        "SBQQ__ConstrainingOption__c",
+        "SBQQ__ConstrainedOption__c",
+        "SBQQ__Type__c",
+      ]
+      relatedList = salesforce.SBQQ__OptionConstraint__c.field.SBQQ__ConfiguredSKU__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ProductAction__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__RuleType__c",
+        "SBQQ__ProductRule__c",
+        "SBQQ__Active__c",
+      ]
+      relatedList = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Feature__c",
+        "SBQQ__DisplayOrder__c",
+        "SBQQ__Position__c",
+        "SBQQ__Required__c",
+        "SBQQ__TargetField__c",
+      ]
+      relatedList = salesforce.SBQQ__ConfigurationAttribute__c.field.SBQQ__Product__c
+    },
+    {
+      relatedList = "RelatedStandardPriceList"
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__RenewalPrice__c",
+        "SBQQ__ProductId__c",
+        "SBQQ__Quantity__c",
+        "SBQQ__ProrateMultiplier__c",
+        "SBQQ__StartDate__c",
+        "SBQQ__RenewedDate__c",
+        "SBQQ__TerminatedDate__c",
+      ]
+      relatedList = salesforce.SBQQ__Subscription__c.field.SBQQ__Product__c
+    },
+    {
+      fields = [
+        "PRODUCT2.NAME",
+        "PRODUCT2.CUSTOMER_PRODUCT_ID",
+        "PRODUCT2.DESCRIPTION",
+      ]
+      relatedList = salesforce.Product2.field.SBQQ__SubscriptionTarget__c
+    },
+    {
+      fields = [
+        "PRODUCT2.NAME",
+        "PRODUCT2.CUSTOMER_PRODUCT_ID",
+        "PRODUCT2.DESCRIPTION",
+      ]
+      relatedList = salesforce.Product2.field.SBQQ__UpgradeTarget__c
+    },
+    {
+      fields = [
+        "PRODUCT2.NAME",
+        "PRODUCT2.CUSTOMER_PRODUCT_ID",
+        "PRODUCT2.DESCRIPTION",
+      ]
+      relatedList = salesforce.Product2.field.SBQQ__UpgradeSource__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__UpgradeSource__c.field.SBQQ__UpgradeProduct__c
+    },
+    {
+      relatedList = "RelatedPricebookEntryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hS00000010lHF"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Product2-SBQQ__CPQ Product Layout"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

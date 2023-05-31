@@ -1,0 +1,18 @@
+salesforce.ListView SBQQ__ProductRule__c_SBQQ__All {
+  fullName = "SBQQ__ProductRule__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Active__c",
+    "UPDATEDBY_USER",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

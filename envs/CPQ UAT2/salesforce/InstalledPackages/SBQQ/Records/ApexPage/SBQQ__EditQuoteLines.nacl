@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__EditQuoteLines {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "EditQuoteLines"
+  fullName = "SBQQ__EditQuoteLines"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EditQuoteLines.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

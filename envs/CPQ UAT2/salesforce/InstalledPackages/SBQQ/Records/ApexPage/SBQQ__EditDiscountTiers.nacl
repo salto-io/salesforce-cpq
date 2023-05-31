@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__EditDiscountTiers {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "EditDiscountTiers"
+  fullName = "SBQQ__EditDiscountTiers"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EditDiscountTiers.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,37 @@
+salesforce.FieldSet Product2_SBQQ__ConfiguratorFilter {
+  fullName = "Product2.SBQQ__ConfiguratorFilter"
+  availableFields = [
+    {
+      field = salesforce.Product2.field.SBQQ__HasConsumptionSchedule__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Fields that are used as search filters in configurator product lookup."
+  displayedFields = [
+    {
+      field = salesforce.Product2.field.ProductCode
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Product2.field.Name
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Product2.field.Family
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Configurator Filters"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

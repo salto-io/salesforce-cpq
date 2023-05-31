@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ContractSave {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "ContractSave"
+  fullName = "SBQQ__ContractSave"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ContractSave.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__RefreshPrices {
+  fullName = "SBQQ__Quote__c.SBQQ__RefreshPrices"
+  availability = "online"
+  description = "Refreshes list prices based on currently selected pricebook on a single quote."
+  displayType = "button"
+  height = 0
+  linkType = "page"
+  masterLabel = "Refresh Prices"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__RefreshQuotePrice
+  protected = false
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

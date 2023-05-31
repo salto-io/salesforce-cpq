@@ -1,0 +1,60 @@
+salesforce.PermissionSet SBQQ__SalesforceCPQPartnerUserAccess {
+  fullName = "SBQQ__SalesforceCPQPartnerUserAccess"
+  description = "Give customer users access to data protected through the setting Perform Enhanced Data Access Checks. Don’t clone this permission set."
+  fieldPermissions = {
+    OrderItem = {
+      SBQQ__Activated__c = "ReadWrite"
+      SBQQ__Asset__c = "ReadWrite"
+      SBQQ__BookingsIndicator__c = "ReadWrite"
+      SBQQ__BundleRoot__c = "ReadOnly"
+      SBQQ__ContractAction__c = "ReadWrite"
+      SBQQ__Contract__c = "ReadWrite"
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__DimensionType__c = "ReadOnly"
+      SBQQ__OrderProductBookings__c = "ReadOnly"
+      SBQQ__PricingMethod__c = "ReadWrite"
+      SBQQ__ProductSubscriptionType__c = "ReadOnly"
+      SBQQ__ProrateMultiplier__c = "ReadWrite"
+      SBQQ__QuotedListPrice__c = "ReadOnly"
+      SBQQ__RevisedOrderProduct__c = "ReadWrite"
+      SBQQ__SegmentKey__c = "ReadWrite"
+      SBQQ__Status__c = "ReadWrite"
+      SBQQ__SubscriptionType__c = "ReadOnly"
+      SBQQ__Subscription__c = "ReadWrite"
+      SBQQ__TaxAmount__c = "ReadOnly"
+      SBQQ__TerminatedDate__c = "ReadWrite"
+    }
+    SBQQ__QuoteLine__c = {
+      SBQQ__EffectiveSubscriptionTerm__c = "ReadOnly"
+      SBQQ__HasConsumptionSchedule__c = "ReadOnly"
+      SBQQ__ProductSubscriptionType__c = "ReadOnly"
+      SBQQ__SubscriptionType__c = "ReadOnly"
+    }
+    Order = {
+      SBQQ__Contracted__c = "ReadWrite"
+      SBQQ__ContractingMethod__c = "ReadWrite"
+      SBQQ__OrderBookings__c = "ReadOnly"
+      SBQQ__RenewalTerm__c = "ReadOnly"
+      SBQQ__RenewalUpliftRate__c = "ReadWrite"
+    }
+  }
+  hasActivationRequired = false
+  label = "Salesforce CPQ Partner User Access"
+  objectPermissions = {
+    SBQQ__PriceSchedule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SBQQ__PriceSchedule__c
+      viewAllRecords = false
+    }
+  }
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

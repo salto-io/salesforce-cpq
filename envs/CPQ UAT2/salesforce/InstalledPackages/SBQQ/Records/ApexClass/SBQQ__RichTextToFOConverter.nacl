@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__RichTextToFOConverter {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__RichTextToFOConverter"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

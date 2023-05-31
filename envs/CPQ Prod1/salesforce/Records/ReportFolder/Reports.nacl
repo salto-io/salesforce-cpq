@@ -1,0 +1,9 @@
+salesforce.ReportFolder Reports {
+  folderShares = {
+    accessLevel = "Manage"
+    sharedTo = "services-ldws@force.com"
+    sharedToType = "User"
+  }
+  name = "Reports"
+  fullName = "Reports"
+}

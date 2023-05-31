@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProductFeature__c_SBQQ__Dynamic_OptionSelectionMethod_Validation {
+  fullName = "SBQQ__ProductFeature__c.SBQQ__Dynamic_OptionSelectionMethod_Validation"
+  active = true
+  description = "Option selection method for evergreen or renewable/evergreen configurable SKU cannot be Dynamic"
+  errorConditionFormula = "AND(OR(ISPICKVAL(SBQQ__ConfiguredSKU__r.SBQQ__SubscriptionType__c, 'Evergreen'),  ISPICKVAL(SBQQ__ConfiguredSKU__r.SBQQ__SubscriptionType__c,'Renewable/Evergreen')), ISPICKVAL(SBQQ__OptionSelectionMethod__c, 'Dynamic'))"
+  errorMessage = "Can’t create dynamic bundles for evergreen or renewable/evergreen products"
+  _parent = [
+    salesforce.SBQQ__ProductFeature__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

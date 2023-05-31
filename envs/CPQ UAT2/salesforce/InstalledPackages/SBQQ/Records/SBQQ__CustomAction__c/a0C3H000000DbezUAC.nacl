@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DbezUAC {
+  SBQQ__Action__c = "Resegment Line"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "resegmentBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 996
+  SBQQ__EventHandlerName__c = "onResegmentLine"
+  SBQQ__Label__c = "Resegment Line"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Resegment Line"
+  _alias = "Resegment Line"
+}

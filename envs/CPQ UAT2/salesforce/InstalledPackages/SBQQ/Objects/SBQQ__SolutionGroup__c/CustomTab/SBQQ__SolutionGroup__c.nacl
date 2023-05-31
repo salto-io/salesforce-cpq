@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__SolutionGroup__c {
+  fullName = "SBQQ__SolutionGroup__c"
+  customObject = true
+  description = "Tab to manage the master list of Solution Groups."
+  motif = "Custom81: Musical Note"
+  _parent = [
+    salesforce.SBQQ__SolutionGroup__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

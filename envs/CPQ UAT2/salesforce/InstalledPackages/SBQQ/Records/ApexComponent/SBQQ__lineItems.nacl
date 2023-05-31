@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__lineItems {
+  apiVersion = 57
+  description = "Generates XSL-FO tree for the section that contains line items."
+  label = "Line Items"
+  fullName = "SBQQ__lineItems"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

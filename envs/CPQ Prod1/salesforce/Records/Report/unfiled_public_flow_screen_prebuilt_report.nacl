@@ -1,0 +1,82 @@
+salesforce.Report unfiled_public_flow_screen_prebuilt_report@zcduuu {
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        axisBinding = "y"
+        column = "RowCount"
+      },
+    ]
+    chartType = "HorizontalBarStacked"
+    enableHoverLabels = false
+    expandOthers = true
+    groupingColumn = "FlowInterviewLog$FlowDeveloperName"
+    legendPosition = "Right"
+    location = "CHART_BOTTOM"
+    secondaryGroupingColumn = "FlowInterviewLog$InterviewStatus"
+    showAxisLabels = true
+    showPercentage = false
+    showTotal = false
+    showValues = false
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "FlowInterviewLog.FlowInterviewLogs$LogEntryType"
+    },
+    {
+      field = "FlowInterviewLog.FlowInterviewLogs$ElementApiName"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+        "Average",
+      ]
+      field = "FlowInterviewLog.FlowInterviewLogs$ElementDurationInMinutes"
+    },
+    {
+      field = "FlowInterviewLog$InterviewStartTimestamp"
+    },
+    {
+      field = "FlowInterviewLog$CreatedBy"
+    },
+  ]
+  description = "Which flows run, what’s the status of each interview, and how long do users take to complete the screens?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "FlowInterviewLog$FlowDeveloperName"
+      sortOrder = "Asc"
+    },
+    {
+      dateGranularity = "Day"
+      field = "FlowInterviewLog$InterviewStatus"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Flow Report: Screen Flows"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "screen_flows_prebuilt_crt__c"
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "FlowInterviewLog$CreatedDate"
+    interval = "INTERVAL_LAST7"
+  }
+  fullName = "unfiled$public/flow_screen_prebuilt_report"
+}

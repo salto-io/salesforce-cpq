@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__GenerateDocument {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "GenerateDocument"
+  fullName = "SBQQ__GenerateDocument"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__GenerateDocument.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

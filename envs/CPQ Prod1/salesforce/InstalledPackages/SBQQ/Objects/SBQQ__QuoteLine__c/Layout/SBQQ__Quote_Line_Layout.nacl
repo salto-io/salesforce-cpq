@@ -1,0 +1,383 @@
+salesforce.Layout SBQQ__QuoteLine__c_SBQQ__Quote_Line_Layout@uuuubuuss {
+  customButtons = [
+    "SBQQ__CalculateQuoteFromQuoteLine",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Recalculating"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              height = 22
+              page = "SBQQ__QuoteLineSave"
+              showLabel = false
+              showScrollbars = false
+              width = "100%"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.Name
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quantity__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProductOption__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PricingMethod__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PricingMethodEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Hidden__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Guidance__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quote__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Number__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Group__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Renewal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__CostEditable__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PriceEditable__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Description__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Pricing Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ListPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__CustomerPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__NetPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SpecialPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ContractedPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__RegularPrice__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__UnitCost__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Markup__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProratedListPrice__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ListTotal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__CustomerTotal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__NetTotal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SpecialPriceType__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SpecialPriceDescription__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PackageListTotal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PackageTotal__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PackageCost__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Subscription Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionPricing__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionBase__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__StartDate__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__EndDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionType__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionScope__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__SubscriptionPercent__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__DefaultSubscriptionTerm__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__RenewedSubscription__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Discount Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Discount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__AdditionalDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__OptionDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__NonDiscountable__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__NonPartnerDiscountable__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__TotalDiscountAmount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__TotalDiscountRate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PartnerDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__DiscountSchedule__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__DiscountTier__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__VolumeDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__TermDiscountSchedule__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__TermDiscount__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__CompoundDiscountRate__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__QuoteLine__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000Qbma6"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__QuoteLine__c-SBQQ__Quote Line Layout"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

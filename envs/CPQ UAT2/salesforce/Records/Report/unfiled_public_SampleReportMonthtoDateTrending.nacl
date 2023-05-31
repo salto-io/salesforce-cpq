@@ -1,0 +1,83 @@
+salesforce.Report unfiled_public_SampleReportMonthtoDateTrending@zcd {
+  columns = [
+    {
+      field = "FULL_NAME"
+    },
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      field = "TYPE"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "NEXT_STEP"
+    },
+    {
+      field = "STAGE_NAME"
+    },
+    {
+      field = "PROBABILITY"
+    },
+    {
+      field = "FISCAL_QUARTER"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "ROLLUP_DESCRIPTION"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "ACCOUNT_NAME"
+    },
+  ]
+  description = "How do sales this month correlate to prior months?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "CLOSE_MONTH"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "DayInMonth"
+      field = "CLOSE_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Month to Date Trending"
+  params = [
+    {
+      name = "open"
+      value = "closedwon"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+  ]
+  reportType = salesforce.Opportunity
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CLOSE_DATE"
+    interval = "INTERVAL_CURPREV1"
+  }
+  fullName = "unfiled$public/SampleReportMonthtoDateTrending"
+}

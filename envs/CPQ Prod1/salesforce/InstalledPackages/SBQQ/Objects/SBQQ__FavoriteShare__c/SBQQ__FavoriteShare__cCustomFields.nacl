@@ -1,0 +1,35 @@
+type salesforce.SBQQ__FavoriteShare__c {
+  salesforce.MasterDetail SBQQ__Favorite__c {
+    apiName = "SBQQ__FavoriteShare__c.SBQQ__Favorite__c"
+    deprecated = false
+    externalId = false
+    label = "Favorite"
+    referenceTo = [
+      salesforce.SBQQ__Favorite__c,
+    ]
+    relationshipLabel = "Favorite Shares"
+    relationshipName = "FavoriteShares"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__User__c {
+    apiName = "SBQQ__FavoriteShare__c.SBQQ__User__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    label = "User"
+    referenceTo = [
+      salesforce.User,
+    ]
+    relationshipName = "FavoriteShares"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,14 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DaBZUA0 {
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 911
+  SBQQ__IconClass__c = "sbToolSeparator"
+  SBQQ__Label__c = "Add Products"
+  SBQQ__Location__c = "Quote"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Separator"
+  Name = "Separator"
+  _alias = "Separator"
+}

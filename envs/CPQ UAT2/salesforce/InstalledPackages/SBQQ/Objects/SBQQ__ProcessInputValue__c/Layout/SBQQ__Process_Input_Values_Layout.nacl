@@ -1,0 +1,96 @@
+salesforce.Layout SBQQ__ProcessInputValue__c_SBQQ__Process_Input_Values_Layout@uuuubuusss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.SBQQ__ProcessInputID__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.SBQQ__QuoteId__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.SBQQ__Value__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.SBQQ__UserID__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProcessInputValue__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000Yty0L"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ProcessInputValue__c-SBQQ__Process Input Values Layout"
+  _parent = [
+    salesforce.SBQQ__ProcessInputValue__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

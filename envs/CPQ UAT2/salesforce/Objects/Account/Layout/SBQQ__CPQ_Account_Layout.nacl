@@ -1,0 +1,340 @@
+salesforce.Layout Account_SBQQ__CPQ_Account_Layout@buuss {
+  customButtons = [
+    "SBQQ__Amend_Assets",
+    "SBQQ__Renew_Assets",
+  ]
+  excludeButtons = [
+    "DataDotComAccountInsights",
+    "DataDotComClean",
+    "DataDotComCompanyHierarchy",
+    "IncludeOffline",
+    "SendEmail",
+    "XClean",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Account Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Account.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ParentId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Fax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Website
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Industry
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.AnnualRevenue
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.NumberOfEmployees
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Address Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.BillingAddress
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ShippingAddress
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Renewal/Co-Term Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__ContractCoTermination__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__CoTerminationEvent__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__RenewalPricingMethod__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__RenewalModel__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__PriceHoldEnd__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__CoTermedContractsCombined__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.SBQQ__PreserveBundle__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "FULL_NAME",
+        "CONTACT.TITLE",
+        "CONTACT.EMAIL",
+        "CONTACT.PHONE1",
+      ]
+      relatedList = "RelatedContactList"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = "RelatedOpportunityList"
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__NetAmount__c",
+        "SBQQ__Status__c",
+        "CREATEDBY_USER",
+        "SBQQ__Primary__c",
+      ]
+      relatedList = salesforce.SBQQ__Quote__c.field.SBQQ__Account__c
+    },
+    {
+      fields = [
+        "CONTRACT.CONTRACT_NUMBER",
+        "CONTRACT.NAME",
+        "CONTRACT.START_DATE",
+        "CONTRACT.END_DATE",
+        "CONTRACT.STATUS",
+      ]
+      relatedList = "RelatedContractList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__ContractedPrice__c.field.SBQQ__Account__c
+    },
+    {
+      fields = [
+        "ASSET.NAME",
+        "ASSET.SERIAL_NUMBER",
+        "ASSET.INSTALL_DATE",
+        "ASSET.QUANTITY",
+        "CONTACT.NAME",
+        "ASSET.STATUS",
+        "ASSET.IS_COMPETITOR_PRODUCT",
+      ]
+      relatedList = "RelatedAssetList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__Subscription__c.field.SBQQ__Account__c
+    },
+    {
+      fields = [
+        "CASES.CASE_NUMBER",
+        "NAME",
+        "CASES.SUBJECT",
+        "CASES.PRIORITY",
+        "CASES.CREATED_DATE_DATE_ONLY",
+        "CASES.STATUS",
+        "OWNER_NAME",
+      ]
+      relatedList = "RelatedCaseList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  relatedObjects = [
+    "ParentId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YQ1SI"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Account-SBQQ__CPQ Account Layout"
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

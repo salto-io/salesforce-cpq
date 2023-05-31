@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__sb_ms_js {
+  cacheControl = "Private"
+  contentType = "application/javascript"
+  description = "CPQ MetricsService"
+  fullName = "SBQQ__sb_ms_js"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sb_ms_js.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,169 @@
+salesforce.Layout SBQQ__TaxExemptionCertificate__c_SBQQ__Tax_Exemption_Certificate_Layout@uuuubuusss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Tax Certificate"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__Account__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__Default__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__Active__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Tax Certificate Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__CertificateNumber__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__DateIssued__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__ExpirationDate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__IssuingAuthority__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__Notes__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Company Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__ExemptCompanyName__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__StreetAddress__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__StreetAddress_2__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__State__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__County__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__PostalCode__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.SBQQ__Country__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TaxExemptionCertificate__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h41000005VlUz"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__TaxExemptionCertificate__c-SBQQ__Tax Exemption Certificate Layout"
+  _parent = [
+    salesforce.SBQQ__TaxExemptionCertificate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

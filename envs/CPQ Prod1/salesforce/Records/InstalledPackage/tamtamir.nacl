@@ -1,0 +1,4 @@
+salesforce.InstalledPackage tamtamir {
+  versionNumber = "1"
+  fullName = "tamtamir"
+}

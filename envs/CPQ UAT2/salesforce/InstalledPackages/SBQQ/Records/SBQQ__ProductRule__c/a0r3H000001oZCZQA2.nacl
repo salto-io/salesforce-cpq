@@ -1,0 +1,10 @@
+salesforce.SBQQ__ProductRule__c a0r3H000001oZCZQA2 {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__ErrorMessage__c = "NewRule Message"
+  SBQQ__EvaluationEvent__c = "Save"
+  SBQQ__Scope__c = "Quote"
+  SBQQ__Type__c = "Alert"
+  Name = "NewRule 11122222"
+  _alias = "NewRule 11122222"
+}

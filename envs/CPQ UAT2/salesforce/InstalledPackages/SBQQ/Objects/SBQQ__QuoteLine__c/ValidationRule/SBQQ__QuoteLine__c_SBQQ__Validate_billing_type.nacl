@@ -1,0 +1,20 @@
+salesforce.ValidationRule SBQQ__QuoteLine__c_SBQQ__Validate_billing_type {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__Validate_billing_type"
+  active = true
+  description = "When Charge Type is One-Time or Usage, a Billing Type cannot be selected."
+  errorConditionFormula = '''
+OR( 
+AND(ISPICKVAL(SBQQ__ChargeType__c, 'One-Time'), NOT(ISPICKVAL(SBQQ__BillingType__c, ""))), 
+AND(ISPICKVAL(SBQQ__ChargeType__c, 'Usage'), NOT(ISPICKVAL(SBQQ__BillingType__c, ""))))
+'''
+  errorDisplayField = salesforce.SBQQ__QuoteLine__c.field.SBQQ__BillingType__c
+  errorMessage = "When Charge Type is One-Time or Usage, a Billing Type value cannot be selected."
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

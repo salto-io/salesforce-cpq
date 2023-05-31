@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__QuoteRelatedContentControllerTests {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__QuoteRelatedContentControllerTests"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,7 @@
+salesforce.SBQQ__QuoteProcess__c a0y3H000000bIQEQA2 {
+  SBQQ__Default__c = false
+  SBQQ__GuidedOnly__c = false
+  SBQQ__ProductAutoSelected__c = true
+  Name = "SW Only"
+  _alias = "SW Only"
+}

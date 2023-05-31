@@ -1,0 +1,83 @@
+salesforce.Report unfiled_public_SampleReportPipelineByCloseMonth@zcd {
+  columns = [
+    {
+      field = "OPPORTUNITY_NAME"
+    },
+    {
+      field = "LEAD_SOURCE"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+      ]
+      field = "AMOUNT"
+    },
+    {
+      field = "EXP_AMOUNT"
+    },
+    {
+      field = "NEXT_STEP"
+    },
+    {
+      field = "STAGE_NAME"
+    },
+    {
+      field = "PROBABILITY"
+    },
+    {
+      field = "FISCAL_QUARTER"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "FULL_NAME"
+    },
+    {
+      field = "ROLLUP_DESCRIPTION"
+    },
+    {
+      field = "ACCOUNT_NAME"
+    },
+  ]
+  description = "What pipeline do I have by close month?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "TYPE"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CLOSE_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Pipeline By Close Month"
+  params = [
+    {
+      name = "open"
+      value = "all"
+    },
+    {
+      name = "probability"
+      value = ">0"
+    },
+  ]
+  reportType = salesforce.Opportunity
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CLOSE_DATE"
+    interval = "INTERVAL_CURNEXT1"
+  }
+  fullName = "unfiled$public/SampleReportPipelineByCloseMonth"
+}

@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__Quote__c_SBQQ__CloneWithRelatedClassic {
+  fullName = "SBQQ__Quote__c.SBQQ__CloneWithRelatedClassic"
+  availability = "online"
+  description = "Inserts a copy of current record with related child records, then opens the new record for further modifications.  Required for Lightning Desktop."
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone With Related"
+  openType = "replace"
+  protected = false
+  url = "{!URLFOR($Action.SBQQ__Quote__c.Clone, SBQQ__Quote__c.Id, [retURL=$Site.Prefix & '/' & SBQQ__Quote__c.Id,saveURL=$Site.Prefix & '/apex/SBQQ__CloneLineItems?id=' & SBQQ__Quote__c.Id])}"
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

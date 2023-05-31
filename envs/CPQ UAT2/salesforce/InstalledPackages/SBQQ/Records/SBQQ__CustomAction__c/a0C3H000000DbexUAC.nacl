@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DbexUAC {
+  SBQQ__Action__c = "Delete Line"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "deleteBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 994
+  SBQQ__EventHandlerName__c = "onDeleteLine"
+  SBQQ__Label__c = "Delete Line"
+  SBQQ__Location__c = "Line"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Delete Line"
+  _alias = "Delete Line"
+}

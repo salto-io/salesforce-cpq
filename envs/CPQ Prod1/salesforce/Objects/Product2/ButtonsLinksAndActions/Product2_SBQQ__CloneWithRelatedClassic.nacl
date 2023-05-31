@@ -1,0 +1,20 @@
+salesforce.WebLink Product2_SBQQ__CloneWithRelatedClassic {
+  fullName = "Product2.SBQQ__CloneWithRelatedClassic"
+  availability = "online"
+  description = "Clones this product with related Salesforce CPQ records such as Features, Options, Costs and Block Prices"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "{!URLFOR($Action.Product2.Clone, Product2.Id, [saveURL='/apex/SBQQ__CloneProductChildren?id=' & Product2.Id,cancelURL='' & Product2.Id])}"
+  _parent = [
+    salesforce.Product2,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

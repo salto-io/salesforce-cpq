@@ -1,0 +1,98 @@
+salesforce.Layout SBQQ__TimingLog__c_SBQQ__Timing_Log_Layout@uuuubuuss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TimingLog__c.field.Name
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__Element__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__Start__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__Finish__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__Total__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__URL__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.SBQQ__Log__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__TimingLog__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TimingLog__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__TimingLog__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SBQQ__TimingLog__c-SBQQ__Timing Log Layout"
+  _parent = [
+    salesforce.SBQQ__TimingLog__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}
