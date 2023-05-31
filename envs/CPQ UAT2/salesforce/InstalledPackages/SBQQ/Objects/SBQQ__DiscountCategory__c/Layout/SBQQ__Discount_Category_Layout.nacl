@@ -1,0 +1,99 @@
+salesforce.Layout SBQQ__DiscountCategory__c_SBQQ__Discount_Category_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__DiscountCategory__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__DiscountCategory__c.field.SBQQ__MaxDiscountRate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__DiscountCategory__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__DiscountCategory__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__DiscountCategory__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "PRODUCT2.NAME",
+        "PRODUCT2.CUSTOMER_PRODUCT_ID",
+        "PRODUCT2.DESCRIPTION",
+        "PRODUCT2.ACTIVE",
+      ]
+      relatedList = salesforce.Product2.field.SBQQ__DiscountCategory__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000RaLDB"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__DiscountCategory__c-SBQQ__Discount Category Layout"
+  _parent = [
+    salesforce.SBQQ__DiscountCategory__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

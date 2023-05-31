@@ -1,0 +1,5 @@
+salesforce.Profile Chatter_External_User@s {
+  fullName = "Chatter External User"
+  custom = false
+  userLicense = "Chatter External"
+}

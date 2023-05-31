@@ -1,0 +1,47 @@
+salesforce.FieldSet Contract_SBQQ__ActiveContractLookup {
+  fullName = "Contract.SBQQ__ActiveContractLookup"
+  availableFields = [
+    {
+      field = salesforce.Contract.field.ContractTerm
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contract.field.StatusCode
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Used by Select Contract page to render active contracts."
+  displayedFields = [
+    {
+      field = salesforce.Contract.field.Status
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contract.field.ContractNumber
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contract.field.StartDate
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.Contract.field.EndDate
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Active Contract Lookup"
+  _parent = [
+    salesforce.Contract,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

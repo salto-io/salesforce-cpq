@@ -1,0 +1,8 @@
+salesforce.SBQQ__PriceRule__c a0e3H000000YJLiQAO {
+  SBQQ__Active__c = false
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "On Calculate"
+  SBQQ__TargetObject__c = "Calculator"
+  Name = "NewRule"
+  _alias = "NewRule"
+}

@@ -1,0 +1,147 @@
+salesforce.FieldSet SBQQ__WebQuoteLine__c_SBQQ__LineEditor {
+  fullName = "SBQQ__WebQuoteLine__c.SBQQ__LineEditor"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__CustomerTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Description__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__DistributorDiscount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__EndDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__GrossProfit__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Markup__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__NetPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Number__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Optional__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PartnerPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PricingMethod__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__PriorQuantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProductFamily__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__RegularPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__StartDate__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__SubscriptionScope__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Taxable__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__UnitCost__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Used to render columns on Edit Lines screen."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__Quantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__ListPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__AdditionalDiscount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__CustomerPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__WebQuoteLine__c.field.SBQQ__NetTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "LineEditor"
+  _parent = [
+    salesforce.SBQQ__WebQuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

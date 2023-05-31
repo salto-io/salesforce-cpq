@@ -1,0 +1,287 @@
+type salesforce.SBQQ__ContractedPrice__c {
+  salesforce.MasterDetail SBQQ__Account__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Account__c"
+    deprecated = false
+    description = "Account for which this price was negotiated."
+    externalId = false
+    inlineHelpText = "Account for which this price was negotiated."
+    label = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    relationshipLabel = "Contracted Prices"
+    relationshipName = "R00N70000001olI5EAI"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackHistory = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Contract__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Contract__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Sales contract that governs this price."
+    externalId = false
+    inlineHelpText = "Sales contract that governs this price."
+    label = "Contract"
+    referenceTo = [
+      salesforce.Contract,
+    ]
+    relationshipLabel = "Contracted Prices"
+    relationshipName = "ContractedPrices"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__Description__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Description__c"
+    deprecated = false
+    description = "Description for the Contracted Price"
+    externalId = false
+    inlineHelpText = "Description for this Contracted Price. This will be copied into \"Special Price Description\" of Quote line items using this price."
+    label = "Description"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__DiscountSchedule__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__DiscountSchedule__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Volume discount schedule to use for this product with this customer."
+    externalId = false
+    inlineHelpText = "Volume discount schedule to use for this product with this customer."
+    label = "Discount Schedule"
+    referenceTo = [
+      salesforce.SBQQ__DiscountSchedule__c,
+    ]
+    relationshipLabel = "Contracted Prices"
+    relationshipName = "ContractedPrices"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent SBQQ__Discount__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Discount__c"
+    deprecated = false
+    description = "Discount off the list price (percent) represented by this Contracted Price. Either this field or Price should be set but not both."
+    externalId = false
+    inlineHelpText = "Discount off the Price Book price (percent) represented by this Contracted Price. Either this field or Price should be set but not both."
+    label = "Discount"
+    precision = 6
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__EffectiveDate__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__EffectiveDate__c"
+    deprecated = false
+    description = "Effective date for this contracted price."
+    externalId = false
+    inlineHelpText = "Date this contracted price becomes effective."
+    label = "Effective Date"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date SBQQ__ExpirationDate__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__ExpirationDate__c"
+    deprecated = false
+    description = "Expiration date for this contracted price."
+    externalId = false
+    inlineHelpText = "Date this contracted price expires."
+    label = "Expiration Date"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__FilterField__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__FilterField__c"
+    deprecated = false
+    description = "Quote line field that's evaluated to determine if this contracted price applies."
+    externalId = false
+    inlineHelpText = "Select a field to use in a filter, such as Product Family, if you want to apply this price to a set of products. If you are using a custom field, add the API name to the Filter Field as a picklist value."
+    label = "Filter Field"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+      {
+        fullName = "Product Family"
+        default = false
+        label = "Product Family"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FilterValue__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__FilterValue__c"
+    deprecated = false
+    description = "Value the filter field is tested against to determine if this contracted price should apply."
+    externalId = false
+    inlineHelpText = "Value the filter field is tested against to determine if this contracted price should apply."
+    label = "Filter Value"
+    length = 255
+    trackHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__NonDiscountable__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__NonDiscountable__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that marks the line covered by this price as non-discountable. Overrides Non Discountable flag on the product."
+    externalId = false
+    inlineHelpText = "Select the checkbox to disallow further discounting of this product."
+    label = "Non Discountable"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Operator__c"
+    deprecated = false
+    description = "Operator used to evaluate Filter Field value against Filter Value."
+    externalId = false
+    inlineHelpText = "Select the operate to use when matching the contents of the Filter Field with the Filter Value."
+    label = "Operator"
+    trackHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__OriginalQuoteLine__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__OriginalQuoteLine__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The Quote Line that originated this Contracted Price."
+    externalId = false
+    inlineHelpText = "The Quote Line that originated this Contracted Price."
+    label = "Original Quote Line"
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    relationshipLabel = "Contracted Prices"
+    relationshipName = "ContractedPrices"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency SBQQ__Price__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Price__c"
+    deprecated = false
+    description = "Actual price that was negotiated. This value will override any other price such as the one from a price book or a volume-discounted price."
+    externalId = false
+    inlineHelpText = "Enter the price that has been negotiated with the customer. This value will override any other price such as the one from a price book or a volume-discounted price."
+    label = "Price"
+    precision = 12
+    scale = 2
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__ContractedPrice__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product for which this price was negotiated."
+    externalId = false
+    inlineHelpText = "Select a product from any price book that you want to apply to this discount."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Contracted Prices"
+    relationshipName = "ContractedPrices"
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

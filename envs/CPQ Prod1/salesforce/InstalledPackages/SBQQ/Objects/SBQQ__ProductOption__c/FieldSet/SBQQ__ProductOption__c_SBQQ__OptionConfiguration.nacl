@@ -1,0 +1,57 @@
+salesforce.FieldSet SBQQ__ProductOption__c_SBQQ__OptionConfiguration {
+  fullName = "SBQQ__ProductOption__c.SBQQ__OptionConfiguration"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Bundled__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Discount__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ExistingQuantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Determines fields presented to users during option configuration."
+  displayedFields = [
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Quantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductCode__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductName__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductDescription__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__ProductOption__c.field.SBQQ__UnitPrice__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "OptionConfiguration"
+  _parent = [
+    salesforce.SBQQ__ProductOption__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

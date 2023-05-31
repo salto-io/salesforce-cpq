@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__quoteTermsEditor {
+  apiVersion = 57
+  label = "quoteTermsEditor"
+  fullName = "SBQQ__quoteTermsEditor"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

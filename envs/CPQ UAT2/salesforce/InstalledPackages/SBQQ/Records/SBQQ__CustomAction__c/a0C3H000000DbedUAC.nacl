@@ -1,0 +1,16 @@
+salesforce.SBQQ__CustomAction__c a0C3H000000DbedUAC {
+  SBQQ__Action__c = "Ungroup"
+  SBQQ__Active__c = true
+  SBQQ__BrandButton__c = false
+  SBQQ__Class__c = "ungroupBtn"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__Default__c = false
+  SBQQ__DisplayOrder__c = 906
+  SBQQ__EventHandlerName__c = "onUngroup"
+  SBQQ__Label__c = "Ungroup"
+  SBQQ__Location__c = "Quote"
+  SBQQ__Page__c = "Quote Line Editor"
+  SBQQ__Type__c = "Button"
+  Name = "Ungroup"
+  _alias = "Ungroup"
+}

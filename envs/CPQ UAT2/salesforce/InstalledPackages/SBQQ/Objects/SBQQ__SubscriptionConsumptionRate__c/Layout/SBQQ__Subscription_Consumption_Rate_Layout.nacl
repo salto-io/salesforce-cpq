@@ -1,0 +1,108 @@
+salesforce.Layout SBQQ__SubscriptionConsumptionRate__c_SBQQ__Subscription_Consumption_Rate_Layout@uuuubuusss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__ProcessingOrder__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__LowerBound__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__UpperBound__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__Price__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__Description__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__PricingMethod__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.SBQQ__SubscriptionConsumptionSchedule__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SubscriptionConsumptionRate__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5C000000Sg53"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__SubscriptionConsumptionRate__c-SBQQ__Subscription Consumption Rate Layout"
+  _parent = [
+    salesforce.SBQQ__SubscriptionConsumptionRate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

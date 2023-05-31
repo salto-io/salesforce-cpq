@@ -1,0 +1,147 @@
+type salesforce.SBQQ__OptionConstraint__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__Active__c"
+    defaultValue = true
+    deprecated = false
+    description = "Marks this constraint as active or inactive."
+    externalId = false
+    inlineHelpText = "Marks this constraint as active or inactive."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__CheckPriorPurchases__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__CheckPriorPurchases__c"
+    defaultValue = false
+    deprecated = false
+    description = "Allows you to check on past purchases in the Account."
+    externalId = false
+    inlineHelpText = "Check if you want to look up prior purchases of Constraining Option within the Account."
+    label = "Check Prior Purchases"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ConfiguredSKU__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__ConfiguredSKU__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "SKU which configuration is being constrained."
+    externalId = false
+    inlineHelpText = "Product SKU being constrained."
+    label = "Configured SKU"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Option Constraints"
+    relationshipName = "Option_Constraints"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__ConstrainedOption__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__ConstrainedOption__c"
+    deprecated = false
+    description = "Option that's being constrained."
+    externalId = false
+    inlineHelpText = "Select the option in the bundle that you want applied to this constraint."
+    label = "Constrained Option"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "SBQQ__ProductOption__c.SBQQ__ConfiguredSKU__c"
+          operation = "equals"
+          valueField = "$Source.SBQQ__ConfiguredSKU__c"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    relationshipLabel = "Constraints"
+    relationshipName = "Constraints"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__ConstrainingOption__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__ConstrainingOption__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Option that's constraining another option."
+    externalId = false
+    inlineHelpText = "Choose an additional option if the Constrained Option is constraining another option."
+    label = "Constraining Option"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "$Source.SBQQ__ConfiguredSKU__c"
+          operation = "equals"
+          valueField = "SBQQ__ProductOption__c.SBQQ__ConfiguredSKU__c"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    relationshipLabel = "Constraining"
+    relationshipName = "Constraining"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__OptionConstraintGroup__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__OptionConstraintGroup__c"
+    deprecated = false
+    description = "Allows you to apply multiple constraints on a single option."
+    externalId = false
+    inlineHelpText = "If multiple Option Constraints target the same Constrained Option, putting the Option Constraints in the same group will require ALL Constraining Options to be selected."
+    label = "Option Constraint Group"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Type__c {
+    apiName = "SBQQ__OptionConstraint__c.SBQQ__Type__c"
+    deprecated = false
+    description = "Determines behavior of this constraint."
+    externalId = false
+    inlineHelpText = "Choose the behavior of this constraint: dependency means inclusion is required while exclusion means the option constraint is not selected when the constraining option is or vice versa."
+    label = "Type"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Dependency"
+        default = true
+        label = "Dependency"
+      },
+      {
+        fullName = "Exclusion"
+        default = false
+        label = "Exclusion"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

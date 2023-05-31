@@ -1,0 +1,206 @@
+type salesforce.EventRelayConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string destinationResourceName {
+  }
+  string eventChannel {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountChangeEvent",
+        "AccountContactRoleChangeEvent",
+        "ActivityEngagementVirtualChannel",
+        "AssetChangeEvent",
+        "AssetTechnicalAttributesCDCEventChannel",
+        "AuthorizationFormConsentChangeEvent",
+        "BriefcaseAssignmentChangeEvent",
+        "BriefcaseDefinitionChangeEvent",
+        "CampaignChangeEvent",
+        "CampaignMemberChangeEvent",
+        "CampaignMemberStatusChangeEvent",
+        "CaseChangeEvent",
+        "ChangeDataCaptureDiffeoStandard",
+        "ChangeDataStandardSales",
+        "ChangeEvents",
+        "CommSubscriptionConsentChangeEvent",
+        "CommerceChangeEvents",
+        "CommerceSearchIncrementalIndex",
+        "ConsentCDCChannel",
+        "ConsentCDCStandardChannel",
+        "ContactChangeEvent",
+        "ContactPointAddressChangeEvent",
+        "ContactPointConsentChangeEvent",
+        "ContactPointEmailChangeEvent",
+        "ContactPointPhoneChangeEvent",
+        "ContactPointTypeConsentChangeEvent",
+        "ContentDocumentChangeEvent",
+        "ContentDocumentLinkChangeEvent",
+        "ContentVersionChangeEvent",
+        "ContractChangeEvent",
+        "ConversationIntelligenceVirtualChannel",
+        "CreChangeEvents",
+        "DataCloudEntities",
+        "EinsteinDiscoveryWBChannel",
+        "EinsteinPlatformStandardChannel",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
+        "EventBusRelayChangeEventChannel",
+        "EventChangeEvent",
+        "EventRelationChangeEvent",
+        "EventRelayConfigChangeEvent",
+        "FTestStandardChannel",
+        "FTestStandardInternalChannel",
+        "FlowBuilderChangeData",
+        "FlowRecordChangeListenerChannel",
+        "GlobalIdentityStandard",
+        "HighVolumePriming",
+        "IndividualChangeEvent",
+        "IsotopeStandardChangeEvents",
+        "LeadChangeEvent",
+        "LearningItemProgress",
+        "ListEmailChangeEvent",
+        "ListEmailSentResultChangeEvent",
+        "LocationChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
+        "Merchandising",
+        "OpportunityChangeEvent",
+        "OpportunityContactRoleChangeEvent",
+        "OrderChangeEvent",
+        "OrderItemChangeEvent",
+        "PardotSyncStdChannel",
+        "PartyConsentChangeEvent",
+        "Pricebook2ChangeEvent",
+        "PricebookEntryChangeEvent",
+        "Product2ChangeEvent",
+        "QuickTextChangeEvent",
+        "QuoteChangeEvent",
+        "QuoteLineItemChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
+        "SBQQ__AttributeSet__ChangeEvent",
+        "SBQQ__AttributeValue__ChangeEvent",
+        "SBQQ__BlockPrice__ChangeEvent",
+        "SBQQ__ColumnMetadata__ChangeEvent",
+        "SBQQ__ConfigurationAttribute__ChangeEvent",
+        "SBQQ__ConfigurationRule__ChangeEvent",
+        "SBQQ__ContractedPrice__ChangeEvent",
+        "SBQQ__Cost__ChangeEvent",
+        "SBQQ__CustomActionCondition__ChangeEvent",
+        "SBQQ__CustomAction__ChangeEvent",
+        "SBQQ__CustomScript__ChangeEvent",
+        "SBQQ__Dimension__ChangeEvent",
+        "SBQQ__DiscountCategory__ChangeEvent",
+        "SBQQ__DiscountSchedule__ChangeEvent",
+        "SBQQ__DiscountTier__ChangeEvent",
+        "SBQQ__ErrorCondition__ChangeEvent",
+        "SBQQ__FavoriteProduct__ChangeEvent",
+        "SBQQ__FavoriteShare__ChangeEvent",
+        "SBQQ__Favorite__ChangeEvent",
+        "SBQQ__FieldSetMetadata__ChangeEvent",
+        "SBQQ__ImportColumn__ChangeEvent",
+        "SBQQ__ImportFormat__ChangeEvent",
+        "SBQQ__InstallProcessorLog__ChangeEvent",
+        "SBQQ__LineColumn__ChangeEvent",
+        "SBQQ__Localization__ChangeEvent",
+        "SBQQ__LookupData__ChangeEvent",
+        "SBQQ__LookupQuery__ChangeEvent",
+        "SBQQ__OptionConstraint__ChangeEvent",
+        "SBQQ__OrderItemConsumptionRate__ChangeEvent",
+        "SBQQ__OrderItemConsumptionSchedule__ChangeEvent",
+        "SBQQ__PriceAction__ChangeEvent",
+        "SBQQ__PriceCondition__ChangeEvent",
+        "SBQQ__PriceRule__ChangeEvent",
+        "SBQQ__PriceSchedule__ChangeEvent",
+        "SBQQ__PriceTier__ChangeEvent",
+        "SBQQ__PricingGuidanceTier__ChangeEvent",
+        "SBQQ__PricingGuidance__ChangeEvent",
+        "SBQQ__ProcessInputCondition__ChangeEvent",
+        "SBQQ__ProcessInputValue__ChangeEvent",
+        "SBQQ__ProcessInput__ChangeEvent",
+        "SBQQ__ProductAction__ChangeEvent",
+        "SBQQ__ProductAttributeSet__ChangeEvent",
+        "SBQQ__ProductAttribute__ChangeEvent",
+        "SBQQ__ProductFeature__ChangeEvent",
+        "SBQQ__ProductOption__ChangeEvent",
+        "SBQQ__ProductRule__ChangeEvent",
+        "SBQQ__QuoteDocument__ChangeEvent",
+        "SBQQ__QuoteLineConsumptionRate__ChangeEvent",
+        "SBQQ__QuoteLineConsumptionSchedule__ChangeEvent",
+        "SBQQ__QuoteLineGroup__ChangeEvent",
+        "SBQQ__QuoteLinePricingGuidance__ChangeEvent",
+        "SBQQ__QuoteLine__ChangeEvent",
+        "SBQQ__QuoteProcess__ChangeEvent",
+        "SBQQ__QuoteTemplate__ChangeEvent",
+        "SBQQ__QuoteTerm__ChangeEvent",
+        "SBQQ__Quote__ChangeEvent",
+        "SBQQ__RecordJob__ChangeEvent",
+        "SBQQ__RelatedContent__ChangeEvent",
+        "SBQQ__SearchFilter__ChangeEvent",
+        "SBQQ__SearchIndex__ChangeEvent",
+        "SBQQ__SolutionGroup__ChangeEvent",
+        "SBQQ__SubscribedAsset__ChangeEvent",
+        "SBQQ__SubscribedQuoteLine__ChangeEvent",
+        "SBQQ__SubscriptionConsumptionRate__ChangeEvent",
+        "SBQQ__SubscriptionConsumptionSchedule__ChangeEvent",
+        "SBQQ__Subscription__ChangeEvent",
+        "SBQQ__SummaryVariable__ChangeEvent",
+        "SBQQ__TaxExemptionCertificate__ChangeEvent",
+        "SBQQ__TemplateContent__ChangeEvent",
+        "SBQQ__TemplateSection__ChangeEvent",
+        "SBQQ__TermCondition__ChangeEvent",
+        "SBQQ__Theme__ChangeEvent",
+        "SBQQ__TimingLog__ChangeEvent",
+        "SBQQ__UpgradeSource__ChangeEvent",
+        "SBQQ__WebQuoteLine__ChangeEvent",
+        "SBQQ__WebQuote__ChangeEvent",
+        "SaltoData__ChangeEvent",
+        "SlackAlertsEventChannel",
+        "SocialPostChangeEvent",
+        "TaskChangeEvent",
+        "TaskRelationChangeEvent",
+        "UserChangeEvent",
+        "VideoCall",
+        "WorkPlansCDCEventChannel",
+        "Yariv__ChangeEvent",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+      salesforce.PlatformEventChannel,
+    ]
+  }
+  string relayOption {
+  }
+  string state {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "PAUSE",
+        "RUN",
+        "STOP",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "eventRelay"
+  dirName = "eventRelays"
+  metadataType = "EventRelayConfig"
+}

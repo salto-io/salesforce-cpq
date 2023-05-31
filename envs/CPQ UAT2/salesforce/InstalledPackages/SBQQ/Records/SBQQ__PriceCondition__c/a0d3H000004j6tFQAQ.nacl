@@ -1,0 +1,9 @@
+salesforce.SBQQ__PriceCondition__c a0d3H000004j6tFQAQ {
+  SBQQ__Field__c = "Product Code"
+  SBQQ__FilterType__c = "Value"
+  SBQQ__Object__c = "Quote"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.a0e3H000000YJLiQAO
+  SBQQ__Value__c = "244"
+  _alias = "NewRule 4"
+}

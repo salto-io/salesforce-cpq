@@ -1,0 +1,59 @@
+salesforce.Report unfiled_public_SampleReportSolutionsAdded@zcd {
+  columns = [
+    {
+      field = "ISSUE"
+    },
+    {
+      field = "SOLUTION_NUMBER"
+    },
+    {
+      field = "SOLUTION_NOTE"
+    },
+    {
+      field = "OWNER"
+    },
+    {
+      field = "EXTERNAL"
+    },
+    {
+      field = "TIMES_USED"
+    },
+    {
+      field = "LAST_UPDATE"
+    },
+  ]
+  description = "How Many Solutions are Being Added to the Knowledgebase each Month?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "STATUS"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATED_DATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Solutions Added"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "SolutionList"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    endDate = "2006-06-29"
+    interval = "INTERVAL_CUSTOM"
+    startDate = "2006-06-22"
+  }
+  fullName = "unfiled$public/SampleReportSolutionsAdded"
+}

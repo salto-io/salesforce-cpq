@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__ConfigurationSummaryControllerTests {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__ConfigurationSummaryControllerTests"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

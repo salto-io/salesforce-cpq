@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__sbFavicon {
+  cacheControl = "Public"
+  contentType = "text/css"
+  fullName = "SBQQ__sbFavicon"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sbFavicon.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,114 @@
+type salesforce.ProfileSkill {
+  salesforce.LongTextArea Description {
+    apiName = "ProfileSkill.Description"
+    trackFeedHistory = true
+    trackHistory = false
+    length = 4000
+    label = "Skill Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ProfileSkill.Name"
+    trackFeedHistory = true
+    trackHistory = false
+    length = 99
+    _required = true
+    label = "Skill Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Summary UserCount {
+    apiName = "ProfileSkill.UserCount"
+    trackFeedHistory = false
+    trackHistory = false
+    label = "People With Skill"
+    precision = 9
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ProfileSkill.Id"
+    label = "Skill ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProfileSkill.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProfileSkill.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProfileSkill.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProfileSkill.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProfileSkill.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProfileSkill.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProfileSkill.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

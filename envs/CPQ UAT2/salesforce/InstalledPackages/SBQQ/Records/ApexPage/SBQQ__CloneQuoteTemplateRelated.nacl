@@ -1,0 +1,14 @@
+salesforce.ApexPage SBQQ__CloneQuoteTemplateRelated {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  description = "Clones Quote Template related records."
+  label = "Clone Quote Template Related"
+  fullName = "SBQQ__CloneQuoteTemplateRelated"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__CloneQuoteTemplateRelated.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

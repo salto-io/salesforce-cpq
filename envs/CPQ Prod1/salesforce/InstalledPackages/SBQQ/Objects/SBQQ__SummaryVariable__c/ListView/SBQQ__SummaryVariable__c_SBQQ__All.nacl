@@ -1,0 +1,22 @@
+salesforce.ListView SBQQ__SummaryVariable__c_SBQQ__All {
+  fullName = "SBQQ__SummaryVariable__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__Scope__c",
+    "SBQQ__AggregateField__c",
+    "SBQQ__AggregateFunction__c",
+    "SBQQ__Operator__c",
+    "SBQQ__FilterField__c",
+    "SBQQ__FilterValue__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__SummaryVariable__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

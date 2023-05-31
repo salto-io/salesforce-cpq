@@ -1,0 +1,20 @@
+salesforce.WebLink SBQQ__PriceRule__c_SBQQ__CloneWithRelated {
+  fullName = "SBQQ__PriceRule__c.SBQQ__CloneWithRelated"
+  availability = "online"
+  description = "Launches the Price Rules preview page that allows users to clone the price rule and its conditions, actions, and queries or cancel the process."
+  displayType = "button"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Clone with Related"
+  openType = "replace"
+  protected = false
+  url = "/apex/SBQQ__ClonePriceRule?id={!SBQQ__PriceRule__c.Id}"
+  _parent = [
+    salesforce.SBQQ__PriceRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,300 @@
+type salesforce.SBQQ__ConfigurationAttribute__c {
+  salesforce.Checkbox SBQQ__AppliedImmediately__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__AppliedImmediately__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that indicates changes to this configuration attribute should apply immediately."
+    externalId = false
+    inlineHelpText = "Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience."
+    label = "Apply Immediately"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__ApplyToProductOptions__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ApplyToProductOptions__c"
+    defaultValue = false
+    deprecated = false
+    description = "Apply configuration attribute selection to product options."
+    externalId = false
+    inlineHelpText = "Select the checkbox to apply configuration attribute selection to product options."
+    label = "Apply To Product Options"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__AutoSelect__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__AutoSelect__c"
+    defaultValue = false
+    deprecated = false
+    description = "Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product's matching field."
+    externalId = false
+    inlineHelpText = "Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product's matching field."
+    label = "Auto-Select"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ColumnOrder__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ColumnOrder__c"
+    deprecated = false
+    description = "Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed."
+    externalId = false
+    inlineHelpText = "Columns are comprised of a picklist (of 1, 2, or 3) for each Configuration Attribute. A maximum of 3 columns is allowed."
+    label = "Column Order"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "1"
+        default = true
+        label = "1"
+      },
+      {
+        fullName = "2"
+        default = false
+        label = "2"
+      },
+      {
+        fullName = "3"
+        default = false
+        label = "3"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__DefaultField__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DefaultField__c"
+    deprecated = false
+    description = "API of the target field on the default object for the default value of the attribute."
+    externalId = false
+    inlineHelpText = "API of the target field on the default object for the default value of the attribute."
+    label = "Default Field"
+    length = 255
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__DefaultObject__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DefaultObject__c"
+    deprecated = false
+    description = "Target object for the default value of the attribute."
+    externalId = false
+    inlineHelpText = "Target object for the default value of the attribute."
+    label = "Default Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = salesforce.SBQQ__Quote__c
+        default = false
+        label = "Quote"
+      },
+      {
+        fullName = salesforce.SBQQ__QuoteLineGroup__c
+        default = false
+        label = "Quote Line Group"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__DisplayOrder__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DisplayOrder__c"
+    deprecated = false
+    description = "This is the order in which the Configuration Attributes will be displayed."
+    externalId = false
+    inlineHelpText = "If there is no display order associated with a Configuration Attribute, order is determined by Related Content name."
+    label = "Row Order"
+    precision = 3
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Feature__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Feature__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Feature in which this attribute should be rendered."
+    externalId = false
+    inlineHelpText = "Specify the feature in which this attribute should be entered."
+    label = "Feature"
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "$Source.SBQQ__Product__c"
+          operation = "equals"
+          valueField = "SBQQ__ProductFeature__c.SBQQ__ConfiguredSKU__c"
+        },
+      ]
+      isOptional = false
+    }
+    referenceTo = [
+      salesforce.SBQQ__ProductFeature__c,
+    ]
+    relationshipLabel = "Configuration Attributes"
+    relationshipName = "ConfigurationAttributes"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaCheckbox SBQQ__Global__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Global__c"
+    deprecated = false
+    description = "Indicates if this attribute has a global target field."
+    externalId = false
+    formula = "CONTAINS(TEXT(SBQQ__TargetField__c), '.')"
+    inlineHelpText = "Indicates if this attribute has a global target field."
+    label = "Global"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea SBQQ__HiddenValues__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__HiddenValues__c"
+    deprecated = false
+    description = "Values from the backing picklist field that should be hidden on this bundle."
+    externalId = false
+    inlineHelpText = "Enter values from the corresponding picklist field on Product Option object that you want to be hidden on this bundle."
+    label = "Hidden Values"
+    length = 5000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Hidden__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Hidden__c"
+    defaultValue = false
+    deprecated = false
+    description = "If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page."
+    externalId = false
+    inlineHelpText = "If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page."
+    label = "Hidden"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__Position__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Position__c"
+    deprecated = false
+    description = "Position of the attribute."
+    externalId = false
+    inlineHelpText = "Specify position of this attribute. Top renders above the options. Bottom renders below."
+    label = "Position"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Top"
+        default = true
+        label = "Top"
+      },
+      {
+        fullName = "Bottom"
+        default = false
+        label = "Bottom"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Product being configured."
+    externalId = false
+    inlineHelpText = "Specify product on which you are creating the attribute."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Configuration Attributes"
+    relationshipName = "ConfigurationAttributes"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Required__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Required__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether the attributes requires a value."
+    externalId = false
+    inlineHelpText = "Specify whether this attribute requires a value."
+    label = "Required"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea SBQQ__ShownValues__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ShownValues__c"
+    deprecated = false
+    description = "Values from the backing picklist field that should be shown on this bundle."
+    externalId = false
+    inlineHelpText = "Enter values from the corresponding picklist field on Product Option object that you want to be shown on this bundle."
+    label = "Shown Values"
+    length = 5000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__TargetField__c {
+    apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__TargetField__c"
+    deprecated = false
+    description = "Field on the Product Option that sources remaining metadata and holds the value."
+    externalId = false
+    inlineHelpText = "Specify field on Product Option that will hold this attribute's value."
+    label = "Target Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Unit Price"
+        default = false
+        label = "Unit Price"
+      },
+      {
+        fullName = "Discount (Amt)"
+        default = false
+        label = "Discount (Amt)"
+      },
+      {
+        fullName = "Discount (%)"
+        default = false
+        label = "Discount (%)"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,63 @@
+salesforce.Report unfiled_public_SampleReportofDocuments@zcd {
+  columns = [
+    {
+      field = "DOC_NAME"
+    },
+    {
+      field = "DOC_TYPE"
+    },
+    {
+      field = "DOC_LENGTH"
+    },
+    {
+      field = "DOC_DESC"
+    },
+    {
+      field = "DOC_KEYWORDS"
+    },
+    {
+      field = "DOC_INTERNAL"
+    },
+    {
+      field = "DOC_CREATEDBY"
+    },
+    {
+      field = "DOC_LASTUPDATEBY"
+    },
+    {
+      field = "DOC_LASTUPDATE"
+    },
+    {
+      field = "DOC_AUTHOR"
+    },
+    {
+      field = "FOLDER_NAME"
+    },
+  ]
+  description = "How many documents have been added to Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "DOC_CREATED"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Documents"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "DocumentList"
+  scope = "all"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "DOC_CREATED"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofDocuments"
+}

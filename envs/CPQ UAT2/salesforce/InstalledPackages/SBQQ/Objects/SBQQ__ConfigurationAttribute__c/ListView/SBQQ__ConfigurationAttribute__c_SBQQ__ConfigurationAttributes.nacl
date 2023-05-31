@@ -1,0 +1,31 @@
+salesforce.ListView SBQQ__ConfigurationAttribute__c_SBQQ__ConfigurationAttributes {
+  fullName = "SBQQ__ConfigurationAttribute__c.SBQQ__ConfigurationAttributes"
+  booleanFilter = "1 OR 2"
+  columns = [
+    "NAME",
+    "SBQQ__Product__c",
+    "SBQQ__TargetField__c",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "RECORDTYPE"
+      operation = "equals"
+      value = "SBQQ__ConfigurationAttribute__c.SBQQ__Configuration_Attribute"
+    },
+    {
+      field = "RECORDTYPE"
+      operation = "equals"
+    },
+  ]
+  label = "Configuration Attributes"
+  language = "en_US"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

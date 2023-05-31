@@ -1,0 +1,14 @@
+type salesforce.Case {
+  salesforce.Checkbox Is_Urgent__c {
+    apiName = "Case.Is_Urgent__c"
+    defaultValue = false
+    externalId = false
+    label = "Is Urgent"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

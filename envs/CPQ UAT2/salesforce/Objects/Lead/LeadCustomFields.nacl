@@ -1,0 +1,40 @@
+type salesforce.Lead {
+  salesforce.Picklist Disqualified_Reason__c {
+    apiName = "Lead.Disqualified_Reason__c"
+    description = "Disqualification reason of the lead - must not be empty when lead is disqualified"
+    externalId = false
+    label = "Disqualified Reason"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Not Interested"
+        default = false
+        label = "Not Interested"
+      },
+      {
+        fullName = "No Budget"
+        default = false
+        label = "No Budget"
+      },
+      {
+        fullName = "Wrong Usecase"
+        default = false
+        label = "Wrong Usecase"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Url Domain__c {
+    apiName = "Lead.Domain__c"
+    externalId = false
+    label = "Domain"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

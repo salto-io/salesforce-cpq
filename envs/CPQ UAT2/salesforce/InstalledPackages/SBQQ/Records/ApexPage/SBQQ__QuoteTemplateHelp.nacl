@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__QuoteTemplateHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "QuoteTemplateHelp"
+  fullName = "SBQQ__QuoteTemplateHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__QuoteTemplateHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

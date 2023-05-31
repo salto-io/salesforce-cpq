@@ -1,0 +1,384 @@
+type salesforce.Account {
+  salesforce.Url Domain__c {
+    apiName = "Account.Domain__c"
+    externalId = false
+    label = "Domain"
+    trackFeedHistory = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox Is_important__c {
+    apiName = "Account.Is_important__c"
+    defaultValue = false
+    description = "Probably not"
+    externalId = false
+    label = "Is important"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Text My_Profile_Field__c {
+    apiName = "Account.My_Profile_Field__c"
+    externalId = false
+    label = "My Profile Field"
+    length = 200
+    trackFeedHistory = true
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist My_broken_picklist__c {
+    apiName = "Account.My_broken_picklist__c"
+    externalId = false
+    label = "My broken picklist"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Value1"
+        default = false
+        label = "Value1"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox My_new_field__c {
+    apiName = "Account.My_new_field__c"
+    defaultValue = false
+    externalId = false
+    label = "My new field"
+    trackFeedHistory = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__AssetQuantitiesCombined__c {
+    apiName = "Account.SBQQ__AssetQuantitiesCombined__c"
+    defaultValue = false
+    deprecated = false
+    description = "Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated."
+    externalId = false
+    inlineHelpText = "Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated."
+    label = "Combine Asset Quantities"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__CoTermedContractsCombined__c {
+    apiName = "Account.SBQQ__CoTermedContractsCombined__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote."
+    externalId = false
+    inlineHelpText = "Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote."
+    label = "Combine Co-Termed Contracts"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__CoTerminationEvent__c {
+    apiName = "Account.SBQQ__CoTerminationEvent__c"
+    deprecated = false
+    description = "Determines when contracts are co-terminated."
+    externalId = false
+    inlineHelpText = "Determines when contracts are co-terminated."
+    label = "Co-Termination Event"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Add-on"
+        default = false
+        label = "Add-on"
+      },
+      {
+        fullName = "Renewal"
+        default = false
+        label = "Renewal"
+      },
+    ]
+    sorted = false
+    restricted = false
+    fieldDependency = {
+      controllingField = "SBQQ__ContractCoTermination__c"
+      valueSettings = [
+        {
+          valueName = "Add-on"
+          controllingFieldValue = [
+            "Always",
+            "Prompt",
+          ]
+        },
+        {
+          valueName = "Renewal"
+          controllingFieldValue = [
+            "Always",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__ContractCoTermination__c {
+    apiName = "Account.SBQQ__ContractCoTermination__c"
+    deprecated = false
+    description = "Determines how service and subscription contracts for this customer are co-terminated."
+    externalId = false
+    inlineHelpText = "Determines how service and subscription contracts for this customer are co-terminated."
+    label = "Contract Co-Termination"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Never"
+        default = true
+        label = "Never"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+      {
+        fullName = "Prompt"
+        default = false
+        label = "Prompt"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Lookup SBQQ__DefaultOpportunity__c {
+    apiName = "Account.SBQQ__DefaultOpportunity__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Default opportunity for this account used by an e-Commerce module to obtain the customer's price book and associate with \"shopping cart\" quotes."
+    externalId = false
+    inlineHelpText = "Default opportunity for this account used by an e-Commerce module to obtain the customer's price book and associate with \"shopping cart\" quotes."
+    label = "Default Opportunity"
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    relationshipLabel = "Accounts"
+    relationshipName = "WebAccounts"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__IgnoreParentContractedPrices__c {
+    apiName = "Account.SBQQ__IgnoreParentContractedPrices__c"
+    defaultValue = false
+    deprecated = false
+    description = "Select if contracted prices should not be inherited from the parent account."
+    externalId = false
+    inlineHelpText = "Select if contracted prices should not be inherited from the parent account."
+    label = "Ignore Parent Contracted Prices"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Checkbox SBQQ__PreserveBundle__c {
+    apiName = "Account.SBQQ__PreserveBundle__c"
+    defaultValue = false
+    deprecated = false
+    description = "Select to maintain bundle hierarchy on renewal quotes and amendments"
+    externalId = false
+    inlineHelpText = "Select checkbox to maintain bundle hierarchy on renewal quotes and amendments."
+    label = "Preserve Bundle Structure"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Date SBQQ__PriceHoldEnd__c {
+    apiName = "Account.SBQQ__PriceHoldEnd__c"
+    deprecated = false
+    description = "End date for any price hold that may be in effect."
+    externalId = false
+    inlineHelpText = "Enter date until which the prices must be held."
+    label = "Price Hold End"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__RenewalModel__c {
+    apiName = "Account.SBQQ__RenewalModel__c"
+    deprecated = false
+    description = "The option to distinguish between Subscription or Asset based renewal."
+    externalId = false
+    inlineHelpText = "Choose Asset Based to make renewals based off of an account's Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote."
+    label = "Renewal Model"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Asset Based"
+        default = false
+        label = "Asset Based"
+      },
+      {
+        fullName = "Contract Based"
+        default = false
+        label = "Contract Based"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__RenewalPricingMethod__c {
+    apiName = "Account.SBQQ__RenewalPricingMethod__c"
+    deprecated = false
+    description = "Method for pricing products on renewal."
+    externalId = false
+    inlineHelpText = "Use \"Same\" to keep the same price paid last time. Use \"List\" to use current list price. Use \"Uplift\" to use the price paid last time plus some uplift."
+    label = "Renewal Pricing Method"
+    trackFeedHistory = false
+    valueSet = [
+      {
+        fullName = "Same"
+        default = true
+        label = "Same"
+      },
+      {
+        fullName = "List"
+        default = false
+        label = "List"
+      },
+      {
+        fullName = "Uplift"
+        default = false
+        label = "Uplift"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Picklist SBQQ__TaxExempt__c {
+    apiName = "Account.SBQQ__TaxExempt__c"
+    deprecated = false
+    description = "Selected if this account has active certificates"
+    externalId = false
+    inlineHelpText = "Selected if this account has active certificates"
+    label = "Tax-Exempt"
+    trackFeedHistory = true
+    valueSet = [
+      {
+        fullName = "No"
+        default = true
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.InstalledPackage.instance.SBQQ
+      },
+    ]
+  }
+  salesforce.Number Score__c {
+    apiName = "Account.Score__c"
+    description = "cpq env 1"
+    externalId = false
+    label = "Score"
+    precision = 18
+    scale = 0
+    trackFeedHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup Yariv_ref__c {
+    apiName = "Account.Yariv_ref__c"
+    deleteConstraint = "SetNull"
+    description = "desc bla bla"
+    externalId = false
+    inlineHelpText = "help bla bla bla bla"
+    label = "Yariv ref"
+    referenceTo = [
+      salesforce.Yariv__c,
+    ]
+    relationshipName = "Accounts"
+    trackFeedHistory = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

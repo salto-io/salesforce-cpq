@@ -1,0 +1,17 @@
+type salesforce.SBQQ__SolutionGroup__c {
+  salesforce.LongTextArea SBQQ__Description__c {
+    apiName = "SBQQ__SolutionGroup__c.SBQQ__Description__c"
+    deprecated = false
+    description = "Description for this SolutionGroup."
+    externalId = false
+    inlineHelpText = "Enter a description for this SolutionGroup."
+    label = "Description"
+    length = 5000
+    trackHistory = true
+    trackTrending = false
+    visibleLines = 4
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

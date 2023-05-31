@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_NextSteps@zcdu {
+  available = true
+  description = "Confirming next steps with the customer"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Next Steps"
+  relatedEntityType = "Opportunity"
+  style = "none"
+  subject = "Next Steps"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_NextSteps"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_NextSteps/Sample_NextSteps.email")
+}

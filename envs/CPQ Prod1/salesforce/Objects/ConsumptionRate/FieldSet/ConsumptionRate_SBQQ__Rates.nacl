@@ -1,0 +1,45 @@
+salesforce.FieldSet ConsumptionRate_SBQQ__Rates {
+  fullName = "ConsumptionRate.SBQQ__Rates"
+  description = "Rate fields displayed in the Quote Line Editor Consumption Schedule UI."
+  displayedFields = [
+    {
+      field = "ConsumptionSchedule.Name"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "ConsumptionSchedule.RatingMethod"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.ConsumptionRate.field.PricingMethod
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.ConsumptionRate.field.LowerBound
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.ConsumptionRate.field.UpperBound
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.ConsumptionRate.field.Price
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Rates"
+  _parent = [
+    salesforce.ConsumptionRate,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

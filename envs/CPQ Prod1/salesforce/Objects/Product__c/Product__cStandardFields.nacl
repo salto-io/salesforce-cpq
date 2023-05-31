@@ -1,0 +1,90 @@
+type salesforce.Product__c {
+  serviceid Id {
+    apiName = "Product__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Product__c.OwnerId"
+    relationshipName = "Owner"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    label = "Owner ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Product__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Product__c.Name"
+    length = 80
+    label = "Product Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Product__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Product__c.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Product__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Product__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Product__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

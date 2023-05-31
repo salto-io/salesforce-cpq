@@ -1,0 +1,19 @@
+salesforce.WebLink SBQQ__RelatedContent__c_SBQQ__NewQuoteRelatedContent {
+  fullName = "SBQQ__RelatedContent__c.SBQQ__NewQuoteRelatedContent"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "New Quote Additional Document"
+  openType = "sidebar"
+  page = salesforce.ApexPage.instance.SBQQ__EditRelatedContent
+  protected = false
+  _parent = [
+    salesforce.SBQQ__RelatedContent__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.CustomTab SBQQ__QuoteTemplate__c {
+  fullName = "SBQQ__QuoteTemplate__c"
+  customObject = true
+  description = "Tab to manage quote templates."
+  motif = "Custom62: Chalkboard"
+  _parent = [
+    salesforce.SBQQ__QuoteTemplate__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ProductActionHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "ProductActionHelp"
+  fullName = "SBQQ__ProductActionHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ProductActionHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

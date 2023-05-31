@@ -1,0 +1,55 @@
+salesforce.Flow Dan_Auto_Flow {
+  fullName = "Dan_Auto_Flow"
+  apiVersion = 56
+  environments = "Default"
+  interviewLabel = "Dan Auto Flow {!$Flow.CurrentDateTime}"
+  label = "Dan Auto Flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordCreates = [
+    {
+      name = "Create_an_account"
+      label = "Create an account"
+      locationX = 176
+      locationY = 158
+      inputReference = "accountVar"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "Create_an_account"
+    }
+  }
+  status = "Active"
+  variables = [
+    {
+      name = "accountVar"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Account
+    },
+  ]
+}

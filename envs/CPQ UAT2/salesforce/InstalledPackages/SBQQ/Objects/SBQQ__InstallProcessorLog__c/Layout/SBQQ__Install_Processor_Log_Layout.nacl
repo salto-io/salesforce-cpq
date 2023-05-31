@@ -1,0 +1,86 @@
+salesforce.Layout SBQQ__InstallProcessorLog__c_SBQQ__Install_Processor_Log_Layout@uuuubuusss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.SBQQ__Time__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.SBQQ__Version__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.SBQQ__MethodName__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__InstallProcessorLog__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SBQQ__InstallProcessorLog__c-SBQQ__Install Processor Log Layout"
+  _parent = [
+    salesforce.SBQQ__InstallProcessorLog__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

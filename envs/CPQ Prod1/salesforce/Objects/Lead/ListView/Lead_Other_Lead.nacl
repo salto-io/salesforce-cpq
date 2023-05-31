@@ -1,0 +1,9 @@
+salesforce.ListView Lead_Other_Lead {
+  fullName = "Lead.Other_Lead"
+  filterScope = "Queue"
+  label = "Other"
+  queue = salesforce.Queue.instance.Other
+  _parent = [
+    salesforce.Lead,
+  ]
+}

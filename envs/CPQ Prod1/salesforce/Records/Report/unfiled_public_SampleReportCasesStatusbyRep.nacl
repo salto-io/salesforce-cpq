@@ -1,0 +1,59 @@
+salesforce.Report unfiled_public_SampleReportCasesStatusbyRep@zcd {
+  columns = [
+    {
+      field = "SUBJECT"
+    },
+    {
+      field = "CREATED_DATE"
+    },
+    {
+      field = "AGE"
+    },
+    {
+      field = "OPEN"
+    },
+    {
+      field = "CLOSED"
+    },
+    {
+      field = "ACCOUNT.NAME"
+    },
+  ]
+  description = "Who has the most open cases?"
+  format = "Matrix"
+  groupingsAcross = [
+    {
+      dateGranularity = "Day"
+      field = "STATUS"
+      sortOrder = "Asc"
+    },
+  ]
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "OWNER"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: Cases Status by Rep"
+  params = [
+    {
+      name = "units"
+      value = "h"
+    },
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "CaseList"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATEONLY"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/SampleReportCasesStatusbyRep"
+}

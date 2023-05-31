@@ -1,0 +1,80 @@
+salesforce.Profile Identity_User@s {
+  userPermissions = {
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    IdentityEnabled = {
+      enabled = true
+      name = "IdentityEnabled"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+  }
+}

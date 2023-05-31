@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__SearchFilter__c_SBQQ__Require_filter_object_for_filter_field {
+  fullName = "SBQQ__SearchFilter__c.SBQQ__Require_filter_object_for_filter_field"
+  active = true
+  description = "Require filter source object is selected when filter source field is not blank."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__FilterSourceObject__c, ''),NOT(ISPICKVAL(SBQQ__FilterSourceField__c, '')))"
+  errorMessage = "You must select Filter Source Object when Filter Source Field is selected."
+  _parent = [
+    salesforce.SBQQ__SearchFilter__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

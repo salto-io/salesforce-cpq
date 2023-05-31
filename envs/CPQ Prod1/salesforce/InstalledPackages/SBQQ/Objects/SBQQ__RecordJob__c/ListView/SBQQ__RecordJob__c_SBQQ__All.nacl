@@ -1,0 +1,18 @@
+salesforce.ListView SBQQ__RecordJob__c_SBQQ__All {
+  fullName = "SBQQ__RecordJob__c.SBQQ__All"
+  columns = [
+    "NAME",
+    "SBQQ__RecordId__c",
+    "SBQQ__JobId__c",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__RecordJob__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

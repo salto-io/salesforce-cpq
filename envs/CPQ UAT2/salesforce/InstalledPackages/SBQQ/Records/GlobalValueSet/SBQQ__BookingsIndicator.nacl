@@ -1,0 +1,23 @@
+salesforce.GlobalValueSet SBQQ__BookingsIndicator {
+  fullName = "SBQQ__BookingsIndicator"
+  customValue = [
+    {
+      fullName = "Include"
+      default = true
+      label = "Include"
+    },
+    {
+      fullName = "Do Not Include"
+      default = false
+      label = "Do Not Include"
+    },
+  ]
+  description = "Bookings Indicator."
+  masterLabel = "Bookings Indicator"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

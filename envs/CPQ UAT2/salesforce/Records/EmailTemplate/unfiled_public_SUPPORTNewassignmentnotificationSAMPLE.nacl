@@ -1,0 +1,12 @@
+salesforce.EmailTemplate unfiled_public_SUPPORTNewassignmentnotificationSAMPLE@zcd {
+  available = true
+  description = "Internal notification to case owner when case is assigned."
+  encodingKey = "ISO-8859-1"
+  name = "SUPPORT:  New assignment notification (SAMPLE)"
+  style = "none"
+  subject = "Case # {!Case.CaseNumber}: {!Case.Subject} has been assigned to you."
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SUPPORTNewassignmentnotificationSAMPLE"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SUPPORTNewassignmentnotificationSAMPLE/SUPPORTNewassignmentnotificationSAMPLE.email")
+}

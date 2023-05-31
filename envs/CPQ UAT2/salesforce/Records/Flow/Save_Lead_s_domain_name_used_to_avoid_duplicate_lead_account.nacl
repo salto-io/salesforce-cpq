@@ -1,0 +1,202 @@
+salesforce.Flow Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account {
+  fullName = "Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account"
+  apiVersion = 49
+  decisions = [
+    {
+      processMetadataValues = {
+        name = "index"
+        value = {
+          numberValue = 0
+        }
+      }
+      name = "myDecision"
+      label = "myDecision"
+      locationX = 50
+      locationY = 0
+      defaultConnectorLabel = "default"
+      rules = [
+        {
+          name = "myRule_1"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "formula_myRule_1"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = true
+              }
+            },
+          ]
+          connector = {
+            targetReference = "myRule_1_A1"
+          }
+          label = "Is email changed?"
+        },
+      ]
+    },
+  ]
+  description = "Save Lead's domain name (used to avoid duplicate lead-account)"
+  formulas = [
+    {
+      processMetadataValues = {
+        name = "originalFormula"
+        value = {
+          stringValue = "SUBSTITUTE([Lead].Email, LEFT([Lead].Email, FIND(\"@\", [Lead].Email)), NULL)"
+        }
+      }
+      name = "formula_2_myRule_1_A1_4648613350"
+      dataType = "String"
+      expression = "SUBSTITUTE({!myVariable_current.Email}, LEFT({!myVariable_current.Email}, FIND(\"@\", {!myVariable_current.Email})), NULL)"
+    },
+    {
+      processMetadataValues = {
+        name = "originalFormula"
+        value = {
+          stringValue = "ISCHANGED([Lead].Email) "
+        }
+      }
+      name = "formula_myRule_1"
+      dataType = "Boolean"
+      expression = "ISCHANGED({!myVariable_current.Email})"
+    },
+  ]
+  interviewLabel = "Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account-1_InterviewLabel"
+  label = "Save Lead's domain name (used to avoid duplicate lead-account)"
+  processMetadataValues = [
+    {
+      name = "ObjectType"
+      value = {
+        stringValue = "Lead"
+      }
+    },
+    {
+      name = "ObjectVariable"
+      value = {
+        elementReference = "myVariable_current"
+      }
+    },
+    {
+      name = "OldObjectVariable"
+      value = {
+        elementReference = "myVariable_old"
+      }
+    },
+    {
+      name = "TriggerType"
+      value = {
+        stringValue = "onAllChanges"
+      }
+    },
+  ]
+  processType = "Workflow"
+  recordUpdates = [
+    {
+      processMetadataValues = [
+        {
+          name = "evaluationType"
+          value = {
+            stringValue = "always"
+          }
+        },
+        {
+          name = "extraTypeInfo"
+        },
+        {
+          name = "isChildRelationship"
+          value = {
+            booleanValue = false
+          }
+        },
+        {
+          name = "reference"
+          value = {
+            stringValue = "[Lead]"
+          }
+        },
+        {
+          name = "referenceTargetField"
+        },
+      ]
+      name = "myRule_1_A1"
+      label = "Update lead's domain from email"
+      locationX = 100
+      locationY = 200
+      filterLogic = "and"
+      filters = [
+        {
+          processMetadataValues = [
+            {
+              name = "implicit"
+              value = {
+                booleanValue = true
+              }
+            },
+          ]
+          field = salesforce.Lead.field.Id
+          operator = "EqualTo"
+          value = {
+            elementReference = "myVariable_current.Id"
+          }
+        },
+      ]
+      inputAssignments = [
+        {
+          processMetadataValues = [
+            {
+              name = "dataType"
+              value = {
+                stringValue = "String"
+              }
+            },
+            {
+              name = "isRequired"
+              value = {
+                booleanValue = false
+              }
+            },
+            {
+              name = "leftHandSideLabel"
+              value = {
+                stringValue = "Domain"
+              }
+            },
+            {
+              name = "leftHandSideReferenceTo"
+            },
+            {
+              name = "rightHandSideType"
+              value = {
+                stringValue = "Formula"
+              }
+            },
+          ]
+          field = salesforce.Lead.field.Domain__c
+          value = {
+            elementReference = "formula_2_myRule_1_A1_4648613350"
+          }
+        },
+      ]
+      object = salesforce.Lead
+    },
+  ]
+  startElementReference = "myDecision"
+  status = "Active"
+  variables = [
+    {
+      name = "myVariable_current"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Lead
+    },
+    {
+      name = "myVariable_old"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Lead
+    },
+  ]
+}

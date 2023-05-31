@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__LineItemsContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "LineItemsContent"
+  fullName = "SBQQ__LineItemsContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__LineItemsContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

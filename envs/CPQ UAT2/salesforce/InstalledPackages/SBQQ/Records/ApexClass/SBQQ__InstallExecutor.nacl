@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__InstallExecutor {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__InstallExecutor"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__InstallExecutor.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

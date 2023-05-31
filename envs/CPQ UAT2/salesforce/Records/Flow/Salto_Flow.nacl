@@ -1,0 +1,57 @@
+salesforce.Flow Salto_Flow {
+  fullName = "Salto_Flow"
+  apiVersion = 56
+  description = "This is a brand new version"
+  environments = "Default"
+  interviewLabel = "Salto Flow {!$Flow.CurrentDateTime}"
+  label = "Salto Flow (version 2)"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordUpdates = [
+    {
+      name = "update_name"
+      label = "update name"
+      locationX = 176
+      locationY = 335
+      inputAssignments = [
+        {
+          field = "Name"
+          value = {
+            stringValue = "\"oppty name v2\""
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "update_name"
+    }
+    object = salesforce.Opportunity
+    recordTriggerType = "Create"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Active"
+}

@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__polymer1Page {
+  apiVersion = 57
+  label = "oldui"
+  fullName = "SBQQ__polymer1Page"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

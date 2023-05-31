@@ -1,0 +1,116 @@
+type salesforce.SBQQ__OrderItemConsumptionRate__c {
+  salesforce.LongTextArea SBQQ__Description__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__Description__c"
+    deprecated = false
+    externalId = false
+    label = "Description"
+    length = 32000
+    trackTrending = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__LowerBound__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__LowerBound__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The lowest quantity of usage for this consumption rate."
+    label = "Lower Bound"
+    precision = 9
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__OrderItemConsumptionSchedule__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__OrderItemConsumptionSchedule__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "This rate is a part of of this schedule."
+    label = "Order Product Consumption Schedule"
+    referenceTo = [
+      salesforce.SBQQ__OrderItemConsumptionSchedule__c,
+    ]
+    relationshipLabel = "Order Product Consumption Rates"
+    relationshipName = "OrderItemConsumptionRates"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Currency SBQQ__Price__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__Price__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The price for usage that falls within this consumption rate's bounds."
+    label = "Price"
+    precision = 18
+    _required = true
+    scale = 7
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__PricingMethod__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__PricingMethod__c"
+    deprecated = false
+    externalId = false
+    label = "Pricing Method"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "PerUnit"
+        default = false
+        label = "Per Unit"
+      },
+      {
+        fullName = "FlatFee"
+        default = false
+        label = "Flat Fee"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__ProcessingOrder__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__ProcessingOrder__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The order for processing the usage rate across multiple rates. Consumption Rates are evaluated beginning with the lowest processing order."
+    label = "Processing Order"
+    precision = 9
+    _required = true
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__UpperBound__c {
+    apiName = "SBQQ__OrderItemConsumptionRate__c.SBQQ__UpperBound__c"
+    deprecated = false
+    externalId = false
+    inlineHelpText = "The highest quantity of usage for this consumption rate."
+    label = "Upper Bound"
+    precision = 9
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

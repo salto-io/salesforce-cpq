@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__QuoteExtSitesController {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__QuoteExtSitesController"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__QuoteExtSitesController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

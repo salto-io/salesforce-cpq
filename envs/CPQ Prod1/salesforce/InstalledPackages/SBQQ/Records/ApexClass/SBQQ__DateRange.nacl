@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__DateRange {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__DateRange"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

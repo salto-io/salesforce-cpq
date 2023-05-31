@@ -1,0 +1,13 @@
+salesforce.ListView SBQQ__SearchIndex__c_SBQQ__All {
+  fullName = "SBQQ__SearchIndex__c.SBQQ__All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.SBQQ__SearchIndex__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

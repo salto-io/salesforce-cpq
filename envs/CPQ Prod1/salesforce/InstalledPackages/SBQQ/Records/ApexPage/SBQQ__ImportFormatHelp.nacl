@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ImportFormatHelp {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "ImportFormatHelp"
+  fullName = "SBQQ__ImportFormatHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ImportFormatHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

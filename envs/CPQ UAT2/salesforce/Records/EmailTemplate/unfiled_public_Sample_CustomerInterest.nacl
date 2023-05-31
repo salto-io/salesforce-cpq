@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_CustomerInterest@zcdu {
+  available = true
+  description = "Introduction email"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Customer Interest"
+  relatedEntityType = "Lead"
+  style = "none"
+  subject = "Thanks for your interest"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_CustomerInterest"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_CustomerInterest/Sample_CustomerInterest.email")
+}

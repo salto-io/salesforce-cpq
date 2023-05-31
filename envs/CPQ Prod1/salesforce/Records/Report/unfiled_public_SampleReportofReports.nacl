@@ -1,0 +1,50 @@
+salesforce.Report unfiled_public_SampleReportofReports@zcd {
+  columns = [
+    {
+      field = "SHORT_NAME"
+    },
+    {
+      field = "LONG_NAME"
+    },
+    {
+      field = "CREATED"
+    },
+    {
+      field = "FOLDER"
+    },
+    {
+      field = "LASTMODIFIED"
+    },
+    {
+      field = "LASTMODIFIEDDATE"
+    },
+    {
+      field = "LASTRUNDATE"
+    },
+  ]
+  description = "How many custom reports have we added to Salesforce?"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Month"
+      field = "CREATEDDATE"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "Sample Report: # of Reports"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "ReportList"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATEDDATE"
+    interval = "INTERVAL_CUSTOM"
+  }
+  fullName = "unfiled$public/SampleReportofReports"
+}

@@ -1,0 +1,92 @@
+type salesforce.SBQQ__FieldMetadata__c {
+  serviceid Id {
+    apiName = "SBQQ__FieldMetadata__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SBQQ__FieldMetadata__c.IsDeleted"
+    defaultValue = false
+    label = "Deleted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "SBQQ__FieldMetadata__c.Name"
+    length = 38
+    _required = true
+    label = "Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Lookup SetupOwnerId {
+    apiName = "SBQQ__FieldMetadata__c.SetupOwnerId"
+    relationshipName = "SetupOwner"
+    referenceTo = [
+      "Organization",
+      salesforce.Profile,
+      salesforce.User,
+    ]
+    label = "Location"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SBQQ__FieldMetadata__c.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SBQQ__FieldMetadata__c.CreatedById"
+    relationshipName = "CreatedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Created By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SBQQ__FieldMetadata__c.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SBQQ__FieldMetadata__c.LastModifiedById"
+    relationshipName = "LastModifiedBy"
+    referenceTo = [
+      salesforce.User,
+    ]
+    label = "Last Modified By ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SBQQ__FieldMetadata__c.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_GreatMeetingYou@zcdu {
+  available = true
+  description = "Requesting time to talk"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Great Meeting You"
+  relatedEntityType = "Contact"
+  style = "none"
+  subject = "Great Meeting You"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_GreatMeetingYou"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_GreatMeetingYou/Sample_GreatMeetingYou.email")
+}

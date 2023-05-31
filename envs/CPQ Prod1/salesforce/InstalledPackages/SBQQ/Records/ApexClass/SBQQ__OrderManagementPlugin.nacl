@@ -1,0 +1,11 @@
+salesforce.ApexClass SBQQ__OrderManagementPlugin {
+  apiVersion = 57
+  status = "Active"
+  fullName = "SBQQ__OrderManagementPlugin"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__OrderManagementPlugin.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

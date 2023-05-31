@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProcessInput__c_SBQQ__ProductFieldAndOperatorSet {
+  fullName = "SBQQ__ProcessInput__c.SBQQ__ProductFieldAndOperatorSet"
+  active = true
+  description = "If a Product Field is defined, an Operator must also be defined."
+  errorConditionFormula = "OR(AND(!ISBLANK(TEXT(SBQQ__ProductField__c)),(ISBLANK(TEXT(SBQQ__Operator__c)))),AND(ISBLANK(TEXT(SBQQ__ProductField__c)),(!ISBLANK(TEXT(SBQQ__Operator__c)))))"
+  errorMessage = "Both Product Field and Operator must be set if either are set."
+  _parent = [
+    salesforce.SBQQ__ProcessInput__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

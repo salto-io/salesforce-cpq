@@ -1,0 +1,42 @@
+salesforce.GlobalValueSet SBQQ__JobStatus {
+  fullName = "SBQQ__JobStatus"
+  customValue = [
+    {
+      fullName = "Not Started"
+      default = true
+      label = "Not Started"
+    },
+    {
+      fullName = "Not Needed"
+      default = false
+      label = "Not Needed"
+    },
+    {
+      fullName = "Queued"
+      default = false
+      label = "Queued"
+    },
+    {
+      fullName = "Aborted"
+      default = false
+      label = "Aborted"
+    },
+    {
+      fullName = "Failed"
+      default = false
+      label = "Failed"
+    },
+    {
+      fullName = "Completed"
+      default = false
+      label = "Completed"
+    },
+  ]
+  masterLabel = "Job Status"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

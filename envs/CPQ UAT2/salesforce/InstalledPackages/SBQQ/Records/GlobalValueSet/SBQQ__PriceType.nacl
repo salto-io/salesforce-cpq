@@ -1,0 +1,22 @@
+salesforce.GlobalValueSet SBQQ__PriceType {
+  fullName = "SBQQ__PriceType"
+  customValue = [
+    {
+      fullName = "Volume"
+      default = false
+      label = "Volume"
+    },
+    {
+      fullName = "Tiered"
+      default = false
+      label = "Tiered"
+    },
+  ]
+  masterLabel = "Price Type"
+  sorted = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

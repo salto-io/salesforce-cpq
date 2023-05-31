@@ -1,0 +1,3392 @@
+salesforce.Profile Read_Only@s {
+  classAccesses = {
+    AndAnotherNew = {
+      apexClass = salesforce.ApexClass.instance.AndAnotherNew
+      enabled = false
+    }
+    CodeCoverage = {
+      apexClass = salesforce.ApexClass.instance.CodeCoverage
+      enabled = false
+    }
+    MyPieceOfCode = {
+      apexClass = salesforce.ApexClass.instance.MyPieceOfCode
+      enabled = false
+    }
+    RelatedTest = {
+      apexClass = salesforce.ApexClass.instance.RelatedTest
+      enabled = false
+    }
+    SBQQ__APIable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__APIable
+      enabled = true
+    }
+    SBQQ__ARLGTestDataLoader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ARLGTestDataLoader
+      enabled = true
+    }
+    SBQQ__AbstractConsumptionRateDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractConsumptionRateDAO
+      enabled = true
+    }
+    SBQQ__AbstractConsumptionScheduleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractConsumptionScheduleDAO
+      enabled = true
+    }
+    SBQQ__AbstractDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractDAO
+      enabled = true
+    }
+    SBQQ__AbstractDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractDAOTest
+      enabled = true
+    }
+    SBQQ__AbstractPriceRuleEvaluator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractPriceRuleEvaluator
+      enabled = true
+    }
+    SBQQ__AbstractPriceRuleEvaluatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractPriceRuleEvaluatorTests
+      enabled = true
+    }
+    SBQQ__AbstractProductRuleValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractProductRuleValidator
+      enabled = true
+    }
+    SBQQ__AbstractReferencedFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractReferencedFieldGenerator
+      enabled = true
+    }
+    SBQQ__AbstractSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AbstractSearchModel
+      enabled = true
+    }
+    SBQQ__AccessTokenCacheService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccessTokenCacheService
+      enabled = true
+    }
+    SBQQ__AccountDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountDAO
+      enabled = true
+    }
+    SBQQ__AccountExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountExtController
+      enabled = true
+    }
+    SBQQ__AccountExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountExtControllerTests
+      enabled = true
+    }
+    SBQQ__AccountService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountService
+      enabled = true
+    }
+    SBQQ__AccountServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountServiceTests
+      enabled = true
+    }
+    SBQQ__AccountTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountTriggerTests
+      enabled = true
+    }
+    SBQQ__AccountVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountVO
+      enabled = true
+    }
+    SBQQ__AccountVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AccountVOTests
+      enabled = true
+    }
+    SBQQ__AdditionalDocumentsAfterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AdditionalDocumentsAfterTests
+      enabled = true
+    }
+    SBQQ__AliasedMetaDataUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AliasedMetaDataUtils
+      enabled = true
+    }
+    SBQQ__AliasedMetaDataUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AliasedMetaDataUtilsTests
+      enabled = true
+    }
+    SBQQ__AmendContractController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AmendContractController
+      enabled = true
+    }
+    SBQQ__AmendContractControllerTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AmendContractControllerTest
+      enabled = true
+    }
+    SBQQ__AmendmentCheckerExt = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AmendmentCheckerExt
+      enabled = false
+    }
+    SBQQ__AssetAndSubscriptionServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetAndSubscriptionServiceProvider
+      enabled = true
+    }
+    SBQQ__AssetDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetDAO
+      enabled = true
+    }
+    SBQQ__AssetDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetDAOTest
+      enabled = true
+    }
+    SBQQ__AssetLookupController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetLookupController
+      enabled = true
+    }
+    SBQQ__AssetLookupControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetLookupControllerTests
+      enabled = true
+    }
+    SBQQ__AssetLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetLookupServiceProvider
+      enabled = true
+    }
+    SBQQ__AssetQuantityValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetQuantityValidator
+      enabled = true
+    }
+    SBQQ__AssetSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetSearchModel
+      enabled = true
+    }
+    SBQQ__AssetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetService
+      enabled = true
+    }
+    SBQQ__AssetServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetServiceTests
+      enabled = true
+    }
+    SBQQ__AssetVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AssetVO
+      enabled = true
+    }
+    SBQQ__AsyncCalcTestServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AsyncCalcTestServiceProvider
+      enabled = false
+    }
+    SBQQ__AsyncQuoteLoadExtension = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AsyncQuoteLoadExtension
+      enabled = true
+    }
+    SBQQ__AttributeItem = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AttributeItem
+      enabled = true
+    }
+    SBQQ__AttributeItemTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AttributeItemTests
+      enabled = true
+    }
+    SBQQ__AttributeSetDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AttributeSetDAO
+      enabled = true
+    }
+    SBQQ__AttributeSetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AttributeSetService
+      enabled = true
+    }
+    SBQQ__AttributeSetServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AttributeSetServiceTests
+      enabled = true
+    }
+    SBQQ__AutoProvisionUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__AutoProvisionUtil
+      enabled = true
+    }
+    SBQQ__BatchLicenseReadinessCheck = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchLicenseReadinessCheck
+      enabled = true
+    }
+    SBQQ__BatchMigrateOrderQuantity = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchMigrateOrderQuantity
+      enabled = true
+    }
+    SBQQ__BatchOrderItemAssetContractSubs = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchOrderItemAssetContractSubs
+      enabled = true
+    }
+    SBQQ__BatchProcessPSLAssignments = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchProcessPSLAssignments
+      enabled = true
+    }
+    SBQQ__BatchableAssetPriceDimensionSetter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableAssetPriceDimensionSetter
+      enabled = true
+    }
+    SBQQ__BatchableAssetPriceDimensionSetterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableAssetPriceDimensionSetterTests
+      enabled = true
+    }
+    SBQQ__BatchableConfigAttrReferencedFieldTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableConfigAttrReferencedFieldTests
+      enabled = true
+    }
+    SBQQ__BatchableConfigAttrReferencedFieldUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableConfigAttrReferencedFieldUtil
+      enabled = true
+    }
+    SBQQ__BatchableDSExclusionGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableDSExclusionGenerator
+      enabled = true
+    }
+    SBQQ__BatchableDSExclusionGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableDSExclusionGeneratorTests
+      enabled = true
+    }
+    SBQQ__BatchablePluginTranspileUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchablePluginTranspileUtil
+      enabled = true
+    }
+    SBQQ__BatchableRootIdSetter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableRootIdSetter
+      enabled = true
+    }
+    SBQQ__BatchableRootIdSetterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BatchableRootIdSetterTests
+      enabled = true
+    }
+    SBQQ__BillingPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BillingPlugin
+      enabled = true
+    }
+    SBQQ__BillingUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BillingUtils
+      enabled = true
+    }
+    SBQQ__BinaryTree = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BinaryTree
+      enabled = true
+    }
+    SBQQ__BinaryTreeTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BinaryTreeTest
+      enabled = false
+    }
+    SBQQ__BlockPriceEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BlockPriceEditorController
+      enabled = true
+    }
+    SBQQ__BlockPriceEditorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BlockPriceEditorControllerTests
+      enabled = true
+    }
+    SBQQ__BlockPriceListModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BlockPriceListModel
+      enabled = true
+    }
+    SBQQ__BlockPriceListModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BlockPriceListModelTests
+      enabled = true
+    }
+    SBQQ__BlockPriceTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__BlockPriceTriggerControl
+      enabled = true
+    }
+    SBQQ__C2CBatchJob = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__C2CBatchJob
+      enabled = false
+    }
+    SBQQ__C2CUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__C2CUtil
+      enabled = false
+    }
+    SBQQ__C2CUtilTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__C2CUtilTests
+      enabled = false
+    }
+    SBQQ__CPQConstants = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CPQConstants
+      enabled = true
+    }
+    SBQQ__CSVFieldsParser = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CSVFieldsParser
+      enabled = true
+    }
+    SBQQ__CSVLinesParser = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CSVLinesParser
+      enabled = true
+    }
+    SBQQ__CSVParser = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CSVParser
+      enabled = true
+    }
+    SBQQ__CSVParserTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CSVParserTests
+      enabled = true
+    }
+    SBQQ__CalculateCallback = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculateCallback
+      enabled = true
+    }
+    SBQQ__CalculateCallbackAdapter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculateCallbackAdapter
+      enabled = true
+    }
+    SBQQ__CalculateCallbackAdapterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculateCallbackAdapterTests
+      enabled = true
+    }
+    SBQQ__CalculatorReferencedFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculatorReferencedFieldGenerator
+      enabled = true
+    }
+    SBQQ__CalculatorReferencedFieldGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculatorReferencedFieldGeneratorTests
+      enabled = true
+    }
+    SBQQ__CalculatorReferencedFieldRemover = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculatorReferencedFieldRemover
+      enabled = true
+    }
+    SBQQ__CalculatorServiceFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CalculatorServiceFactory
+      enabled = true
+    }
+    SBQQ__ChainedBatchable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChainedBatchable
+      enabled = true
+    }
+    SBQQ__ChainedDummy = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChainedDummy
+      enabled = true
+    }
+    SBQQ__ChainedJob = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChainedJob
+      enabled = true
+    }
+    SBQQ__ChainedQueueable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChainedQueueable
+      enabled = true
+    }
+    SBQQ__ChatterUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChatterUtils
+      enabled = true
+    }
+    SBQQ__ChatterUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ChatterUtilsTests
+      enabled = false
+    }
+    SBQQ__CollectionUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CollectionUtils
+      enabled = true
+    }
+    SBQQ__CollectionUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CollectionUtilsTests
+      enabled = true
+    }
+    SBQQ__ColumnMetadataBeforeTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnMetadataBeforeTest
+      enabled = true
+    }
+    SBQQ__ColumnSizingClientModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingClientModel
+      enabled = true
+    }
+    SBQQ__ColumnSizingClientModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingClientModelTests
+      enabled = true
+    }
+    SBQQ__ColumnSizingDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingDAO
+      enabled = true
+    }
+    SBQQ__ColumnSizingDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingDAOTest
+      enabled = true
+    }
+    SBQQ__ColumnSizingServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingServiceProvider
+      enabled = true
+    }
+    SBQQ__ColumnSizingServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ColumnSizingServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ComparableTransactionRate = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ComparableTransactionRate
+      enabled = true
+    }
+    SBQQ__Comparator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Comparator
+      enabled = true
+    }
+    SBQQ__CompleteBundleUpgradeTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CompleteBundleUpgradeTests
+      enabled = true
+    }
+    SBQQ__ConfigAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigAPI
+      enabled = true
+    }
+    SBQQ__ConfigAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigAPITests
+      enabled = true
+    }
+    SBQQ__ConfigAttribute = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigAttribute
+      enabled = true
+    }
+    SBQQ__ConfigurationAttributeMapper = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationAttributeMapper
+      enabled = true
+    }
+    SBQQ__ConfigurationAttributeMapperTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationAttributeMapperTests
+      enabled = true
+    }
+    SBQQ__ConfigurationAttributeTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationAttributeTests
+      enabled = true
+    }
+    SBQQ__ConfigurationItem = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationItem
+      enabled = true
+    }
+    SBQQ__ConfigurationProductOption = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationProductOption
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleAlert = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleAlert
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleDAO
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleDAOTests
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleExecutor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleExecutor
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleExecutorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleExecutorTests
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleValidator
+      enabled = true
+    }
+    SBQQ__ConfigurationRuleValidatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRuleValidatorTests
+      enabled = true
+    }
+    SBQQ__ConfigurationRules = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRules
+      enabled = true
+    }
+    SBQQ__ConfigurationRulesTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationRulesTests
+      enabled = true
+    }
+    SBQQ__ConfigurationSummaryController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationSummaryController
+      enabled = true
+    }
+    SBQQ__ConfigurationSummaryControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfigurationSummaryControllerTests
+      enabled = true
+    }
+    SBQQ__ConfiguratorSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConfiguratorSearchModel
+      enabled = true
+    }
+    SBQQ__ConsumptionClientModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionClientModel
+      enabled = true
+    }
+    SBQQ__ConsumptionClientModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionClientModelTests
+      enabled = true
+    }
+    SBQQ__ConsumptionJunction = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunction
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunctionFactory
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionFactoryTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunctionFactoryTests
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionImpl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunctionImpl
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunctionUtil
+      enabled = true
+    }
+    SBQQ__ConsumptionJunctionUtilTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionJunctionUtilTests
+      enabled = true
+    }
+    SBQQ__ConsumptionRateDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionRateDAO
+      enabled = true
+    }
+    SBQQ__ConsumptionRateDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionRateDAOTests
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleAndRateTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionScheduleAndRateTrigger
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionScheduleDAO
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionScheduleDAOTests
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionScheduleTrigger
+      enabled = true
+    }
+    SBQQ__ConsumptionScheduleTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionScheduleTriggerTests
+      enabled = true
+    }
+    SBQQ__ConsumptionService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionService
+      enabled = true
+    }
+    SBQQ__ConsumptionServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionServiceProvider
+      enabled = true
+    }
+    SBQQ__ConsumptionServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ConsumptionServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionServiceTests
+      enabled = true
+    }
+    SBQQ__ConsumptionTransactionManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionTransactionManager
+      enabled = true
+    }
+    SBQQ__ConsumptionTransactionManagerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionTransactionManagerTests
+      enabled = true
+    }
+    SBQQ__ConsumptionTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ConsumptionTriggerControl
+      enabled = true
+    }
+    SBQQ__ContractAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractAPI
+      enabled = true
+    }
+    SBQQ__ContractAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractAPITests
+      enabled = true
+    }
+    SBQQ__ContractCreationTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractCreationTests
+      enabled = true
+    }
+    SBQQ__ContractDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractDAO
+      enabled = true
+    }
+    SBQQ__ContractExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractExtController
+      enabled = true
+    }
+    SBQQ__ContractExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractExtControllerTests
+      enabled = true
+    }
+    SBQQ__ContractLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractLookupServiceProvider
+      enabled = true
+    }
+    SBQQ__ContractLookupServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractLookupServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ContractManipulationAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractManipulationAPI
+      enabled = true
+    }
+    SBQQ__ContractOrderService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractOrderService
+      enabled = true
+    }
+    SBQQ__ContractOrdersResult = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractOrdersResult
+      enabled = true
+    }
+    SBQQ__ContractSelectorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractSelectorController
+      enabled = true
+    }
+    SBQQ__ContractSelectorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractSelectorControllerTests
+      enabled = true
+    }
+    SBQQ__ContractService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractService
+      enabled = true
+    }
+    SBQQ__ContractServiceAmendRenewTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractServiceAmendRenewTests
+      enabled = true
+    }
+    SBQQ__ContractServiceOWDTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractServiceOWDTests
+      enabled = false
+    }
+    SBQQ__ContractServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractServiceProvider
+      enabled = true
+    }
+    SBQQ__ContractServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractServiceTests
+      enabled = true
+    }
+    SBQQ__ContractVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractVO
+      enabled = true
+    }
+    SBQQ__ContractedPriceDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceDAO
+      enabled = true
+    }
+    SBQQ__ContractedPriceDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceDAOTest
+      enabled = true
+    }
+    SBQQ__ContractedPriceModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceModel
+      enabled = true
+    }
+    SBQQ__ContractedPriceService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceService
+      enabled = true
+    }
+    SBQQ__ContractedPriceServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceServiceTests
+      enabled = true
+    }
+    SBQQ__ContractedPriceVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ContractedPriceVO
+      enabled = true
+    }
+    SBQQ__CustomActionConditionTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionConditionTrigger
+      enabled = true
+    }
+    SBQQ__CustomActionDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionDAO
+      enabled = true
+    }
+    SBQQ__CustomActionDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionDAOTests
+      enabled = true
+    }
+    SBQQ__CustomActionDefinitions = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionDefinitions
+      enabled = true
+    }
+    SBQQ__CustomActionRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__CustomActionTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomActionTriggerTests
+      enabled = true
+    }
+    SBQQ__CustomLookupController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomLookupController
+      enabled = true
+    }
+    SBQQ__CustomLookupControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomLookupControllerTests
+      enabled = true
+    }
+    SBQQ__CustomScriptTranspileClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomScriptTranspileClient
+      enabled = true
+    }
+    SBQQ__CustomScriptTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomScriptTrigger
+      enabled = true
+    }
+    SBQQ__CustomScriptTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__CustomScriptTriggerTests
+      enabled = true
+    }
+    SBQQ__DAOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DAOFactory
+      enabled = true
+    }
+    SBQQ__DataChangeTrackerServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DataChangeTrackerServiceProvider
+      enabled = true
+    }
+    SBQQ__DatabaseService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DatabaseService
+      enabled = false
+    }
+    SBQQ__DateRange = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DateRange
+      enabled = true
+    }
+    SBQQ__DateUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DateUtils
+      enabled = true
+    }
+    SBQQ__DateUtilsTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DateUtilsTest
+      enabled = true
+    }
+    SBQQ__DefaultDatabase = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DefaultDatabase
+      enabled = true
+    }
+    SBQQ__DefaultElectronicSignaturePlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DefaultElectronicSignaturePlugin
+      enabled = true
+    }
+    SBQQ__DefaultFieldSetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DefaultFieldSetService
+      enabled = true
+    }
+    SBQQ__DefaultPageSecurityPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DefaultPageSecurityPlugin
+      enabled = true
+    }
+    SBQQ__DimensionDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DimensionDAO
+      enabled = true
+    }
+    SBQQ__DimensionDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DimensionDAOTest
+      enabled = true
+    }
+    SBQQ__DimensionService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DimensionService
+      enabled = true
+    }
+    SBQQ__DimensionServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DimensionServiceTests
+      enabled = true
+    }
+    SBQQ__DirectionalTree = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DirectionalTree
+      enabled = true
+    }
+    SBQQ__DiscountAndAccountCallout = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountAndAccountCallout
+      enabled = true
+    }
+    SBQQ__DiscountAndAccountCalloutTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountAndAccountCalloutTests
+      enabled = false
+    }
+    SBQQ__DiscountSchedule = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountSchedule
+      enabled = true
+    }
+    SBQQ__DiscountScheduleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleDAO
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExclusionGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleExclusionGenerator
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExclusionGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleExclusionGeneratorTests
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleExtController
+      enabled = true
+    }
+    SBQQ__DiscountScheduleExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleExtControllerTests
+      enabled = true
+    }
+    SBQQ__DiscountScheduleModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleModel
+      enabled = true
+    }
+    SBQQ__DiscountScheduleModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleModelTests
+      enabled = true
+    }
+    SBQQ__DiscountScheduleRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__DiscountScheduleService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleService
+      enabled = true
+    }
+    SBQQ__DiscountScheduleServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleServiceProvider
+      enabled = true
+    }
+    SBQQ__DiscountScheduleTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountScheduleTrigger
+      enabled = true
+    }
+    SBQQ__DiscountTierEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountTierEditorController
+      enabled = true
+    }
+    SBQQ__DiscountTierEditorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountTierEditorControllerTests
+      enabled = true
+    }
+    SBQQ__DiscountTierListModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountTierListModel
+      enabled = true
+    }
+    SBQQ__DiscountTierTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DiscountTierTriggerControl
+      enabled = true
+    }
+    SBQQ__DocumentGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentGenerator
+      enabled = true
+    }
+    SBQQ__DocumentGeneratorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentGeneratorController
+      enabled = true
+    }
+    SBQQ__DocumentGeneratorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentGeneratorControllerTests
+      enabled = true
+    }
+    SBQQ__DocumentSegment = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentSegment
+      enabled = true
+    }
+    SBQQ__DocumentStorePlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentStorePlugin
+      enabled = true
+    }
+    SBQQ__DocumentStorePlugin2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__DocumentStorePlugin2
+      enabled = true
+    }
+    SBQQ__ElectronicDocumentProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ElectronicDocumentProcessor
+      enabled = true
+    }
+    SBQQ__ElectronicDocumentProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ElectronicDocumentProcessorTests
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ElectronicSignaturePlugin
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ElectronicSignaturePlugin2
+      enabled = true
+    }
+    SBQQ__ElectronicSignaturePlugin3 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ElectronicSignaturePlugin3
+      enabled = true
+    }
+    SBQQ__ErrorConditionDependencyGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ErrorConditionDependencyGenerator
+      enabled = true
+    }
+    SBQQ__ErrorConditionDependencyGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ErrorConditionDependencyGeneratorTests
+      enabled = true
+    }
+    SBQQ__ErrorConditionDependencyServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ErrorConditionDependencyServiceProvider
+      enabled = true
+    }
+    SBQQ__ErrorConditionTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ErrorConditionTrigger
+      enabled = true
+    }
+    SBQQ__EvergreenBillingValidationTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__EvergreenBillingValidationTests
+      enabled = true
+    }
+    SBQQ__FMAParamUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FMAParamUtil
+      enabled = false
+    }
+    SBQQ__FavoriteDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteDAO
+      enabled = true
+    }
+    SBQQ__FavoriteDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteDAOTests
+      enabled = true
+    }
+    SBQQ__FavoriteLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteLookupServiceProvider
+      enabled = true
+    }
+    SBQQ__FavoriteLookupServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteLookupServiceProviderTests
+      enabled = true
+    }
+    SBQQ__FavoriteSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteSearchModel
+      enabled = true
+    }
+    SBQQ__FavoriteService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteService
+      enabled = true
+    }
+    SBQQ__FavoriteServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteServiceTests
+      enabled = true
+    }
+    SBQQ__FavoriteVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoriteVO
+      enabled = true
+    }
+    SBQQ__FavoritesManagerController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoritesManagerController
+      enabled = true
+    }
+    SBQQ__FavoritesManagerControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FavoritesManagerControllerTests
+      enabled = true
+    }
+    SBQQ__FieldDescriptor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldDescriptor
+      enabled = true
+    }
+    SBQQ__FieldDescriptorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldDescriptorTests
+      enabled = true
+    }
+    SBQQ__FieldMapper = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldMapper
+      enabled = true
+    }
+    SBQQ__FieldMetaData = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldMetaData
+      enabled = true
+    }
+    SBQQ__FieldSetMetadataDefaultBeforeTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldSetMetadataDefaultBeforeTest
+      enabled = true
+    }
+    SBQQ__FieldSetSecure = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldSetSecure
+      enabled = true
+    }
+    SBQQ__FieldSetSecureTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldSetSecureTests
+      enabled = true
+    }
+    SBQQ__FieldSetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldSetService
+      enabled = true
+    }
+    SBQQ__FieldSetServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldSetServiceProvider
+      enabled = true
+    }
+    SBQQ__FieldValueUpdater = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FieldValueUpdater
+      enabled = true
+    }
+    SBQQ__FormulaFieldUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FormulaFieldUtils
+      enabled = true
+    }
+    SBQQ__FormulaFieldUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__FormulaFieldUtilsTests
+      enabled = true
+    }
+    SBQQ__HttpRequestAsserter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__HttpRequestAsserter
+      enabled = true
+    }
+    SBQQ__ICalculateCallback = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ICalculateCallback
+      enabled = true
+    }
+    SBQQ__ICalculatorService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ICalculatorService
+      enabled = true
+    }
+    SBQQ__IDGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__IDGenerator
+      enabled = true
+    }
+    SBQQ__IQuoteCalculator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__IQuoteCalculator
+      enabled = true
+    }
+    SBQQ__IQuoteSaver = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__IQuoteSaver
+      enabled = true
+    }
+    SBQQ__IRestClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__IRestClient
+      enabled = true
+    }
+    SBQQ__ImportColumnDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportColumnDAO
+      enabled = true
+    }
+    SBQQ__ImportColumnVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportColumnVO
+      enabled = true
+    }
+    SBQQ__ImportFormatDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportFormatDAO
+      enabled = true
+    }
+    SBQQ__ImportFormatDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportFormatDAOTests
+      enabled = false
+    }
+    SBQQ__ImportFormatVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportFormatVO
+      enabled = true
+    }
+    SBQQ__ImportLinesController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportLinesController
+      enabled = true
+    }
+    SBQQ__ImportLinesControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportLinesControllerTests
+      enabled = true
+    }
+    SBQQ__ImportLinesHandler = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportLinesHandler
+      enabled = true
+    }
+    SBQQ__ImportLinesHandlerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ImportLinesHandlerTests
+      enabled = true
+    }
+    SBQQ__InstallExecutor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallExecutor
+      enabled = true
+    }
+    SBQQ__InstallProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessor
+      enabled = true
+    }
+    SBQQ__InstallProcessorAssignPS = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorAssignPS
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchAssetCombineKey = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchAssetCombineKey
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchHasCS = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchHasCS
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchHasCSTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchHasCSTests
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchLocalizationIndex = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchLocalizationIndex
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOIPricingMethod = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOIPricingMethod
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOpportunity2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOpportunity2
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOrderItemBundleRoot = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOrderItemBundleRoot
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOrderItemFields = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOrderItemFields
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOrderItemListPrice = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOrderItemListPrice
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchOrderItemMultiplier = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchOrderItemMultiplier
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchQLIPriceBookEntry = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchQLIPriceBookEntry
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchQuantityEditable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchQuantityEditable
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchRegularPrice = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchRegularPrice
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchRequiredByAsset = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchRequiredByAsset
+      enabled = true
+    }
+    SBQQ__InstallProcessorBatchThemeGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorBatchThemeGenerator
+      enabled = true
+    }
+    SBQQ__InstallProcessorLogDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorLogDAO
+      enabled = true
+    }
+    SBQQ__InstallProcessorOrderItemUpdates = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorOrderItemUpdates
+      enabled = true
+    }
+    SBQQ__InstallProcessorQueueable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorQueueable
+      enabled = true
+    }
+    SBQQ__InstallProcessorRefFieldGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorRefFieldGeneratorTests
+      enabled = true
+    }
+    SBQQ__InstallProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__InstallProcessorTests
+      enabled = true
+    }
+    SBQQ__JSAGClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSAGClient
+      enabled = true
+    }
+    SBQQ__JSAGClientTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSAGClientTests
+      enabled = true
+    }
+    SBQQ__JSAGSerializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSAGSerializer
+      enabled = true
+    }
+    SBQQ__JSARSettings = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSARSettings
+      enabled = true
+    }
+    SBQQ__JSONTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSONTests
+      enabled = true
+    }
+    SBQQ__JSONUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSONUtils
+      enabled = true
+    }
+    SBQQ__JSQCClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCClient
+      enabled = true
+    }
+    SBQQ__JSQCClientTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCClientTests
+      enabled = true
+    }
+    SBQQ__JSQCCustomerLogService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCCustomerLogService
+      enabled = true
+    }
+    SBQQ__JSQCLookupFieldServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCLookupFieldServiceProvider
+      enabled = true
+    }
+    SBQQ__JSQCLookupFieldServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCLookupFieldServiceProviderTests
+      enabled = true
+    }
+    SBQQ__JSQCModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCModel
+      enabled = true
+    }
+    SBQQ__JSQCModelService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCModelService
+      enabled = true
+    }
+    SBQQ__JSQCQuoteSerializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCQuoteSerializer
+      enabled = true
+    }
+    SBQQ__JSQCSerializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCSerializer
+      enabled = true
+    }
+    SBQQ__JSQCSettingsSerializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSQCSettingsSerializer
+      enabled = true
+    }
+    SBQQ__JSRGClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSRGClient
+      enabled = true
+    }
+    SBQQ__JSRGClientTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JSRGClientTests
+      enabled = true
+    }
+    SBQQ__JobCheckerServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JobCheckerServiceProvider
+      enabled = true
+    }
+    SBQQ__JobCheckerServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JobCheckerServiceProviderTests
+      enabled = true
+    }
+    SBQQ__JobRecorder = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JobRecorder
+      enabled = true
+    }
+    SBQQ__JobRecorderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JobRecorderTests
+      enabled = true
+    }
+    SBQQ__JsarTestDataLoaderTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__JsarTestDataLoaderTest
+      enabled = false
+    }
+    SBQQ__LegacyUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LegacyUtils
+      enabled = true
+    }
+    SBQQ__LicenseCheckerExt = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LicenseCheckerExt
+      enabled = true
+    }
+    SBQQ__LineColumnTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LineColumnTriggerTests
+      enabled = true
+    }
+    SBQQ__LineEditorLookupCallout = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LineEditorLookupCallout
+      enabled = true
+    }
+    SBQQ__LineItemsComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LineItemsComponentController
+      enabled = true
+    }
+    SBQQ__LineItemsComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LineItemsComponentControllerTests
+      enabled = true
+    }
+    SBQQ__ListModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ListModel
+      enabled = true
+    }
+    SBQQ__ListModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ListModelTests
+      enabled = true
+    }
+    SBQQ__LocalizationController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationController
+      enabled = true
+    }
+    SBQQ__LocalizationControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationControllerTests
+      enabled = true
+    }
+    SBQQ__LocalizationDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationDAO
+      enabled = true
+    }
+    SBQQ__LocalizationDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationDAOTests
+      enabled = true
+    }
+    SBQQ__LocalizationFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationFactory
+      enabled = true
+    }
+    SBQQ__LocalizationFactoryTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationFactoryTests
+      enabled = true
+    }
+    SBQQ__LocalizationIndexSearcher = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationIndexSearcher
+      enabled = true
+    }
+    SBQQ__LocalizationIndexTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationIndexTests
+      enabled = true
+    }
+    SBQQ__LocalizationVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationVO
+      enabled = true
+    }
+    SBQQ__LocalizationVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LocalizationVOTests
+      enabled = true
+    }
+    SBQQ__LookupQueryTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LookupQueryTrigger
+      enabled = true
+    }
+    SBQQ__LookupTableCallout = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LookupTableCallout
+      enabled = true
+    }
+    SBQQ__LookupTableCalloutTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LookupTableCalloutTests
+      enabled = true
+    }
+    SBQQ__LookupTableServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LookupTableServiceProvider
+      enabled = true
+    }
+    SBQQ__LookupTableServiceProviderTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__LookupTableServiceProviderTest
+      enabled = false
+    }
+    SBQQ__MappingUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MappingUtils
+      enabled = true
+    }
+    SBQQ__MappingUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MappingUtilsTests
+      enabled = true
+    }
+    SBQQ__MassQuoteDocumentSender = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MassQuoteDocumentSender
+      enabled = true
+    }
+    SBQQ__MassQuoteDocumentSenderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MassQuoteDocumentSenderTests
+      enabled = true
+    }
+    SBQQ__MergeFieldProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MergeFieldProcessor
+      enabled = true
+    }
+    SBQQ__MergeFieldProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MergeFieldProcessorTests
+      enabled = true
+    }
+    SBQQ__MetaDataConverter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataConverter
+      enabled = true
+    }
+    SBQQ__MetaDataConverterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataConverterTests
+      enabled = true
+    }
+    SBQQ__MetaDataServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataServiceProvider
+      enabled = true
+    }
+    SBQQ__MetaDataServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataServiceProviderTests
+      enabled = true
+    }
+    SBQQ__MetaDataUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataUtils
+      enabled = true
+    }
+    SBQQ__MetaDataUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetaDataUtilsTests
+      enabled = true
+    }
+    SBQQ__MetricsService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetricsService
+      enabled = true
+    }
+    SBQQ__MetricsServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MetricsServiceTests
+      enabled = true
+    }
+    SBQQ__MockDatabase = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MockDatabase
+      enabled = false
+    }
+    SBQQ__MockExceptionProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MockExceptionProvider
+      enabled = true
+    }
+    SBQQ__MockFieldSetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MockFieldSetService
+      enabled = true
+    }
+    SBQQ__MultiLineTextComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MultiLineTextComponentController
+      enabled = true
+    }
+    SBQQ__MultiLineTextComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__MultiLineTextComponentControllerTests
+      enabled = true
+    }
+    SBQQ__NamespaceUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__NamespaceUtils
+      enabled = true
+    }
+    SBQQ__OAuthClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthClient
+      enabled = true
+    }
+    SBQQ__OAuthClientTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthClientTests
+      enabled = true
+    }
+    SBQQ__OAuthExtension = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthExtension
+      enabled = true
+    }
+    SBQQ__OAuthService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthService
+      enabled = true
+    }
+    SBQQ__OAuthServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthServiceTests
+      enabled = true
+    }
+    SBQQ__OAuthSettings = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OAuthSettings
+      enabled = true
+    }
+    SBQQ__OLITestDataLoader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OLITestDataLoader
+      enabled = true
+    }
+    SBQQ__OWDService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OWDService
+      enabled = false
+    }
+    SBQQ__OWDServiceTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OWDServiceTest
+      enabled = false
+    }
+    SBQQ__ObjectDescriptor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ObjectDescriptor
+      enabled = true
+    }
+    SBQQ__ObjectDescriptorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ObjectDescriptorTests
+      enabled = true
+    }
+    SBQQ__ObjectManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ObjectManager
+      enabled = true
+    }
+    SBQQ__Operators = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Operators
+      enabled = true
+    }
+    SBQQ__OperatorsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OperatorsTests
+      enabled = true
+    }
+    SBQQ__OpportunityLineItemDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityLineItemDAO
+      enabled = true
+    }
+    SBQQ__OpportunityLineItemDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityLineItemDAOTest
+      enabled = true
+    }
+    SBQQ__OpportunityLineItemTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityLineItemTriggerControl
+      enabled = true
+    }
+    SBQQ__OpportunityService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityService
+      enabled = true
+    }
+    SBQQ__OpportunityServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityServiceProvider
+      enabled = true
+    }
+    SBQQ__OpportunityServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OpportunityServiceTests
+      enabled = true
+    }
+    SBQQ__OptionConstraintTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OptionConstraintTests
+      enabled = true
+    }
+    SBQQ__OrderBundleTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderBundleTest
+      enabled = true
+    }
+    SBQQ__OrderCRUDTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderCRUDTest
+      enabled = true
+    }
+    SBQQ__OrderConstants = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderConstants
+      enabled = true
+    }
+    SBQQ__OrderContractTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderContractTest
+      enabled = true
+    }
+    SBQQ__OrderController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderController
+      enabled = true
+    }
+    SBQQ__OrderControllerTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderControllerTest
+      enabled = true
+    }
+    SBQQ__OrderCreateController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderCreateController
+      enabled = true
+    }
+    SBQQ__OrderCreateControllerTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderCreateControllerTest
+      enabled = true
+    }
+    SBQQ__OrderDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderDAO
+      enabled = true
+    }
+    SBQQ__OrderDateTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderDateTest
+      enabled = true
+    }
+    SBQQ__OrderDateUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderDateUtils
+      enabled = true
+    }
+    SBQQ__OrderEndToEndTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderEndToEndTest
+      enabled = true
+    }
+    SBQQ__OrderEvergreenTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderEvergreenTest
+      enabled = true
+    }
+    SBQQ__OrderException = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderException
+      enabled = true
+    }
+    SBQQ__OrderFieldMapper = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderFieldMapper
+      enabled = true
+    }
+    SBQQ__OrderFieldMappingTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderFieldMappingTest
+      enabled = true
+    }
+    SBQQ__OrderGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderGenerator
+      enabled = true
+    }
+    SBQQ__OrderItemConsumptionImpl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderItemConsumptionImpl
+      enabled = true
+    }
+    SBQQ__OrderItemConsumptionImplTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderItemConsumptionImplTests
+      enabled = true
+    }
+    SBQQ__OrderItemObjectManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderItemObjectManager
+      enabled = true
+    }
+    SBQQ__OrderItemVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderItemVO
+      enabled = true
+    }
+    SBQQ__OrderMDQTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderMDQTest
+      enabled = true
+    }
+    SBQQ__OrderManagementPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderManagementPlugin
+      enabled = true
+    }
+    SBQQ__OrderMiscTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderMiscTest
+      enabled = true
+    }
+    SBQQ__OrderObjectManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderObjectManager
+      enabled = true
+    }
+    SBQQ__OrderPercentOfTotalTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderPercentOfTotalTest
+      enabled = true
+    }
+    SBQQ__OrderPriceCalculatorService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderPriceCalculatorService
+      enabled = true
+    }
+    SBQQ__OrderPriceCalculatorServiceTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderPriceCalculatorServiceTest
+      enabled = true
+    }
+    SBQQ__OrderPriceScheduleTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderPriceScheduleTest
+      enabled = true
+    }
+    SBQQ__OrderPriceScheduleUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderPriceScheduleUtils
+      enabled = true
+    }
+    SBQQ__OrderProductConsumptionScheduleTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderProductConsumptionScheduleTests
+      enabled = true
+    }
+    SBQQ__OrderProductDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderProductDAO
+      enabled = true
+    }
+    SBQQ__OrderProductObjectManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderProductObjectManager
+      enabled = true
+    }
+    SBQQ__OrderService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderService
+      enabled = true
+    }
+    SBQQ__OrderStateAndCountryPicklistTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderStateAndCountryPicklistTest
+      enabled = false
+    }
+    SBQQ__OrderTestBase = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderTestBase
+      enabled = true
+    }
+    SBQQ__OrderTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderTriggerControl
+      enabled = true
+    }
+    SBQQ__OrderUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderUtils
+      enabled = true
+    }
+    SBQQ__OrderUtilsWithoutSharing = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderUtilsWithoutSharing
+      enabled = true
+    }
+    SBQQ__OrderVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__OrderVO
+      enabled = true
+    }
+    SBQQ__PageActionController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PageActionController
+      enabled = true
+    }
+    SBQQ__PageSecurityPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PageSecurityPlugin
+      enabled = true
+    }
+    SBQQ__PageSecurityPlugin2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PageSecurityPlugin2
+      enabled = true
+    }
+    SBQQ__PaginationContainers = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PaginationContainers
+      enabled = true
+    }
+    SBQQ__PartnerCloneService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PartnerCloneService
+      enabled = true
+    }
+    SBQQ__PauseApexUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PauseApexUtils
+      enabled = true
+    }
+    SBQQ__PauseApexUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PauseApexUtilsTests
+      enabled = true
+    }
+    SBQQ__PermissionSetsProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PermissionSetsProcessor
+      enabled = true
+    }
+    SBQQ__PermissionSetsService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PermissionSetsService
+      enabled = true
+    }
+    SBQQ__PermissionUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PermissionUtil
+      enabled = true
+    }
+    SBQQ__PicklistValuesOptionModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PicklistValuesOptionModel
+      enabled = true
+    }
+    SBQQ__PicklistValuesOptionModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PicklistValuesOptionModelTests
+      enabled = true
+    }
+    SBQQ__PluginManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PluginManager
+      enabled = true
+    }
+    SBQQ__PluginManagerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PluginManagerTests
+      enabled = true
+    }
+    SBQQ__PrepopulateQuoteService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PrepopulateQuoteService
+      enabled = true
+    }
+    SBQQ__PriceActionBeforeTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceActionBeforeTriggerTests
+      enabled = true
+    }
+    SBQQ__PriceActionTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceActionTrigger
+      enabled = true
+    }
+    SBQQ__PriceConditionTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceConditionTrigger
+      enabled = true
+    }
+    SBQQ__PriceRuleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleDAO
+      enabled = true
+    }
+    SBQQ__PriceRuleDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleDAOTests
+      enabled = true
+    }
+    SBQQ__PriceRuleExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleExtController
+      enabled = true
+    }
+    SBQQ__PriceRuleExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleExtControllerTests
+      enabled = true
+    }
+    SBQQ__PriceRuleRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__PriceRuleServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleServiceProvider
+      enabled = true
+    }
+    SBQQ__PriceRuleTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleTrigger
+      enabled = true
+    }
+    SBQQ__PriceRuleTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceRuleTriggerTests
+      enabled = true
+    }
+    SBQQ__PriceSchedule = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceSchedule
+      enabled = true
+    }
+    SBQQ__PriceTier = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PriceTier
+      enabled = true
+    }
+    SBQQ__PricebookEntryDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricebookEntryDAO
+      enabled = true
+    }
+    SBQQ__PricebookEntryDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricebookEntryDAOTests
+      enabled = true
+    }
+    SBQQ__PricingGuidanceDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceDAO
+      enabled = true
+    }
+    SBQQ__PricingGuidanceDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceDAOTests
+      enabled = true
+    }
+    SBQQ__PricingGuidanceModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceModel
+      enabled = true
+    }
+    SBQQ__PricingGuidanceModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceModelTests
+      enabled = true
+    }
+    SBQQ__PricingGuidanceService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceService
+      enabled = true
+    }
+    SBQQ__PricingGuidanceServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceServiceProvider
+      enabled = true
+    }
+    SBQQ__PricingGuidanceServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceServiceProviderTests
+      enabled = true
+    }
+    SBQQ__PricingGuidanceServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceServiceTests
+      enabled = true
+    }
+    SBQQ__PricingGuidanceTierModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceTierModel
+      enabled = true
+    }
+    SBQQ__PricingGuidanceTierModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PricingGuidanceTierModelTests
+      enabled = true
+    }
+    SBQQ__ProcessInputInitializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProcessInputInitializer
+      enabled = true
+    }
+    SBQQ__ProcessInputTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProcessInputTriggerTests
+      enabled = true
+    }
+    SBQQ__ProcessInputValueDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProcessInputValueDAO
+      enabled = true
+    }
+    SBQQ__ProcessInputValueDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProcessInputValueDAOTest
+      enabled = false
+    }
+    SBQQ__ProcessTestServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProcessTestServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductAPI
+      enabled = true
+    }
+    SBQQ__ProductAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductAPITests
+      enabled = true
+    }
+    SBQQ__ProductActionTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductActionTrigger
+      enabled = true
+    }
+    SBQQ__ProductAttributeDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductAttributeDAO
+      enabled = true
+    }
+    SBQQ__ProductAttributeDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductAttributeDAOTests
+      enabled = true
+    }
+    SBQQ__ProductBundleTestUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductBundleTestUtil
+      enabled = true
+    }
+    SBQQ__ProductConfigurationController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationController
+      enabled = true
+    }
+    SBQQ__ProductConfigurationControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationControllerTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationInitializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationInitializer
+      enabled = true
+    }
+    SBQQ__ProductConfigurationInitializerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationInitializerTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationLoader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationLoader
+      enabled = true
+    }
+    SBQQ__ProductConfigurationLoaderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationLoaderTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationService
+      enabled = true
+    }
+    SBQQ__ProductConfigurationServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductConfigurationServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationServiceTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationSitesController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationSitesController
+      enabled = true
+    }
+    SBQQ__ProductConfigurationSitesControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationSitesControllerTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationVO
+      enabled = true
+    }
+    SBQQ__ProductConfigurationVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationVOTests
+      enabled = true
+    }
+    SBQQ__ProductConfigurationValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConfigurationValidator
+      enabled = true
+    }
+    SBQQ__ProductConsumptionImpl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConsumptionImpl
+      enabled = true
+    }
+    SBQQ__ProductConsumptionImplTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConsumptionImplTests
+      enabled = true
+    }
+    SBQQ__ProductConsumptionScheduleTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConsumptionScheduleTrigger
+      enabled = true
+    }
+    SBQQ__ProductConsumptionScheduleTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductConsumptionScheduleTriggerTests
+      enabled = true
+    }
+    SBQQ__ProductDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductDAO
+      enabled = true
+    }
+    SBQQ__ProductDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductDAOTests
+      enabled = true
+    }
+    SBQQ__ProductEvergreenTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductEvergreenTests
+      enabled = true
+    }
+    SBQQ__ProductExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductExtController
+      enabled = true
+    }
+    SBQQ__ProductExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductExtControllerTests
+      enabled = true
+    }
+    SBQQ__ProductFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductFactory
+      enabled = true
+    }
+    SBQQ__ProductFactoryTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductFactoryTests
+      enabled = true
+    }
+    SBQQ__ProductLookupController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductLookupController
+      enabled = true
+    }
+    SBQQ__ProductLookupControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductLookupControllerTests
+      enabled = true
+    }
+    SBQQ__ProductLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductLookupServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductModel
+      enabled = true
+    }
+    SBQQ__ProductModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductModelTests
+      enabled = true
+    }
+    SBQQ__ProductOptionDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionDAO
+      enabled = true
+    }
+    SBQQ__ProductOptionDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionDAOTests
+      enabled = false
+    }
+    SBQQ__ProductOptionPriceRuleEvaluator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionPriceRuleEvaluator
+      enabled = true
+    }
+    SBQQ__ProductOptionPriceRuleEvaluatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionPriceRuleEvaluatorTests
+      enabled = true
+    }
+    SBQQ__ProductOptionServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductOptionServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ProductOptionTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionTests
+      enabled = true
+    }
+    SBQQ__ProductOptionTree = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionTree
+      enabled = true
+    }
+    SBQQ__ProductOptionTreeTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductOptionTreeTests
+      enabled = true
+    }
+    SBQQ__ProductRecommendationPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRecommendationPlugin
+      enabled = false
+    }
+    SBQQ__ProductRecommendationPluginTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRecommendationPluginTests
+      enabled = false
+    }
+    SBQQ__ProductRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__ProductRuleAlert = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleAlert
+      enabled = true
+    }
+    SBQQ__ProductRuleAlertTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleAlertTests
+      enabled = true
+    }
+    SBQQ__ProductRuleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleDAO
+      enabled = true
+    }
+    SBQQ__ProductRuleDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleDAOTests
+      enabled = true
+    }
+    SBQQ__ProductRuleExecutor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleExecutor
+      enabled = true
+    }
+    SBQQ__ProductRuleExecutorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleExecutorTests
+      enabled = true
+    }
+    SBQQ__ProductRuleExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleExtController
+      enabled = true
+    }
+    SBQQ__ProductRuleExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleExtControllerTests
+      enabled = true
+    }
+    SBQQ__ProductRuleRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__ProductRuleServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductRuleServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ProductRuleTestUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleTestUtil
+      enabled = false
+    }
+    SBQQ__ProductRuleTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleTrigger
+      enabled = true
+    }
+    SBQQ__ProductRuleTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleTriggerTests
+      enabled = true
+    }
+    SBQQ__ProductRuleVaidatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleVaidatorTests
+      enabled = true
+    }
+    SBQQ__ProductRuleValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductRuleValidator
+      enabled = true
+    }
+    SBQQ__ProductSearchAdapter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchAdapter
+      enabled = true
+    }
+    SBQQ__ProductSearchAdapterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchAdapterTests
+      enabled = true
+    }
+    SBQQ__ProductSearchExecutor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchExecutor
+      enabled = true
+    }
+    SBQQ__ProductSearchExecutorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchExecutorTests
+      enabled = true
+    }
+    SBQQ__ProductSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchModel
+      enabled = true
+    }
+    SBQQ__ProductSearchPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSearchPlugin
+      enabled = true
+    }
+    SBQQ__ProductSelectionModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSelectionModel
+      enabled = true
+    }
+    SBQQ__ProductSelectionModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductSelectionModelTests
+      enabled = true
+    }
+    SBQQ__ProductService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductService
+      enabled = true
+    }
+    SBQQ__ProductServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductServiceProvider
+      enabled = true
+    }
+    SBQQ__ProductServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductServiceProviderTests
+      enabled = true
+    }
+    SBQQ__ProductServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductServiceTests
+      enabled = true
+    }
+    SBQQ__ProductServices = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductServices
+      enabled = true
+    }
+    SBQQ__ProductTestBase = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductTestBase
+      enabled = true
+    }
+    SBQQ__ProductTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductTrigger
+      enabled = true
+    }
+    SBQQ__ProductTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductTriggerControl
+      enabled = true
+    }
+    SBQQ__ProductTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductTriggerTests
+      enabled = true
+    }
+    SBQQ__ProductUpgradeController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductUpgradeController
+      enabled = true
+    }
+    SBQQ__ProductUpgradeControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductUpgradeControllerTests
+      enabled = true
+    }
+    SBQQ__ProductVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductVO
+      enabled = true
+    }
+    SBQQ__ProductVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProductVOTests
+      enabled = true
+    }
+    SBQQ__ProposalGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProposalGenerator
+      enabled = true
+    }
+    SBQQ__ProposalGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ProposalGeneratorTests
+      enabled = true
+    }
+    SBQQ__PublicAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__PublicAPITests
+      enabled = true
+    }
+    SBQQ__QueryBuilder = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueryBuilder
+      enabled = true
+    }
+    SBQQ__QueryBuilderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueryBuilderTests
+      enabled = true
+    }
+    SBQQ__Queryable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Queryable
+      enabled = true
+    }
+    SBQQ__QueueableAmendmentService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableAmendmentService
+      enabled = true
+    }
+    SBQQ__QueueableCalculatorService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableCalculatorService
+      enabled = true
+    }
+    SBQQ__QueueableCalculatorServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableCalculatorServiceTests
+      enabled = true
+    }
+    SBQQ__QueueableContractOrdersClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableContractOrdersClient
+      enabled = true
+    }
+    SBQQ__QueueableJobCheckerExt = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableJobCheckerExt
+      enabled = true
+    }
+    SBQQ__QueueableJobCheckerExtTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableJobCheckerExtTests
+      enabled = true
+    }
+    SBQQ__QueueableProductServices = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableProductServices
+      enabled = true
+    }
+    SBQQ__QueueableQuoteDocumentService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableQuoteDocumentService
+      enabled = true
+    }
+    SBQQ__QueueableTranspilerService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QueueableTranspilerService
+      enabled = true
+    }
+    SBQQ__QuoteAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteAPI
+      enabled = true
+    }
+    SBQQ__QuoteAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteAPITests
+      enabled = true
+    }
+    SBQQ__QuoteCalculator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculator
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorFactory
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorFactoryTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorFactoryTests
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorPlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorPlugin
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorPlugin2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorPlugin2
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorRefundTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorRefundTests
+      enabled = true
+    }
+    SBQQ__QuoteCalculatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteCalculatorTests
+      enabled = true
+    }
+    SBQQ__QuoteDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDAO
+      enabled = true
+    }
+    SBQQ__QuoteDAOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDAOFactory
+      enabled = true
+    }
+    SBQQ__QuoteDAOTests2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDAOTests2
+      enabled = true
+    }
+    SBQQ__QuoteDataProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDataProcessor
+      enabled = true
+    }
+    SBQQ__QuoteDataProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDataProcessorTests
+      enabled = true
+    }
+    SBQQ__QuoteDocumentAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentAPI
+      enabled = true
+    }
+    SBQQ__QuoteDocumentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentController
+      enabled = true
+    }
+    SBQQ__QuoteDocumentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteDocumentMarkupGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentMarkupGenerator
+      enabled = true
+    }
+    SBQQ__QuoteDocumentModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentModel
+      enabled = true
+    }
+    SBQQ__QuoteDocumentService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentService
+      enabled = true
+    }
+    SBQQ__QuoteDocumentTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentTriggerTests
+      enabled = true
+    }
+    SBQQ__QuoteDocumentUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteDocumentUtils
+      enabled = true
+    }
+    SBQQ__QuoteEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteEditorController
+      enabled = true
+    }
+    SBQQ__QuoteEditorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteEditorControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteEditorModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteEditorModel
+      enabled = true
+    }
+    SBQQ__QuoteExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteExtController
+      enabled = true
+    }
+    SBQQ__QuoteExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteExtControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteExtSitesController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteExtSitesController
+      enabled = true
+    }
+    SBQQ__QuoteExtSitesControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteExtSitesControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionImpl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionImpl
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionImplTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionImplTests
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionRateDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionRateDAO
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionRateDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionRateDAOTests
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionScheduleDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionScheduleDAO
+      enabled = true
+    }
+    SBQQ__QuoteLineConsumptionScheduleDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineConsumptionScheduleDAOTests
+      enabled = true
+    }
+    SBQQ__QuoteLineDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineDAO
+      enabled = true
+    }
+    SBQQ__QuoteLineDAOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineDAOFactory
+      enabled = true
+    }
+    SBQQ__QuoteLineDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineDAOTest
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineEditorController
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineEditorControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineEditorServiceProvider
+      enabled = true
+    }
+    SBQQ__QuoteLineEditorServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineEditorServiceProviderTests
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupDAO
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupDAOFactory
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupDAOTests
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupVO
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupVOTests
+      enabled = true
+    }
+    SBQQ__QuoteLineGroupValidationTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineGroupValidationTests
+      enabled = true
+    }
+    SBQQ__QuoteLineObjectTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineObjectTests
+      enabled = true
+    }
+    SBQQ__QuoteLinePriceRuleEvaluator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLinePriceRuleEvaluator
+      enabled = true
+    }
+    SBQQ__QuoteLinePriceRuleEvaluatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLinePriceRuleEvaluatorTests
+      enabled = true
+    }
+    SBQQ__QuoteLinePricingGuidanceDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLinePricingGuidanceDAO
+      enabled = true
+    }
+    SBQQ__QuoteLinePricingGuidanceDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLinePricingGuidanceDAOTests
+      enabled = true
+    }
+    SBQQ__QuoteLinePricingGuidanceVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLinePricingGuidanceVO
+      enabled = true
+    }
+    SBQQ__QuoteLineUBPDataProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineUBPDataProcessor
+      enabled = true
+    }
+    SBQQ__QuoteLineUBPDataProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineUBPDataProcessorTests
+      enabled = false
+    }
+    SBQQ__QuoteLineVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineVO
+      enabled = true
+    }
+    SBQQ__QuoteLineVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineVOTests
+      enabled = true
+    }
+    SBQQ__QuoteLineValidationTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteLineValidationTests
+      enabled = true
+    }
+    SBQQ__QuoteModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteModel
+      enabled = true
+    }
+    SBQQ__QuoteModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteModelTests
+      enabled = true
+    }
+    SBQQ__QuoteOpportunitySynchronizer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteOpportunitySynchronizer
+      enabled = true
+    }
+    SBQQ__QuoteOpportunitySynchronizerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteOpportunitySynchronizerTests
+      enabled = true
+    }
+    SBQQ__QuotePriceHandler = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuotePriceHandler
+      enabled = true
+    }
+    SBQQ__QuotePriceRefreshBatch = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuotePriceRefreshBatch
+      enabled = true
+    }
+    SBQQ__QuoteProcessInitializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteProcessInitializer
+      enabled = true
+    }
+    SBQQ__QuoteProcessInitializerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteProcessInitializerTests
+      enabled = true
+    }
+    SBQQ__QuoteProcessVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteProcessVO
+      enabled = true
+    }
+    SBQQ__QuoteProcessor = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteProcessor
+      enabled = true
+    }
+    SBQQ__QuoteProcessorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteProcessorTests
+      enabled = true
+    }
+    SBQQ__QuoteRelatedContentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRelatedContentController
+      enabled = true
+    }
+    SBQQ__QuoteRelatedContentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRelatedContentControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteRestEndpoint = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRestEndpoint
+      enabled = true
+    }
+    SBQQ__QuoteRestEndpointTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRestEndpointTests
+      enabled = true
+    }
+    SBQQ__QuoteRuleApplicator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRuleApplicator
+      enabled = true
+    }
+    SBQQ__QuoteRuleApplicatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteRuleApplicatorTests
+      enabled = true
+    }
+    SBQQ__QuoteService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteService
+      enabled = true
+    }
+    SBQQ__QuoteServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteServiceProvider
+      enabled = true
+    }
+    SBQQ__QuoteServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteServiceProviderTests
+      enabled = true
+    }
+    SBQQ__QuoteServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteServiceTests
+      enabled = true
+    }
+    SBQQ__QuoteSettingsModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteSettingsModel
+      enabled = true
+    }
+    SBQQ__QuoteSortUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteSortUtils
+      enabled = true
+    }
+    SBQQ__QuoteTemplateDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateDAO
+      enabled = true
+    }
+    SBQQ__QuoteTemplateDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateDAOTest
+      enabled = true
+    }
+    SBQQ__QuoteTemplateExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateExtController
+      enabled = true
+    }
+    SBQQ__QuoteTemplateExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateExtControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteTemplateTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateTriggerTests
+      enabled = true
+    }
+    SBQQ__QuoteTemplateUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateUtils
+      enabled = true
+    }
+    SBQQ__QuoteTemplateUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTemplateUtilsTests
+      enabled = true
+    }
+    SBQQ__QuoteTermAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermAPI
+      enabled = true
+    }
+    SBQQ__QuoteTermAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermAPITests
+      enabled = true
+    }
+    SBQQ__QuoteTermDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermDAO
+      enabled = true
+    }
+    SBQQ__QuoteTermDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermDAOTests
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermEditorController
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermEditorService
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermEditorServiceProvider
+      enabled = true
+    }
+    SBQQ__QuoteTermEditorServiceTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermEditorServiceTest
+      enabled = true
+    }
+    SBQQ__QuoteTermEvaluator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermEvaluator
+      enabled = true
+    }
+    SBQQ__QuoteTermService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermService
+      enabled = true
+    }
+    SBQQ__QuoteTermServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermServiceTests
+      enabled = true
+    }
+    SBQQ__QuoteTermTriggerTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermTriggerTest
+      enabled = false
+    }
+    SBQQ__QuoteTermVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermVO
+      enabled = true
+    }
+    SBQQ__QuoteTermVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermVOTests
+      enabled = true
+    }
+    SBQQ__QuoteTermsComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermsComponentController
+      enabled = true
+    }
+    SBQQ__QuoteTermsComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTermsComponentControllerTests
+      enabled = true
+    }
+    SBQQ__QuoteTestsBase = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTestsBase
+      enabled = true
+    }
+    SBQQ__QuoteTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTrigger
+      enabled = true
+    }
+    SBQQ__QuoteTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTriggerControl
+      enabled = true
+    }
+    SBQQ__QuoteTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteTriggerTests
+      enabled = true
+    }
+    SBQQ__QuoteUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteUtils
+      enabled = true
+    }
+    SBQQ__QuoteUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteUtilsTests
+      enabled = true
+    }
+    SBQQ__QuoteVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteVO
+      enabled = true
+    }
+    SBQQ__QuoteVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteVOTests
+      enabled = true
+    }
+    SBQQ__QuoteValidationTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__QuoteValidationTests
+      enabled = true
+    }
+    SBQQ__Range = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Range
+      enabled = true
+    }
+    SBQQ__RangeTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RangeTests
+      enabled = true
+    }
+    SBQQ__RecommendationLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecommendationLookupServiceProvider
+      enabled = false
+    }
+    SBQQ__RecommendationLookupServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecommendationLookupServiceProviderTests
+      enabled = false
+    }
+    SBQQ__RecommendationSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecommendationSearchModel
+      enabled = false
+    }
+    SBQQ__RecommendationSearchModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecommendationSearchModelTests
+      enabled = false
+    }
+    SBQQ__RecordInfo = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecordInfo
+      enabled = true
+    }
+    SBQQ__RecordJobService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecordJobService
+      enabled = true
+    }
+    SBQQ__RecordJobServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecordJobServiceTests
+      enabled = true
+    }
+    SBQQ__RecordStatus = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecordStatus
+      enabled = true
+    }
+    SBQQ__RecordUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RecordUtils
+      enabled = true
+    }
+    SBQQ__ReferencedFieldCache = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ReferencedFieldCache
+      enabled = true
+    }
+    SBQQ__ReferencedFieldCacheTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ReferencedFieldCacheTests
+      enabled = true
+    }
+    SBQQ__ReferencedFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ReferencedFieldGenerator
+      enabled = true
+    }
+    SBQQ__ReferencedFieldGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ReferencedFieldGeneratorTests
+      enabled = true
+    }
+    SBQQ__ReferencedFieldRemover = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ReferencedFieldRemover
+      enabled = true
+    }
+    SBQQ__RefreshQuotePricesController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RefreshQuotePricesController
+      enabled = true
+    }
+    SBQQ__RefreshQuotePricesControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RefreshQuotePricesControllerTests
+      enabled = true
+    }
+    SBQQ__RelatedContentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RelatedContentController
+      enabled = true
+    }
+    SBQQ__RelatedContentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RelatedContentControllerTests
+      enabled = true
+    }
+    SBQQ__RelatedContentVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RelatedContentVO
+      enabled = true
+    }
+    SBQQ__RelatedRecordCloner = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RelatedRecordCloner
+      enabled = true
+    }
+    SBQQ__RenewContractsController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RenewContractsController
+      enabled = true
+    }
+    SBQQ__RenewContractsControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RenewContractsControllerTests
+      enabled = true
+    }
+    SBQQ__RenewalAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RenewalAPI
+      enabled = true
+    }
+    SBQQ__RenewalQuoteGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RenewalQuoteGenerator
+      enabled = true
+    }
+    SBQQ__RenewalQuoteGeneratorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RenewalQuoteGeneratorTests
+      enabled = false
+    }
+    SBQQ__RestClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RestClient
+      enabled = true
+    }
+    SBQQ__RestClientSettings = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RestClientSettings
+      enabled = true
+    }
+    SBQQ__RestClientTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RestClientTests
+      enabled = true
+    }
+    SBQQ__RichTextComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RichTextComponentController
+      enabled = true
+    }
+    SBQQ__RichTextComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RichTextComponentControllerTests
+      enabled = true
+    }
+    SBQQ__RichTextToFOConverter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RichTextToFOConverter
+      enabled = true
+    }
+    SBQQ__RichTextToFOConverterTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RichTextToFOConverterTests
+      enabled = true
+    }
+    SBQQ__RootIdSetterChildAssets = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RootIdSetterChildAssets
+      enabled = true
+    }
+    SBQQ__RootIdSetterChildSubscriptions = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RootIdSetterChildSubscriptions
+      enabled = true
+    }
+    SBQQ__RootIdSetterParentAssets = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RootIdSetterParentAssets
+      enabled = true
+    }
+    SBQQ__RootIdSetterParentSubscriptions = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RootIdSetterParentSubscriptions
+      enabled = true
+    }
+    SBQQ__RuleAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleAPI
+      enabled = true
+    }
+    SBQQ__RuleAPITests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleAPITests
+      enabled = true
+    }
+    SBQQ__RuleActionListener = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleActionListener
+      enabled = true
+    }
+    SBQQ__RuleListener = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleListener
+      enabled = true
+    }
+    SBQQ__RuleProcessorSupport = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleProcessorSupport
+      enabled = true
+    }
+    SBQQ__RuleProcessorSupportTests2 = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleProcessorSupportTests2
+      enabled = true
+    }
+    SBQQ__RuleSummaryUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleSummaryUtil
+      enabled = true
+    }
+    SBQQ__RuleTriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__RuleTriggerControl
+      enabled = true
+    }
+    SBQQ__SObjectListModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectListModel
+      enabled = true
+    }
+    SBQQ__SObjectListModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectListModelTests
+      enabled = true
+    }
+    SBQQ__SObjectListOptionModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectListOptionModel
+      enabled = true
+    }
+    SBQQ__SObjectListOptionModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectListOptionModelTests
+      enabled = true
+    }
+    SBQQ__SObjectUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectUtils
+      enabled = true
+    }
+    SBQQ__SObjectUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SObjectUtilsTests
+      enabled = true
+    }
+    SBQQ__SampleServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SampleServiceProvider
+      enabled = true
+    }
+    SBQQ__SaveCalculatedQuoteCallback = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SaveCalculatedQuoteCallback
+      enabled = true
+    }
+    SBQQ__SaveQuote = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SaveQuote
+      enabled = true
+    }
+    SBQQ__SaveRequeryRollbackServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SaveRequeryRollbackServiceProvider
+      enabled = true
+    }
+    SBQQ__SchemaUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SchemaUtils
+      enabled = true
+    }
+    SBQQ__SchemaUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SchemaUtilsTests
+      enabled = true
+    }
+    SBQQ__SearchFilter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchFilter
+      enabled = true
+    }
+    SBQQ__SearchFilterDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchFilterDAO
+      enabled = true
+    }
+    SBQQ__SearchFilterDAOTest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchFilterDAOTest
+      enabled = true
+    }
+    SBQQ__SearchFilterInitializer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchFilterInitializer
+      enabled = true
+    }
+    SBQQ__SearchFilterInitializerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchFilterInitializerTests
+      enabled = true
+    }
+    SBQQ__SearchIndexDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SearchIndexDAO
+      enabled = true
+    }
+    SBQQ__SectionComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SectionComponentController
+      enabled = true
+    }
+    SBQQ__SectionComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SectionComponentControllerTests
+      enabled = true
+    }
+    SBQQ__SecurityUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SecurityUtils
+      enabled = true
+    }
+    SBQQ__SecurityUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SecurityUtilsTests
+      enabled = true
+    }
+    SBQQ__SelectContractController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SelectContractController
+      enabled = true
+    }
+    SBQQ__SelectContractOppController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SelectContractOppController
+      enabled = true
+    }
+    SBQQ__SelectContractOppControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SelectContractOppControllerTests
+      enabled = true
+    }
+    SBQQ__SelectOptionModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SelectOptionModel
+      enabled = true
+    }
+    SBQQ__ServiceCloud = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ServiceCloud
+      enabled = true
+    }
+    SBQQ__ServiceLoader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ServiceLoader
+      enabled = true
+    }
+    SBQQ__ServiceReader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ServiceReader
+      enabled = true
+    }
+    SBQQ__ServiceRouter = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ServiceRouter
+      enabled = true
+    }
+    SBQQ__ServiceSaver = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ServiceSaver
+      enabled = true
+    }
+    SBQQ__SettingsEditorController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsEditorController
+      enabled = true
+    }
+    SBQQ__SettingsEditorControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsEditorControllerTests
+      enabled = true
+    }
+    SBQQ__SettingsExtension = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsExtension
+      enabled = true
+    }
+    SBQQ__SettingsExtensionTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsExtensionTests
+      enabled = true
+    }
+    SBQQ__SettingsHolder = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsHolder
+      enabled = true
+    }
+    SBQQ__SettingsVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsVO
+      enabled = true
+    }
+    SBQQ__SettingsVOAPI = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsVOAPI
+      enabled = true
+    }
+    SBQQ__SettingsVOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SettingsVOTests
+      enabled = true
+    }
+    SBQQ__SimpleServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SimpleServiceProvider
+      enabled = true
+    }
+    SBQQ__SolutionGroupModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SolutionGroupModel
+      enabled = true
+    }
+    SBQQ__SolutionGroupModelTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SolutionGroupModelTests
+      enabled = true
+    }
+    SBQQ__StateCountryPicklistUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__StateCountryPicklistUtil
+      enabled = false
+    }
+    SBQQ__StringTokenizer = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__StringTokenizer
+      enabled = true
+    }
+    SBQQ__StringTokenizerListener = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__StringTokenizerListener
+      enabled = true
+    }
+    SBQQ__StringUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__StringUtils
+      enabled = true
+    }
+    SBQQ__StringUtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__StringUtilsTests
+      enabled = true
+    }
+    SBQQ__SubscribedAssetService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscribedAssetService
+      enabled = true
+    }
+    SBQQ__SubscribedAssetVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscribedAssetVO
+      enabled = true
+    }
+    SBQQ__SubscriptionConsumptionImpl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionConsumptionImpl
+      enabled = true
+    }
+    SBQQ__SubscriptionConsumptionImplTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionConsumptionImplTests
+      enabled = true
+    }
+    SBQQ__SubscriptionDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionDAO
+      enabled = true
+    }
+    SBQQ__SubscriptionDAOTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionDAOTests
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionLookupController
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionLookupControllerTests
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionLookupServiceProvider
+      enabled = true
+    }
+    SBQQ__SubscriptionLookupServiceProviderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionLookupServiceProviderTests
+      enabled = true
+    }
+    SBQQ__SubscriptionSearchModel = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionSearchModel
+      enabled = true
+    }
+    SBQQ__SubscriptionService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionService
+      enabled = true
+    }
+    SBQQ__SubscriptionServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionServiceTests
+      enabled = true
+    }
+    SBQQ__SubscriptionVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SubscriptionVO
+      enabled = true
+    }
+    SBQQ__SummaryRowComponentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryRowComponentController
+      enabled = true
+    }
+    SBQQ__SummaryRowComponentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryRowComponentControllerTests
+      enabled = true
+    }
+    SBQQ__SummaryVarRefFieldGenerator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVarRefFieldGenerator
+      enabled = true
+    }
+    SBQQ__SummaryVariableCalculator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVariableCalculator
+      enabled = true
+    }
+    SBQQ__SummaryVariableCalculatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVariableCalculatorTests
+      enabled = true
+    }
+    SBQQ__SummaryVariableDAO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVariableDAO
+      enabled = true
+    }
+    SBQQ__SummaryVariableServiceProvider = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVariableServiceProvider
+      enabled = true
+    }
+    SBQQ__SummaryVariableTrigger = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SummaryVariableTrigger
+      enabled = true
+    }
+    SBQQ__SynchronousProductServices = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__SynchronousProductServices
+      enabled = true
+    }
+    SBQQ__TaxExemptionCertificateObjectManager = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TaxExemptionCertificateObjectManager
+      enabled = true
+    }
+    SBQQ__TaxExemptionCertificateTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TaxExemptionCertificateTriggerTests
+      enabled = true
+    }
+    SBQQ__TemplateContentExtController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateContentExtController
+      enabled = true
+    }
+    SBQQ__TemplateContentExtControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateContentExtControllerTests
+      enabled = true
+    }
+    SBQQ__TemplateContentTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateContentTriggerTests
+      enabled = true
+    }
+    SBQQ__TemplateContentUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateContentUtil
+      enabled = false
+    }
+    SBQQ__TemplateSectionTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateSectionTriggerTests
+      enabled = true
+    }
+    SBQQ__TemplateSectionVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateSectionVO
+      enabled = true
+    }
+    SBQQ__TemplateSectionVOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateSectionVOFactory
+      enabled = true
+    }
+    SBQQ__TemplateVO = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateVO
+      enabled = true
+    }
+    SBQQ__TemplateVOFactory = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateVOFactory
+      enabled = true
+    }
+    SBQQ__TemplateVOFactoryTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TemplateVOFactoryTests
+      enabled = false
+    }
+    SBQQ__TestCalloutMock = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TestCalloutMock
+      enabled = true
+    }
+    SBQQ__TestDocumentStorePlugin = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TestDocumentStorePlugin
+      enabled = true
+    }
+    SBQQ__TestRestClient = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TestRestClient
+      enabled = true
+    }
+    SBQQ__TestUtil = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TestUtil
+      enabled = true
+    }
+    SBQQ__ThemeAfterTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeAfterTriggerTests
+      enabled = true
+    }
+    SBQQ__ThemeBeforeTriggerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeBeforeTriggerTests
+      enabled = true
+    }
+    SBQQ__ThemeDocumentService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeDocumentService
+      enabled = true
+    }
+    SBQQ__ThemeDocumentServiceTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeDocumentServiceTests
+      enabled = true
+    }
+    SBQQ__ThemeExtension = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeExtension
+      enabled = true
+    }
+    SBQQ__ThemeExtensionTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeExtensionTests
+      enabled = true
+    }
+    SBQQ__ThemeLookupController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeLookupController
+      enabled = true
+    }
+    SBQQ__ThemeService = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeService
+      enabled = true
+    }
+    SBQQ__ThemeSettingsController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeSettingsController
+      enabled = true
+    }
+    SBQQ__ThemeSettingsControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ThemeSettingsControllerTests
+      enabled = true
+    }
+    SBQQ__TimingStack = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TimingStack
+      enabled = true
+    }
+    SBQQ__TimingStackTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TimingStackTests
+      enabled = true
+    }
+    SBQQ__TransactionConsumptionRateValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TransactionConsumptionRateValidator
+      enabled = true
+    }
+    SBQQ__TransactionConsumptionRateValidatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TransactionConsumptionRateValidatorTests
+      enabled = true
+    }
+    SBQQ__TransactionConsumptionScheduleValidator = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TransactionConsumptionScheduleValidator
+      enabled = true
+    }
+    SBQQ__TransportDigest = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TransportDigest
+      enabled = true
+    }
+    SBQQ__TransportDigestTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TransportDigestTests
+      enabled = true
+    }
+    SBQQ__Tree = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Tree
+      enabled = true
+    }
+    SBQQ__TreeSet = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TreeSet
+      enabled = true
+    }
+    SBQQ__TriggerControl = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TriggerControl
+      enabled = true
+    }
+    SBQQ__TriggerControlTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TriggerControlTests
+      enabled = true
+    }
+    SBQQ__TrxConsumptionScheduleValidatorTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TrxConsumptionScheduleValidatorTests
+      enabled = true
+    }
+    SBQQ__TwinFieldMapper = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TwinFieldMapper
+      enabled = true
+    }
+    SBQQ__TwinFieldMapperTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__TwinFieldMapperTests
+      enabled = true
+    }
+    SBQQ__UBPEditorRecordLoader = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UBPEditorRecordLoader
+      enabled = true
+    }
+    SBQQ__UBPEditorRecordLoaderTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UBPEditorRecordLoaderTests
+      enabled = true
+    }
+    SBQQ__UBPResultHolder = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UBPResultHolder
+      enabled = true
+    }
+    SBQQ__UIOriginalRecord = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UIOriginalRecord
+      enabled = true
+    }
+    SBQQ__UpgradeController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UpgradeController
+      enabled = true
+    }
+    SBQQ__UploadRelatedContentController = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UploadRelatedContentController
+      enabled = true
+    }
+    SBQQ__UploadRelatedContentControllerTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UploadRelatedContentControllerTests
+      enabled = true
+    }
+    SBQQ__UserPermUtils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UserPermUtils
+      enabled = true
+    }
+    SBQQ__Utils = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Utils
+      enabled = true
+    }
+    SBQQ__UtilsTests = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__UtilsTests
+      enabled = true
+    }
+    SBQQ__ValidationException = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__ValidationException
+      enabled = true
+    }
+    SBQQ__Versionable = {
+      apexClass = salesforce.ApexClass.instance.SBQQ__Versionable
+      enabled = true
+    }
+  }
+}

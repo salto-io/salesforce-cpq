@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__sb {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Salesforce CPQ"
+  fullName = "SBQQ__sb"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__sb.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

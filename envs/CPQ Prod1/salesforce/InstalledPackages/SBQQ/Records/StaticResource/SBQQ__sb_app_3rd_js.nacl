@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__sb_app_3rd_js {
+  cacheControl = "Public"
+  contentType = "application/javascript"
+  description = "Salesforce CPQ 3rd Party Javascript"
+  fullName = "SBQQ__sb_app_3rd_js"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__sb_app_3rd_js.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

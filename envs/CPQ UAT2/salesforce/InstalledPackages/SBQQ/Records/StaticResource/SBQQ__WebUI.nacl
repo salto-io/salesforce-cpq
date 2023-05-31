@@ -1,0 +1,11 @@
+salesforce.StaticResource SBQQ__WebUI {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  fullName = "SBQQ__WebUI"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__WebUI.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

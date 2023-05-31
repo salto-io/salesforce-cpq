@@ -1,0 +1,76 @@
+salesforce.Layout PricebookEntry_Price_Book_Entry_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Product2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Pricebook2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.UnitPrice
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PricebookEntry.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PricebookEntry.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.IsActive
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.PricebookEntry.field.ProductCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.UseStandardPrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.StandardPrice
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  multilineLayoutFields = [
+    "UnitPrice",
+    "Product2Id",
+    "Pricebook2Id",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PricebookEntry-Price Book Entry Layout"
+  _parent = [
+    salesforce.PricebookEntry,
+  ]
+}

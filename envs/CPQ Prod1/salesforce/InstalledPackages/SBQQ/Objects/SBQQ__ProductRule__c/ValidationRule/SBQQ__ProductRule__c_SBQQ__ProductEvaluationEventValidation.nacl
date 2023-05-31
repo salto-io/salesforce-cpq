@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ProductRule__c_SBQQ__ProductEvaluationEventValidation {
+  fullName = "SBQQ__ProductRule__c.SBQQ__ProductEvaluationEventValidation"
+  active = true
+  description = "Validation for Scope Quote having an Evaluation Event of 'Edit' and 'Load'"
+  errorConditionFormula = "OR(AND(ISPICKVAL(SBQQ__EvaluationEvent__c, \"Edit\"), ISPICKVAL(SBQQ__Scope__c, \"Quote\")), AND(ISPICKVAL(SBQQ__EvaluationEvent__c, \"Load\"), ISPICKVAL(SBQQ__Scope__c, \"Quote\")))"
+  errorMessage = "Only rules with Scope 'Product' can have Evaluation Events of type 'Edit' or 'Load'"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

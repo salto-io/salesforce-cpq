@@ -1,0 +1,5 @@
+salesforce.Profile CPQ_Integration_User@s {
+  fullName = "CPQ Integration User"
+  custom = false
+  userLicense = "CPQ Integration User"
+}

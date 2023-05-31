@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__ErrorConditionHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Error Condition Help"
+  fullName = "SBQQ__ErrorConditionHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__ErrorConditionHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

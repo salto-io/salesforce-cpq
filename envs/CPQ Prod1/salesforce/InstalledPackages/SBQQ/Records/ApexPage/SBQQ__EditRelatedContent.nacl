@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__EditRelatedContent {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "Edit Related Content"
+  fullName = "SBQQ__EditRelatedContent"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EditRelatedContent.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

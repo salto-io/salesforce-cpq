@@ -1,0 +1,120 @@
+salesforce.Profile Read_Only@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    EditOppLineItemUnitPrice = {
+      enabled = true
+      name = "EditOppLineItemUnitPrice"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    ExportReport = {
+      enabled = true
+      name = "ExportReport"
+    }
+    LightningConsoleAllowedForUser = {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    SendSitRequests = {
+      enabled = true
+      name = "SendSitRequests"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    SubmitMacrosAllowed = {
+      enabled = true
+      name = "SubmitMacrosAllowed"
+    }
+    SubscribeToLightningReports = {
+      enabled = true
+      name = "SubscribeToLightningReports"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+}

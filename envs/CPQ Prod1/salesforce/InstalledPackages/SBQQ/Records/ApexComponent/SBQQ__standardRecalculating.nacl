@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__standardRecalculating {
+  apiVersion = 57
+  label = "standardRecalculating"
+  fullName = "SBQQ__standardRecalculating"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

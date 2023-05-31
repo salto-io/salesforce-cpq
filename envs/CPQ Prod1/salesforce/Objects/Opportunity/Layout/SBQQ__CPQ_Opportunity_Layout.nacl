@@ -1,0 +1,320 @@
+salesforce.Layout Opportunity_SBQQ__CPQ_Opportunity_Layout@buuss {
+  customButtons = [
+    "SBQQ__Include_Document",
+  ]
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Recalculating"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              height = 22
+              page = "SBQQ__OpportunitySave"
+              showLabel = false
+              showScrollbars = false
+              width = "100%"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Opportunity Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.LeadSource
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.NextStep
+            },
+            {
+              emptySpace = true
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.CloseDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.StageName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Probability
+            },
+            {
+              emptySpace = true
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Amount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Other Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Salesforce CPQ Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__PrimaryQuote__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__CreateContractedPrices__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__Contracted__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__Renewal__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__RenewedContract__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.SBQQ__AmendedContract__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.AccountId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.OwnerId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__NetAmount__c",
+        "SBQQ__Status__c",
+        "CREATEDBY_USER",
+        "SBQQ__Primary__c",
+        "SBQQ__StartDate__c",
+        "SBQQ__EndDate__c",
+      ]
+      relatedList = salesforce.SBQQ__Quote__c.field.SBQQ__Opportunity2__c
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ServiceDate",
+        "Description",
+      ]
+      relatedList = "RelatedLineItemList"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__QuoteDocument__c.field.SBQQ__Opportunity__c
+    },
+    {
+      fields = [
+        "CONTRACT.CONTRACT_NUMBER",
+        "CONTRACT.NAME",
+        "SALES.ACCOUNT.NAME",
+        "CONTRACT.STATUS",
+      ]
+      relatedList = salesforce.Contract.field.SBQQ__Opportunity__c
+    },
+    {
+      fields = [
+        "CONTRACT.CONTRACT_NUMBER",
+        "CONTRACT.NAME",
+        "SALES.ACCOUNT.NAME",
+        "CONTRACT.STATUS",
+      ]
+      relatedList = salesforce.Contract.field.SBQQ__RenewalOpportunity__c
+    },
+    {
+      fields = [
+        "ContactName",
+        "Role",
+        "ContactTitle",
+        "IsPrimary",
+        "ContactPhone",
+        "ContactEmail",
+        "ContactAccountName",
+      ]
+      relatedList = "RelatedContactRoleList"
+    },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "PARTNER.ROLE",
+        "PARTNER.PRIMARY",
+      ]
+      relatedList = "RelatedPartnerList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__RelatedContent__c.field.SBQQ__Opportunity__c
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000V0Hw5"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Opportunity-SBQQ__CPQ Opportunity Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

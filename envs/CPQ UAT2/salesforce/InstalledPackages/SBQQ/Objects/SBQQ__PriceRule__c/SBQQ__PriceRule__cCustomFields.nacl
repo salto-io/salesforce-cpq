@@ -1,0 +1,201 @@
+type salesforce.SBQQ__PriceRule__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__Active__c"
+    defaultValue = false
+    deprecated = false
+    description = "Indicates whether this rule is active or not."
+    externalId = false
+    inlineHelpText = "Indicates whether this rule is active or not."
+    label = "Active"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea SBQQ__AdvancedCondition__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__AdvancedCondition__c"
+    deprecated = false
+    description = "Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125)."
+    externalId = false
+    inlineHelpText = "Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125)."
+    label = "Advanced Condition"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ConditionsMet__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__ConditionsMet__c"
+    deprecated = false
+    description = "Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR."
+    externalId = false
+    inlineHelpText = "Choose the behavior for your conditions: All is AND, Any is OR, Custom is a combination of AND/OR."
+    label = "Conditions Met"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "All"
+        default = true
+        label = "All"
+      },
+      {
+        fullName = "Any"
+        default = false
+        label = "Any"
+      },
+      {
+        fullName = "Custom"
+        default = false
+        label = "Custom"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ConfiguratorEvaluationEvent__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__ConfiguratorEvaluationEvent__c"
+    deprecated = false
+    description = "Event that specifies when Price Rules should be fired."
+    externalId = false
+    inlineHelpText = "When None or Save is selected, the Configurator scoped price rules will fire on save.  When Edit is selected, the Configurator scoped price rules will fire on edit and save."
+    label = "Configurator Evaluation Event"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Save"
+        default = false
+        label = "Save"
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Edit"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MultiselectPicklist SBQQ__EvaluationEvent__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__EvaluationEvent__c"
+    deprecated = false
+    description = "Event that causes this rule to be evaluated."
+    externalId = false
+    inlineHelpText = "Specify when this rule should be evaluated. Only to be used when targeting Quote Line and not supported on legacy calculator."
+    label = "Calculator Evaluation Event"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "On Initialization"
+        default = false
+        label = "On Initialization"
+      },
+      {
+        fullName = "Before Calculate"
+        default = false
+        label = "Before Calculate"
+      },
+      {
+        fullName = "On Calculate"
+        default = true
+        label = "On Calculate"
+      },
+      {
+        fullName = "After Calculate"
+        default = false
+        label = "After Calculate"
+      },
+    ]
+    sorted = false
+    restricted = false
+    visibleLines = 3
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__EvaluationOrder__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__EvaluationOrder__c"
+    deprecated = false
+    description = "Order in which this price rule is evaluated."
+    externalId = false
+    inlineHelpText = "Specify the order of evaluation for this price rule. Higher ordered rules are evaluated last which means they \"win\" in case of conflict."
+    label = "Evaluation Order"
+    precision = 5
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__LookupObject__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__LookupObject__c"
+    deprecated = false
+    description = "API Name of the Custom Object that stores the lookup data."
+    externalId = false
+    inlineHelpText = "API Name of the Custom Object that stores the lookup data."
+    label = "Lookup Object"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = salesforce.SBQQ__LookupData__c
+        default = false
+        label = "SBQQ__LookupData__c"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__Product__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Optional field that makes this rule specific to the product."
+    externalId = false
+    inlineHelpText = "Choose a product to associate to this rule."
+    label = "Product"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    relationshipLabel = "Price Rules"
+    relationshipName = "PriceRules"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__TargetObject__c {
+    apiName = "SBQQ__PriceRule__c.SBQQ__TargetObject__c"
+    deprecated = false
+    description = "Object that’s the target of the field update."
+    externalId = false
+    inlineHelpText = "Event during which this rule is evaluated."
+    label = "Evaluation Scope"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Configurator"
+        default = false
+        label = "Configurator"
+      },
+      {
+        fullName = "Calculator"
+        default = false
+        label = "Calculator"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

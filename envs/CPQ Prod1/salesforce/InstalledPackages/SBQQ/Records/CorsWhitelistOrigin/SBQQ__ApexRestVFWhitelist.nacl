@@ -1,0 +1,9 @@
+salesforce.CorsWhitelistOrigin SBQQ__ApexRestVFWhitelist {
+  fullName = "SBQQ__ApexRestVFWhitelist"
+  urlPattern = "https://*.visualforce.com"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

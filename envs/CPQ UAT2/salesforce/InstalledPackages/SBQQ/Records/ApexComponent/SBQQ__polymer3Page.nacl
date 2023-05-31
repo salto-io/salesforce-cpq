@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__polymer3Page {
+  apiVersion = 57
+  label = "newui"
+  fullName = "SBQQ__polymer3Page"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

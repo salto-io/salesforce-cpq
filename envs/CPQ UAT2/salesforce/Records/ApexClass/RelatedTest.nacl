@@ -1,0 +1,14 @@
+salesforce.ApexClass RelatedTest {
+  apiVersion = 54
+  status = "Active"
+  fullName = "RelatedTest"
+  content = file("salesforce/Records/ApexClass/RelatedTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Is_important__c
+    },
+  ]
+}

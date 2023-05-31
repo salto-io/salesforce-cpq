@@ -1,0 +1,10 @@
+salesforce.SBQQ__ProductRule__c a0r3H000001oY6tQAE {
+  SBQQ__Active__c = false
+  SBQQ__AdvancedCondition__c = "if else"
+  SBQQ__ConditionsMet__c = "All"
+  SBQQ__EvaluationEvent__c = "Save"
+  SBQQ__Scope__c = "Quote"
+  SBQQ__Type__c = "Selection"
+  Name = "RuleZ"
+  _alias = "RuleZ"
+}

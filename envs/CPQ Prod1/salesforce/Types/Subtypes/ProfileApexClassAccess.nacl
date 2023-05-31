@@ -1,0 +1,22 @@
+type salesforce.ProfileApexClassAccess {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string apexClass {
+    _required = true
+  }
+  boolean enabled {
+  }
+  metadataType = "ProfileApexClassAccess"
+}

@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__discountScheduleEditor {
+  apiVersion = 57
+  label = "discountScheduleEditor"
+  fullName = "SBQQ__discountScheduleEditor"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

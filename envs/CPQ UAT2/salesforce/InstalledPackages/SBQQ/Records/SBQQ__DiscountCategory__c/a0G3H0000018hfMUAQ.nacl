@@ -1,0 +1,5 @@
+salesforce.SBQQ__DiscountCategory__c a0G3H0000018hfMUAQ {
+  SBQQ__MaxDiscountRate__c = 33
+  Name = "test category 123"
+  _alias = "test category 123"
+}

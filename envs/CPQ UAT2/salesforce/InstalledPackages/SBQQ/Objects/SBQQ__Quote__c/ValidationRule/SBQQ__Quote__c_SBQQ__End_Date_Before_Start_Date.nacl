@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__Quote__c_SBQQ__End_Date_Before_Start_Date {
+  fullName = "SBQQ__Quote__c.SBQQ__End_Date_Before_Start_Date"
+  active = true
+  description = "Validates End Date comes after the Start Date"
+  errorConditionFormula = "IF( AND( NOT(ISNULL(SBQQ__EndDate__c)), SBQQ__EndDate__c < SBQQ__StartDate__c), TRUE, null)"
+  errorMessage = "The End Date must come after the Start Date."
+  _parent = [
+    salesforce.SBQQ__Quote__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

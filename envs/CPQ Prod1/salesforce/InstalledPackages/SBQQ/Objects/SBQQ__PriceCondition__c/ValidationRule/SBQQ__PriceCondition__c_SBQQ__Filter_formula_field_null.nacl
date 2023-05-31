@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__PriceCondition__c_SBQQ__Filter_formula_field_null {
+  fullName = "SBQQ__PriceCondition__c.SBQQ__Filter_formula_field_null"
+  active = true
+  description = "Require Filter Formula when Filter Type is Formula."
+  errorConditionFormula = "AND(ISPICKVAL(SBQQ__FilterType__c, \"Formula\"), ISBLANK(SBQQ__FilterFormula__c))"
+  errorMessage = "If Filter Type is Formula, then Filter Formula cannot be empty."
+  _parent = [
+    salesforce.SBQQ__PriceCondition__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

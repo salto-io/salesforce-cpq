@@ -1,0 +1,65 @@
+salesforce.FieldSet SBQQ__QuoteLine__c_SBQQ__SummaryFields {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__SummaryFields"
+  availableFields = [
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ComponentListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ComponentTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__CustomerTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__NetTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PackageListTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PackageTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__PartnerTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__Quantity__c
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = salesforce.SBQQ__QuoteLine__c.field.SBQQ__RegularTotal__c
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Fields to be summarized in Line Editor. Note that field must also be in field set displayed on the page."
+  label = "Summary Fields"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

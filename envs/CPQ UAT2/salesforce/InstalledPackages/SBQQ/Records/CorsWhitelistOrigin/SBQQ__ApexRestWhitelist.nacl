@@ -1,0 +1,9 @@
+salesforce.CorsWhitelistOrigin SBQQ__ApexRestWhitelist {
+  fullName = "SBQQ__ApexRestWhitelist"
+  urlPattern = "https://*.force.com"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

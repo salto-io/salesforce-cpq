@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__FavoritesHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "FavoritesHelp"
+  fullName = "SBQQ__FavoritesHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__FavoritesHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

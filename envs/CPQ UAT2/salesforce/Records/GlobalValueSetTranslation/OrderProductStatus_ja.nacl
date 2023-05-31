@@ -1,0 +1,3 @@
+salesforce.GlobalValueSetTranslation OrderProductStatus_ja@b {
+  fullName = "OrderProductStatus-ja"
+}

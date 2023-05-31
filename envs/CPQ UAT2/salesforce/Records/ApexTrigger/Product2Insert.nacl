@@ -1,0 +1,14 @@
+salesforce.ApexTrigger Product2Insert {
+  apiVersion = 53
+  status = "Inactive"
+  fullName = "Product2Insert"
+  content = file("salesforce/Records/ApexTrigger/Product2Insert.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Product2
+    },
+    {
+      reference = salesforce.Product2.field.Salto_ExternalId__c
+    },
+  ]
+}

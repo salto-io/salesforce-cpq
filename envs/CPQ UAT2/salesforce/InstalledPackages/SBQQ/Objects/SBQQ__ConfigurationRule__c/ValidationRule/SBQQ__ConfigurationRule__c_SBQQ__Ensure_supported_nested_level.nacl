@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ConfigurationRule__c_SBQQ__Ensure_supported_nested_level {
+  fullName = "SBQQ__ConfigurationRule__c.SBQQ__Ensure_supported_nested_level"
+  active = true
+  description = "Ensure the value of either the parent or child bundle level field is None or 1."
+  errorConditionFormula = "(TEXT(SBQQ__AscendingNestedLevel__c) != null && TEXT(SBQQ__AscendingNestedLevel__c) != '1') || (TEXT(SBQQ__DescendingNestedLevel__c) != null && TEXT(SBQQ__DescendingNestedLevel__c) != '1') || (TEXT(SBQQ__DescendingActionNesting__c) != null && TEXT(SBQQ__DescendingActionNesting__c) != '1')"
+  errorMessage = "The maximum supported Bundle Level is 1."
+  _parent = [
+    salesforce.SBQQ__ConfigurationRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

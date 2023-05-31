@@ -1,0 +1,190 @@
+salesforce.Layout SBQQ__SummaryVariable__c_SBQQ__Summary_Variable_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SummaryVariable__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__TargetObject__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__AggregateFunction__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__AggregateField__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Filter Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__FilterField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__FilterValue__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__Operator__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__ConstraintField__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Composite Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__CompositeOperator__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__CombineWith__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__SummaryVariable__c.field.SBQQ__ValueElement__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SummaryVariable__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__SummaryVariable__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Operator__c",
+        "SBQQ__FilterValue__c",
+        "SBQQ__FilterVariable__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedVariable__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__TestedVariable__c",
+        "SBQQ__Operator__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__FilterVariable__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Operator__c",
+        "SBQQ__Value__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__PriceCondition__c.field.SBQQ__TestedVariable__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__PriceAction__c.field.SBQQ__SourceVariable__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000QxKBG"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__SummaryVariable__c-SBQQ__Summary Variable Layout"
+  _parent = [
+    salesforce.SBQQ__SummaryVariable__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

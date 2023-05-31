@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__SearchFilterHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Search Filter Help"
+  fullName = "SBQQ__SearchFilterHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__SearchFilterHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

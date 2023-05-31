@@ -1,0 +1,8 @@
+salesforce.SBQQ__PriceCondition__c a0d3H000004jCSEQA2 {
+  SBQQ__Field__c = "Product Code"
+  SBQQ__Object__c = "Quote Line"
+  SBQQ__Operator__c = "equals"
+  SBQQ__Rule__c = salesforce.SBQQ__PriceRule__c.instance.a0e3H0000009LAWQA2
+  SBQQ__TestedFormula__c = "dsadsadasdas"
+  _alias = "NewRule bbb 4"
+}

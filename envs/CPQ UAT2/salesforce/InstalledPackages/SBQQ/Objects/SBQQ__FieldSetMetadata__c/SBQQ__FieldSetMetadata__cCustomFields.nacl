@@ -1,0 +1,64 @@
+type salesforce.SBQQ__FieldSetMetadata__c {
+  salesforce.Checkbox SBQQ__Default__c {
+    apiName = "SBQQ__FieldSetMetadata__c.SBQQ__Default__c"
+    defaultValue = false
+    deprecated = false
+    description = "If the user does not have a configuration."
+    externalId = false
+    inlineHelpText = "If the user does not have a configuration."
+    label = "Default"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FieldSetValidation__c {
+    apiName = "SBQQ__FieldSetMetadata__c.SBQQ__FieldSetValidation__c"
+    caseSensitive = false
+    deprecated = false
+    externalId = false
+    label = "FieldSet Validation"
+    length = 255
+    trackTrending = false
+    unique = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FieldSet__c {
+    apiName = "SBQQ__FieldSetMetadata__c.SBQQ__FieldSet__c"
+    deprecated = false
+    description = "The FieldSet being used for column metadata sizing."
+    externalId = false
+    label = "FieldSet Name"
+    length = 128
+    _required = true
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ObjectType__c {
+    apiName = "SBQQ__FieldSetMetadata__c.SBQQ__ObjectType__c"
+    deprecated = false
+    description = "The Object Type being referred to when using column metadata sizing."
+    externalId = false
+    label = "Object Type"
+    _required = true
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Quote Line"
+        default = true
+        label = "Quote Line"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

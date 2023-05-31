@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__EditBlockPrices {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "EditBlockPrices"
+  fullName = "SBQQ__EditBlockPrices"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__EditBlockPrices.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

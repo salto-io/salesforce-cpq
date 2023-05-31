@@ -1,0 +1,254 @@
+salesforce.Layout SBQQ__ProductOption__c_SBQQ__Product_Option_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Number__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Quantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__QuantityEditable__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Selected__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Required__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__MinQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__MaxQuantity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__DiscountSchedule__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ConfiguredSKU__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__OptionalSKU__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Feature__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Bundled__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__UnitPrice__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__Discount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__DiscountAmount__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Optional SKU Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductCode__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductName__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductDescription__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__PriceEditable__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ProductConfigurationType__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Advanced Settings"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ComponentCode__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ComponentDescription__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__QuoteLineVisibility__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__SubscriptionScope__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ComponentCodePosition__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__ComponentDescriptionPosition__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__DiscountedByPackage__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__UpliftedByPackage__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__AppliedImmediately__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__AppliedImmediatelyContext__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductOption__c.field.SBQQ__System__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductOption__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__AttributeSet__c",
+        "SBQQ__Sequence__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductAttributeSet__c.field.SBQQ__ProductOption__c
+      sortField = "SBQQ__Sequence__c"
+      sortOrder = "Asc"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h61000002yD5f"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ProductOption__c-SBQQ__Product Option Layout"
+  _parent = [
+    salesforce.SBQQ__ProductOption__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

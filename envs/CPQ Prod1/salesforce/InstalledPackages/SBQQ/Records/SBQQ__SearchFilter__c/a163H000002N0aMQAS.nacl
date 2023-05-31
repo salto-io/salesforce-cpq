@@ -1,0 +1,13 @@
+salesforce.SBQQ__SearchFilter__c a163H000002N0aMQAS {
+  SBQQ__DisplayOrder__c = 10
+  SBQQ__FilterSourceField__c = "Status"
+  SBQQ__FilterSourceObject__c = salesforce.SBQQ__Quote__c
+  SBQQ__HiddenSourceField__c = "Primary"
+  SBQQ__HiddenSourceObject__c = salesforce.SBQQ__Quote__c
+  SBQQ__Hidden__c = false
+  SBQQ__Operator__c = "contains"
+  SBQQ__TargetField__c = "Product Family"
+  SBQQ__TargetObject__c = salesforce.Asset
+  Name = "TestSearchFilter"
+  _alias = "TestSearchFilter"
+}

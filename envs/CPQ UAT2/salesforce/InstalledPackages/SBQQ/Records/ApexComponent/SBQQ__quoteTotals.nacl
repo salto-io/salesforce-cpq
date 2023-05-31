@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__quoteTotals {
+  apiVersion = 57
+  description = "Generates XSL-FO tree for the quote totals section."
+  label = "Quote Totals"
+  fullName = "SBQQ__quoteTotals"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__GenerateOrder {
+  apiVersion = 57
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "GenerateOrder"
+  fullName = "SBQQ__GenerateOrder"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__GenerateOrder.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

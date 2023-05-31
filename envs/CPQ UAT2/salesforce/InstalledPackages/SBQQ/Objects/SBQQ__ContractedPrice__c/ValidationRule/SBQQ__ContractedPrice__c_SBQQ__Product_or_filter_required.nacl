@@ -1,0 +1,15 @@
+salesforce.ValidationRule SBQQ__ContractedPrice__c_SBQQ__Product_or_filter_required {
+  fullName = "SBQQ__ContractedPrice__c.SBQQ__Product_or_filter_required"
+  active = true
+  description = "Requires that product or filter be specified."
+  errorConditionFormula = "AND(ISBLANK(SBQQ__Product__c),ISPICKVAL(SBQQ__FilterField__c,''))"
+  errorMessage = "You must specify either product or filter field"
+  _parent = [
+    salesforce.SBQQ__ContractedPrice__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

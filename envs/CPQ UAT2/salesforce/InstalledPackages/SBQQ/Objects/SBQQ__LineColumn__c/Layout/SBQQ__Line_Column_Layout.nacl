@@ -1,0 +1,230 @@
+salesforce.Layout SBQQ__LineColumn__c_SBQQ__Line_Column_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__DisplayOrder__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__Width__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__Section__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__Template__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__FieldName__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__Alignment__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Style Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__FontFamily__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__FontSize__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__FontWeight__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__TopMargin__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__BottomMargin__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__LeftMargin__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__TextColor__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__HeadingTextColor__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__RightMargin__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryTextColor__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryShadingColor__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryFontWeight__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Column Options"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__HideOnComponents__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__RollUp__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__ConditionalPrintField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__WidthDiscardedWhenHidden__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__ColumnHeadingField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__DynamicNumberScale__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SeparateLine__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryLevel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryFunction__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SummaryLabel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__LineColumn__c.field.SBQQ__SubGroupSummaryLabel__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__LineColumn__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__LineColumn__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000Y9qDU"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__LineColumn__c-SBQQ__Line Column Layout"
+  _parent = [
+    salesforce.SBQQ__LineColumn__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

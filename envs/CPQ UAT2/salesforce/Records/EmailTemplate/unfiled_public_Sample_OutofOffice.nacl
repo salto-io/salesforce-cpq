@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_Sample_OutofOffice@zcdu {
+  available = true
+  description = "Out of Office notification"
+  encodingKey = "UTF-8"
+  name = "SAMPLE: Out of the Office"
+  relatedEntityType = "Account"
+  style = "none"
+  subject = "Upcoming Out of the Office"
+  type = "custom"
+  uiType = "SFX_Sample"
+  fullName = "unfiled$public/Sample_OutofOffice"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/Sample_OutofOffice/Sample_OutofOffice.email")
+}

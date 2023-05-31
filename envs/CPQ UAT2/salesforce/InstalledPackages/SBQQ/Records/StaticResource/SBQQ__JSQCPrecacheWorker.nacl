@@ -1,0 +1,12 @@
+salesforce.StaticResource SBQQ__JSQCPrecacheWorker {
+  cacheControl = "Private"
+  contentType = "text/javascript"
+  description = "JSQCPrecacheWorker"
+  fullName = "SBQQ__JSQCPrecacheWorker"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/StaticResource/SBQQ__JSQCPrecacheWorker.resource")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

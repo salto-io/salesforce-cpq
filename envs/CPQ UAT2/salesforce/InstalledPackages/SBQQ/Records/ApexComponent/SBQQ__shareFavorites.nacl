@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__shareFavorites {
+  apiVersion = 57
+  label = "shareFavorites"
+  fullName = "SBQQ__shareFavorites"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

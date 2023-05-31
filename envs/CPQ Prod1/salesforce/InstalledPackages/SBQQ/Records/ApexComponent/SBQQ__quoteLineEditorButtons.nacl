@@ -1,0 +1,12 @@
+salesforce.ApexComponent SBQQ__quoteLineEditorButtons {
+  apiVersion = 57
+  description = "This is a generic template for Visualforce Component.  With this template, you may adjust the default elements and values and add new elements and values."
+  label = "quoteLineEditorButtons"
+  fullName = "SBQQ__quoteLineEditorButtons"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

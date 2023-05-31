@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__UpgradeSourceHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "UpgradeSourceHelp"
+  fullName = "SBQQ__UpgradeSourceHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__UpgradeSourceHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

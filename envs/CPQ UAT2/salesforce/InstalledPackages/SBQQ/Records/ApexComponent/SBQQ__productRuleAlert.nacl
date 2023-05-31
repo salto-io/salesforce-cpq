@@ -1,0 +1,11 @@
+salesforce.ApexComponent SBQQ__productRuleAlert {
+  apiVersion = 57
+  label = "Product Rule Alert"
+  fullName = "SBQQ__productRuleAlert"
+  content = "(hidden)"
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

@@ -1,0 +1,197 @@
+salesforce.Layout SBQQ__ProductRule__c_SBQQ__Product_Rule_Layout@uuuubuuss {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductRule__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__ConditionsMet__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__AdvancedCondition__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__Scope__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__EvaluationEvent__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__Active__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__ErrorMessage__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__EvaluationOrder__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Lookup Query Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__LookupObject__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__LookupTypeField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__LookupProductField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__LookupRequiredField__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SBQQ__ProductRule__c.field.SBQQ__LookupMessageField__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductRule__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.SBQQ__ProductRule__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "SBQQ__ValueObject__c",
+        "SBQQ__ValueField__c",
+        "SBQQ__Operator__c",
+        "SBQQ__FilterField__c",
+        "SBQQ__FilterValue__c",
+        "SBQQ__Product__c",
+        "SBQQ__Type__c",
+        "SBQQ__Required__c",
+      ]
+      relatedList = salesforce.SBQQ__ProductAction__c.field.SBQQ__Rule__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__TestedVariable__c",
+        "SBQQ__Operator__c",
+        "SBQQ__FilterType__c",
+        "SBQQ__FilterVariable__c",
+        "SBQQ__FilterValue__c",
+      ]
+      relatedList = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__Rule__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__MatchType__c",
+        "SBQQ__TestedObject__c",
+        "SBQQ__TestedField__c",
+        "SBQQ__TestedValue__c",
+        "SBQQ__Operator__c",
+        "SBQQ__LookupField__c",
+      ]
+      relatedList = salesforce.SBQQ__LookupQuery__c.field.SBQQ__ProductRule__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__RuleEvaluationEvent__c",
+        "SBQQ__RuleType__c",
+        "SBQQ__Product__c",
+      ]
+      relatedList = salesforce.SBQQ__ConfigurationRule__c.field.SBQQ__ProductRule__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hA000000YQ1Ry"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "SBQQ__ProductRule__c-SBQQ__Product Rule Layout"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

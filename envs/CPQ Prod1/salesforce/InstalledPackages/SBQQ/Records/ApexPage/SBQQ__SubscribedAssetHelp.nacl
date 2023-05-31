@@ -1,0 +1,13 @@
+salesforce.ApexPage SBQQ__SubscribedAssetHelp {
+  apiVersion = 57
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "SubscribedAssetHelp"
+  fullName = "SBQQ__SubscribedAssetHelp"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexPage/SBQQ__SubscribedAssetHelp.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+}

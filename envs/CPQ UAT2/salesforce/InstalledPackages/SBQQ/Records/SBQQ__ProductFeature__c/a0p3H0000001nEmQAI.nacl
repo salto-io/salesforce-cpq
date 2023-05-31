@@ -1,0 +1,11 @@
+salesforce.SBQQ__ProductFeature__c a0p3H0000001nEmQAI {
+  SBQQ__Category__c = "abcdef"
+  SBQQ__ConfiguredSKU__c = salesforce.Product2.instance.01t3H000001DVGgQAO
+  SBQQ__DynamicProductFilterFieldSet__c = "ConfiguratorFilter"
+  SBQQ__DynamicProductLookupFieldSet__c = "ConfiguratorLookup"
+  SBQQ__MinOptionCount__c = 1
+  SBQQ__Number__c = 1
+  SBQQ__OptionSelectionMethod__c = "Click"
+  Name = "f123"
+  _alias = "test product 123 f123"
+}

@@ -1,0 +1,435 @@
+type salesforce.SBQQ__TemplateSection__c {
+  salesforce.Text SBQQ__BorderColor__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__BorderColor__c"
+    deprecated = false
+    description = "Color of table borders expressed as a hexadecimal value."
+    externalId = false
+    inlineHelpText = "Color of table borders expressed as a hexadecimal value."
+    label = "Border Color"
+    length = 6
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__BottomMargin__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__BottomMargin__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Margin left at the bottom of this section."
+    externalId = false
+    inlineHelpText = "Margin left at the bottom of this section."
+    label = "Bottom Margin"
+    precision = 14
+    _required = true
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__ColumnHeaderHidden__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__ColumnHeaderHidden__c"
+    defaultValue = false
+    deprecated = false
+    description = "Flag that determines whether column header is displayed or not. Only applies to sections pointing to template content of type \"Line Items\"."
+    externalId = false
+    inlineHelpText = "Select the checkbox to hide the column header. Only applies to sections pointing to template content of type \"Line Items\"."
+    label = "Hide Column Header"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ConditionalPrintField__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__ConditionalPrintField__c"
+    deprecated = false
+    description = "Field on quote object that controls whether this section prints on generated PDF documents."
+    externalId = false
+    inlineHelpText = "Field on quote object that controls whether this section prints on generated PDF documents."
+    label = "Conditional Print Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Group Line Items"
+        default = false
+        label = "Group Line Items"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup SBQQ__Content__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__Content__c"
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Source of content for this section."
+    externalId = false
+    inlineHelpText = "Select the template content to display in this template section."
+    label = "Content"
+    referenceTo = [
+      salesforce.SBQQ__TemplateContent__c,
+    ]
+    relationshipLabel = "Template Sections"
+    relationshipName = "TemplateSections"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SBQQ__DisplayOrder__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__DisplayOrder__c"
+    deprecated = false
+    description = "Order in which this section is rendered relative to other sections on the template."
+    externalId = false
+    inlineHelpText = "Specify the order (top down) in which this section is rendered relative to other sections on the template."
+    label = "Display Order"
+    precision = 8
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__FilterField__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__FilterField__c"
+    deprecated = false
+    description = "Field used to filter records rendered by this section."
+    externalId = false
+    inlineHelpText = "Field used to filter records rendered by this section."
+    label = "Filter Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Optional"
+        default = false
+        label = "Optional"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__FilterOperator__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__FilterOperator__c"
+    deprecated = false
+    description = "Operator used for filtering records rendered by this section."
+    externalId = false
+    inlineHelpText = "Operator used for filtering records rendered by this section."
+    label = "Filter Operator"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__FilterValue__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__FilterValue__c"
+    deprecated = false
+    description = "Value used in filtering records rendered by this section."
+    externalId = false
+    inlineHelpText = "Value used in filtering records rendered by this section."
+    label = "Filter Value"
+    length = 200
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__GroupField__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__GroupField__c"
+    deprecated = false
+    description = "Field used in grouping lines rendered by this section. Only applicable to Line Items section."
+    externalId = false
+    inlineHelpText = "Specify field used in grouping lines rendered by this section. Only applicable to Line Items section."
+    label = "Group Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product Family"
+        default = false
+        label = "Product Family"
+      },
+      {
+        fullName = "Subscription Category"
+        default = false
+        label = "Subscription Category"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__KeepTogether__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__KeepTogether__c"
+    deprecated = false
+    description = "Imposes \"keep-together.within-page\" condition on this block of content."
+    externalId = false
+    inlineHelpText = "Specifies whether an attempt should be made to keep contents together on the same page."
+    label = "Keep Together"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Auto"
+        default = true
+        label = "Auto"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__KeepWithNext__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__KeepWithNext__c"
+    deprecated = false
+    description = "Imposes \"keep-with-next.within-page\" condition on this block of content."
+    externalId = false
+    inlineHelpText = "Specifies whether an attempt should be made to keep contents together on the same page with next block of content."
+    label = "Keep With Next"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Auto"
+        default = true
+        label = "Auto"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__KeepWithPrevious__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__KeepWithPrevious__c"
+    deprecated = false
+    description = "Imposes \"keep-with-previous.within-page\" condition on this block of content."
+    externalId = false
+    inlineHelpText = "Specifies whether an attempt should be made to keep contents together on the same page with previous block of content."
+    label = "Keep With Previous"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Auto"
+        default = false
+        label = "Auto"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__PageBreak__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__PageBreak__c"
+    deprecated = false
+    description = "Specifies page breaking behavior for this content."
+    externalId = false
+    inlineHelpText = "Specifies whether page break should be inserted before, after or both before/after this content."
+    label = "Page Break"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Before"
+        default = false
+        label = "Before"
+      },
+      {
+        fullName = "After"
+        default = false
+        label = "After"
+      },
+      {
+        fullName = "Both"
+        default = false
+        label = "Both"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__QuoteTotalsPrinted__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__QuoteTotalsPrinted__c"
+    defaultValue = false
+    deprecated = false
+    description = "Forces quote totals to print after line items rendered by this section."
+    externalId = false
+    inlineHelpText = "Select the checkbox to print quote totals after this section. Only applicable to Line Items sections."
+    label = "Print Quote Totals"
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__RollUpField__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__RollUpField__c"
+    deprecated = false
+    description = "Field on quote line object that's used to rollup lines."
+    externalId = false
+    inlineHelpText = "Quote line field used for roll-up. All lines where this field returns the same value will be rolled up into the first line where the value occurs."
+    label = "Roll-Up Field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__SummaryDisplay__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__SummaryDisplay__c"
+    deprecated = false
+    description = "Specifies how line items rendered by this section are summarized."
+    externalId = false
+    inlineHelpText = "Choose \"Always\" to display subtotal, discounts and grand total regardless of any other settings. Choose \"Never\" to never display regardless of other settings. Leaving this field blank will render summary as defined by template fields."
+    label = "Summary Display"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+      {
+        fullName = "Never"
+        default = false
+        label = "Never"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail SBQQ__Template__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__Template__c"
+    deprecated = false
+    description = "Quote template that uses this template section."
+    externalId = false
+    inlineHelpText = "Quote template that uses this template section."
+    label = "Template"
+    referenceTo = [
+      salesforce.SBQQ__QuoteTemplate__c,
+    ]
+    relationshipLabel = "Sections"
+    relationshipName = "Sections"
+    relationshipOrder = 0
+    reparentableMasterDetail = false
+    trackTrending = false
+    writeRequiresMasterRead = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Number SBQQ__TopMargin__c {
+    apiName = "SBQQ__TemplateSection__c.SBQQ__TopMargin__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    description = "Margin left at the top of this section."
+    externalId = false
+    inlineHelpText = "Margin left at the top of this section."
+    label = "Top Margin"
+    precision = 14
+    _required = true
+    scale = 2
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}
